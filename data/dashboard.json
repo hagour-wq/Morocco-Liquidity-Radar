@@ -2,10 +2,10 @@
   "as_of": "2026-10-07",
   "composite": null,
   "regime": "CALIBRATION",
-  "conclusion": "Deux sources officielles sont désormais validées (AMMC et BAM). Le score reste volontairement désactivé jusqu'au raccordement du marché et à la normalisation de l'historique.",
+  "conclusion": "Market Flow neutre mais fragile (-7) : rebond journalier du MASI, mais momentum 5 séances encore nettement négatif. Breadth légèrement positif. Volume non intégré au score faute d'historique suffisant.",
   "scores": {
     "liquidity": null,
-    "market_flow": null,
+    "market_flow": -7,
     "global": null
   },
   "sources": [
@@ -36,8 +36,8 @@
     {
       "name": "Bourse de Casablanca",
       "dataset": "MASI, volumes, secteurs et valeurs",
-      "reference_date": "À connecter",
-      "status": "EN COURS · aucune valeur estimée",
+      "reference_date": "07/10/2026",
+      "status": "MASI CONNECTÉ via source secondaire recoupée · volumes/breadth partiels",
       "freshness": "quotidienne",
       "official_page": "https://www.casablanca-bourse.com/"
     }
@@ -46,5 +46,18 @@
     "missing": "null",
     "estimated_values": false,
     "score_activation": "after source validation and sufficient history"
+  },
+  "market_flow_detail": {
+    "ret_1d_pct": 0.58,
+    "ret_5d_pct": -4.19,
+    "volume_vs_available_avg": null,
+    "breadth": 0.5224,
+    "coverage": 0.7,
+    "components_used": [
+      "momentum",
+      "breadth"
+    ],
+    "confidence": "medium",
+    "note": "Volume historique insuffisant pour intégrer la composante volume au score."
   }
 }
