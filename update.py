@@ -40,6 +40,25 @@ def market_flow_score(rows):
     detail["confidence"]="high" if w>=75 and len(rows)>=20 else ("medium" if w>=70 else "low")
     return score,detail
 
+
+def liquidity_score(d):
+    """Coverage-aware liquidity engine. A component is scored only when a verified numeric score exists."""
+    ld=d.get("liquidity_detail",{})
+    comps=ld.get("components",{})
+    used=[]; total=0; weighted=0
+    for name,x in comps.items():
+        wt=x.get("weight",0)
+        sc=x.get("score")
+        verified=x.get("verified",False)
+        if verified and isinstance(sc,(int,float)):
+            sc=clamp(sc); weighted+=sc*wt; total+=wt; used.append(name)
+    if not total:
+        return None,{"coverage":0,"confidence":"calibration","components_used":[]}
+    score=round(weighted/total)
+    coverage=round(total/100,2)
+    confidence="high" if coverage>=.85 else ("medium" if coverage>=.60 else "low")
+    return score,{"coverage":coverage,"confidence":confidence,"components_used":used}
+
 def regime(score):
     if score is None:return "CALIBRATION"
     if score>=60:return "STRONG RISK-ON"
@@ -58,6 +77,11 @@ def main():
     d=json.loads(DASH.read_text(encoding="utf-8"))
     rows=json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else []
     score,detail=market_flow_score(rows); d["scores"]["market_flow"]=score
+    lscore,ldetail=liquidity_score(d); d["scores"]["liquidity"]=lscore
+    d.setdefault("liquidity_detail",{})["score"]=lscore
+    d["liquidity_detail"]["coverage"]=ldetail["coverage"]
+    d["liquidity_detail"]["confidence"]=ldetail["confidence"]
+    d["liquidity_detail"]["components_used"]=ldetail["components_used"]
     available=[]
     for key,w in [("liquidity",50),("market_flow",35),("global",15)]:
         v=d["scores"].get(key)
@@ -89,6 +113,7 @@ def main():
     d.setdefault("data_quality",{})["market_history_sessions"]=len(rows)
     d["data_quality"]["history"]=history_quality(rows)
     d["data_quality"]["market_flow_coverage"]=detail.get("coverage",0)
+    d["data_quality"]["liquidity_coverage"]=ldetail.get("coverage",0)
     d["data_quality"]["composite_status"]=d["regime"]
     DASH.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
