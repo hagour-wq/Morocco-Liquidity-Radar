@@ -89,13 +89,17 @@ def main():
     d["liquidity_detail"]["coverage"]=ldetail["coverage"]
     d["liquidity_detail"]["confidence"]=ldetail["confidence"]
     d["liquidity_detail"]["components_used"]=ldetail["components_used"]
+    # Composite uses effective coverage, so a partially observed pillar cannot receive its full strategic weight.
+    pillar_cov={"liquidity":ldetail.get("coverage",0),"market_flow":detail.get("coverage",0),"global":1 if d["scores"].get("global") is not None else 0}
+    base_weights={"liquidity":50,"market_flow":35,"global":15}
     available=[]
-    for key,w in [("liquidity",50),("market_flow",35),("global",15)]:
-        v=d["scores"].get(key)
-        if v is not None: available.append((v,w))
+    for key,bw in base_weights.items():
+        v=d["scores"].get(key); ew=bw*pillar_cov[key]
+        if v is not None and ew>0: available.append((v,ew))
     w=sum(x[1] for x in available)
     d["composite"]=round(sum(v*wt for v,wt in available)/w) if w else None
     d["composite_coverage"]=round(w/100,2)
+    d["effective_weights"]={k:round(base_weights[k]*pillar_cov[k],1) for k in base_weights}
     d["regime"]=regime(d["composite"]) if w>=85 else "CALIBRATION"
     d["market_flow_detail"]=detail
     d["retrieved_at"]=datetime.now(timezone.utc).isoformat()
