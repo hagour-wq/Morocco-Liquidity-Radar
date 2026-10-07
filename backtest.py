@@ -7,7 +7,7 @@ HIST=Path("data/market_history.json"); OUT=Path("data/backtest.json")
 def pct(a,b): return None if not a or not b else (a/b-1)*100
 def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def gap_days(a,b): return (date.fromisoformat(b)-date.fromisoformat(a)).days
-def contiguous(rows,a,b,max_gap=4):
+def contiguous(rows,a,b,max_gap=10):
     return all(gap_days(rows[j-1]["date"],rows[j]["date"])<=max_gap for j in range(a+1,b+1))
 def score(rows,i):
     if i<5 or not contiguous(rows,i-5,i):return None
@@ -29,7 +29,7 @@ def main():
     stats={f"{n}d":horizon_stats(obs,f"fwd_{n}d_pct") for n in [1,5,10,20]}
     pos=[x for x in obs if x["score"] is not None and x["score"]>=20]
     neg=[x for x in obs if x["score"] is not None and x["score"]<=-20]
-    out={"method":"Momentum diagnostic; not a validated investment strategy.","history_sessions":len(rows),"observations":len(obs),"gap_policy":"returns only within contiguous market blocks; max calendar gap 4 days","horizons":stats,
+    out={"method":"Momentum diagnostic; not a validated investment strategy.","history_sessions":len(rows),"observations":len(obs),"gap_policy":"returns only within contiguous market blocks; max calendar gap 10 days","horizons":stats,
       "signal_counts":{"risk_on_like":len(pos),"risk_off_like":len(neg)},
       "usable_5d":stats["5d"]["n"],"directional_accuracy_5d_pct":stats["5d"]["directional_accuracy_pct"],
       "sample_warning":"Interpret only after sufficient historical depth; no transaction costs or execution model.","series":obs}
