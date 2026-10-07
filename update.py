@@ -5,6 +5,7 @@ from statistics import mean
 
 DASH=Path("data/dashboard.json")
 HIST=Path("data/market_history.json")
+LIQ=Path("data/liquidity_inputs.json")
 
 def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def pct(a,b): return None if b in (None,0) or a is None else (a/b-1)*100
@@ -44,7 +45,13 @@ def market_flow_score(rows):
 def liquidity_score(d):
     """Coverage-aware liquidity engine. A component is scored only when a verified numeric score exists."""
     ld=d.get("liquidity_detail",{})
-    comps=ld.get("components",{})
+    if LIQ.exists():
+        inp=json.loads(LIQ.read_text(encoding="utf-8"))
+        comps=inp.get("components",{})
+        ld["components"]=comps
+        d["liquidity_detail"]=ld
+    else:
+        comps=ld.get("components",{})
     used=[]; total=0; weighted=0
     for name,x in comps.items():
         wt=x.get("weight",0)
