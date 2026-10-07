@@ -48,6 +48,12 @@ def regime(score):
     if score>=-59:return "RISK-OFF"
     return "STRONG RISK-OFF"
 
+def history_quality(rows,max_gap=4):
+    if not rows:return {"sessions":0,"blocks":0,"first_date":None,"last_date":None,"largest_gap_days":None}
+    gaps=[gap_days(rows[i-1]["date"],rows[i]["date"]) for i in range(1,len(rows))]
+    return {"sessions":len(rows),"blocks":1+sum(g>max_gap for g in gaps),"first_date":rows[0]["date"],"last_date":rows[-1]["date"],
+      "largest_gap_days":max(gaps) if gaps else 0,"latest_contiguous_sessions":len(latest_contiguous(rows))}
+
 def main():
     d=json.loads(DASH.read_text(encoding="utf-8"))
     rows=json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else []
@@ -80,6 +86,7 @@ def main():
         tone="positif" if score>=20 else "négatif" if score<=-20 else "neutre"
         d["conclusion"]=f"Market Flow {tone} ({score:+d}). Momentum 1 séance {detail['ret_1d_pct']:+.2f}% et 5 séances {detail['ret_5d_pct']:+.2f}%. Couverture {detail['coverage']*100:.0f}%."
     d.setdefault("data_quality",{})["market_history_sessions"]=len(rows)
+    d["data_quality"]["history"]=history_quality(rows)
     d["data_quality"]["market_flow_coverage"]=detail.get("coverage",0)
     d["data_quality"]["composite_status"]=d["regime"]
     DASH.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
