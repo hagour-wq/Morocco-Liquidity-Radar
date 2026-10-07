@@ -1,40 +1,33 @@
 import json
 from pathlib import Path
+from statistics import mean
 
-HIST=Path("data/market_history.json")
-OUT=Path("data/backtest.json")
+HIST=Path("data/market_history.json"); OUT=Path("data/backtest.json")
+def pct(a,b): return None if not a or not b else (a/b-1)*100
+def clamp(x,a=-100,b=100): return max(a,min(b,x))
+def score(rows,i):
+    if i<5:return None
+    return round(clamp((pct(rows[i]["masi"],rows[i-1]["masi"]) or 0)*12+(pct(rows[i]["masi"],rows[i-5]["masi"]) or 0)*5))
 
-def pct(a,b):
-    return None if not a or not b else (a/b-1)*100
-
-def clamp(x,a=-100,b=100):
-    return max(a,min(b,x))
-
-def momentum_score(rows,i):
-    if i<5: return None
-    r1=pct(rows[i]["masi"],rows[i-1]["masi"]) or 0
-    r5=pct(rows[i]["masi"],rows[i-5]["masi"]) or 0
-    return round(clamp(r1*12+r5*5))
+def horizon_stats(obs,key):
+    u=[x for x in obs if x[key] is not None and x["score"] not in (None,0)]
+    if not u:return {"n":0,"directional_accuracy_pct":None,"avg_forward_pct":None}
+    ok=sum((x["score"]>0 and x[key]>0) or (x["score"]<0 and x[key]<0) for x in u)
+    return {"n":len(u),"directional_accuracy_pct":round(ok/len(u)*100,1),"avg_forward_pct":round(mean(x[key] for x in u),2)}
 
 def main():
-    rows=json.loads(HIST.read_text())
-    obs=[]
+    rows=json.loads(HIST.read_text(encoding="utf-8")); obs=[]
     for i in range(5,len(rows)):
-        s=momentum_score(rows,i)
-        future={}
-        for n,label in [(1,"fwd_1d_pct"),(5,"fwd_5d_pct"),(10,"fwd_10d_pct")]:
-            future[label]=round(pct(rows[i+n]["masi"],rows[i]["masi"]),2) if i+n<len(rows) else None
-        obs.append({"date":rows[i]["date"],"score":s,**future})
-    usable=[x for x in obs if x["fwd_5d_pct"] is not None and x["score"]!=0]
-    correct=sum(1 for x in usable if (x["score"]>0 and x["fwd_5d_pct"]>0) or (x["score"]<0 and x["fwd_5d_pct"]<0))
-    out={
-      "method":"Momentum-only diagnostic backtest; not a validated investment strategy.",
-      "observations":len(obs),
-      "usable_5d":len(usable),
-      "directional_accuracy_5d_pct":round(correct/len(usable)*100,1) if usable else None,
-      "sample_warning":"Very small sample. Expand history before interpreting accuracy.",
-      "series":obs
-    }
-    OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
-
-if __name__=="__main__": main()
+        s=score(rows,i); x={"date":rows[i]["date"],"score":s}
+        for n in [1,5,10,20]:
+            x[f"fwd_{n}d_pct"]=round(pct(rows[i+n]["masi"],rows[i]["masi"]),2) if i+n<len(rows) else None
+        obs.append(x)
+    stats={f"{n}d":horizon_stats(obs,f"fwd_{n}d_pct") for n in [1,5,10,20]}
+    pos=[x for x in obs if x["score"] is not None and x["score"]>=20]
+    neg=[x for x in obs if x["score"] is not None and x["score"]<=-20]
+    out={"method":"Momentum diagnostic; not a validated investment strategy.","history_sessions":len(rows),"observations":len(obs),"horizons":stats,
+      "signal_counts":{"risk_on_like":len(pos),"risk_off_like":len(neg)},
+      "usable_5d":stats["5d"]["n"],"directional_accuracy_5d_pct":stats["5d"]["directional_accuracy_pct"],
+      "sample_warning":"Interpret only after sufficient historical depth; no transaction costs or execution model.","series":obs}
+    OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+if __name__=="__main__":main()
