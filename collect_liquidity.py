@@ -4,6 +4,7 @@ has produced a numeric value, a comparison basis and a reference date.
 """
 import json
 import re
+import time
 from pathlib import Path
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
@@ -55,11 +56,22 @@ def discover_links(page_url, patterns):
     return list(dict.fromkeys(out))
 
 
+def download_with_retry(url, attempts=4):
+    agents=["Mozilla/5.0","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/154 Safari/537.36","EquityBourse/1.0"]
+    last=None
+    for i in range(attempts):
+        try:
+            req=Request(url,headers={"User-Agent":agents[i%len(agents)],"Accept":"*/*","Connection":"close"})
+            with urlopen(req,timeout=35) as r: return r.read()
+        except Exception as e:
+            last=e
+            if i<attempts-1: time.sleep(2*(i+1))
+    raise last
+
 def inspect_excel(url):
     """Download an official AMMC workbook and expose schema only; no scoring."""
     try:
-        req=Request(url,headers={"User-Agent":"Mozilla/5.0 EquityBourse/1.0"})
-        with urlopen(req,timeout=30) as r: raw=r.read()
+        raw=download_with_retry(url)
         info={"url":url,"bytes":len(raw)}
         if url.lower().endswith(".xlsx"):
             import openpyxl
