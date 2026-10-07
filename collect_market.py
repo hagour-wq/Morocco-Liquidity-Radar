@@ -8,6 +8,7 @@ import json, re
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
+import ssl, certifi
 
 HOME="https://www.casablanca-bourse.com/"
 OUT=Path("data/market_history.json")
