@@ -58,5 +58,23 @@
       "note": "Taux directeur maintenu à 2,25 %. Score 0 = impulsion neutre par absence de variation; le niveau absolu est conservé séparément."
     }
   },
-  "note": "null means unavailable. verified must remain false until the official value and reference date are validated."
+  "note": "null means unavailable. verified must remain false until the official value and reference date are validated.",
+  "discovery": {
+    "ammc": {
+      "count": 0,
+      "candidates": [],
+      "status": "NO_CANDIDATE"
+    },
+    "bam": {
+      "count": 0,
+      "candidates": [],
+      "status": "NO_CANDIDATE"
+    }
+  },
+  "collector_status": {
+    "ammc": "discovery_only_until_parser_validates_schema",
+    "bam": "discovery_only_until_parser_validates_schema",
+    "safety": "preserve_last_verified_value_on_failure"
+  },
+  "collector_checked_at": "2026-10-07T21:57:21.555910+00:00"
 }

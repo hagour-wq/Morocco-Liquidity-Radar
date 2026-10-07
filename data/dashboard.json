@@ -1,10 +1,10 @@
 {
   "as_of": "2026-10-07",
-  "composite": null,
+  "composite": -4,
   "regime": "CALIBRATION",
-  "conclusion": "Market Flow neutre mais fragile (-7) : rebond journalier du MASI, mais momentum 5 séances encore nettement négatif. Breadth légèrement positif. Volume non intégré au score faute d'historique suffisant.",
+  "conclusion": "Market Flow neutre (-7). Momentum 1 séance +0.58% et 5 séances -4.19%. Couverture 70%.",
   "scores": {
-    "liquidity": null,
+    "liquidity": 0,
     "market_flow": -7,
     "global": null
   },
@@ -50,15 +50,15 @@
   "market_flow_detail": {
     "ret_1d_pct": 0.58,
     "ret_5d_pct": -4.19,
+    "ret_20d_pct": -9.8,
     "volume_vs_available_avg": null,
-    "breadth": 0.5224,
+    "breadth": 0.5223880597014925,
     "coverage": 0.7,
     "components_used": [
       "momentum",
       "breadth"
     ],
-    "confidence": "medium",
-    "note": "Volume historique insuffisant pour intégrer la composante volume au score."
+    "confidence": "medium"
   },
   "rotation": {
     "reference_date": "2026-10-07",
@@ -154,52 +154,76 @@
     ]
   },
   "liquidity_detail": {
-    "score": null,
-    "coverage": 0,
-    "confidence": "calibration",
+    "score": 0,
+    "coverage": 0.3,
+    "confidence": "low",
     "reference_date": "2026-09-25",
     "components": {
       "opcvm": {
-        "status": "official_source_connected",
         "weight": 40,
-        "reference_date": "2026-09-25",
-        "source": "AMMC",
-        "note": "Fichier hebdomadaire officiel identifié. Agrégats par classe à extraire avant scoring.",
         "score": null,
         "verified": false,
-        "method": "Flux nets / évolution d'actif corrigée de l'effet de marché, par classe"
+        "reference_date": "2026-09-25",
+        "raw": {
+          "equity_flow": null,
+          "bond_flow": null,
+          "money_market_flow": null
+        },
+        "source": "AMMC",
+        "source_url": "https://www.ammc.ma/fr/donnees-statistiques",
+        "note": "Publication hebdomadaire officielle identifiée. Ne pas assimiler variation d'actif net à une souscription nette sans neutraliser l'effet de valorisation.",
+        "age_days": 12
       },
       "bank_liquidity": {
-        "status": "pending_current_series",
         "weight": 30,
-        "reference_date": null,
-        "source": "Bank Al-Maghrib",
         "score": null,
         "verified": false,
-        "method": "Variation de la liquidité bancaire et interventions BAM"
+        "reference_date": "2026-09-30",
+        "raw": {
+          "bank_liquidity": null,
+          "bam_injections": null
+        },
+        "source": "Bank Al-Maghrib",
+        "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
+        "note": "Source officielle identifiée mais composante non activée: le niveau/variation des injections doit être extrait de façon comparable à la période précédente avant scoring.",
+        "age_days": 7
       },
       "money_market": {
-        "status": "verified",
         "weight": 20,
-        "reference_date": "2026-09-30",
-        "source": "Bank Al-Maghrib",
         "score": 0,
         "verified": true,
-        "method": "Écart taux monétaire vs taux directeur et dynamique court terme",
-        "note": "Taux interbancaire 2,25 %, soit spread 0 pb vs taux directeur: impulsion neutre."
+        "reference_date": "2026-09-30",
+        "raw": {
+          "money_market_rate": 2.25,
+          "policy_rate": 2.25,
+          "spread_bp": 0
+        },
+        "source": "Bank Al-Maghrib",
+        "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
+        "note": "Taux interbancaire moyen pondéré à 2,25 %, aligné sur le taux directeur. Score neutre: absence de tension/détente mesurable via le spread.",
+        "age_days": 7
       },
       "policy_rate": {
-        "status": "verified",
         "weight": 10,
-        "reference_date": "2026-09-22",
-        "source": "Bank Al-Maghrib",
         "score": 0,
         "verified": true,
-        "method": "Orientation des décisions BAM, sans confondre niveau et variation",
-        "note": "Taux directeur maintenu à 2,25 %. Impulsion de politique monétaire notée neutre (0), sans interpréter le niveau absolu comme un assouplissement supplémentaire."
+        "reference_date": "2026-09-22",
+        "raw": {
+          "current_rate": 2.25,
+          "previous_rate": 2.25,
+          "change_bp": 0
+        },
+        "source": "Bank Al-Maghrib",
+        "source_url": "https://www.bkam.ma/Politique-monetaire/Decision-du-conseil/Decision-du-conseil-de-bank-al-maghrib-du-22-septembre-2026",
+        "note": "Taux directeur maintenu à 2,25 %. Score 0 = impulsion neutre par absence de variation; le niveau absolu est conservé séparément.",
+        "age_days": 15
       }
     },
-    "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément."
+    "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément.",
+    "components_used": [
+      "money_market",
+      "policy_rate"
+    ]
   },
   "money_flow": {
     "money_market": "En attente · série BAM",
@@ -215,9 +239,9 @@
     "warning": "Échantillon trop court pour conclure; à recalculer automatiquement avec l'historique croissant."
   },
   "data_quality": {
-    "market_history_sessions": 28,
+    "market_history_sessions": 87,
     "market_flow_coverage": 0.7,
-    "liquidity_coverage": 0,
+    "liquidity_coverage": 0.3,
     "composite_status": "CALIBRATION",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
@@ -225,12 +249,35 @@
       "liquidité bancaire et interventions BAM",
       "taux monétaires BAM vérifiés",
       "taux directeur BAM courant vérifié"
-    ]
+    ],
+    "history": {
+      "sessions": 87,
+      "blocks": 4,
+      "first_date": "2025-09-01",
+      "last_date": "2026-10-07",
+      "largest_gap_days": 153,
+      "latest_contiguous_sessions": 28
+    }
   },
   "methodology": {
     "composite": "50% Liquidity + 35% Market Flow + 15% Global Risk, multiplied by each pillar's verified coverage before normalization.",
     "activation": "Regime remains CALIBRATION until effective composite coverage reaches 85%.",
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
+  },
+  "composite_coverage": 0.4,
+  "effective_weights": {
+    "liquidity": 15.0,
+    "market_flow": 24.5,
+    "global": 0
+  },
+  "retrieved_at": "2026-10-07T21:57:21.629165+00:00",
+  "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
+  "market_snapshot": {
+    "masi": 16990.77,
+    "drawdown_from_sample_peak_pct": -15.66,
+    "sample_peak": 20146.13,
+    "sample_low": 16399.25,
+    "sessions": 28
   }
 }
