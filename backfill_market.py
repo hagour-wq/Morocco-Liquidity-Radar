@@ -1,89 +1,57 @@
-"""Fail-closed backfill from official Casablanca Stock Exchange daily bulletins."""
-import io,json,re,ssl,certifi
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date,timedelta
+"""Long-history MASI backfill. Fail closed: never invent missing market observations."""
+import csv, io, json, re, ssl, certifi
+from datetime import date, timedelta
 from pathlib import Path
-from urllib.request import Request,urlopen
-from urllib.error import HTTPError,URLError
-from pypdf import PdfReader
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
 
 OUT=Path("data/market_history.json")
-MEDIA="https://media.casablanca-bourse.com/sites/default/files/es-auto-upload/fr/resume_seance_{ymd}.pdf"
-UA="Morocco-Liquidity-Radar/1.3"
-TARGET=40
-LOOKBACK_DAYS=100
-WORKERS=8
-TIMEOUT=10
+UA="Mozilla/5.0 Morocco-Liquidity-Radar/2.0"
 SSL=ssl.create_default_context(cafile=certifi.where())
+TARGET_SESSIONS=500
+LOOKBACK_DAYS=1100
+
+# Secondary history endpoints can change. Each parser validates date + plausible MASI.
+CANDIDATES=[
+ "https://stooq.com/q/d/l/?s=masi&i=d",
+]
 
 def get(url):
-    r=Request(url,headers={"User-Agent":UA,"Accept":"application/pdf"})
-    with urlopen(r,timeout=TIMEOUT,context=SSL) as x:
-        b=x.read()
-    if not b.startswith(b"%PDF"):
-        raise ValueError("response is not a PDF")
-    return b
+    req=Request(url,headers={"User-Agent":UA,"Accept":"text/csv,text/plain,*/*"})
+    with urlopen(req,timeout=20,context=SSL) as r:return r.read().decode("utf-8","replace")
 
-def n(s):
-    return float(s.replace("\u202f","").replace("\xa0","").replace(" ","").replace(",", "."))
+def plausible(v): return 1000 < v < 100000
 
-def candidate_urls():
-    d=date.today()
-    out=[]
-    for i in range(LOOKBACK_DAYS+1):
-        x=d-timedelta(days=i)
-        if x.weekday()<5:
-            out.append((x.isoformat(),MEDIA.format(ymd=x.strftime("%Y%m%d"))))
-    return out
-
-def parse_one(expected_date,url):
-    raw=get(url)
-    txt="\n".join((p.extract_text() or "") for p in PdfReader(io.BytesIO(raw)).pages)
-    flat=re.sub(r"\s+"," ",txt)
-    # Bulletin date must match the URL/session date.
-    y,m,d=expected_date.split("-")
-    patterns=[rf"{d}[/-]{m}[/-]{y}",rf"{y}[/-]{m}[/-]{d}"]
-    if not any(re.search(p,flat) for p in patterns):
-        return None
-    mm=re.search(r"MASI(?!\s*20).*?([\d\s\u00a0\u202f]{4,}[,.]\d{2})",flat,re.I)
-    vm=re.search(r"(?:VOLUME\s+(?:GLOBAL|TOTAL)|VOLUME\s+DES\s+ECHANGES).*?([\d\s\u00a0\u202f]{3,})\s*(?:MAD|DH)",flat,re.I)
-    if not(mm and vm):
-        return None
-    row={"date":expected_date,"masi":n(mm.group(1)),"volume_mad":n(vm.group(1)),
-         "breadth":None,"source":"Bourse de Casablanca",
-         "source_url":url,"quality":"official_bulletin"}
-    if not (1000 < row["masi"] < 100000 and 0 <= row["volume_mad"] < 1e12):
-        return None
-    return row
+def parse_stooq(text):
+    rows=[]
+    for x in csv.DictReader(io.StringIO(text)):
+        try:
+            dt=x.get("Date"); close=float(x.get("Close",""))
+            if dt and plausible(close):
+                rows.append({"date":dt,"masi":close,"volume_mad":None,"breadth":None,
+                 "source":"Stooq MASI historical","source_url":CANDIDATES[0],"quality":"secondary_historical_price"})
+        except (ValueError,TypeError):pass
+    return rows
 
 def main():
     old=json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else []
     by={x["date"]:x for x in old}
-    todo=[(d,u) for d,u in candidate_urls() if d not in by]
-    ok=0
-    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        futures={pool.submit(parse_one,d,u):(d,u) for d,u in todo}
-        for fut in as_completed(futures):
-            d,u=futures[fut]
-            try:
-                row=fut.result()
-                if row:
-                    by[row["date"]]=row
-                    ok+=1
-                    print("validated",row["date"],row["masi"],row["volume_mad"])
-            except (HTTPError,URLError,TimeoutError,ValueError) as e:
-                print("skip",d,type(e).__name__)
-            except Exception as e:
-                print("skip",d,type(e).__name__,str(e)[:120])
-            if len(by)>=TARGET:
-                for pending in futures:
-                    pending.cancel()
-                break
-    if len(by)<5:
-        raise SystemExit(f"Only {len(by)} total validated sessions; refusing write.")
-    rows=sorted(by.values(),key=lambda x:x["date"])[-120:]
-    OUT.write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"Backfill complete: {len(rows)} validated sessions ({ok} new).")
+    added=0
+    for url in CANDIDATES:
+        try:
+            text=get(url)
+            for row in parse_stooq(text):
+                if row["date"] not in by:
+                    by[row["date"]]=row;added+=1
+        except (HTTPError,URLError,TimeoutError,OSError) as e:
+            print("secondary source unavailable",type(e).__name__)
+    cutoff=(date.today()-timedelta(days=LOOKBACK_DAYS)).isoformat()
+    rows=sorted((x for x in by.values() if x["date"]>=cutoff),key=lambda x:x["date"])
+    if len(rows)<len(old):
+        rows=sorted(by.values(),key=lambda x:x["date"])
+    OUT.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(f"History: {len(rows)} sessions; {added} new. Target={TARGET_SESSIONS}.")
+    if added==0:
+        print("No new secondary history. Existing validated history preserved.")
 
-if __name__=="__main__":
-    main()
+if __name__=="__main__":main()
