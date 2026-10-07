@@ -68,7 +68,8 @@ def main():
     d["regime"]=regime(d["composite"]) if w>=85 else "CALIBRATION"
     d["market_flow_detail"]=detail
     d["retrieved_at"]=datetime.now(timezone.utc).isoformat()
-    d["as_of"]=rows[-1]["date"] if rows else d.get("as_of")\n    d["market_data_status"]="STALE_OR_CURRENT_BY_AS_OF" if rows else "NO_MARKET_DATA"
+    d["as_of"]=rows[-1]["date"] if rows else d.get("as_of")
+    d["market_data_status"]="STALE_OR_CURRENT_BY_AS_OF" if rows else "NO_MARKET_DATA"
     if rows:
         vals=[x["masi"] for x in rows if x.get("masi") is not None]
         latest=rows[-1]["masi"]
