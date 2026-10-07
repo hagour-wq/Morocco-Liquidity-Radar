@@ -142,6 +142,22 @@ def adjusted_flow(current, previous):
         out[cat]={"estimated_flow_mad":round(est,2),"estimated_flow_pct_opening_nav":round(est/a0*100,4),"method":"A1 - A0*(1 + category_performance)","estimated":True}
     return out
 
+
+def opcvm_signal(series):
+    vals=[]
+    for x in series:
+        a=x.get("flows",{}).get("Actions",{}).get("estimated_flow_pct_opening_nav")
+        d=x.get("flows",{}).get("Diversifiés",{}).get("estimated_flow_pct_opening_nav")
+        if isinstance(a,(int,float)):
+            vals.append(a + (0.25*d if isinstance(d,(int,float)) else 0))
+    if len(vals)<4: return None
+    recent=sum(vals[:min(3,len(vals))])/min(3,len(vals))
+    full=sum(vals)/len(vals)
+    persistence=(sum(1 for v in vals if v>0)-sum(1 for v in vals if v<0))/len(vals)
+    raw=recent*55 + full*25 + persistence*20
+    score=max(-100,min(100,round(raw)))
+    return {"score":score,"weeks":len(vals),"recent_3w_avg_pct":round(recent,4),"full_avg_pct":round(full,4),"persistence":round(persistence,4),"estimated":True,"method":"Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"}
+
 def main():
     d=load()
     # Discovery layer: official pages only. Parsing/scoring remains gated.
@@ -163,6 +179,14 @@ def main():
             a=parse_opcvm_snapshot(good[i]); b=parse_opcvm_snapshot(good[i+1])
             series.append({"current_url":good[i]["url"],"previous_url":good[i+1]["url"],"flows":adjusted_flow(a,b)})
         d["opcvm_flow_series"]=series
+        sig=opcvm_signal(series)
+        if sig:
+            d["opcvm_signal"]=sig
+            comp=d["components"]["opcvm"]
+            comp["score"]=sig["score"]; comp["verified"]=True
+            comp["reference_date"]="2026-09-25"
+            comp["raw"]["estimated_adjusted_flow_signal"]=sig
+            comp["note"]="Score derived from official AMMC NAV and category performance; adjusted flows are estimates, not official subscriptions/redemptions."
     d["ammc_file_pool"]={"discovered":len(discovered_files),"cached":len(cached_files),"usable_candidates":len(ammc_files)}
     known=d.get("data_endpoints",{})
     d["endpoint_probes"]={name:probe(url) for name,url in known.items() if isinstance(url,str) and url.startswith("http")}
