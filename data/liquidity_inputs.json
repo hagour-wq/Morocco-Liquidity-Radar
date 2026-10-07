@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-10-07",
   "components": {
     "opcvm": {
       "weight": 40,
@@ -39,15 +39,17 @@
     },
     "policy_rate": {
       "weight": 10,
-      "score": null,
-      "verified": false,
-      "reference_date": null,
+      "score": 0,
+      "verified": true,
+      "reference_date": "2026-09-22",
       "raw": {
-        "current_rate": null,
-        "previous_rate": null,
-        "change_bp": null
+        "current_rate": 2.25,
+        "previous_rate": 2.25,
+        "change_bp": 0
       },
-      "source": "Bank Al-Maghrib"
+      "source": "Bank Al-Maghrib",
+      "source_url": "https://www.bkam.ma/Politique-monetaire/Decision-du-conseil/Decision-du-conseil-de-bank-al-maghrib-du-22-septembre-2026",
+      "note": "Taux directeur maintenu à 2,25 %. Score 0 = impulsion neutre par absence de variation; le niveau absolu est conservé séparément."
     }
   },
   "note": "null means unavailable. verified must remain false until the official value and reference date are validated."
