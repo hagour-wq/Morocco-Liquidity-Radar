@@ -20,6 +20,12 @@ jobs:
       - name: Collect BAM and AMMC liquidity
         continue-on-error: true
         run: python collect_liquidity.py
+      - name: Discover BAM liquidity publications
+        continue-on-error: true
+        run: python collect_bam.py
+      - name: Collect global risk inputs
+        continue-on-error: true
+        run: python collect_global.py
       - name: Recalculate dashboard
         run: python update.py
       - name: Run diagnostic backtest
