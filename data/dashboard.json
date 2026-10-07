@@ -191,5 +191,25 @@
     "money_market": "En attente · série BAM",
     "bonds": "En calibration · OPCVM AMMC",
     "equities": "En calibration · OPCVM AMMC + Market Flow"
+  },
+  "backtest": {
+    "status": "experimental",
+    "method": "momentum_direction_5d",
+    "observations": 23,
+    "usable_5d": 18,
+    "directional_accuracy_5d_pct": 61.1,
+    "warning": "Échantillon trop court pour conclure; à recalculer automatiquement avec l'historique croissant."
+  },
+  "data_quality": {
+    "market_history_sessions": 28,
+    "market_flow_coverage": 0.7,
+    "liquidity_coverage": 0,
+    "composite_status": "CALIBRATION",
+    "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
+    "missing_priority": [
+      "agrégats OPCVM par catégorie",
+      "séries BAM 2026 vérifiées",
+      "historique volume/breadth plus profond"
+    ]
   }
 }
