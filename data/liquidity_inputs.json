@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "updated_at": null,
+  "components": {
+    "opcvm": {
+      "weight": 40,
+      "score": null,
+      "verified": false,
+      "reference_date": null,
+      "raw": {
+        "equity_flow": null,
+        "bond_flow": null,
+        "money_market_flow": null
+      },
+      "source": "AMMC"
+    },
+    "bank_liquidity": {
+      "weight": 30,
+      "score": null,
+      "verified": false,
+      "reference_date": null,
+      "raw": {
+        "bank_liquidity": null,
+        "bam_injections": null
+      },
+      "source": "Bank Al-Maghrib"
+    },
+    "money_market": {
+      "weight": 20,
+      "score": null,
+      "verified": false,
+      "reference_date": null,
+      "raw": {
+        "money_market_rate": null,
+        "policy_rate": null,
+        "spread_bp": null
+      },
+      "source": "Bank Al-Maghrib"
+    },
+    "policy_rate": {
+      "weight": 10,
+      "score": null,
+      "verified": false,
+      "reference_date": null,
+      "raw": {
+        "current_rate": null,
+        "previous_rate": null,
+        "change_bp": null
+      },
+      "source": "Bank Al-Maghrib"
+    }
+  },
+  "note": "null means unavailable. verified must remain false until the official value and reference date are validated."
+}
