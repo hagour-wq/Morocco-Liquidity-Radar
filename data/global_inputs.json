@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-07T22:20:52.644593+00:00",
+  "components": {
+    "dxy": {
+      "source_url": "https://www.investing.com/indices/usdollar-historical-data",
+      "http_ok": false,
+      "error": "HTTPError"
+    },
+    "us10y": {
+      "source_url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+      "http_ok": false,
+      "error": "HTTPError"
+    },
+    "vix": {
+      "source_url": "https://www.investing.com/indices/volatility-s-p-500-historical-data",
+      "http_ok": false,
+      "error": "HTTPError"
+    },
+    "sp500": {
+      "source_url": "https://www.investing.com/indices/us-spx-500-historical-data",
+      "http_ok": false,
+      "error": "HTTPError"
+    }
+  },
+  "verified": false,
+  "rule": "Global score activates only when numeric parsers are validated; no silent estimates."
+}
