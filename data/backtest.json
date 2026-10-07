@@ -1,0 +1,170 @@
+{
+  "method": "Momentum-only diagnostic backtest; not a validated investment strategy.",
+  "observations": 23,
+  "usable_5d": 18,
+  "directional_accuracy_5d_pct": 61.1,
+  "sample_warning": "Very small sample. Expand history before interpreting accuracy.",
+  "series": [
+    {
+      "date": "2026-09-07",
+      "score": -4,
+      "fwd_1d_pct": 0.57,
+      "fwd_5d_pct": -1.63,
+      "fwd_10d_pct": -3.82
+    },
+    {
+      "date": "2026-09-08",
+      "score": 13,
+      "fwd_1d_pct": 0.13,
+      "fwd_5d_pct": -3.31,
+      "fwd_10d_pct": -3.91
+    },
+    {
+      "date": "2026-09-09",
+      "score": 10,
+      "fwd_1d_pct": -0.27,
+      "fwd_5d_pct": -4.53,
+      "fwd_10d_pct": -4.23
+    },
+    {
+      "date": "2026-09-10",
+      "score": -1,
+      "fwd_1d_pct": -0.91,
+      "fwd_5d_pct": -4.43,
+      "fwd_10d_pct": -4.88
+    },
+    {
+      "date": "2026-09-11",
+      "score": -16,
+      "fwd_1d_pct": -1.16,
+      "fwd_5d_pct": -5.49,
+      "fwd_10d_pct": -4.28
+    },
+    {
+      "date": "2026-09-14",
+      "score": -22,
+      "fwd_1d_pct": -1.14,
+      "fwd_5d_pct": -2.22,
+      "fwd_10d_pct": -4.08
+    },
+    {
+      "date": "2026-09-15",
+      "score": -30,
+      "fwd_1d_pct": -1.13,
+      "fwd_5d_pct": -0.62,
+      "fwd_10d_pct": -2.39
+    },
+    {
+      "date": "2026-09-16",
+      "score": -36,
+      "fwd_1d_pct": -0.17,
+      "fwd_5d_pct": 0.32,
+      "fwd_10d_pct": -1.4
+    },
+    {
+      "date": "2026-09-17",
+      "score": -24,
+      "fwd_1d_pct": -2.01,
+      "fwd_5d_pct": -0.47,
+      "fwd_10d_pct": -2.08
+    },
+    {
+      "date": "2026-09-18",
+      "score": -52,
+      "fwd_1d_pct": 2.27,
+      "fwd_5d_pct": 1.28,
+      "fwd_10d_pct": -1.64
+    },
+    {
+      "date": "2026-09-21",
+      "score": 16,
+      "fwd_1d_pct": 0.48,
+      "fwd_5d_pct": -1.9,
+      "fwd_10d_pct": -4.62
+    },
+    {
+      "date": "2026-09-22",
+      "score": 3,
+      "fwd_1d_pct": -0.2,
+      "fwd_5d_pct": -1.78,
+      "fwd_10d_pct": -6.55
+    },
+    {
+      "date": "2026-09-23",
+      "score": -1,
+      "fwd_1d_pct": -0.95,
+      "fwd_5d_pct": -1.71,
+      "fwd_10d_pct": -5.82
+    },
+    {
+      "date": "2026-09-24",
+      "score": -14,
+      "fwd_1d_pct": -0.29,
+      "fwd_5d_pct": -1.62,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-09-25",
+      "score": 3,
+      "fwd_1d_pct": -0.95,
+      "fwd_5d_pct": -2.89,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-09-28",
+      "score": -21,
+      "fwd_1d_pct": 0.6,
+      "fwd_5d_pct": -2.77,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-09-29",
+      "score": -2,
+      "fwd_1d_pct": -0.12,
+      "fwd_5d_pct": -4.86,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-09-30",
+      "score": -10,
+      "fwd_1d_pct": -0.87,
+      "fwd_5d_pct": -4.19,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-10-01",
+      "score": -19,
+      "fwd_1d_pct": -1.57,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-10-02",
+      "score": -33,
+      "fwd_1d_pct": -0.83,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-10-05",
+      "score": -24,
+      "fwd_1d_pct": -1.56,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-10-06",
+      "score": -43,
+      "fwd_1d_pct": 0.58,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null
+    },
+    {
+      "date": "2026-10-07",
+      "score": -14,
+      "fwd_1d_pct": null,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null
+    }
+  ]
+}
