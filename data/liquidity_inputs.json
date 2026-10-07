@@ -27,15 +27,17 @@
     },
     "money_market": {
       "weight": 20,
-      "score": null,
-      "verified": false,
-      "reference_date": null,
+      "score": 0,
+      "verified": true,
+      "reference_date": "2026-09-30",
       "raw": {
-        "money_market_rate": null,
-        "policy_rate": null,
-        "spread_bp": null
+        "money_market_rate": 2.25,
+        "policy_rate": 2.25,
+        "spread_bp": 0
       },
-      "source": "Bank Al-Maghrib"
+      "source": "Bank Al-Maghrib",
+      "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
+      "note": "Taux interbancaire moyen pondéré à 2,25 %, aligné sur le taux directeur. Score neutre: absence de tension/détente mesurable via le spread."
     },
     "policy_rate": {
       "weight": 10,
