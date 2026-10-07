@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urljoin
 from urllib.request import Request,urlopen
+import ssl, certifi
 from pypdf import PdfReader
 
 LISTING="https://www.casablanca-bourse.com/market-data/bulletins-de-la-cote"
