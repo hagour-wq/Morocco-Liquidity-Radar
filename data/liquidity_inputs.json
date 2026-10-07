@@ -4,17 +4,26 @@
   "components": {
     "opcvm": {
       "weight": 40,
-      "score": null,
-      "verified": false,
+      "score": -19,
+      "verified": true,
       "reference_date": "2026-09-25",
       "raw": {
         "equity_flow": null,
         "bond_flow": null,
-        "money_market_flow": null
+        "money_market_flow": null,
+        "estimated_adjusted_flow_signal": {
+          "score": -19,
+          "weeks": 7,
+          "recent_3w_avg_pct": -0.2369,
+          "full_avg_pct": -0.1115,
+          "persistence": -0.1429,
+          "estimated": true,
+          "method": "Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"
+        }
       },
       "source": "AMMC",
       "source_url": "https://www.ammc.ma/fr/donnees-statistiques",
-      "note": "Publication hebdomadaire officielle identifiée. Ne pas assimiler variation d'actif net à une souscription nette sans neutraliser l'effet de valorisation."
+      "note": "Score derived from official AMMC NAV and category performance; adjusted flows are estimates, not official subscriptions/redemptions."
     },
     "bank_liquidity": {
       "weight": 30,
@@ -88,7 +97,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-07T22:12:59.241345+00:00",
+  "collector_checked_at": "2026-10-07T22:15:16.896278+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
@@ -105,8 +114,10 @@
   },
   "endpoint_probes": {
     "ammc_statistics_page": {
-      "ok": false,
-      "error": "RemoteDisconnected"
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "magic": "3c21444f43545950"
     },
     "bam_money_market_page": {
       "ok": false,
@@ -4512,5 +4523,14 @@
         }
       }
     }
-  ]
+  ],
+  "opcvm_signal": {
+    "score": -19,
+    "weeks": 7,
+    "recent_3w_avg_pct": -0.2369,
+    "full_avg_pct": -0.1115,
+    "persistence": -0.1429,
+    "estimated": true,
+    "method": "Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"
+  }
 }

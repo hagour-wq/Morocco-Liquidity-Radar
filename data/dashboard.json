@@ -1,10 +1,10 @@
 {
   "as_of": "2026-10-07",
-  "composite": -4,
+  "composite": -9,
   "regime": "CALIBRATION",
   "conclusion": "Market Flow neutre (-7). Momentum 1 séance +0.58% et 5 séances -4.19%. Couverture 70%.",
   "scores": {
-    "liquidity": 0,
+    "liquidity": -11,
     "market_flow": -7,
     "global": null
   },
@@ -154,24 +154,33 @@
     ]
   },
   "liquidity_detail": {
-    "score": 0,
-    "coverage": 0.3,
-    "confidence": "low",
+    "score": -11,
+    "coverage": 0.7,
+    "confidence": "medium",
     "reference_date": "2026-09-25",
     "components": {
       "opcvm": {
         "weight": 40,
-        "score": null,
-        "verified": false,
+        "score": -19,
+        "verified": true,
         "reference_date": "2026-09-25",
         "raw": {
           "equity_flow": null,
           "bond_flow": null,
-          "money_market_flow": null
+          "money_market_flow": null,
+          "estimated_adjusted_flow_signal": {
+            "score": -19,
+            "weeks": 7,
+            "recent_3w_avg_pct": -0.2369,
+            "full_avg_pct": -0.1115,
+            "persistence": -0.1429,
+            "estimated": true,
+            "method": "Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"
+          }
         },
         "source": "AMMC",
         "source_url": "https://www.ammc.ma/fr/donnees-statistiques",
-        "note": "Publication hebdomadaire officielle identifiée. Ne pas assimiler variation d'actif net à une souscription nette sans neutraliser l'effet de valorisation.",
+        "note": "Score derived from official AMMC NAV and category performance; adjusted flows are estimates, not official subscriptions/redemptions.",
         "age_days": 12
       },
       "bank_liquidity": {
@@ -221,6 +230,7 @@
     },
     "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément.",
     "components_used": [
+      "opcvm",
       "money_market",
       "policy_rate"
     ]
@@ -241,7 +251,7 @@
   "data_quality": {
     "market_history_sessions": 87,
     "market_flow_coverage": 0.7,
-    "liquidity_coverage": 0.3,
+    "liquidity_coverage": 0.7,
     "composite_status": "CALIBRATION",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
@@ -265,13 +275,13 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 0.4,
+  "composite_coverage": 0.59,
   "effective_weights": {
-    "liquidity": 15.0,
+    "liquidity": 35.0,
     "market_flow": 24.5,
     "global": 0
   },
-  "retrieved_at": "2026-10-07T22:12:59.412881+00:00",
+  "retrieved_at": "2026-10-07T22:15:16.966367+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
