@@ -2,7 +2,7 @@
   "as_of": "2026-10-07",
   "composite": null,
   "regime": "CALIBRATION",
-  "conclusion": "Collecte initiale en cours. Le score sera activé uniquement après validation des séries officielles et de leur fraîcheur.",
+  "conclusion": "Deux sources officielles sont désormais validées (AMMC et BAM). Le score reste volontairement désactivé jusqu'au raccordement du marché et à la normalisation de l'historique.",
   "scores": {
     "liquidity": null,
     "market_flow": null,
@@ -13,19 +13,38 @@
       "name": "AMMC",
       "dataset": "Statistiques hebdomadaires OPCVM",
       "reference_date": "25/09/2026",
-      "status": "Officiel · disponible"
+      "status": "CONNECTÉ · publication officielle identifiée",
+      "freshness": "hebdomadaire",
+      "official_page": "https://www.ammc.ma/fr/donnees-statistiques"
     },
     {
       "name": "Bank Al-Maghrib",
-      "dataset": "Taux, marché monétaire, monnaie et crédit",
-      "reference_date": "À connecter",
-      "status": "Collecteur V1 à valider"
+      "dataset": "Taux directeur",
+      "reference_date": "2026",
+      "status": "CONNECTÉ · 2,25 % · série/historique à normaliser",
+      "freshness": "Conseil BAM",
+      "official_page": "https://www.bkam.ma/"
+    },
+    {
+      "name": "Bank Al-Maghrib",
+      "dataset": "Statistiques monétaires / marché monétaire",
+      "reference_date": "À normaliser",
+      "status": "SOURCE VALIDÉE · collecteur à finaliser",
+      "freshness": "mensuelle / quotidienne",
+      "official_page": "https://www.bkam.ma/Statistiques"
     },
     {
       "name": "Bourse de Casablanca",
       "dataset": "MASI, volumes, secteurs et valeurs",
       "reference_date": "À connecter",
-      "status": "Collecteur V1 à valider"
+      "status": "EN COURS · aucune valeur estimée",
+      "freshness": "quotidienne",
+      "official_page": "https://www.casablanca-bourse.com/"
     }
-  ]
+  ],
+  "data_policy": {
+    "missing": "null",
+    "estimated_values": false,
+    "score_activation": "after source validation and sufficient history"
+  }
 }
