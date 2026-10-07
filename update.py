@@ -10,7 +10,7 @@ def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def pct(a,b): return None if b in (None,0) or a is None else (a/b-1)*100
 
 def gap_days(a,b): return (date.fromisoformat(b)-date.fromisoformat(a)).days
-def latest_contiguous(rows,max_gap=4):
+def latest_contiguous(rows,max_gap=10):
     if not rows:return []
     start=len(rows)-1
     while start>0 and gap_days(rows[start-1]["date"],rows[start]["date"])<=max_gap:start-=1
@@ -48,7 +48,7 @@ def regime(score):
     if score>=-59:return "RISK-OFF"
     return "STRONG RISK-OFF"
 
-def history_quality(rows,max_gap=4):
+def history_quality(rows,max_gap=10):
     if not rows:return {"sessions":0,"blocks":0,"first_date":None,"last_date":None,"largest_gap_days":None}
     gaps=[gap_days(rows[i-1]["date"],rows[i]["date"]) for i in range(1,len(rows))]
     return {"sessions":len(rows),"blocks":1+sum(g>max_gap for g in gaps),"first_date":rows[0]["date"],"last_date":rows[-1]["date"],
