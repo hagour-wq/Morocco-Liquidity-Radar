@@ -17,6 +17,9 @@ jobs:
       - name: Collect Casablanca snapshot
         continue-on-error: true
         run: python collect_market.py
+      - name: Collect BAM and AMMC liquidity
+        continue-on-error: true
+        run: python collect_liquidity.py
       - name: Recalculate dashboard
         run: python update.py
       - name: Run diagnostic backtest
