@@ -152,5 +152,44 @@
         "volume_mad": 20330000
       }
     ]
+  },
+  "liquidity_detail": {
+    "score": null,
+    "coverage": 0,
+    "confidence": "calibration",
+    "reference_date": "2026-09-25",
+    "components": {
+      "opcvm": {
+        "status": "official_source_connected",
+        "weight": 40,
+        "reference_date": "2026-09-25",
+        "source": "AMMC",
+        "note": "Fichier hebdomadaire officiel identifié. Agrégats par classe à extraire avant scoring."
+      },
+      "bank_liquidity": {
+        "status": "pending_current_series",
+        "weight": 30,
+        "reference_date": null,
+        "source": "Bank Al-Maghrib"
+      },
+      "money_market": {
+        "status": "pending_current_series",
+        "weight": 20,
+        "reference_date": null,
+        "source": "Bank Al-Maghrib"
+      },
+      "policy_rate": {
+        "status": "not_scored_until_2026_verified",
+        "weight": 10,
+        "reference_date": null,
+        "source": "Bank Al-Maghrib"
+      }
+    },
+    "rule": "Score calculé uniquement avec des valeurs quantitatives vérifiées; aucune valeur manquante n'est estimée."
+  },
+  "money_flow": {
+    "money_market": "En attente · série BAM",
+    "bonds": "En calibration · OPCVM AMMC",
+    "equities": "En calibration · OPCVM AMMC + Market Flow"
   }
 }
