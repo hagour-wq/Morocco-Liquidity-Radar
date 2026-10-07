@@ -61,9 +61,21 @@
   "note": "null means unavailable. verified must remain false until the official value and reference date are validated.",
   "discovery": {
     "ammc": {
-      "count": 0,
-      "candidates": [],
-      "status": "NO_CANDIDATE"
+      "count": 11,
+      "candidates": [
+        "https://www.ammc.ma/fr/espace-epargnants/opcvm",
+        "https://www.ammc.ma/fr/espace-epargnants/reseaux-de-commercialisation-des-opcvm",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2018-09-2026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-11092026.xlsx",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2004-09-2026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_28082026.xlsx",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_24082026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_17082026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-07082026.xlsx",
+        "https://www.ammc.ma/fr/actualites/la-liste-des-autorisations-accordees-aux-opcvm-au-titre-du-mois-de-septembre-2026"
+      ],
+      "status": "FOUND"
     },
     "bam": {
       "count": 0,
@@ -76,7 +88,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-07T21:57:21.555910+00:00",
+  "collector_checked_at": "2026-10-07T22:00:06.139800+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
@@ -90,5 +102,17 @@
     ],
     "known_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "rule": "Direct files/endpoints must pass HTTP and file-signature/schema validation before parsing or scoring."
+  },
+  "endpoint_probes": {
+    "ammc_statistics_page": {
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "magic": "3c21444f43545950"
+    },
+    "bam_money_market_page": {
+      "ok": false,
+      "error": "HTTPError"
+    }
   }
 }
