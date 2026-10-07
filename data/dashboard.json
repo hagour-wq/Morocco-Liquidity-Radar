@@ -20,8 +20,8 @@
     {
       "name": "Bank Al-Maghrib",
       "dataset": "Taux directeur",
-      "reference_date": null,
-      "status": "SOURCE OFFICIELLE · valeur courante non activée tant que non vérifiée",
+      "reference_date": "22/09/2026",
+      "status": "VÉRIFIÉ · 2,25 % · maintenu",
       "freshness": "Conseil BAM",
       "official_page": "https://www.bkam.ma/"
     },
@@ -188,13 +188,14 @@
         "method": "Écart taux monétaire vs taux directeur et dynamique court terme"
       },
       "policy_rate": {
-        "status": "not_scored_until_2026_verified",
+        "status": "verified",
         "weight": 10,
-        "reference_date": null,
+        "reference_date": "2026-09-22",
         "source": "Bank Al-Maghrib",
-        "score": null,
-        "verified": false,
-        "method": "Orientation des décisions BAM, sans confondre niveau et variation"
+        "score": 0,
+        "verified": true,
+        "method": "Orientation des décisions BAM, sans confondre niveau et variation",
+        "note": "Taux directeur maintenu à 2,25 %. Impulsion de politique monétaire notée neutre (0), sans interpréter le niveau absolu comme un assouplissement supplémentaire."
       }
     },
     "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément."
