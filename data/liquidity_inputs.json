@@ -76,7 +76,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-07T22:08:41.128127+00:00",
+  "collector_checked_at": "2026-10-07T22:10:31.085153+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
@@ -1112,5 +1112,141 @@
     "discovered": 0,
     "cached": 8,
     "usable_candidates": 8
+  },
+  "opcvm_flow_estimate": {
+    "current": {
+      "nav": {
+        "Actions": {
+          "amount": 73699012125.9508,
+          "weekly_pct": 0.742606295417521
+        },
+        "Diversifiés": {
+          "amount": 109426155691.743,
+          "weekly_pct": 0.426128106173605
+        },
+        "Monétaire": {
+          "amount": 141660696929.187,
+          "weekly_pct": -4.70470230412205
+        },
+        "Obligations CT": {
+          "amount": 126202891361.912,
+          "weekly_pct": -9.90287774865291
+        },
+        "Obligations MLT": {
+          "amount": 354313312813.235,
+          "weekly_pct": 0.363886794274655
+        },
+        "Contractuel": {
+          "amount": 14888466693.09,
+          "weekly_pct": -4.86082384349793
+        }
+      },
+      "performance": {
+        "Actions": {
+          "index": 966.9759374515293,
+          "weekly_pct": 1.2671710223050638
+        },
+        "Diversifiés": {
+          "index": 679.2117653370315,
+          "weekly_pct": 0.6853566734128491
+        },
+        "Monétaire": {
+          "index": 179.73507842043102,
+          "weekly_pct": 0.030106577455549573
+        },
+        "Obligations CT": {
+          "index": 194.2444768769904,
+          "weekly_pct": 0.048629795995132286
+        },
+        "Obligations MLT": {
+          "index": 240.79458117944807,
+          "weekly_pct": 0.3497839795974231
+        }
+      }
+    },
+    "previous": {
+      "nav": {
+        "Actions": {
+          "amount": 73155752899.4593,
+          "weekly_pct": -6.01481081596537
+        },
+        "Diversifiés": {
+          "amount": 108961838672.157,
+          "weekly_pct": -3.13841167649234
+        },
+        "Monétaire": {
+          "amount": 148654446079.048,
+          "weekly_pct": -0.110944473189136
+        },
+        "Obligations CT": {
+          "amount": 140074275635.396,
+          "weekly_pct": -1.65435783731779
+        },
+        "Obligations MLT": {
+          "amount": 353028688037.466,
+          "weekly_pct": -0.988995700086688
+        },
+        "Contractuel": {
+          "amount": 15649144016.76,
+          "weekly_pct": 21.1326937661912
+        }
+      },
+      "performance": {
+        "Actions": {
+          "index": 954.8760251617413,
+          "weekly_pct": -5.436344114007622
+        },
+        "Diversifiés": {
+          "index": 674.5884285240709,
+          "weekly_pct": -2.9824879194572738
+        },
+        "Monétaire": {
+          "index": 179.68098262622377,
+          "weekly_pct": 0.04199224158307009
+        },
+        "Obligations CT": {
+          "index": 194.1500620978678,
+          "weekly_pct": -0.009163962762055805
+        },
+        "Obligations MLT": {
+          "index": 239.95525613528488,
+          "weekly_pct": -0.9726315401549646
+        }
+      }
+    },
+    "flows": {
+      "Actions": {
+        "estimated_flow_mad": -383749275.4,
+        "estimated_flow_pct_opening_nav": -0.5246,
+        "method": "A1 - A0*(1 + category_performance)",
+        "estimated": true
+      },
+      "Diversifiés": {
+        "estimated_flow_mad": -282460213.23,
+        "estimated_flow_pct_opening_nav": -0.2592,
+        "method": "A1 - A0*(1 + category_performance)",
+        "estimated": true
+      },
+      "Monétaire": {
+        "estimated_flow_mad": -7038503915.81,
+        "estimated_flow_pct_opening_nav": -4.7348,
+        "method": "A1 - A0*(1 + category_performance)",
+        "estimated": true
+      },
+      "Obligations CT": {
+        "estimated_flow_mad": -13939502107.97,
+        "estimated_flow_pct_opening_nav": -9.9515,
+        "method": "A1 - A0*(1 + category_performance)",
+        "estimated": true
+      },
+      "Obligations MLT": {
+        "estimated_flow_mad": 49786981.63,
+        "estimated_flow_pct_opening_nav": 0.0141,
+        "method": "A1 - A0*(1 + category_performance)",
+        "estimated": true
+      }
+    },
+    "quality": "estimated_from_official_AMMC_NAV_and_performance",
+    "warning": "Not official subscriptions/redemptions; valuation-adjusted estimate."
   }
 }
