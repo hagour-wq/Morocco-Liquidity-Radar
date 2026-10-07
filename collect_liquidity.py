@@ -8,6 +8,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
+from io import BytesIO
 
 P=Path("data/liquidity_inputs.json")
 
@@ -53,6 +54,42 @@ def discover_links(page_url, patterns):
             if href.startswith("http"): out.append(href)
     return list(dict.fromkeys(out))
 
+
+def inspect_excel(url):
+    """Download an official AMMC workbook and expose schema only; no scoring."""
+    try:
+        req=Request(url,headers={"User-Agent":"Mozilla/5.0 EquityBourse/1.0"})
+        with urlopen(req,timeout=30) as r: raw=r.read()
+        info={"url":url,"bytes":len(raw)}
+        if url.lower().endswith(".xlsx"):
+            import openpyxl
+            wb=openpyxl.load_workbook(BytesIO(raw),read_only=True,data_only=True)
+            info["sheets"]=wb.sheetnames
+            samples={}
+            for ws in wb.worksheets[:5]:
+                rows=[]
+                for row in ws.iter_rows(min_row=1,max_row=15,values_only=True):
+                    vals=[str(v)[:120] if v is not None else None for v in row[:20]]
+                    if any(v is not None for v in vals): rows.append(vals)
+                samples[ws.title]=rows[:10]
+            info["samples"]=samples
+        else:
+            import xlrd
+            book=xlrd.open_workbook(file_contents=raw)
+            info["sheets"]=book.sheet_names()
+            samples={}
+            for sh in book.sheets()[:5]:
+                rows=[]
+                for i in range(min(sh.nrows,15)):
+                    vals=[str(sh.cell_value(i,j))[:120] for j in range(min(sh.ncols,20))]
+                    if any(v.strip() for v in vals): rows.append(vals)
+                samples[sh.name]=rows[:10]
+            info["samples"]=samples
+        info["status"]="SCHEMA_READ"
+        return info
+    except Exception as e:
+        return {"url":url,"status":"ERROR","error":type(e).__name__}
+
 def main():
     d=load()
     # Discovery layer: official pages only. Parsing/scoring remains gated.
@@ -61,10 +98,12 @@ def main():
       "bam":discover_links("https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",[".xlsx",".xls",".csv","marche","monetaire"])
     }
     d["discovery"]={k:{"count":len(v),"candidates":v[:20],"status":"FOUND" if v else "NO_CANDIDATE"} for k,v in candidates.items()}
+    ammc_files=[u for u in candidates.get("ammc",[]) if u.lower().split("?")[0].endswith((".xls",".xlsx"))]
+    d["ammc_workbook_inspection"]=[inspect_excel(u) for u in ammc_files[:2]]
     known=d.get("data_endpoints",{})
     d["endpoint_probes"]={name:probe(url) for name,url in known.items() if isinstance(url,str) and url.startswith("http")}
     d["collector_status"]={
-      "ammc":"discovery_only_until_parser_validates_schema",
+      "ammc":"schema_inspection_active_no_scoring_until_flow_fields_validated",
       "bam":"discovery_only_until_parser_validates_schema",
       "safety":"preserve_last_verified_value_on_failure"
     }
