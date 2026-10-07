@@ -59,5 +59,98 @@
     ],
     "confidence": "medium",
     "note": "Volume historique insuffisant pour intégrer la composante volume au score."
+  },
+  "rotation": {
+    "reference_date": "2026-10-07",
+    "quality": "secondary_snapshot",
+    "sectors": [
+      {
+        "name": "Industrials",
+        "change_pct": 1.19
+      },
+      {
+        "name": "Sociétés de financement et autres activités financières",
+        "change_pct": 1.14
+      },
+      {
+        "name": "Télécommunications",
+        "change_pct": 1.12
+      },
+      {
+        "name": "Basic Materials",
+        "change_pct": -0.49
+      }
+    ],
+    "leaders": [
+      {
+        "ticker": "SNP",
+        "name": "SNEP",
+        "change_pct": 5.21
+      },
+      {
+        "ticker": "DHO",
+        "name": "Delta Holding",
+        "change_pct": 5.08
+      },
+      {
+        "ticker": "FBR",
+        "name": "Fenie Brossette",
+        "change_pct": 4.24
+      },
+      {
+        "ticker": "BCI",
+        "name": "BMCI",
+        "change_pct": 4.06
+      },
+      {
+        "ticker": "BCP",
+        "name": "BCP",
+        "change_pct": 3.74
+      }
+    ],
+    "laggards": [
+      {
+        "ticker": "ZDJ",
+        "name": "Zellidja",
+        "change_pct": -9.96
+      },
+      {
+        "ticker": "SMI",
+        "name": "SMI",
+        "change_pct": -3.88
+      },
+      {
+        "ticker": "LES",
+        "name": "Lesieur Cristal",
+        "change_pct": -3.33
+      },
+      {
+        "ticker": "ADH",
+        "name": "Addoha",
+        "change_pct": -3.17
+      },
+      {
+        "ticker": "LHM",
+        "name": "LafargeHolcim Maroc",
+        "change_pct": -2.7
+      }
+    ],
+    "active": [
+      {
+        "ticker": "ATW",
+        "name": "Attijariwafa bank",
+        "volume_mad": 61130000
+      },
+      {
+        "ticker": "MNG",
+        "name": "Managem",
+        "volume_mad": 31910000
+      },
+      {
+        "ticker": "MSA",
+        "name": "Marsa Maroc",
+        "volume_mad": 20330000
+      }
+    ]
   }
 }
