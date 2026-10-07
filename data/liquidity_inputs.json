@@ -6,24 +6,28 @@
       "weight": 40,
       "score": null,
       "verified": false,
-      "reference_date": null,
+      "reference_date": "2026-09-25",
       "raw": {
         "equity_flow": null,
         "bond_flow": null,
         "money_market_flow": null
       },
-      "source": "AMMC"
+      "source": "AMMC",
+      "source_url": "https://www.ammc.ma/fr/donnees-statistiques",
+      "note": "Publication hebdomadaire officielle identifiée. Ne pas assimiler variation d'actif net à une souscription nette sans neutraliser l'effet de valorisation."
     },
     "bank_liquidity": {
       "weight": 30,
       "score": null,
       "verified": false,
-      "reference_date": null,
+      "reference_date": "2026-09-30",
       "raw": {
         "bank_liquidity": null,
         "bam_injections": null
       },
-      "source": "Bank Al-Maghrib"
+      "source": "Bank Al-Maghrib",
+      "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
+      "note": "Source officielle identifiée mais composante non activée: le niveau/variation des injections doit être extrait de façon comparable à la période précédente avant scoring."
     },
     "money_market": {
       "weight": 20,
