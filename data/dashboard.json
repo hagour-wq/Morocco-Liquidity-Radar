@@ -271,7 +271,7 @@
     "market_flow": 24.5,
     "global": 0
   },
-  "retrieved_at": "2026-10-07T22:03:55.035007+00:00",
+  "retrieved_at": "2026-10-07T22:05:09.245971+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
