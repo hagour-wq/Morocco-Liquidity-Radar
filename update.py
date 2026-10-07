@@ -42,6 +42,11 @@ def market_flow_score(rows):
     return score,detail
 
 
+def age_days(ref,asof):
+    if not ref or not asof:return None
+    try:return (date.fromisoformat(asof)-date.fromisoformat(ref)).days
+    except:return None
+
 def liquidity_score(d):
     """Coverage-aware liquidity engine. A component is scored only when a verified numeric score exists."""
     ld=d.get("liquidity_detail",{})
@@ -85,6 +90,9 @@ def main():
     rows=json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else []
     score,detail=market_flow_score(rows); d["scores"]["market_flow"]=score
     lscore,ldetail=liquidity_score(d); d["scores"]["liquidity"]=lscore
+    market_asof=rows[-1]["date"] if rows else d.get("as_of")
+    for _,x in d.get("liquidity_detail",{}).get("components",{}).items():
+        x["age_days"]=age_days(x.get("reference_date"),market_asof)
     d.setdefault("liquidity_detail",{})["score"]=lscore
     d["liquidity_detail"]["coverage"]=ldetail["coverage"]
     d["liquidity_detail"]["confidence"]=ldetail["confidence"]
