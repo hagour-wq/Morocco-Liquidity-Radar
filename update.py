@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 from pathlib import Path
 from statistics import mean
 
@@ -9,7 +9,15 @@ HIST=Path("data/market_history.json")
 def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def pct(a,b): return None if b in (None,0) or a is None else (a/b-1)*100
 
+def gap_days(a,b): return (date.fromisoformat(b)-date.fromisoformat(a)).days
+def latest_contiguous(rows,max_gap=4):
+    if not rows:return []
+    start=len(rows)-1
+    while start>0 and gap_days(rows[start-1]["date"],rows[start]["date"])<=max_gap:start-=1
+    return rows[start:]
+
 def market_flow_score(rows):
+    rows=latest_contiguous(rows)
     if len(rows)<6: return None,{"reason":"minimum_6_sessions","confidence":"low","coverage":0}
     r,prev=rows[-1],rows[-2]
     if r.get("masi") is None or prev.get("masi") is None:
@@ -64,7 +72,7 @@ def main():
           "drawdown_from_sample_peak_pct":round(pct(latest,peak),2),
           "sample_peak":peak,
           "sample_low":min(vals),
-          "sessions":len(rows)
+          "sessions":len(latest_contiguous(rows))
         }
     if score is None:
         d["conclusion"]="Market Flow en calibration : historique MASI insuffisant."
