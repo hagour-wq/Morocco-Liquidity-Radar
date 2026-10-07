@@ -98,8 +98,11 @@ def main():
       "bam":discover_links("https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",[".xlsx",".xls",".csv","marche","monetaire"])
     }
     d["discovery"]={k:{"count":len(v),"candidates":v[:20],"status":"FOUND" if v else "NO_CANDIDATE"} for k,v in candidates.items()}
-    ammc_files=[u for u in candidates.get("ammc",[]) if u.lower().split("?")[0].endswith((".xls",".xlsx"))]
+    discovered_files=[u for u in candidates.get("ammc",[]) if u.lower().split("?")[0].endswith((".xls",".xlsx"))]
+    cached_files=d.get("official_file_cache",{}).get("ammc_opcvm",[])
+    ammc_files=list(dict.fromkeys(discovered_files+cached_files))
     d["ammc_workbook_inspection"]=[inspect_excel(u) for u in ammc_files[:2]]
+    d["ammc_file_pool"]={"discovered":len(discovered_files),"cached":len(cached_files),"usable_candidates":len(ammc_files)}
     known=d.get("data_endpoints",{})
     d["endpoint_probes"]={name:probe(url) for name,url in known.items() if isinstance(url,str) and url.startswith("http")}
     d["collector_status"]={
