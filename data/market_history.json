@@ -1,1 +1,254 @@
-[]
+[
+  {
+    "date": "2026-08-31",
+    "masi": 18652.72,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-01",
+    "masi": 18581.56,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-02",
+    "masi": 18517.79,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-03",
+    "masi": 18710.31,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-04",
+    "masi": 18792.25,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-07",
+    "masi": 18705.44,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-08",
+    "masi": 18811.95,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-09",
+    "masi": 18836.75,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-10",
+    "masi": 18785.4,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-11",
+    "masi": 18615.24,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-14",
+    "masi": 18400.02,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-15",
+    "masi": 18190.19,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-16",
+    "masi": 17984,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-17",
+    "masi": 17953.1,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-18",
+    "masi": 17592.46,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-21",
+    "masi": 17991.02,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-22",
+    "masi": 18076.72,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-23",
+    "masi": 18040.73,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-24",
+    "masi": 17869.06,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-25",
+    "masi": 17818.09,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-28",
+    "masi": 17648.89,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-29",
+    "masi": 17754.91,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-09-30",
+    "masi": 17733.06,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-10-01",
+    "masi": 17579.17,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-10-02",
+    "masi": 17303.69,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-10-05",
+    "masi": 17159.5,
+    "volume_mad": null,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_market_data"
+  },
+  {
+    "date": "2026-10-06",
+    "masi": 16892.55,
+    "volume_mad": 349550000,
+    "breadth": null,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_masi_news_volume"
+  },
+  {
+    "date": "2026-10-07",
+    "masi": 16990.77,
+    "volume_mad": 243450000,
+    "breadth": 0.5223880597014925,
+    "source": "Investing.com MASI historical",
+    "source_url": "https://www.investing.com/indices/masi-historical-data",
+    "quality": "secondary_masi_news_volume_breadth"
+  }
+]
