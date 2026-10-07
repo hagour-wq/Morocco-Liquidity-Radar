@@ -8,8 +8,8 @@ from urllib.error import HTTPError,URLError
 from pypdf import PdfReader
 
 OUT=Path("data/market_history.json")
-MEDIA="https://media.casablanca-bourse.com/sites/default/files/es-auto-upload/fr/BCFR_{ymd}.pdf"
-UA="Morocco-Liquidity-Radar/1.2"
+MEDIA="https://media.casablanca-bourse.com/sites/default/files/es-auto-upload/fr/resume_seance_{ymd}.pdf"
+UA="Morocco-Liquidity-Radar/1.3"
 TARGET=40
 LOOKBACK_DAYS=100
 WORKERS=8
