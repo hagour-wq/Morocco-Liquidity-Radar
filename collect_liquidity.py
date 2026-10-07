@@ -153,11 +153,16 @@ def main():
     discovered_files=[u for u in candidates.get("ammc",[]) if u.lower().split("?")[0].endswith((".xls",".xlsx"))]
     cached_files=d.get("official_file_cache",{}).get("ammc_opcvm",[])
     ammc_files=list(dict.fromkeys(discovered_files+cached_files))
-    d["ammc_workbook_inspection"]=[inspect_excel(u) for u in ammc_files[:2]]
+    d["ammc_workbook_inspection"]=[inspect_excel(u) for u in ammc_files]
     good=[x for x in d["ammc_workbook_inspection"] if x.get("status")=="SCHEMA_READ"]
     if len(good)>=2:
         cur=parse_opcvm_snapshot(good[0]); prev=parse_opcvm_snapshot(good[1])
         d["opcvm_flow_estimate"]={"current":cur,"previous":prev,"flows":adjusted_flow(cur,prev),"quality":"estimated_from_official_AMMC_NAV_and_performance","warning":"Not official subscriptions/redemptions; valuation-adjusted estimate."}
+        series=[]
+        for i in range(len(good)-1):
+            a=parse_opcvm_snapshot(good[i]); b=parse_opcvm_snapshot(good[i+1])
+            series.append({"current_url":good[i]["url"],"previous_url":good[i+1]["url"],"flows":adjusted_flow(a,b)})
+        d["opcvm_flow_series"]=series
     d["ammc_file_pool"]={"discovered":len(discovered_files),"cached":len(cached_files),"usable_candidates":len(ammc_files)}
     known=d.get("data_endpoints",{})
     d["endpoint_probes"]={name:probe(url) for name,url in known.items() if isinstance(url,str) and url.startswith("http")}
