@@ -27,6 +27,16 @@ def fetch_text(url):
     with urlopen(req,timeout=25) as r:
         return r.read().decode("utf-8","ignore")
 
+
+def probe(url):
+    try:
+        req=Request(url,headers={"User-Agent":"Mozilla/5.0 EquityBourse/1.0"})
+        with urlopen(req,timeout=20) as r:
+            head=r.read(8)
+            return {"ok":True,"status":getattr(r,"status",200),"content_type":r.headers.get("Content-Type"),"magic":head.hex()}
+    except Exception as e:
+        return {"ok":False,"error":type(e).__name__}
+
 def discover_links(page_url, patterns):
     """Return candidate official files/endpoints without trusting their contents."""
     try: html=fetch_text(page_url)
@@ -51,6 +61,8 @@ def main():
       "bam":discover_links("https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",[".xlsx",".xls",".csv","marche","monetaire"])
     }
     d["discovery"]={k:{"count":len(v),"candidates":v[:20],"status":"FOUND" if v else "NO_CANDIDATE"} for k,v in candidates.items()}
+    known=d.get("data_endpoints",{})
+    d["endpoint_probes"]={name:probe(url) for name,url in known.items() if isinstance(url,str) and url.startswith("http")}
     d["collector_status"]={
       "ammc":"discovery_only_until_parser_validates_schema",
       "bam":"discovery_only_until_parser_validates_schema",
