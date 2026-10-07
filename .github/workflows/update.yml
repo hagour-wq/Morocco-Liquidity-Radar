@@ -14,15 +14,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Collect official Casablanca snapshot
+      - name: Collect Casablanca snapshot
+        continue-on-error: true
         run: python collect_market.py
       - name: Recalculate dashboard
         run: python update.py
-          python backtest.py
-      - name: Commit refreshed official data
+      - name: Run diagnostic backtest
+        run: python backtest.py
+      - name: Commit refreshed data
         run: |
           git config user.name "mlr-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet || git commit -m "data: refresh official market observations"
+          git diff --cached --quiet || git commit -m "data: refresh market radar"
           git push
