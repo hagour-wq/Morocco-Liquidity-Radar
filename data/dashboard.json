@@ -226,5 +226,11 @@
       "taux monétaires BAM vérifiés",
       "taux directeur BAM courant vérifié"
     ]
+  },
+  "methodology": {
+    "composite": "50% Liquidity + 35% Market Flow + 15% Global Risk, multiplied by each pillar's verified coverage before normalization.",
+    "activation": "Regime remains CALIBRATION until effective composite coverage reaches 85%.",
+    "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
+    "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   }
 }
