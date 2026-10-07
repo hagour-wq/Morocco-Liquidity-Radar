@@ -61,9 +61,21 @@
   "note": "null means unavailable. verified must remain false until the official value and reference date are validated.",
   "discovery": {
     "ammc": {
-      "count": 0,
-      "candidates": [],
-      "status": "NO_CANDIDATE"
+      "count": 11,
+      "candidates": [
+        "https://www.ammc.ma/fr/espace-epargnants/opcvm",
+        "https://www.ammc.ma/fr/espace-epargnants/reseaux-de-commercialisation-des-opcvm",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2018-09-2026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-11092026.xlsx",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2004-09-2026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_28082026.xlsx",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_24082026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_17082026.xls",
+        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-07082026.xlsx",
+        "https://www.ammc.ma/fr/actualites/la-liste-des-autorisations-accordees-aux-opcvm-au-titre-du-mois-de-septembre-2026"
+      ],
+      "status": "FOUND"
     },
     "bam": {
       "count": 0,
@@ -76,7 +88,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-07T22:01:44.120840+00:00",
+  "collector_checked_at": "2026-10-07T22:03:54.963212+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
@@ -93,15 +105,34 @@
   },
   "endpoint_probes": {
     "ammc_statistics_page": {
-      "ok": false,
-      "error": "URLError"
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "magic": "3c21444f43545950"
     },
     "bam_money_market_page": {
       "ok": false,
       "error": "HTTPError"
     }
   },
-  "ammc_workbook_inspection": [],
+  "ammc_workbook_inspection": [
+    {
+      "url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
+      "bytes": 55394,
+      "sheets": [
+        "Français "
+      ],
+      "samples": {
+        "Français ": []
+      },
+      "status": "SCHEMA_READ"
+    },
+    {
+      "url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2018-09-2026.xls",
+      "status": "ERROR",
+      "error": "RemoteDisconnected"
+    }
+  ],
   "official_file_cache": {
     "ammc_opcvm": [
       "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
@@ -114,5 +145,10 @@
       "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-07082026.xlsx"
     ],
     "policy": "official URLs previously discovered by GitHub runner; retain across transient discovery failures"
+  },
+  "ammc_file_pool": {
+    "discovered": 8,
+    "cached": 8,
+    "usable_candidates": 8
   }
 }
