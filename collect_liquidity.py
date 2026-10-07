@@ -68,10 +68,14 @@ def inspect_excel(url):
             samples={}
             for ws in wb.worksheets[:5]:
                 rows=[]
-                for row in ws.iter_rows(min_row=1,max_row=15,values_only=True):
-                    vals=[str(v)[:120] if v is not None else None for v in row[:20]]
-                    if any(v is not None for v in vals): rows.append(vals)
-                samples[ws.title]=rows[:10]
+                first_nonempty=None
+                for idx,row in enumerate(ws.iter_rows(min_row=1,max_row=250,values_only=True),start=1):
+                    vals=[str(v)[:120] if v is not None else None for v in row[:30]]
+                    if any(v is not None for v in vals):
+                        if first_nonempty is None: first_nonempty=idx
+                        rows.append({"row":idx,"values":vals})
+                        if len(rows)>=30: break
+                samples[ws.title]={"first_nonempty_row":first_nonempty,"rows":rows}
             info["samples"]=samples
         else:
             import xlrd
@@ -80,10 +84,14 @@ def inspect_excel(url):
             samples={}
             for sh in book.sheets()[:5]:
                 rows=[]
-                for i in range(min(sh.nrows,15)):
-                    vals=[str(sh.cell_value(i,j))[:120] for j in range(min(sh.ncols,20))]
-                    if any(v.strip() for v in vals): rows.append(vals)
-                samples[sh.name]=rows[:10]
+                first_nonempty=None
+                for i in range(min(sh.nrows,250)):
+                    vals=[str(sh.cell_value(i,j))[:120] for j in range(min(sh.ncols,30))]
+                    if any(v.strip() for v in vals):
+                        if first_nonempty is None: first_nonempty=i+1
+                        rows.append({"row":i+1,"values":vals})
+                        if len(rows)>=30: break
+                samples[sh.name]={"first_nonempty_row":first_nonempty,"rows":rows}
             info["samples"]=samples
         info["status"]="SCHEMA_READ"
         return info
