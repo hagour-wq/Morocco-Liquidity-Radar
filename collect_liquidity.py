@@ -50,7 +50,12 @@ def main():
       "ammc":discover_links("https://www.ammc.ma/fr/donnees-statistiques",["opcvm",".xlsx",".xls",".csv"]),
       "bam":discover_links("https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",[".xlsx",".xls",".csv","marche","monetaire"])
     }
-    d["discovery"]={k:{"count":len(v),"candidates":v[:20]} for k,v in candidates.items()}
+    d["discovery"]={k:{"count":len(v),"candidates":v[:20],"status":"FOUND" if v else "NO_CANDIDATE"} for k,v in candidates.items()}
+    d["collector_status"]={
+      "ammc":"discovery_only_until_parser_validates_schema",
+      "bam":"discovery_only_until_parser_validates_schema",
+      "safety":"preserve_last_verified_value_on_failure"
+    }
     # Safety gate: until a parser validates comparable official observations,
     # existing verified values are preserved and unavailable components remain null.
     for name,x in d.get("components",{}).items():
