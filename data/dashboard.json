@@ -28,8 +28,8 @@
     {
       "name": "Bank Al-Maghrib",
       "dataset": "Statistiques monétaires / marché monétaire",
-      "reference_date": "À normaliser",
-      "status": "SOURCE VALIDÉE · collecteur à finaliser",
+      "reference_date": "30/09/2026",
+      "status": "MARCHÉ MONÉTAIRE VÉRIFIÉ · TMP 2,25 % · spread 0 pb",
       "freshness": "mensuelle / quotidienne",
       "official_page": "https://www.bkam.ma/Statistiques"
     },
@@ -179,13 +179,14 @@
         "method": "Variation de la liquidité bancaire et interventions BAM"
       },
       "money_market": {
-        "status": "pending_current_series",
+        "status": "verified",
         "weight": 20,
-        "reference_date": null,
+        "reference_date": "2026-09-30",
         "source": "Bank Al-Maghrib",
-        "score": null,
-        "verified": false,
-        "method": "Écart taux monétaire vs taux directeur et dynamique court terme"
+        "score": 0,
+        "verified": true,
+        "method": "Écart taux monétaire vs taux directeur et dynamique court terme",
+        "note": "Taux interbancaire 2,25 %, soit spread 0 pb vs taux directeur: impulsion neutre."
       },
       "policy_rate": {
         "status": "verified",
