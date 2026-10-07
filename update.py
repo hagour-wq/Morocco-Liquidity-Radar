@@ -45,6 +45,20 @@ def main():
     rows=json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else []
     score,detail=market_flow_score(rows)
     d["scores"]["market_flow"]=score
+    liq=d.get("scores",{}).get("liquidity")
+    glob=d.get("scores",{}).get("global")
+    available=[]
+    if liq is not None: available.append((liq,50))
+    if score is not None: available.append((score,35))
+    if glob is not None: available.append((glob,15))
+    if available:
+        w=sum(x[1] for x in available)
+        d["composite"]=round(sum(x[0]*x[1] for x in available)/w)
+        d["composite_coverage"]=round(w/100,2)
+        d["regime"]="CALIBRATION" if w<85 else ("STRONG RISK-ON" if d["composite"]>=60 else "RISK-ON" if d["composite"]>=20 else "NEUTRAL" if d["composite"]>=-19 else "RISK-OFF" if d["composite"]>=-59 else "STRONG RISK-OFF")
+    else:
+        d["composite"]=None
+        d["composite_coverage"]=0
     d["market_flow_detail"]=detail
     d["retrieved_at"]=datetime.now(timezone.utc).isoformat()
     if score is None:
