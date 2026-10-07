@@ -110,6 +110,38 @@ def inspect_excel(url):
     except Exception as e:
         return {"url":url,"status":"ERROR","error":type(e).__name__}
 
+
+def parse_opcvm_snapshot(info):
+    try:
+        sheet=next(iter(info["samples"].values()))
+        rows=sheet["rows"]
+        nav={}; perf={}
+        mode=None
+        for r in rows:
+            vals=r["values"]; label=str(vals[1]).strip() if len(vals)>1 and vals[1] is not None else ""
+            if label=="Actif net par catégorie OPCVM": mode="nav"; continue
+            if label=="Indices De Performance": mode="perf"; continue
+            if label.startswith("Actif Total Par Catégorie"): mode=None
+            if mode=="nav" and label in ("Actions","Diversifiés","Monétaire","Obligations CT","Obligations MLT","Contractuel"):
+                nav[label]={"amount":float(vals[3]),"weekly_pct":float(vals[5])}
+            if mode=="perf":
+                base=re.sub(r"[12]$","",label)
+                if base in ("Actions","Diversifiés","Monétaire","Obligations CT","Obligations MLT"):
+                    perf[base]={"index":float(vals[2]),"weekly_pct":float(vals[3])}
+        return {"nav":nav,"performance":perf}
+    except Exception as e:
+        return {"error":type(e).__name__}
+
+def adjusted_flow(current, previous):
+    out={}
+    for cat,cur in current.get("nav",{}).items():
+        if cat not in previous.get("nav",{}) or cat not in current.get("performance",{}): continue
+        a1=cur["amount"]; a0=previous["nav"][cat]["amount"]
+        p=current["performance"][cat]["weekly_pct"]/100.0
+        est=a1-a0*(1+p)
+        out[cat]={"estimated_flow_mad":round(est,2),"estimated_flow_pct_opening_nav":round(est/a0*100,4),"method":"A1 - A0*(1 + category_performance)","estimated":True}
+    return out
+
 def main():
     d=load()
     # Discovery layer: official pages only. Parsing/scoring remains gated.
@@ -122,6 +154,10 @@ def main():
     cached_files=d.get("official_file_cache",{}).get("ammc_opcvm",[])
     ammc_files=list(dict.fromkeys(discovered_files+cached_files))
     d["ammc_workbook_inspection"]=[inspect_excel(u) for u in ammc_files[:2]]
+    good=[x for x in d["ammc_workbook_inspection"] if x.get("status")=="SCHEMA_READ"]
+    if len(good)>=2:
+        cur=parse_opcvm_snapshot(good[0]); prev=parse_opcvm_snapshot(good[1])
+        d["opcvm_flow_estimate"]={"current":cur,"previous":prev,"flows":adjusted_flow(cur,prev),"quality":"estimated_from_official_AMMC_NAV_and_performance","warning":"Not official subscriptions/redemptions; valuation-adjusted estimate."}
     d["ammc_file_pool"]={"discovered":len(discovered_files),"cached":len(cached_files),"usable_candidates":len(ammc_files)}
     known=d.get("data_endpoints",{})
     d["endpoint_probes"]={name:probe(url) for name,url in known.items() if isinstance(url,str) and url.startswith("http")}
