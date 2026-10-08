@@ -3,6 +3,7 @@ Historical rows are source-attributed, merged by ticker/date, and fail closed.
 No price is imputed, forward-filled or manufactured.
 """
 import json,os,re,time,ssl,certifi
+from urllib.error import URLError
 from datetime import date,datetime,timezone
 from pathlib import Path
 from urllib.request import Request,urlopen
@@ -37,8 +38,14 @@ def request(offset):
  url=BASE+"?"+urlencode(params)
  req=Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/vnd.api+json","Referer":"https://www.casablanca-bourse.com/fr/market-data/Cours"})
  tls=ssl.create_default_context(cafile=certifi.where())
- with urlopen(req,timeout=18,context=tls) as res:
-  payload=json.loads(res.read(8000000))
+ try:
+  with urlopen(req,timeout=18,context=tls) as res:
+   payload=json.loads(res.read(8000000))
+ except URLError as err:
+  if "CERTIFICATE_VERIFY_FAILED" not in str(err):raise
+  alternative=url.replace("https://www.casablanca-bourse.com/","https://casablanca-bourse.com/",1)
+  with urlopen(Request(alternative,headers={"User-Agent":"Mozilla/5.0","Accept":"application/vnd.api+json"}),timeout=18,context=tls) as res:
+   payload=json.loads(res.read(8000000))
  if not isinstance(payload,dict) or not isinstance(payload.get("data"),list):raise ValueError("Unexpected JSON API schema")
  return payload
 def datevalue(v):
