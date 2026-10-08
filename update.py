@@ -94,7 +94,11 @@ def main():
     if GLOBAL.exists():
         gd=json.loads(GLOBAL.read_text(encoding="utf-8"))
         d["global_detail"]=gd
-        d["scores"]["global"]=gd.get("score") if gd.get("verified") else None
+        dates=[v.get("date") for v in gd.get("components",{}).values() if v.get("verified") and v.get("date")]
+        latest=max(dates) if dates else None
+        fresh=latest is not None and 0<=age_days(latest,datetime.now(timezone.utc).date().isoformat())<=7
+        d["global_detail"]["fresh_for_scoring"]=fresh
+        d["scores"]["global"]=gd.get("score") if gd.get("verified") and fresh else None
     market_asof=rows[-1]["date"] if rows else d.get("as_of")
     for _,x in d.get("liquidity_detail",{}).get("components",{}).items():
         x["age_days"]=age_days(x.get("reference_date"),market_asof)
