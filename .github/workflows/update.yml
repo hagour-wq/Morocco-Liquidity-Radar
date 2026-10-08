@@ -16,6 +16,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -58,6 +59,16 @@ jobs:
       - name: Verify dashboard renders with current data
         continue-on-error: true
         run: node test_dashboard.cjs
+      - name: Preserve collector diagnostics even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: equity-historical-diagnostics
+          path: |
+            data/equity_backfill_diagnostic.json
+            data/equity_fallback_diagnostic.json
+            data/equity_public_history_diagnostic.json
+          if-no-files-found: warn
       - name: Commit refreshed data
         run: |
           git config user.name "mlr-bot"
