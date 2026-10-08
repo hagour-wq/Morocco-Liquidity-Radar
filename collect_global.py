@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from urllib.request import Request,urlopen
 from urllib.error import URLError
+from urllib.parse import urlencode
 from datetime import date
 OUT=Path("data/global_inputs.json")
 SERIES={"us10y":"DGS10","vix":"VIXCLS","dollar":"DTWEXBGS","sp500":"SP500"}
@@ -14,7 +15,11 @@ def get_series(sid):
   with urlopen(req,timeout=12) as r: txt=r.read().decode()
  except (TimeoutError,URLError):
   fallback=f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}&cosd=2026-07-01"
-  with urlopen(Request(fallback,headers={"User-Agent":"Mozilla/5.0"}),timeout=12) as r: txt=r.read().decode()
+  try:
+   with urlopen(Request(fallback,headers={"User-Agent":"Mozilla/5.0"}),timeout=12) as r: txt=r.read().decode()
+  except (TimeoutError,URLError):
+   mirror=f"https://fred.stlouisfed.org/graph/fredgraph.csv?{urlencode({'id':sid,'cosd':'2026-07-01'})}"
+   with urlopen(Request(mirror,headers={"User-Agent":"Mozilla/5.0","Accept":"text/csv"}),timeout=8) as r: txt=r.read().decode()
  rows=[]
  for x in csv.DictReader(StringIO(txt)):
   try: rows.append((x.get("DATE") or x.get("observation_date"),float(x[sid])))
