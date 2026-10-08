@@ -11,8 +11,9 @@ def get_series(sid):
  with urlopen(req,timeout=30) as r: txt=r.read().decode()
  rows=[]
  for x in csv.DictReader(StringIO(txt)):
-  try: rows.append((x["DATE"],float(x[sid])))
+  try: rows.append((x.get("DATE") or x.get("observation_date"),float(x[sid])))
   except: pass
+ if len(rows)<6: raise ValueError("insufficient observations")
  return u,rows[-30:]
 def clamp(x):return max(-100,min(100,x))
 def main():
@@ -28,7 +29,7 @@ def main():
    elif k=="dollar": scores.append(clamp(-ch*8))
    elif k=="sp500": scores.append(clamp(ch*8))
   except Exception as e:d["components"][k]={"series":sid,"verified":False,"error":type(e).__name__}
- if len(scores)>=3:
+ if len(scores)==len(SERIES):
   d["score"]=round(sum(scores)/len(scores)); d["verified"]=True
   d["method"]="Equal-weight risk impulse: falling VIX/yields/dollar and rising S&P are positive; 5-observation changes, clamped."
  OUT.write_text(json.dumps(d,indent=2)+"\n")
