@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T20:24:58.174155+00:00",
+  "checked_at": "2026-10-08T21:02:30.760826+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -30,9 +30,9 @@
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
       "date": "2026-10-08",
-      "value": 102.08599853515625,
-      "change_5obs": -0.014,
-      "score": 0.1,
+      "value": 102.10600280761719,
+      "change_5obs": 0.006,
+      "score": -0.0,
       "verified": true,
       "failed_sources": []
     },
