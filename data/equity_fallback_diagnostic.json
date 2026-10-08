@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-08T20:25:00.226659+00:00",
+  "provider": "Yahoo Finance chart v8",
+  "accepted": [],
+  "rejected": [
+    {
+      "ticker": "SNP",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "DHO",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "FBR",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "BCI",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "BCP",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "ZDJ",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "SMI",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "LES",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "ADH",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "LHM",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "ATW",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "MNG",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "ticker": "MSA",
+      "reason": "HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "NO_VALIDATED_EQUITY_HISTORY",
+  "eligible_companies": 0
+}
