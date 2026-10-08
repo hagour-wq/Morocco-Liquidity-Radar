@@ -41,8 +41,8 @@ jobs:
       - name: Backfill historical individual equity prices and volumes
         continue-on-error: true
         env:
-          EQUITY_BACKFILL_START: "2026-06-01"
-          EQUITY_BACKFILL_PAGES: "35"
+          EQUITY_BACKFILL_START: "2025-01-01"
+          EQUITY_BACKFILL_PAGES: "70"
         run: python backfill_equities.py
       - name: Build equity fundamental and technical rankings
         run: python rank_equities.py
