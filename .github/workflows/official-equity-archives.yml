@@ -1,0 +1,39 @@
+name: Backfill official equity archives
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "collect_official_equity_archives.py"
+      - ".github/workflows/official-equity-archives.yml"
+  schedule:
+    - cron: "40 18 * * 1-5"
+permissions:
+  contents: write
+jobs:
+  inspect-official-archives:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PDF reader and SSL bundle
+        run: pip install pypdf==6.1.1 certifi==2026.7.22
+      - name: Collect official monthly equity archive evidence
+        run: python collect_official_equity_archives.py
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-casablanca-equity-pdf-audit
+          path: data/official_equity_archive.json
+          if-no-files-found: warn
+      - name: Commit archive audit
+        run: |
+          git config user.name "mlr-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/official_equity_archive.json
+          git diff --cached --quiet || git commit -m "data: audit official equity monthly archives"
+          git push
