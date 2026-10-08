@@ -14,6 +14,9 @@ def parse_csv(raw,value_fields):
  rows=[]
  for x in csv.DictReader(StringIO(raw)):
   dt=x.get("DATE") or x.get("observation_date") or x.get("Date")
+  if dt and "/" in dt:
+   try:dt=datetime.strptime(dt,"%m/%d/%Y").date().isoformat()
+   except ValueError:continue
   for field in value_fields:
    try:
     val=float(x[field])
