@@ -1,116 +1,8 @@
 {
-  "checked_at": "2026-10-08T18:15:47.762059+00:00",
-  "verified": true,
-  "candidates": [
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_353.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/Rapport_Budget_Genre_Simplifie_Fr_2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC352_24Juin2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_351.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_350.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_349.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/conjoncture 348_26février2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/Note-conjoncture347.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/nc346.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/Rap_Act_2024_15Octobre2025.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/nc_345.pdf",
-      "format": "link"
-    }
-  ],
-  "pdf_inspections": [
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-      "pages": 48,
-      "bytes": 11668398,
-      "matches": [
-        {
-          "page": 40,
-          "keyword": "injections de liquidité",
-          "context": "s banques s’est accru comparativement au mois précédent, se situant en moyenne hebdomadaire à 132,3 milliards de dirhams après 125,7 milliards en juillet. Dans ce contexte, la Banque Centrale a augmenté le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 150 milliards de dirhams après 144,1 milliards en juillet. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (54,6 milliards de dirhams après 48,9 milliards en juillet 2026), les opérations de pensions livrées à 1 et 3 mois (48,1 milliards de di"
-        },
-        {
-          "page": 40,
-          "keyword": "interventions de bank al-maghrib",
-          "context": ",7 milliards en juillet. Dans ce contexte, la Banque Centrale a augmenté le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 150 milliards de dirhams après 144,1 milliards en juillet. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (54,6 milliards de dirhams après 48,9 milliards en juillet 2026), les opérations de pensions livrées à 1 et 3 mois (48,1 milliards de dirhams après 48,9 milliards en juillet 2026) et les opérations de prêts garantis accordés dans le cadre des programmes de soutien au finance"
-        }
-      ],
-      "numeric_candidates": [
-        {
-          "page": 40,
-          "liquidity_need_current_bn_mad": 132.3,
-          "liquidity_need_previous_bn_mad": 125.7,
-          "injections_current_bn_mad": 150.0,
-          "injections_previous_bn_mad": 144.1
-        }
-      ],
-      "verified": false
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
-      "pages": 48,
-      "bytes": 7244767,
-      "matches": [
-        {
-          "page": 40,
-          "keyword": "injections de liquidité",
-          "context": " comparativement au mois précédent, se situant en moyenne hebdomadaire à 125,7 milliards de dirhams après 127,3 milliards en juin et 146,6 milliards en mai. Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 144,1 milliards de dirhams, après 152,4 milliards en juin et 161,3 milliards en mai. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (48,9 milliards de dirhams après 53,7 milliards en juin 2026), les opérations de pensions livrées à 1 et 3 moi"
-        },
-        {
-          "page": 40,
-          "keyword": "interventions de bank al-maghrib",
-          "context": " Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 144,1 milliards de dirhams, après 152,4 milliards en juin et 161,3 milliards en mai. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (48,9 milliards de dirhams après 53,7 milliards en juin 2026), les opérations de pensions livrées à 1 et 3 mois (48,9 milliards de dirhams après 52,1 milliards en juin 2026) et les opérations de prêts garantis accordés dans le cadre des programmes de soutien au financement d"
-        }
-      ],
-      "numeric_candidates": [
-        {
-          "page": 40,
-          "liquidity_need_current_bn_mad": 125.7,
-          "liquidity_need_previous_bn_mad": 127.3,
-          "injections_current_bn_mad": 144.1,
-          "injections_previous_bn_mad": 152.4
-        }
-      ],
-      "verified": false
-    }
-  ],
+  "checked_at": "2026-10-08T18:58:03.216882+00:00",
+  "verified": false,
+  "candidates": [],
+  "pdf_inspections": [],
   "metrics": [
     "bank_liquidity_need",
     "total_injections",
@@ -123,30 +15,10 @@
     {
       "url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
       "error": "HTTPError"
+    },
+    {
+      "url": "https://www.finances.gov.ma/fr/Pages/publications.aspx",
+      "error": "URLError"
     }
-  ],
-  "validation": {
-    "cross_report_consistent": true,
-    "reference_period": "2026-08",
-    "report_urls": [
-      "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-      "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf"
-    ],
-    "pages": [
-      40,
-      40
-    ]
-  },
-  "validated_monthly": {
-    "liquidity_need_current_bn_mad": 132.3,
-    "liquidity_need_previous_bn_mad": 125.7,
-    "injections_current_bn_mad": 150.0,
-    "injections_previous_bn_mad": 144.1,
-    "need_change_pct": 5.251,
-    "injections_change_pct": 4.094,
-    "score": -25,
-    "reference_date": "2026-08-31",
-    "provenance": "DEPF consecutive reports; monthly directional proxy",
-    "confidence": "medium"
-  }
+  ]
 }

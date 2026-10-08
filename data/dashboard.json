@@ -1,10 +1,10 @@
 {
   "as_of": "2026-10-07",
-  "composite": -9,
-  "regime": "NEUTRAL",
+  "composite": -5,
+  "regime": "CALIBRATION",
   "conclusion": "Market Flow neutre (-7). Momentum 1 séance +0.58% et 5 séances -4.19%. Couverture 70%.",
   "scores": {
-    "liquidity": -15,
+    "liquidity": -11,
     "market_flow": -7,
     "global": 10
   },
@@ -154,9 +154,9 @@
     ]
   },
   "liquidity_detail": {
-    "score": -15,
-    "coverage": 1.0,
-    "confidence": "high",
+    "score": -11,
+    "coverage": 0.7,
+    "confidence": "medium",
     "reference_date": "2026-09-25",
     "components": {
       "opcvm": {
@@ -185,25 +185,17 @@
       },
       "bank_liquidity": {
         "weight": 30,
-        "score": -25,
-        "verified": true,
-        "reference_date": "2026-08-31",
+        "score": null,
+        "verified": false,
+        "reference_date": "2026-09-30",
         "raw": {
-          "liquidity_need_current_bn_mad": 132.3,
-          "liquidity_need_previous_bn_mad": 125.7,
-          "injections_current_bn_mad": 150.0,
-          "injections_previous_bn_mad": 144.1,
-          "need_change_pct": 5.251,
-          "injections_change_pct": 4.094,
-          "score": -25,
-          "reference_date": "2026-08-31",
-          "provenance": "DEPF consecutive reports; monthly directional proxy",
-          "confidence": "medium"
+          "bank_liquidity": null,
+          "bam_injections": null
         },
-        "source": "DEPF",
-        "source_url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-        "note": "Proxy variation mensuelle, recoupé entre deux rapports officiels.",
-        "age_days": 37
+        "source": "Bank Al-Maghrib",
+        "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
+        "note": "Source officielle identifiée mais composante non activée: le niveau/variation des injections doit être extrait de façon comparable à la période précédente avant scoring.",
+        "age_days": 7
       },
       "money_market": {
         "weight": 20,
@@ -239,7 +231,6 @@
     "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément.",
     "components_used": [
       "opcvm",
-      "bank_liquidity",
       "money_market",
       "policy_rate"
     ]
@@ -260,8 +251,8 @@
   "data_quality": {
     "market_history_sessions": 87,
     "market_flow_coverage": 0.7,
-    "liquidity_coverage": 1.0,
-    "composite_status": "NEUTRAL",
+    "liquidity_coverage": 0.7,
+    "composite_status": "CALIBRATION",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
       "agrégats OPCVM AMMC avec flux/variation par catégorie",
@@ -284,13 +275,13 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 0.9,
+  "composite_coverage": 0.74,
   "effective_weights": {
-    "liquidity": 50.0,
+    "liquidity": 35.0,
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-08T18:16:28.972455+00:00",
+  "retrieved_at": "2026-10-08T18:58:41.559848+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
@@ -300,7 +291,7 @@
     "sessions": 28
   },
   "global_detail": {
-    "checked_at": "2026-10-08T18:16:28.167580+00:00",
+    "checked_at": "2026-10-08T18:58:39.706624+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -331,9 +322,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-08",
-        "value": 102.13300323486328,
-        "change_5obs": 0.032,
-        "score": -0.3,
+        "value": 102.1500015258789,
+        "change_5obs": 0.049,
+        "score": -0.4,
         "verified": true,
         "failed_sources": []
       },
@@ -342,9 +333,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-08",
-        "value": 7758.240234375,
-        "change_5obs": 1.197,
-        "score": 9.6,
+        "value": 7756.9599609375,
+        "change_5obs": 1.181,
+        "score": 9.4,
         "verified": true,
         "failed_sources": []
       }

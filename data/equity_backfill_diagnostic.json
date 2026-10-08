@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-08T18:16:29.111857+00:00",
+  "checked_at": "2026-10-08T18:58:41.681748+00:00",
   "source": "https://www.casablanca-bourse.com/api/proxy/fr/api/bourse_data/instrument_history",
   "requested_start": "2025-01-01",
   "pages": 0,
   "records_fetched": 0,
   "rows_parsed": 0,
   "status": "FAILED",
-  "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+  "error": "URLError: <urlopen error timed out>",
   "companies_total": 0,
   "companies_25_sessions": 0
 }
