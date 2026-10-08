@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-10-08",
+  "status": "RESEARCH_ONLY",
+  "methodology": {
+    "long_term": "Valorisation 30%, rentabilité 25%, croissance 20%, dette 15%, dividendes 10%; données sourcées nécessaires.",
+    "short_term": "Momentum 5J 35%, 20J 25%, SMA20 20%, volume relatif 10%, volatilité 10%; 25 séances individuelles minimum.",
+    "warning": "Scores factoriels, pas des rendements espérés ni des recommandations garanties."
+  },
+  "long_term": {
+    "ranked": [],
+    "excluded": [],
+    "status": "AWAITING_VERIFIED_FUNDAMENTALS"
+  },
+  "short_term": {
+    "ranked": [],
+    "excluded": [],
+    "snapshot_watchlist": [
+      {
+        "ticker": "SNP",
+        "name": "SNEP",
+        "change_1d_pct": 5.21,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "DHO",
+        "name": "Delta Holding",
+        "change_1d_pct": 5.08,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "FBR",
+        "name": "Fenie Brossette",
+        "change_1d_pct": 4.24,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "BCI",
+        "name": "BMCI",
+        "change_1d_pct": 4.06,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "BCP",
+        "name": "BCP",
+        "change_1d_pct": 3.74,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "ZDJ",
+        "name": "Zellidja",
+        "change_1d_pct": -9.96,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "SMI",
+        "name": "SMI",
+        "change_1d_pct": -3.88,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "LES",
+        "name": "Lesieur Cristal",
+        "change_1d_pct": -3.33,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "ADH",
+        "name": "Addoha",
+        "change_1d_pct": -3.17,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      },
+      {
+        "ticker": "LHM",
+        "name": "LafargeHolcim Maroc",
+        "change_1d_pct": -2.7,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-07",
+        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+      }
+    ],
+    "status": "AWAITING_OHLCV_HISTORY"
+  }
+}
