@@ -53,5 +53,17 @@ def main():
  for url in pdfs[:2]:
   try:d["pdf_inspections"].append(pdf_report(url))
   except Exception as e:d.setdefault("errors",[]).append({"url":url,"error":type(e).__name__,"detail":str(e)[:150]})
+ if len(d["pdf_inspections"])>=2:
+  a,b=d["pdf_inspections"][:2]
+  if a["numeric_candidates"] and b["numeric_candidates"]:
+   x,y=a["numeric_candidates"][0],b["numeric_candidates"][0]
+   consistent=abs(x["liquidity_need_previous_bn_mad"]-y["liquidity_need_current_bn_mad"])<0.15 and abs(x["injections_previous_bn_mad"]-y["injections_current_bn_mad"])<0.15
+   d["validation"]={"cross_report_consistent":consistent,"reference_period":"2026-08","report_urls":[a["url"],b["url"]],"pages":[x["page"],y["page"]]}
+   if consistent:
+    dn=100*(x["liquidity_need_current_bn_mad"]/x["liquidity_need_previous_bn_mad"]-1)
+    di=100*(x["injections_current_bn_mad"]/x["injections_previous_bn_mad"]-1)
+    score=round(max(-100,min(100,-5*(0.7*dn+0.3*di))))
+    d["validated_monthly"]={**{k:v for k,v in x.items() if k!="page"},"need_change_pct":round(dn,3),"injections_change_pct":round(di,3),"score":score,"reference_date":"2026-08-31","provenance":"DEPF consecutive reports; monthly directional proxy","confidence":"medium"}
+    d["verified"]=True
  OUT.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 if __name__=="__main__":main()
