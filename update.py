@@ -6,6 +6,7 @@ from statistics import mean
 DASH=Path("data/dashboard.json")
 HIST=Path("data/market_history.json")
 LIQ=Path("data/liquidity_inputs.json")
+GLOBAL=Path("data/global_inputs.json")
 
 def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def pct(a,b): return None if b in (None,0) or a is None else (a/b-1)*100
@@ -90,6 +91,10 @@ def main():
     rows=json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else []
     score,detail=market_flow_score(rows); d["scores"]["market_flow"]=score
     lscore,ldetail=liquidity_score(d); d["scores"]["liquidity"]=lscore
+    if GLOBAL.exists():
+        gd=json.loads(GLOBAL.read_text(encoding="utf-8"))
+        d["global_detail"]=gd
+        d["scores"]["global"]=gd.get("score") if gd.get("verified") else None
     market_asof=rows[-1]["date"] if rows else d.get("as_of")
     for _,x in d.get("liquidity_detail",{}).get("components",{}).items():
         x["age_days"]=age_days(x.get("reference_date"),market_asof)
