@@ -107,7 +107,7 @@ def main():
     d["liquidity_detail"]["confidence"]=ldetail["confidence"]
     d["liquidity_detail"]["components_used"]=ldetail["components_used"]
     # Composite uses effective coverage, so a partially observed pillar cannot receive its full strategic weight.
-    pillar_cov={"liquidity":ldetail.get("coverage",0),"market_flow":detail.get("coverage",0),"global":1 if d["scores"].get("global") is not None else 0}
+    pillar_cov={"liquidity":ldetail.get("coverage",0),"market_flow":detail.get("coverage",0),"global":gd.get("coverage",0) if GLOBAL.exists() and d["scores"].get("global") is not None else 0}
     base_weights={"liquidity":50,"market_flow":35,"global":15}
     available=[]
     for key,bw in base_weights.items():
