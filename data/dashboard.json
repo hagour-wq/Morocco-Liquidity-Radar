@@ -281,7 +281,7 @@
     "market_flow": 24.5,
     "global": 0
   },
-  "retrieved_at": "2026-10-07T22:20:53.009640+00:00",
+  "retrieved_at": "2026-10-08T15:30:19.773906+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
@@ -289,5 +289,31 @@
     "sample_peak": 20146.13,
     "sample_low": 16399.25,
     "sessions": 28
+  },
+  "global_detail": {
+    "checked_at": "2026-10-08T15:28:19.242645+00:00",
+    "components": {
+      "us10y": {
+        "series": "DGS10",
+        "verified": false,
+        "error": "TimeoutError"
+      },
+      "vix": {
+        "series": "VIXCLS",
+        "verified": false,
+        "error": "TimeoutError"
+      },
+      "dollar": {
+        "series": "DTWEXBGS",
+        "verified": false,
+        "error": "TimeoutError"
+      },
+      "sp500": {
+        "series": "SP500",
+        "verified": false,
+        "error": "TimeoutError"
+      }
+    },
+    "verified": false
   }
 }
