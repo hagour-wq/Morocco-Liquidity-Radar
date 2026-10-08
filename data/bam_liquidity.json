@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T15:28:19.128163+00:00",
+  "checked_at": "2026-10-08T16:02:18.946535+00:00",
   "verified": false,
   "candidates": [],
   "metrics": [
@@ -9,14 +9,19 @@
     "repo",
     "guaranteed_loans"
   ],
+  "note": "Discovery only; no unverified score.",
   "errors": [
     {
       "url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
       "error": "HTTPError"
     },
     {
-      "url": "https://www.bkam.ma/Publications-statistiques-et-recherche/Documents-statistiques",
+      "url": "https://www.finances.gov.ma/fr/Pages/Etudes-et-statistiques.aspx",
       "error": "HTTPError"
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_349.pdf",
+      "error": "PdfReadError"
     }
   ]
 }
