@@ -14,6 +14,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Validate global collector
+        run: python -m unittest -v test_global_collector.py
       - name: Collect Casablanca snapshot
         continue-on-error: true
         run: python collect_market.py
