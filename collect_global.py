@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.parse import quote
 OUT=Path("data/global_inputs.json")
-SERIES={"us10y":"DGS10","vix":"VIXCLS","dollar":"DTWEXBGS","sp500":"SP500"}
+SERIES={"us10y":"DGS10","vix":"VIXCLS","dollar":"DXY","sp500":"SP500"}
 def get(url):
  req=Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; MoroccoLiquidityRadar/1.0)","Accept":"text/csv,application/json,application/xml,*/*"})
  with urlopen(req,timeout=9) as r: return r.read(9000000).decode("utf-8-sig","replace")
