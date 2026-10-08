@@ -16,13 +16,13 @@ def main():
   try:
    with urlopen(Request(u,headers={"User-Agent":"Mozilla/5.0","Accept":"text/html,application/pdf,*/*"}),timeout=12) as r:
     content_type=r.headers.get("Content-Type","")
-    raw=r.read(1000000)
+    raw=r.read(12000000)
    if raw.startswith(b"%PDF"):
     from io import BytesIO
     from pypdf import PdfReader
-    reader=PdfReader(BytesIO(raw))
+    reader=PdfReader(BytesIO(raw),strict=False)
     txt=" ".join((p.extract_text() or "") for p in reader.pages[:8])
-    d["candidates"].append({"url":u,"format":"pdf","text_available":bool(txt),"mentions_liquidity":bool(re.search("liquidit",txt,re.I)),"sample":txt[:500]})
+    d["candidates"].append({"url":u,"format":"pdf","bytes":len(raw),"text_available":bool(txt),"mentions_liquidity":bool(re.search("liquidit",txt,re.I)),"sample":txt[:500]})
    else:
     h=raw.decode("utf-8","ignore")
     links=re.findall(r'href=["\\\']([^"\\\']+)["\\\']',h,re.I)
