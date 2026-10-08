@@ -3,12 +3,17 @@ from io import StringIO
 from pathlib import Path
 from datetime import datetime,timezone
 from urllib.request import Request,urlopen
+from urllib.error import URLError
 OUT=Path("data/global_inputs.json")
 SERIES={"us10y":"DGS10","vix":"VIXCLS","dollar":"DTWEXBGS","sp500":"SP500"}
 def get_series(sid):
  u=f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}"
  req=Request(u,headers={"User-Agent":"Mozilla/5.0"})
- with urlopen(req,timeout=30) as r: txt=r.read().decode()
+ try:
+  with urlopen(req,timeout=12) as r: txt=r.read().decode()
+ except (TimeoutError,URLError):
+  fallback=f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}&cosd=2026-07-01"
+  with urlopen(Request(fallback,headers={"User-Agent":"Mozilla/5.0"}),timeout=12) as r: txt=r.read().decode()
  rows=[]
  for x in csv.DictReader(StringIO(txt)):
   try: rows.append((x.get("DATE") or x.get("observation_date"),float(x[sid])))
@@ -17,6 +22,7 @@ def get_series(sid):
  return u,rows[-30:]
 def clamp(x):return max(-100,min(100,x))
 def main():
+ previous=json.loads(OUT.read_text()) if OUT.exists() else {}
  d={"checked_at":datetime.now(timezone.utc).isoformat(),"components":{},"verified":False}
  scores=[]
  for k,sid in SERIES.items():
@@ -32,5 +38,8 @@ def main():
  if len(scores)==len(SERIES):
   d["score"]=round(sum(scores)/len(scores)); d["verified"]=True
   d["method"]="Equal-weight risk impulse: falling VIX/yields/dollar and rising S&P are positive; 5-observation changes, clamped."
+ if not d["verified"] and previous.get("verified"):
+  previous["last_attempt"]=d
+  d=previous
  OUT.write_text(json.dumps(d,indent=2)+"\n")
 if __name__=="__main__":main()
