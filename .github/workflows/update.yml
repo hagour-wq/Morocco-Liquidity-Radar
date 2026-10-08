@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "backfill_equities.py"
+      - "backfill_equities_fallback.py"
       - "rank_equities.py"
       - ".github/workflows/update.yml"
   schedule:
@@ -44,6 +45,9 @@ jobs:
           EQUITY_BACKFILL_START: "2025-01-01"
           EQUITY_BACKFILL_PAGES: "70"
         run: python backfill_equities.py
+      - name: Independent Casablanca stock history fallback
+        continue-on-error: true
+        run: python backfill_equities_fallback.py
       - name: Build equity fundamental and technical rankings
         run: python rank_equities.py
       - name: Verify dashboard renders with current data
