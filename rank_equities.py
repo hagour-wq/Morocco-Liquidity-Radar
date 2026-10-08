@@ -22,6 +22,8 @@ def evaluate_fundamental(x):
  if missing:return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"INSUFFICIENT_DATA","missing_fields":missing}
  try: age=(date.today()-date.fromisoformat(x["reference_date"])).days
  except (ValueError,TypeError):age=10000
+ if x.get("sector","").casefold() in ("banques","banque","banking","assurances","assurance","insurance"):
+  return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"SECTOR_MODEL_PENDING","note":"Financial institutions require sector-specific solvency and valuation scoring."}
  if age<0 or age>550 or not str(x["source_url"]).startswith("https://"):
   return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"STALE_OR_UNSOURCED"}
  p,eps,bv=x["price_mad"],x["eps_mad"],x["book_value_per_share_mad"]
@@ -63,7 +65,7 @@ def main():
    watch.append({"ticker":x.get("ticker"),"name":x.get("name"),"change_1d_pct":x.get("change_pct"),"status":"SNAPSHOT_ONLY","reference_date":rotation.get("reference_date"),"note":"One-session movement; cannot rank expected profitability."})
  f_rank=sorted((x for x in fundamentals if x.get("score") is not None),key=lambda x:x["score"],reverse=True)
  t_rank=sorted((x for x in technical if x.get("score") is not None),key=lambda x:x["score"],reverse=True)
- result={"generated_at":datetime.now(timezone.utc).isoformat(),"status":"RESEARCH_ONLY","methodology":{"long_term":"Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.","short_term":"Momentum 5D 35%, 20D 25%, distance SMA20 20%, relative volume 10%, realized volatility 10%. 25 contiguous sessions minimum.","warning":"Rankings indicate relative factor scores, NOT expected returns or guaranteed profitability. Missing data exclude candidates."},"long_term":{"ranked":f_rank,"excluded":[x for x in fundamentals if x.get("score") is None],"status":"AVAILABLE" if f_rank else "AWAITING_VERIFIED_FUNDAMENTALS"},"short_term":{"ranked":t_rank,"excluded":[x for x in technical if x.get("score") is None],"snapshot_watchlist":watch,"status":"AVAILABLE" if t_rank else "AWAITING_OHLCV_HISTORY"}}
+ result={"generated_at":datetime.now(timezone.utc).isoformat(),"status":"RESEARCH_ONLY","methodology":{"long_term":"Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.","short_term":"Momentum 5D 35%, 20D 25%, distance SMA20 20%, relative volume 10%, realized volatility 10%. At least 25 dated closes and daily volumes required.","warning":"Rankings indicate relative factor scores, NOT expected returns or guaranteed profitability. Missing data exclude candidates."},"long_term":{"ranked":f_rank,"excluded":[x for x in fundamentals if x.get("score") is None],"status":"AVAILABLE" if f_rank else "AWAITING_VERIFIED_FUNDAMENTALS"},"short_term":{"ranked":t_rank,"excluded":[x for x in technical if x.get("score") is None],"snapshot_watchlist":watch,"status":"AVAILABLE" if t_rank else "AWAITING_OHLCV_HISTORY"}}
  (ROOT/"equity_rankings.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print("Long-term eligible:",len(f_rank),"Short-term eligible:",len(t_rank),"Watchlist:",len(watch))
 if __name__=="__main__":main()
