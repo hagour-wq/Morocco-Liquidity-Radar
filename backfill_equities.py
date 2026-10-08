@@ -2,7 +2,7 @@
 Historical rows are source-attributed, merged by ticker/date, and fail closed.
 No price is imputed, forward-filled or manufactured.
 """
-import json,os,re,time
+import json,os,re,time,ssl,certifi
 from datetime import date,datetime,timezone
 from pathlib import Path
 from urllib.request import Request,urlopen
@@ -36,7 +36,8 @@ def request(offset):
  }
  url=BASE+"?"+urlencode(params)
  req=Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/vnd.api+json","Referer":"https://www.casablanca-bourse.com/fr/market-data/Cours"})
- with urlopen(req,timeout=18) as res:
+ tls=ssl.create_default_context(cafile=certifi.where())
+ with urlopen(req,timeout=18,context=tls) as res:
   payload=json.loads(res.read(8000000))
  if not isinstance(payload,dict) or not isinstance(payload.get("data"),list):raise ValueError("Unexpected JSON API schema")
  return payload
