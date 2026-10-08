@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from urllib.request import Request,urlopen
 from urllib.error import URLError
+from datetime import date
 OUT=Path("data/global_inputs.json")
 SERIES={"us10y":"DGS10","vix":"VIXCLS","dollar":"DTWEXBGS","sp500":"SP500"}
 def get_series(sid):
@@ -35,10 +36,12 @@ def main():
    elif k=="dollar": scores.append(clamp(-ch*8))
    elif k=="sp500": scores.append(clamp(ch*8))
   except Exception as e:d["components"][k]={"series":sid,"verified":False,"error":type(e).__name__}
- if len(scores)==len(SERIES):
+ dates=[v.get("date") for v in d["components"].values() if v.get("verified")]
+ fresh=len(dates)==4 and all(0<=(date.today()-date.fromisoformat(x)).days<=7 for x in dates)
+ if len(scores)==len(SERIES) and fresh:
   d["score"]=round(sum(scores)/len(scores)); d["verified"]=True
   d["method"]="Equal-weight risk impulse: falling VIX/yields/dollar and rising S&P are positive; 5-observation changes, clamped."
- if not d["verified"] and previous.get("verified"):
+ if not d["verified"] and previous.get("verified") and all(0<=(date.today()-date.fromisoformat(v["date"])).days<=7 for v in previous.get("components",{}).values() if v.get("verified") and v.get("date")) and len([v for v in previous.get("components",{}).values() if v.get("verified") and v.get("date")])==4:
   previous["last_attempt"]=d
   d=previous
  OUT.write_text(json.dumps(d,indent=2)+"\n")
