@@ -17,7 +17,7 @@ def candidates():
    if sym and sym.isalnum() and 2<=len(sym)<=6:result[sym] = x.get("name") or sym
  return result
 def history(symbol):
- url="https://query1.finance.yahoo.com/v8/finance/chart/"+quote(symbol+".CS",safe="")+"?range=2y&interval=1d"
+ url="https://query1.finance.yahoo.com/v8/finance/chart/"+quote(symbol+".MA",safe="")+"?range=2y&interval=1d"
  req=Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
  with urlopen(req,timeout=12) as response:obj=json.loads(response.read(9000000))
  x=(obj.get("chart",{}).get("result") or [None])[0]
@@ -26,7 +26,7 @@ def history(symbol):
  exchange=str(m.get("exchangeName") or m.get("fullExchangeName") or "").upper()
  currency=str(m.get("currency") or "").upper()
  # Unambiguous Maroc evidence in exchange metadata required, not just '.CS' suffix.
- if currency!="MAD" or not any(s in exchange for s in ("CASA","MOROCC","CSE")):
+ if currency!="MAD" or not any(s in exchange for s in ("CASA","MOROCC","MCE")):
   raise ValueError("unverified_exchange_currency: "+exchange+"/"+currency)
  times=x.get("timestamp") or []
  quotes=(x.get("indicators",{}).get("quote") or [{}])[0]
