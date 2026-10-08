@@ -24,7 +24,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Validate global collector
         continue-on-error: true
-        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py
+        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py
       - name: Collect Casablanca snapshot
         continue-on-error: true
         run: python collect_market.py
