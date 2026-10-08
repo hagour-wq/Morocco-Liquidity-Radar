@@ -1,12 +1,12 @@
 {
   "as_of": "2026-10-07",
-  "composite": -9,
+  "composite": -5,
   "regime": "CALIBRATION",
   "conclusion": "Market Flow neutre (-7). Momentum 1 séance +0.58% et 5 séances -4.19%. Couverture 70%.",
   "scores": {
     "liquidity": -11,
     "market_flow": -7,
-    "global": null
+    "global": 10
   },
   "sources": [
     {
@@ -275,13 +275,13 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 0.59,
+  "composite_coverage": 0.74,
   "effective_weights": {
     "liquidity": 35.0,
     "market_flow": 24.5,
-    "global": 0
+    "global": 15.0
   },
-  "retrieved_at": "2026-10-08T16:03:44.906701+00:00",
+  "retrieved_at": "2026-10-08T16:12:10.992066+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
@@ -291,30 +291,57 @@
     "sessions": 28
   },
   "global_detail": {
-    "checked_at": "2026-10-08T16:02:24.337198+00:00",
+    "checked_at": "2026-10-08T16:12:09.740622+00:00",
+    "verified": true,
+    "coverage": 1.0,
     "components": {
       "us10y": {
         "series": "DGS10",
-        "verified": false,
-        "error": "FRED_CSV:TimeoutError;FRED_MIRROR:TimeoutError"
+        "source": "US_TREASURY",
+        "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "date": "2026-10-07",
+        "value": 5.28,
+        "change_5obs": -1.0,
+        "score": 1.2,
+        "verified": true,
+        "failed_sources": []
       },
       "vix": {
         "series": "VIXCLS",
-        "verified": false,
-        "error": "FRED_CSV:TimeoutError;FRED_MIRROR:TimeoutError"
+        "source": "CBOE",
+        "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+        "date": "2026-10-07",
+        "value": 15.08,
+        "change_5obs": -7.711,
+        "score": 30.8,
+        "verified": true,
+        "failed_sources": []
       },
       "dollar": {
         "series": "DTWEXBGS",
-        "verified": false,
-        "error": "FRED_CSV:TimeoutError;FRED_MIRROR:TimeoutError"
+        "source": "YAHOO_FINANCE",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
+        "date": "2026-10-08",
+        "value": 102.34200286865234,
+        "change_5obs": 0.237,
+        "score": -1.9,
+        "verified": true,
+        "failed_sources": []
       },
       "sp500": {
         "series": "SP500",
-        "verified": false,
-        "error": "FRED_CSV:TimeoutError;FRED_MIRROR:TimeoutError"
+        "source": "YAHOO_FINANCE",
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
+        "date": "2026-10-08",
+        "value": 7775.2998046875,
+        "change_5obs": 1.42,
+        "score": 11.4,
+        "verified": true,
+        "failed_sources": []
       }
     },
-    "verified": false,
-    "fresh_for_scoring": false
+    "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
+    "score": 10,
+    "fresh_for_scoring": true
   }
 }
