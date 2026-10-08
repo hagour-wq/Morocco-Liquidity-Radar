@@ -1,94 +1,96 @@
 {
-  "checked_at": "2026-10-08T16:11:07.162401+00:00",
+  "checked_at": "2026-10-08T16:15:09.866416+00:00",
   "verified": false,
   "candidates": [
     {
-      "url": "https://www.finances.gov.ma:443/fr/Pages/publications.aspx",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/RA-DB_2025.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/RA-DB_2025.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_353.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/depp/2026/Rap-An-ODP-28-09-2026.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/Rapport_Budget_Genre_Simplifie_Fr_2026.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/depp/2026/Rap-An-ODP-28-09-2026.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC352_24Juin2026.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_351.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_350.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/Depliant_BC_mi-parcours2027F.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc_349.pdf",
       "format": "link"
     },
     {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/Depliant_BC_mi-parcours2027F.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/dtfe/2026/SCRT_aout-2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/dtfe/2026/SCRT_aout-2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/PLR 2024_BO_7533-fr.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/PLR 2024_BO_7533-fr.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/db/2025/REBCMT-PLF2027VF.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/db/2025/REBCMT-PLF2027VF.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/dtfe/2026/SCRT_jul-2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/dtfe/2026/SCRT_jul-2026.pdf",
-      "format": "link"
-    },
-    {
-      "url": "http://www.finances.gov.ma/Publication/db/2026/circulaire-12-2026fr.pdf",
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/conjoncture 348_26février2026.pdf",
       "format": "link"
     },
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2026/Note-conjoncture347.pdf",
-      "format": "pdf",
-      "bytes": 9688920,
-      "text_available": true,
-      "mentions_liquidity": true,
-      "sample": "NOTE DE \nCONJONCTURE\nDIRECTION DES ETUDES ET DES PREVISIONS FINANCIERES\nBoulevard Mohamed V. \nQuartier Administratif, \nRabat-Chellah Maroc\nDEPF\nE  :  depf@depf.finances.gov.ma\nW : depf.finances.gov.ma\nT  : (+212) 537.67.74.15/16\nROYAUME DU MAROC\nMINISTÈRE DE L’ECONOMIE ET DES FINANCES\nN° 347 / Janvier  2026 2\nNote de Conjoncture  3\nNote de Conjoncture \nDirection des Etudes et des Prévisions Financières \nSommaire\n Note de conjoncture\nPARTIE 1    ENVIRONNEMENT INTERNATIONAL \nECONOMIES AVANCÉES 01\n"
+      "format": "link"
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2025/nc346.pdf",
+      "format": "link"
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2025/Rap_Act_2024_15Octobre2025.pdf",
+      "format": "link"
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2025/nc_345.pdf",
+      "format": "link"
+    }
+  ],
+  "pdf_inspections": [
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
+      "pages": 48,
+      "bytes": 11668398,
+      "matches": [
+        {
+          "page": 40,
+          "keyword": "injections de liquidité",
+          "context": "s banques s’est accru comparativement au mois précédent, se situant en moyenne hebdomadaire à 132,3 milliards de dirhams après 125,7 milliards en juillet. Dans ce contexte, la Banque Centrale a augmenté le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 150 milliards de dirhams après 144,1 milliards en juillet. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (54,6 milliards de dirhams après 48,9 milliards en juillet 2026), les opérations de pensions livrées à 1 et 3 mois (48,1 milliards de di"
+        },
+        {
+          "page": 40,
+          "keyword": "interventions de bank al-maghrib",
+          "context": ",7 milliards en juillet. Dans ce contexte, la Banque Centrale a augmenté le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 150 milliards de dirhams après 144,1 milliards en juillet. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (54,6 milliards de dirhams après 48,9 milliards en juillet 2026), les opérations de pensions livrées à 1 et 3 mois (48,1 milliards de dirhams après 48,9 milliards en juillet 2026) et les opérations de prêts garantis accordés dans le cadre des programmes de soutien au finance"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
+      "pages": 48,
+      "bytes": 7244767,
+      "matches": [
+        {
+          "page": 40,
+          "keyword": "injections de liquidité",
+          "context": " comparativement au mois précédent, se situant en moyenne hebdomadaire à 125,7 milliards de dirhams après 127,3 milliards en juin et 146,6 milliards en mai. Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 144,1 milliards de dirhams, après 152,4 milliards en juin et 161,3 milliards en mai. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (48,9 milliards de dirhams après 53,7 milliards en juin 2026), les opérations de pensions livrées à 1 et 3 moi"
+        },
+        {
+          "page": 40,
+          "keyword": "interventions de bank al-maghrib",
+          "context": " Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 144,1 milliards de dirhams, après 152,4 milliards en juin et 161,3 milliards en mai. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (48,9 milliards de dirhams après 53,7 milliards en juin 2026), les opérations de pensions livrées à 1 et 3 mois (48,9 milliards de dirhams après 52,1 milliards en juin 2026) et les opérations de prêts garantis accordés dans le cadre des programmes de soutien au financement d"
+        }
+      ],
+      "verified": false
     }
   ],
   "metrics": [
@@ -98,7 +100,7 @@
     "repo",
     "guaranteed_loans"
   ],
-  "note": "Discovery only; no unverified score.",
+  "note": "Unvalidated institutional excerpts never enter liquidity scoring.",
   "errors": [
     {
       "url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
