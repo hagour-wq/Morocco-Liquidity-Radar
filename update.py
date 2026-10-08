@@ -7,6 +7,7 @@ DASH=Path("data/dashboard.json")
 HIST=Path("data/market_history.json")
 LIQ=Path("data/liquidity_inputs.json")
 GLOBAL=Path("data/global_inputs.json")
+BAM=Path("data/bam_liquidity.json")
 
 def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def pct(a,b): return None if b in (None,0) or a is None else (a/b-1)*100
@@ -54,6 +55,19 @@ def liquidity_score(d):
     if LIQ.exists():
         inp=json.loads(LIQ.read_text(encoding="utf-8"))
         comps=inp.get("components",{})
+        if BAM.exists():
+            bam=json.loads(BAM.read_text(encoding="utf-8"))
+            m=bam.get("validated_monthly",{})
+            ref=m.get("reference_date")
+            age=age_days(ref,datetime.now(timezone.utc).date().isoformat())
+            valid=bam.get("verified") and bam.get("validation",{}).get("cross_report_consistent") and isinstance(m.get("score"),(int,float)) and age is not None and 0<=age<=45
+            if "bank_liquidity" in comps:
+                b=comps["bank_liquidity"]
+                if valid:
+                    b.update({"score":m["score"],"verified":True,"reference_date":ref,"raw":m,"source":"DEPF","source_url":bam["validation"]["report_urls"][0],"note":"Proxy variation mensuelle, recoupé entre deux rapports officiels."})
+                else:
+                    b["score"]=None
+                    b["verified"]=False
         ld["components"]=comps
         d["liquidity_detail"]=ld
     else:
