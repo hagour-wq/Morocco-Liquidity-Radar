@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08",
+  "generated_at": "2026-10-08T16:57:15.812881+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
-    "long_term": "Valorisation 30%, rentabilité 25%, croissance 20%, dette 15%, dividendes 10%; données sourcées nécessaires.",
-    "short_term": "Momentum 5J 35%, 20J 25%, SMA20 20%, volume relatif 10%, volatilité 10%; 25 séances individuelles minimum.",
-    "warning": "Scores factoriels, pas des rendements espérés ni des recommandations garanties."
+    "long_term": "Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.",
+    "short_term": "Momentum 5D 35%, 20D 25%, distance SMA20 20%, relative volume 10%, realized volatility 10%. At least 25 dated closes and daily volumes required.",
+    "warning": "Rankings indicate relative factor scores, NOT expected returns or guaranteed profitability. Missing data exclude candidates."
   },
   "long_term": {
     "ranked": [],
@@ -21,7 +21,7 @@
         "change_1d_pct": 5.21,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "DHO",
@@ -29,7 +29,7 @@
         "change_1d_pct": 5.08,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "FBR",
@@ -37,7 +37,7 @@
         "change_1d_pct": 4.24,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "BCI",
@@ -45,7 +45,7 @@
         "change_1d_pct": 4.06,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "BCP",
@@ -53,7 +53,7 @@
         "change_1d_pct": 3.74,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "ZDJ",
@@ -61,7 +61,7 @@
         "change_1d_pct": -9.96,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "SMI",
@@ -69,7 +69,7 @@
         "change_1d_pct": -3.88,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "LES",
@@ -77,7 +77,7 @@
         "change_1d_pct": -3.33,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "ADH",
@@ -85,7 +85,7 @@
         "change_1d_pct": -3.17,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "LHM",
@@ -93,7 +93,7 @@
         "change_1d_pct": -2.7,
         "status": "SNAPSHOT_ONLY",
         "reference_date": "2026-10-07",
-        "note": "Variation d'une séance, non assimilable à une prévision de rentabilité"
+        "note": "One-session movement; cannot rank expected profitability."
       }
     ],
     "status": "AWAITING_OHLCV_HISTORY"
