@@ -16,8 +16,8 @@ def number(s):return float(s.replace(" ","").replace(",","."))
 def extract_monthly(text):
  t=" ".join(text.split())
  # Restrict each match to a short clause around the statistical publication.
- req=re.search(r"se situant en moyenne hebdomadaire à\\s*([0-9]+(?:[,.][0-9]+)?)\\s*milliards? de dirhams? après\\s*([0-9]+(?:[,.][0-9]+)?)\\s*milliards?",t,re.I)
- inj=re.search(r"injections de liquidité.{0,110}?moyenne hebdomadaire à\\s*([0-9]+(?:[,.][0-9]+)?)\\s*milliards? de dirhams?,? après\\s*([0-9]+(?:[,.][0-9]+)?)\\s*milliards?",t,re.I)
+ req=re.search(r"se situant en moyenne hebdomadaire à\s*([0-9]+(?:[,.][0-9]+)?)\s*milliards? de dirhams?,?\s*après\s*([0-9]+(?:[,.][0-9]+)?)\s*milliards?",t,re.I)
+ inj=re.search(r"injections de liquidité.{0,110}?moyenne hebdomadaire à\s*([0-9]+(?:[,.][0-9]+)?)\s*milliards? de dirhams?,?\s*après\s*([0-9]+(?:[,.][0-9]+)?)\s*milliards?",t,re.I)
  if not (req and inj):return None
  x={"liquidity_need_current_bn_mad":number(req.group(1)),"liquidity_need_previous_bn_mad":number(req.group(2)),"injections_current_bn_mad":number(inj.group(1)),"injections_previous_bn_mad":number(inj.group(2))}
  if not (30<x["liquidity_need_current_bn_mad"]<400 and 30<x["injections_current_bn_mad"]<400):return None
