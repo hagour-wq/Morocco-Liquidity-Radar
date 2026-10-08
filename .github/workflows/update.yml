@@ -6,6 +6,7 @@ on:
     paths:
       - "backfill_equities.py"
       - "backfill_equities_fallback.py"
+      - "backfill_equities_public.py"
       - "rank_equities.py"
       - ".github/workflows/update.yml"
   schedule:
@@ -49,6 +50,9 @@ jobs:
       - name: Independent Casablanca stock history fallback
         continue-on-error: true
         run: python backfill_equities_fallback.py
+      - name: Recover already published equity history from independent public archive
+        continue-on-error: true
+        run: python backfill_equities_public.py
       - name: Build equity fundamental and technical rankings
         run: python rank_equities.py
       - name: Verify dashboard renders with current data
