@@ -43,7 +43,7 @@ h2{font-size:16px;margin:2px 0 12px}.label{font-size:11px;letter-spacing:.12em;t
 <div class="card s6"><h2>Analyse technique</h2><div id="tech"></div></div>
 <div class="card s6"><h2>Analyse fondamentale</h2><div id="fund"></div></div>
 <div class="card s12"><h2>Résultats publiés</h2><div id="stmts"></div></div>
-<div class="card s6"><h2>Dividende</h2><div id="div"></div></div>
+<div class="card s6"><h2>Dividendes & assemblées</h2><div id="div"></div></div>
 <div class="card s6"><h2>Qualité des données & sources</h2><div id="quality"></div></div>
 </section>
 <div class="footer">Données officielles de la Bourse de Casablanca et comptes publiés par l'émetteur. Donnée absente = donnée non calculée, jamais estimée. Les scores mesurent des facteurs passés ou publiés selon une méthodologie définie : ce ne sont ni des prévisions ni des recommandations d'investissement.</div>
@@ -130,12 +130,22 @@ function stmtCard(c){
  rows.map(([k,x])=>{const ch=x.previous?100*(x.current/x.previous-1):null;return '<tr><td>'+esc(LABEL[k]||k)+'</td><td>'+val(x,'current',k)+'</td><td>'+val(x,'previous',k)+'</td><td>'+(x.previous>0&&x.current!=null?arrow(ch):'—')+'</td><td>'+(k==='eps'?'MAD / action':u(x))+'</td><td class="src">'+esc(x.line)+(x.method?' <i>('+esc(x.method)+')</i>':'')+'</td></tr>'}).join('')+'</tbody></table></div>'+
  ((c.errors||[]).length?'<div class="note">'+c.errors.map(esc).join('<br>')+'</div>':'')}
 
-function divCard(ref,price){
- if(!ref)return '<div class="tiny">Émetteur absent du bulletin de la cote.</div>';
- const age=ref.dividend_ex_date?(Date.now()-new Date(ref.dividend_ex_date))/864e5:null,y=ref.last_dividend_mad&&price&&age!=null&&age<=456?100*ref.last_dividend_mad/price:null;
- return row('Dernier dividende',ref.last_dividend_mad==null?'—':fmt(ref.last_dividend_mad)+' MAD')+row('Exercice',esc(ref.dividend_fiscal_year||'—'))+row('Date de détachement',esc(ref.dividend_ex_date||'—'))+
- row('Rendement (dernier dividende / cours)',y==null?'n.d.':fmt(y,2)+' %',y==null?'Non calculé : pas de détachement depuis moins de 15 mois':'')+row('Nominal',ref.nominal_mad==null?'—':fmt(ref.nominal_mad)+' MAD')+
- '<div class="tiny" style="margin-top:8px">Source : bulletin de la cote du '+esc(state.refMeta.bulletin_date)+' (<a href="'+esc(state.refMeta.source_url)+'" target="_blank" rel="noopener">PDF</a>). Dividende ajusté publié par la Bourse ; historique pluriannuel non encore collecté.</div>'}
+function divCard(ref,price,cal,tech){
+ const c=cal&&cal.companies?cal.companies[state.t]:null,dv=c?c.dividends:[],ag=c?c.meetings:[],t=tech||{};
+ const y=t.dividend_yield_pct;
+ let h=row('Rendement sur 12 mois',y==null?'n.d.':fmt(y,2)+' %',t.dividend_yield_basis||'')+
+  row('Dividendes ordinaires détachés sur 12 mois',t.dividends_12m_mad==null?'—':fmt(t.dividends_12m_mad)+' MAD')+
+  (t.exceptional_dividends_12m_mad?row('Dividendes exceptionnels (hors rendement)',fmt(t.exceptional_dividends_12m_mad)+' MAD'):'')+
+  ((t.dividend_notes||[]).length?'<div class="note">'+t.dividend_notes.map(esc).join('<br>')+'</div>':'')+
+  (c&&c.bulletin_check?'<div class="note">Contrôle bulletin de la cote : '+esc(c.bulletin_check)+'</div>':'');
+ const next=ag.filter(a=>a.date>=new Date().toISOString().slice(0,10)).slice(-1)[0];
+ if(ag.length)h+=row(next?'Prochaine assemblée générale':'Dernière assemblée générale',esc((next||ag[0]).date)+' · '+esc((next||ag[0]).nature||''),(next||ag[0]).objets||'');
+ if(dv.length){
+  h+='<div class="tblwrap" style="margin-top:10px;max-height:260px;overflow-y:auto"><table class="tbl"><thead><tr><th>Détachement</th><th>Paiement</th><th>Type</th><th>Montant (MAD)</th></tr></thead><tbody>'+
+   dv.map(d=>'<tr><td>'+esc(d.ex_date)+'</td><td>'+esc(d.payment_date||'—')+'</td><td>'+esc(d.type||'')+'</td><td>'+fmt(d.amount_mad)+'</td></tr>').join('')+'</tbody></table></div>';
+ } else h+='<div class="tiny" style="margin-top:8px">Aucun dividende au calendrier officiel depuis '+esc((cal&&cal.years_dividends||[])[0]||'2013')+'.</div>';
+ h+='<div class="tiny" style="margin-top:8px">Source : <a href="'+esc(cal&&cal.source_url||'#')+'" target="_blank" rel="noopener">calendrier financier de la Bourse de Casablanca</a>'+(cal?' (collecte du '+esc((cal.generated_at||'').slice(0,10))+')':'')+'. Montants publiés, non ajustés des opérations sur titres ; rendement = dividendes ordinaires des 12 derniers mois / dernier cours'+(ref?' ; ISIN et nominal ('+fmt(ref.nominal_mad)+' MAD) : bulletin de la cote du '+esc(state.refMeta.bulletin_date):'')+'.</div>';
+ return h}
 
 function qualityCard(m,rows){
  const st={};rows.forEach(r=>String(r.status||'validated').split(',').forEach(s=>st[s]=(st[s]||0)+1));
@@ -146,7 +156,7 @@ function qualityCard(m,rows){
  '<div class="tiny" style="margin-top:8px">Cours : Bourse de Casablanca (service '+esc(m.source_endpoint||'')+'), collecte du '+esc((m.updated_at||'').slice(0,16).replace('T',' '))+' UTC. Cours bruts : non ajustés. Les séances recopiées par la source ou douteuses sont conservées avec leur statut et exclues des calculs.</div>'}
 
 function render(t,data){
- const [m,rk,cf,ref]=data;state.rows=m.rows.filter(r=>r.close>0&&!String(r.status).includes('stale_copy'));state.meta=m;state.refMeta=ref;state.ref=ref.issuers[t];
+ const [m,rk,cf,ref,cal]=data;state.t=t;state.rows=m.rows.filter(r=>r.close>0&&!String(r.status).includes('stale_copy'));state.meta=m;state.refMeta=ref;state.ref=ref.issuers[t];
  if(state.rows.length<5)throw Error(m.name+' ('+t+') : '+state.rows.length+' cours non nul(s) sur '+m.rows.length+' séances en base'+(state.rows.length?' ('+state.rows.map(r=>r.date+' : '+r.close+' MAD sans échange').join(', ')+')':'')+' — titre vraisemblablement suspendu de cotation ; pas d’historique exploitable.');
  const st=rk.short_term,lt=rk.long_term,find=(arr,k)=>(arr||[]).find(x=>x.ticker===k);
  const tech=find(st.ranked,t)||find(st.watch,t)||find(st.excluded,t),fund=find(lt.ranked,t)||find(lt.watch,t)||find(lt.excluded,t),comp=find(cf.companies,t);
@@ -157,7 +167,7 @@ function render(t,data){
  $('mcap').textContent=big(last.market_cap_mad);$('shares').textContent=(m.shares_outstanding?fmt(m.shares_outstanding,0)+' titres':'—');
  $('var').innerHTML=arrow(R(20))+' · '+arrow(R(60));
  const lq=tech&&tech.liquidity;$('liq').textContent=lq?big(lq.avg_turnover_mad_20d):'—';$('liqw').textContent=lq?('Liquidité '+lq.tier+(lq.zero_volume_sessions?' · '+lq.zero_volume_sessions+' séance(s) sans échange sur 60':'')):'Non calculée';
- $('tech').innerHTML=techCard(tech);$('fund').innerHTML=fundCard(fund,comp);$('stmts').innerHTML=stmtCard(comp);$('div').innerHTML=divCard(state.ref,last.close);$('quality').innerHTML=qualityCard(m,r);
+ $('tech').innerHTML=techCard(tech);$('fund').innerHTML=fundCard(fund,comp);$('stmts').innerHTML=stmtCard(comp);$('div').innerHTML=divCard(state.ref,last.close,cal,tech);$('quality').innerHTML=qualityCard(m,r);
  const P=[['3 mois',63],['6 mois',126],['1 an',250],['Tout',1e9]];
  $('periods').innerHTML=P.map(([l,n])=>'<button type="button" data-n="'+n+'" aria-pressed="'+(n===state.period)+'">'+l+'</button>').join('');
  $('content').hidden=false;draw();
@@ -166,7 +176,7 @@ function load(t){
  t=(t||'').trim().toUpperCase();$('err').innerHTML='';
  if(!/^[A-Z0-9]{2,6}$/.test(t)){$('ident').textContent='Choisissez une société dans la liste.';return}
  history.replaceState(null,'','?t='+t);$('ident').textContent='Chargement de '+t+'…';
- Promise.all([J('data/equities/'+t+'.json'),J('data/equity_rankings.json'),J('data/company_fundamentals.json').catch(()=>({companies:[]})),J('data/issuer_reference.json').catch(()=>({issuers:{}}))])
+ Promise.all([J('data/equities/'+t+'.json'),J('data/equity_rankings.json'),J('data/company_fundamentals.json').catch(()=>({companies:[]})),J('data/issuer_reference.json').catch(()=>({issuers:{}})),J('data/dividends.json').catch(()=>null)])
  .then(d=>render(t,d)).catch(e=>{$('content').hidden=true;$('ident').textContent='';$('err').innerHTML='<div class="note" style="margin-top:14px">Fiche indisponible : '+esc(e.message)+'</div>'})}
 J('data/equities/index.json').then(ix=>{$('tickers').innerHTML=ix.companies.map(c=>'<option value="'+esc(c.ticker)+'">'+esc(c.name)+'</option>').join('')}).catch(()=>{});
 $('pickf').onsubmit=e=>{e.preventDefault();load($('pick').value.split(/\s/)[0])};

@@ -137,10 +137,35 @@ def evaluate_technical(ticker,name,rows,as_of=None):
   "components":{k:round(x,1) for k,x in comp.items()},
   "unavailable":[k for k,x in (("sma50",s50),("sma200",s200),("rsi14",ta.rsi(c)),("macd",m),("atr14",a)) if x is None],
   "note":"Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."}
-def issuer_facts(r,close,ref_date):
- """ISIN et dernier dividende (bulletin de la cote). Rendement « dernier dividende / cours » calculé
- seulement si le détachement date de moins de 15 mois : un dividende ancien n'est pas un rendement courant."""
+def issuer_facts(r,close,ref_date,divs=None,ca_dates=()):
+ """ISIN et dividendes. Avec le calendrier officiel (data/dividends.json) : rendement = dividendes ordinaires et
+ optionnels détachés sur les 12 derniers mois / dernier cours (exceptionnels affichés à part, hors rendement).
+ Un dividende détaché AVANT une opération sur titres présumée n'est pas comparable au cours actuel : on retient alors
+ le montant ajusté du bulletin de la cote s'il porte sur ce détachement, sinon il est écarté (et signalé).
+ Sans calendrier : dernier dividende du bulletin, seulement si détaché il y a moins de 15 mois."""
+ r=r or {}
  out={"isin":r.get("isin"),"last_dividend_mad":r.get("last_dividend_mad"),"dividend_fiscal_year":r.get("dividend_fiscal_year"),"dividend_ex_date":r.get("dividend_ex_date")}
+ if divs is not None and ref_date and valid(close) and close>0:
+  try:
+   d0=date.fromisoformat(ref_date);lo=date.fromordinal(d0.toordinal()-365).isoformat()
+  except ValueError:d0=None
+  if d0:
+   win=[d for d in divs if lo<d["ex_date"]<=ref_date];reg=0.0;exc=0.0;notes=[]
+   for d in win:
+    amt=d["amount_mad"]
+    if any(d["ex_date"]<c<=ref_date for c in ca_dates):
+     if r.get("dividend_ex_date")==d["ex_date"] and valid(r.get("last_dividend_mad")):
+      amt=r["last_dividend_mad"];notes.append(f"dividende du {d['ex_date']} ({d['amount_mad']} MAD) ajusté de l'opération sur titres : {amt} MAD (bulletin de la cote)")
+     else:
+      notes.append(f"dividende du {d['ex_date']} écarté : détaché avant une opération sur titres, montant ajusté inconnu");continue
+    if d["type"]=="Exceptionnel":exc+=amt
+    else:reg+=amt
+   out.update(dividend_yield_pct=round(100*reg/close,2) if reg>0 else None,dividends_12m_mad=round(reg,4),
+              exceptional_dividends_12m_mad=round(exc,4) or None,dividend_events_12m=len(win),dividend_notes=notes or None,
+              dividend_yield_basis="dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours" if reg>0 else "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)")
+   if win:
+    out.update(dividend_ex_date=win[0]["ex_date"],last_dividend_mad=win[0]["amount_mad"])
+   return out
  try:recent=(date.fromisoformat(ref_date)-date.fromisoformat(r["dividend_ex_date"])).days<=456
  except (TypeError,ValueError,KeyError):recent=False
  out["dividend_yield_pct"]=round(100*r["last_dividend_mad"]/close,2) if recent and valid(r.get("last_dividend_mad")) and valid(close) and close>0 else None
@@ -154,10 +179,13 @@ def main():
  technical=[evaluate_technical(x.get("ticker"),x.get("name"),x.get("rows",[])) if x.get("listing_exchange")=="Casablanca Stock Exchange" and x.get("listing_country")=="MA" else {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED"} for x in quotes.get("companies",[])]
  sectors={x.get("ticker"):x.get("sector") for x in quotes.get("companies",[])}
  ref=load("issuer_reference.json",{}).get("issuers",{})
+ cal=load("dividends.json",{}).get("companies")
+ cas={x.get("ticker"):[r["date"] for r in x.get("rows",[]) if "corporate_action_suspected" in str(r.get("status",""))] for x in quotes.get("companies",[])}
+ divs_of=lambda t:None if cal is None else (cal.get(t) or {}).get("dividends",[])
  for x in technical:
   x["sector"]=sectors.get(x.get("ticker"))
   r=ref.get(x.get("ticker"))
-  if r:x.update(issuer_facts(r,x.get("close"),x.get("reference_date")))
+  if r or cal is not None:x.update(issuer_facts(r,x.get("close"),x.get("reference_date"),divs_of(x.get("ticker")),cas.get(x.get("ticker"),())))
  # Snapshot performance is displayed as an unranked watchlist only, never as a validated signal.
  dash=load("dashboard.json",{})
  rotation=dash.get("rotation",{})
@@ -172,7 +200,7 @@ def main():
   t=c.get("ticker");tx=tech_by.get(t,{});lr=last.get(t) or {}
   c=dict(c,name=c.get("name") or names.get(t),sector=sectors.get(t))
   dy=tx.get("dividend_yield_pct")
-  if dy is None and ref.get(t) and valid(lr.get("close")):dy=issuer_facts(ref[t],lr["close"],lr.get("date")).get("dividend_yield_pct")
+  if "dividend_yield_pct" not in tx and valid(lr.get("close")) and (ref.get(t) or cal is not None):dy=issuer_facts(ref.get(t),lr["close"],lr.get("date"),divs_of(t),cas.get(t,())).get("dividend_yield_pct")
   x=evaluate_fundamental(c,lr.get("close"),lr.get("date"),dy,tx.get("volatility_annual_pct"),(tx.get("liquidity") or {}).get("tier"))
   x["sector"]=sectors.get(t);fundamentals.append(x)
  f_rank=sorted((x for x in fundamentals if x.get("category")=="ELIGIBLE"),key=lambda x:x["score"],reverse=True)

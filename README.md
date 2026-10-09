@@ -135,3 +135,10 @@ Une page par valeur cotée, ouverte depuis les tickers des classements ou par re
 - résultats publiés : chaque poste avec N, N-1, unité et la ligne exacte lue dans le PDF source ;
 - dividende (bulletin de la cote) et qualité des données (statuts des séances, période couverte, ISIN, sources, date de collecte).
 Les titres sans historique exploitable (cours nuls : DIS, DLM, SAM) affichent un message explicite. Test : `node test_societe.cjs` (rendu des 81 valeurs avec les données de production, exécuté par la CI).
+
+## Calendrier des dividendes (`collect_dividends.py`)
+
+- **Source** : page officielle « Calendrier financier » de la Bourse de Casablanca (`/emetteurs/calendrier-financier`) : dividendes depuis 2013 (date de détachement, date de paiement, type, montant) et assemblées générales depuis 2011, publiés dans les données de la page.
+- **Contrôles** : rapprochement émetteur → ticker par nom normalisé (sociétés radiées conservées à part) ; montants nuls ou invalides rejetés et listés ; doublons supprimés ; recoupement avec le dernier dividende ajusté du bulletin de la cote (écart signalé, ex. Managem : 55 MAD publiés avant la division du nominal par 10, 5,5 MAD ajustés).
+- **Rendement** : dividendes ordinaires et optionnels détachés sur les 12 derniers mois / dernier cours ; dividendes exceptionnels affichés à part, hors rendement ; un dividende détaché avant une opération sur titres est remplacé par le montant ajusté du bulletin, ou écarté s'il est inconnu.
+- **Affichage** : tableau de bord (prochains et derniers détachements, prochaines assemblées) et fiche société (historique complet, dernière / prochaine assemblée).
