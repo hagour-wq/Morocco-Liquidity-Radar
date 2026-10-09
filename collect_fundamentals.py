@@ -19,19 +19,21 @@ SOURCES = Path("data/fundamentals_sources.json")
 REF = Path("data/issuer_reference.json")
 OUT = Path("data/company_fundamentals.json")
 REQUIRED = {"bank": ["pnb", "net_income_group", "equity_total", "minority_interests", "cost_of_risk", "operating_expenses"],
-            "corporate": ["revenue", "operating_income", "net_income_group", "equity_total"]}
+            "corporate": ["revenue", "net_income_group", "equity_total|equity_group"]}
 
 
-def analyse(src, text, shares):
+def analyse(src, text, shares, price=None):
     if len(text.strip()) < 2000:
         return {"status": "UNREADABLE", "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"}
     fin = extract(text, src["model"])
-    derived, errors, notes = checks(fin, src["model"], shares)
-    missing = [k for k in REQUIRED[src["model"]] if not fin.get(k)]
+    derived, errors, notes = checks(fin, src["model"], shares, price)
+    missing = [k for k in REQUIRED[src["model"]] if not any(fin.get(x) for x in k.split("|"))
+               and not (k == "minority_interests" and fin.get("_scope") == "social")]
     status = "REJECTED" if errors else "PARTIAL" if missing else "VERIFIED"
     return {"status": status, "errors": errors, "notes": notes, "missing": missing,
-            "statements": {k: ({kk: x[kk] for kk in ("current", "previous", "unit", "mad", "mad_previous", "line", "ambiguous_split", "method") if kk in x} if x else None)
-                           for k, x in fin.items()},
+            "scope": fin.get("_scope"),
+            "statements": {k: ({kk: x[kk] for kk in ("current", "previous", "unit", "mad", "mad_previous", "line", "layout", "ambiguous_split", "method") if kk in x} if x else None)
+                           for k, x in fin.items() if not k.startswith("_")},
             "derived": {k: (round(v, 4) if isinstance(v, float) else v) for k, v in derived.items()}}
 
 
@@ -53,7 +55,7 @@ def main():
         try:
             b = cb._get(src["url"], accept="application/pdf")
             text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
-            rec.update(analyse(src, text, r.get("shares")))
+            rec.update(analyse(src, text, r.get("shares"), r.get("reference_price_mad")))
         except Exception as e:
             rec.update(status="SOURCE_ERROR", reason=f"{type(e).__name__}: {e}"[:200])
         out["companies"].append(rec)
