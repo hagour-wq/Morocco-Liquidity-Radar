@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T11:55:58.661819+00:00",
+  "run_at": "2026-10-09T11:57:14.463489+00:00",
   "attempts": [
     {
       "url": "https://www.casablanca-bourse.com/",
@@ -25,7 +25,7 @@
       "url": "https://www.casablanca-bourse.com/",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78983,
+      "bytes": 78985,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     },
@@ -33,7 +33,7 @@
       "url": "https://www.casablanca-bourse.com/fr",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78983,
+      "bytes": 78985,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     }
@@ -77,7 +77,7 @@
   "pages": {
     "actions": {
       "status": 200,
-      "bytes": 107775,
+      "bytes": 107752,
       "tables": 1,
       "rows": 0,
       "api": [],
@@ -85,7 +85,7 @@
     },
     "indices": {
       "status": 200,
-      "bytes": 54248,
+      "bytes": 54237,
       "tables": 3,
       "rows": 3,
       "api": [],
@@ -93,7 +93,7 @@
     },
     "volume": {
       "status": 200,
-      "bytes": 36167,
+      "bytes": 36169,
       "tables": 2,
       "rows": 2,
       "api": [],
@@ -101,7 +101,7 @@
     },
     "capitalisation": {
       "status": 200,
-      "bytes": 63919,
+      "bytes": 63907,
       "tables": 1,
       "rows": 1,
       "api": [],
@@ -109,7 +109,7 @@
     },
     "fiche_atw": {
       "status": 200,
-      "bytes": 78983,
+      "bytes": 78985,
       "tables": 4,
       "rows": 20,
       "api": [],
@@ -129,7 +129,7 @@
     },
     "historique": {
       "status": 200,
-      "bytes": 78983,
+      "bytes": 78985,
       "tables": 4,
       "rows": 20,
       "api": [],
@@ -202,7 +202,7 @@
     },
     "transactions": {
       "status": 200,
-      "bytes": 718190,
+      "bytes": 718951,
       "tables": 1,
       "rows": 1,
       "links": []
@@ -252,6 +252,139 @@
       "src": "/sites/default/files/js/js_d7lHoz3_WamXmOm_--uA_ab6ULsaU3SYREM-WPN41Jk.js?scope=footer&delta=1&language=fr&theme=bn_inst",
       "bytes": 121860,
       "hits": []
+    }
+  },
+  "api_base": "https://www.casablanca-bourse.com/api/boursenova",
+  "history_test": {
+    "ATW_adj_false": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "ATW_adj_true": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "BCP_adj_false": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "BCP_adj_true": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "IAM_adj_false": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "IAM_adj_true": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "MSA_adj_false": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "MSA_adj_true": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "MNG_adj_false": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
+    },
+    "MNG_adj_true": {
+      "status": 200,
+      "keys": [
+        "totalCount",
+        "items"
+      ],
+      "n": 0,
+      "first": null,
+      "last": null,
+      "meta": {
+        "totalCount": 0
+      }
     }
   }
 }
