@@ -38,9 +38,12 @@ def evaluate_fundamental(x):
  score=clamp(.30*components["valuation"]+.25*components["quality"]+.20*components["growth"]+.15*components["debt"]+.10*components["income"])
  return {"ticker":x["ticker"],"name":x["name"],"score":score,"status":"RESEARCH_ONLY","reference_date":x["reference_date"],"source_url":x["source_url"],"pe":round(pe,2),"pb":round(pb,2),"dividend_yield_pct":round(yield_pct,2),"components":{k:round(v,1) for k,v in components.items()},"note":"Cross-sector comparisons are indicative; bank/insurer metrics require separate methodology."}
 TECH_MIN_SESSIONS=25
+MAX_GAP_DAYS=7  # fermetures légales observées jusqu'à 6 jours (Aïd al-Fitr 2024, Aïd al-Adha 2026) ; au-delà : trou de données
 def _r(v,d=2):return None if v is None else round(v,d)
-def evaluate_technical(ticker,name,rows):
- raw_rows=sorted((x for x in rows if x.get("date")),key=lambda x:x["date"])
+def evaluate_technical(ticker,name,rows,as_of=None):
+ as_of=as_of or date.today()
+ rows=[x for x in rows if x.get("date") and x["date"]<=as_of.isoformat()]  # aucun regard vers le futur
+ raw_rows=sorted(rows,key=lambda x:x["date"])
  """Indicateurs complets (technical.py) sur le segment postérieur à la dernière opération sur titres présumée.
  Score = momentum 5J 35 % + 20J 25 % + position / tendance 20 % + volume relatif 10 % + volatilité 10 %."""
  if not ticker or not name:return {"ticker":ticker,"name":name,"status":"INVALID_INSTRUMENT","category":"NON_ANALYSABLE"}
@@ -58,11 +61,11 @@ def evaluate_technical(ticker,name,rows):
  flagged=[x["date"] for x in seg[-TECH_MIN_SESSIONS:] if not set(str(x.get("status") or "validated").split(","))<=soft]
  if flagged:return {**base,"status":"FLAGGED_DATA_IN_WINDOW","flagged_dates":flagged,"note":"Anomaly inside the 25-session window; no technical score."}
  last=seg[-1]
- try:age=(date.today()-date.fromisoformat(last["date"])).days
+ try:age=(as_of-date.fromisoformat(last["date"])).days
  except (ValueError,TypeError):age=10000
- if age<0 or age>5:return {**base,"status":"STALE_DATA","last_date":last["date"]}
+ if age<0 or age>MAX_GAP_DAYS:return {**base,"status":"STALE_DATA","last_date":last["date"]}
  gaps=[(date.fromisoformat(seg[i]["date"])-date.fromisoformat(seg[i-1]["date"])).days for i in range(len(seg)-24,len(seg))]
- if any(g>5 or g<=0 for g in gaps):return {**base,"status":"GAPPED_HISTORY"}
+ if any(g>MAX_GAP_DAYS or g<=0 for g in gaps):return {**base,"status":"GAPPED_HISTORY"}
  c=[x["close"] for x in seg]
  nt=lambda x,k:x["close"] if x.get("traded") is False and x.get(k) is None else x.get(k)  # séance sans échange : H = B = cours de référence
  h=[nt(x,"high") for x in seg];l=[nt(x,"low") for x in seg];v=[x.get("volume") if valid(x.get("volume")) else None for x in seg]
