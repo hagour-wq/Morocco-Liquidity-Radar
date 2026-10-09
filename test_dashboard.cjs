@@ -18,6 +18,7 @@ setImmediate(()=>{
  assert.ok(node('longrank').textContent.length>0 || node('longrank').innerHTML.length>0,'Fundamentals panel must render');
  assert.ok(node('shortrank').textContent.length>0 || node('shortrank').innerHTML.length>0,'Technical panel must render');
  if(tbt){assert.ok(node('btgrid').innerHTML.includes('<table'),'Backtest table must render');assert.ok(!node('btgrid').innerHTML.includes('NaN'),'No NaN in backtest');}
+ const lt=ranks.long_term||{};if((lt.ranked||[]).length){assert.ok(node('longrank').innerHTML.includes('<table'),'Fundamental ranking must render');for(const x of lt.ranked)assert.ok(node('longrank').innerHTML.includes('>'+x.ticker+'<'),'Fundamental ticker '+x.ticker);assert.ok(!node('longrank').innerHTML.includes('NaN'),'No NaN in fundamental table');}
  const st=ranks.short_term||{};const n=(st.ranked||[]).length+(st.watch||[]).length;
  if(n){assert.ok(node('shortrank').innerHTML.includes('<table'),'Technical ranking must render as a table');
   for(const x of (st.ranked||[]))assert.ok(node('shortrank').innerHTML.includes('>'+x.ticker+'<'),'Ticker '+x.ticker+' must be listed');

@@ -18,25 +18,58 @@ def ratio(v,lo,hi,reverse=False):
  if not valid(v):return None
  z=clamp(100*(v-lo)/(hi-lo))
  return 100-z if reverse else z
-def evaluate_fundamental(x):
- if x.get("listing_exchange")!="Casablanca Stock Exchange" or x.get("listing_country")!="MA":
-  return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED","note":"Requires independently validated Casablanca listing; AMMC reporting alone is insufficient."}
- required=("ticker","name","reference_date","source_url","price_mad","eps_mad","book_value_per_share_mad","roe_pct","revenue_growth_pct","net_debt_ebitda","dividend_per_share_mad")
- missing=[k for k in required if x.get(k) is None or x.get(k)==""]
- if missing:return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"INSUFFICIENT_DATA","missing_fields":missing}
- try: age=(date.today()-date.fromisoformat(x["reference_date"])).days
- except (ValueError,TypeError):age=10000
- if x.get("sector","").casefold() in ("banques","banque","banking","assurances","assurance","insurance"):
-  return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"SECTOR_MODEL_PENDING","note":"Financial institutions require sector-specific solvency and valuation scoring."}
- if age<0 or age>550 or not str(x["source_url"]).startswith("https://"):
-  return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"STALE_OR_UNSOURCED"}
- p,eps,bv=x["price_mad"],x["eps_mad"],x["book_value_per_share_mad"]
- if not all(valid(v) for v in (p,eps,bv,x["roe_pct"],x["revenue_growth_pct"],x["net_debt_ebitda"],x["dividend_per_share_mad"])) or p<=0 or eps<=0 or bv<=0:
-  return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"NOT_COMPARABLE","note":"Requires positive EPS and book value; banks need sector-specific model."}
- pe=p/eps;pb=p/bv;yield_pct=100*x["dividend_per_share_mad"]/p
- components={"valuation":(ratio(pe,8,35,True)+ratio(pb,.8,6,True))/2,"quality":ratio(x["roe_pct"],0,25),"growth":ratio(x["revenue_growth_pct"],-10,20),"debt":ratio(x["net_debt_ebitda"],0,5,True),"income":ratio(yield_pct,0,7)}
- score=clamp(.30*components["valuation"]+.25*components["quality"]+.20*components["growth"]+.15*components["debt"]+.10*components["income"])
- return {"ticker":x["ticker"],"name":x["name"],"score":score,"status":"RESEARCH_ONLY","reference_date":x["reference_date"],"source_url":x["source_url"],"pe":round(pe,2),"pb":round(pb,2),"dividend_yield_pct":round(yield_pct,2),"components":{k:round(v,1) for k,v in components.items()},"note":"Cross-sector comparisons are indicative; bank/insurer metrics require separate methodology."}
+# Bornes de normalisation (0 → 100, linéaire, bornées) — conventions de marché documentées dans le README.
+FUND_BOUNDS={
+ "bank":{"pe":(6,20,True),"pb":(0.8,3.5,True),"roe":(5,20,False),"cost_income":(35,65,True),"pnb_growth":(-5,15,False),
+         "ni_growth":(-20,40,False),"cost_of_risk_loans":(0.3,2.5,True),"dividend_yield":(0,7,False)},
+ "corporate":{"pe":(8,30,True),"pb":(1,8,True),"roe":(0,30,False),"operating_margin":(0,40,False),"revenue_growth":(-10,25,False),
+              "ni_growth":(-20,40,False),"net_debt_ebitda":(0,4,True),"equity_ratio":(10,60,False),"dividend_yield":(0,7,False)}}
+FUND_WEIGHTS={"valuation":30,"quality":25,"growth":20,"structure":15,"dividend":10}
+FUND_MAX_AGE_DAYS=548   # comptes annuels : valables jusqu'à ~18 mois après la clôture
+def _avg(xs):
+ xs=[x for x in xs if x is not None]
+ return sum(xs)/len(xs) if xs else None
+def evaluate_fundamental(c,price=None,price_date=None,dividend_yield=None,volatility=None,liquidity_tier=None):
+ """Score fondamental /100 par modèle sectoriel (banques / sociétés non financières).
+ Valorisation 30 %, qualité 25 %, croissance 20 %, structure / risque 15 %, dividende 10 %.
+ Composante manquante : score calculé sur les poids disponibles, marqué partiel et classé « À surveiller »."""
+ t,name=c.get("ticker"),c.get("name")
+ base={"ticker":t,"name":name,"model":c.get("model"),"fiscal_year":c.get("fiscal_year"),"source_url":c.get("url"),"category":"NON_ANALYSABLE"}
+ if c.get("listing_exchange")!="Casablanca Stock Exchange" or c.get("listing_country")!="MA":
+  return {**base,"status":"EXCHANGE_NOT_VERIFIED","note":"Cotation à Casablanca non vérifiée."}
+ if c.get("status")!="VERIFIED":
+  return {**base,"status":c.get("status") or "INSUFFICIENT_DATA","note":c.get("reason") or "; ".join((c.get("errors") or [])+["manquant : "+", ".join(c.get("missing") or [])] if c.get("missing") else (c.get("errors") or [])) or None}
+ d=c.get("derived",{})
+ try:age=(date.fromisoformat(price_date)-date.fromisoformat(c["period_end"])).days if price_date else None
+ except (ValueError,TypeError,KeyError):age=None
+ if age is None or age<0 or age>FUND_MAX_AGE_DAYS:return {**base,"status":"STALE_OR_UNDATED","note":"Comptes de plus de 18 mois ou cours indisponible."}
+ if not valid(price) or price<=0:return {**base,"status":"NO_PRICE"}
+ eps,bv=d.get("eps_current_shares_mad"),d.get("book_value_per_share_mad")
+ pe=price/eps if valid(eps) and eps>0 else None
+ pb=price/bv if valid(bv) and bv>0 else None
+ m=c["model"];B=FUND_BOUNDS[m]
+ r=lambda k,x:None if x is None else ratio(x,B[k][0],B[k][1],B[k][2])
+ comp={"valuation":_avg([r("pe",pe),r("pb",pb)]),"dividend":r("dividend_yield",dividend_yield)}
+ if m=="bank":
+  comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("cost_income",d.get("cost_income_pct"))]),
+              growth=_avg([r("pnb_growth",d.get("pnb_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),
+              structure=r("cost_of_risk_loans",d.get("cost_of_risk_to_loans_pct")))
+ else:
+  comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("operating_margin",d.get("operating_margin_pct"))]),
+              growth=_avg([r("revenue_growth",d.get("revenue_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),
+              structure=r("net_debt_ebitda",d.get("net_debt_to_ebitda")) if d.get("net_debt_to_ebitda") is not None else r("equity_ratio",d.get("equity_ratio_pct")))
+ have={k:v for k,v in comp.items() if v is not None}
+ missing=[k for k in FUND_WEIGHTS if k not in have]
+ w=sum(FUND_WEIGHTS[k] for k in have)
+ score=clamp(sum(FUND_WEIGHTS[k]*have[k] for k in have)/w) if w else None
+ risk="élevé" if (volatility or 0)>35 or liquidity_tier=="faible" else "faible" if volatility is not None and volatility<20 and liquidity_tier=="élevée" else "moyen" if volatility is not None else None
+ return {**base,"status":"RESEARCH_ONLY","category":"ELIGIBLE" if not missing else "WATCH","score":score,"partial":bool(missing),"missing_components":missing,
+  "price_mad":price,"price_date":price_date,"pe":round(pe,2) if pe else None,"pb":round(pb,2) if pb else None,
+  "roe_pct":round(d["roe_pct"],2) if valid(d.get("roe_pct")) else None,"dividend_yield_pct":dividend_yield,"risk_level":risk,
+  "eps_mad":round(eps,2) if valid(eps) else None,"book_value_per_share_mad":round(bv,2) if valid(bv) else None,
+  "indicators":{k:(round(v,2) if isinstance(v,float) else v) for k,v in d.items() if k.endswith("_pct") or k=="net_debt_to_ebitda"},
+  "components":{k:(round(v,1) if v is not None else None) for k,v in comp.items()},"notes":c.get("notes"),
+  "note":"Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation."}
 TECH_MIN_SESSIONS=25
 MAX_GAP_DAYS=7  # fermetures légales observées jusqu'à 6 jours (Aïd al-Fitr 2024, Aïd al-Adha 2026) ; au-delà : trou de données
 def _r(v,d=2):return None if v is None else round(v,d)
@@ -106,7 +139,8 @@ def issuer_facts(r,close,ref_date):
 def main():
  base=load("company_fundamentals.json",{"companies":[]})
  quotes={"companies":equity_store.load_all()}
- fundamentals=[evaluate_fundamental(x) for x in base.get("companies",[])]
+ tech_by={}
+ fundamentals=[]
  technical=[evaluate_technical(x.get("ticker"),x.get("name"),x.get("rows",[])) if x.get("listing_exchange")=="Casablanca Stock Exchange" and x.get("listing_country")=="MA" else {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED"} for x in quotes.get("companies",[])]
  sectors={x.get("ticker"):x.get("sector") for x in quotes.get("companies",[])}
  ref=load("issuer_reference.json",{}).get("issuers",{})
@@ -121,10 +155,21 @@ def main():
  for kind in ("leaders","laggards"):
   for x in rotation.get(kind,[]):
    watch.append({"ticker":x.get("ticker"),"name":x.get("name"),"change_1d_pct":x.get("change_pct"),"status":"SNAPSHOT_ONLY","reference_date":rotation.get("reference_date"),"note":"One-session movement; cannot rank expected profitability."})
- f_rank=sorted((x for x in fundamentals if x.get("score") is not None),key=lambda x:x["score"],reverse=True)
+ tech_by={x.get("ticker"):x for x in technical}
+ names={x.get("ticker"):x.get("name") for x in quotes.get("companies",[])}
+ last={x.get("ticker"):next((r for r in reversed(x.get("rows",[])) if valid(r.get("close")) and r["close"]>0 and "stale_copy" not in str(r.get("status",""))),None) for x in quotes.get("companies",[])}
+ for c in base.get("companies",[]):
+  t=c.get("ticker");tx=tech_by.get(t,{});lr=last.get(t) or {}
+  c=dict(c,name=c.get("name") or names.get(t),sector=sectors.get(t))
+  dy=tx.get("dividend_yield_pct")
+  if dy is None and ref.get(t) and valid(lr.get("close")):dy=issuer_facts(ref[t],lr["close"],lr.get("date")).get("dividend_yield_pct")
+  x=evaluate_fundamental(c,lr.get("close"),lr.get("date"),dy,tx.get("volatility_annual_pct"),(tx.get("liquidity") or {}).get("tier"))
+  x["sector"]=sectors.get(t);fundamentals.append(x)
+ f_rank=sorted((x for x in fundamentals if x.get("category")=="ELIGIBLE"),key=lambda x:x["score"],reverse=True)
+ f_watch=sorted((x for x in fundamentals if x.get("category")=="WATCH"),key=lambda x:x["score"],reverse=True)
  t_rank=sorted((x for x in technical if x.get("category")=="ELIGIBLE"),key=lambda x:x["score"],reverse=True)
  t_watch=sorted((x for x in technical if x.get("category")=="WATCH"),key=lambda x:x["score"],reverse=True)
- result={"generated_at":datetime.now(timezone.utc).isoformat(),"status":"RESEARCH_ONLY","methodology":{"long_term":"Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.","short_term":"Momentum 5 séances 35 %, 20 séances 25 %, position clôture / MM50 (MM20 si < 50 séances) 20 %, volume relatif 10 %, volatilité annualisée 20 j (inverse) 10 %. Minimum 25 séances après toute opération sur titres présumée. ÉLIGIBLE : montant moyen 20 j ≥ 1 M MAD et aucune séance sans échange sur 60 j ; sinon À SURVEILLER. Volume inconnu (enregistrement incomplet de la source) exclu des moyennes, jamais compté comme zéro.","warning":"Rankings indicate relative factor scores, NOT expected returns or guaranteed profitability. Missing data exclude candidates."},"long_term":{"ranked":f_rank,"excluded":[x for x in fundamentals if x.get("score") is None],"status":"AVAILABLE" if f_rank else "AWAITING_VERIFIED_FUNDAMENTALS"},"short_term":{"ranked":t_rank,"watch":t_watch,"excluded":[x for x in technical if x.get("score") is None],"snapshot_watchlist":watch,"status":"AVAILABLE" if t_rank or t_watch else "AWAITING_OHLCV_HISTORY"}}
+ result={"generated_at":datetime.now(timezone.utc).isoformat(),"status":"RESEARCH_ONLY","methodology":{"long_term":"Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.","short_term":"Momentum 5 séances 35 %, 20 séances 25 %, position clôture / MM50 (MM20 si < 50 séances) 20 %, volume relatif 10 %, volatilité annualisée 20 j (inverse) 10 %. Minimum 25 séances après toute opération sur titres présumée. ÉLIGIBLE : montant moyen 20 j ≥ 1 M MAD et aucune séance sans échange sur 60 j ; sinon À SURVEILLER. Volume inconnu (enregistrement incomplet de la source) exclu des moyennes, jamais compté comme zéro.","warning":"Rankings indicate relative factor scores, NOT expected returns or guaranteed profitability. Missing data exclude candidates."},"long_term":{"ranked":f_rank,"watch":f_watch,"excluded":[x for x in fundamentals if x.get("score") is None],"coverage":{"issuers_in_registry":len(base.get("companies",[])),"listed":len(quotes.get("companies",[]))},"status":"AVAILABLE" if f_rank or f_watch else "AWAITING_VERIFIED_FUNDAMENTALS"},"short_term":{"ranked":t_rank,"watch":t_watch,"excluded":[x for x in technical if x.get("score") is None],"snapshot_watchlist":watch,"status":"AVAILABLE" if t_rank or t_watch else "AWAITING_OHLCV_HISTORY"}}
  (ROOT/"equity_rankings.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
- print("Long-term eligible:",len(f_rank),"Short-term eligible:",len(t_rank),"Short-term watch:",len(t_watch),"Snapshot watchlist:",len(watch))
+ print("Long-term eligible:",len(f_rank),"Long-term watch:",len(f_watch),"Short-term eligible:",len(t_rank),"Short-term watch:",len(t_watch),"Snapshot watchlist:",len(watch))
 if __name__=="__main__":main()
