@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T13:53:47.870363+00:00",
+  "run_at": "2026-10-09T14:41:25.694400+00:00",
   "source": "Bourse de Casablanca",
   "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
   "session_status": "open",
