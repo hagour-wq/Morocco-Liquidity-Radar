@@ -53,7 +53,9 @@ def evaluate_fundamental(c,price=None,price_date=None,dividend_yield=None,volati
  pb=price/bv if valid(bv) and bv>0 else None
  m=c["model"];B=FUND_BOUNDS[m]
  r=lambda k,x:None if x is None else ratio(x,B[k][0],B[k][1],B[k][2])
- comp={"valuation":_avg([r("pe",pe),r("pb",pb)]),"dividend":r("dividend_yield",dividend_yield)}
+ # perte : le PER n'est pas défini mais la valorisation par les bénéfices est la pire possible (0), jamais ignorée
+ pe_score=0.0 if valid(eps) and eps<=0 else r("pe",pe)
+ comp={"valuation":_avg([pe_score,r("pb",pb)]),"dividend":r("dividend_yield",dividend_yield)}
  if m=="bank":
   comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("cost_income",d.get("cost_income_pct"))]),
               growth=_avg([r("pnb_growth",d.get("pnb_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),

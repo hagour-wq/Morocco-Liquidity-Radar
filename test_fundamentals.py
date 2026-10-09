@@ -218,5 +218,15 @@ class InsuranceTests(unittest.TestCase):
         self.assertIsNotNone(x["components"]["quality"])
 
 
+class LossTests(unittest.TestCase):
+    def test_loss_gives_zero_earnings_valuation(self):
+        base = {"ticker": "SNP", "name": "SNEP", "model": "corporate", "status": "VERIFIED", "period_end": "2025-12-31",
+                "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA"}
+        loss = evaluate_fundamental({**base, "derived": {"eps_current_shares_mad": -77.16, "book_value_per_share_mad": 202.9}}, price=289.0, price_date="2026-10-09")
+        gain = evaluate_fundamental({**base, "derived": {"eps_current_shares_mad": 20.0, "book_value_per_share_mad": 202.9}}, price=289.0, price_date="2026-10-09")
+        self.assertIsNone(loss["pe"])
+        self.assertLess(loss["components"]["valuation"], gain["components"]["valuation"])
+
+
 if __name__ == "__main__":
     unittest.main()
