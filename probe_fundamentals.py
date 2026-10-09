@@ -1,39 +1,44 @@
-"""Sonde : fiches émetteurs / chiffres clés sur le site de la Bourse ; bulletin de la cote (ISIN, titres, dividendes)."""
-import io, json, os, re, traceback
+"""Sonde : communiqués financiers des émetteurs pilotes (page Publications émetteurs de la Bourse)."""
+import io, json, os, re, traceback, time
 import casablanca_source as cb
-os.makedirs("diag", exist_ok=True)
-out = {}
+from pypdf import PdfReader
+os.makedirs("diag/pub", exist_ok=True)
+out = {"pages": {}, "candidates": {}}
+KEYS = {"ATW": ["attijari"], "BCP": ["bcp", "populaire"], "IAM": ["maroc_telecom", "maroc-telecom", "iam", "itissalat", "maroc telecom"],
+        "MSA": ["marsa"], "MNG": ["managem"]}
 try:
-    for p in ["/sitemap.xml", "/fr/sitemap.xml", "/robots.txt"]:
-        try:
-            t = cb._get(cb.BASE + p, accept="*/*").decode("utf-8", "ignore")
-            out[p] = {"bytes": len(t), "head": t[:1500], "emetteur_urls": sorted(set(re.findall(r"https?://[^<\s\"]*(?:emetteur|instrument|societe|fiche)[^<\s\"]*", t)))[:40]}
-        except Exception as e:
-            out[p] = str(e)[:200]
-    for p in ["/live-market/actions", "/fr/live-market/emetteurs", "/fr/emetteurs", "/live-market/emetteurs", "/fr/live-market/instruments/ATW", "/fr/live-market/emetteur/attijariwafa-bank",
-              "/fr/emetteurs/attijariwafa-bank", "/fr/live-market/instruments/actions/ATW"]:
-        try:
-            h = cb.get_html(p)
-            title = re.search(r"<title>(.*?)</title>", h, re.S)
-            out[p] = {"bytes": len(h), "title": title.group(1).strip()[:120] if title else None,
-                      "links": sorted(set(re.findall(r'href="([^"]*(?:emetteur|instrument|fiche|societe)[^"]*)"', h, re.I)))[:40]}
-        except Exception as e:
-            out[p] = str(e)[:200]
-    h = cb.get_html("/live-market/actions")
-    s = cb.drupal_settings(h).get("live_market", {})
-    a = s.get("actions", [{}])[0]
-    out["action_keys"] = list(a.keys())
-    # bulletin de la cote le plus récent
-    h = cb.get_html("/market-data/bulletins-de-la-cote")
-    links = sorted(set(re.findall(r'href="([^"]*bcfr_?\d{8}\.pdf)"', h, re.I)))
-    url = [l for l in links if "_d_" not in l.lower()][-1]
-    from pypdf import PdfReader
-    b = cb._get(cb.BASE + url if url.startswith("/") else url, accept="application/pdf")
-    open("diag/bulletin_latest.pdf", "wb").write(b)
-    txt = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
-    open("diag/bulletin_latest.txt", "w").write(txt)
-    out["bulletin"] = {"url": url, "bytes": len(b), "chars": len(txt)}
+    links = {}
+    for page in range(0, 80):
+        h = cb.get_html(f"/apropos/publications/emetteurs?page={page}")
+        found = re.findall(r'<a[^>]+href="([^"]+\.pdf)"[^>]*>(.*?)</a>', h, re.S | re.I)
+        rows = re.findall(r'href="([^"]+\.pdf)"', h, re.I)
+        out["pages"][page] = len(rows)
+        if not rows:
+            break
+        # libellé : texte proche du lien
+        for u in rows:
+            i = h.find(u)
+            ctx = re.sub(r"<[^>]+>", " ", h[max(0, i - 600):i + 200])
+            links.setdefault(u, re.sub(r"\s+", " ", ctx)[-400:])
+        time.sleep(0.15)
+    out["total_links"] = len(links)
+    for t, keys in KEYS.items():
+        c = [(u, l) for u, l in links.items() if any(k in (u + " " + l).lower() for k in keys)]
+        out["candidates"][t] = [{"url": u, "ctx": l[-250:]} for u, l in c][:30]
+    for t, c in out["candidates"].items():
+        for item in c:
+            u = item["url"].lower()
+            if any(k in u for k in ["fy", "annuel", "2025", "s1_26", "s1-26", "s1_2026", "resultats", "t4", "comptes"]) and len([f for f in os.listdir("diag/pub") if f.startswith(t)]) < 6:
+                try:
+                    url = item["url"] if item["url"].startswith("http") else cb.BASE + item["url"]
+                    b = cb._get(url, accept="application/pdf")
+                    txt = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages[:12])
+                    name = f"{t}_{os.path.basename(item['url'])[:80]}.txt"
+                    open(f"diag/pub/{name}", "w").write(url + "\n\n" + txt)
+                    item["saved"] = name
+                except Exception as e:
+                    item["error"] = str(e)[:150]
 except Exception:
     out["error"] = traceback.format_exc()[-1500:]
 finally:
-    open("diag/fundamentals_probe.json", "w").write(json.dumps(out, ensure_ascii=False, indent=1))
+    open("diag/publications_probe.json", "w").write(json.dumps(out, ensure_ascii=False, indent=1))
