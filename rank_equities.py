@@ -23,7 +23,11 @@ FUND_BOUNDS={
  "bank":{"pe":(6,20,True),"pb":(0.8,3.5,True),"roe":(5,20,False),"cost_income":(35,65,True),"pnb_growth":(-5,15,False),
          "ni_growth":(-20,40,False),"cost_of_risk_loans":(0.3,2.5,True),"dividend_yield":(0,7,False)},
  "corporate":{"pe":(8,30,True),"pb":(1,8,True),"roe":(0,30,False),"operating_margin":(0,40,False),"revenue_growth":(-10,25,False),
-              "ni_growth":(-20,40,False),"net_debt_ebitda":(0,4,True),"equity_ratio":(10,60,False),"dividend_yield":(0,7,False)}}
+              "ni_growth":(-20,40,False),"net_debt_ebitda":(0,4,True),"equity_ratio":(10,60,False),"dividend_yield":(0,7,False)},
+ # assurances (IFRS 17) : charges / produits des activités d'assurance (proxy du ratio combiné, brut de réassurance),
+ # capitaux propres / total bilan faute de marge de solvabilité publiée dans le document
+ "insurance":{"pe":(6,25,True),"pb":(0.8,4,True),"roe":(5,20,False),"insurance_expense_ratio":(80,100,True),"revenue_growth":(-5,15,False),
+              "ni_growth":(-20,40,False),"equity_ratio":(5,30,False),"dividend_yield":(0,7,False)}}
 FUND_WEIGHTS={"valuation":30,"quality":25,"growth":20,"structure":15,"dividend":10}
 FUND_MAX_AGE_DAYS=548   # comptes annuels : valables jusqu'à ~18 mois après la clôture
 def _avg(xs):
@@ -54,6 +58,10 @@ def evaluate_fundamental(c,price=None,price_date=None,dividend_yield=None,volati
   comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("cost_income",d.get("cost_income_pct"))]),
               growth=_avg([r("pnb_growth",d.get("pnb_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),
               structure=r("cost_of_risk_loans",d.get("cost_of_risk_to_loans_pct")))
+ elif m=="insurance":
+  comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("insurance_expense_ratio",d.get("insurance_expense_ratio_pct"))]),
+              growth=_avg([r("revenue_growth",d.get("revenue_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),
+              structure=r("equity_ratio",d.get("equity_ratio_pct")))
  else:
   comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("operating_margin",d.get("operating_margin_pct"))]),
               growth=_avg([r("revenue_growth",d.get("revenue_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),

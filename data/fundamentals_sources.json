@@ -28,19 +28,21 @@
   },
   {
    "ticker": "AFM",
-   "model": "insurance",
+   "model": "corporate",
    "fiscal_year": 2025,
    "period_end": "2025-12-31",
    "document": "Communication financière annuelle 2025",
-   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afma_2025.pdf"
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afma_2025.pdf",
+   "model_note": "courtier en assurance : comptes commerciaux (commissions), modèle société non financière"
   },
   {
    "ticker": "AGM",
-   "model": "insurance",
+   "model": "corporate",
    "fiscal_year": 2025,
    "period_end": "2025-12-31",
    "document": "Communication financière annuelle 2025",
-   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/agma_2025_cp_rfa_2025.pdf"
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/agma_2025_cp_rfa_2025.pdf",
+   "model_note": "courtier en assurance : comptes commerciaux (commissions), modèle société non financière"
   },
   {
    "ticker": "AKT",
