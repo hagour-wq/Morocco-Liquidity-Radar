@@ -6,6 +6,7 @@ on:
     paths:
       - "collect_official_equity_archives.py"
       - "collect_ammc_financial_catalog.py"
+      - "probe_yuna_history.py"
       - ".github/workflows/official-equity-archives.yml"
   schedule:
     - cron: "40 18 * * 1-5"
@@ -26,6 +27,8 @@ jobs:
         run: python collect_official_equity_archives.py
       - name: Discover issuer historical financial reports
         run: python collect_ammc_financial_catalog.py
+      - name: Probe independent Casablanca historical session source
+        run: python probe_yuna_history.py
       - name: Upload audit evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -34,11 +37,12 @@ jobs:
           path: |
             data/official_equity_archive.json
             data/ammc_fundamental_catalog.json
+            data/yuna_history_probe.json
           if-no-files-found: warn
       - name: Commit archive audit
         run: |
           git config user.name "mlr-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/official_equity_archive.json data/ammc_fundamental_catalog.json
+          git add data/official_equity_archive.json data/ammc_fundamental_catalog.json data/yuna_history_probe.json
           git diff --cached --quiet || git commit -m "data: audit official equity monthly archives"
           git push
