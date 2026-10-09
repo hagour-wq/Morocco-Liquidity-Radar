@@ -6,8 +6,8 @@ const dash=JSON.parse(fs.readFileSync('data/dashboard.json','utf8'));
 const hist=JSON.parse(fs.readFileSync('data/market_history.json','utf8'));
 const ranks=JSON.parse(fs.readFileSync('data/equity_rankings.json','utf8'));
 const nodes=new Map();
-function node(id){if(!nodes.has(id))nodes.set(id,{id,textContent:'',innerHTML:'',className:'',style:{},clientWidth:800,clientHeight:220,querySelectorAll(){return []},getContext(){return {scale(){},clearRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(){}}}});return nodes.get(id)}
-const sandbox={document:{getElementById:node},fetch:async url=>({ok:true,json:async()=>url.includes('dashboard')?dash:url.includes('equity_rankings')?ranks:hist}),Date,Number,Math,window:{addEventListener(){}},devicePixelRatio:1,console};
+function node(id){if(!nodes.has(id))nodes.set(id,{id,textContent:'',innerHTML:'',className:'',style:{},clientWidth:800,clientHeight:220,querySelectorAll(){return []},value:'',options:[],appendChild(o){this.options.push(o)},getContext(){return {scale(){},clearRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(){}}}});return nodes.get(id)}
+const sandbox={document:{getElementById:node,createElement(){return {}}},fetch:async url=>({ok:true,json:async()=>url.includes('dashboard')?dash:url.includes('equity_rankings')?ranks:hist}),Date,Number,Math,window:{addEventListener(){}},devicePixelRatio:1,console};
 vm.runInNewContext(script,sandbox,{timeout:3000});
 setImmediate(()=>{
  assert.ok(!node('conclusion').textContent.includes('Erreur de chargement'),'No runtime error');

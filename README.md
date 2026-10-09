@@ -50,7 +50,8 @@ La même architecture pourra accueillir CAC 40, S&P 500 et Nasdaq après stabili
 - **TLS** : le serveur n'envoie pas son certificat intermédiaire. `certs/sectigo_public_server_auth_ca_dv_r36.pem` (Sectigo Public Server Authentication CA DV R36, SHA-256 `8C:54:C3:34:…:EF:22:E0`, expire en 2036) est ajouté au magasin certifi ; la vérification TLS reste active.
 - **Cours bruts** : non ajustés des dividendes ni des opérations sur titres (`adj_close` = null). Les ruptures de type division du nominal sont détectées (`corporate_action_suspected`, ex. MNG le 27/07/2026) et bloquent tout score technique dont la fenêtre les traverse.
 - **MASI** : aucune API ne fournit l'historique quotidien (le service `indices/historical` ne renvoie que l'intraday). La clôture officielle est enregistrée chaque soir, confirmée par la présence d'une cotation ATW ce jour-là. Les séances antérieures conservent leur source d'origine (`source`).
-- **Univers** : 5 titres pilotes (ATW, BCP, IAM, MSA, MNG). `EQUITY_UNIVERSE=all` étend aux 81 actions cotées.
+- **Univers** : toutes les actions de la liste officielle (81 au 9 octobre 2026), validé d'abord sur 5 titres pilotes (ATW, BCP, IAM, MSA, MNG). `EQUITY_UNIVERSE=pilot` restreint aux pilotes.
+- **Stockage** : `data/equities/<TICKER>.json`, une séance par ligne, provenance au niveau du fichier, `collected_at` par séance ; `data/equities/index.json` résume la couverture. Collecte incrémentale (45 derniers jours) une fois l'historique constitué ; `EQUITY_FULL_REFRESH=1` force un rechargement complet.
 - Les scripts `backfill_equities*.py` (Yahoo, Investing, archives) ne sont plus exécutés quotidiennement : aucune de ces sources n'a produit de données validées.
 
 ## Méthodologie — analyse technique court terme (`technical.py`, `rank_equities.py`)
