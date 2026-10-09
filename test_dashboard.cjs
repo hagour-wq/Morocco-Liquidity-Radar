@@ -5,9 +5,10 @@ assert.ok(script,'Dashboard script must exist');
 const dash=JSON.parse(fs.readFileSync('data/dashboard.json','utf8'));
 const hist=JSON.parse(fs.readFileSync('data/market_history.json','utf8'));
 const ranks=JSON.parse(fs.readFileSync('data/equity_rankings.json','utf8'));
+const tbt=fs.existsSync('data/technical_backtest.json')?JSON.parse(fs.readFileSync('data/technical_backtest.json','utf8')):null;
 const nodes=new Map();
 function node(id){if(!nodes.has(id))nodes.set(id,{id,textContent:'',innerHTML:'',className:'',style:{},clientWidth:800,clientHeight:220,querySelectorAll(){return []},value:id==='techcat'?'ok':'',options:[],appendChild(o){this.options.push(o)},getContext(){return {scale(){},clearRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(){}}}});return nodes.get(id)}
-const sandbox={document:{getElementById:node,createElement(){return {}}},fetch:async url=>({ok:true,json:async()=>url.includes('dashboard')?dash:url.includes('equity_rankings')?ranks:hist}),Date,Number,Math,window:{addEventListener(){}},devicePixelRatio:1,console};
+const sandbox={document:{getElementById:node,createElement(){return {}}},fetch:async url=>({ok:true,json:async()=>url.includes('dashboard')?dash:url.includes('equity_rankings')?ranks:url.includes('technical_backtest')?tbt:hist}),Date,Number,Math,window:{addEventListener(){}},devicePixelRatio:1,console};
 vm.runInNewContext(script,sandbox,{timeout:3000});
 setImmediate(()=>{
  assert.ok(!node('conclusion').textContent.includes('Erreur de chargement'),'No runtime error');
@@ -16,6 +17,7 @@ setImmediate(()=>{
  assert.ok(node('sources').innerHTML.length>0,'Source rows must render');
  assert.ok(node('longrank').textContent.length>0 || node('longrank').innerHTML.length>0,'Fundamentals panel must render');
  assert.ok(node('shortrank').textContent.length>0 || node('shortrank').innerHTML.length>0,'Technical panel must render');
+ if(tbt){assert.ok(node('btgrid').innerHTML.includes('<table'),'Backtest table must render');assert.ok(!node('btgrid').innerHTML.includes('NaN'),'No NaN in backtest');}
  const st=ranks.short_term||{};const n=(st.ranked||[]).length+(st.watch||[]).length;
  if(n){assert.ok(node('shortrank').innerHTML.includes('<table'),'Technical ranking must render as a table');
   for(const x of (st.ranked||[]))assert.ok(node('shortrank').innerHTML.includes('>'+x.ticker+'<'),'Ticker '+x.ticker+' must be listed');

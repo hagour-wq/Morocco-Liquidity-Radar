@@ -53,4 +53,14 @@ class EquityRankingTests(unittest.TestCase):
   self.assertEqual(x["excluded_stale_dates"],[rows[5]["date"]])
   zero=[dict(r,close=0) for r in rows]
   self.assertEqual(evaluate_technical("XYZ","Example",zero)["status"],"NO_VALID_PRICES")
+ def test_legal_market_closure_is_not_a_gap(self):
+  d=date.today();rows=[]
+  while len(rows)<40:
+   if d.weekday()<5:rows.append({"date":d.isoformat(),"close":100+len(rows)*0.1,"volume":1000,"turnover_mad":2e6,"status":"validated"})
+   d-=timedelta(days=1)
+  rows.sort(key=lambda r:r["date"])
+  closure=[r for r in rows if not (rows[20]["date"]<r["date"]<=(date.fromisoformat(rows[20]["date"])+timedelta(days=5)).isoformat())]
+  self.assertEqual(evaluate_technical("XYZ","Example",closure)["status"],"RESEARCH_ONLY")
+  long_gap=[r for r in rows if not (rows[20]["date"]<r["date"]<=(date.fromisoformat(rows[20]["date"])+timedelta(days=10)).isoformat())]
+  self.assertEqual(evaluate_technical("XYZ","Example",long_gap)["status"],"GAPPED_HISTORY")
 if __name__=="__main__":unittest.main()
