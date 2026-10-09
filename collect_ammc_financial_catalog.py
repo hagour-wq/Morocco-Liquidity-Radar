@@ -41,6 +41,12 @@ def main():
    for item in scan(url):
     if item["url"] not in {x["url"] for x in output["reports"]}:output["reports"].append(item)
   except Exception as e:output["errors"].append({"url":url,"error":type(e).__name__+":"+str(e)[:150]})
+ # Discover linked financial disclosures on AMMC issuer-announcement pages.
+ announcement="https://www.ammc.ma/fr/actualites/lammc-met-sur-son-site-internet-les-publications-realisees-par-les-emetteurs-en-1042"
+ try:
+  for item in scan(announcement):
+   if item["url"] not in {x["url"] for x in output["reports"]}:output["reports"].append(item)
+ except Exception as e:output["errors"].append({"url":announcement,"error":type(e).__name__+":"+str(e)[:150]})
  output["report_count"]=len(output["reports"])
  output["link_policy"]="Only direct PDF document links; navigation and press-release pages are excluded"
  output["status"]="FOUND_LINKS" if output["reports"] else "NO_LINKS_VERIFIED"
