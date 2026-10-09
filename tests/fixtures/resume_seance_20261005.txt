@@ -1,0 +1,75 @@
+1 008 444 449 971,33
+Volume global MAD 129 594 380,72
+Quantité titre global 458 513
+Nbre de contrat global 5 417
+Actions Cours de
+référence Cours de clôture Variation Volume MAD Quantité 
+AFMA 1 265,00 1 250,00 -1,19 % 12 500,00 10
+AFRIC INDUSTRIES SA 332,00 329,50 -0,75 % 38 777,85 118
+AFRIQUIA GAZ 3 620,00 3 610,00 -0,28 % 220 227,00 61
+AKDITAL 1 080,00 1 060,00 -1,85 % 7 348 189,00 6 892
+ALLIANCES 365,00 360,00 -1,37 % 1 160 476,20 3 217
+ALUMINIUM DU MAROC 1 909,00 1 960,00 2,67 % 378 865,00 196
+ARADEI CAPITAL 440,00 430,00 -2,27 % 1 065 840,30 2 426
+ATLANTASANAD 119,05 120,00 0,80 % 213 619,30 1 780
+ATTIJARIWAFA BANK 675,00 674,00 -0,15 % 5 050 767,70 7 455
+AUTO HALL 61,02 61,95 1,52 % 174 128,23 2 858
+Indices MASI MASI 20 MASI ESG MASI Mid and
+Small Cap 
+Valeur 17 159,50 1 242,04 1 263,16 1 664,24
+Performance journalière -0,83 % -0,59 % -1,36 % -0,93 %
+Performance mensuelle -3,23 % -3,27 % -3,93 % -3,71 %
+Performance annuelle -8,95 % -16,40 % 0,93 % -9,63 %
+Capitalisation MAD
+Volume en MAD Actions
+Marché central 126 462 241,92
+Transferts 3 132 138,80
+Résumé Séance n°183
+lundi 05 octobre 2026
+Liste des variations - Marché central - Actions 1ère ligne- 
+Bourse de Casablanca
+NS : Non Significatif
+Cumul annuel en MMAD Année Année précédente Variation
+Apports de titres 1 347,41 12 201,77 -88,96 %
+Actions 1 347,41 12 201,77 -88,96%
+Augmentations de capital 5 089,60 3 670,79 38,65 %
+Apport en  nature 2 560,53 - -
+En numéraire 2 529,07 3 670,79 -31,10%
+Introductions 1 100,00 500,00 120,00 %
+Actions 1 100,00 500,00 120,00%
+Marché central 61 269,54 91 894,22 -33,33 %
+Actions 61 122,17 91 878,33 -33,47%
+Obligations 147,36 15,88 NS
+Marché de blocs 2 534,88 8 896,67 -71,51 %
+Actions 2 534,88 8 881,95 -71,46%
+Obligations - 14,71 -100,00%
+Offres publiques 3,06 -100,00 %
+Achat - 3,06 -100,00%
+Transferts 672,62 1 053,30 -36,14 %
+Actions 672,62 1 053,30 -36,14%
+Total 72 014,05 118 219,79 -39,08 %
+Moyenne quotidienne 393,52 635,59 -38,09%
+Nombre de contrats Actions
+Marché central 5 368
+Transferts 49
+BANK OF AFRICA 187,00 185,00 -1,07 % 2 261 589,55 12 212
+BCP 248,00 245,00 -1,21 % 4 956 881,85 20 230
+BMCI 573,00 560,00 -2,27 % 28 000,00 50
+CARTIER SAADA 18,80 19,48 3,62 % 968 067,79 50 815
+CASH PLUS S.A 217,50 218,30 0,37 % 620 565,05 2 835
+CDM 930,00 930,00 0,00 % 631 543,00 676
+CFG BANK 195,00 195,20 0,10 % 498 030,60 2 518
+CIH 314,00 316,00 0,64 % 697 390,65 2 203
+CIMENTS DU MAROC 1 465,00 1 500,00 2,39 % 271 764,00 180
+CMGP GROUP 275,00 274,00 -0,36 % 1 825 909,30 6 729
+COLORADO 77,99 77,00 -1,27 % 7 630,29 99
+COSUMAR 177,00 175,00 -1,13 % 1 534 225,95 8 696
+CTM 825,00 825,00 0,00 % 23 302,60 29
+DELTA HOLDING 47,20 48,00 1,69 % 173 560,86 3 604
+DISTY TECHNOLOGIES 352,50 346,00 -1,84 % 114 310,30 329
+DISWAY 752,00 749,00 -0,40 % 79 191,00 106
+DOUJA PROM ADDOHA 32,10 31,70 -1,25 % 2 643 104,24 82 638
+ENNAKL 47,00 47,13 0,28 % 27 609,29 586
+FENIE BROSSETTE 319,90 322,90 0,94 % 44 427,20 140
+Holcim Maroc S.A 1 600,00 1 600,00 0,00 % 728 069,00 454
+HPS 570,00 5

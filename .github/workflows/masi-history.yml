@@ -1,0 +1,46 @@
+name: Historique officiel du MASI (résumés de séance)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 20 * * 1-5"
+permissions:
+  contents: write
+concurrency:
+  group: data-push-main
+  cancel-in-progress: false
+jobs:
+  masi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Se placer sur le dernier main (exécutions mises en file d'attente)
+        run: git pull --ff-only origin main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Tests (bloquants)
+        run: python -m unittest -v test_masi_history.py
+      - name: Résumés de séance PDF → MASI officiel (reprise par tranches)
+        env:
+          MASI_MAX_PDFS: "700"
+          MASI_TIME_BUDGET_S: "1500"
+        run: python collect_masi_history.py
+      - name: Recalculer le radar et les backtests
+        run: |
+          python update.py
+          python backtest.py
+          python backtest_technical.py
+      - name: Commit
+        run: |
+          git config user.name "mlr-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "data: historique officiel du MASI (résumés de séance)"
+          git pull --rebase origin main
+          git push
+      - name: Rapport
+        if: always()
+        run: |
+          [ -f data/masi_history_report.json ] && { echo '## Historique MASI'; echo '```json'; head -c 4000 data/masi_history_report.json; echo '```'; } >> "$GITHUB_STEP_SUMMARY" || true

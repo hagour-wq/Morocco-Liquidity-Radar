@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Unit tests (bloquants)
-        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py test_casablanca_collectors.py test_technical.py test_equity_store.py test_backtest_technical.py
+        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py test_casablanca_collectors.py test_technical.py test_equity_store.py test_backtest_technical.py test_masi_history.py
       - name: MASI officiel (clôture de séance, Bourse de Casablanca)
         id: masi
         continue-on-error: true
