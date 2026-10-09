@@ -64,7 +64,7 @@
     "reference_date": "2026-10-09",
     "quality": "official_session",
     "source": "Bourse de Casablanca — cours officiels (stock-historical)",
-    "computed_at": "2026-10-09T19:02:45.687002+00:00",
+    "computed_at": "2026-10-09T19:26:03.924128+00:00",
     "min_turnover_mad": 100000,
     "sectors": [
       {
@@ -183,7 +183,7 @@
   "liquidity_detail": {
     "score": -22,
     "coverage": 1.0,
-    "confidence": "high",
+    "confidence": "medium",
     "reference_date": "2026-09-25",
     "components": {
       "opcvm": {
@@ -269,6 +269,10 @@
       "bank_liquidity",
       "money_market",
       "policy_rate"
+    ],
+    "estimated_components": [
+      "opcvm",
+      "bank_liquidity"
     ]
   },
   "money_flow": {
@@ -280,7 +284,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T19:02:45.848890+00:00",
+    "computed_at": "2026-10-09T19:26:04.045645+00:00",
     "history_sessions": 1976,
     "observations": 1971,
     "usable_5d": 1890,
@@ -294,10 +298,8 @@
     "composite_status": "NEUTRAL",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
-      "agrégats OPCVM AMMC avec flux/variation par catégorie",
-      "liquidité bancaire et interventions BAM",
-      "taux monétaires BAM vérifiés",
-      "taux directeur BAM courant vérifié"
+      "liquidité : opcvm estimée (pas de donnée officielle directe)",
+      "liquidité : bank_liquidity ancienne de 39 jours"
     ],
     "history": {
       "sessions": 1976,
@@ -320,7 +322,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T19:02:45.413294+00:00",
+  "retrieved_at": "2026-10-09T19:26:03.659198+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16797.1032,
@@ -330,7 +332,7 @@
     "sessions": 1976
   },
   "global_detail": {
-    "checked_at": "2026-10-09T18:54:41.054505+00:00",
+    "checked_at": "2026-10-09T19:18:33.343336+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -361,9 +363,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.24199676513672,
-        "change_5obs": 0.306,
-        "score": -2.4,
+        "value": 102.20600128173828,
+        "change_5obs": 0.271,
+        "score": -2.2,
         "verified": true,
         "failed_sources": []
       },
@@ -372,9 +374,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 7814.830078125,
-        "change_5obs": 1.193,
-        "score": 9.5,
+        "value": 7817.0,
+        "change_5obs": 1.221,
+        "score": 9.8,
         "verified": true,
         "failed_sources": []
       }

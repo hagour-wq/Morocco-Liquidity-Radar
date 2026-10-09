@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T18:54:41.054505+00:00",
+  "checked_at": "2026-10-09T19:18:33.343336+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -30,9 +30,9 @@
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
       "date": "2026-10-09",
-      "value": 102.24199676513672,
-      "change_5obs": 0.306,
-      "score": -2.4,
+      "value": 102.20600128173828,
+      "change_5obs": 0.271,
+      "score": -2.2,
       "verified": true,
       "failed_sources": []
     },
@@ -41,9 +41,9 @@
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
       "date": "2026-10-09",
-      "value": 7814.830078125,
-      "change_5obs": 1.193,
-      "score": 9.5,
+      "value": 7817.0,
+      "change_5obs": 1.221,
+      "score": 9.8,
       "verified": true,
       "failed_sources": []
     }
