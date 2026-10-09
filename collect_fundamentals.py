@@ -25,6 +25,21 @@ REQUIRED = {"bank": ["pnb", "net_income_group", "equity_total", "minority_intere
 
 
 MIN_TEXT = 2000
+OCR_CACHE = Path("data/ocr_cache")
+
+
+def ocr_cached(data):
+    """OCR coûteux (~2 min par document) : texte conservé par empreinte SHA-256 du PDF ; un document modifié est relu."""
+    import hashlib
+    h = hashlib.sha256(data).hexdigest()
+    f = OCR_CACHE / f"{h}.json"
+    if f.exists():
+        c = json.loads(f.read_text(encoding="utf-8"))
+        return c["text"], {**c["info"], "cache": "réutilisé", "sha256": h}
+    text, info = ocr_pdf.ocr_pdf(data)
+    OCR_CACHE.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps({"info": info, "text": text}, ensure_ascii=False) + "\n", encoding="utf-8")
+    return text, {**info, "cache": "nouvelle lecture", "sha256": h}
 
 
 def analyse(src, text, shares, price=None, text_source="pdf_text"):
@@ -73,7 +88,7 @@ def main():
             text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
             source = "pdf_text"
             if len(text.strip()) < MIN_TEXT and ocr_pdf.available():
-                text, info = ocr_pdf.ocr_pdf(b)
+                text, info = ocr_cached(b)
                 source = "ocr"
                 rec["ocr"] = info
             rec.update(analyse(src, text, r.get("shares"), r.get("reference_price_mad"), source))
