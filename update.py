@@ -84,7 +84,15 @@ def liquidity_score(d):
     score=round(weighted/total)
     coverage=round(total/100,2)
     confidence="high" if coverage>=.85 else ("medium" if coverage>=.60 else "low")
-    return score,{"coverage":coverage,"confidence":confidence,"components_used":used}
+    # Des composantes estimées ou approchées ne peuvent pas porter une confiance "high" (audit 09/10/2026).
+    estimated=[n for n in used if _is_estimated(comps[n])]
+    if estimated and confidence=="high":confidence="medium"
+    return score,{"coverage":coverage,"confidence":confidence,"components_used":used,"estimated_components":estimated}
+
+def _is_estimated(x):
+    raw=x.get("raw") or {}
+    if any(isinstance(v,dict) and v.get("estimated") for v in raw.values()):return True
+    return "proxy" in str(raw.get("provenance","")).lower()
 
 def regime(score):
     if score is None:return "CALIBRATION"
@@ -99,6 +107,17 @@ def history_quality(rows,max_gap=10):
     gaps=[gap_days(rows[i-1]["date"],rows[i]["date"]) for i in range(1,len(rows))]
     return {"sessions":len(rows),"blocks":1+sum(g>max_gap for g in gaps),"first_date":rows[0]["date"],"last_date":rows[-1]["date"],
       "largest_gap_days":max(gaps) if gaps else 0,"latest_contiguous_sessions":len(latest_contiguous(rows))}
+
+def missing_priority(d,rows):
+    """Lacunes recalculées à chaque exécution (l'ancienne liste figée était obsolète)."""
+    out=[]
+    for k,x in d.get("liquidity_detail",{}).get("components",{}).items():
+        if not x.get("verified"):out.append(f"liquidité : composante {k} non vérifiée")
+        elif (x.get("age_days") or 0)>35:out.append(f"liquidité : {k} ancienne de {x['age_days']} jours")
+        elif _is_estimated(x):out.append(f"liquidité : {k} estimée (pas de donnée officielle directe)")
+    hq=history_quality(rows)
+    if hq.get("blocks",0)>1:out.append(f"MASI : historique fragmenté en {hq['blocks']} blocs (plus grand trou {hq['largest_gap_days']} j)")
+    return out
 
 def main():
     d=json.loads(DASH.read_text(encoding="utf-8"))
@@ -120,6 +139,7 @@ def main():
     d["liquidity_detail"]["coverage"]=ldetail["coverage"]
     d["liquidity_detail"]["confidence"]=ldetail["confidence"]
     d["liquidity_detail"]["components_used"]=ldetail["components_used"]
+    d["liquidity_detail"]["estimated_components"]=ldetail.get("estimated_components",[])
     # Composite uses effective coverage, so a partially observed pillar cannot receive its full strategic weight.
     pillar_cov={"liquidity":ldetail.get("coverage",0),"market_flow":detail.get("coverage",0),"global":gd.get("coverage",0) if GLOBAL.exists() and d["scores"].get("global") is not None else 0}
     base_weights={"liquidity":50,"market_flow":35,"global":15}
@@ -154,6 +174,7 @@ def main():
         d["conclusion"]=f"Market Flow {tone} ({score:+d}). Momentum 1 séance {detail['ret_1d_pct']:+.2f}% et 5 séances {detail['ret_5d_pct']:+.2f}%. Couverture {detail['coverage']*100:.0f}%."
     d.setdefault("data_quality",{})["market_history_sessions"]=len(rows)
     d["data_quality"]["history"]=history_quality(rows)
+    d["data_quality"]["missing_priority"]=missing_priority(d,rows)
     d["data_quality"]["market_flow_coverage"]=detail.get("coverage",0)
     d["data_quality"]["liquidity_coverage"]=ldetail.get("coverage",0)
     d["data_quality"]["composite_status"]=d["regime"]
