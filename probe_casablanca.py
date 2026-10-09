@@ -149,3 +149,35 @@ for sym in ["ATW","BCP","IAM","MSA","MNG"]:
                "meta":{kk:vv for kk,vv in d.items() if kk!="items"} if isinstance(d,dict) else None}
         except Exception as e: report["history_test"][k]={"url":u,"error":f"{type(e).__name__}: {e}"}
 (OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+
+# Étape 2d : variantes (symbole complété, période courte, en-têtes navigateur)
+def getj(u,extra=None):
+    hd={"User-Agent":UA,"Accept":"application/json, text/plain, */*","Accept-Language":"fr-FR,fr;q=0.9",
+        "Referer":"https://www.casablanca-bourse.com/market-data/cours","X-Requested-With":"XMLHttpRequest"}
+    hd.update(extra or {})
+    with urlopen(Request(u,headers=hd),timeout=40,context=ctx) as r: return r.status,json.loads(r.read())
+base=urljoin("https://www.casablanca-bourse.com/",api)+"/stock-historical?"
+variants={
+ "pad_1y":{"instrument":"ATW  ","market":"comptant","type":"actions","startDate":"2025-10-01","endDate":"2026-10-08","pageNumber":1,"pageSize":1000},
+ "trim_1m":{"instrument":"ATW","market":"comptant","type":"actions","startDate":"2026-09-08","endDate":"2026-10-08","pageNumber":1,"pageSize":1000},
+ "pad_1m":{"instrument":"ATW  ","market":"comptant","type":"actions","startDate":"2026-09-08","endDate":"2026-10-08","pageNumber":1,"pageSize":1000},
+ "pad_1m_adj":{"instrument":"ATW  ","market":"comptant","type":"actions","startDate":"2026-09-08","endDate":"2026-10-08","isCoursAjuste":"true","target":"tv"},
+ "label_1m":{"instrument":"ATTIJARIWAFA BANK","market":"comptant","type":"actions","startDate":"2026-09-08","endDate":"2026-10-08","pageNumber":1,"pageSize":1000},
+ "fr_dates":{"instrument":"ATW  ","market":"comptant","type":"actions","startDate":"08/09/2026","endDate":"08/10/2026","pageNumber":1,"pageSize":1000},
+ "masi_index":{"instrument":"MASI","market":"comptant","type":"indices","startDate":"2026-09-08","endDate":"2026-10-08","pageNumber":1,"pageSize":1000},
+}
+report["history_variants"]={}
+for k,q in variants.items():
+    u=base+urlencode(q)
+    try:
+        st,d=getj(u); it=d.get("items",[]) if isinstance(d,dict) else d
+        report["history_variants"][k]={"status":st,"total":d.get("totalCount") if isinstance(d,dict) else None,"n":len(it),"first":it[:1],"last":it[-1:]}
+        if it: (OUT/f"variant_{k}.json").write_text(json.dumps(d,ensure_ascii=False),encoding="utf-8")
+    except Exception as e: report["history_variants"][k]={"error":f"{type(e).__name__}: {e}"}
+# autres endpoints plausibles exposés par le même proxy
+for path in ["/instruments","/stock-live","/indices","/market-summary"]:
+    try:
+        st,d=getj(urljoin("https://www.casablanca-bourse.com/",api)+path)
+        report["history_variants"]["ep"+path]={"status":st,"sample":json.dumps(d,ensure_ascii=False)[:600]}
+    except Exception as e: report["history_variants"]["ep"+path]={"error":f"{type(e).__name__}: {e}"[:200]}
+(OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
