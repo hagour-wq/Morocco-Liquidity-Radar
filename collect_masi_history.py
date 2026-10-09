@@ -26,6 +26,7 @@ MONTHS = {m: i for i, m in enumerate(["janvier", "février", "mars", "avril", "m
                                       "septembre", "octobre", "novembre", "décembre"], 1)}
 NUM = r"-?\d{1,3}(?:[\s  ]\d{3})*,\d+"
 SRC = "Bourse de Casablanca — Résumé de séance (PDF)"
+PARSER_VERSION = 2   # à incrémenter quand le parseur évolue : les PDF non lus sont alors relus
 
 
 def fr(s):
@@ -128,7 +129,8 @@ def main():
     except Exception as e:
         rep["errors"].append(f"listing: {type(e).__name__}: {e}")
         pdfs = cache.get("listing", {})
-    todo = [(d, u) for d, u in sorted(pdfs.items(), reverse=True) if not (d in sessions and sessions[d].get("masi"))]
+    todo = [(d, u) for d, u in sorted(pdfs.items(), reverse=True)
+            if not (d in sessions and (sessions[d].get("masi") or sessions[d].get("parser_version") == PARSER_VERSION))]
     rep["remaining_before_run"] = len(todo)
     for n, (d, url) in enumerate(todo[:MAX_PDFS]):
         if time.time() - t0 > TIME_BUDGET_S:
@@ -140,7 +142,7 @@ def main():
             b = cb._get(url, accept="application/pdf")
             text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
             rec = parse_resume(text, d)
-            rec.update(url=url, collected_at=now)
+            rec.update(url=url, collected_at=now, parser_version=PARSER_VERSION)
             sessions[d] = rec
             rep["parsed"] += 1
             time.sleep(0.15)
@@ -155,7 +157,9 @@ def main():
         if rec.get("masi"):
             prev = rec
     save_cache(cache, sessions, now)
-    rep["remaining_after_run"] = len([1 for d in pdfs if not sessions.get(d, {}).get("masi")])
+    rep["remaining_after_run"] = len([1 for d in pdfs if not sessions.get(d)])
+    rep["unparsed_format"] = sorted(d for d, x in sessions.items() if not x.get("masi"))[:3] + ["…"] if any(not x.get("masi") for x in sessions.values()) else []
+    rep["unparsed_count"] = sum(1 for x in sessions.values() if not x.get("masi"))
 
     rows = {r["date"]: r for r in json.loads(HIST.read_text(encoding="utf-8"))} if HIST.exists() else {}
     for d, rec in sorted(sessions.items()):
@@ -179,7 +183,7 @@ def main():
     HIST.write_text(json.dumps(ordered, ensure_ascii=False, indent=2), encoding="utf-8")
     vals = [s for s in sessions.values() if s.get("masi")]
     rep.update(sessions_official=len(vals), official_range=[min(s["date"] for s in vals), max(s["date"] for s in vals)] if vals else None,
-               anomalies=[d for d, s in sessions.items() if s["status"] not in ("validated", "previous_session_missing_in_archive")],
+               anomalies=[d for d, s in sessions.items() if s.get("masi") and s["status"] not in ("validated", "previous_session_missing_in_archive")],
                archive_gaps=[d for d, s in sessions.items() if s["status"] == "previous_session_missing_in_archive"],
                market_history_sessions=len(ordered))
     REPORT.write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
