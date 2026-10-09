@@ -96,3 +96,10 @@ Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unav
 - **Contrôles** : date du fichier = date imprimée ; MASI(t)/MASI(t−1) − 1 ≈ performance publiée (≤ 0,02 point), sauf si la séance précédente manque dans l'archive (`previous_session_missing_in_archive`, calendrier tiré des cotations ATW) ; valeurs douteuses non fusionnées et listées dans `data/masi_history_report.json`.
 - **Reprise** : `data/masi_official.json` mémorise la liste des PDF et les séances lues ; chaque exécution lit au plus 700 PDF en 25 minutes, les plus récents d'abord. Exécution quotidienne à 20:00 UTC.
 - **Fusion** : `data/market_history.json` reçoit le MASI officiel (`masi_source`), le montant du marché central et la largeur du marché ; toute valeur antérieure divergente (> 0,05 %) est journalisée dans `corrections`.
+
+## Référentiel émetteurs (`collect_bulletin.py`, `data/issuer_reference.json`)
+
+- **Source** : dernier « Bulletin de la cote » PDF (`/market-data/bulletins-de-la-cote`).
+- **Par action** : ISIN, nombre de titres, nominal, code secteur, dernier dividende ajusté (montant, exercice, date de détachement), cours de référence.
+- **Rapprochement** : nombre de titres identique à `nombreTitres` de la liste officielle (départage par le cours si deux titres ont le même nombre de titres) ; contrôle d'écart de cours. Essai sur le bulletin du 05/10/2026 : 81 actions sur 81 rapprochées.
+- **Rendement du dividende** : dernier dividende détaché / dernier cours, uniquement si le détachement date de moins de 15 mois.
