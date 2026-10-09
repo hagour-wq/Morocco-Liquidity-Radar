@@ -16,14 +16,17 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m unittest test_casablanca_collectors.py
       - name: MASI officiel
+        continue-on-error: true
         run: python collect_market.py
       - name: Historique actions officiel (5 pilotes)
+        continue-on-error: true
         run: python collect_equities.py
       - run: python update.py
       - run: python backtest.py
       - run: python rank_equities.py
       - run: node test_dashboard.cjs
       - name: Commit diagnostic sur la branche de diagnostic uniquement
+        if: always()
         run: |
           git config user.name "mlr-bot"
           git config user.email "actions@users.noreply.github.com"

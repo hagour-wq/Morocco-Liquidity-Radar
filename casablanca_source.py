@@ -129,6 +129,8 @@ def index_history(symbol="MASI"):
         if close:
             rows[day] = {"date": day, "close": close, "open": num(it.get("open")), "high": num(it.get("high")),
                          "low": num(it.get("low")), "volume": num(it.get("volume"))}
+    if not rows:
+        raise ValueError("historique indice vide ou format inattendu : " + json.dumps(d, ensure_ascii=False)[:400])
     return [rows[k] for k in sorted(rows)], (d.get("meta") if isinstance(d, dict) else None)
 
 

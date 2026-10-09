@@ -85,6 +85,8 @@ def main():
         OUT.write_text(json.dumps(ordered, ensure_ascii=False, indent=2), encoding="utf-8")
     rep["total_sessions"] = len(ordered)
     REPORT.write_text(json.dumps(rep, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    for err in rep["errors"]:
+        print(f"::error title=collect_market::{err}")
     print(json.dumps({k: (v if not isinstance(v, list) else len(v)) for k, v in rep.items()}, ensure_ascii=False))
     if not hist:
         sys.exit(1)

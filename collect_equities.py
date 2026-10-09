@@ -113,6 +113,11 @@ def main():
     if ok:
         HIST.write_text(json.dumps(store, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    for t, r in report["tickers"].items():
+        if r.get("status") != "OK":
+            print(f"::error title=collect_equities {t}::{r.get('status')} {r.get('error', '')}")
+        elif r.get("flagged_sessions"):
+            print(f"::warning title=collect_equities {t}::{r['flagged_sessions']} séance(s) signalée(s) {r['flags_sample']}")
     print(json.dumps({t: {k: r.get(k) for k in ("status", "sessions", "first_date", "last_date", "last_close", "flagged_sessions", "error")} for t, r in report["tickers"].items()}, ensure_ascii=False, indent=1))
     if not ok:
         sys.exit(1)
