@@ -64,7 +64,7 @@
     "reference_date": "2026-10-09",
     "quality": "official_session",
     "source": "Bourse de Casablanca — cours officiels (stock-historical)",
-    "computed_at": "2026-10-09T18:37:27.898057+00:00",
+    "computed_at": "2026-10-09T19:02:45.687002+00:00",
     "min_turnover_mad": 100000,
     "sectors": [
       {
@@ -280,7 +280,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T18:37:28.071582+00:00",
+    "computed_at": "2026-10-09T19:02:45.848890+00:00",
     "history_sessions": 1976,
     "observations": 1971,
     "usable_5d": 1890,
@@ -320,7 +320,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T18:37:27.627271+00:00",
+  "retrieved_at": "2026-10-09T19:02:45.413294+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16797.1032,
@@ -330,7 +330,7 @@
     "sessions": 1976
   },
   "global_detail": {
-    "checked_at": "2026-10-09T18:35:12.667209+00:00",
+    "checked_at": "2026-10-09T18:54:41.054505+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -361,9 +361,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.24800109863281,
-        "change_5obs": 0.312,
-        "score": -2.5,
+        "value": 102.24199676513672,
+        "change_5obs": 0.306,
+        "score": -2.4,
         "verified": true,
         "failed_sources": []
       },
@@ -372,9 +372,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 7811.8701171875,
-        "change_5obs": 1.154,
-        "score": 9.2,
+        "value": 7814.830078125,
+        "change_5obs": 1.193,
+        "score": 9.5,
         "verified": true,
         "failed_sources": []
       }
