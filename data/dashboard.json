@@ -6,7 +6,7 @@
   "scores": {
     "liquidity": -15,
     "market_flow": -7,
-    "global": 8
+    "global": 7
   },
   "sources": [
     {
@@ -253,7 +253,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T13:17:37.248499+00:00",
+    "computed_at": "2026-10-09T13:50:30.583514+00:00",
     "history_sessions": 87,
     "observations": 82,
     "usable_5d": 47,
@@ -293,7 +293,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T13:17:37.190063+00:00",
+  "retrieved_at": "2026-10-09T13:50:30.542474+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
@@ -303,7 +303,7 @@
     "sessions": 28
   },
   "global_detail": {
-    "checked_at": "2026-10-09T13:17:16.505880+00:00",
+    "checked_at": "2026-10-09T13:46:02.134958+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -334,9 +334,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.302001953125,
-        "change_5obs": 0.365,
-        "score": -2.9,
+        "value": 102.2770004272461,
+        "change_5obs": 0.34,
+        "score": -2.7,
         "verified": true,
         "failed_sources": []
       },
@@ -344,16 +344,16 @@
         "series": "SP500",
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-        "date": "2026-10-08",
-        "value": 7765.35986328125,
-        "change_5obs": 1.29,
-        "score": 10.3,
+        "date": "2026-10-09",
+        "value": 7784.4501953125,
+        "change_5obs": 0.799,
+        "score": 6.4,
         "verified": true,
         "failed_sources": []
       }
     },
     "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-    "score": 8,
+    "score": 7,
     "fresh_for_scoring": true
   }
 }

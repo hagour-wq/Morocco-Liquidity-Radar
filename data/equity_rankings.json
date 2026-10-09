@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:17:37.326185+00:00",
+  "generated_at": "2026-10-09T13:50:30.867724+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.",
@@ -75,7 +75,8 @@
           "volatility": 72.7
         },
         "unavailable": [],
-        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
       },
       {
         "ticker": "ATW",
@@ -139,7 +140,268 @@
           "volatility": 92.6
         },
         "unavailable": [],
-        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "CRS",
+        "name": "CARTIER SAADA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 30.7,
+        "reference_date": "2026-10-08",
+        "close": 19.61,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 4.92,
+        "return_20d_pct": -12.65,
+        "momentum_60d_pct": -22.12,
+        "volume_ratio": 0.2,
+        "volatility_annual_pct": 57.45,
+        "rsi14": 43.7,
+        "sma20": 19.27,
+        "sma50": 22.0,
+        "sma200": 28.3,
+        "close_vs_sma200_pct": -30.72,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.772,
+          "signal": -1.106,
+          "histogram": 0.333
+        },
+        "atr14": 0.82,
+        "atr14_pct": 4.2,
+        "bollinger": {
+          "middle": 19.271,
+          "upper": 21.407,
+          "lower": 17.135,
+          "percent_b": 0.579,
+          "bandwidth_pct": 22.169
+        },
+        "support_resistance": {
+          "support": 17.9,
+          "resistance": 22.5,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1193400,
+          "avg_turnover_mad_60d": 514086,
+          "avg_shares_20d": 63428,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 80.8,
+          "momentum_20d": 7.8,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 5.1
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "CDM",
+        "name": "CREDIT DU MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 30.5,
+        "reference_date": "2026-10-08",
+        "close": 921.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.01,
+        "return_20d_pct": -6.97,
+        "momentum_60d_pct": -4.06,
+        "volume_ratio": 0.09,
+        "volatility_annual_pct": 27.92,
+        "rsi14": 36.8,
+        "sma20": 956.8,
+        "sma50": 976.53,
+        "sma200": 1019.37,
+        "close_vs_sma200_pct": -9.65,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -14.816,
+          "signal": -12.03,
+          "histogram": -2.785
+        },
+        "atr14": 20.23,
+        "atr14_pct": 2.2,
+        "bollinger": {
+          "middle": 956.805,
+          "upper": 1005.037,
+          "lower": 908.573,
+          "percent_b": 0.129,
+          "bandwidth_pct": 10.082
+        },
+        "support_resistance": {
+          "support": 921.0,
+          "resistance": 1000.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2533316,
+          "avg_turnover_mad_60d": 1637027,
+          "avg_shares_20d": 2644,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 37.4,
+          "momentum_20d": 26.8,
+          "trend": 21.6,
+          "volume": 0,
+          "volatility": 64.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "TQM",
+        "name": "TAQA MOROCCO",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 30.5,
+        "reference_date": "2026-10-08",
+        "close": 1589.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.11,
+        "return_20d_pct": -10.73,
+        "momentum_60d_pct": -9.2,
+        "volume_ratio": 1.74,
+        "volatility_annual_pct": 23.81,
+        "rsi14": 27.7,
+        "sma20": 1688.4,
+        "sma50": 1751.56,
+        "sma200": 1863.81,
+        "close_vs_sma200_pct": -14.74,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -48.849,
+          "signal": -37.682,
+          "histogram": -11.167
+        },
+        "atr14": 51.19,
+        "atr14_pct": 3.22,
+        "bollinger": {
+          "middle": 1688.4,
+          "upper": 1820.37,
+          "lower": 1556.43,
+          "percent_b": 0.123,
+          "bandwidth_pct": 15.633
+        },
+        "support_resistance": {
+          "support": 1560.0,
+          "resistance": 1799.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 5019665,
+          "avg_turnover_mad_60d": 2965401,
+          "avg_shares_20d": 2940,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 30.6,
+          "momentum_20d": 14.2,
+          "trend": 3.6,
+          "volume": 82.3,
+          "volatility": 72.4
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Electricité"
+      },
+      {
+        "ticker": "ARD",
+        "name": "ARADEI CAPITAL",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 30.1,
+        "reference_date": "2026-10-08",
+        "close": 425.2,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.36,
+        "return_20d_pct": -3.8,
+        "momentum_60d_pct": 1.24,
+        "volume_ratio": 0.28,
+        "volatility_annual_pct": 43.0,
+        "rsi14": 42.5,
+        "sma20": 439.57,
+        "sma50": 437.44,
+        "sma200": 433.43,
+        "close_vs_sma200_pct": -1.9,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -3.809,
+          "signal": -1.771,
+          "histogram": -2.039
+        },
+        "atr14": 12.26,
+        "atr14_pct": 2.88,
+        "bollinger": {
+          "middle": 439.57,
+          "upper": 465.48,
+          "lower": 413.66,
+          "percent_b": 0.223,
+          "bandwidth_pct": 11.789
+        },
+        "support_resistance": {
+          "support": 415.0,
+          "resistance": 480.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1436602,
+          "avg_turnover_mad_60d": 734412,
+          "avg_shares_20d": 3299,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 29.0,
+          "momentum_20d": 37.3,
+          "trend": 36.0,
+          "volume": 0,
+          "volatility": 34.0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de placement immobilier"
       },
       {
         "ticker": "IAM",
@@ -203,7 +465,595 @@
           "volatility": 84.5
         },
         "unavailable": [],
-        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Télécommunications"
+      },
+      {
+        "ticker": "BOA",
+        "name": "BANK OF AFRICA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 27.6,
+        "reference_date": "2026-10-08",
+        "close": 180.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.26,
+        "return_20d_pct": -6.49,
+        "momentum_60d_pct": -8.16,
+        "volume_ratio": 0.24,
+        "volatility_annual_pct": 12.4,
+        "rsi14": 28.1,
+        "sma20": 190.47,
+        "sma50": 189.54,
+        "sma200": 202.98,
+        "close_vs_sma200_pct": -11.32,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.885,
+          "signal": -0.392,
+          "histogram": -1.493
+        },
+        "atr14": 4.85,
+        "atr14_pct": 2.69,
+        "bollinger": {
+          "middle": 190.465,
+          "upper": 199.124,
+          "lower": 181.806,
+          "percent_b": -0.104,
+          "bandwidth_pct": 9.092
+        },
+        "support_resistance": {
+          "support": 180.0,
+          "resistance": 197.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 6747740,
+          "avg_turnover_mad_60d": 4030272,
+          "avg_shares_20d": 35670,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 17.1,
+          "momentum_20d": 28.4,
+          "trend": 24.8,
+          "volume": 0,
+          "volatility": 95.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "RIS",
+        "name": "RISMA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 25.9,
+        "reference_date": "2026-10-08",
+        "close": 300.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -4.46,
+        "return_20d_pct": -7.98,
+        "momentum_60d_pct": -8.87,
+        "volume_ratio": 0.64,
+        "volatility_annual_pct": 21.76,
+        "rsi14": 32.6,
+        "sma20": 315.27,
+        "sma50": 320.16,
+        "sma200": 339.05,
+        "close_vs_sma200_pct": -11.52,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -5.572,
+          "signal": -3.426,
+          "histogram": -2.146
+        },
+        "atr14": 8.0,
+        "atr14_pct": 2.67,
+        "bollinger": {
+          "middle": 315.268,
+          "upper": 332.692,
+          "lower": 297.843,
+          "percent_b": 0.062,
+          "bandwidth_pct": 11.054
+        },
+        "support_resistance": {
+          "support": 291.0,
+          "resistance": 326.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2311270,
+          "avg_turnover_mad_60d": 1711089,
+          "avg_shares_20d": 7283,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 22.1,
+          "momentum_20d": 23.4,
+          "trend": 18.5,
+          "volume": 9.4,
+          "volatility": 76.5
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Loisirs et Hôtels"
+      },
+      {
+        "ticker": "CFG",
+        "name": "CFG BANK",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 24.7,
+        "reference_date": "2026-10-08",
+        "close": 190.0,
+        "sessions_used": 689,
+        "segment_start": "2023-12-18",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.0,
+        "return_20d_pct": -8.65,
+        "momentum_60d_pct": -4.04,
+        "volume_ratio": 0.14,
+        "volatility_annual_pct": 21.2,
+        "rsi14": 32.6,
+        "sma20": 200.45,
+        "sma50": 199.87,
+        "sma200": 212.92,
+        "close_vs_sma200_pct": -10.76,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -2.81,
+          "signal": -1.266,
+          "histogram": -1.544
+        },
+        "atr14": 5.16,
+        "atr14_pct": 2.72,
+        "bollinger": {
+          "middle": 200.45,
+          "upper": 211.662,
+          "lower": 189.238,
+          "percent_b": 0.034,
+          "bandwidth_pct": 11.187
+        },
+        "support_resistance": {
+          "support": 188.0,
+          "resistance": 211.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3992512,
+          "avg_turnover_mad_60d": 4469479,
+          "avg_shares_20d": 19687,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 18.7,
+          "momentum_20d": 21.2,
+          "trend": 25.3,
+          "volume": 0,
+          "volatility": 77.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "CSR",
+        "name": "COSUMAR",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 20.8,
+        "reference_date": "2026-10-08",
+        "close": 171.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.39,
+        "return_20d_pct": -12.08,
+        "momentum_60d_pct": -10.0,
+        "volume_ratio": 0.31,
+        "volatility_annual_pct": 26.71,
+        "rsi14": 33.1,
+        "sma20": 180.06,
+        "sma50": 186.61,
+        "sma200": 191.53,
+        "close_vs_sma200_pct": -10.72,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -4.467,
+          "signal": -3.792,
+          "histogram": -0.675
+        },
+        "atr14": 5.34,
+        "atr14_pct": 3.12,
+        "bollinger": {
+          "middle": 180.065,
+          "upper": 191.263,
+          "lower": 168.867,
+          "percent_b": 0.095,
+          "bandwidth_pct": 12.438
+        },
+        "support_resistance": {
+          "support": 169.0,
+          "resistance": 194.5,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3778950,
+          "avg_turnover_mad_60d": 3988468,
+          "avg_shares_20d": 21184,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 28.8,
+          "momentum_20d": 9.7,
+          "trend": 8.2,
+          "volume": 0,
+          "volatility": 66.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "TGC",
+        "name": "TRAVAUX GENERAUX DE CONSTRUCTION DE CASABLANCA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 20.6,
+        "reference_date": "2026-10-08",
+        "close": 634.9,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.07,
+        "return_20d_pct": -12.91,
+        "momentum_60d_pct": -17.01,
+        "volume_ratio": 0.33,
+        "volatility_annual_pct": 19.82,
+        "rsi14": 25.0,
+        "sma20": 668.62,
+        "sma50": 721.05,
+        "sma200": 783.03,
+        "close_vs_sma200_pct": -18.92,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -23.962,
+          "signal": -23.347,
+          "histogram": -0.615
+        },
+        "atr14": 15.99,
+        "atr14_pct": 2.52,
+        "bollinger": {
+          "middle": 668.625,
+          "upper": 710.61,
+          "lower": 626.64,
+          "percent_b": 0.098,
+          "bandwidth_pct": 12.558
+        },
+        "support_resistance": {
+          "support": 615.0,
+          "resistance": 728.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 25880957,
+          "avg_turnover_mad_60d": 14027105,
+          "avg_shares_20d": 38680,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 30.8,
+          "momentum_20d": 7.0,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 80.4
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "GTM",
+        "name": "SOCIETE GENERALE DES TRAVAUX DU MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 20.4,
+        "reference_date": "2026-10-08",
+        "close": 583.9,
+        "sessions_used": 198,
+        "segment_start": "2025-12-16",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.49,
+        "return_20d_pct": -8.05,
+        "momentum_60d_pct": -17.41,
+        "volume_ratio": 0.35,
+        "volatility_annual_pct": 36.25,
+        "rsi14": 33.0,
+        "sma20": 606.75,
+        "sma50": 651.33,
+        "sma200": null,
+        "close_vs_sma200_pct": null,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -16.756,
+          "signal": -16.804,
+          "histogram": 0.048
+        },
+        "atr14": 17.32,
+        "atr14_pct": 2.97,
+        "bollinger": {
+          "middle": 606.745,
+          "upper": 635.205,
+          "lower": 578.285,
+          "percent_b": 0.099,
+          "bandwidth_pct": 9.381
+        },
+        "support_resistance": {
+          "support": 570.0,
+          "resistance": 650.9,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 24002176,
+          "avg_turnover_mad_60d": 12221070,
+          "avg_shares_20d": 39453,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 28.2,
+          "momentum_20d": 23.2,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 47.5
+        },
+        "unavailable": [
+          "sma200"
+        ],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "LBV",
+        "name": "LABEL VIE",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 19.4,
+        "reference_date": "2026-10-08",
+        "close": 3780.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.26,
+        "return_20d_pct": -11.68,
+        "momentum_60d_pct": 5.0,
+        "volume_ratio": 0.05,
+        "volatility_annual_pct": 28.78,
+        "rsi14": 28.9,
+        "sma20": 3997.3,
+        "sma50": 4002.8,
+        "sma200": 4059.24,
+        "close_vs_sma200_pct": -6.88,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -77.261,
+          "signal": -40.384,
+          "histogram": -36.877
+        },
+        "atr14": 109.97,
+        "atr14_pct": 2.91,
+        "bollinger": {
+          "middle": 3997.3,
+          "upper": 4272.382,
+          "lower": 3722.218,
+          "percent_b": 0.105,
+          "bandwidth_pct": 13.763
+        },
+        "support_resistance": {
+          "support": 3720.0,
+          "resistance": 4200.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4858498,
+          "avg_turnover_mad_60d": 7198357,
+          "avg_shares_20d": 1220,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 17.1,
+          "momentum_20d": 11.1,
+          "trend": 22.2,
+          "volume": 0,
+          "volatility": 62.4
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "ATH",
+        "name": "AUTO HALL",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 19.2,
+        "reference_date": "2026-10-08",
+        "close": 59.98,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -4.49,
+        "return_20d_pct": -9.46,
+        "momentum_60d_pct": -13.07,
+        "volume_ratio": 0.48,
+        "volatility_annual_pct": 31.23,
+        "rsi14": 33.6,
+        "sma20": 62.89,
+        "sma50": 65.81,
+        "sma200": 77.08,
+        "close_vs_sma200_pct": -22.18,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.666,
+          "signal": -1.443,
+          "histogram": -0.223
+        },
+        "atr14": 1.96,
+        "atr14_pct": 3.28,
+        "bollinger": {
+          "middle": 62.888,
+          "upper": 66.348,
+          "lower": 59.428,
+          "percent_b": 0.08,
+          "bandwidth_pct": 11.002
+        },
+        "support_resistance": {
+          "support": 59.0,
+          "resistance": 67.86,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1066743,
+          "avg_turnover_mad_60d": 715800,
+          "avg_shares_20d": 16872,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 21.9,
+          "momentum_20d": 18.5,
+          "trend": 5.7,
+          "volume": 0,
+          "volatility": 57.5
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "CMA",
+        "name": "CIMENTS DU MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 17.2,
+        "reference_date": "2026-10-08",
+        "close": 1400.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -6.73,
+        "return_20d_pct": -17.26,
+        "momentum_60d_pct": -15.15,
+        "volume_ratio": 2.21,
+        "volatility_annual_pct": 37.98,
+        "rsi14": 29.0,
+        "sma20": 1546.9,
+        "sma50": 1631.68,
+        "sma200": 1698.2,
+        "close_vs_sma200_pct": -17.56,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -57.774,
+          "signal": -44.664,
+          "histogram": -13.11
+        },
+        "atr14": 55.02,
+        "atr14_pct": 3.93,
+        "bollinger": {
+          "middle": 1546.9,
+          "upper": 1682.951,
+          "lower": 1410.849,
+          "percent_b": -0.04,
+          "bandwidth_pct": 17.59
+        },
+        "support_resistance": {
+          "support": 1400.0,
+          "resistance": 1690.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4713738,
+          "avg_turnover_mad_60d": 3274074,
+          "avg_shares_20d": 3101,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 7.9,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 100,
+          "volatility": 44.0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
       },
       {
         "ticker": "MSA",
@@ -267,7 +1117,138 @@
           "volatility": 89.6
         },
         "unavailable": [],
-        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Services de transport"
+      },
+      {
+        "ticker": "CIH",
+        "name": "CREDIT IMMOBILIER ET HOTELIER",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 15.2,
+        "reference_date": "2026-10-08",
+        "close": 300.1,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.6,
+        "return_20d_pct": -13.27,
+        "momentum_60d_pct": -11.61,
+        "volume_ratio": 0.69,
+        "volatility_annual_pct": 23.65,
+        "rsi14": 23.9,
+        "sma20": 323.42,
+        "sma50": 337.61,
+        "sma200": 365.76,
+        "close_vs_sma200_pct": -17.95,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -9.333,
+          "signal": -7.556,
+          "histogram": -1.776
+        },
+        "atr14": 8.86,
+        "atr14_pct": 2.95,
+        "bollinger": {
+          "middle": 323.418,
+          "upper": 346.433,
+          "lower": 300.402,
+          "percent_b": -0.007,
+          "bandwidth_pct": 14.233
+        },
+        "support_resistance": {
+          "support": 300.1,
+          "resistance": 347.5,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2424257,
+          "avg_turnover_mad_60d": 3760307,
+          "avg_shares_20d": 7544,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 15.0,
+          "momentum_20d": 5.8,
+          "trend": 0,
+          "volume": 12.7,
+          "volatility": 72.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "RDS",
+        "name": "RESIDENCES DAR SAADA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 15.1,
+        "reference_date": "2026-10-08",
+        "close": 152.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.0,
+        "return_20d_pct": -14.32,
+        "momentum_60d_pct": -10.69,
+        "volume_ratio": 0.87,
+        "volatility_annual_pct": 32.51,
+        "rsi14": 27.5,
+        "sma20": 167.36,
+        "sma50": 172.56,
+        "sma200": 164.43,
+        "close_vs_sma200_pct": -7.56,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -5.325,
+          "signal": -3.442,
+          "histogram": -1.883
+        },
+        "atr14": 5.15,
+        "atr14_pct": 3.39,
+        "bollinger": {
+          "middle": 167.363,
+          "upper": 181.827,
+          "lower": 152.898,
+          "percent_b": -0.031,
+          "bandwidth_pct": 17.286
+        },
+        "support_resistance": {
+          "support": 152.0,
+          "resistance": 179.7,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3478286,
+          "avg_turnover_mad_60d": 4799336,
+          "avg_shares_20d": 21065,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 18.7,
+          "momentum_20d": 2.3,
+          "trend": 0,
+          "volume": 24.4,
+          "volatility": 55.0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Participation et promotion immobilières"
       },
       {
         "ticker": "MNG",
@@ -331,11 +1312,3632 @@
           "sma200",
           "macd"
         ],
-        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Mines"
+      },
+      {
+        "ticker": "TMA",
+        "name": "TOTALENERGIES MARKETING MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 11.9,
+        "reference_date": "2026-10-08",
+        "close": 1300.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -6.14,
+        "return_20d_pct": -13.51,
+        "momentum_60d_pct": -12.87,
+        "volume_ratio": 0.49,
+        "volatility_annual_pct": 26.92,
+        "rsi14": 28.4,
+        "sma20": 1408.0,
+        "sma50": 1477.04,
+        "sma200": 1559.76,
+        "close_vs_sma200_pct": -16.65,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -43.562,
+          "signal": -34.68,
+          "histogram": -8.882
+        },
+        "atr14": 52.32,
+        "atr14_pct": 4.02,
+        "bollinger": {
+          "middle": 1408.0,
+          "upper": 1511.466,
+          "lower": 1304.534,
+          "percent_b": -0.022,
+          "bandwidth_pct": 14.697
+        },
+        "support_resistance": {
+          "support": 1300.0,
+          "resistance": 1528.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1819686,
+          "avg_turnover_mad_60d": 1293403,
+          "avg_shares_20d": 1292,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 11.6,
+          "momentum_20d": 5.0,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 66.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Pétrole et Gaz"
+      },
+      {
+        "ticker": "AKT",
+        "name": "AKDITAL",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 10.9,
+        "reference_date": "2026-10-08",
+        "close": 1015.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -7.31,
+        "return_20d_pct": -12.88,
+        "momentum_60d_pct": -13.47,
+        "volume_ratio": 0.46,
+        "volatility_annual_pct": 21.91,
+        "rsi14": 24.0,
+        "sma20": 1105.9,
+        "sma50": 1130.3,
+        "sma200": 1159.58,
+        "close_vs_sma200_pct": -12.47,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -30.343,
+          "signal": -18.501,
+          "histogram": -11.842
+        },
+        "atr14": 23.13,
+        "atr14_pct": 2.28,
+        "bollinger": {
+          "middle": 1105.9,
+          "upper": 1196.29,
+          "lower": 1015.51,
+          "percent_b": -0.003,
+          "bandwidth_pct": 16.347
+        },
+        "support_resistance": {
+          "support": 993.0,
+          "resistance": 1169.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 13875352,
+          "avg_turnover_mad_60d": 8130312,
+          "avg_shares_20d": 12474,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 4.3,
+          "momentum_20d": 7.1,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 76.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Santé"
+      },
+      {
+        "ticker": "DHO",
+        "name": "DELTA HOLDING",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 9.9,
+        "reference_date": "2026-10-08",
+        "close": 46.9,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.25,
+        "return_20d_pct": -14.73,
+        "momentum_60d_pct": -20.1,
+        "volume_ratio": 0.39,
+        "volatility_annual_pct": 41.5,
+        "rsi14": 34.0,
+        "sma20": 50.12,
+        "sma50": 53.39,
+        "sma200": 61.02,
+        "close_vs_sma200_pct": -23.14,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.817,
+          "signal": -1.655,
+          "histogram": -0.162
+        },
+        "atr14": 1.77,
+        "atr14_pct": 3.78,
+        "bollinger": {
+          "middle": 50.12,
+          "upper": 53.89,
+          "lower": 46.35,
+          "percent_b": 0.073,
+          "bandwidth_pct": 15.044
+        },
+        "support_resistance": {
+          "support": 46.0,
+          "resistance": 55.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1090719,
+          "avg_turnover_mad_60d": 907665,
+          "avg_shares_20d": 21676,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 17.2,
+          "momentum_20d": 0.9,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 37.0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de Portefeuilles / Holdings"
+      },
+      {
+        "ticker": "HPS",
+        "name": "HIGHTECH PAYMENT SYSTEMS",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 9.3,
+        "reference_date": "2026-10-08",
+        "close": 522.5,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -12.18,
+        "return_20d_pct": -19.62,
+        "momentum_60d_pct": -15.74,
+        "volume_ratio": 0.9,
+        "volatility_annual_pct": 26.86,
+        "rsi14": 15.2,
+        "sma20": 608.41,
+        "sma50": 624.33,
+        "sma200": 586.45,
+        "close_vs_sma200_pct": -10.9,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -27.094,
+          "signal": -15.26,
+          "histogram": -11.833
+        },
+        "atr14": 22.75,
+        "atr14_pct": 4.35,
+        "bollinger": {
+          "middle": 608.415,
+          "upper": 690.051,
+          "lower": 526.779,
+          "percent_b": -0.026,
+          "bandwidth_pct": 26.836
+        },
+        "support_resistance": {
+          "support": 522.5,
+          "resistance": 666.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2627928,
+          "avg_turnover_mad_60d": 2696672,
+          "avg_shares_20d": 4512,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 26.5,
+          "volatility": 66.3
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "SMI",
+        "name": "SOCIETE METALLURGIQUE D'IMITER",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 9.2,
+        "reference_date": "2026-10-08",
+        "close": 5740.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -7.42,
+        "return_20d_pct": -13.03,
+        "momentum_60d_pct": -3.79,
+        "volume_ratio": 0.06,
+        "volatility_annual_pct": 28.54,
+        "rsi14": 26.6,
+        "sma20": 6354.05,
+        "sma50": 6486.72,
+        "sma200": 6682.14,
+        "close_vs_sma200_pct": -14.1,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -198.641,
+          "signal": -116.151,
+          "histogram": -82.491
+        },
+        "atr14": 216.23,
+        "atr14_pct": 3.77,
+        "bollinger": {
+          "middle": 6354.05,
+          "upper": 6945.7,
+          "lower": 5762.4,
+          "percent_b": -0.019,
+          "bandwidth_pct": 18.623
+        },
+        "support_resistance": {
+          "support": 5610.0,
+          "resistance": 6740.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4735138,
+          "avg_turnover_mad_60d": 4832030,
+          "avg_shares_20d": 744,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 3.6,
+          "momentum_20d": 6.6,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 62.9
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Mines"
+      },
+      {
+        "ticker": "T2S",
+        "name": "T2S GROUP HOLDING",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 8.5,
+        "reference_date": "2026-10-08",
+        "close": 190.1,
+        "sessions_used": 48,
+        "segment_start": "2026-07-27",
+        "corporate_action_date": null,
+        "return_5d_pct": -11.79,
+        "return_20d_pct": -16.62,
+        "momentum_60d_pct": null,
+        "volume_ratio": 0.8,
+        "volatility_annual_pct": 27.56,
+        "rsi14": 13.1,
+        "sma20": 215.38,
+        "sma50": null,
+        "sma200": null,
+        "close_vs_sma200_pct": null,
+        "trend_basis": "MM20",
+        "macd": null,
+        "atr14": 5.36,
+        "atr14_pct": 2.82,
+        "bollinger": {
+          "middle": 215.382,
+          "upper": 234.103,
+          "lower": 196.662,
+          "percent_b": -0.175,
+          "bandwidth_pct": 17.383
+        },
+        "support_resistance": {
+          "support": 190.1,
+          "resistance": 227.9,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3642425,
+          "avg_turnover_mad_60d": 13428817,
+          "avg_shares_20d": 16789,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 48,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 19.8,
+          "volatility": 64.9
+        },
+        "unavailable": [
+          "sma50",
+          "sma200",
+          "macd"
+        ],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Santé"
+      },
+      {
+        "ticker": "JET",
+        "name": "JET CONTRACTORS",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 7.8,
+        "reference_date": "2026-10-08",
+        "close": 1549.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -18.43,
+        "return_20d_pct": -24.07,
+        "momentum_60d_pct": -25.89,
+        "volume_ratio": 1.05,
+        "volatility_annual_pct": 39.15,
+        "rsi14": 18.0,
+        "sma20": 1856.4,
+        "sma50": 1996.68,
+        "sma200": 2276.51,
+        "close_vs_sma200_pct": -31.96,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -106.325,
+          "signal": -73.95,
+          "histogram": -32.376
+        },
+        "atr14": 75.84,
+        "atr14_pct": 4.9,
+        "bollinger": {
+          "middle": 1856.4,
+          "upper": 2115.773,
+          "lower": 1597.027,
+          "percent_b": -0.093,
+          "bandwidth_pct": 27.944
+        },
+        "support_resistance": {
+          "support": 1549.0,
+          "resistance": 2039.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3170135,
+          "avg_turnover_mad_60d": 2945907,
+          "avg_shares_20d": 1719,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 36.7,
+          "volatility": 41.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "ADI",
+        "name": "ALLIANCES DEVELOPPEMENT IMMOBILIER SA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 7.4,
+        "reference_date": "2026-10-08",
+        "close": 330.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -10.86,
+        "return_20d_pct": -20.08,
+        "momentum_60d_pct": -16.37,
+        "volume_ratio": 0.95,
+        "volatility_annual_pct": 37.71,
+        "rsi14": 24.5,
+        "sma20": 378.19,
+        "sma50": 392.76,
+        "sma200": 439.27,
+        "close_vs_sma200_pct": -24.88,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -15.883,
+          "signal": -10.423,
+          "histogram": -5.46
+        },
+        "atr14": 13.96,
+        "atr14_pct": 4.23,
+        "bollinger": {
+          "middle": 378.19,
+          "upper": 419.827,
+          "lower": 336.553,
+          "percent_b": -0.079,
+          "bandwidth_pct": 22.019
+        },
+        "support_resistance": {
+          "support": 327.0,
+          "resistance": 415.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 6690380,
+          "avg_turnover_mad_60d": 4996405,
+          "avg_shares_20d": 17915,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 29.8,
+          "volatility": 44.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Participation et promotion immobilières"
+      },
+      {
+        "ticker": "LHM",
+        "name": "Holcim Maroc S.A",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 6.6,
+        "reference_date": "2026-10-08",
+        "close": 1523.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -7.7,
+        "return_20d_pct": -13.47,
+        "momentum_60d_pct": -13.27,
+        "volume_ratio": 0.26,
+        "volatility_annual_pct": 36.82,
+        "rsi14": 28.4,
+        "sma20": 1650.35,
+        "sma50": 1720.94,
+        "sma200": 1773.08,
+        "close_vs_sma200_pct": -14.1,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -46.962,
+          "signal": -36.09,
+          "histogram": -10.872
+        },
+        "atr14": 54.4,
+        "atr14_pct": 3.57,
+        "bollinger": {
+          "middle": 1650.35,
+          "upper": 1763.728,
+          "lower": 1536.972,
+          "percent_b": -0.062,
+          "bandwidth_pct": 13.74
+        },
+        "support_resistance": {
+          "support": 1523.0,
+          "resistance": 1790.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 8053113,
+          "avg_turnover_mad_60d": 7612071,
+          "avg_shares_20d": 4841,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 1.9,
+          "momentum_20d": 5.1,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 46.4
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "VCN",
+        "name": "VICENNE",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 6.1,
+        "reference_date": "2026-10-08",
+        "close": 284.9,
+        "sessions_used": 301,
+        "segment_start": "2025-07-15",
+        "corporate_action_date": null,
+        "return_5d_pct": -8.05,
+        "return_20d_pct": -18.37,
+        "momentum_60d_pct": -17.9,
+        "volume_ratio": 0.2,
+        "volatility_annual_pct": 29.3,
+        "rsi14": 24.7,
+        "sma20": 316.39,
+        "sma50": 334.85,
+        "sma200": 392.71,
+        "close_vs_sma200_pct": -27.45,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -13.748,
+          "signal": -10.323,
+          "histogram": -3.425
+        },
+        "atr14": 11.34,
+        "atr14_pct": 3.98,
+        "bollinger": {
+          "middle": 316.393,
+          "upper": 350.441,
+          "lower": 282.344,
+          "percent_b": 0.038,
+          "bandwidth_pct": 21.523
+        },
+        "support_resistance": {
+          "support": 275.0,
+          "resistance": 348.5,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3641926,
+          "avg_turnover_mad_60d": 2652684,
+          "avg_shares_20d": 11448,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 61.4
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Santé"
+      },
+      {
+        "ticker": "ADH",
+        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 5.9,
+        "reference_date": "2026-10-08",
+        "close": 30.12,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -10.09,
+        "return_20d_pct": -15.75,
+        "momentum_60d_pct": -12.37,
+        "volume_ratio": 0.47,
+        "volatility_annual_pct": 30.59,
+        "rsi14": 25.7,
+        "sma20": 33.18,
+        "sma50": 34.66,
+        "sma200": 33.26,
+        "close_vs_sma200_pct": -9.43,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.062,
+          "signal": -0.733,
+          "histogram": -0.329
+        },
+        "atr14": 1.14,
+        "atr14_pct": 3.77,
+        "bollinger": {
+          "middle": 33.179,
+          "upper": 35.856,
+          "lower": 30.502,
+          "percent_b": -0.071,
+          "bandwidth_pct": 16.136
+        },
+        "support_resistance": {
+          "support": 29.1,
+          "resistance": 35.48,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3842652,
+          "avg_turnover_mad_60d": 6305859,
+          "avg_shares_20d": 117080,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 58.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Participation et promotion immobilières"
+      },
+      {
+        "ticker": "CMG",
+        "name": "CMGP GROUP",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 5.9,
+        "reference_date": "2026-10-08",
+        "close": 265.0,
+        "sessions_used": 445,
+        "segment_start": "2024-12-16",
+        "corporate_action_date": null,
+        "return_5d_pct": -7.02,
+        "return_20d_pct": -20.3,
+        "momentum_60d_pct": -21.6,
+        "volume_ratio": 0.17,
+        "volatility_annual_pct": 41.37,
+        "rsi14": 30.2,
+        "sma20": 291.44,
+        "sma50": 309.87,
+        "sma200": 350.46,
+        "close_vs_sma200_pct": -24.39,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -12.38,
+          "signal": -10.132,
+          "histogram": -2.248
+        },
+        "atr14": 11.57,
+        "atr14_pct": 4.37,
+        "bollinger": {
+          "middle": 291.435,
+          "upper": 322.091,
+          "lower": 260.779,
+          "percent_b": 0.069,
+          "bandwidth_pct": 21.038
+        },
+        "support_resistance": {
+          "support": 257.1,
+          "resistance": 330.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3607888,
+          "avg_turnover_mad_60d": 2956435,
+          "avg_shares_20d": 12645,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 6.1,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 37.3
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Industrie Agricole"
+      },
+      {
+        "ticker": "CAP",
+        "name": "CASH PLUS S.A",
+        "status": "RESEARCH_ONLY",
+        "category": "ELIGIBLE",
+        "score": 5.0,
+        "reference_date": "2026-10-08",
+        "close": 203.5,
+        "sessions_used": 204,
+        "segment_start": "2025-12-08",
+        "corporate_action_date": null,
+        "return_5d_pct": -7.5,
+        "return_20d_pct": -14.5,
+        "momentum_60d_pct": -21.12,
+        "volume_ratio": 0.23,
+        "volatility_annual_pct": 42.6,
+        "rsi14": 28.7,
+        "sma20": 225.72,
+        "sma50": 238.36,
+        "sma200": 272.12,
+        "close_vs_sma200_pct": -25.22,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -7.763,
+          "signal": -6.325,
+          "histogram": -1.437
+        },
+        "atr14": 8.02,
+        "atr14_pct": 3.94,
+        "bollinger": {
+          "middle": 225.72,
+          "upper": 243.601,
+          "lower": 207.839,
+          "percent_b": -0.121,
+          "bandwidth_pct": 15.843
+        },
+        "support_resistance": {
+          "support": 203.5,
+          "resistance": 242.2,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 3131760,
+          "avg_turnover_mad_60d": 1570186,
+          "avg_shares_20d": 13716,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 3.1,
+          "momentum_20d": 1.7,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 34.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de financement et Autres Activités Financières"
       }
     ],
-    "watch": [],
-    "excluded": [],
+    "watch": [
+      {
+        "ticker": "REB",
+        "name": "REBAB COMPANY",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 79.8,
+        "reference_date": "2026-10-08",
+        "close": 104.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 11.71,
+        "return_20d_pct": 5.34,
+        "momentum_60d_pct": 5.06,
+        "volume_ratio": 16.81,
+        "volatility_annual_pct": 63.74,
+        "rsi14": 59.5,
+        "sma20": 96.31,
+        "sma50": 96.44,
+        "sma200": 100.29,
+        "close_vs_sma200_pct": 3.7,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.184,
+          "signal": -0.667,
+          "histogram": 0.483
+        },
+        "atr14": 3.14,
+        "atr14_pct": 3.02,
+        "bollinger": {
+          "middle": 96.311,
+          "upper": 104.23,
+          "lower": 88.391,
+          "percent_b": 0.986,
+          "bandwidth_pct": 16.445
+        },
+        "support_resistance": {
+          "support": 87.52,
+          "resistance": 104.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2561,
+          "avg_turnover_mad_60d": 2378,
+          "avg_shares_20d": 26,
+          "zero_volume_sessions": 12,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 12 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 100,
+          "momentum_20d": 67.8,
+          "trend": 89.2,
+          "volume": 100,
+          "volatility": 0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Mines"
+      },
+      {
+        "ticker": "BAL",
+        "name": "BALIMA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 76.0,
+        "reference_date": "2026-10-08",
+        "close": 199.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 5.85,
+        "return_20d_pct": 5.85,
+        "momentum_60d_pct": 5.51,
+        "volume_ratio": 6.25,
+        "volatility_annual_pct": 33.06,
+        "rsi14": 59.8,
+        "sma20": 191.5,
+        "sma50": 193.36,
+        "sma200": 217.73,
+        "close_vs_sma200_pct": -8.6,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 0.864,
+          "signal": -0.209,
+          "histogram": 1.073
+        },
+        "atr14": 2.19,
+        "atr14_pct": 1.1,
+        "bollinger": {
+          "middle": 191.5,
+          "upper": 200.5,
+          "lower": 182.5,
+          "percent_b": 0.917,
+          "bandwidth_pct": 9.399
+        },
+        "support_resistance": {
+          "support": 188.0,
+          "resistance": 199.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 204,
+          "avg_turnover_mad_60d": 501,
+          "avg_shares_20d": 1,
+          "zero_volume_sessions": 34,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 34 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 86.6,
+          "momentum_20d": 69.5,
+          "trend": 64.6,
+          "volume": 100,
+          "volatility": 53.9
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de placement immobilier"
+      },
+      {
+        "ticker": "OUL",
+        "name": "SOCIETE LES EAUX MINERALES D'OULMES",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 68.3,
+        "reference_date": "2026-10-08",
+        "close": 1225.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 5.97,
+        "return_20d_pct": 5.6,
+        "momentum_60d_pct": 5.06,
+        "volume_ratio": 0.41,
+        "volatility_annual_pct": 35.86,
+        "rsi14": 69.7,
+        "sma20": 1159.7,
+        "sma50": 1158.38,
+        "sma200": 1193.04,
+        "close_vs_sma200_pct": 2.68,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 6.181,
+          "signal": 0.564,
+          "histogram": 5.616
+        },
+        "atr14": 12.5,
+        "atr14_pct": 1.02,
+        "bollinger": {
+          "middle": 1159.7,
+          "upper": 1202.67,
+          "lower": 1116.73,
+          "percent_b": 1.26,
+          "bandwidth_pct": 7.411
+        },
+        "support_resistance": {
+          "support": 1091.0,
+          "resistance": 1225.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 8614,
+          "avg_turnover_mad_60d": 5654,
+          "avg_shares_20d": 7,
+          "zero_volume_sessions": 28,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 28 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 87.3,
+          "momentum_20d": 68.7,
+          "trend": 78.8,
+          "volume": 0,
+          "volatility": 48.3
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Boissons"
+      },
+      {
+        "ticker": "PRO",
+        "name": "SOCIETE DE PROMOTION PHARMACEUTIQUE DU MAGHREB S.A",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 61.3,
+        "reference_date": "2026-10-08",
+        "close": 1480.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.0,
+        "return_20d_pct": 7.56,
+        "momentum_60d_pct": 16.63,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 20.52,
+        "rsi14": 81.8,
+        "sma20": 1458.55,
+        "sma50": 1381.84,
+        "sma200": 1401.06,
+        "close_vs_sma200_pct": 5.63,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 30.084,
+          "signal": 33.319,
+          "histogram": -3.235
+        },
+        "atr14": 4.97,
+        "atr14_pct": 0.34,
+        "bollinger": {
+          "middle": 1458.55,
+          "upper": 1533.243,
+          "lower": 1383.857,
+          "percent_b": 0.644,
+          "bandwidth_pct": 10.242
+        },
+        "support_resistance": {
+          "support": 1379.0,
+          "resistance": 1480.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4932,
+          "avg_turnover_mad_60d": 7613,
+          "avg_shares_20d": 4,
+          "zero_volume_sessions": 42,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 42 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 50.0,
+          "momentum_20d": 75.2,
+          "trend": 85.5,
+          "volume": 0,
+          "volatility": 79.0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Industrie Pharmaceutique"
+      },
+      {
+        "ticker": "NEJ",
+        "name": "AUTO NEJMA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 55.8,
+        "reference_date": "2026-10-08",
+        "close": 5621.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.0,
+        "return_20d_pct": 6.0,
+        "momentum_60d_pct": 10.22,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 20.67,
+        "rsi14": 82.7,
+        "sma20": 5605.1,
+        "sma50": 5463.0,
+        "sma200": 4743.27,
+        "close_vs_sma200_pct": 18.5,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 60.753,
+          "signal": 70.875,
+          "histogram": -10.122
+        },
+        "atr14": 10.44,
+        "atr14_pct": 0.19,
+        "bollinger": {
+          "middle": 5605.1,
+          "upper": 5743.713,
+          "lower": 5466.487,
+          "percent_b": 0.557,
+          "bandwidth_pct": 4.946
+        },
+        "support_resistance": {
+          "support": 5303.0,
+          "resistance": 5621.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 843,
+          "avg_turnover_mad_60d": 1753,
+          "avg_shares_20d": 0,
+          "zero_volume_sessions": 53,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 53 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 50.0,
+          "momentum_20d": 70.0,
+          "trend": 64.5,
+          "volume": 0,
+          "volatility": 78.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "AFM",
+        "name": "AFMA SA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 51.4,
+        "reference_date": "2026-10-08",
+        "close": 1250.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.0,
+        "return_20d_pct": 0.81,
+        "momentum_60d_pct": 0.81,
+        "volume_ratio": 0.73,
+        "volatility_annual_pct": 6.77,
+        "rsi14": 45.6,
+        "sma20": 1250.75,
+        "sma50": 1259.86,
+        "sma200": 1241.33,
+        "close_vs_sma200_pct": 0.7,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -2.441,
+          "signal": -2.792,
+          "histogram": 0.351
+        },
+        "atr14": 3.53,
+        "atr14_pct": 0.28,
+        "bollinger": {
+          "middle": 1250.75,
+          "upper": 1257.288,
+          "lower": 1244.212,
+          "percent_b": 0.443,
+          "bandwidth_pct": 1.046
+        },
+        "support_resistance": {
+          "support": 1250.0,
+          "resistance": 1265.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 17764,
+          "avg_turnover_mad_60d": 402930,
+          "avg_shares_20d": 14,
+          "zero_volume_sessions": 33,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 33 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 50.0,
+          "momentum_20d": 52.7,
+          "trend": 46.1,
+          "volume": 15.4,
+          "volatility": 100
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "EQD",
+        "name": "EQDOM",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 51.0,
+        "reference_date": "2026-10-08",
+        "close": 1500.0,
+        "sessions_used": 685,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.0,
+        "return_20d_pct": 1.35,
+        "momentum_60d_pct": -3.16,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 4.76,
+        "rsi14": 63.6,
+        "sma20": 1487.0,
+        "sma50": 1501.86,
+        "sma200": 1426.88,
+        "close_vs_sma200_pct": 5.12,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 0.916,
+          "signal": -2.539,
+          "histogram": 3.455
+        },
+        "atr14": 2.16,
+        "atr14_pct": 0.14,
+        "bollinger": {
+          "middle": 1487.0,
+          "upper": 1506.079,
+          "lower": 1467.921,
+          "percent_b": 0.841,
+          "bandwidth_pct": 2.566
+        },
+        "support_resistance": {
+          "support": 1480.0,
+          "resistance": 1500.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 242025,
+          "avg_turnover_mad_60d": 226585,
+          "avg_shares_20d": 161,
+          "zero_volume_sessions": 51,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 51 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 50.0,
+          "momentum_20d": 54.5,
+          "trend": 49.4,
+          "volume": 0,
+          "volatility": 100
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "ALM",
+        "name": "ALUMINIUM  DU  MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 50.7,
+        "reference_date": "2026-10-08",
+        "close": 1890.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -1.05,
+        "return_20d_pct": 3.68,
+        "momentum_60d_pct": -0.53,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 24.67,
+        "rsi14": 53.9,
+        "sma20": 1868.75,
+        "sma50": 1837.48,
+        "sma200": 1822.54,
+        "close_vs_sma200_pct": 3.7,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 16.415,
+          "signal": 13.782,
+          "histogram": 2.632
+        },
+        "atr14": 42.34,
+        "atr14_pct": 2.24,
+        "bollinger": {
+          "middle": 1868.75,
+          "upper": 1936.526,
+          "lower": 1800.974,
+          "percent_b": 0.657,
+          "bandwidth_pct": 7.254
+        },
+        "support_resistance": {
+          "support": 1795.0,
+          "resistance": 2075.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 81716,
+          "avg_turnover_mad_60d": 72932,
+          "avg_shares_20d": 42,
+          "zero_volume_sessions": 8,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 8 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 43.5,
+          "momentum_20d": 62.3,
+          "trend": 64.3,
+          "volume": 0,
+          "volatility": 70.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "MOX",
+        "name": "MAGHREB OXYGENE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 50.7,
+        "reference_date": "2026-10-08",
+        "close": 393.05,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.03,
+        "return_20d_pct": 2.12,
+        "momentum_60d_pct": 6.24,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 24.46,
+        "rsi14": 56.1,
+        "sma20": 386.33,
+        "sma50": 386.52,
+        "sma200": 390.13,
+        "close_vs_sma200_pct": 0.75,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 2.423,
+          "signal": 1.341,
+          "histogram": 1.082
+        },
+        "atr14": 8.65,
+        "atr14_pct": 2.2,
+        "bollinger": {
+          "middle": 386.332,
+          "upper": 400.471,
+          "lower": 372.194,
+          "percent_b": 0.738,
+          "bandwidth_pct": 7.319
+        },
+        "support_resistance": {
+          "support": 365.0,
+          "resistance": 399.9,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2419,
+          "avg_turnover_mad_60d": 6201,
+          "avg_shares_20d": 6,
+          "zero_volume_sessions": 15,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 15 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 50.2,
+          "momentum_20d": 57.1,
+          "trend": 58.5,
+          "volume": 0,
+          "volatility": 71.1
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Chimie"
+      },
+      {
+        "ticker": "DRI",
+        "name": "DARI COUSPATE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 50.5,
+        "reference_date": "2026-10-08",
+        "close": 4180.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.0,
+        "return_20d_pct": -0.48,
+        "momentum_60d_pct": -0.24,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 1.69,
+        "rsi14": 54.6,
+        "sma20": 4194.0,
+        "sma50": 4143.56,
+        "sma200": 4210.36,
+        "close_vs_sma200_pct": -0.72,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 8.286,
+          "signal": 13.524,
+          "histogram": -5.238
+        },
+        "atr14": 2.64,
+        "atr14_pct": 0.06,
+        "bollinger": {
+          "middle": 4194.0,
+          "upper": 4212.33,
+          "lower": 4175.67,
+          "percent_b": 0.118,
+          "bandwidth_pct": 0.874
+        },
+        "support_resistance": {
+          "support": 4180.0,
+          "resistance": 4200.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4409,
+          "avg_turnover_mad_60d": 5236,
+          "avg_shares_20d": 1,
+          "zero_volume_sessions": 53,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 53 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 50.0,
+          "momentum_20d": 48.4,
+          "trend": 54.4,
+          "volume": 0,
+          "volatility": 100
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "DWY",
+        "name": "DISWAY",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 49.5,
+        "reference_date": "2026-10-08",
+        "close": 745.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 2.6,
+        "return_20d_pct": -0.79,
+        "momentum_60d_pct": -1.97,
+        "volume_ratio": 0.02,
+        "volatility_annual_pct": 29.62,
+        "rsi14": 48.1,
+        "sma20": 745.98,
+        "sma50": 757.6,
+        "sma200": 803.65,
+        "close_vs_sma200_pct": -7.3,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.479,
+          "signal": -2.818,
+          "histogram": 1.339
+        },
+        "atr14": 21.65,
+        "atr14_pct": 2.91,
+        "bollinger": {
+          "middle": 745.98,
+          "upper": 765.004,
+          "lower": 726.956,
+          "percent_b": 0.474,
+          "bandwidth_pct": 5.1
+        },
+        "support_resistance": {
+          "support": 725.1,
+          "resistance": 774.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 324053,
+          "avg_turnover_mad_60d": 159590,
+          "avg_shares_20d": 430,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 66.3,
+          "momentum_20d": 47.4,
+          "trend": 41.7,
+          "volume": 0,
+          "volatility": 60.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "SRM",
+        "name": "SOCIETE DE REALISATIONS MECANIQUES",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 47.7,
+        "reference_date": "2026-10-08",
+        "close": 459.35,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -0.36,
+        "return_20d_pct": -1.0,
+        "momentum_60d_pct": -1.22,
+        "volume_ratio": 1.03,
+        "volatility_annual_pct": 30.97,
+        "rsi14": 54.0,
+        "sma20": 456.54,
+        "sma50": 459.5,
+        "sma200": 473.54,
+        "close_vs_sma200_pct": -3.0,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -5.407,
+          "signal": -3.713,
+          "histogram": -1.695
+        },
+        "atr14": 3.79,
+        "atr14_pct": 0.83,
+        "bollinger": {
+          "middle": 456.538,
+          "upper": 479.874,
+          "lower": 433.201,
+          "percent_b": 0.56,
+          "bandwidth_pct": 10.223
+        },
+        "support_resistance": {
+          "support": 433.35,
+          "resistance": 464.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4744,
+          "avg_turnover_mad_60d": 5718,
+          "avg_shares_20d": 10,
+          "zero_volume_sessions": 33,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 33 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 47.8,
+          "momentum_20d": 46.7,
+          "trend": 49.8,
+          "volume": 35.1,
+          "volatility": 58.1
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "UMR",
+        "name": "UNIMER",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 46.4,
+        "reference_date": "2026-10-08",
+        "close": 169.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.06,
+        "return_20d_pct": -2.31,
+        "momentum_60d_pct": 1.2,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 8.31,
+        "rsi14": 32.1,
+        "sma20": 169.16,
+        "sma50": 172.15,
+        "sma200": 166.5,
+        "close_vs_sma200_pct": 1.5,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.879,
+          "signal": -1.052,
+          "histogram": 0.174
+        },
+        "atr14": 0.16,
+        "atr14_pct": 0.09,
+        "bollinger": {
+          "middle": 169.155,
+          "upper": 170.922,
+          "lower": 167.388,
+          "percent_b": 0.456,
+          "bandwidth_pct": 2.089
+        },
+        "support_resistance": {
+          "support": 168.9,
+          "resistance": 173.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 904,
+          "avg_turnover_mad_60d": 3079,
+          "avg_shares_20d": 5,
+          "zero_volume_sessions": 44,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 44 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 50.4,
+          "momentum_20d": 42.3,
+          "trend": 40.8,
+          "volume": 0,
+          "volatility": 100
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "IMO",
+        "name": "IMMORENTE INVEST",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 43.4,
+        "reference_date": "2026-10-08",
+        "close": 90.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -0.99,
+        "return_20d_pct": -3.22,
+        "momentum_60d_pct": -0.18,
+        "volume_ratio": 0.38,
+        "volatility_annual_pct": 7.39,
+        "rsi14": 30.9,
+        "sma20": 91.59,
+        "sma50": 91.64,
+        "sma200": 91.17,
+        "close_vs_sma200_pct": -1.29,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.464,
+          "signal": -0.261,
+          "histogram": -0.203
+        },
+        "atr14": 0.89,
+        "atr14_pct": 0.99,
+        "bollinger": {
+          "middle": 91.588,
+          "upper": 93.559,
+          "lower": 89.616,
+          "percent_b": 0.097,
+          "bandwidth_pct": 4.306
+        },
+        "support_resistance": {
+          "support": 89.93,
+          "resistance": 93.2,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 384883,
+          "avg_turnover_mad_60d": 278128,
+          "avg_shares_20d": 4226,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 43.8,
+          "momentum_20d": 39.3,
+          "trend": 41.1,
+          "volume": 0,
+          "volatility": 100
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de placement immobilier"
+      },
+      {
+        "ticker": "SLF",
+        "name": "SALAFIN",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 41.0,
+        "reference_date": "2026-10-08",
+        "close": 425.9,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -0.95,
+        "return_20d_pct": -3.2,
+        "momentum_60d_pct": -1.18,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 20.3,
+        "rsi14": 45.8,
+        "sma20": 427.12,
+        "sma50": 435.11,
+        "sma200": 491.81,
+        "close_vs_sma200_pct": -13.4,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -3.525,
+          "signal": -3.812,
+          "histogram": 0.287
+        },
+        "atr14": 6.43,
+        "atr14_pct": 1.51,
+        "bollinger": {
+          "middle": 427.118,
+          "upper": 437.477,
+          "lower": 416.758,
+          "percent_b": 0.441,
+          "bandwidth_pct": 4.851
+        },
+        "support_resistance": {
+          "support": 388.05,
+          "resistance": 444.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1202238,
+          "avg_turnover_mad_60d": 473836,
+          "avg_shares_20d": 2827,
+          "zero_volume_sessions": 3,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": "3 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 44.0,
+          "momentum_20d": 39.3,
+          "trend": 39.4,
+          "volume": 0,
+          "volatility": 79.4
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "AFI",
+        "name": "AFRIC INDUSTRIES",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 40.0,
+        "reference_date": "2026-10-08",
+        "close": 325.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.4,
+        "return_20d_pct": -2.14,
+        "momentum_60d_pct": -0.91,
+        "volume_ratio": 0.29,
+        "volatility_annual_pct": 15.05,
+        "rsi14": 41.4,
+        "sma20": 330.5,
+        "sma50": 331.45,
+        "sma200": 339.01,
+        "close_vs_sma200_pct": -4.13,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.816,
+          "signal": -1.021,
+          "histogram": -0.795
+        },
+        "atr14": 4.12,
+        "atr14_pct": 1.27,
+        "bollinger": {
+          "middle": 330.5,
+          "upper": 337.506,
+          "lower": 323.494,
+          "percent_b": 0.107,
+          "bandwidth_pct": 4.24
+        },
+        "support_resistance": {
+          "support": 322.2,
+          "resistance": 335.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 69134,
+          "avg_turnover_mad_60d": 47409,
+          "avg_shares_20d": 210,
+          "zero_volume_sessions": 1,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 1 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 35.0,
+          "momentum_20d": 42.9,
+          "trend": 40.3,
+          "volume": 0,
+          "volatility": 89.9
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "COL",
+        "name": "COLORADO",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 39.8,
+        "reference_date": "2026-10-08",
+        "close": 77.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -0.65,
+        "return_20d_pct": -3.75,
+        "momentum_60d_pct": -3.63,
+        "volume_ratio": 0.13,
+        "volatility_annual_pct": 22.44,
+        "rsi14": 42.2,
+        "sma20": 78.61,
+        "sma50": 79.55,
+        "sma200": 82.0,
+        "close_vs_sma200_pct": -6.1,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.76,
+          "signal": -0.526,
+          "histogram": -0.234
+        },
+        "atr14": 2.29,
+        "atr14_pct": 2.98,
+        "bollinger": {
+          "middle": 78.614,
+          "upper": 80.933,
+          "lower": 76.295,
+          "percent_b": 0.152,
+          "bandwidth_pct": 5.9
+        },
+        "support_resistance": {
+          "support": 74.0,
+          "resistance": 81.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 71110,
+          "avg_turnover_mad_60d": 123922,
+          "avg_shares_20d": 911,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 46.0,
+          "momentum_20d": 37.5,
+          "trend": 34.0,
+          "volume": 0,
+          "volatility": 75.1
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "NKL",
+        "name": "ENNAKL AUTOMOBILES",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 39.4,
+        "reference_date": "2026-10-08",
+        "close": 46.8,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -0.43,
+        "return_20d_pct": -4.68,
+        "momentum_60d_pct": -9.81,
+        "volume_ratio": 0.13,
+        "volatility_annual_pct": 18.15,
+        "rsi14": 38.2,
+        "sma20": 48.0,
+        "sma50": 48.83,
+        "sma200": 51.27,
+        "close_vs_sma200_pct": -8.73,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.637,
+          "signal": -0.543,
+          "histogram": -0.094
+        },
+        "atr14": 1.0,
+        "atr14_pct": 2.15,
+        "bollinger": {
+          "middle": 48.0,
+          "upper": 49.584,
+          "lower": 46.416,
+          "percent_b": 0.121,
+          "bandwidth_pct": 6.601
+        },
+        "support_resistance": {
+          "support": 45.85,
+          "resistance": 49.35,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 64181,
+          "avg_turnover_mad_60d": 81124,
+          "avg_shares_20d": 1338,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 47.3,
+          "momentum_20d": 34.4,
+          "trend": 29.2,
+          "volume": 0,
+          "volatility": 83.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "M2M",
+        "name": "M2M GROUP",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 39.2,
+        "reference_date": "2026-10-08",
+        "close": 391.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.01,
+        "return_20d_pct": -1.6,
+        "momentum_60d_pct": -2.25,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 25.94,
+        "rsi14": 44.0,
+        "sma20": 397.37,
+        "sma50": 398.82,
+        "sma200": 423.16,
+        "close_vs_sma200_pct": -7.6,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -2.708,
+          "signal": -2.025,
+          "histogram": -0.683
+        },
+        "atr14": 5.73,
+        "atr14_pct": 1.47,
+        "bollinger": {
+          "middle": 397.365,
+          "upper": 413.335,
+          "lower": 381.395,
+          "percent_b": 0.301,
+          "bandwidth_pct": 8.038
+        },
+        "support_resistance": {
+          "support": 387.05,
+          "resistance": 416.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 6043,
+          "avg_turnover_mad_60d": 13822,
+          "avg_shares_20d": 15,
+          "zero_volume_sessions": 17,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 17 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 37.5,
+          "momentum_20d": 44.7,
+          "trend": 40.2,
+          "volume": 0,
+          "volatility": 68.1
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "MAB",
+        "name": "MAGHREBAIL",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 35.8,
+        "reference_date": "2026-10-08",
+        "close": 890.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.52,
+        "return_20d_pct": -2.2,
+        "momentum_60d_pct": -0.28,
+        "volume_ratio": 0.03,
+        "volatility_annual_pct": 31.58,
+        "rsi14": 44.7,
+        "sma20": 901.76,
+        "sma50": 913.03,
+        "sma200": 905.05,
+        "close_vs_sma200_pct": -1.66,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -5.414,
+          "signal": -4.63,
+          "histogram": -0.784
+        },
+        "atr14": 9.47,
+        "atr14_pct": 1.06,
+        "bollinger": {
+          "middle": 901.76,
+          "upper": 931.326,
+          "lower": 872.194,
+          "percent_b": 0.301,
+          "bandwidth_pct": 6.557
+        },
+        "support_resistance": {
+          "support": 883.0,
+          "resistance": 923.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 30578,
+          "avg_turnover_mad_60d": 24447,
+          "avg_shares_20d": 34,
+          "zero_volume_sessions": 9,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 9 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 34.3,
+          "momentum_20d": 42.7,
+          "trend": 37.4,
+          "volume": 0,
+          "volatility": 56.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "AGM",
+        "name": "AGMA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 34.7,
+        "reference_date": "2026-10-08",
+        "close": 6680.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.64,
+        "return_20d_pct": -5.65,
+        "momentum_60d_pct": -1.89,
+        "volume_ratio": 9.09,
+        "volatility_annual_pct": 33.74,
+        "rsi14": 33.7,
+        "sma20": 6965.75,
+        "sma50": 6925.62,
+        "sma200": 6859.36,
+        "close_vs_sma200_pct": -2.61,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 2.15,
+          "signal": 11.066,
+          "histogram": -8.916
+        },
+        "atr14": 66.19,
+        "atr14_pct": 0.99,
+        "bollinger": {
+          "middle": 6965.75,
+          "upper": 7292.229,
+          "lower": 6639.271,
+          "percent_b": 0.062,
+          "bandwidth_pct": 9.374
+        },
+        "support_resistance": {
+          "support": 6680.0,
+          "resistance": 7080.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 11028,
+          "avg_turnover_mad_60d": 5421,
+          "avg_shares_20d": 2,
+          "zero_volume_sessions": 49,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 49 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 14.8,
+          "momentum_20d": 31.2,
+          "trend": 32.3,
+          "volume": 100,
+          "volatility": 52.5
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "SAH",
+        "name": "SANLAM MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 33.6,
+        "reference_date": "2026-10-08",
+        "close": 2955.0,
+        "sessions_used": 703,
+        "segment_start": "2023-11-28",
+        "corporate_action_date": null,
+        "return_5d_pct": -4.52,
+        "return_20d_pct": -1.14,
+        "momentum_60d_pct": -0.81,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 36.41,
+        "rsi14": 46.1,
+        "sma20": 3040.7,
+        "sma50": 2963.08,
+        "sma200": 2689.1,
+        "close_vs_sma200_pct": 9.89,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -8.917,
+          "signal": 6.438,
+          "histogram": -15.355
+        },
+        "atr14": 81.35,
+        "atr14_pct": 2.75,
+        "bollinger": {
+          "middle": 3040.7,
+          "upper": 3213.823,
+          "lower": 2867.577,
+          "percent_b": 0.252,
+          "bandwidth_pct": 11.387
+        },
+        "support_resistance": {
+          "support": 2759.0,
+          "resistance": 3170.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 72268,
+          "avg_turnover_mad_60d": 72484,
+          "avg_shares_20d": 24,
+          "zero_volume_sessions": 17,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 17 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 21.7,
+          "momentum_20d": 46.2,
+          "trend": 48.6,
+          "volume": 0,
+          "volatility": 47.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "ATL",
+        "name": "ATLANTASANAD",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 32.5,
+        "reference_date": "2026-10-08",
+        "close": 119.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.7,
+        "return_20d_pct": -3.8,
+        "momentum_60d_pct": -5.56,
+        "volume_ratio": 0.22,
+        "volatility_annual_pct": 32.16,
+        "rsi14": 43.9,
+        "sma20": 121.53,
+        "sma50": 123.96,
+        "sma200": 132.43,
+        "close_vs_sma200_pct": -10.14,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.531,
+          "signal": -1.302,
+          "histogram": -0.229
+        },
+        "atr14": 3.11,
+        "atr14_pct": 2.61,
+        "bollinger": {
+          "middle": 121.528,
+          "upper": 126.006,
+          "lower": 117.049,
+          "percent_b": 0.218,
+          "bandwidth_pct": 7.37
+        },
+        "support_resistance": {
+          "support": 116.5,
+          "resistance": 127.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 596670,
+          "avg_turnover_mad_60d": 508162,
+          "avg_shares_20d": 4885,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 33.1,
+          "momentum_20d": 37.3,
+          "trend": 30.0,
+          "volume": 0,
+          "volatility": 55.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "MIC",
+        "name": "MICRODATA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 31.3,
+        "reference_date": "2026-10-08",
+        "close": 740.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.61,
+        "return_20d_pct": -1.33,
+        "momentum_60d_pct": -3.9,
+        "volume_ratio": 0.28,
+        "volatility_annual_pct": 29.21,
+        "rsi14": 43.2,
+        "sma20": 757.76,
+        "sma50": 751.41,
+        "sma200": 771.52,
+        "close_vs_sma200_pct": -4.09,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": 1.141,
+          "signal": 3.059,
+          "histogram": -1.918
+        },
+        "atr14": 13.29,
+        "atr14_pct": 1.8,
+        "bollinger": {
+          "middle": 757.76,
+          "upper": 787.106,
+          "lower": 728.414,
+          "percent_b": 0.197,
+          "bandwidth_pct": 7.745
+        },
+        "support_resistance": {
+          "support": 728.0,
+          "resistance": 787.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 182742,
+          "avg_turnover_mad_60d": 183766,
+          "avg_shares_20d": 236,
+          "zero_volume_sessions": 7,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 7 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 14.9,
+          "momentum_20d": 45.6,
+          "trend": 42.4,
+          "volume": 0,
+          "volatility": 61.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "MUT",
+        "name": "MUTANDIS SCA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 30.4,
+        "reference_date": "2026-10-08",
+        "close": 221.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": 0.45,
+        "return_20d_pct": -8.72,
+        "momentum_60d_pct": -5.96,
+        "volume_ratio": 0.39,
+        "volatility_annual_pct": 49.5,
+        "rsi14": 44.8,
+        "sma20": 226.37,
+        "sma50": 233.5,
+        "sma200": 239.81,
+        "close_vs_sma200_pct": -7.84,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -4.628,
+          "signal": -3.925,
+          "histogram": -0.703
+        },
+        "atr14": 8.13,
+        "atr14_pct": 3.68,
+        "bollinger": {
+          "middle": 226.37,
+          "upper": 239.535,
+          "lower": 213.205,
+          "percent_b": 0.296,
+          "bandwidth_pct": 11.631
+        },
+        "support_resistance": {
+          "support": 210.0,
+          "resistance": 243.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 692786,
+          "avg_turnover_mad_60d": 724198,
+          "avg_shares_20d": 3079,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 52.8,
+          "momentum_20d": 20.9,
+          "trend": 23.2,
+          "volume": 0,
+          "volatility": 21.0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "LES",
+        "name": "LESIEUR CRISTAL",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 28.6,
+        "reference_date": "2026-10-08",
+        "close": 290.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.59,
+        "return_20d_pct": -4.92,
+        "momentum_60d_pct": -17.14,
+        "volume_ratio": 1.02,
+        "volatility_annual_pct": 46.91,
+        "rsi14": 42.0,
+        "sma20": 300.61,
+        "sma50": 307.2,
+        "sma200": 344.1,
+        "close_vs_sma200_pct": -15.72,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -5.19,
+          "signal": -4.201,
+          "histogram": -0.988
+        },
+        "atr14": 8.55,
+        "atr14_pct": 2.95,
+        "bollinger": {
+          "middle": 300.61,
+          "upper": 317.156,
+          "lower": 284.064,
+          "percent_b": 0.179,
+          "bandwidth_pct": 11.008
+        },
+        "support_resistance": {
+          "support": 280.0,
+          "resistance": 314.65,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 16602,
+          "avg_turnover_mad_60d": 34908,
+          "avg_shares_20d": 56,
+          "zero_volume_sessions": 5,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 5 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 27.6,
+          "momentum_20d": 33.6,
+          "trend": 22.0,
+          "volume": 34.8,
+          "volatility": 26.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "GAZ",
+        "name": "AFRIQUIA GAZ",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 28.0,
+        "reference_date": "2026-10-08",
+        "close": 3500.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -4.11,
+        "return_20d_pct": -7.89,
+        "momentum_60d_pct": -5.41,
+        "volume_ratio": 0.71,
+        "volatility_annual_pct": 25.37,
+        "rsi14": 37.6,
+        "sma20": 3639.4,
+        "sma50": 3676.78,
+        "sma200": 3840.14,
+        "close_vs_sma200_pct": -8.86,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -41.231,
+          "signal": -27.967,
+          "histogram": -13.265
+        },
+        "atr14": 73.4,
+        "atr14_pct": 2.1,
+        "bollinger": {
+          "middle": 3639.4,
+          "upper": 3770.042,
+          "lower": 3508.758,
+          "percent_b": -0.034,
+          "bandwidth_pct": 7.179
+        },
+        "support_resistance": {
+          "support": 3500.0,
+          "resistance": 3820.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 246379,
+          "avg_turnover_mad_60d": 381247,
+          "avg_shares_20d": 68,
+          "zero_volume_sessions": 2,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 2 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 24.3,
+          "momentum_20d": 23.7,
+          "trend": 26.0,
+          "volume": 14.2,
+          "volatility": 69.3
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Pétrole et Gaz"
+      },
+      {
+        "ticker": "DYT",
+        "name": "DISTY TECHNOLOGIES",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 27.4,
+        "reference_date": "2026-10-08",
+        "close": 341.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.8,
+        "return_20d_pct": -3.96,
+        "momentum_60d_pct": -0.44,
+        "volume_ratio": 0.11,
+        "volatility_annual_pct": 28.62,
+        "rsi14": 40.2,
+        "sma20": 351.75,
+        "sma50": 351.08,
+        "sma200": 343.82,
+        "close_vs_sma200_pct": -0.82,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.928,
+          "signal": 0.276,
+          "histogram": -1.203
+        },
+        "atr14": 9.63,
+        "atr14_pct": 2.82,
+        "bollinger": {
+          "middle": 351.748,
+          "upper": 365.821,
+          "lower": 337.674,
+          "percent_b": 0.118,
+          "bandwidth_pct": 8.002
+        },
+        "support_resistance": {
+          "support": 330.0,
+          "resistance": 370.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 311500,
+          "avg_turnover_mad_60d": 328074,
+          "avg_shares_20d": 873,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 13.7,
+          "momentum_20d": 36.8,
+          "trend": 35.6,
+          "volume": 0,
+          "volatility": 62.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "INV",
+        "name": "INVOLYS",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 27.0,
+        "reference_date": "2026-10-08",
+        "close": 118.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.64,
+        "return_20d_pct": -6.57,
+        "momentum_60d_pct": -9.23,
+        "volume_ratio": 0.05,
+        "volatility_annual_pct": 28.86,
+        "rsi14": 33.6,
+        "sma20": 124.83,
+        "sma50": 128.23,
+        "sma200": 153.0,
+        "close_vs_sma200_pct": -22.88,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -2.906,
+          "signal": -2.152,
+          "histogram": -0.754
+        },
+        "atr14": 4.46,
+        "atr14_pct": 3.78,
+        "bollinger": {
+          "middle": 124.825,
+          "upper": 133.144,
+          "lower": 116.506,
+          "percent_b": 0.09,
+          "bandwidth_pct": 13.329
+        },
+        "support_resistance": {
+          "support": 116.0,
+          "resistance": 136.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 23473,
+          "avg_turnover_mad_60d": 29373,
+          "avg_shares_20d": 186,
+          "zero_volume_sessions": 1,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 1 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 33.5,
+          "momentum_20d": 28.1,
+          "trend": 10.1,
+          "volume": 0,
+          "volatility": 62.3
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "IBC",
+        "name": "IB MAROC.COM SA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 24.2,
+        "reference_date": "2026-10-08",
+        "close": 53.9,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.02,
+        "return_20d_pct": -7.55,
+        "momentum_60d_pct": -10.17,
+        "volume_ratio": 0.08,
+        "volatility_annual_pct": 50.7,
+        "rsi14": 42.6,
+        "sma20": 56.25,
+        "sma50": 57.93,
+        "sma200": 63.05,
+        "close_vs_sma200_pct": -14.52,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.415,
+          "signal": -1.067,
+          "histogram": -0.348
+        },
+        "atr14": 2.58,
+        "atr14_pct": 4.79,
+        "bollinger": {
+          "middle": 56.248,
+          "upper": 61.096,
+          "lower": 51.399,
+          "percent_b": 0.258,
+          "bandwidth_pct": 17.239
+        },
+        "support_resistance": {
+          "support": 48.0,
+          "resistance": 60.97,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 4372,
+          "avg_turnover_mad_60d": 6373,
+          "avg_shares_20d": 80,
+          "zero_volume_sessions": 7,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 7 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 37.4,
+          "momentum_20d": 24.8,
+          "trend": 15.2,
+          "volume": 0,
+          "volatility": 18.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "SBM",
+        "name": "SOCIETE DES BOISSONS DU MAROC",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 24.0,
+        "reference_date": "2026-10-08",
+        "close": 1981.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -4.71,
+        "return_20d_pct": -6.11,
+        "momentum_60d_pct": -7.43,
+        "volume_ratio": 0.0,
+        "volatility_annual_pct": 37.1,
+        "rsi14": 40.1,
+        "sma20": 2051.85,
+        "sma50": 2089.3,
+        "sma200": 2187.95,
+        "close_vs_sma200_pct": -9.46,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -30.508,
+          "signal": -22.483,
+          "histogram": -8.025
+        },
+        "atr14": 60.56,
+        "atr14_pct": 3.06,
+        "bollinger": {
+          "middle": 2051.85,
+          "upper": 2158.092,
+          "lower": 1945.608,
+          "percent_b": 0.167,
+          "bandwidth_pct": 10.356
+        },
+        "support_resistance": {
+          "support": 1800.0,
+          "resistance": 2118.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 169113,
+          "avg_turnover_mad_60d": 130353,
+          "avg_shares_20d": 84,
+          "zero_volume_sessions": 16,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 16 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 20.5,
+          "momentum_20d": 29.6,
+          "trend": 24.1,
+          "volume": 0,
+          "volatility": 45.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Boissons"
+      },
+      {
+        "ticker": "S2M",
+        "name": "SOCIETE MAGHREBINE DE MONETIQUE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 22.1,
+        "reference_date": "2026-10-08",
+        "close": 480.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -4.0,
+        "return_20d_pct": -9.42,
+        "momentum_60d_pct": -0.41,
+        "volume_ratio": 0.14,
+        "volatility_annual_pct": 42.43,
+        "rsi14": 40.2,
+        "sma20": 508.96,
+        "sma50": 504.41,
+        "sma200": 539.66,
+        "close_vs_sma200_pct": -11.06,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -7.626,
+          "signal": -2.73,
+          "histogram": -4.895
+        },
+        "atr14": 20.2,
+        "atr14_pct": 4.21,
+        "bollinger": {
+          "middle": 508.965,
+          "upper": 543.848,
+          "lower": 474.082,
+          "percent_b": 0.085,
+          "bandwidth_pct": 13.707
+        },
+        "support_resistance": {
+          "support": 466.0,
+          "resistance": 540.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 247575,
+          "avg_turnover_mad_60d": 442341,
+          "avg_shares_20d": 487,
+          "zero_volume_sessions": 1,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 1 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 25.0,
+          "momentum_20d": 18.6,
+          "trend": 25.8,
+          "volume": 0,
+          "volatility": 35.1
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "MDP",
+        "name": "MED PAPER",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 20.5,
+        "reference_date": "2026-10-08",
+        "close": 23.33,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -5.55,
+        "return_20d_pct": -5.35,
+        "momentum_60d_pct": -7.05,
+        "volume_ratio": 0.24,
+        "volatility_annual_pct": 36.24,
+        "rsi14": 41.3,
+        "sma20": 24.23,
+        "sma50": 25.25,
+        "sma200": 25.51,
+        "close_vs_sma200_pct": -8.55,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.447,
+          "signal": -0.415,
+          "histogram": -0.032
+        },
+        "atr14": 0.9,
+        "atr14_pct": 3.87,
+        "bollinger": {
+          "middle": 24.232,
+          "upper": 25.274,
+          "lower": 23.191,
+          "percent_b": 0.067,
+          "bandwidth_pct": 8.592
+        },
+        "support_resistance": {
+          "support": 22.96,
+          "resistance": 25.39,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 21503,
+          "avg_turnover_mad_60d": 176083,
+          "avg_shares_20d": 888,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 15.3,
+          "momentum_20d": 32.2,
+          "trend": 11.9,
+          "volume": 0,
+          "volatility": 47.5
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sylviculture et Papier"
+      },
+      {
+        "ticker": "WAA",
+        "name": "WAFA ASSURANCE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 18.9,
+        "reference_date": "2026-10-08",
+        "close": 4760.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.05,
+        "return_20d_pct": -11.03,
+        "momentum_60d_pct": -14.22,
+        "volume_ratio": 0.06,
+        "volatility_annual_pct": 38.7,
+        "rsi14": 36.5,
+        "sma20": 5009.5,
+        "sma50": 5257.06,
+        "sma200": 5229.36,
+        "close_vs_sma200_pct": -8.98,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -133.769,
+          "signal": -124.492,
+          "histogram": -9.277
+        },
+        "atr14": 108.35,
+        "atr14_pct": 2.28,
+        "bollinger": {
+          "middle": 5009.5,
+          "upper": 5358.996,
+          "lower": 4660.004,
+          "percent_b": 0.143,
+          "bandwidth_pct": 13.953
+        },
+        "support_resistance": {
+          "support": 4760.0,
+          "resistance": 5400.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2425608,
+          "avg_turnover_mad_60d": 1470065,
+          "avg_shares_20d": 469,
+          "zero_volume_sessions": 16,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": "16 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 30.9,
+          "momentum_20d": 13.2,
+          "trend": 2.7,
+          "volume": 0,
+          "volatility": 42.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "SNP",
+        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 18.8,
+        "reference_date": "2026-10-08",
+        "close": 289.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.03,
+        "return_20d_pct": -17.19,
+        "momentum_60d_pct": -9.98,
+        "volume_ratio": 0.74,
+        "volatility_annual_pct": 39.1,
+        "rsi14": 35.5,
+        "sma20": 308.22,
+        "sma50": 331.35,
+        "sma200": 395.17,
+        "close_vs_sma200_pct": -26.87,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -13.063,
+          "signal": -12.18,
+          "histogram": -0.882
+        },
+        "atr14": 12.94,
+        "atr14_pct": 4.48,
+        "bollinger": {
+          "middle": 308.22,
+          "upper": 339.554,
+          "lower": 276.886,
+          "percent_b": 0.193,
+          "bandwidth_pct": 20.332
+        },
+        "support_resistance": {
+          "support": 283.0,
+          "resistance": 348.95,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 579171,
+          "avg_turnover_mad_60d": 366633,
+          "avg_shares_20d": 1899,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 37.3,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 15.9,
+          "volatility": 41.8
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Chimie"
+      },
+      {
+        "ticker": "ZDJ",
+        "name": "ZELLIDJA S.A",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 18.5,
+        "reference_date": "2026-10-08",
+        "close": 257.45,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -0.21,
+        "return_20d_pct": -15.78,
+        "momentum_60d_pct": 34.79,
+        "volume_ratio": 0.71,
+        "volatility_annual_pct": 71.47,
+        "rsi14": 44.1,
+        "sma20": 270.2,
+        "sma50": 287.22,
+        "sma200": 236.12,
+        "close_vs_sma200_pct": 9.04,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -9.961,
+          "signal": -7.406,
+          "histogram": -2.555
+        },
+        "atr14": 12.33,
+        "atr14_pct": 4.79,
+        "bollinger": {
+          "middle": 270.197,
+          "upper": 302.993,
+          "lower": 237.402,
+          "percent_b": 0.306,
+          "bandwidth_pct": 24.275
+        },
+        "support_resistance": {
+          "support": 234.1,
+          "resistance": 305.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 6357,
+          "avg_turnover_mad_60d": 39444,
+          "avg_shares_20d": 23,
+          "zero_volume_sessions": 12,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 12 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 48.7,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 14.2,
+          "volatility": 0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de Portefeuilles / Holdings"
+      },
+      {
+        "ticker": "STR",
+        "name": "SOCIETE DE TRAVAUX DE REALISATION D'OUVRAGES ET DE CONSTRUCTION INDUSTRIELLE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 17.7,
+        "reference_date": "2026-10-08",
+        "close": 155.05,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -3.34,
+        "return_20d_pct": -13.36,
+        "momentum_60d_pct": -11.4,
+        "volume_ratio": 0.15,
+        "volatility_annual_pct": 29.41,
+        "rsi14": 27.8,
+        "sma20": 169.18,
+        "sma50": 179.47,
+        "sma200": 199.29,
+        "close_vs_sma200_pct": -22.2,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -6.647,
+          "signal": -5.159,
+          "histogram": -1.489
+        },
+        "atr14": 8.18,
+        "atr14_pct": 5.28,
+        "bollinger": {
+          "middle": 169.183,
+          "upper": 185.601,
+          "lower": 152.764,
+          "percent_b": 0.07,
+          "bandwidth_pct": 19.409
+        },
+        "support_resistance": {
+          "support": 152.0,
+          "resistance": 183.2,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 86979,
+          "avg_turnover_mad_60d": 261813,
+          "avg_shares_20d": 523,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 29.2,
+          "momentum_20d": 5.5,
+          "trend": 0,
+          "volume": 0,
+          "volatility": 61.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Ingénieries et Biens d'Equipement Industriels"
+      },
+      {
+        "ticker": "FBR",
+        "name": "FENIE BROSSETTE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 14.2,
+        "reference_date": "2026-10-08",
+        "close": 310.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -6.63,
+        "return_20d_pct": -16.42,
+        "momentum_60d_pct": 13.43,
+        "volume_ratio": 2.89,
+        "volatility_annual_pct": 53.89,
+        "rsi14": 37.6,
+        "sma20": 340.37,
+        "sma50": 348.77,
+        "sma200": 335.63,
+        "close_vs_sma200_pct": -7.64,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -10.363,
+          "signal": -6.033,
+          "histogram": -4.33
+        },
+        "atr14": 19.04,
+        "atr14_pct": 6.14,
+        "bollinger": {
+          "middle": 340.373,
+          "upper": 373.474,
+          "lower": 307.271,
+          "percent_b": 0.041,
+          "bandwidth_pct": 19.45
+        },
+        "support_resistance": {
+          "support": 306.0,
+          "resistance": 373.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 210560,
+          "avg_turnover_mad_60d": 864657,
+          "avg_shares_20d": 623,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 8.6,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 100,
+          "volatility": 12.2
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "SNA",
+        "name": "STOKVIS NORD AFRIQUE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 13.8,
+        "reference_date": "2026-10-08",
+        "close": 50.27,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -2.03,
+        "return_20d_pct": -26.07,
+        "momentum_60d_pct": -30.33,
+        "volume_ratio": 0.62,
+        "volatility_annual_pct": 69.98,
+        "rsi14": 27.5,
+        "sma20": 59.59,
+        "sma50": 65.66,
+        "sma200": 79.0,
+        "close_vs_sma200_pct": -36.37,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -4.826,
+          "signal": -3.734,
+          "histogram": -1.092
+        },
+        "atr14": 3.14,
+        "atr14_pct": 6.24,
+        "bollinger": {
+          "middle": 59.592,
+          "upper": 72.943,
+          "lower": 46.241,
+          "percent_b": 0.151,
+          "bandwidth_pct": 44.808
+        },
+        "support_resistance": {
+          "support": 42.1,
+          "resistance": 68.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 897337,
+          "avg_turnover_mad_60d": 732827,
+          "avg_shares_20d": 16760,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 37.3,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 7.9,
+          "volatility": 0
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "BCI",
+        "name": "BANQUE MAROCAINE POUR LE COMMERCE ET L'INDUSTRIE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 8.3,
+        "reference_date": "2026-10-08",
+        "close": 543.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -7.16,
+        "return_20d_pct": -12.26,
+        "momentum_60d_pct": -10.25,
+        "volume_ratio": 0.02,
+        "volatility_annual_pct": 48.19,
+        "rsi14": 39.7,
+        "sma20": 568.9,
+        "sma50": 591.43,
+        "sma200": 606.34,
+        "close_vs_sma200_pct": -10.45,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -11.028,
+          "signal": -9.871,
+          "histogram": -1.157
+        },
+        "atr14": 18.67,
+        "atr14_pct": 3.44,
+        "bollinger": {
+          "middle": 568.9,
+          "upper": 603.881,
+          "lower": 533.919,
+          "percent_b": 0.13,
+          "bandwidth_pct": 12.298
+        },
+        "support_resistance": {
+          "support": 540.0,
+          "resistance": 614.9,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 2137004,
+          "avg_turnover_mad_60d": 1318919,
+          "avg_shares_20d": 3768,
+          "zero_volume_sessions": 4,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": "4 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 5.2,
+          "momentum_20d": 9.1,
+          "trend": 9.1,
+          "volume": 0,
+          "volatility": 23.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "SID",
+        "name": "SOCIETE NATIONALE DE SIDERURGIE SA",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 5.6,
+        "reference_date": "2026-10-08",
+        "close": 1685.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
+        "return_5d_pct": -8.37,
+        "return_20d_pct": -13.59,
+        "momentum_60d_pct": -15.28,
+        "volume_ratio": 0.52,
+        "volatility_annual_pct": 38.63,
+        "rsi14": 28.5,
+        "sma20": 1824.85,
+        "sma50": 1911.94,
+        "sma200": 2016.67,
+        "close_vs_sma200_pct": -16.45,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -55.02,
+          "signal": -40.88,
+          "histogram": -14.139
+        },
+        "atr14": 51.86,
+        "atr14_pct": 3.08,
+        "bollinger": {
+          "middle": 1824.85,
+          "upper": 1954.322,
+          "lower": 1695.378,
+          "percent_b": -0.04,
+          "bandwidth_pct": 14.19
+        },
+        "support_resistance": {
+          "support": 1681.0,
+          "resistance": 1960.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1311046,
+          "avg_turnover_mad_60d": 902349,
+          "avg_shares_20d": 720,
+          "zero_volume_sessions": 1,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": "1 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 4.7,
+          "trend": 0,
+          "volume": 1.4,
+          "volatility": 42.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "SOT",
+        "name": "SOCIETE DE THERAPEUTIQUE MAROCAINE",
+        "status": "RESEARCH_ONLY",
+        "category": "WATCH",
+        "score": 4.5,
+        "reference_date": "2026-10-08",
+        "close": 291.0,
+        "sessions_used": 103,
+        "segment_start": "2026-05-05",
+        "corporate_action_date": "2026-05-05",
+        "return_5d_pct": -11.82,
+        "return_20d_pct": -20.25,
+        "momentum_60d_pct": -19.4,
+        "volume_ratio": 0.95,
+        "volatility_annual_pct": 52.41,
+        "rsi14": 23.9,
+        "sma20": 346.55,
+        "sma50": 357.55,
+        "sma200": null,
+        "close_vs_sma200_pct": null,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -12.904,
+          "signal": -7.719,
+          "histogram": -5.185
+        },
+        "atr14": 14.72,
+        "atr14_pct": 5.06,
+        "bollinger": {
+          "middle": 346.548,
+          "upper": 387.582,
+          "lower": 305.513,
+          "percent_b": -0.177,
+          "bandwidth_pct": 23.682
+        },
+        "support_resistance": {
+          "support": 291.0,
+          "resistance": 369.9,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 1987185,
+          "avg_turnover_mad_60d": 802050,
+          "avg_shares_20d": 5715,
+          "zero_volume_sessions": 3,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": "3 séance(s) sans échange sur 60"
+        },
+        "incomplete_volume_dates": [],
+        "components": {
+          "momentum_5d": 0,
+          "momentum_20d": 0,
+          "trend": 0,
+          "volume": 29.9,
+          "volatility": 15.2
+        },
+        "unavailable": [
+          "sma200"
+        ],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Industrie Pharmaceutique"
+      }
+    ],
+    "excluded": [
+      {
+        "ticker": "CMT",
+        "name": "COMPAGNIE MINIERE DE TOUISSIT",
+        "category": "NON_ANALYSABLE",
+        "status": "CORPORATE_ACTION_RECENT",
+        "corporate_action_date": "2026-09-16",
+        "sessions_since": 17,
+        "required_sessions": 25,
+        "sector": "Mines"
+      },
+      {
+        "ticker": "CTM",
+        "name": "COMPAGNIE DE TRANSPORT AU MAROC",
+        "category": "NON_ANALYSABLE",
+        "status": "FLAGGED_DATA_IN_WINDOW",
+        "flagged_dates": [
+          "2026-09-17"
+        ],
+        "note": "Anomaly inside the 25-session window; no technical score.",
+        "sector": "Transport"
+      },
+      {
+        "ticker": "DIS",
+        "name": "DIAC SALAF",
+        "category": "NON_ANALYSABLE",
+        "status": "INSUFFICIENT_HISTORY",
+        "sessions": 1,
+        "required_sessions": 25,
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "DLM",
+        "name": "DELATTRE LEVIVIER MAROC",
+        "category": "NON_ANALYSABLE",
+        "status": "INSUFFICIENT_HISTORY",
+        "sessions": 1,
+        "required_sessions": 25,
+        "sector": "Ingénieries et Biens d'Equipement Industriels"
+      },
+      {
+        "ticker": "MLE",
+        "name": "MAROC LEASING",
+        "category": "NON_ANALYSABLE",
+        "status": "FLAGGED_DATA_IN_WINDOW",
+        "flagged_dates": [
+          "2026-09-17"
+        ],
+        "note": "Anomaly inside the 25-session window; no technical score.",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "SAM",
+        "name": "SAMIR",
+        "category": "NON_ANALYSABLE",
+        "status": "INSUFFICIENT_HISTORY",
+        "sessions": 1,
+        "required_sessions": 25,
+        "sector": "Pétrole et Gaz"
+      }
+    ],
     "snapshot_watchlist": [
       {
         "ticker": "SNP",

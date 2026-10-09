@@ -1,12 +1,132 @@
 {
- "updated_at": "2026-10-09T13:17:17.505068+00:00",
+ "updated_at": "2026-10-09T13:46:03.353263+00:00",
  "companies": [
+  {
+   "ticker": "ADH",
+   "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
+   "sector": "Participation et promotion immobilières",
+   "compartment": "Principal A",
+   "code_valeur": "ADH060706",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "ADI",
+   "name": "ALLIANCES DEVELOPPEMENT IMMOBILIER SA",
+   "sector": "Participation et promotion immobilières",
+   "compartment": "Principal A",
+   "code_valeur": "ADI170708",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "AFI",
+   "name": "AFRIC INDUSTRIES",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal B",
+   "code_valeur": "AFI050112",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "AFM",
+   "name": "AFMA SA",
+   "sector": "Assurances",
+   "compartment": "Principal B",
+   "code_valeur": "AFM151215",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "AGM",
+   "name": "AGMA",
+   "sector": "Assurances",
+   "compartment": "Alternatif A",
+   "code_valeur": "AGM091198",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "AKT",
+   "name": "AKDITAL",
+   "sector": "Santé",
+   "compartment": "Principal A",
+   "code_valeur": "AKT",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "ALM",
+   "name": "ALUMINIUM  DU  MAROC",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal B",
+   "code_valeur": "ALM271098",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "ARD",
+   "name": "ARADEI CAPITAL",
+   "sector": "Sociétés de placement immobilier",
+   "compartment": "Principal F",
+   "code_valeur": "ARD",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "ATH",
+   "name": "AUTO HALL",
+   "sector": "Distributeurs",
+   "compartment": "Principal B",
+   "code_valeur": "ATH040941",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "ATL",
+   "name": "ATLANTASANAD",
+   "sector": "Assurances",
+   "compartment": "Principal A",
+   "code_valeur": "ATL161007",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
   {
    "ticker": "ATW",
    "name": "ATTIJARIWAFA BANK",
    "sector": "Banques",
    "compartment": "Principal A",
    "code_valeur": "BCM130843",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "BAL",
+   "name": "BALIMA",
+   "sector": "Sociétés de placement immobilier",
+   "compartment": "Principal B",
+   "code_valeur": "BAL050746",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "BCI",
+   "name": "BANQUE MAROCAINE POUR LE COMMERCE ET L'INDUSTRIE",
+   "sector": "Banques",
+   "compartment": "Principal A",
+   "code_valeur": "BCI280272",
    "sessions": 728,
    "first_date": "2023-10-23",
    "last_date": "2026-10-08"
@@ -22,11 +142,361 @@
    "last_date": "2026-10-08"
   },
   {
+   "ticker": "BOA",
+   "name": "BANK OF AFRICA",
+   "sector": "Banques",
+   "compartment": "Principal A",
+   "code_valeur": "BCE260675",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CAP",
+   "name": "CASH PLUS S.A",
+   "sector": "Sociétés de financement et Autres Activités Financières",
+   "compartment": "Principal F",
+   "code_valeur": "CAP",
+   "sessions": 204,
+   "first_date": "2025-12-08",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CDM",
+   "name": "CREDIT DU MAROC",
+   "sector": "Banques",
+   "compartment": "Principal A",
+   "code_valeur": "CDM030576",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CFG",
+   "name": "CFG BANK",
+   "sector": "Banques",
+   "compartment": "Principal F",
+   "code_valeur": "CFG",
+   "sessions": 689,
+   "first_date": "2023-12-18",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CIH",
+   "name": "CREDIT IMMOBILIER ET HOTELIER",
+   "sector": "Banques",
+   "compartment": "Principal A",
+   "code_valeur": "CIH230667",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CMA",
+   "name": "CIMENTS DU MAROC",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal A",
+   "code_valeur": "CMA240669",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CMG",
+   "name": "CMGP GROUP",
+   "sector": "Industrie Agricole",
+   "compartment": "Principal A",
+   "code_valeur": "CMG",
+   "sessions": 445,
+   "first_date": "2024-12-16",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CMT",
+   "name": "COMPAGNIE MINIERE DE TOUISSIT",
+   "sector": "Mines",
+   "compartment": "Principal B",
+   "code_valeur": "CMT040608",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "COL",
+   "name": "COLORADO",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Alternatif A",
+   "code_valeur": "COL271006",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CRS",
+   "name": "CARTIER SAADA",
+   "sector": "Agroalimentaire et Production",
+   "compartment": "Principal B",
+   "code_valeur": "CRS210606",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CSR",
+   "name": "COSUMAR",
+   "sector": "Agroalimentaire et Production",
+   "compartment": "Principal A",
+   "code_valeur": "CSR030685",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "CTM",
+   "name": "COMPAGNIE DE TRANSPORT AU MAROC",
+   "sector": "Transport",
+   "compartment": "Principal B",
+   "code_valeur": "CTM030693",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "DHO",
+   "name": "DELTA HOLDING",
+   "sector": "Sociétés de Portefeuilles / Holdings",
+   "compartment": "Principal A",
+   "code_valeur": "DHO150508",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "DIS",
+   "name": "DIAC SALAF",
+   "sector": "Sociétés de financement et Autres Activités Financières",
+   "compartment": "Principal B",
+   "code_valeur": "DIS010662",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "DLM",
+   "name": "DELATTRE LEVIVIER MAROC",
+   "sector": "Ingénieries et Biens d'Equipement Industriels",
+   "compartment": "Principal B",
+   "code_valeur": "DLM290408",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "DRI",
+   "name": "DARI COUSPATE",
+   "sector": "Agroalimentaire et Production",
+   "compartment": "Principal B",
+   "code_valeur": "DARI110705",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "DWY",
+   "name": "DISWAY",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Principal B",
+   "code_valeur": "MAR280207",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "DYT",
+   "name": "DISTY TECHNOLOGIES",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Alternatif A",
+   "code_valeur": "DYT",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "EQD",
+   "name": "EQDOM",
+   "sector": "Sociétés de financement et Autres Activités Financières",
+   "compartment": "Principal B",
+   "code_valeur": "EQD210978",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "FBR",
+   "name": "FENIE BROSSETTE",
+   "sector": "Distributeurs",
+   "compartment": "Principal B",
+   "code_valeur": "FBR041206",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "GAZ",
+   "name": "AFRIQUIA GAZ",
+   "sector": "Pétrole et Gaz",
+   "compartment": "Principal A",
+   "code_valeur": "GAZ030599",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "GTM",
+   "name": "SOCIETE GENERALE DES TRAVAUX DU MAROC",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal A",
+   "code_valeur": "GTM",
+   "sessions": 198,
+   "first_date": "2025-12-16",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "HPS",
+   "name": "HIGHTECH PAYMENT SYSTEMS",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Principal B",
+   "code_valeur": "HPS271206",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
    "ticker": "IAM",
    "name": "ITISSALAT AL-MAGHRIB",
    "sector": "Télécommunications",
    "compartment": "Principal A",
    "code_valeur": "IAM131204",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "IBC",
+   "name": "IB MAROC.COM SA",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Principal B",
+   "code_valeur": "IBMC100701",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "IMO",
+   "name": "IMMORENTE INVEST",
+   "sector": "Sociétés de placement immobilier",
+   "compartment": "Principal B",
+   "code_valeur": "IMO110518",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "INV",
+   "name": "INVOLYS",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Alternatif A",
+   "code_valeur": "INV141206",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "JET",
+   "name": "JET CONTRACTORS",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal A",
+   "code_valeur": "JALU091211",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "LBV",
+   "name": "LABEL VIE",
+   "sector": "Distributeurs",
+   "compartment": "Principal A",
+   "code_valeur": "LBV020708",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "LES",
+   "name": "LESIEUR CRISTAL",
+   "sector": "Agroalimentaire et Production",
+   "compartment": "Principal A",
+   "code_valeur": "LES071272",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "LHM",
+   "name": "Holcim Maroc S.A",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal A",
+   "code_valeur": "LAC190297",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "M2M",
+   "name": "M2M GROUP",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Principal B",
+   "code_valeur": "M2M040707",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MAB",
+   "name": "MAGHREBAIL",
+   "sector": "Sociétés de financement et Autres Activités Financières",
+   "compartment": "Principal B",
+   "code_valeur": "MAB100797",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MDP",
+   "name": "MED PAPER",
+   "sector": "Sylviculture et Papier",
+   "compartment": "Principal B",
+   "code_valeur": "PDT280798",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MIC",
+   "name": "MICRODATA",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Alternatif A",
+   "code_valeur": "MIC311207",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MLE",
+   "name": "MAROC LEASING",
+   "sector": "Sociétés de financement et Autres Activités Financières",
+   "compartment": "Principal B",
+   "code_valeur": "MLE270297",
    "sessions": 728,
    "first_date": "2023-10-23",
    "last_date": "2026-10-08"
@@ -42,11 +512,301 @@
    "last_date": "2026-10-08"
   },
   {
+   "ticker": "MOX",
+   "name": "MAGHREB OXYGENE",
+   "sector": "Chimie",
+   "compartment": "Principal B",
+   "code_valeur": "MOX170699",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
    "ticker": "MSA",
    "name": "SOCIETE D'EXPLOITATION DES PORTS - MARSA MAROC",
    "sector": "Services de transport",
    "compartment": "Principal A",
    "code_valeur": "MSA190716",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MUT",
+   "name": "MUTANDIS SCA",
+   "sector": "Agroalimentaire et Production",
+   "compartment": "Principal B",
+   "code_valeur": "MUT181218",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "NEJ",
+   "name": "AUTO NEJMA",
+   "sector": "Distributeurs",
+   "compartment": "Principal B",
+   "code_valeur": "NEJ030599",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "NKL",
+   "name": "ENNAKL AUTOMOBILES",
+   "sector": "Distributeurs",
+   "compartment": "Principal B",
+   "code_valeur": "NAKL130710",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "OUL",
+   "name": "SOCIETE LES EAUX MINERALES D'OULMES",
+   "sector": "Boissons",
+   "compartment": "Principal B",
+   "code_valeur": "OUL130843",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "PRO",
+   "name": "SOCIETE DE PROMOTION PHARMACEUTIQUE DU MAGHREB S.A",
+   "sector": "Industrie Pharmaceutique",
+   "compartment": "Principal B",
+   "code_valeur": "PRO150607",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "RDS",
+   "name": "RESIDENCES DAR SAADA",
+   "sector": "Participation et promotion immobilières",
+   "compartment": "Principal B",
+   "code_valeur": "RDS250612",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "REB",
+   "name": "REBAB COMPANY",
+   "sector": "Mines",
+   "compartment": "Principal B",
+   "code_valeur": "REB121184",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "RIS",
+   "name": "RISMA",
+   "sector": "Loisirs et Hôtels",
+   "compartment": "Principal A",
+   "code_valeur": "RISMA",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "S2M",
+   "name": "SOCIETE MAGHREBINE DE MONETIQUE",
+   "sector": "Matériels, Logiciels et Services Informatiques",
+   "compartment": "Principal B",
+   "code_valeur": "S2M271211",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SAH",
+   "name": "SANLAM MAROC",
+   "sector": "Assurances",
+   "compartment": "Principal A",
+   "code_valeur": "CNIA221110",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SAM",
+   "name": "SAMIR",
+   "sector": "Pétrole et Gaz",
+   "compartment": "Principal B",
+   "code_valeur": "SAM190396",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SBM",
+   "name": "SOCIETE DES BOISSONS DU MAROC",
+   "sector": "Boissons",
+   "compartment": "Principal A",
+   "code_valeur": "SBM130843",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SID",
+   "name": "SOCIETE NATIONALE DE SIDERURGIE SA",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal A",
+   "code_valeur": "SID020796",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SLF",
+   "name": "SALAFIN",
+   "sector": "Sociétés de financement et Autres Activités Financières",
+   "compartment": "Principal B",
+   "code_valeur": "SLF171207",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SMI",
+   "name": "SOCIETE METALLURGIQUE D'IMITER",
+   "sector": "Mines",
+   "compartment": "Principal B",
+   "code_valeur": "SMI180697",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SNA",
+   "name": "STOKVIS NORD AFRIQUE",
+   "sector": "Distributeurs",
+   "compartment": "Principal B",
+   "code_valeur": "SNA031207",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SNP",
+   "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
+   "sector": "Chimie",
+   "compartment": "Principal B",
+   "code_valeur": "SNP071107",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SOT",
+   "name": "SOCIETE DE THERAPEUTIQUE MAROCAINE",
+   "sector": "Industrie Pharmaceutique",
+   "compartment": "Principal A",
+   "code_valeur": "SOT210205",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "SRM",
+   "name": "SOCIETE DE REALISATIONS MECANIQUES",
+   "sector": "Distributeurs",
+   "compartment": "Principal B",
+   "code_valeur": "SRM121206",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "STR",
+   "name": "SOCIETE DE TRAVAUX DE REALISATION D'OUVRAGES ET DE CONSTRUCTION INDUSTRIELLE",
+   "sector": "Ingénieries et Biens d'Equipement Industriels",
+   "compartment": "Principal B",
+   "code_valeur": "STR300611",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "T2S",
+   "name": "T2S GROUP HOLDING",
+   "sector": "Santé",
+   "compartment": "Principal F",
+   "code_valeur": "T2S",
+   "sessions": 48,
+   "first_date": "2026-07-27",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "TGC",
+   "name": "TRAVAUX GENERAUX DE CONSTRUCTION DE CASABLANCA",
+   "sector": "Bâtiment et Matériaux de Construction",
+   "compartment": "Principal F",
+   "code_valeur": "TGC",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "TMA",
+   "name": "TOTALENERGIES MARKETING MAROC",
+   "sector": "Pétrole et Gaz",
+   "compartment": "Principal A",
+   "code_valeur": "TMA290515",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "TQM",
+   "name": "TAQA MOROCCO",
+   "sector": "Electricité",
+   "compartment": "Principal A",
+   "code_valeur": "JLC241213",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "UMR",
+   "name": "UNIMER",
+   "sector": "Agroalimentaire et Production",
+   "compartment": "Principal B",
+   "code_valeur": "UMR290301",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "VCN",
+   "name": "VICENNE",
+   "sector": "Santé",
+   "compartment": "Principal F",
+   "code_valeur": "VCN",
+   "sessions": 301,
+   "first_date": "2025-07-15",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "WAA",
+   "name": "WAFA ASSURANCE",
+   "sector": "Assurances",
+   "compartment": "Principal A",
+   "code_valeur": "WAA130798",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "ZDJ",
+   "name": "ZELLIDJA S.A",
+   "sector": "Sociétés de Portefeuilles / Holdings",
+   "compartment": "Principal B",
+   "code_valeur": "ZDJ200655",
    "sessions": 728,
    "first_date": "2023-10-23",
    "last_date": "2026-10-08"

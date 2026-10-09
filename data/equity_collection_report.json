@@ -1,22 +1,220 @@
 {
-  "run_at": "2026-10-09T13:17:17.505068+00:00",
+  "run_at": "2026-10-09T13:46:03.353263+00:00",
   "source": "Bourse de Casablanca",
   "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
   "session_status": "open",
   "session_date": "2026-10-09",
-  "universe": [
-    "ATW",
-    "BCP",
-    "IAM",
-    "MSA",
-    "MNG"
-  ],
+  "universe_size": 81,
   "price_basis": "cours bruts non ajustés (adj_close = null)",
   "tickers": {
-    "ATW": {
+    "ADH": {
       "status": "OK",
+      "mode": "full",
       "sessions": 728,
       "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 30.12,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ADI": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 330.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "AFI": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 325.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 25,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "AFM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1250.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 182,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "AGM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 6680.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 507,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "AKT": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1015.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ALM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1890.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 124,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ARD": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 425.2,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 9,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ATH": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 59.98,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ATL": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 119.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 6,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ATW": {
+      "status": "OK",
+      "mode": "incremental",
+      "sessions": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 670.0,
@@ -33,10 +231,46 @@
       ],
       "corporate_actions_suspected": []
     },
-    "BCP": {
+    "BAL": {
       "status": "OK",
+      "mode": "full",
       "sessions": 728,
       "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 199.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 459,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "BCI": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 543.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 81,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "BCP": {
+      "status": "OK",
+      "mode": "incremental",
+      "sessions": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 246.0,
@@ -53,10 +287,553 @@
       ],
       "corporate_actions_suspected": []
     },
-    "IAM": {
+    "BOA": {
       "status": "OK",
+      "mode": "full",
       "sessions": 728,
       "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 180.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 2,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CAP": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 204,
+      "received": 204,
+      "first_date": "2025-12-08",
+      "last_date": "2026-10-08",
+      "last_close": 203.5,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CDM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 921.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 120,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CFG": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 689,
+      "received": 689,
+      "first_date": "2023-12-18",
+      "last_date": "2026-10-08",
+      "last_close": 190.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CIH": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 300.1,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 12,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CMA": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1400.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 11,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CMG": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 445,
+      "received": 445,
+      "first_date": "2024-12-16",
+      "last_date": "2026-10-08",
+      "last_close": 265.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CMT": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 4000.0,
+      "flagged_sessions": 39,
+      "flags_sample": [
+        [
+          "2026-03-30",
+          "close_non_positive"
+        ],
+        [
+          "2026-07-20",
+          "close_non_positive"
+        ],
+        [
+          "2026-07-21",
+          "close_non_positive"
+        ],
+        [
+          "2026-07-22",
+          "close_non_positive"
+        ],
+        [
+          "2026-07-23",
+          "close_non_positive"
+        ]
+      ],
+      "no_trade_sessions": 54,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": [
+        {
+          "date": "2026-09-16",
+          "estimated_factor": 2,
+          "previous_close": 4350.0,
+          "open": 2438.0,
+          "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
+        }
+      ]
+    },
+    "COL": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 77.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 15,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CRS": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 19.61,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 22,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CSR": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 171.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 2,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "CTM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 802.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "ohlc_incoherent,incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 101,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "DHO": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 46.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 12,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "DIS": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": null,
+      "flagged_sessions": 727,
+      "flags_sample": [
+        [
+          "2023-10-23",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-24",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-25",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-26",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-27",
+          "close_non_positive"
+        ]
+      ],
+      "no_trade_sessions": 728,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "DLM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": null,
+      "flagged_sessions": 727,
+      "flags_sample": [
+        [
+          "2023-10-23",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-24",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-25",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-26",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-27",
+          "close_non_positive"
+        ]
+      ],
+      "no_trade_sessions": 728,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "DRI": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 4180.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 623,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "DWY": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 745.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 52,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "DYT": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 341.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 4,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "EQD": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1500.0,
+      "flagged_sessions": 44,
+      "flags_sample": [
+        [
+          "2024-12-10",
+          "close_non_positive"
+        ],
+        [
+          "2024-12-11",
+          "close_non_positive"
+        ],
+        [
+          "2024-12-12",
+          "close_non_positive"
+        ],
+        [
+          "2024-12-13",
+          "close_non_positive"
+        ],
+        [
+          "2024-12-16",
+          "close_non_positive"
+        ]
+      ],
+      "no_trade_sessions": 318,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "FBR": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 310.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 29,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "GAZ": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 3500.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 74,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "GTM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 198,
+      "received": 198,
+      "first_date": "2025-12-16",
+      "last_date": "2026-10-08",
+      "last_close": 583.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "HPS": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 522.5,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "IAM": {
+      "status": "OK",
+      "mode": "incremental",
+      "sessions": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 90.0,
@@ -73,13 +850,14 @@
       ],
       "corporate_actions_suspected": []
     },
-    "MSA": {
+    "IBC": {
       "status": "OK",
+      "mode": "full",
       "sessions": 728,
       "received": 728,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
-      "last_close": 744.9,
+      "last_close": 53.9,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -87,7 +865,238 @@
           "incomplete_volume"
         ]
       ],
-      "no_trade_sessions": 0,
+      "no_trade_sessions": 117,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "IMO": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 90.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 2,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "INV": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 118.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 86,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "JET": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1549.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 11,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "LBV": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 3780.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 33,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "LES": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 290.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 151,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "LHM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1523.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 12,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "M2M": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 391.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 226,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "MAB": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 890.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 416,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "MDP": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 23.33,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 8,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "MIC": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 740.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 114,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "MLE": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 374.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "ohlc_incoherent,incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 480,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -95,8 +1104,9 @@
     },
     "MNG": {
       "status": "OK",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1495.0,
@@ -124,7 +1134,676 @@
           "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
         }
       ]
+    },
+    "MOX": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 393.05,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 221,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "MSA": {
+      "status": "OK",
+      "mode": "incremental",
+      "sessions": 728,
+      "received": 31,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 744.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "MUT": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 221.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "NEJ": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 5621.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 660,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "NKL": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 46.8,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 13,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "OUL": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1225.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 498,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "PRO": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1480.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 441,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "RDS": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 152.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "REB": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 104.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 390,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "RIS": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 300.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "S2M": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 480.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 137,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SAH": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 2955.0,
+      "flagged_sessions": 26,
+      "flags_sample": [
+        [
+          "2023-10-23",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-24",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-25",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-26",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-27",
+          "close_non_positive"
+        ]
+      ],
+      "no_trade_sessions": 236,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SAM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": null,
+      "flagged_sessions": 727,
+      "flags_sample": [
+        [
+          "2023-10-23",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-24",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-25",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-26",
+          "close_non_positive"
+        ],
+        [
+          "2023-10-27",
+          "close_non_positive"
+        ]
+      ],
+      "no_trade_sessions": 728,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "SBM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1981.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 152,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SID": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1685.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 6,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SLF": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 425.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 206,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SMI": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 5740.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 45,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SNA": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 50.27,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 1,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SNP": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 289.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 5,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "SOT": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 291.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-05-05",
+          "corporate_action_suspected"
+        ]
+      ],
+      "no_trade_sessions": 62,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": [
+        {
+          "date": "2026-05-05",
+          "estimated_factor": 5,
+          "previous_close": 1700.0,
+          "open": 373.0,
+          "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
+        }
+      ]
+    },
+    "SRM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 459.35,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 174,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "STR": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 155.05,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 28,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "T2S": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 48,
+      "received": 48,
+      "first_date": "2026-07-27",
+      "last_date": "2026-10-08",
+      "last_close": 190.1,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "TGC": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 634.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 1,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "TMA": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1300.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 34,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "TQM": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1589.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 13,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "UMR": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 169.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "no_trade_sessions": 535,
+      "incomplete_volume_sessions": [],
+      "corporate_actions_suspected": []
+    },
+    "VCN": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 301,
+      "received": 301,
+      "first_date": "2025-07-15",
+      "last_date": "2026-10-08",
+      "last_close": 284.9,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 0,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "WAA": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 4760.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 174,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
+    },
+    "ZDJ": {
+      "status": "OK",
+      "mode": "full",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 257.45,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-09-17",
+          "incomplete_volume"
+        ]
+      ],
+      "no_trade_sessions": 333,
+      "incomplete_volume_sessions": [
+        "2026-09-17"
+      ],
+      "corporate_actions_suspected": []
     }
   },
-  "status": "OK"
+  "status": "OK",
+  "ok_count": 81,
+  "failed": {},
+  "corporate_actions_suspected": {
+    "CMT": [
+      {
+        "date": "2026-09-16",
+        "estimated_factor": 2,
+        "previous_close": 4350.0,
+        "open": 2438.0,
+        "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
+      }
+    ],
+    "MNG": [
+      {
+        "date": "2026-07-27",
+        "estimated_factor": 9,
+        "previous_close": 12500.0,
+        "open": 1340.0,
+        "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
+      }
+    ],
+    "SOT": [
+      {
+        "date": "2026-05-05",
+        "estimated_factor": 5,
+        "previous_close": 1700.0,
+        "open": 373.0,
+        "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
+      }
+    ]
+  }
 }
