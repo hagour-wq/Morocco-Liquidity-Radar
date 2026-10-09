@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T11:57:14.463489+00:00",
+  "run_at": "2026-10-09T11:58:41.949978+00:00",
   "attempts": [
     {
       "url": "https://www.casablanca-bourse.com/",
@@ -25,7 +25,7 @@
       "url": "https://www.casablanca-bourse.com/",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78985,
+      "bytes": 78990,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     },
@@ -33,7 +33,7 @@
       "url": "https://www.casablanca-bourse.com/fr",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78985,
+      "bytes": 78990,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     }
@@ -77,7 +77,7 @@
   "pages": {
     "actions": {
       "status": 200,
-      "bytes": 107752,
+      "bytes": 107767,
       "tables": 1,
       "rows": 0,
       "api": [],
@@ -85,7 +85,7 @@
     },
     "indices": {
       "status": 200,
-      "bytes": 54237,
+      "bytes": 54240,
       "tables": 3,
       "rows": 3,
       "api": [],
@@ -101,7 +101,7 @@
     },
     "capitalisation": {
       "status": 200,
-      "bytes": 63907,
+      "bytes": 63914,
       "tables": 1,
       "rows": 1,
       "api": [],
@@ -109,7 +109,7 @@
     },
     "fiche_atw": {
       "status": 200,
-      "bytes": 78985,
+      "bytes": 78990,
       "tables": 4,
       "rows": 20,
       "api": [],
@@ -129,7 +129,7 @@
     },
     "historique": {
       "status": 200,
-      "bytes": 78985,
+      "bytes": 78990,
       "tables": 4,
       "rows": 20,
       "api": [],
@@ -202,7 +202,7 @@
     },
     "transactions": {
       "status": 200,
-      "bytes": 718951,
+      "bytes": 722989,
       "tables": 1,
       "rows": 1,
       "links": []
@@ -385,6 +385,326 @@
       "meta": {
         "totalCount": 0
       }
+    }
+  },
+  "history_variants": {
+    "pad_1y": {
+      "status": 200,
+      "total": 250,
+      "n": 250,
+      "first": [
+        {
+          "seance": "08/10/2026",
+          "timestamp": 1791414000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 680,
+          "dernierCours": 670,
+          "coursReference": null,
+          "plusHaut": 680,
+          "plusBas": 670,
+          "titresEchanges": 49319,
+          "volumeEchanges": 33070916.7,
+          "nbTransactions": 113,
+          "capitalisation": 144144362130,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ],
+      "last": [
+        {
+          "seance": "01/10/2025",
+          "timestamp": 1759273200000,
+          "symbol": "ATW",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 735.1,
+          "dernierCours": 725,
+          "coursReference": null,
+          "plusHaut": 740,
+          "plusBas": 711,
+          "titresEchanges": 149622,
+          "volumeEchanges": 108609629.6,
+          "nbTransactions": 364,
+          "capitalisation": 155977108275,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    "trim_1m": {
+      "status": 200,
+      "total": 23,
+      "n": 23,
+      "first": [
+        {
+          "seance": "08/10/2026",
+          "timestamp": 1791414000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 680,
+          "dernierCours": 670,
+          "coursReference": null,
+          "plusHaut": 680,
+          "plusBas": 670,
+          "titresEchanges": 49319,
+          "volumeEchanges": 33070916.7,
+          "nbTransactions": 113,
+          "capitalisation": 144144362130,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ],
+      "last": [
+        {
+          "seance": "08/09/2026",
+          "timestamp": 1788822000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 709,
+          "dernierCours": 710.1,
+          "coursReference": null,
+          "plusHaut": 710.1,
+          "plusBas": 706,
+          "titresEchanges": 44746,
+          "volumeEchanges": 31683055.1,
+          "nbTransactions": 68,
+          "capitalisation": 152771509773.9,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    "pad_1m": {
+      "status": 200,
+      "total": 23,
+      "n": 23,
+      "first": [
+        {
+          "seance": "08/10/2026",
+          "timestamp": 1791414000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 680,
+          "dernierCours": 670,
+          "coursReference": null,
+          "plusHaut": 680,
+          "plusBas": 670,
+          "titresEchanges": 49319,
+          "volumeEchanges": 33070916.7,
+          "nbTransactions": 113,
+          "capitalisation": 144144362130,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ],
+      "last": [
+        {
+          "seance": "08/09/2026",
+          "timestamp": 1788822000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 709,
+          "dernierCours": 710.1,
+          "coursReference": null,
+          "plusHaut": 710.1,
+          "plusBas": 706,
+          "titresEchanges": 44746,
+          "volumeEchanges": 31683055.1,
+          "nbTransactions": 68,
+          "capitalisation": 152771509773.9,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    "pad_1m_adj": {
+      "status": 200,
+      "total": 23,
+      "n": 23,
+      "first": [
+        {
+          "seance": "08/10/2026",
+          "timestamp": 1791414000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 680,
+          "dernierCours": 670,
+          "coursReference": null,
+          "plusHaut": 680,
+          "plusBas": 670,
+          "titresEchanges": 49319,
+          "volumeEchanges": 33070916.7,
+          "nbTransactions": 113,
+          "capitalisation": 144144362130,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ],
+      "last": [
+        {
+          "seance": "08/09/2026",
+          "timestamp": 1788822000000,
+          "symbol": "ATW  ",
+          "libelle": {
+            "fr": "ATTIJARIWAFA BANK",
+            "ar": "التجاري وفا بنك",
+            "en": "ATTIJARIWAFA BANK"
+          },
+          "ouverture": 709,
+          "dernierCours": 710.1,
+          "coursReference": null,
+          "plusHaut": 710.1,
+          "plusBas": 706,
+          "titresEchanges": 44746,
+          "volumeEchanges": 31683055.1,
+          "nbTransactions": 68,
+          "capitalisation": 152771509773.9,
+          "variation": null,
+          "emetteur": "",
+          "statut": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          },
+          "mode_cotation": {
+            "fr": "",
+            "ar": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    "label_1m": {
+      "status": 200,
+      "total": 0,
+      "n": 0,
+      "first": [],
+      "last": []
+    },
+    "fr_dates": {
+      "status": 200,
+      "total": 0,
+      "n": 0,
+      "first": [],
+      "last": []
+    },
+    "masi_index": {
+      "status": 200,
+      "total": 0,
+      "n": 0,
+      "first": [],
+      "last": []
+    },
+    "ep/instruments": {
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "ep/stock-live": {
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "ep/indices": {
+      "status": 200,
+      "sample": "[{\"code\": \"AGRO\", \"value\": 29482.1693, \"previous_close\": 29482.1693, \"change_pct\": 0, \"change_ytd\": -14.87364, \"high\": 29482.1693, \"low\": 29482.1693, \"label\": {\"fr\": \"MASI AGROALIMENTAIRE / PRODUCTION \", \"en\": \"MASI Food producers and Processors                     \", \"ar\": \" مازي صناعة الأغدية الفلاحية\"}, \"type_label\": {\"fr\": \"Indices Sectoriels\", \"en\": \"\", \"ar\": \"المؤشرات القطاعية\"}}, {\"code\": \"ASSUR\", \"value\": 6054.6286, \"previous_close\": 6054.6286, \"change_pct\": 0, \"change_ytd\": 0.06609, \"high\": 6054.6286, \"low\": 6054.6286, \"label\": {\"fr\": \"MASI ASSURANCES\", \"en\": \"MASI Insurance          "
+    },
+    "ep/market-summary": {
+      "error": "HTTPError: HTTP Error 404: Not Found"
     }
   }
 }
