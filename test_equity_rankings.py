@@ -42,4 +42,15 @@ class EquityRankingTests(unittest.TestCase):
   x=evaluate_technical("XYZ","Example",rows)
   self.assertEqual(x["status"],"CORPORATE_ACTION_RECENT")
   self.assertNotIn("score",x)
+ def test_stale_copy_is_excluded_and_suspended_stock_labelled(self):
+  d=date.today();rows=[]
+  while len(rows)<40:
+   if d.weekday()<5:rows.append({"date":d.isoformat(),"close":100+len(rows)*0.1,"high":101+len(rows)*0.1,"low":99,"volume":1000,"turnover_mad":2e6,"status":"validated"})
+   d-=timedelta(days=1)
+  rows[5]["status"]="stale_copy_of_previous_session"
+  x=evaluate_technical("XYZ","Example",rows)
+  self.assertEqual(x["status"],"RESEARCH_ONLY")
+  self.assertEqual(x["excluded_stale_dates"],[rows[5]["date"]])
+  zero=[dict(r,close=0) for r in rows]
+  self.assertEqual(evaluate_technical("XYZ","Example",zero)["status"],"NO_VALID_PRICES")
 if __name__=="__main__":unittest.main()

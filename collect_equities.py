@@ -100,11 +100,22 @@ def fetch_rows(t, existing, today, collected_at, closed):
     return new, len(items), "full" if full else "incremental"
 
 
+def is_stale_copy(r, prev_row):
+    """Enregistrement incomplet dont le plus haut / plus bas reproduisent ceux de la séance précédente :
+    copie de la veille par la source (cas du 17/09/2026 : 69 titres sur 69). Exclu des calculs."""
+    return bool(r.get("incomplete_volume") and prev_row and r.get("high") is not None
+                and r["high"] == prev_row.get("high") and r["low"] == prev_row.get("low"))
+
+
 def annotate(rows):
     prev = None
+    prev_row = None
     actions = []
     for r in rows:
         flags = validate_row(r, prev)
+        if is_stale_copy(r, prev_row):
+            flags = [x for x in flags if x not in ("ohlc_incoherent", "move_gt_10pct")] + ["stale_copy_of_previous_session"]
+        prev_row = r
         f = split_factor(prev, r) if "move_gt_10pct" in flags else None
         if f:
             flags = [x for x in flags if x != "move_gt_10pct"] + ["corporate_action_suspected"]
