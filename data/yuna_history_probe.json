@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-10-09T00:31:59.958182+00:00",
+  "url": "https://www.yuna.ma/bourse/en-direct",
+  "status": "NETWORK_FAILED",
+  "access": false,
+  "source_policy": "No undocumented CSV endpoints and no fabricated historical bars",
+  "error": "HTTPError: HTTP Error 429: Too Many Requests"
+}

@@ -1,11 +1,7 @@
 {
-  "checked_at": "2026-10-09T00:18:52.405405+00:00",
+  "checked_at": "2026-10-09T00:31:53.986970+00:00",
   "source": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs",
   "reports": [
-    {
-      "label": "Disty Technologies - CP relatif au changement de composition du conseil d'administration",
-      "url": "https://www.ammc.ma/sites/default/files/CP_Disty_Technologies_changement_CA.pdf"
-    },
     {
       "label": "Ennakl Automobiles - Résultats financiers du 1er semestre 2026",
       "url": "https://www.ammc.ma/sites/default/files/Ennakl_Automobiles_S1_26.pdf"
@@ -14,6 +10,6 @@
   "errors": [],
   "status": "FOUND_LINKS",
   "policy": "Issuer PDF links are source candidates, not verified numerical EPS, PER or dividend observations.",
-  "report_count": 2,
+  "report_count": 1,
   "link_policy": "Only direct PDF document links; navigation and press-release pages are excluded"
 }
