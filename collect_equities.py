@@ -29,6 +29,8 @@ def validate_row(r, prev_close):
             flags.append("ohlc_incoherent")
     if r["volume"] is not None and r["volume"] < 0:
         flags.append("negative_volume")
+    if r.get("incomplete_volume"):
+        flags.append("incomplete_volume")
     if date.fromisoformat(r["date"]).weekday() >= 5:
         flags.append("weekend_date")
     if prev_close and c and abs(c / prev_close - 1) > 0.10:
@@ -49,6 +51,24 @@ def split_factor(prev_close, row):
 
 
 def to_row(it, collected_at):
+    """Distingue trois cas pour le volume :
+    - séance échangée : volume > 0 ;
+    - séance sans échange (traded=False) : ni ouverture, ni plus haut / bas, cours de référence reporté → volume 0 ;
+    - enregistrement incomplet (incomplete_volume=True) : plus haut / bas présents mais volume 0 ou absent →
+      volume, montant et nombre de transactions mis à null (donnée manquante, pas un zéro)."""
+    r = _raw_row(it, collected_at)
+    has_range = r["high"] is not None and r["low"] is not None
+    if not r["volume"]:
+        if has_range:
+            r.update(volume=None, turnover_mad=None, trades=None, traded=None, incomplete_volume=True)
+        else:
+            r.update(volume=0.0, turnover_mad=0.0, trades=0.0, traded=False, incomplete_volume=False)
+    else:
+        r.update(traded=True, incomplete_volume=False)
+    return r
+
+
+def _raw_row(it, collected_at):
     return {
         "date": cb.parse_seance(it["seance"]).isoformat(),
         "open": cb.num(it.get("ouverture")), "high": cb.num(it.get("plusHaut")), "low": cb.num(it.get("plusBas")),
@@ -122,7 +142,8 @@ def main():
         rep.update(status="OK" if ordered else "NO_DATA", sessions=len(ordered), received=len(items), first_date=ordered[0]["date"] if ordered else None,
                    last_date=last["date"] if last else None, last_close=last["close"] if last else None,
                    flagged_sessions=len(flagged), flags_sample=[(r["date"], r["status"]) for r in flagged[:5]],
-                   zero_volume_sessions=sum(1 for r in ordered if not r["volume"]), corporate_actions_suspected=actions)
+                   no_trade_sessions=sum(1 for r in ordered if r.get("traded") is False),
+                   incomplete_volume_sessions=[r["date"] for r in ordered if r.get("incomplete_volume")], corporate_actions_suspected=actions)
 
     ok = [t for t, r in report["tickers"].items() if r.get("status") == "OK"]
     report["status"] = "OK" if len(ok) == len(universe) else ("PARTIAL" if ok else "FAILED")
