@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T13:46:03.353263+00:00",
+  "run_at": "2026-10-09T13:53:47.870363+00:00",
   "source": "Bourse de Casablanca",
   "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
   "session_status": "open",
@@ -9,9 +9,9 @@
   "tickers": {
     "ADH": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 30.12,
@@ -19,7 +19,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -30,9 +30,9 @@
     },
     "ADI": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 330.0,
@@ -40,7 +40,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -51,9 +51,9 @@
     },
     "AFI": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 325.0,
@@ -61,7 +61,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 25,
@@ -72,9 +72,9 @@
     },
     "AFM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1250.0,
@@ -82,7 +82,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 182,
@@ -93,9 +93,9 @@
     },
     "AGM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 6680.0,
@@ -107,9 +107,9 @@
     },
     "AKT": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1015.0,
@@ -117,7 +117,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -128,9 +128,9 @@
     },
     "ALM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1890.0,
@@ -138,7 +138,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 124,
@@ -149,9 +149,9 @@
     },
     "ARD": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 425.2,
@@ -159,7 +159,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 9,
@@ -170,9 +170,9 @@
     },
     "ATH": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 59.98,
@@ -180,7 +180,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -191,9 +191,9 @@
     },
     "ATL": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 119.0,
@@ -201,7 +201,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 6,
@@ -222,7 +222,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -233,9 +233,9 @@
     },
     "BAL": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 199.0,
@@ -247,9 +247,9 @@
     },
     "BCI": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 543.0,
@@ -257,7 +257,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 81,
@@ -278,7 +278,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -289,9 +289,9 @@
     },
     "BOA": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 180.0,
@@ -299,7 +299,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 2,
@@ -310,9 +310,9 @@
     },
     "CAP": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 204,
-      "received": 204,
+      "received": 31,
       "first_date": "2025-12-08",
       "last_date": "2026-10-08",
       "last_close": 203.5,
@@ -320,7 +320,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -331,9 +331,9 @@
     },
     "CDM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 921.0,
@@ -341,7 +341,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 120,
@@ -352,9 +352,9 @@
     },
     "CFG": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 689,
-      "received": 689,
+      "received": 31,
       "first_date": "2023-12-18",
       "last_date": "2026-10-08",
       "last_close": 190.0,
@@ -362,7 +362,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -373,9 +373,9 @@
     },
     "CIH": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 300.1,
@@ -383,7 +383,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 12,
@@ -394,9 +394,9 @@
     },
     "CMA": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1400.0,
@@ -404,7 +404,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 11,
@@ -415,9 +415,9 @@
     },
     "CMG": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 445,
-      "received": 445,
+      "received": 31,
       "first_date": "2024-12-16",
       "last_date": "2026-10-08",
       "last_close": 265.0,
@@ -425,7 +425,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -436,9 +436,9 @@
     },
     "CMT": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 4000.0,
@@ -481,9 +481,9 @@
     },
     "COL": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 77.0,
@@ -491,7 +491,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 15,
@@ -502,9 +502,9 @@
     },
     "CRS": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 19.61,
@@ -512,7 +512,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 22,
@@ -523,9 +523,9 @@
     },
     "CSR": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 171.0,
@@ -533,7 +533,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 2,
@@ -544,9 +544,9 @@
     },
     "CTM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 802.0,
@@ -554,7 +554,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "ohlc_incoherent,incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 101,
@@ -565,9 +565,9 @@
     },
     "DHO": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 46.9,
@@ -575,7 +575,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 12,
@@ -586,9 +586,9 @@
     },
     "DIS": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": null,
@@ -621,9 +621,9 @@
     },
     "DLM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": null,
@@ -656,9 +656,9 @@
     },
     "DRI": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 4180.0,
@@ -670,9 +670,9 @@
     },
     "DWY": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 745.0,
@@ -680,7 +680,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 52,
@@ -691,9 +691,9 @@
     },
     "DYT": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 341.0,
@@ -701,7 +701,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 4,
@@ -712,9 +712,9 @@
     },
     "EQD": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1500.0,
@@ -747,9 +747,9 @@
     },
     "FBR": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 310.0,
@@ -757,7 +757,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 29,
@@ -768,9 +768,9 @@
     },
     "GAZ": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 3500.0,
@@ -778,7 +778,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 74,
@@ -799,7 +799,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -810,9 +810,9 @@
     },
     "HPS": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 522.5,
@@ -820,7 +820,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -841,7 +841,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 1,
@@ -852,9 +852,9 @@
     },
     "IBC": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 53.9,
@@ -862,7 +862,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 117,
@@ -873,9 +873,9 @@
     },
     "IMO": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 90.0,
@@ -883,7 +883,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 2,
@@ -894,9 +894,9 @@
     },
     "INV": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 118.0,
@@ -904,7 +904,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 86,
@@ -915,9 +915,9 @@
     },
     "JET": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1549.0,
@@ -925,7 +925,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 11,
@@ -936,9 +936,9 @@
     },
     "LBV": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 3780.0,
@@ -946,7 +946,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 33,
@@ -957,9 +957,9 @@
     },
     "LES": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 290.0,
@@ -967,7 +967,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 151,
@@ -978,9 +978,9 @@
     },
     "LHM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1523.0,
@@ -988,7 +988,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 12,
@@ -999,9 +999,9 @@
     },
     "M2M": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 391.0,
@@ -1009,7 +1009,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 226,
@@ -1020,9 +1020,9 @@
     },
     "MAB": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 890.0,
@@ -1030,7 +1030,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 416,
@@ -1041,9 +1041,9 @@
     },
     "MDP": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 23.33,
@@ -1051,7 +1051,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 8,
@@ -1062,9 +1062,9 @@
     },
     "MIC": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 740.0,
@@ -1072,7 +1072,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 114,
@@ -1083,9 +1083,9 @@
     },
     "MLE": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 374.9,
@@ -1093,7 +1093,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "ohlc_incoherent,incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 480,
@@ -1118,7 +1118,7 @@
         ],
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 8,
@@ -1137,9 +1137,9 @@
     },
     "MOX": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 393.05,
@@ -1147,7 +1147,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 221,
@@ -1168,7 +1168,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -1179,9 +1179,9 @@
     },
     "MUT": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 221.0,
@@ -1189,7 +1189,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -1200,9 +1200,9 @@
     },
     "NEJ": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 5621.0,
@@ -1214,9 +1214,9 @@
     },
     "NKL": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 46.8,
@@ -1224,7 +1224,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 13,
@@ -1235,9 +1235,9 @@
     },
     "OUL": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1225.0,
@@ -1245,7 +1245,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 498,
@@ -1256,9 +1256,9 @@
     },
     "PRO": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1480.0,
@@ -1270,9 +1270,9 @@
     },
     "RDS": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 152.0,
@@ -1280,7 +1280,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -1291,9 +1291,9 @@
     },
     "REB": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 104.0,
@@ -1305,9 +1305,9 @@
     },
     "RIS": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 300.0,
@@ -1315,7 +1315,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -1326,9 +1326,9 @@
     },
     "S2M": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 480.0,
@@ -1336,7 +1336,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 137,
@@ -1347,9 +1347,9 @@
     },
     "SAH": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 2955.0,
@@ -1384,9 +1384,9 @@
     },
     "SAM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": null,
@@ -1419,9 +1419,9 @@
     },
     "SBM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1981.0,
@@ -1429,7 +1429,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 152,
@@ -1440,9 +1440,9 @@
     },
     "SID": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1685.0,
@@ -1450,7 +1450,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 6,
@@ -1461,9 +1461,9 @@
     },
     "SLF": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 425.9,
@@ -1471,7 +1471,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 206,
@@ -1482,9 +1482,9 @@
     },
     "SMI": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 5740.0,
@@ -1492,7 +1492,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 45,
@@ -1503,9 +1503,9 @@
     },
     "SNA": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 50.27,
@@ -1513,7 +1513,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 1,
@@ -1524,9 +1524,9 @@
     },
     "SNP": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 289.0,
@@ -1534,7 +1534,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 5,
@@ -1545,9 +1545,9 @@
     },
     "SOT": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 291.0,
@@ -1572,9 +1572,9 @@
     },
     "SRM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 459.35,
@@ -1582,7 +1582,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 174,
@@ -1593,9 +1593,9 @@
     },
     "STR": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 155.05,
@@ -1603,7 +1603,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 28,
@@ -1624,7 +1624,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -1635,9 +1635,9 @@
     },
     "TGC": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 634.9,
@@ -1645,7 +1645,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 1,
@@ -1656,9 +1656,9 @@
     },
     "TMA": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1300.0,
@@ -1666,7 +1666,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 34,
@@ -1677,9 +1677,9 @@
     },
     "TQM": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 1589.0,
@@ -1687,7 +1687,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 13,
@@ -1698,9 +1698,9 @@
     },
     "UMR": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 169.0,
@@ -1712,9 +1712,9 @@
     },
     "VCN": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 301,
-      "received": 301,
+      "received": 31,
       "first_date": "2025-07-15",
       "last_date": "2026-10-08",
       "last_close": 284.9,
@@ -1722,7 +1722,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 0,
@@ -1733,9 +1733,9 @@
     },
     "WAA": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 4760.0,
@@ -1743,7 +1743,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 174,
@@ -1754,9 +1754,9 @@
     },
     "ZDJ": {
       "status": "OK",
-      "mode": "full",
+      "mode": "incremental",
       "sessions": 728,
-      "received": 728,
+      "received": 31,
       "first_date": "2023-10-23",
       "last_date": "2026-10-08",
       "last_close": 257.45,
@@ -1764,7 +1764,7 @@
       "flags_sample": [
         [
           "2026-09-17",
-          "incomplete_volume"
+          "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
       "no_trade_sessions": 333,
