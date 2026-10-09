@@ -1,0 +1,39 @@
+test_atw_bank_statements (test_fundamentals.ExtractionTests.test_atw_bank_statements) ... ok
+test_bcp_minorities_from_three_lines (test_fundamentals.ExtractionTests.test_bcp_minorities_from_three_lines) ... ok
+test_inconsistent_eps_is_rejected (test_fundamentals.ExtractionTests.test_inconsistent_eps_is_rejected) ... ok
+test_mng_millions_and_split_detected_from_eps (test_fundamentals.ExtractionTests.test_mng_millions_and_split_detected_from_eps) ... ok
+test_msa_corporate_thousands (test_fundamentals.ExtractionTests.test_msa_corporate_thousands) ... ok
+test_ifrs17_insurer (test_fundamentals.InsuranceTests.test_ifrs17_insurer) ... ok
+test_dotted_thousands_and_parenthesised_negative (test_fundamentals.LayoutTests.test_dotted_thousands_and_parenthesised_negative) ... ok
+test_moroccan_cpc_four_columns (test_fundamentals.LayoutTests.test_moroccan_cpc_four_columns) ... ok
+test_units (test_fundamentals.LayoutTests.test_units) ... ok
+test_variation_pct_checks_column_order (test_fundamentals.LayoutTests.test_variation_pct_checks_column_order) ... ok
+test_column_order_from_header (test_fundamentals.RobustnessTests.test_column_order_from_header) ... ok
+test_group_share_without_label_requires_published_eps (test_fundamentals.RobustnessTests.test_group_share_without_label_requires_published_eps) ... ok
+test_signs_dashes_and_decimal_points (test_fundamentals.RobustnessTests.test_signs_dashes_and_decimal_points) ... ok
+test_unit_inferred_only_when_unique (test_fundamentals.RobustnessTests.test_unit_inferred_only_when_unique) ... ok
+test_group_share_derived_by_arithmetic_and_social_lines_ignored (test_fundamentals.ScopeTests.test_group_share_derived_by_arithmetic_and_social_lines_ignored) ... ok
+test_social_accounts_when_no_consolidated_statements (test_fundamentals.ScopeTests.test_social_accounts_when_no_consolidated_statements) ... ok
+test_unit_error_caught_by_implied_per (test_fundamentals.ScopeTests.test_unit_error_caught_by_implied_per) ... ok
+test_bank_scored_and_eligible (test_fundamentals.ScoreTests.test_bank_scored_and_eligible) ... ok
+test_missing_component_gives_partial_watch (test_fundamentals.ScoreTests.test_missing_component_gives_partial_watch) ... ok
+test_stale_accounts_and_unreadable_document_excluded (test_fundamentals.ScoreTests.test_stale_accounts_and_unreadable_document_excluded) ... ok
+test_unverified_listing_not_ranked (test_fundamentals.ScoreTests.test_unverified_listing_not_ranked) ... ok
+test_glued_amounts_split_by_consistency (test_fundamentals.SplitTests.test_glued_amounts_split_by_consistency) ... ok
+test_image_pdf_is_read_and_checked (test_ocr.OcrTests.test_image_pdf_is_read_and_checked) ... ERROR
+
+======================================================================
+ERROR: test_image_pdf_is_read_and_checked (test_ocr.OcrTests.test_image_pdf_is_read_and_checked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/runner/work/Morocco-Liquidity-Radar/Morocco-Liquidity-Radar/test_ocr.py", line 32, in test_image_pdf_is_read_and_checked
+    text, info = ocr_pdf.ocr_pdf(image_pdf(LINES))
+                                 ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Morocco-Liquidity-Radar/Morocco-Liquidity-Radar/test_ocr.py", line 13, in image_pdf
+    from PIL import Image, ImageDraw, ImageFont
+ModuleNotFoundError: No module named 'PIL'
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.504s
+
+FAILED (errors=1)
