@@ -5,15 +5,17 @@ non ajustés des dividendes / opérations sur titres). Historique durable : les
 séances déjà stockées sont conservées, les nouvelles ajoutées, une séance
 existante n'est remplacée que par une observation officielle.
 
-Univers : EQUITY_UNIVERSE=pilot (défaut : ATW, BCP, IAM, MSA, MNG) ou all.
+Univers : toutes les actions de la liste officielle (défaut) ou EQUITY_UNIVERSE=pilot (ATW, BCP, IAM, MSA, MNG).
+Stockage : data/equities/<TICKER>.json (une séance par ligne). Collecte incrémentale (45 jours)
+une fois l'historique constitué ; EQUITY_FULL_REFRESH=1 force un rechargement complet.
 Échoue (code 1) si aucun titre n'a pu être collecté.
 """
-import json, os, sys
+import json, os, sys, time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import casablanca_source as cb
+import equity_store as store
 
-HIST = Path("data/equity_history.json")
 REPORT = Path("data/equity_collection_report.json")
 PILOT = ["ATW", "BCP", "IAM", "MSA", "MNG"]
 START = date.fromisoformat(os.environ.get("EQUITY_HISTORY_START", "2023-01-01"))
@@ -75,91 +77,112 @@ def _raw_row(it, collected_at):
         "close": cb.num(it.get("dernierCours")), "adj_close": None,
         "volume": cb.num(it.get("titresEchanges")), "turnover_mad": cb.num(it.get("volumeEchanges")),
         "trades": cb.num(it.get("nbTransactions")), "market_cap_mad": cb.num(it.get("capitalisation")),
-        "source": cb.SOURCE_NAME, "source_endpoint": "api/boursenova/stock-historical", "collected_at": collected_at,
+        "collected_at": collected_at,
     }
+
+
+def fetch_rows(t, existing, today, collected_at, closed):
+    """Collecte incrémentale : 45 derniers jours si l'historique stocké est récent et profond,
+    sinon historique complet depuis START (premier passage ou trou)."""
+    full = os.environ.get("EQUITY_FULL_REFRESH") == "1" or not existing or len(existing) < 200 or \
+        (today - date.fromisoformat(existing[-1]["date"])).days > 30
+    start = START if full else today - timedelta(days=45)
+    items = cb.stock_history(t, start, today)
+    new = []
+    for it in items:
+        try:
+            r = to_row(it, collected_at)
+        except (KeyError, ValueError):
+            continue
+        if r["date"] == today.isoformat() and not closed:  # séance du jour exclue tant qu'elle n'est pas clôturée
+            continue
+        new.append(r)
+    return new, len(items), "full" if full else "incremental"
+
+
+def annotate(rows):
+    prev = None
+    actions = []
+    for r in rows:
+        flags = validate_row(r, prev)
+        f = split_factor(prev, r) if "move_gt_10pct" in flags else None
+        if f:
+            flags = [x for x in flags if x != "move_gt_10pct"] + ["corporate_action_suspected"]
+            actions.append({"date": r["date"], "estimated_factor": round(f, 4), "previous_close": prev, "open": r["open"],
+                            "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"})
+        r["status"] = ",".join(flags) or "validated"
+        prev = r["close"] or prev
+    return actions
 
 
 def main():
     now = datetime.now(timezone.utc)
     collected_at = now.isoformat()
-    store = json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else {}
-    by_ticker = {c["ticker"]: c for c in store.get("companies", []) if c.get("ticker")}
-
     snap = cb.live_snapshot()
     live = {a["symbol"].strip(): a for a in snap["actions"] if a.get("symbol")}
-    universe = sorted(live) if os.environ.get("EQUITY_UNIVERSE", "pilot") == "all" else PILOT
+    universe = PILOT if os.environ.get("EQUITY_UNIVERSE", "all") == "pilot" else sorted(live)
+    if not universe:
+        raise SystemExit("Liste officielle des actions vide : arrêt sans écriture.")
     today = now.astimezone(cb.TZ).date()
     report = {"run_at": collected_at, "source": cb.SOURCE_NAME, "endpoint": cb.BASE + "/api/boursenova/stock-historical",
-              "session_status": snap["session_status"], "session_date": snap["session_date"],
-              "universe": universe, "price_basis": "cours bruts non ajustés (adj_close = null)", "tickers": {}}
-
+              "session_status": snap["session_status"], "session_date": snap["session_date"], "universe_size": len(universe),
+              "price_basis": "cours bruts non ajustés (adj_close = null)", "tickers": {}}
+    saved = []
     for t in universe:
         meta = live.get(t, {})
         rep = report["tickers"].setdefault(t, {})
+        comp = store.load(t) or {"ticker": t, "rows": []}
         try:
-            items = cb.stock_history(t, START, today)
+            new, received, mode = fetch_rows(t, comp.get("rows"), today, collected_at, snap["session_status"] == "closed")
         except Exception as e:
-            rep.update(status="SOURCE_ERROR", error=f"{type(e).__name__}: {e}")
+            rep.update(status="SOURCE_ERROR", error=f"{type(e).__name__}: {e}"[:300])
             continue
-        new = []
-        for it in items:
-            try:
-                r = to_row(it, collected_at)
-            except (KeyError, ValueError):
-                continue
-            # séance du jour exclue tant qu'elle n'est pas clôturée
-            if r["date"] == today.isoformat() and snap["session_status"] != "closed":
-                continue
-            new.append(r)
-        comp = by_ticker.setdefault(t, {"ticker": t, "rows": []})
         rows = {r["date"]: r for r in comp.get("rows", [])}
         for r in new:
             rows[r["date"]] = r
         ordered = [rows[k] for k in sorted(rows)]
-        prev = None
-        actions = []
-        for r in ordered:
-            flags = validate_row(r, prev)
-            f = split_factor(prev, r) if "move_gt_10pct" in flags else None
-            if f:
-                flags = [x for x in flags if x != "move_gt_10pct"] + ["corporate_action_suspected"]
-                actions.append({"date": r["date"], "estimated_factor": round(f, 4), "previous_close": prev, "open": r["open"],
-                                "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"})
-            r["status"] = ",".join(flags) or "validated"
-            prev = r["close"] or prev
-        comp["corporate_actions_suspected"] = actions
-        lab = (meta.get("emetteur") or {}).get("fr") or comp.get("name")
+        for r in ordered:  # provenance portée au niveau du fichier (identique pour toutes les séances)
+            r.pop("source", None), r.pop("source_endpoint", None)
+        actions = annotate(ordered)
         comp.update({
-            "ticker": t, "name": lab, "isin": comp.get("isin"), "code_valeur": meta.get("ce") or comp.get("code_valeur"),
+            "ticker": t, "name": (meta.get("emetteur") or {}).get("fr") or comp.get("name"), "isin": comp.get("isin"),
+            "code_valeur": meta.get("ce") or comp.get("code_valeur"),
             "sector": (meta.get("secteur") or {}).get("fr") or comp.get("sector"),
             "compartment": (meta.get("compartiment") or {}).get("fr") or comp.get("compartment"),
             "shares_outstanding": meta.get("nombreTitres") or comp.get("shares_outstanding"),
             "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA", "currency": "MAD",
-            "listing_verified_by": "Présence dans la liste officielle live-market/actions de la Bourse de Casablanca" if meta else comp.get("listing_verified_by"),
-            "source": cb.SOURCE_NAME, "rows": ordered})
+            "listing_verified_by": "Présence dans la liste officielle live-market/actions de la Bourse de Casablanca",
+            "source": cb.SOURCE_NAME, "source_endpoint": cb.BASE + "/api/boursenova/stock-historical", "updated_at": collected_at, "corporate_actions_suspected": actions,
+            "fields": {"close": "dernier cours (MAD)", "adj_close": "null : non fourni de façon fiable", "volume": "titres échangés",
+                       "turnover_mad": "montant échangé (MAD)", "trades": "nombre de transactions"},
+            "rows": ordered})
+        if ordered:
+            store.save(comp)
+            saved.append(comp)
         flagged = [r for r in ordered if r["status"] != "validated"]
         last = ordered[-1] if ordered else None
-        rep.update(status="OK" if ordered else "NO_DATA", sessions=len(ordered), received=len(items), first_date=ordered[0]["date"] if ordered else None,
-                   last_date=last["date"] if last else None, last_close=last["close"] if last else None,
-                   flagged_sessions=len(flagged), flags_sample=[(r["date"], r["status"]) for r in flagged[:5]],
+        rep.update(status="OK" if ordered else "NO_DATA", mode=mode, sessions=len(ordered), received=received,
+                   first_date=ordered[0]["date"] if ordered else None, last_date=last["date"] if last else None,
+                   last_close=last["close"] if last else None, flagged_sessions=len(flagged),
+                   flags_sample=[(r["date"], r["status"]) for r in flagged[:5]],
                    no_trade_sessions=sum(1 for r in ordered if r.get("traded") is False),
-                   incomplete_volume_sessions=[r["date"] for r in ordered if r.get("incomplete_volume")], corporate_actions_suspected=actions)
+                   incomplete_volume_sessions=[r["date"] for r in ordered if r.get("incomplete_volume")],
+                   corporate_actions_suspected=actions)
+        time.sleep(0.2)  # courtoisie envers le serveur
 
+    if saved:
+        store.save_index(store.load_all(), collected_at)
     ok = [t for t, r in report["tickers"].items() if r.get("status") == "OK"]
-    report["status"] = "OK" if len(ok) == len(universe) else ("PARTIAL" if ok else "FAILED")
-    store = {"schema_version": 2, "updated_at": collected_at, "source": cb.SOURCE_NAME,
-             "fields": {"close": "dernier cours de la séance (MAD)", "adj_close": "non fourni de façon fiable par la source : null",
-                        "volume": "nombre de titres échangés", "turnover_mad": "montant échangé en MAD", "trades": "nombre de transactions"},
-             "companies": sorted(by_ticker.values(), key=lambda c: c["ticker"])}
-    if ok:
-        HIST.write_text(json.dumps(store, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+    bad = {t: r for t, r in report["tickers"].items() if r.get("status") != "OK"}
+    report["status"] = "OK" if not bad else ("PARTIAL" if ok else "FAILED")
+    report["ok_count"], report["failed"] = len(ok), {t: r.get("error") or r.get("status") for t, r in bad.items()}
+    report["corporate_actions_suspected"] = {t: r["corporate_actions_suspected"] for t, r in report["tickers"].items() if r.get("corporate_actions_suspected")}
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    for t, r in report["tickers"].items():
-        if r.get("status") != "OK":
-            print(f"::error title=collect_equities {t}::{r.get('status')} {r.get('error', '')}")
-        elif r.get("flagged_sessions"):
-            print(f"::warning title=collect_equities {t}::{r['flagged_sessions']} séance(s) signalée(s) {r['flags_sample']}")
-    print(json.dumps({t: {k: r.get(k) for k in ("status", "sessions", "first_date", "last_date", "last_close", "flagged_sessions", "error")} for t, r in report["tickers"].items()}, ensure_ascii=False, indent=1))
+    if bad:
+        print(f"::{'error' if not ok else 'warning'} title=collect_equities::{len(bad)} titre(s) non collecté(s) : " + ", ".join(f"{t} ({v})" for t, v in list(report['failed'].items())[:15]))
+    if report["corporate_actions_suspected"]:
+        print("::warning title=collect_equities::Opérations sur titres présumées : " + ", ".join(f"{t} {a[-1]['date']}" for t, a in report["corporate_actions_suspected"].items()))
+    print(json.dumps({"status": report["status"], "ok": len(ok), "failed": report["failed"]}, ensure_ascii=False))
     if not ok:
         sys.exit(1)
 

@@ -1,0 +1,55 @@
+{
+ "updated_at": "2026-10-09T13:17:17.505068+00:00",
+ "companies": [
+  {
+   "ticker": "ATW",
+   "name": "ATTIJARIWAFA BANK",
+   "sector": "Banques",
+   "compartment": "Principal A",
+   "code_valeur": "BCM130843",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "BCP",
+   "name": "BANQUE CENTRALE POPULAIRE",
+   "sector": "Banques",
+   "compartment": "Principal A",
+   "code_valeur": "BCP060704",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "IAM",
+   "name": "ITISSALAT AL-MAGHRIB",
+   "sector": "Télécommunications",
+   "compartment": "Principal A",
+   "code_valeur": "IAM131204",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MNG",
+   "name": "MANAGEM",
+   "sector": "Mines",
+   "compartment": "Principal A",
+   "code_valeur": "MNG110700",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  },
+  {
+   "ticker": "MSA",
+   "name": "SOCIETE D'EXPLOITATION DES PORTS - MARSA MAROC",
+   "sector": "Services de transport",
+   "compartment": "Principal A",
+   "code_valeur": "MSA190716",
+   "sessions": 728,
+   "first_date": "2023-10-23",
+   "last_date": "2026-10-08"
+  }
+ ]
+}

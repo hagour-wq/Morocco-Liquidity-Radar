@@ -4,6 +4,7 @@ signals require enough per-security OHLCV observations and historical continuity
 """
 import json,math
 import technical as ta
+import equity_store
 from pathlib import Path
 from datetime import date,datetime,timezone
 ROOT=Path("data")
@@ -86,9 +87,11 @@ def evaluate_technical(ticker,name,rows):
   "note":"Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."}
 def main():
  base=load("company_fundamentals.json",{"companies":[]})
- quotes=load("equity_history.json",{"companies":[]})
+ quotes={"companies":equity_store.load_all()}
  fundamentals=[evaluate_fundamental(x) for x in base.get("companies",[])]
  technical=[evaluate_technical(x.get("ticker"),x.get("name"),x.get("rows",[])) if x.get("listing_exchange")=="Casablanca Stock Exchange" and x.get("listing_country")=="MA" else {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED"} for x in quotes.get("companies",[])]
+ sectors={x.get("ticker"):x.get("sector") for x in quotes.get("companies",[])}
+ for x in technical:x["sector"]=sectors.get(x.get("ticker"))
  # Snapshot performance is displayed as an unranked watchlist only, never as a validated signal.
  dash=load("dashboard.json",{})
  rotation=dash.get("rotation",{})
