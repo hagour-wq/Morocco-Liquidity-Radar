@@ -13,10 +13,12 @@ def image_pdf(lines):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("L", (2480, 900), 255)
     d = ImageDraw.Draw(img)
+    import glob
+    paths = glob.glob("/usr/share/fonts/**/DejaVuSans.ttf", recursive=True) + glob.glob("/usr/share/fonts/**/LiberationSans-Regular.ttf", recursive=True)
     try:
-        font = ImageFont.truetype("DejaVuSans.ttf", 44)
+        font = ImageFont.truetype(paths[0] if paths else "DejaVuSans.ttf", 44)
     except OSError:
-        font = ImageFont.load_default()
+        font = ImageFont.load_default(size=44)
     for i, l in enumerate(lines):
         d.text((120, 120 + i * 110), l, fill=0, font=font)
     buf = io.BytesIO()

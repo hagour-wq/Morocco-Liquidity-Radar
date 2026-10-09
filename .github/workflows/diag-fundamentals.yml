@@ -15,7 +15,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra poppler-utils
-      - run: python -m unittest test_fundamentals test_ocr
+      - run: python -m unittest -v test_fundamentals test_ocr > data/ocr_test_log.txt 2>&1 || true
       - run: python collect_bulletin.py
       - run: python collect_fundamentals.py || true
       - run: python rank_equities.py
@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "mlr-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -f data/company_fundamentals.json data/issuer_reference.json data/equity_rankings.json data/ocr_diagnostic.json
+          git add -f data/company_fundamentals.json data/issuer_reference.json data/equity_rankings.json data/ocr_diagnostic.json data/ocr_test_log.txt
           git diff --cached --quiet || git commit -m "essai: fondamentaux OCR [skip ci]"
           git push origin HEAD:${GITHUB_REF_NAME}
