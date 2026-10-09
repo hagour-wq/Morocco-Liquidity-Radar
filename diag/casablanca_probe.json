@@ -1,0 +1,33 @@
+{
+  "run_at": "2026-10-09T11:52:47.066921+00:00",
+  "attempts": [
+    {
+      "url": "https://www.casablanca-bourse.com/",
+      "ctx": "default",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://www.casablanca-bourse.com/fr",
+      "ctx": "default",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://www.casablanca-bourse.com/",
+      "ctx": "certifi",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://www.casablanca-bourse.com/fr",
+      "ctx": "certifi",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    }
+  ],
+  "openssl_chain": [
+    "verify error:num=20:unable to get local issuer certificate",
+    "verify error:num=21:unable to verify the first certificate",
+    " 0 s:CN = *.casablanca-bourse.com",
+    "   i:C = GB, O = Sectigo Limited, CN = Sectigo Public Server Authentication CA DV R36",
+    "    Verify return code: 21 (unable to verify the first certificate)"
+  ],
+  "curl": "000 20 curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above."
+}
