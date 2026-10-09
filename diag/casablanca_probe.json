@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T11:58:41.949978+00:00",
+  "run_at": "2026-10-09T12:00:02.715701+00:00",
   "attempts": [
     {
       "url": "https://www.casablanca-bourse.com/",
@@ -25,7 +25,7 @@
       "url": "https://www.casablanca-bourse.com/",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78990,
+      "bytes": 78992,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     },
@@ -33,7 +33,7 @@
       "url": "https://www.casablanca-bourse.com/fr",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78990,
+      "bytes": 78992,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     }
@@ -77,7 +77,7 @@
   "pages": {
     "actions": {
       "status": 200,
-      "bytes": 107767,
+      "bytes": 107762,
       "tables": 1,
       "rows": 0,
       "api": [],
@@ -85,7 +85,7 @@
     },
     "indices": {
       "status": 200,
-      "bytes": 54240,
+      "bytes": 54242,
       "tables": 3,
       "rows": 3,
       "api": [],
@@ -93,7 +93,7 @@
     },
     "volume": {
       "status": 200,
-      "bytes": 36169,
+      "bytes": 36168,
       "tables": 2,
       "rows": 2,
       "api": [],
@@ -101,7 +101,7 @@
     },
     "capitalisation": {
       "status": 200,
-      "bytes": 63914,
+      "bytes": 63915,
       "tables": 1,
       "rows": 1,
       "api": [],
@@ -109,7 +109,7 @@
     },
     "fiche_atw": {
       "status": 200,
-      "bytes": 78990,
+      "bytes": 78992,
       "tables": 4,
       "rows": 20,
       "api": [],
@@ -129,7 +129,7 @@
     },
     "historique": {
       "status": 200,
-      "bytes": 78990,
+      "bytes": 78992,
       "tables": 4,
       "rows": 20,
       "api": [],
@@ -149,7 +149,7 @@
     },
     "cours": {
       "status": 200,
-      "bytes": 53896,
+      "bytes": 53897,
       "tables": 1,
       "rows": 1,
       "links": []
@@ -202,10 +202,14 @@
     },
     "transactions": {
       "status": 200,
-      "bytes": 722989,
+      "bytes": 724016,
       "tables": 1,
       "rows": 1,
       "links": []
+    },
+    "masi_cours": {
+      "status": 200,
+      "bytes": 134230
     }
   },
   "js_endpoints": {
@@ -705,6 +709,54 @@
     },
     "ep/market-summary": {
       "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "masi/index-historical_7": {
+      "error": "HTTP Error 404: Not Found"
+    },
+    "masi/indices-historical_7": {
+      "error": "HTTP Error 404: Not Found"
+    },
+    "masi/indice-historical_7": {
+      "error": "HTTP Error 404: Not Found"
+    },
+    "masi/stock-historical_7": {
+      "status": 200,
+      "sample": "{\"totalCount\": 0, \"items\": []}"
+    },
+    "masi/index-historical_3": {
+      "error": "HTTP Error 404: Not Found"
+    },
+    "masi/indices-historical_3": {
+      "error": "HTTP Error 404: Not Found"
+    },
+    "masi/indice-historical_3": {
+      "error": "HTTP Error 404: Not Found"
+    },
+    "masi/stock-historical_3": {
+      "status": 200,
+      "sample": "{\"totalCount\": 0, \"items\": []}"
+    }
+  },
+  "depth": {
+    "2026": {
+      "n": 244,
+      "first": "09/10/2025",
+      "last": "08/10/2026"
+    },
+    "2025": {
+      "n": 247,
+      "first": "09/10/2024",
+      "last": "08/10/2025"
+    },
+    "2024": {
+      "n": 247,
+      "first": "09/10/2023",
+      "last": "08/10/2024"
+    },
+    "2023": {
+      "n": 0,
+      "first": null,
+      "last": null
     }
   }
 }
