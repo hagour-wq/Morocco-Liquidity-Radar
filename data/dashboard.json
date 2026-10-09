@@ -1,12 +1,12 @@
 {
   "as_of": "2026-10-09",
-  "composite": -18,
+  "composite": -13,
   "regime": "NEUTRAL",
-  "conclusion": "Market Flow négatif (-22). Momentum 1 séance +0.29% et 5 séances -2.93%. Couverture 100%.",
+  "conclusion": "Market Flow neutre (-9). Momentum 1 séance +0.29% et 5 séances -2.93%. Couverture 70%.",
   "scores": {
     "liquidity": -22,
-    "market_flow": -22,
-    "global": 8
+    "market_flow": -9,
+    "global": 9
   },
   "sources": [
     {
@@ -51,22 +51,20 @@
     "ret_1d_pct": 0.29,
     "ret_5d_pct": -2.93,
     "ret_20d_pct": -9.77,
-    "volume_vs_available_avg": 0.43,
-    "volume_sessions": 19,
-    "breadth": 0.4265,
-    "coverage": 1.0,
+    "volume_vs_available_avg": null,
+    "breadth": 0.4815,
+    "coverage": 0.7,
     "components_used": [
       "momentum",
-      "volume",
       "breadth"
     ],
-    "confidence": "high"
+    "confidence": "medium"
   },
   "rotation": {
     "reference_date": "2026-10-09",
     "quality": "official_session",
     "source": "Bourse de Casablanca — cours officiels (stock-historical)",
-    "computed_at": "2026-10-09T19:36:12.294807+00:00",
+    "computed_at": "2026-10-09T23:22:49.030945+00:00",
     "min_turnover_mad": 100000,
     "sectors": [
       {
@@ -286,7 +284,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T20:18:24.970152+00:00",
+    "computed_at": "2026-10-09T23:22:49.212616+00:00",
     "history_sessions": 1976,
     "observations": 1971,
     "usable_5d": 1890,
@@ -295,7 +293,7 @@
   },
   "data_quality": {
     "market_history_sessions": 1976,
-    "market_flow_coverage": 1.0,
+    "market_flow_coverage": 0.7,
     "liquidity_coverage": 1.0,
     "composite_status": "NEUTRAL",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
@@ -318,23 +316,23 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 1.0,
+  "composite_coverage": 0.9,
   "effective_weights": {
     "liquidity": 50.0,
-    "market_flow": 35.0,
+    "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T20:18:24.842273+00:00",
+  "retrieved_at": "2026-10-09T23:22:48.768717+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
-    "masi": 16797.1,
+    "masi": 16797.1032,
     "drawdown_from_sample_peak_pct": -16.98,
     "sample_peak": 20233.5,
     "sample_low": 8987.89,
     "sessions": 1976
   },
   "global_detail": {
-    "checked_at": "2026-10-09T19:27:30.490814+00:00",
+    "checked_at": "2026-10-09T23:05:28.845588+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -342,10 +340,10 @@
         "series": "DGS10",
         "source": "US_TREASURY",
         "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-        "date": "2026-10-08",
-        "value": 5.22,
-        "change_5obs": -2.0,
-        "score": 2.4,
+        "date": "2026-10-09",
+        "value": 5.24,
+        "change_5obs": -4.0,
+        "score": 4.8,
         "verified": true,
         "failed_sources": []
       },
@@ -365,9 +363,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.21399688720703,
-        "change_5obs": 0.279,
-        "score": -2.2,
+        "value": 102.23100280761719,
+        "change_5obs": 0.295,
+        "score": -2.4,
         "verified": true,
         "failed_sources": []
       },
@@ -376,15 +374,15 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 7817.47998046875,
-        "change_5obs": 1.227,
-        "score": 9.8,
+        "value": 7811.5400390625,
+        "change_5obs": 1.15,
+        "score": 9.2,
         "verified": true,
         "failed_sources": []
       }
     },
     "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-    "score": 8,
+    "score": 9,
     "fresh_for_scoring": true
   }
 }

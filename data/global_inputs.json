@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-09T19:27:30.490814+00:00",
+  "checked_at": "2026-10-09T23:05:28.845588+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -7,10 +7,10 @@
       "series": "DGS10",
       "source": "US_TREASURY",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "date": "2026-10-08",
-      "value": 5.22,
-      "change_5obs": -2.0,
-      "score": 2.4,
+      "date": "2026-10-09",
+      "value": 5.24,
+      "change_5obs": -4.0,
+      "score": 4.8,
       "verified": true,
       "failed_sources": []
     },
@@ -30,9 +30,9 @@
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
       "date": "2026-10-09",
-      "value": 102.21399688720703,
-      "change_5obs": 0.279,
-      "score": -2.2,
+      "value": 102.23100280761719,
+      "change_5obs": 0.295,
+      "score": -2.4,
       "verified": true,
       "failed_sources": []
     },
@@ -41,13 +41,13 @@
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
       "date": "2026-10-09",
-      "value": 7817.47998046875,
-      "change_5obs": 1.227,
-      "score": 9.8,
+      "value": 7811.5400390625,
+      "change_5obs": 1.15,
+      "score": 9.2,
       "verified": true,
       "failed_sources": []
     }
   },
   "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-  "score": 8
+  "score": 9
 }
