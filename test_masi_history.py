@@ -26,6 +26,12 @@ class ResumeSeanceTests(unittest.TestCase):
         flags = validate(dict(r), {"date": "2026-09-30", "masi": 17000.0}, {"2026-10-01", "2026-10-02"})
         self.assertEqual(flags, ["previous_session_missing_in_archive"])
 
+    def test_gap_before_calendar_uses_weekdays(self):
+        r = parse_resume(TEXT, "2026-10-05")
+        cal = {"2026-11-02"}   # calendrier connu seulement après la date testée
+        self.assertEqual(validate(dict(r), {"date": "2026-09-30", "masi": 17000.0}, cal), ["previous_session_missing_in_archive"])
+        self.assertIn("daily_change_mismatch", validate(dict(r), {"date": "2026-10-02", "masi": 17000.0}, cal))   # vendredi → lundi
+
     def test_date_mismatch_detected(self):
         r = parse_resume(TEXT, "2026-10-06")
         self.assertIn("date_mismatch", validate(r, None))

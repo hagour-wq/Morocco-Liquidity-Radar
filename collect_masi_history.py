@@ -61,7 +61,10 @@ def trading_days():
 
 def validate(rec, prev, sessions_cal=frozenset()):
     flags = []
-    gap = prev and any(prev["date"] < d < rec["date"] for d in sessions_cal)
+    if prev and prev.get("date") and sessions_cal and rec["date"] >= min(sessions_cal):
+        gap = any(prev["date"] < d < rec["date"] for d in sessions_cal)
+    else:  # avant le début du calendrier connu : un jour ouvré intermédiaire suffit à présumer une séance absente
+        gap = bool(prev and prev.get("date")) and any((date.fromordinal(o)).weekday() < 5 for o in range(date.fromisoformat(prev["date"]).toordinal() + 1, date.fromisoformat(rec["date"]).toordinal()))
     if gap:
         flags.append("previous_session_missing_in_archive")  # recoupement impossible, pas une anomalie de la valeur
     if not rec.get("masi") or not 1000 < rec["masi"] < 100000:
