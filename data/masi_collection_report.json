@@ -1,9 +1,10 @@
 {
-  "run_at": "2026-10-09T16:09:46.512183+00:00",
-  "written": null,
-  "reason": "aucune cotation ATW le 2026-10-09 : jour sans séance, rien n'est écrit",
+  "run_at": "2026-10-09T16:30:32.660635+00:00",
+  "written": "2026-10-09",
+  "reason": null,
   "errors": [],
   "session_status": "closed",
   "session_date": "2026-10-09",
-  "masi_live": 16797.1032
+  "masi_live": 16797.1032,
+  "total_sessions": 703
 }

@@ -1,6 +1,512 @@
 {
-  "schema_version": 1,
-  "updated_at": null,
-  "method": "Issuer reports / Bourse de Casablanca / AMMC. Missing fields remain null. Ratios are computed only on dated, evidenced figures.",
-  "companies": []
+ "generated_at": "2026-10-09T16:34:27.139159+00:00",
+ "source_registry": "data/fundamentals_sources.json",
+ "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+ "companies": [
+  {
+   "ticker": "ATW",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière — résultats au 31 décembre 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/awb_2025.pdf",
+   "isin": "MA0000012445",
+   "shares": 215140839,
+   "shares_source": "bulletin de la cote 2026-10-09",
+   "listing_exchange": "Casablanca Stock Exchange",
+   "listing_country": "MA",
+   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "status": "VERIFIED",
+   "errors": [],
+   "notes": [],
+   "missing": [],
+   "statements": {
+    "pnb": {
+     "current": 34921384.0,
+     "previous": 34507117.0,
+     "unit": 1000.0,
+     "mad": 34921384000.0,
+     "mad_previous": 34507117000.0,
+     "line": "PRODUIT NET BANCAIRE 34 921 384 34 507 117",
+     "ambiguous_split": false
+    },
+    "operating_expenses": {
+     "current": -11799244.0,
+     "previous": -11078430.0,
+     "unit": 1000.0,
+     "mad": -11799244000.0,
+     "mad_previous": -11078430000.0,
+     "line": "Charges générales d'exploitation -11 799 244 -11 078 430",
+     "ambiguous_split": false
+    },
+    "depreciation": {
+     "current": -1423329.0,
+     "previous": -1385027.0,
+     "unit": 1000.0,
+     "mad": -1423329000.0,
+     "mad_previous": -1385027000.0,
+     "line": "Dotations aux amortissements et aux dépréciations des immobilisations incorporelles et corporelles -1 423 329 -1 385 027",
+     "ambiguous_split": false
+    },
+    "cost_of_risk": {
+     "current": -3664557.0,
+     "previous": -4210257.0,
+     "unit": 1000.0,
+     "mad": -3664557000.0,
+     "mad_previous": -4210257000.0,
+     "line": "Coût du risque de crédit 3.4 -3 664 557 -4 210 257",
+     "ambiguous_split": false
+    },
+    "net_income": {
+     "current": 12368271.0,
+     "previous": 11682774.0,
+     "unit": 1000.0,
+     "mad": 12368271000.0,
+     "mad_previous": 11682774000.0,
+     "line": "RESULTAT NET 12 368 271 11 682 774",
+     "ambiguous_split": false
+    },
+    "net_income_group": {
+     "current": 10644852.0,
+     "previous": 9504486.0,
+     "unit": 1000.0,
+     "mad": 10644852000.0,
+     "mad_previous": 9504486000.0,
+     "line": "RESULTAT NET PART DU GROUPE (ou des propriétaires de la société mère) 10 644 852 9 504 486",
+     "ambiguous_split": false
+    },
+    "eps": {
+     "current": 49.48,
+     "previous": 44.18,
+     "unit": 1000.0,
+     "mad": 49.48,
+     "mad_previous": 44.18,
+     "line": "Résultat de base par action (en dirhams) 49,48 44,18",
+     "ambiguous_split": false
+    },
+    "equity_total": {
+     "current": 80490370.0,
+     "previous": 72502834.0,
+     "unit": 1000.0,
+     "mad": 80490370000.0,
+     "mad_previous": 72502834000.0,
+     "line": "Capitaux propres 80 490 370 72 502 834",
+     "ambiguous_split": false
+    },
+    "minority_interests": {
+     "current": 11059101.0,
+     "previous": 10046702.0,
+     "unit": 1000.0,
+     "mad": 11059101000.0,
+     "mad_previous": 10046702000.0,
+     "line": "Réserves consolidées-Part des minoritaires 8 062 326 6 894 451 + propres-Part des minoritaires 1 273 356 973 963 + Résultat net de l'exercice-Part des minoritaires 1 723 419 2 178 288",
+     "ambiguous_split": false,
+     "method": "somme de 3 lignes « Part des minoritaires » du bilan"
+    },
+    "total_assets": {
+     "current": 795461302.0,
+     "previous": 726492948.0,
+     "unit": 1000.0,
+     "mad": 795461302000.0,
+     "mad_previous": 726492948000.0,
+     "line": "TOTAL ACTIF 795 461 302 726 492 948",
+     "ambiguous_split": false
+    },
+    "customer_loans": {
+     "current": 447885567.0,
+     "previous": 413590717.0,
+     "unit": 1000.0,
+     "mad": 447885567000.0,
+     "mad_previous": 413590717000.0,
+     "line": "Prêts et créances sur la clientèle, au coût amorti 2.4 / 2.12 447 885 567 413 590 717",
+     "ambiguous_split": false
+    }
+   },
+   "derived": {
+    "shares_implied_by_published_eps": 215134438,
+    "eps_current_shares_mad": 49.4785,
+    "equity_group_method": "capitaux propres totaux − intérêts minoritaires (somme de 3 lignes « Part des minoritaires » du bilan)",
+    "equity_group_mad": 69431269000.0,
+    "roe_pct": 16.1423,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 322.7247,
+    "cost_income_pct": 37.8638,
+    "cost_of_risk_to_pnb_pct": 10.4937,
+    "cost_of_risk_to_loans_pct": 0.8182,
+    "pnb_growth_pct": 1.2005,
+    "net_income_growth_pct": 11.9982
+   }
+  },
+  {
+   "ticker": "BCP",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Comptes consolidés IFRS au 31 décembre 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf",
+   "isin": "MA0000011884",
+   "shares": 203312473,
+   "shares_source": "bulletin de la cote 2026-10-09",
+   "listing_exchange": "Casablanca Stock Exchange",
+   "listing_country": "MA",
+   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "status": "VERIFIED",
+   "errors": [],
+   "notes": [],
+   "missing": [],
+   "statements": {
+    "pnb": {
+     "current": 26985158.0,
+     "previous": 25601207.0,
+     "unit": 1000.0,
+     "mad": 26985158000.0,
+     "mad_previous": 25601207000.0,
+     "line": "PRODUIT NET BANCAIRE 26 985 158 25 601 207",
+     "ambiguous_split": false
+    },
+    "operating_expenses": {
+     "current": -10578464.0,
+     "previous": -10151569.0,
+     "unit": 1000.0,
+     "mad": -10578464000.0,
+     "mad_previous": -10151569000.0,
+     "line": "Charges générales d'exploitation -10 578 464 -10 151 569",
+     "ambiguous_split": false
+    },
+    "depreciation": {
+     "current": -1467315.0,
+     "previous": -1404562.0,
+     "unit": 1000.0,
+     "mad": -1467315000.0,
+     "mad_previous": -1404562000.0,
+     "line": "Dotations aux amortissements et aux dépréciations des immobilisations incorporelles et corporelles -1 467 315 -1 404 562",
+     "ambiguous_split": false
+    },
+    "cost_of_risk": {
+     "current": -5362624.0,
+     "previous": -6196439.0,
+     "unit": 1000.0,
+     "mad": -5362624000.0,
+     "mad_previous": -6196439000.0,
+     "line": "Coût du risque 4.4 -5 362 624 -6 196 439",
+     "ambiguous_split": false
+    },
+    "net_income": {
+     "current": 5621085.0,
+     "previous": 4966562.0,
+     "unit": 1000.0,
+     "mad": 5621085000.0,
+     "mad_previous": 4966562000.0,
+     "line": "RÉSULTAT NET 5 621 085 4 966 562",
+     "ambiguous_split": false
+    },
+    "net_income_group": {
+     "current": 4503361.0,
+     "previous": 4145346.0,
+     "unit": 1000.0,
+     "mad": 4503361000.0,
+     "mad_previous": 4145346000.0,
+     "line": "RÉSULTAT NET-PART DU GROUPE 4 503 361 4 145 346",
+     "ambiguous_split": false
+    },
+    "eps": {
+     "current": 22.15,
+     "previous": 20.39,
+     "unit": 1000.0,
+     "mad": 22.15,
+     "mad_previous": 20.39,
+     "line": "Résultat par action ( en dirham) 22,15 20,39",
+     "ambiguous_split": false
+    },
+    "equity_total": {
+     "current": 57956029.0,
+     "previous": 57167311.0,
+     "unit": 1000.0,
+     "mad": 57956029000.0,
+     "mad_previous": 57167311000.0,
+     "line": "Capitaux propres 57 956 029 57 167 311",
+     "ambiguous_split": false
+    },
+    "minority_interests": {
+     "current": 20981040.0,
+     "previous": 20123462.0,
+     "unit": 1000.0,
+     "mad": 20981040000.0,
+     "mad_previous": 20123462000.0,
+     "line": "- Part des minoritaires 20 246 892 19 551 355 + - Part des minoritaires -383 576 -249 109 + - Part des minoritaires 1 117 724 821 216",
+     "ambiguous_split": false,
+     "method": "somme de 3 lignes « Part des minoritaires » du bilan"
+    },
+    "total_assets": {
+     "current": 571244210.0,
+     "previous": 542278560.0,
+     "unit": 1000.0,
+     "mad": 571244210000.0,
+     "mad_previous": 542278560000.0,
+     "line": "TOTAL ACTIF IFRS 571 244 210 542 278 560",
+     "ambiguous_split": false
+    },
+    "customer_loans": {
+     "current": 298800863.0,
+     "previous": 287240813.0,
+     "unit": 1000.0,
+     "mad": 298800863000.0,
+     "mad_previous": 287240813000.0,
+     "line": "Prêts et créances sur la clientèle, au coût amorti 3.5/3.11 298 800 863 287 240 813",
+     "ambiguous_split": false
+    }
+   },
+   "derived": {
+    "shares_implied_by_published_eps": 203312009,
+    "eps_current_shares_mad": 22.1499,
+    "equity_group_method": "capitaux propres totaux − intérêts minoritaires (somme de 3 lignes « Part des minoritaires » du bilan)",
+    "equity_group_mad": 36974989000.0,
+    "roe_pct": 12.1681,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 181.8629,
+    "cost_income_pct": 44.6385,
+    "cost_of_risk_to_pnb_pct": 19.8725,
+    "cost_of_risk_to_loans_pct": 1.7947,
+    "pnb_growth_pct": 5.4058,
+    "net_income_growth_pct": 8.6366
+   }
+  },
+  {
+   "ticker": "IAM",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Comptes annuels 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf",
+   "isin": "MA0000011488",
+   "shares": 879095340,
+   "shares_source": "bulletin de la cote 2026-10-09",
+   "listing_exchange": "Casablanca Stock Exchange",
+   "listing_country": "MA",
+   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "status": "UNREADABLE",
+   "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
+  },
+  {
+   "ticker": "MSA",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière — comptes consolidés 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/marsa_2025.pdf",
+   "isin": "MA0000012312",
+   "shares": 73395600,
+   "shares_source": "bulletin de la cote 2026-10-09",
+   "listing_exchange": "Casablanca Stock Exchange",
+   "listing_country": "MA",
+   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "status": "VERIFIED",
+   "errors": [],
+   "notes": [],
+   "missing": [],
+   "statements": {
+    "revenue": {
+     "current": 5784894.0,
+     "previous": 5008150.0,
+     "unit": 1000.0,
+     "mad": 5784894000.0,
+     "mad_previous": 5008150000.0,
+     "line": "Chiffre d'affaires 5 784 894 5 008 150",
+     "ambiguous_split": false
+    },
+    "ebitda": null,
+    "operating_income": {
+     "current": 2562327.0,
+     "previous": 2087731.0,
+     "unit": 1000.0,
+     "mad": 2562327000.0,
+     "mad_previous": 2087731000.0,
+     "line": "Résultat d'exploitation 2 562 327 2 087 731",
+     "ambiguous_split": false
+    },
+    "net_income": null,
+    "net_income_group": {
+     "current": 1588764.0,
+     "previous": 1266978.0,
+     "unit": 1000.0,
+     "mad": 1588764000.0,
+     "mad_previous": 1266978000.0,
+     "line": "Résultat net part du groupe 1 588 764 1 266 978",
+     "ambiguous_split": false
+    },
+    "eps": {
+     "current": 21.65,
+     "previous": 17.26,
+     "unit": 1000.0,
+     "mad": 21.65,
+     "mad_previous": 17.26,
+     "line": "Résultat par action en MAD 21,65 17,26",
+     "ambiguous_split": false
+    },
+    "equity_group": null,
+    "equity_total": {
+     "current": 4599248.0,
+     "previous": 3665891.0,
+     "unit": 1000.0,
+     "mad": 4599248000.0,
+     "mad_previous": 3665891000.0,
+     "line": "Capitaux propres de l'ensemble consolidé 4 599 248 3 665 891",
+     "ambiguous_split": false
+    },
+    "minority_interests": {
+     "current": 551099.0,
+     "previous": 509248.0,
+     "unit": 1000.0,
+     "mad": 551099000.0,
+     "mad_previous": 509248000.0,
+     "line": "Intérêts minoritaires 551 099 509 248",
+     "ambiguous_split": false,
+     "method": "ligne « Intérêts minoritaires » du bilan"
+    },
+    "net_debt": null,
+    "total_assets": {
+     "current": 9332718.0,
+     "previous": 8298683.0,
+     "unit": 1000.0,
+     "mad": 9332718000.0,
+     "mad_previous": 8298683000.0,
+     "line": "Total actif 9 332 718 8 298 683",
+     "ambiguous_split": false
+    }
+   },
+   "derived": {
+    "shares_implied_by_published_eps": 73384018,
+    "eps_current_shares_mad": 21.6466,
+    "equity_group_method": "capitaux propres totaux − intérêts minoritaires (ligne « Intérêts minoritaires » du bilan)",
+    "equity_group_mad": 4048149000.0,
+    "roe_pct": 44.103,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 55.1552,
+    "operating_margin_pct": 44.2934,
+    "net_margin_pct": 27.464,
+    "revenue_growth_pct": 15.5096,
+    "equity_ratio_pct": 49.2809,
+    "net_income_growth_pct": 25.3979
+   }
+  },
+  {
+   "ticker": "MNG",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière — comptes consolidés 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/managem_2025.pdf",
+   "isin": "MA0000012866",
+   "shares": 118646760,
+   "shares_source": "bulletin de la cote 2026-10-09",
+   "listing_exchange": "Casablanca Stock Exchange",
+   "listing_country": "MA",
+   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "status": "VERIFIED",
+   "errors": [],
+   "notes": [
+    "BPA publié calculé sur 11 860 925 titres  118 646 760 titres aujourd'hui : opération sur titres (facteur 10)  BPA recalculé sur le nombre actuel de titres"
+   ],
+   "missing": [],
+   "statements": {
+    "revenue": {
+     "current": 13693.6,
+     "previous": 8859.4,
+     "unit": 1000000.0,
+     "mad": 13693600000.0,
+     "mad_previous": 8859400000.0,
+     "line": "Chiffre d'affaires 13 693,6 8 859,4",
+     "ambiguous_split": false
+    },
+    "ebitda": null,
+    "operating_income": {
+     "current": 3997.2,
+     "previous": 1252.3,
+     "unit": 1000000.0,
+     "mad": 3997200000.0,
+     "mad_previous": 1252300000.0,
+     "line": "Résultat d'exploitation courant 3 997,2 1 252,3",
+     "ambiguous_split": false
+    },
+    "net_income": {
+     "current": 3470.4,
+     "previous": 787.5,
+     "unit": 1000000.0,
+     "mad": 3470400000.0,
+     "mad_previous": 787500000.0,
+     "line": "Résultat de l'ensemble consolidé 3 470,4 787,5",
+     "ambiguous_split": false
+    },
+    "net_income_group": {
+     "current": 3002.0,
+     "previous": 619.8,
+     "unit": 1000000.0,
+     "mad": 3002000000.0,
+     "mad_previous": 619800000.0,
+     "line": "Résultat net part du groupe 3 002,0 619,8",
+     "ambiguous_split": false
+    },
+    "eps": {
+     "current": 253.1,
+     "previous": 54.8,
+     "unit": 1000000.0,
+     "mad": 253.1,
+     "mad_previous": 54.8,
+     "line": "Calcul du résultat par action 253,1 54,8",
+     "ambiguous_split": false
+    },
+    "equity_group": {
+     "current": 11478.3,
+     "previous": 10687.8,
+     "unit": 1000000.0,
+     "mad": 11478300000.0,
+     "mad_previous": 10687800000.0,
+     "line": "Capitaux propres attribuables aux actionnaires \nordinaires de la société mère 11 478,3 10 687,8",
+     "ambiguous_split": false
+    },
+    "equity_total": {
+     "current": 12529.6,
+     "previous": 11418.7,
+     "unit": 1000000.0,
+     "mad": 12529600000.0,
+     "mad_previous": 11418700000.0,
+     "line": "Capitaux propres de l'ensemble consolidé 12 529,6 11 418,7",
+     "ambiguous_split": false
+    },
+    "minority_interests": {
+     "current": 1051.3,
+     "previous": 730.9,
+     "unit": 1000000.0,
+     "mad": 1051300000.0,
+     "mad_previous": 730900000.0,
+     "line": "Intérêts minoritaires 1 051,3 730,9",
+     "ambiguous_split": false,
+     "method": "ligne « Intérêts minoritaires » du bilan"
+    },
+    "net_debt": null,
+    "total_assets": {
+     "current": 37705.9,
+     "previous": 30225.2,
+     "unit": 1000000.0,
+     "mad": 37705900000.0,
+     "mad_previous": 30225200000.0,
+     "line": "TOTAL ACTIF 37 705,9 30 225,2",
+     "ambiguous_split": false
+    }
+   },
+   "derived": {
+    "shares_implied_by_published_eps": 11860925,
+    "eps_current_shares_mad": 25.302,
+    "equity_group_mad": 11478300000.0,
+    "roe_pct": 27.0864,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 96.7435,
+    "operating_margin_pct": 29.1903,
+    "net_margin_pct": 21.9226,
+    "revenue_growth_pct": 54.5658,
+    "equity_ratio_pct": 33.2298,
+    "net_income_growth_pct": 384.3498
+   }
+  }
+ ]
 }
