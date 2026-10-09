@@ -253,7 +253,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T12:05:45.132304+00:00",
+    "computed_at": "2026-10-09T12:07:12.430293+00:00",
     "history_sessions": 87,
     "observations": 82,
     "usable_5d": 47,
@@ -293,7 +293,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T12:05:45.076451+00:00",
+  "retrieved_at": "2026-10-09T12:07:12.382360+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
