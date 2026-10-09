@@ -67,40 +67,63 @@ def validate(rec, prev):
     return flags
 
 
-def list_pdfs(max_pages=400):
-    links, empty = set(), 0
+def list_pdfs(known_listing, max_pages=400):
+    """Liste paginée, la plus récente d'abord. Premier passage : parcours complet (jusqu'à une page vide).
+    Ensuite : arrêt après 3 pages sans PDF absent de la liste mémorisée."""
+    links, empty, complete, page = {}, 0, False, 0
     for page in range(max_pages):
         h = cb.get_html(f"{LISTING}?page={page}")
-        found = set(re.findall(r'href="([^"]*resume_seance_(\d{8})\.pdf)"', h, re.I))
-        new = found - links
-        links |= found
+        found = {f"{d[:4]}-{d[4:6]}-{d[6:]}": (u if u.startswith("http") else cb.BASE + u)
+                 for u, d in re.findall(r'href="([^"]*resume_seance_(\d{8})\.pdf)"', h, re.I)}
+        if not found:
+            complete = True
+            break
+        new = {d for d in found if d not in known_listing and d not in links}
+        for d, u in found.items():
+            links.setdefault(d, u)
         empty = empty + 1 if not new else 0
-        if empty >= 2 and page > 2:
+        if known_listing and empty >= 3:
             break
         time.sleep(0.15)
-    by_date = {}
-    for url, d in links:
-        iso = f"{d[:4]}-{d[4:6]}-{d[6:]}"
-        by_date.setdefault(iso, url if url.startswith("http") else cb.BASE + url)
-    return by_date, page + 1
+    return links, page + 1, complete
+
+
+MAX_PDFS = int(__import__("os").environ.get("MASI_MAX_PDFS", "200"))   # par exécution : reprise par tranches
+TIME_BUDGET_S = int(__import__("os").environ.get("MASI_TIME_BUDGET_S", "900"))
+
+
+def save_cache(cache, sessions, now):
+    cache.update(updated_at=now, source=SRC, sessions=sessions)
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def main():
     from pypdf import PdfReader
+    t0 = time.time()
     now = datetime.now(timezone.utc).isoformat()
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {"sessions": {}}
     sessions = cache["sessions"]
     rep = {"run_at": now, "source": cb.BASE + LISTING, "errors": [], "parsed": 0, "corrections": [], "added": []}
     try:
-        pdfs, pages = list_pdfs()
-        rep.update(listing_pages=pages, pdfs_listed=len(pdfs),
+        listing = cache.get("listing", {})
+        found, pages, complete = list_pdfs(listing if cache.get("listing_complete") else {})
+        listing.update({d: u for d, u in found.items() if d not in listing})
+        cache["listing"] = listing
+        cache["listing_complete"] = cache.get("listing_complete") or complete
+        pdfs = listing
+        rep.update(listing_pages=pages, listing_complete=cache["listing_complete"], pdfs_listed=len(pdfs),
                    listed_range=[min(pdfs), max(pdfs)] if pdfs else None)
     except Exception as e:
         rep["errors"].append(f"listing: {type(e).__name__}: {e}")
-        pdfs = {}
-    for d, url in sorted(pdfs.items()):
-        if d in sessions and sessions[d].get("masi"):
-            continue
+        pdfs = cache.get("listing", {})
+    todo = [(d, u) for d, u in sorted(pdfs.items(), reverse=True) if not (d in sessions and sessions[d].get("masi"))]
+    rep["remaining_before_run"] = len(todo)
+    for n, (d, url) in enumerate(todo[:MAX_PDFS]):
+        if time.time() - t0 > TIME_BUDGET_S:
+            rep["stopped"] = "budget de temps atteint ; reprise à la prochaine exécution"
+            break
+        if n and n % 25 == 0:
+            save_cache(cache, sessions, now)
         try:
             b = cb._get(url, accept="application/pdf")
             text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
@@ -117,8 +140,8 @@ def main():
         rec["status"] = ",".join(validate(rec, prev)) or "validated"
         if rec.get("masi"):
             prev = rec
-    cache.update(updated_at=now, source=SRC, sessions=sessions)
-    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    save_cache(cache, sessions, now)
+    rep["remaining_after_run"] = len([1 for d in pdfs if not sessions.get(d, {}).get("masi")])
 
     rows = {r["date"]: r for r in json.loads(HIST.read_text(encoding="utf-8"))} if HIST.exists() else {}
     for d, rec in sorted(sessions.items()):
