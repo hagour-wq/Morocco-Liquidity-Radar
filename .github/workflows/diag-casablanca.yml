@@ -15,6 +15,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python -m unittest test_casablanca_collectors.py
+      - run: python probe_index.py
       - name: MASI officiel
         continue-on-error: true
         run: python collect_market.py
