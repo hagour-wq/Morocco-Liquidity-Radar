@@ -53,13 +53,22 @@ def parse_resume(text, file_date):
     return out
 
 
-def validate(rec, prev):
+def trading_days():
+    """Calendrier des séances déduit des cotations officielles d'ATW (data/equities/ATW.json), s'il existe."""
+    p = Path("data/equities/ATW.json")
+    return {r["date"] for r in json.loads(p.read_text(encoding="utf-8"))["rows"]} if p.exists() else set()
+
+
+def validate(rec, prev, sessions_cal=frozenset()):
     flags = []
+    gap = prev and any(prev["date"] < d < rec["date"] for d in sessions_cal)
+    if gap:
+        flags.append("previous_session_missing_in_archive")  # recoupement impossible, pas une anomalie de la valeur
     if not rec.get("masi") or not 1000 < rec["masi"] < 100000:
         flags.append("masi_missing_or_out_of_bounds")
     if rec.get("printed_date") and rec["printed_date"] != rec["date"]:
         flags.append("date_mismatch")
-    if prev and rec.get("masi") and rec.get("masi_daily_pct") is not None and prev.get("masi"):
+    if prev and not gap and rec.get("masi") and rec.get("masi_daily_pct") is not None and prev.get("masi"):
         implied = 100 * (rec["masi"] / prev["masi"] - 1)
         rec["implied_daily_pct"] = round(implied, 4)
         if abs(implied - rec["masi_daily_pct"]) > 0.02:
@@ -135,9 +144,11 @@ def main():
         except Exception as e:
             rep["errors"].append(f"{d}: {type(e).__name__}: {e}"[:200])
     prev = None
+    cal = trading_days()
     for d in sorted(sessions):
         rec = sessions[d]
-        rec["status"] = ",".join(validate(rec, prev)) or "validated"
+        rec.pop("implied_daily_pct", None)
+        rec["status"] = ",".join(validate(rec, prev, cal)) or "validated"
         if rec.get("masi"):
             prev = rec
     save_cache(cache, sessions, now)
@@ -145,8 +156,8 @@ def main():
 
     rows = {r["date"]: r for r in json.loads(HIST.read_text(encoding="utf-8"))} if HIST.exists() else {}
     for d, rec in sorted(sessions.items()):
-        if rec["status"] != "validated" and "daily_change_mismatch" not in rec["status"]:
-            continue
+        if rec["status"] not in ("validated", "previous_session_missing_in_archive"):
+            continue  # valeur douteuse : non fusionnée, visible dans le rapport
         r = rows.get(d)
         breadth = round(rec["advancers"] / (rec["advancers"] + rec["decliners"]), 4) if rec["advancers"] + rec["decliners"] else None
         new = {"masi": rec["masi"], "masi_source": SRC, "masi_daily_pct_published": rec.get("masi_daily_pct"),
@@ -165,7 +176,8 @@ def main():
     HIST.write_text(json.dumps(ordered, ensure_ascii=False, indent=2), encoding="utf-8")
     vals = [s for s in sessions.values() if s.get("masi")]
     rep.update(sessions_official=len(vals), official_range=[min(s["date"] for s in vals), max(s["date"] for s in vals)] if vals else None,
-               mismatches=[d for d, s in sessions.items() if s["status"] != "validated"],
+               anomalies=[d for d, s in sessions.items() if s["status"] not in ("validated", "previous_session_missing_in_archive")],
+               archive_gaps=[d for d, s in sessions.items() if s["status"] == "previous_session_missing_in_archive"],
                market_history_sessions=len(ordered))
     REPORT.write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: (v if not isinstance(v, list) or len(v) < 8 else f"{len(v)} éléments") for k, v in rep.items()}, ensure_ascii=False))

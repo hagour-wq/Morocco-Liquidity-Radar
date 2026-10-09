@@ -21,6 +21,11 @@ class ResumeSeanceTests(unittest.TestCase):
         self.assertEqual(validate(dict(r), ok_prev), [])
         self.assertIn("daily_change_mismatch", validate(dict(r), {"masi": 17000.0}))
 
+    def test_missing_archive_session_is_not_an_anomaly(self):
+        r = parse_resume(TEXT, "2026-10-05")
+        flags = validate(dict(r), {"date": "2026-09-30", "masi": 17000.0}, {"2026-10-01", "2026-10-02"})
+        self.assertEqual(flags, ["previous_session_missing_in_archive"])
+
     def test_date_mismatch_detected(self):
         r = parse_resume(TEXT, "2026-10-06")
         self.assertIn("date_mismatch", validate(r, None))
