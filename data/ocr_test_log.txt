@@ -20,20 +20,10 @@ test_missing_component_gives_partial_watch (test_fundamentals.ScoreTests.test_mi
 test_stale_accounts_and_unreadable_document_excluded (test_fundamentals.ScoreTests.test_stale_accounts_and_unreadable_document_excluded) ... ok
 test_unverified_listing_not_ranked (test_fundamentals.ScoreTests.test_unverified_listing_not_ranked) ... ok
 test_glued_amounts_split_by_consistency (test_fundamentals.SplitTests.test_glued_amounts_split_by_consistency) ... ok
-test_image_pdf_is_read_and_checked (test_ocr.OcrTests.test_image_pdf_is_read_and_checked) ... ERROR
-
-======================================================================
-ERROR: test_image_pdf_is_read_and_checked (test_ocr.OcrTests.test_image_pdf_is_read_and_checked)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/runner/work/Morocco-Liquidity-Radar/Morocco-Liquidity-Radar/test_ocr.py", line 32, in test_image_pdf_is_read_and_checked
-    text, info = ocr_pdf.ocr_pdf(image_pdf(LINES))
-                                 ^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Morocco-Liquidity-Radar/Morocco-Liquidity-Radar/test_ocr.py", line 13, in image_pdf
-    from PIL import Image, ImageDraw, ImageFont
-ModuleNotFoundError: No module named 'PIL'
+test_two_column_pages (test_ocr.CleanLinesTests.test_two_column_pages) ... ok
+test_image_pdf_is_read_and_checked (test_ocr.OcrTests.test_image_pdf_is_read_and_checked) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.504s
+Ran 24 tests in 1.419s
 
-FAILED (errors=1)
+OK
