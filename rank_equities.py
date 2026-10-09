@@ -34,7 +34,7 @@ def evaluate_fundamental(c,price=None,price_date=None,dividend_yield=None,volati
  Valorisation 30 %, qualité 25 %, croissance 20 %, structure / risque 15 %, dividende 10 %.
  Composante manquante : score calculé sur les poids disponibles, marqué partiel et classé « À surveiller »."""
  t,name=c.get("ticker"),c.get("name")
- base={"ticker":t,"name":name,"model":c.get("model"),"fiscal_year":c.get("fiscal_year"),"source_url":c.get("url"),"category":"NON_ANALYSABLE"}
+ base={"ticker":t,"name":name,"model":c.get("model"),"fiscal_year":c.get("fiscal_year"),"source_url":c.get("url"),"accounts_scope":c.get("scope"),"category":"NON_ANALYSABLE"}
  if c.get("listing_exchange")!="Casablanca Stock Exchange" or c.get("listing_country")!="MA":
   return {**base,"status":"EXCHANGE_NOT_VERIFIED","note":"Cotation à Casablanca non vérifiée."}
  if c.get("status")!="VERIFIED":

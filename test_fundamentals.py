@@ -1,6 +1,6 @@
 import unittest
 from pathlib import Path
-from extract_financials import split_two, extract, checks
+from extract_financials import split_two, extract, checks, parse_tail, unit_at
 from rank_equities import evaluate_fundamental
 
 FX = Path("tests/fixtures")
@@ -87,6 +87,78 @@ class ScoreTests(unittest.TestCase):
         x = evaluate_fundamental(self.company(listing_exchange=None), 670.0, "2026-10-08", 3.0)
         self.assertEqual(x["status"], "EXCHANGE_NOT_VERIFIED")
         self.assertNotIn("score", x)
+
+
+class LayoutTests(unittest.TestCase):
+    """Dispositions de colonnes relevées dans les publications 2025 (lignes réelles)."""
+    def test_variation_pct_checks_column_order(self):
+        # LBV : N-1 puis N, ordre établi par la variation publiée
+        self.assertEqual(parse_tail("16 418 18 534 +12,9%")[:2], (18534.0, 16418.0))
+        # TQM : N, N-1, écart, %
+        self.assertEqual(parse_tail("10 638 10 878 -240 -2,2%")[:3], (10638.0, 10878.0, "N / N-1 / écart / variation %"))
+        # HPS : consolidé puis social sur la même ligne -> premier bloc
+        self.assertEqual(parse_tail("106 75 +40,5% 106 62 +71,4%")[:2], (106.0, 75.0))
+
+    def test_moroccan_cpc_four_columns(self):
+        r = parse_tail("392 680 231,00 886 668,58 393 566 899,58 286 037 895,90")
+        self.assertEqual(r[:2], (393566899.58, 286037895.90))
+        self.assertTrue(r[2].startswith("CPC"))
+        self.assertEqual(parse_tail("68.072.285,78 - 68.072.285,78 68.253.995,17")[:2], (68072285.78, 68253995.17))
+        self.assertEqual(parse_tail("745 691 524,57 745 691 524,57 633 333 207,77")[:2], (745691524.57, 633333207.77))
+
+    def test_dotted_thousands_and_parenthesised_negative(self):
+        self.assertEqual(parse_tail("2.431.512 2.363.364")[:2], (2431512.0, 2363364.0))
+        self.assertEqual(parse_tail("196 465 103 (12 125 978)")[:2], (196465103.0, -12125978.0))
+
+    def test_units(self):
+        txt = "BILAN (En millions de dirhams) 31-déc.-25 31-déc.-24\nRésultat par action (en dirhams) 41,58 44,63\n"
+        self.assertEqual(unit_at(txt, len(txt)), 1e6)          # la ligne BPA chiffrée n'est pas un en-tête
+        self.assertEqual(unit_at("(Montants en dhs) 31/12/2025 31/12/2024\n", 45), 1.0)
+        self.assertEqual(unit_at("(En milliers MAD)\n", 18, "3 670 153 999,90 3 409 746 949,01"), 1.0)  # centimes : dirhams
+
+
+SOCIAL_TXT = """BILAN (en dirhams)
+Total des capitaux propres (A) 359 119 876,03 335 546 322,65
+COMPTE DE PRODUITS ET CHARGES
+Chiffres d'affaires 624 013 253,82 624 013 253,82 605 017 873,46
+RESULTAT D'EXPLOITATION (I-II) 112 057 974,81 112 057 974,81 93 174 163,54
+Résultat net de l'exercice (2) 65 479 341,98 45 337 135,25
+"""
+GROUP_SPLIT_TXT = """COMPTE DE RESULTAT CONSOLIDE (Montants en dhs) 31/12/2025 31/12/2024
+Chiffre d'affaires 4 413 384 274 2 954 038 793
+Résultat net de l'ensemble consolidé 494 331 591 347 553 992
+Résultat de l'exercice 443 680 156 314 609 432
+Intérêts minoritaires 50 651 435 32 944 560
+BILAN PASSIF (Montants en dhs) 31/12/2025 31/12/2024
+Capitaux propres de l'ensemble consolidé 2 925 562 585 2 638 508 203
+Dont : Capitaux propres part du groupe 2 853 529 135 2 583 560 166
+Chiffre d'affaires 999 999 999,00 888 888 888,00
+"""
+
+
+class ScopeTests(unittest.TestCase):
+    def test_social_accounts_when_no_consolidated_statements(self):
+        f = extract(SOCIAL_TXT, "corporate")
+        self.assertEqual(f["_scope"], "social")
+        self.assertEqual(f["net_income_group"]["mad"], 65479341.98)
+        d, e, n = checks(f, "corporate", 16117611, 77.0)
+        self.assertEqual(e, [])
+        self.assertEqual(d["scope"], "social")
+        self.assertAlmostEqual(d["revenue_growth_pct"], 100 * (624013253.82 / 605017873.46 - 1))
+
+    def test_group_share_derived_by_arithmetic_and_social_lines_ignored(self):
+        f = extract(GROUP_SPLIT_TXT, "corporate")
+        self.assertEqual(f["_scope"], "consolidated")
+        self.assertEqual(f["net_income_group"]["mad"], 443680156.0)      # 494 331 591 − 50 651 435
+        self.assertIn("somme vérifiée", f["net_income_group"]["method"])
+        self.assertEqual(f["revenue"]["mad"], 4413384274.0)             # jamais la ligne sociale à centimes
+        self.assertEqual(f["equity_group"]["mad"], 2853529135.0)
+
+    def test_unit_error_caught_by_implied_per(self):
+        f = extract(GROUP_SPLIT_TXT, "corporate")
+        f["net_income_group"]["mad"] *= 1000                             # erreur d'unité simulée
+        d, e, n = checks(f, "corporate", 14159207, 1015.0)
+        self.assertTrue(any("PER implicite" in x for x in e))
 
 
 if __name__ == "__main__":

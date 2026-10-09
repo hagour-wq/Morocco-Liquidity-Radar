@@ -1,11 +1,398 @@
 {
- "description": "Registre des publications officielles utilisées pour les fondamentaux (comptes annuels consolidés). Les URL pointent vers les documents publiés par la Bourse de Casablanca (page Publications émetteurs) ; aucun chiffre n'est saisi à la main.",
+ "description": "Registre des publications officielles utilisées pour les fondamentaux (comptes annuels consolidés). Les URL pointent vers les documents publiés par la Bourse de Casablanca (page Publications émetteurs) ; aucun chiffre n'est saisi à la main. Les assureurs (modèle « insurance ») sont référencés mais non notés tant que le modèle sectoriel assurance n'est pas implémenté.",
  "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
  "issuers": [
-  {"ticker": "ATW", "model": "bank", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Communication financière — résultats au 31 décembre 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/awb_2025.pdf"},
-  {"ticker": "BCP", "model": "bank", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Comptes consolidés IFRS au 31 décembre 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf"},
-  {"ticker": "IAM", "model": "corporate", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Comptes annuels 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf"},
-  {"ticker": "MSA", "model": "corporate", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Communication financière — comptes consolidés 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/marsa_2025.pdf"},
-  {"ticker": "MNG", "model": "corporate", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Communication financière — comptes consolidés 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/managem_2025.pdf"}
+  {
+   "ticker": "ADH",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf"
+  },
+  {
+   "ticker": "ADI",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/adi_2025.pdf"
+  },
+  {
+   "ticker": "AFI",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afi_2025.pdf"
+  },
+  {
+   "ticker": "AFM",
+   "model": "insurance",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afma_2025.pdf"
+  },
+  {
+   "ticker": "AGM",
+   "model": "insurance",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/agma_2025_cp_rfa_2025.pdf"
+  },
+  {
+   "ticker": "AKT",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/akdital_2025.pdf"
+  },
+  {
+   "ticker": "ALM",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/alm_-_resultats_2025.pdf"
+  },
+  {
+   "ticker": "ARD",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/aradei_capital_2025.pdf"
+  },
+  {
+   "ticker": "ATL",
+   "model": "insurance",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/atlantasanad_2025.pdf"
+  },
+  {
+   "ticker": "ATW",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/awb_2025.pdf"
+  },
+  {
+   "ticker": "BCP",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf"
+  },
+  {
+   "ticker": "BOA",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/boa_2025.pdf"
+  },
+  {
+   "ticker": "CAP",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cash_plus_2025.pdf"
+  },
+  {
+   "ticker": "CDM",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cdm_2025.pdf"
+  },
+  {
+   "ticker": "CFG",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cfg_bank_2025.pdf"
+  },
+  {
+   "ticker": "CIH",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cih_bank_2025.pdf"
+  },
+  {
+   "ticker": "CMG",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cmgp_2025.pdf"
+  },
+  {
+   "ticker": "CMT",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cmt_2025.pdf"
+  },
+  {
+   "ticker": "COL",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/colorado_rfa_2025.pdf"
+  },
+  {
+   "ticker": "CRS",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cartier_saada_2025.pdf"
+  },
+  {
+   "ticker": "CSR",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cosumar_2025.pdf"
+  },
+  {
+   "ticker": "DRI",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/dari_couspate_2025.pdf"
+  },
+  {
+   "ticker": "DYT",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/disty_2025.pdf"
+  },
+  {
+   "ticker": "EQD",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/eqdom_2025.pdf"
+  },
+  {
+   "ticker": "GTM",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sgtm_2025.pdf"
+  },
+  {
+   "ticker": "HPS",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/hps_2025.pdf"
+  },
+  {
+   "ticker": "IAM",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf"
+  },
+  {
+   "ticker": "LBV",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/label_vie_2025.pdf"
+  },
+  {
+   "ticker": "M2M",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/m2m_group_2025.pdf"
+  },
+  {
+   "ticker": "MIC",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/microdata_2025.pdf"
+  },
+  {
+   "ticker": "MLE",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/mle_2025.pdf"
+  },
+  {
+   "ticker": "MNG",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/managem_2025.pdf"
+  },
+  {
+   "ticker": "MOX",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/mox_rfa_2025.pdf"
+  },
+  {
+   "ticker": "MSA",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/marsa_2025.pdf"
+  },
+  {
+   "ticker": "OUL",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/oulmes_2025_cp_rfa_2025.pdf"
+  },
+  {
+   "ticker": "PRO",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/promopharm_2025.pdf"
+  },
+  {
+   "ticker": "RDS",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/rds_2025.pdf"
+  },
+  {
+   "ticker": "RIS",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/risma_2025.pdf"
+  },
+  {
+   "ticker": "SAH",
+   "model": "insurance",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sanlam_rfa_2025.pdf"
+  },
+  {
+   "ticker": "SBM",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sbm_2025.pdf"
+  },
+  {
+   "ticker": "SID",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sonasid_2025_0.pdf"
+  },
+  {
+   "ticker": "SLF",
+   "model": "bank",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/salafin_2025.pdf"
+  },
+  {
+   "ticker": "SMI",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/smi_2025.pdf"
+  },
+  {
+   "ticker": "SNA",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sna_2025.pdf"
+  },
+  {
+   "ticker": "SNP",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/snep_2025.pdf"
+  },
+  {
+   "ticker": "SOT",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sothema_2025.pdf"
+  },
+  {
+   "ticker": "STR",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/stroc_2025_1.pdf"
+  },
+  {
+   "ticker": "TGC",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/tgcc_2025.pdf"
+  },
+  {
+   "ticker": "TQM",
+   "model": "corporate",
+   "fiscal_year": 2025,
+   "period_end": "2025-12-31",
+   "document": "Communication financière annuelle 2025",
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/taqa_morocco_2025.pdf"
+  }
  ]
 }
