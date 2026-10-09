@@ -52,3 +52,28 @@ La même architecture pourra accueillir CAC 40, S&P 500 et Nasdaq après stabili
 - **MASI** : aucune API ne fournit l'historique quotidien (le service `indices/historical` ne renvoie que l'intraday). La clôture officielle est enregistrée chaque soir, confirmée par la présence d'une cotation ATW ce jour-là. Les séances antérieures conservent leur source d'origine (`source`).
 - **Univers** : 5 titres pilotes (ATW, BCP, IAM, MSA, MNG). `EQUITY_UNIVERSE=all` étend aux 81 actions cotées.
 - Les scripts `backfill_equities*.py` (Yahoo, Investing, archives) ne sont plus exécutés quotidiennement : aucune de ces sources n'a produit de données validées.
+
+## Méthodologie — analyse technique court terme (`technical.py`, `rank_equities.py`)
+
+| Indicateur | Définition | Historique minimal |
+|---|---|---|
+| Variation 5J / 20J / 60J | (clôture / clôture n séances avant − 1) × 100 | n + 1 séances |
+| MM20 / MM50 / MM200 | moyenne arithmétique des clôtures | 20 / 50 / 200 séances |
+| RSI 14 | lissage de Wilder (vérifié identique à pandas `ewm(alpha=1/14)`) | 43 séances |
+| MACD 12/26/9 | EMA12 − EMA26, signal EMA9 | 53 séances |
+| Volatilité réalisée | écart-type (échantillon) des rendements log sur 20 séances × √252 | 21 séances |
+| ATR 14 | true range lissé de Wilder, OHLC réels uniquement | 29 séances |
+| Bollinger 20/2 | MM20 ± 2 écarts-types, %B et largeur | 20 séances |
+| Support / résistance | plus bas / plus haut des 20 dernières séances | 20 séances |
+| Liquidité | montant moyen échangé 20 j et 60 j, séances sans échange | 20 séances |
+
+Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unavailable`.
+
+**Score technique /100** : momentum 5 séances 35 %, 20 séances 25 %, position clôture / MM50 20 % (MM20 si moins de 50 séances), volume relatif 10 %, volatilité annualisée 10 % (inverse). Chaque composante est ramenée linéairement sur 0–100 entre des bornes fixes (5J : ±8 % ; 20J : ±15 % ; clôture / MM : 0,9–1,1 ; volume relatif : 0,5–2 ; volatilité : 10–60 %).
+
+**Catégories**
+- *Éligible* : score calculé, montant moyen 20 j ≥ 1 M MAD, aucune séance sans échange sur 60 j.
+- *À surveiller* : score calculé mais liquidité faible ou séances sans échange.
+- *Non analysable* : moins de 25 séances (après toute opération sur titres présumée), données de plus de 5 jours, trou de cotation, anomalie dans la fenêtre, ou volume de la dernière séance inconnu.
+
+**Volumes** : une séance sans échange (aucun OHLC, cours de référence reporté) a un volume de 0. Un enregistrement incomplet de la source (plus haut / plus bas publiés mais volume 0, ex. 17/09/2026) a un volume `null`, exclu des moyennes et jamais compté comme zéro.

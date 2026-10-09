@@ -57,6 +57,20 @@ class EquityRowTests(unittest.TestCase):
         self.assertIn("close_non_positive", validate_row(dict(r, close=0), 668))
 
 
+class VolumeSemanticsTests(unittest.TestCase):
+    def test_incomplete_record_is_missing_not_zero(self):
+        r = to_row(dict(ITEM, ouverture=None, titresEchanges=0, volumeEchanges=0, nbTransactions=0), "now")
+        self.assertIsNone(r["volume"])
+        self.assertIsNone(r["turnover_mad"])
+        self.assertTrue(r["incomplete_volume"])
+        self.assertIn("incomplete_volume", validate_row(r, 668))
+
+    def test_no_trade_session_is_zero(self):
+        r = to_row({"seance": "08/10/2026", "dernierCours": 1599, "titresEchanges": None}, "now")
+        self.assertEqual(r["volume"], 0.0)
+        self.assertIs(r["traded"], False)
+
+
 class CorporateActionTests(unittest.TestCase):
     def test_managem_like_split_is_detected(self):
         self.assertEqual(split_factor(12500, {"open": 1340}), 9)

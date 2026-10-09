@@ -29,8 +29,17 @@ class EquityRankingTests(unittest.TestCase):
   while len(rows)<30:
    if d.weekday()<5:rows.append({"date":d.isoformat(),"close":100+len(rows)*0.1,"volume":1000,"status":"validated"})
    d-=timedelta(days=1)
-  rows[3]["status"]="corporate_action_suspected"
+  rows[3]["status"]="ohlc_incoherent"
   x=evaluate_technical("XYZ","Example",rows)
   self.assertEqual(x["status"],"FLAGGED_DATA_IN_WINDOW")
+  self.assertNotIn("score",x)
+ def test_recent_corporate_action_blocks_technical_score(self):
+  d=date.today();rows=[]
+  while len(rows)<60:
+   if d.weekday()<5:rows.append({"date":d.isoformat(),"close":100,"volume":1000,"status":"validated"})
+   d-=timedelta(days=1)
+  rows[10]["status"]="corporate_action_suspected"
+  x=evaluate_technical("XYZ","Example",rows)
+  self.assertEqual(x["status"],"CORPORATE_ACTION_RECENT")
   self.assertNotIn("score",x)
 if __name__=="__main__":unittest.main()

@@ -6,7 +6,7 @@ const dash=JSON.parse(fs.readFileSync('data/dashboard.json','utf8'));
 const hist=JSON.parse(fs.readFileSync('data/market_history.json','utf8'));
 const ranks=JSON.parse(fs.readFileSync('data/equity_rankings.json','utf8'));
 const nodes=new Map();
-function node(id){if(!nodes.has(id))nodes.set(id,{id,textContent:'',innerHTML:'',className:'',style:{},clientWidth:800,clientHeight:220,getContext(){return {scale(){},clearRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(){}}}});return nodes.get(id)}
+function node(id){if(!nodes.has(id))nodes.set(id,{id,textContent:'',innerHTML:'',className:'',style:{},clientWidth:800,clientHeight:220,querySelectorAll(){return []},getContext(){return {scale(){},clearRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(){}}}});return nodes.get(id)}
 const sandbox={document:{getElementById:node},fetch:async url=>({ok:true,json:async()=>url.includes('dashboard')?dash:url.includes('equity_rankings')?ranks:hist}),Date,Number,Math,window:{addEventListener(){}},devicePixelRatio:1,console};
 vm.runInNewContext(script,sandbox,{timeout:3000});
 setImmediate(()=>{
@@ -16,6 +16,10 @@ setImmediate(()=>{
  assert.ok(node('sources').innerHTML.length>0,'Source rows must render');
  assert.ok(node('longrank').textContent.length>0 || node('longrank').innerHTML.length>0,'Fundamentals panel must render');
  assert.ok(node('shortrank').textContent.length>0 || node('shortrank').innerHTML.length>0,'Technical panel must render');
+ const st=ranks.short_term||{};const n=(st.ranked||[]).length+(st.watch||[]).length;
+ if(n){assert.ok(node('shortrank').innerHTML.includes('<table'),'Technical ranking must render as a table');
+  for(const x of [...(st.ranked||[]),...(st.watch||[])])assert.ok(node('shortrank').innerHTML.includes('>'+x.ticker+'<'),'Ticker '+x.ticker+' must be listed');
+  assert.ok(!node('shortrank').innerHTML.includes('NaN'),'No NaN in technical table');}
  assert.ok(node('watchlist').innerHTML.length>0,'Snapshot watchlist must render');
  console.log('Dashboard smoke test passed');
 });
