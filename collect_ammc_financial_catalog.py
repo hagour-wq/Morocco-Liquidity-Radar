@@ -30,7 +30,8 @@ def scan(url):
  for a in p.links:
   absolute=urljoin(url,a["url"])
   label=a["text"]
-  if absolute.startswith("https://") and absolute.lower().split("?")[0].endswith(".pdf"):
+  financial_terms=("résultats financiers","resultats financiers","états financiers","etats financiers","comptes consolidés","rapport financier","rapport annuel","financial results","financial statements")
+  if absolute.startswith("https://") and absolute.lower().split("?")[0].endswith(".pdf") and any(term in label.casefold() or term in absolute.casefold() for term in financial_terms):
    records.append({"label":label[:160],"url":absolute})
  return list({x["url"]:x for x in records}.values())
 def main():
