@@ -38,6 +38,23 @@ class CleanLinesTests(unittest.TestCase):
         self.assertIn("RÉSULTAT NET - PART DU GROUPE 72656 72354", c.splitlines())
 
 
+class CacheTests(unittest.TestCase):
+    def test_ocr_text_reused_for_same_pdf(self):
+        import tempfile
+        from pathlib import Path
+        from unittest.mock import patch
+        import collect_fundamentals as cf
+        calls = []
+        with tempfile.TemporaryDirectory() as d, patch.object(cf, "OCR_CACHE", Path(d)), \
+                patch.object(cf.ocr_pdf, "ocr_pdf", lambda b: (calls.append(1) or "texte", {"pages": 1})):
+            a = cf.ocr_cached(b"%PDF-1 a")
+            b = cf.ocr_cached(b"%PDF-1 a")
+            c = cf.ocr_cached(b"%PDF-1 b")
+        self.assertEqual(len(calls), 2)                       # même PDF : une seule lecture
+        self.assertEqual((a[1]["cache"], b[1]["cache"]), ("nouvelle lecture", "réutilisé"))
+        self.assertEqual(c[1]["cache"], "nouvelle lecture")
+
+
 @unittest.skipUnless(ocr_pdf.available(), "tesseract / pdftoppm absents")
 class OcrTests(unittest.TestCase):
     def test_image_pdf_is_read_and_checked(self):
