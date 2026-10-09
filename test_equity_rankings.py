@@ -23,4 +23,14 @@ class EquityRankingTests(unittest.TestCase):
  def test_stale_report_is_rejected(self):
   x={"ticker":"XYZ","name":"Test issuer","reference_date":"2020-01-01","source_url":"https://example.org/old.pdf","listing_exchange":"Casablanca Stock Exchange","listing_country":"MA","price_mad":100,"eps_mad":8,"book_value_per_share_mad":50,"roe_pct":16,"revenue_growth_pct":7,"net_debt_ebitda":1.5,"dividend_per_share_mad":4}
   self.assertNotIn("score",evaluate_fundamental(x))
+ def test_flagged_session_blocks_technical_score(self):
+  d=date.today();rows=[]
+  k=0
+  while len(rows)<30:
+   if d.weekday()<5:rows.append({"date":d.isoformat(),"close":100+len(rows)*0.1,"volume":1000,"status":"validated"})
+   d-=timedelta(days=1)
+  rows[3]["status"]="corporate_action_suspected"
+  x=evaluate_technical("XYZ","Example",rows)
+  self.assertEqual(x["status"],"FLAGGED_DATA_IN_WINDOW")
+  self.assertNotIn("score",x)
 if __name__=="__main__":unittest.main()

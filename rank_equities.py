@@ -39,6 +39,8 @@ def evaluate_technical(ticker,name,rows):
  if not ticker or not name:return {"ticker":ticker,"name":name,"status":"INVALID_INSTRUMENT"}
  rows=sorted((x for x in rows if valid(x.get("close")) and valid(x.get("volume")) and x.get("date")),key=lambda x:x["date"])
  if len(rows)<25:return {"ticker":ticker,"name":name,"status":"INSUFFICIENT_HISTORY","sessions":len(rows),"required_sessions":25}
+ flagged=[x["date"] for x in rows[-25:] if x.get("status") not in (None,"validated")]
+ if flagged:return {"ticker":ticker,"name":name,"status":"FLAGGED_DATA_IN_WINDOW","flagged_dates":flagged,"note":"Corporate action or anomaly inside the 25-session window; no unadjusted technical score."}
  last=rows[-1]
  try:age=(date.today()-date.fromisoformat(last["date"])).days
  except (ValueError,TypeError):age=10000

@@ -1,0 +1,78 @@
+{
+  "run_at": "2026-10-09T12:06:51.377319+00:00",
+  "source": "Bourse de Casablanca",
+  "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
+  "session_status": "open",
+  "session_date": "2026-10-09",
+  "universe": [
+    "ATW",
+    "BCP",
+    "IAM",
+    "MSA",
+    "MNG"
+  ],
+  "price_basis": "cours bruts non ajustés (adj_close = null)",
+  "tickers": {
+    "ATW": {
+      "status": "OK",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 670.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "zero_volume_sessions": 1
+    },
+    "BCP": {
+      "status": "OK",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 246.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "zero_volume_sessions": 1
+    },
+    "IAM": {
+      "status": "OK",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 90.0,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "zero_volume_sessions": 2
+    },
+    "MSA": {
+      "status": "OK",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 744.9,
+      "flagged_sessions": 0,
+      "flags_sample": [],
+      "zero_volume_sessions": 1
+    },
+    "MNG": {
+      "status": "OK",
+      "sessions": 728,
+      "received": 728,
+      "first_date": "2023-10-23",
+      "last_date": "2026-10-08",
+      "last_close": 1495.0,
+      "flagged_sessions": 1,
+      "flags_sample": [
+        [
+          "2026-07-27",
+          "move_gt_10pct"
+        ]
+      ],
+      "zero_volume_sessions": 9
+    }
+  },
+  "status": "OK"
+}

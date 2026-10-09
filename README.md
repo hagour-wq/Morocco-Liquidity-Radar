@@ -39,3 +39,16 @@ Le Liquidity Score complet reste en calibration tant que les agrégats OPCVM par
 
 ## Extension
 La même architecture pourra accueillir CAC 40, S&P 500 et Nasdaq après stabilisation du module Maroc.
+
+## Source officielle des cours (depuis le 9 octobre 2026)
+
+| Donnée | Service officiel (www.casablanca-bourse.com) | Profondeur | Champs | Script |
+|---|---|---|---|---|
+| Historique des actions | `/api/boursenova/stock-historical` (appelé par la page « Cours ») | ≈ 3 ans glissants, requêtes par fenêtres ≤ 1 an | séance, ouverture, plus haut, plus bas, dernier cours, titres échangés, montant MAD, nb transactions, capitalisation | `collect_equities.py` |
+| Instantané et statut de séance | page `/live-market/actions` et `/live-market/indices/cours?symbol=MASI` (drupalSettings) | jour courant | 81 actions : secteur, compartiment, OHLC, variation, volume MAD, nombre de titres ; MASI, veille, plus haut / bas ; statut open/closed | `collect_market.py` |
+
+- **TLS** : le serveur n'envoie pas son certificat intermédiaire. `certs/sectigo_public_server_auth_ca_dv_r36.pem` (Sectigo Public Server Authentication CA DV R36, SHA-256 `8C:54:C3:34:…:EF:22:E0`, expire en 2036) est ajouté au magasin certifi ; la vérification TLS reste active.
+- **Cours bruts** : non ajustés des dividendes ni des opérations sur titres (`adj_close` = null). Les ruptures de type division du nominal sont détectées (`corporate_action_suspected`, ex. MNG le 27/07/2026) et bloquent tout score technique dont la fenêtre les traverse.
+- **MASI** : aucune API ne fournit l'historique quotidien (le service `indices/historical` ne renvoie que l'intraday). La clôture officielle est enregistrée chaque soir, confirmée par la présence d'une cotation ATW ce jour-là. Les séances antérieures conservent leur source d'origine (`source`).
+- **Univers** : 5 titres pilotes (ATW, BCP, IAM, MSA, MNG). `EQUITY_UNIVERSE=all` étend aux 81 actions cotées.
+- Les scripts `backfill_equities*.py` (Yahoo, Investing, archives) ne sont plus exécutés quotidiennement : aucune de ces sources n'a produit de données validées.
