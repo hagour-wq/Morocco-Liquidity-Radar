@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T16:58:41.242740+00:00",
+  "generated_at": "2026-10-09T18:36:49.959989+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -126,6 +126,45 @@
         "sector": "Services de transport"
       },
       {
+        "ticker": "CSR",
+        "name": "COSUMAR",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cosumar_2025.pdf",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 48.3,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 171.0,
+        "price_date": "2026-10-09",
+        "pe": 22.96,
+        "pb": 2.87,
+        "roe_pct": 12.23,
+        "dividend_yield_pct": 5.26,
+        "risk_level": "moyen",
+        "eps_mad": 7.45,
+        "book_value_per_share_mad": 59.62,
+        "indicators": {
+          "roe_pct": 12.23,
+          "operating_margin_pct": 12.38,
+          "net_margin_pct": 6.71,
+          "revenue_growth_pct": 2.43,
+          "equity_ratio_pct": 49.95,
+          "net_income_growth_pct": -17.25
+        },
+        "components": {
+          "valuation": 52.6,
+          "dividend": 75.1,
+          "quality": 35.8,
+          "growth": 20.1,
+          "structure": 79.9
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
         "ticker": "MNG",
         "name": "MANAGEM",
         "model": "corporate",
@@ -167,8 +206,302 @@
         "sector": "Mines"
       }
     ],
-    "watch": [],
+    "watch": [
+      {
+        "ticker": "OUL",
+        "name": "SOCIETE LES EAUX MINERALES D'OULMES",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/oulmes_2025_cp_rfa_2025.pdf",
+        "category": "WATCH",
+        "status": "RESEARCH_ONLY",
+        "score": 53.9,
+        "partial": true,
+        "missing_components": [
+          "structure"
+        ],
+        "price_mad": 1225.0,
+        "price_date": "2026-10-09",
+        "pe": 21.59,
+        "pb": 3.08,
+        "roe_pct": 14.89,
+        "dividend_yield_pct": 3.28,
+        "risk_level": "élevé",
+        "eps_mad": 56.73,
+        "book_value_per_share_mad": 398.03,
+        "indicators": {
+          "roe_pct": 14.89,
+          "operating_margin_pct": 8.78,
+          "net_margin_pct": 3.46,
+          "revenue_growth_pct": 10.56,
+          "net_income_growth_pct": 94.05
+        },
+        "components": {
+          "valuation": 54.2,
+          "dividend": 46.9,
+          "quality": 35.8,
+          "growth": 79.4,
+          "structure": null
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Boissons"
+      }
+    ],
     "excluded": [
+      {
+        "ticker": "ADH",
+        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Participation et promotion immobilières"
+      },
+      {
+        "ticker": "ADI",
+        "name": "ALLIANCES DEVELOPPEMENT IMMOBILIER SA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/adi_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Participation et promotion immobilières"
+      },
+      {
+        "ticker": "AFI",
+        "name": "AFRIC INDUSTRIES",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afi_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "UNREADABLE",
+        "note": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "AFM",
+        "name": "AFMA SA",
+        "model": "insurance",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afma_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "SECTOR_MODEL_PENDING",
+        "note": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "AGM",
+        "name": "AGMA",
+        "model": "insurance",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/agma_2025_cp_rfa_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "SECTOR_MODEL_PENDING",
+        "note": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "AKT",
+        "name": "AKDITAL",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/akdital_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : net_income_group",
+        "sector": "Santé"
+      },
+      {
+        "ticker": "ALM",
+        "name": "ALUMINIUM  DU  MAROC",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/alm_-_resultats_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; chiffre d'affaires introuvable; manquant : revenue, net_income_group",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "ARD",
+        "name": "ARADEI CAPITAL",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/aradei_capital_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Sociétés de placement immobilier"
+      },
+      {
+        "ticker": "ATL",
+        "name": "ATLANTASANAD",
+        "model": "insurance",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/atlantasanad_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "SECTOR_MODEL_PENDING",
+        "note": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "BOA",
+        "name": "BANK OF AFRICA",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/boa_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; PNB introuvable; manquant : pnb, net_income_group, equity_total, minority_interests",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "CAP",
+        "name": "CASH PLUS S.A",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cash_plus_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, net_income_group, equity_total",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "CDM",
+        "name": "CREDIT DU MAROC",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cdm_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "BPA publié incohérent avec résultat / nombre de titres (rapport 1.07); capitaux propres part du groupe introuvables; manquant : minority_interests",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "CFG",
+        "name": "CFG BANK",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cfg_bank_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; PNB introuvable; manquant : pnb, net_income_group, equity_total, minority_interests, cost_of_risk, operating_expenses",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "CIH",
+        "name": "CREDIT IMMOBILIER ET HOTELIER",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cih_bank_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "BPA publié incohérent avec résultat / nombre de titres (rapport 0.00); capitaux propres part du groupe introuvables; manquant : minority_interests",
+        "sector": "Banques"
+      },
+      {
+        "ticker": "CMG",
+        "name": "CMGP GROUP",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cmgp_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, net_income_group, equity_total",
+        "sector": "Industrie Agricole"
+      },
+      {
+        "ticker": "CMT",
+        "name": "COMPAGNIE MINIERE DE TOUISSIT",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cmt_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : operating_income, net_income_group, equity_total",
+        "sector": "Mines"
+      },
+      {
+        "ticker": "COL",
+        "name": "COLORADO",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/colorado_rfa_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : operating_income, net_income_group, equity_total",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "CRS",
+        "name": "CARTIER SAADA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cartier_saada_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "DRI",
+        "name": "DARI COUSPATE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/dari_couspate_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Agroalimentaire et Production"
+      },
+      {
+        "ticker": "DYT",
+        "name": "DISTY TECHNOLOGIES",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/disty_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "EQD",
+        "name": "EQDOM",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/eqdom_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; PNB introuvable; manquant : net_income_group, equity_total, minority_interests, cost_of_risk, operating_expenses",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "GTM",
+        "name": "SOCIETE GENERALE DES TRAVAUX DU MAROC",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sgtm_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "BPA publié incohérent avec résultat / nombre de titres (rapport 1.65); capitaux propres part du groupe introuvables",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "HPS",
+        "name": "HIGHTECH PAYMENT SYSTEMS",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/hps_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : net_income_group",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
       {
         "ticker": "IAM",
         "name": "ITISSALAT AL-MAGHRIB",
@@ -179,10 +512,219 @@
         "status": "UNREADABLE",
         "note": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place",
         "sector": "Télécommunications"
+      },
+      {
+        "ticker": "LBV",
+        "name": "LABEL VIE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/label_vie_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "M2M",
+        "name": "M2M GROUP",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/m2m_group_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : net_income_group, equity_total",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "MIC",
+        "name": "MICRODATA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/microdata_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Matériels, Logiciels et Services Informatiques"
+      },
+      {
+        "ticker": "MLE",
+        "name": "MAROC LEASING",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/mle_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : net_income_group, equity_total, minority_interests, cost_of_risk, operating_expenses",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "MOX",
+        "name": "MAGHREB OXYGENE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/mox_rfa_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : net_income_group, equity_total",
+        "sector": "Chimie"
+      },
+      {
+        "ticker": "PRO",
+        "name": "SOCIETE DE PROMOTION PHARMACEUTIQUE DU MAGHREB S.A",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/promopharm_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Industrie Pharmaceutique"
+      },
+      {
+        "ticker": "RDS",
+        "name": "RESIDENCES DAR SAADA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/rds_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "UNREADABLE",
+        "note": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place",
+        "sector": "Participation et promotion immobilières"
+      },
+      {
+        "ticker": "RIS",
+        "name": "RISMA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/risma_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "capitaux propres part du groupe introuvables; manquant : equity_total",
+        "sector": "Loisirs et Hôtels"
+      },
+      {
+        "ticker": "SAH",
+        "name": "SANLAM MAROC",
+        "model": "insurance",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sanlam_rfa_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "SECTOR_MODEL_PENDING",
+        "note": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués",
+        "sector": "Assurances"
+      },
+      {
+        "ticker": "SBM",
+        "name": "SOCIETE DES BOISSONS DU MAROC",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sbm_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "UNREADABLE",
+        "note": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place",
+        "sector": "Boissons"
+      },
+      {
+        "ticker": "SID",
+        "name": "SOCIETE NATIONALE DE SIDERURGIE SA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sonasid_2025_0.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "SLF",
+        "name": "SALAFIN",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/salafin_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : net_income_group, equity_total, minority_interests, cost_of_risk, operating_expenses",
+        "sector": "Sociétés de financement et Autres Activités Financières"
+      },
+      {
+        "ticker": "SMI",
+        "name": "SOCIETE METALLURGIQUE D'IMITER",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/smi_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Mines"
+      },
+      {
+        "ticker": "SNA",
+        "name": "STOKVIS NORD AFRIQUE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sna_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "UNREADABLE",
+        "note": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place",
+        "sector": "Distributeurs"
+      },
+      {
+        "ticker": "SNP",
+        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/snep_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; manquant : operating_income, net_income_group, equity_total",
+        "sector": "Chimie"
+      },
+      {
+        "ticker": "SOT",
+        "name": "SOCIETE DE THERAPEUTIQUE MAROCAINE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sothema_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : net_income_group, equity_total",
+        "sector": "Industrie Pharmaceutique"
+      },
+      {
+        "ticker": "STR",
+        "name": "SOCIETE DE TRAVAUX DE REALISATION D'OUVRAGES ET DE CONSTRUCTION INDUSTRIELLE",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/stroc_2025_1.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, operating_income, net_income_group, equity_total",
+        "sector": "Ingénieries et Biens d'Equipement Industriels"
+      },
+      {
+        "ticker": "TGC",
+        "name": "TRAVAUX GENERAUX DE CONSTRUCTION DE CASABLANCA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/tgcc_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; manquant : operating_income, net_income_group",
+        "sector": "Bâtiment et Matériaux de Construction"
+      },
+      {
+        "ticker": "TQM",
+        "name": "TAQA MOROCCO",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/taqa_morocco_2025.pdf",
+        "category": "NON_ANALYSABLE",
+        "status": "REJECTED",
+        "note": "capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, equity_total",
+        "sector": "Electricité"
       }
     ],
     "coverage": {
-      "issuers_in_registry": 5,
+      "issuers_in_registry": 49,
       "listed": 81
     },
     "status": "AVAILABLE"
