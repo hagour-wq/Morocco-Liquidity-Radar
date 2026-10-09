@@ -4,7 +4,7 @@
   "components": {
     "opcvm": {
       "weight": 40,
-      "score": -19,
+      "score": -37,
       "verified": true,
       "reference_date": "2026-09-25",
       "raw": {
@@ -12,11 +12,11 @@
         "bond_flow": null,
         "money_market_flow": null,
         "estimated_adjusted_flow_signal": {
-          "score": -19,
-          "weeks": 7,
-          "recent_3w_avg_pct": -0.2369,
-          "full_avg_pct": -0.1115,
-          "persistence": -0.1429,
+          "score": -37,
+          "weeks": 8,
+          "recent_3w_avg_pct": -0.516,
+          "full_avg_pct": -0.1402,
+          "persistence": -0.25,
           "estimated": true,
           "method": "Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"
         }
@@ -74,6 +74,7 @@
       "candidates": [
         "https://www.ammc.ma/fr/espace-epargnants/opcvm",
         "https://www.ammc.ma/fr/espace-epargnants/reseaux-de-commercialisation-des-opcvm",
+        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_02102026.xls",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2018-09-2026.xls",
         "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-11092026.xlsx",
@@ -81,7 +82,6 @@
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_28082026.xlsx",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_24082026.xls",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_17082026.xls",
-        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-07082026.xlsx",
         "https://www.ammc.ma/fr/actualites/la-liste-des-autorisations-accordees-aux-opcvm-au-titre-du-mois-de-septembre-2026"
       ],
       "status": "FOUND"
@@ -97,7 +97,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-09T14:40:46.691590+00:00",
+  "collector_checked_at": "2026-10-09T16:09:57.583333+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
@@ -125,6 +125,471 @@
     }
   },
   "ammc_workbook_inspection": [
+    {
+      "url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_02102026.xls",
+      "bytes": 66048,
+      "sheets": [
+        "Français "
+      ],
+      "samples": {
+        "Français ": {
+          "first_nonempty_row": 19,
+          "rows": [
+            {
+              "row": 19,
+              "values": [
+                "",
+                "Actif net par catégorie OPCVM",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 20,
+              "values": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Variation (%)",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 22,
+              "values": [
+                "",
+                "Catégorie",
+                "Nombre OPCVM",
+                "Montant",
+                "Structure",
+                "Variation Hebdomadaire",
+                "Variation Mensuelle",
+                "Variation Annuelle",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 23,
+              "values": [
+                "",
+                "Actions",
+                "119.0",
+                "71601385920.9857",
+                "9.04092362645365",
+                "-2.84620667829348",
+                "-2.84620667829348",
+                "-7.26742942258157",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 24,
+              "values": [
+                "",
+                "Diversifiés",
+                "140.0",
+                "106836099096.385",
+                "13.4899206217118",
+                "-2.36694470255764",
+                "-2.36694470255764",
+                "3.98136571887055",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 25,
+              "values": [
+                "",
+                "Monétaire",
+                "71.0",
+                "124129881260.769",
+                "15.6735622055948",
+                "-12.3752148961835",
+                "-12.3752148961835",
+                "12.7426176365376",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 26,
+              "values": [
+                "",
+                "Obligations CT",
+                "73.0",
+                "122388734920.945",
+                "15.4537121164053",
+                "-3.0222417250558",
+                "-3.0222417250558",
+                "8.10192790538132",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 27,
+              "values": [
+                "",
+                "Obligations MLT",
+                "218.0",
+                "352843130903.973",
+                "44.5525984949774",
+                "-0.414938376881523",
+                "-0.414938376881523",
+                "-5.39909405335743",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 28,
+              "values": [
+                "",
+                "Contractuel",
+                "6.0",
+                "14170580709.88",
+                "1.7892829348569",
+                "-4.8217590031832",
+                "-4.8217590031832",
+                "61.0103604743561",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 29,
+              "values": [
+                "",
+                "TOTAL",
+                "627.0",
+                "791969812812.9377",
+                "99.99999999999984",
+                "-3.440752066349479",
+                "-3.440752066349479",
+                "0.8806486093940533",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 31,
+              "values": [
+                "",
+                "Indices De Performance",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 32,
+              "values": [
+                "",
+                "",
+                "",
+                "Variation (%)",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 34,
+              "values": [
+                "",
+                "Catégorie",
+                "Indices",
+                "Variation Hebdomadaire",
+                "Variation Mensuelle",
+                "Variation Annuelle",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 35,
+              "values": [
+                "",
+                "Actions1",
+                "939.8655790418406",
+                "-2.8036228575799025",
+                "-2.8036228575799025",
+                "-7.084259422664396",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 36,
+              "values": [
+                "",
+                "Diversifiés1",
+                "671.2423625162238",
+                "-1.173331091644616",
+                "-1.173331091644616",
+                "-3.5569367461617194",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 37,
+              "values": [
+                "",
+                "Monétaire2",
+                "179.82474094781142",
+                "0.049885936662103184",
+                "0.049885936662103184",
+                "1.8516787423160923",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 38,
+              "values": [
+                "",
+                "Obligations CT2",
+                "194.36883991392105",
+                "0.06402397583196227",
+                "0.06402397583196227",
+                "2.063655804260267",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 39,
+              "values": [
+                "",
+                "Obligations MLT2",
+                "240.86014264514236",
+                "0.027227135001609015",
+                "0.027227135001609015",
+                "-0.8307128109225829",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 40,
+              "values": [
+                "",
+                "1  les indices tiennent compte des opérations sur titres et ont pour base 100 au 31/12/1996 ",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 41,
+              "values": [
+                "",
+                "2 les indices tiennent compte des opérations sur titres et ont pour base 100 au 31/12/2004",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 43,
+              "values": [
+                "",
+                "Actif Total Par Catégorie De Valeurs",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 44,
+              "values": [
+                "",
+                "",
+                "",
+                "",
+                "Variation  (%)",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 46,
+              "values": [
+                "",
+                "Catégorie",
+                "Montant",
+                "Structure",
+                "Variation Hebdomadaire",
+                "Variation Mensuelle",
+                "Variation Annuelle",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 47,
+              "values": [
+                "",
+                "Valeurs cotées (VC)",
+                "111364045275.129",
+                "13.2084464638878",
+                "-3.05847150392263",
+                "-3.05847150392263",
+                "-7.72713889431205",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 48,
+              "values": [
+                "",
+                "VC Actions",
+                "108598983043.429",
+                "12.8804934305143",
+                "-3.12694865096378",
+                "-3.12694865096378",
+                "-7.6446838540038",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 49,
+              "values": [
+                "",
+                "VC Obligations privées",
+                "2765062231.7",
+                "0.327953033373548",
+                "-0.290247927499743",
+                "-0.290247927499743",
+                "-10.853091883112",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 50,
+              "values": [
+                "",
+                "VC Obligations émises ou garanties par l'état",
+                "0.0",
+                "0.0",
+                "0.0",
+                "0.0",
+                "0.0",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 51,
+              "values": [
+                "",
+                "Valeurs non cotées (VNC)",
+                "659682989764.849",
+                "78.2423755523584",
+                "0.136097571099906",
+                "0.136097571099906",
+                "1.69666741526482",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 52,
+              "values": [
+                "",
+                "VNC Actions",
+                "387651684.93",
+                "0.0459778244799207",
+                "-44.7054526079076",
+                "-44.7054526079076",
+                "-44.736954801589",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "row": 53,
+              "values": [
+                "",
+                "VNC Obligations privées",
+                "155692397109.433",
+                "18.4660559606448",
+                "-0.013775229815023",
+                "-0.013775229815023",
+                "9.0426952570201",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      },
+      "status": "SCHEMA_READ"
+    },
     {
       "url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
       "bytes": 55394,
@@ -4132,10 +4597,60 @@
   "ammc_file_pool": {
     "discovered": 8,
     "cached": 8,
-    "usable_candidates": 8
+    "usable_candidates": 9
   },
   "opcvm_flow_estimate": {
     "current": {
+      "nav": {
+        "Actions": {
+          "amount": 71601385920.9857,
+          "weekly_pct": -2.84620667829348
+        },
+        "Diversifiés": {
+          "amount": 106836099096.385,
+          "weekly_pct": -2.36694470255764
+        },
+        "Monétaire": {
+          "amount": 124129881260.769,
+          "weekly_pct": -12.3752148961835
+        },
+        "Obligations CT": {
+          "amount": 122388734920.945,
+          "weekly_pct": -3.0222417250558
+        },
+        "Obligations MLT": {
+          "amount": 352843130903.973,
+          "weekly_pct": -0.414938376881523
+        },
+        "Contractuel": {
+          "amount": 14170580709.88,
+          "weekly_pct": -4.8217590031832
+        }
+      },
+      "performance": {
+        "Actions": {
+          "index": 939.8655790418406,
+          "weekly_pct": -2.8036228575799025
+        },
+        "Diversifiés": {
+          "index": 671.2423625162238,
+          "weekly_pct": -1.173331091644616
+        },
+        "Monétaire": {
+          "index": 179.82474094781142,
+          "weekly_pct": 0.049885936662103184
+        },
+        "Obligations CT": {
+          "index": 194.36883991392105,
+          "weekly_pct": 0.06402397583196227
+        },
+        "Obligations MLT": {
+          "index": 240.86014264514236,
+          "weekly_pct": 0.027227135001609015
+        }
+      }
+    },
+    "previous": {
       "nav": {
         "Actions": {
           "amount": 73699012125.9508,
@@ -4185,84 +4700,34 @@
         }
       }
     },
-    "previous": {
-      "nav": {
-        "Actions": {
-          "amount": 73155752899.4593,
-          "weekly_pct": -6.01481081596537
-        },
-        "Diversifiés": {
-          "amount": 108961838672.157,
-          "weekly_pct": -3.13841167649234
-        },
-        "Monétaire": {
-          "amount": 148654446079.048,
-          "weekly_pct": -0.110944473189136
-        },
-        "Obligations CT": {
-          "amount": 140074275635.396,
-          "weekly_pct": -1.65435783731779
-        },
-        "Obligations MLT": {
-          "amount": 353028688037.466,
-          "weekly_pct": -0.988995700086688
-        },
-        "Contractuel": {
-          "amount": 15649144016.76,
-          "weekly_pct": 21.1326937661912
-        }
-      },
-      "performance": {
-        "Actions": {
-          "index": 954.8760251617413,
-          "weekly_pct": -5.436344114007622
-        },
-        "Diversifiés": {
-          "index": 674.5884285240709,
-          "weekly_pct": -2.9824879194572738
-        },
-        "Monétaire": {
-          "index": 179.68098262622377,
-          "weekly_pct": 0.04199224158307009
-        },
-        "Obligations CT": {
-          "index": 194.1500620978678,
-          "weekly_pct": -0.009163962762055805
-        },
-        "Obligations MLT": {
-          "index": 239.95525613528488,
-          "weekly_pct": -0.9726315401549646
-        }
-      }
-    },
     "flows": {
       "Actions": {
-        "estimated_flow_mad": -383749275.4,
-        "estimated_flow_pct_opening_nav": -0.5246,
+        "estimated_flow_mad": -31383855.19,
+        "estimated_flow_pct_opening_nav": -0.0426,
         "method": "A1 - A0*(1 + category_performance)",
         "estimated": true
       },
       "Diversifiés": {
-        "estimated_flow_mad": -282460213.23,
-        "estimated_flow_pct_opening_nav": -0.2592,
+        "estimated_flow_mad": -1306125488.24,
+        "estimated_flow_pct_opening_nav": -1.1936,
         "method": "A1 - A0*(1 + category_performance)",
         "estimated": true
       },
       "Monétaire": {
-        "estimated_flow_mad": -7038503915.81,
-        "estimated_flow_pct_opening_nav": -4.7348,
+        "estimated_flow_mad": -17601484433.96,
+        "estimated_flow_pct_opening_nav": -12.4251,
         "method": "A1 - A0*(1 + category_performance)",
         "estimated": true
       },
       "Obligations CT": {
-        "estimated_flow_mad": -13939502107.97,
-        "estimated_flow_pct_opening_nav": -9.9515,
+        "estimated_flow_mad": -3894956549.63,
+        "estimated_flow_pct_opening_nav": -3.0863,
         "method": "A1 - A0*(1 + category_performance)",
         "estimated": true
       },
       "Obligations MLT": {
-        "estimated_flow_mad": 49786981.63,
-        "estimated_flow_pct_opening_nav": 0.0141,
+        "estimated_flow_mad": -1566651273.27,
+        "estimated_flow_pct_opening_nav": -0.4422,
         "method": "A1 - A0*(1 + category_performance)",
         "estimated": true
       }
@@ -4271,6 +4736,42 @@
     "warning": "Not official subscriptions/redemptions; valuation-adjusted estimate."
   },
   "opcvm_flow_series": [
+    {
+      "current_url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_02102026.xls",
+      "previous_url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
+      "flows": {
+        "Actions": {
+          "estimated_flow_mad": -31383855.19,
+          "estimated_flow_pct_opening_nav": -0.0426,
+          "method": "A1 - A0*(1 + category_performance)",
+          "estimated": true
+        },
+        "Diversifiés": {
+          "estimated_flow_mad": -1306125488.24,
+          "estimated_flow_pct_opening_nav": -1.1936,
+          "method": "A1 - A0*(1 + category_performance)",
+          "estimated": true
+        },
+        "Monétaire": {
+          "estimated_flow_mad": -17601484433.96,
+          "estimated_flow_pct_opening_nav": -12.4251,
+          "method": "A1 - A0*(1 + category_performance)",
+          "estimated": true
+        },
+        "Obligations CT": {
+          "estimated_flow_mad": -3894956549.63,
+          "estimated_flow_pct_opening_nav": -3.0863,
+          "method": "A1 - A0*(1 + category_performance)",
+          "estimated": true
+        },
+        "Obligations MLT": {
+          "estimated_flow_mad": -1566651273.27,
+          "estimated_flow_pct_opening_nav": -0.4422,
+          "method": "A1 - A0*(1 + category_performance)",
+          "estimated": true
+        }
+      }
+    },
     {
       "current_url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
       "previous_url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2018-09-2026.xls",
@@ -4525,11 +5026,11 @@
     }
   ],
   "opcvm_signal": {
-    "score": -19,
-    "weeks": 7,
-    "recent_3w_avg_pct": -0.2369,
-    "full_avg_pct": -0.1115,
-    "persistence": -0.1429,
+    "score": -37,
+    "weeks": 8,
+    "recent_3w_avg_pct": -0.516,
+    "full_avg_pct": -0.1402,
+    "persistence": -0.25,
     "estimated": true,
     "method": "Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"
   }

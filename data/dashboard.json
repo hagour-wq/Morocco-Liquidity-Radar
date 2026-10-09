@@ -1,10 +1,10 @@
 {
   "as_of": "2026-10-07",
-  "composite": -9,
+  "composite": -13,
   "regime": "NEUTRAL",
   "conclusion": "Market Flow neutre (-7). Momentum 1 séance +0.58% et 5 séances -4.19%. Couverture 70%.",
   "scores": {
-    "liquidity": -15,
+    "liquidity": -22,
     "market_flow": -7,
     "global": 8
   },
@@ -154,14 +154,14 @@
     ]
   },
   "liquidity_detail": {
-    "score": -15,
+    "score": -22,
     "coverage": 1.0,
     "confidence": "high",
     "reference_date": "2026-09-25",
     "components": {
       "opcvm": {
         "weight": 40,
-        "score": -19,
+        "score": -37,
         "verified": true,
         "reference_date": "2026-09-25",
         "raw": {
@@ -169,11 +169,11 @@
           "bond_flow": null,
           "money_market_flow": null,
           "estimated_adjusted_flow_signal": {
-            "score": -19,
-            "weeks": 7,
-            "recent_3w_avg_pct": -0.2369,
-            "full_avg_pct": -0.1115,
-            "persistence": -0.1429,
+            "score": -37,
+            "weeks": 8,
+            "recent_3w_avg_pct": -0.516,
+            "full_avg_pct": -0.1402,
+            "persistence": -0.25,
             "estimated": true,
             "method": "Actions adjusted flow + 25% Diversifies; 55% recent 3w + 25% full-period mean + 20% sign persistence"
           }
@@ -253,7 +253,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T14:42:50.958540+00:00",
+    "computed_at": "2026-10-09T16:11:45.354779+00:00",
     "history_sessions": 87,
     "observations": 82,
     "usable_5d": 47,
@@ -293,7 +293,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T14:42:50.896434+00:00",
+  "retrieved_at": "2026-10-09T16:11:45.300700+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
@@ -303,7 +303,7 @@
     "sessions": 28
   },
   "global_detail": {
-    "checked_at": "2026-10-09T14:41:24.221552+00:00",
+    "checked_at": "2026-10-09T16:10:38.283390+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -334,9 +334,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.2760009765625,
-        "change_5obs": 0.339,
-        "score": -2.7,
+        "value": 102.30400085449219,
+        "change_5obs": 0.367,
+        "score": -2.9,
         "verified": true,
         "failed_sources": []
       },
@@ -345,9 +345,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 7788.60986328125,
-        "change_5obs": 0.853,
-        "score": 6.8,
+        "value": 7801.4501953125,
+        "change_5obs": 1.019,
+        "score": 8.2,
         "verified": true,
         "failed_sources": []
       }

@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-10-09T14:41:25.694400+00:00",
+  "run_at": "2026-10-09T16:10:39.192710+00:00",
   "source": "Bourse de Casablanca",
   "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
-  "session_status": "open",
+  "session_status": "closed",
   "session_date": "2026-10-09",
   "universe_size": 81,
   "price_basis": "cours bruts non ajustés (adj_close = null)",
