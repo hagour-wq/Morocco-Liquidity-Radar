@@ -8,6 +8,9 @@ on:
       - ".github/workflows/zenodo-equity-research.yml"
 permissions:
   contents: write
+concurrency:
+  group: data-push-main
+  cancel-in-progress: false
 jobs:
   inspect:
     runs-on: ubuntu-latest
@@ -32,4 +35,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/zenodo_casablanca_inspection.json
           git diff --cached --quiet || git commit -m "data: inspect Casablanca research archive"
+          git pull --rebase origin main
           git push

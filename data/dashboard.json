@@ -252,10 +252,13 @@
   "backtest": {
     "status": "experimental",
     "method": "momentum_direction_5d",
-    "observations": 23,
-    "usable_5d": 18,
-    "directional_accuracy_5d_pct": 61.1,
-    "warning": "Échantillon trop court pour conclure; à recalculer automatiquement avec l'historique croissant."
+    "source_file": "data/backtest.json",
+    "computed_at": "2026-10-09T11:38:25.007860+00:00",
+    "history_sessions": 87,
+    "observations": 82,
+    "usable_5d": 47,
+    "directional_accuracy_5d_pct": 48.9,
+    "warning": "Échantillon de 47 observations à 5 séances (< 100) : non concluant. Diagnostic sur le MASI, sans coûts de transaction ; ne constitue pas une prévision."
   },
   "data_quality": {
     "market_history_sessions": 87,

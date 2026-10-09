@@ -13,6 +13,10 @@ on:
     - cron: "20 18 * * 1-5"
 permissions:
   contents: write
+# Un seul workflow à la fois peut pousser des données sur main.
+concurrency:
+  group: data-push-main
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,41 +27,46 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Validate global collector
-        continue-on-error: true
-        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py
+      - name: Unit tests (bloquants)
+        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py
       - name: Collect Casablanca snapshot
+        id: masi
         continue-on-error: true
         run: python collect_market.py
       - name: Collect BAM and AMMC liquidity
+        id: liquidity
         continue-on-error: true
         run: python collect_liquidity.py
       - name: Discover BAM liquidity publications
+        id: bam
         continue-on-error: true
         run: python collect_bam.py
       - name: Collect global risk inputs
+        id: global
         continue-on-error: true
         run: python collect_global.py
       - name: Recalculate dashboard
         run: python update.py
-      - name: Run diagnostic backtest
+      - name: Run diagnostic backtest (synchronise aussi dashboard.json)
         run: python backtest.py
       - name: Backfill historical individual equity prices and volumes
+        id: eq_official
         continue-on-error: true
         env:
           EQUITY_BACKFILL_START: "2025-01-01"
           EQUITY_BACKFILL_PAGES: "70"
         run: python backfill_equities.py
       - name: Independent Casablanca stock history fallback
+        id: eq_fallback
         continue-on-error: true
         run: python backfill_equities_fallback.py
       - name: Recover already published equity history from independent public archive
+        id: eq_public
         continue-on-error: true
         run: python backfill_equities_public.py
       - name: Build equity fundamental and technical rankings
         run: python rank_equities.py
-      - name: Verify dashboard renders with current data
-        continue-on-error: true
+      - name: Verify dashboard renders with current data (bloquant)
         run: node test_dashboard.cjs
       - name: Preserve collector diagnostics even on failure
         if: always()
@@ -75,4 +84,36 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/
           git diff --cached --quiet || git commit -m "data: refresh market radar"
+          git pull --rebase origin main
           git push
+      - name: Collector status report
+        if: always()
+        env:
+          MASI: ${{ steps.masi.outcome }}
+          LIQ: ${{ steps.liquidity.outcome }}
+          BAM: ${{ steps.bam.outcome }}
+          GLOBAL: ${{ steps.global.outcome }}
+          EQ1: ${{ steps.eq_official.outcome }}
+          EQ2: ${{ steps.eq_fallback.outcome }}
+          EQ3: ${{ steps.eq_public.outcome }}
+        run: |
+          {
+            echo "## État des collecteurs"
+            echo "| Collecteur | Rôle | Résultat |"
+            echo "|---|---|---|"
+            echo "| collect_market.py | MASI (cœur) | $MASI |"
+            echo "| collect_liquidity.py | BAM/AMMC (cœur) | $LIQ |"
+            echo "| collect_bam.py | Publications BAM (cœur) | $BAM |"
+            echo "| collect_global.py | Risque global (cœur) | $GLOBAL |"
+            echo "| backfill_equities.py | Actions, expérimental | $EQ1 |"
+            echo "| backfill_equities_fallback.py | Actions, expérimental | $EQ2 |"
+            echo "| backfill_equities_public.py | Actions, expérimental | $EQ3 |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          for v in "EQ1:$EQ1" "EQ2:$EQ2" "EQ3:$EQ3"; do
+            [ "${v#*:}" = "failure" ] && echo "::warning::Collecteur actions expérimental en échec (${v%%:*}) — source non validée."
+          done
+          fail=0
+          for v in "MASI:$MASI" "LIQ:$LIQ" "BAM:$BAM" "GLOBAL:$GLOBAL"; do
+            if [ "${v#*:}" = "failure" ]; then echo "::error::Collecteur cœur en échec : ${v%%:*}"; fail=1; fi
+          done
+          exit $fail
