@@ -1,0 +1,144 @@
+{
+ "/sitemap.xml": "HTTP Error 404: Not Found",
+ "/fr/sitemap.xml": {
+  "bytes": 78422,
+  "head": "<!DOCTYPE html>\n<html lang=\"fr\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-52BF6KC');\n</script>\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link rel=\"icon\" href=\"/sites/default/files/favicon.png\" type=\"image/png\" />\n\n    <title>Accueil | Bourse de Casablanca</title>\n    <link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_bgf7al6iHzWBXQmPbKps-pt5-lbC2m9XiX4nyu7ALg4.css?delta=0&amp;language=fr&amp;theme=bn_institutional&amp;include=eJxdyEEKgEAIAMAPWT4plGwRXIXVLfb3Qccucxj2Qz1La5aGk-E1wgv4382CybasZeoNcmVJR6YUuFWexM-9xzlNXsM0Ie4\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/sites/default/files/css/css_xOR3aRK9PSsPVYFC0zDY2fDbfd0dDS-ipC3tUYmZYWU.css?delta=1&amp;language=fr&amp;theme=bn_institutional&amp;include=eJxdyEEKgEAIAMAPWT4plGwRXIXVLfb3Qccucxj2Qz1La5aGk-E1wgv4382CybasZeoNcmVJR6YUuFWexM-9xzlNXsM0Ie4\" />\n\n    \n    \n  </head>\n  <body class=\"page-node\">\n      <div class=\"dialog-off-canvas-main-canvas\" data-off-canvas-main-canvas>\n    \n\n\n<!-- Spinner Start -->\n<div id=\"spinner\" class=\"show bg-whi",
+  "emetteur_urls": [
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "/robots.txt": {
+  "bytes": 2005,
+  "head": "#\n# robots.txt\n#\n# This file is to prevent the crawling and indexing of certain parts\n# of your site by web crawlers and spiders run by sites like Yahoo!\n# and Google. By telling these \"robots\" where not to go on your site,\n# you save bandwidth and server resources.\n#\n# This file will be ignored unless it is at the root of your host:\n# Used:    http://example.com/robots.txt\n# Ignored: http://example.com/site/robots.txt\n#\n# For more information about the robots.txt standard, see:\n# http://www.robotstxt.org/robotstxt.html\n\nUser-agent: *\n# CSS, JS, Images\nAllow: /core/*.css$\nAllow: /core/*.css?\nAllow: /core/*.js$\nAllow: /core/*.js?\nAllow: /core/*.gif\nAllow: /core/*.jpg\nAllow: /core/*.jpeg\nAllow: /core/*.png\nAllow: /core/*.svg\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /profiles/*.svg\n# Directories\nDisallow: /core/\nDisallow: /profiles/\n# Files\nDisallow: /README.md\nDisallow: /composer/Metapackage/README.txt\nDisallow: /composer/Plugin/ProjectMessage/README.md\nDisallow: /composer/Plugin/Scaffold/README.md\nDisallow: /composer/Plugin/VendorHardening/README.txt\nDisallow: /composer/Template/README.txt\nDisallow: /modules/README.txt\nDisallow: /sites/README.txt\nDisallow: /themes/README.txt\n# Paths (clean URLs)\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /user/register\nD",
+  "emetteur_urls": []
+ },
+ "/live-market/actions": {
+  "bytes": 107748,
+  "title": "Actions | Bourse de Casablanca",
+  "links": []
+ },
+ "/fr/live-market/emetteurs": {
+  "bytes": 78422,
+  "title": "Accueil | Bourse de Casablanca",
+  "links": [
+   "/emetteurs/calendrier-financier",
+   "/emetteurs/liste-emetteurs",
+   "/emetteurs/pourquoi-se-financer",
+   "/emetteurs/se-preparer-marche",
+   "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+   "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf",
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "/fr/emetteurs": {
+  "bytes": 78422,
+  "title": "Accueil | Bourse de Casablanca",
+  "links": [
+   "/emetteurs/calendrier-financier",
+   "/emetteurs/liste-emetteurs",
+   "/emetteurs/pourquoi-se-financer",
+   "/emetteurs/se-preparer-marche",
+   "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+   "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf",
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "/live-market/emetteurs": "HTTP Error 404: Not Found",
+ "/fr/live-market/instruments/ATW": {
+  "bytes": 78422,
+  "title": "Accueil | Bourse de Casablanca",
+  "links": [
+   "/emetteurs/calendrier-financier",
+   "/emetteurs/liste-emetteurs",
+   "/emetteurs/pourquoi-se-financer",
+   "/emetteurs/se-preparer-marche",
+   "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+   "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf",
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "/fr/live-market/emetteur/attijariwafa-bank": {
+  "bytes": 78422,
+  "title": "Accueil | Bourse de Casablanca",
+  "links": [
+   "/emetteurs/calendrier-financier",
+   "/emetteurs/liste-emetteurs",
+   "/emetteurs/pourquoi-se-financer",
+   "/emetteurs/se-preparer-marche",
+   "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+   "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf",
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "/fr/emetteurs/attijariwafa-bank": {
+  "bytes": 78422,
+  "title": "Accueil | Bourse de Casablanca",
+  "links": [
+   "/emetteurs/calendrier-financier",
+   "/emetteurs/liste-emetteurs",
+   "/emetteurs/pourquoi-se-financer",
+   "/emetteurs/se-preparer-marche",
+   "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+   "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf",
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "/fr/live-market/instruments/actions/ATW": {
+  "bytes": 78422,
+  "title": "Accueil | Bourse de Casablanca",
+  "links": [
+   "/emetteurs/calendrier-financier",
+   "/emetteurs/liste-emetteurs",
+   "/emetteurs/pourquoi-se-financer",
+   "/emetteurs/se-preparer-marche",
+   "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+   "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+   "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf",
+   "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+   "https://www.casablanca-bourse.com/emetteurs/pourquoi-se-financer"
+  ]
+ },
+ "action_keys": [
+  "symbol",
+  "ce",
+  "emetteur",
+  "secteur",
+  "compartiment",
+  "statut",
+  "ouverture",
+  "plusHaut",
+  "plusBas",
+  "dernierCours",
+  "reference",
+  "variation",
+  "volume",
+  "quantite",
+  "nbTransactions",
+  "capitalisation",
+  "nombreTitres",
+  "achat",
+  "vente"
+ ],
+ "bulletin": {
+  "url": "/sites/default/files/bulletins_de_la_cote/2026-10/bcfr_20261005.pdf",
+  "bytes": 269511,
+  "chars": 56764
+ }
+}
