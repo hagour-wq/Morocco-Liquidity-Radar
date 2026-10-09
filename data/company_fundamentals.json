@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T16:34:27.139159+00:00",
+ "generated_at": "2026-10-09T16:39:59.232759+00:00",
  "source_registry": "data/fundamentals_sources.json",
  "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
  "companies": [
@@ -15,7 +15,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "collected_at": "2026-10-09T16:39:59.232759+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -149,7 +149,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "collected_at": "2026-10-09T16:39:59.232759+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -283,7 +283,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "collected_at": "2026-10-09T16:39:59.232759+00:00",
    "status": "UNREADABLE",
    "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
   },
@@ -299,7 +299,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "collected_at": "2026-10-09T16:39:59.232759+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -401,7 +401,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T16:34:27.139159+00:00",
+   "collected_at": "2026-10-09T16:39:59.232759+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [

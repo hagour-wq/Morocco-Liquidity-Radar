@@ -253,7 +253,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T16:36:33.350280+00:00",
+    "computed_at": "2026-10-09T16:40:53.316232+00:00",
     "history_sessions": 703,
     "observations": 698,
     "usable_5d": 673,
@@ -293,7 +293,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T16:36:33.263868+00:00",
+  "retrieved_at": "2026-10-09T16:40:53.226477+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16797.1032,
@@ -303,7 +303,7 @@
     "sessions": 703
   },
   "global_detail": {
-    "checked_at": "2026-10-09T16:31:19.200811+00:00",
+    "checked_at": "2026-10-09T16:38:23.001594+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -334,9 +334,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.31999969482422,
-        "change_5obs": 0.383,
-        "score": -3.1,
+        "value": 102.30699920654297,
+        "change_5obs": 0.37,
+        "score": -3.0,
         "verified": true,
         "failed_sources": []
       },
@@ -345,8 +345,8 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 7807.39990234375,
-        "change_5obs": 1.097,
+        "value": 7807.2099609375,
+        "change_5obs": 1.094,
         "score": 8.8,
         "verified": true,
         "failed_sources": []
