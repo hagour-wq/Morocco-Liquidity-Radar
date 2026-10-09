@@ -95,3 +95,32 @@ for k,u in pages.items():
            "links":sorted(set(re.findall(r'href="([^"]*(?:histori|instrument|telecharg|download|\.xlsx|\.csv|\.pdf)[^"]*)"',t,re.I)))[:40]}
     except Exception as e: report["pages"][k]={"error":f"{type(e).__name__}: {e}"}
 (OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+
+# Étape 2b : scripts applicatifs + pages historiques
+import html as _h
+pages2={"cours":"https://www.casablanca-bourse.com/market-data/cours","bulletins":"https://www.casablanca-bourse.com/market-data/bulletins-de-la-cote",
+        "editions":"https://www.casablanca-bourse.com/market-data/editions-statistiques","transactions":"https://www.casablanca-bourse.com/live-market/transactions?type=actions"}
+for k,u in pages2.items():
+    try:
+        st,h,b=get(u,ctx); t=b.decode("utf-8","ignore"); (OUT/f"page_{k}.html").write_text(t,encoding="utf-8")
+        report["pages"][k]={"status":st,"bytes":len(b),"tables":t.count("<table"),"rows":t.count("<tr"),
+           "links":sorted(set(re.findall(r'href="([^"]*(?:\.xlsx|\.xls|\.csv|\.pdf|\.zip)[^"]*)"',t,re.I)))[:60]}
+    except Exception as e: report["pages"][k]={"error":f"{type(e).__name__}: {e}"}
+report["js_endpoints"]={}
+seen=set()
+for k in ["actions","indices","volume","cours","bulletins"]:
+    p=OUT/f"page_{k}.html"
+    if not p.exists(): continue
+    for s in re.findall(r'<script[^>]+src="(/sites/default/files/js/[^"]+)"',p.read_text(encoding="utf-8")):
+        s=_h.unescape(s)
+        if s in seen: continue
+        seen.add(s)
+        try:
+            _,_,js=get(urljoin("https://www.casablanca-bourse.com/",s),ctx,"*/*"); js=js.decode("utf-8","ignore")
+            name=f"js_{len(seen)}.js"; (OUT/name).write_text(js,encoding="utf-8")
+            hits=set()
+            for m in re.findall(r"[\"'`]((?:https?://[^\"'`\s]*)?/(?:api|proxy|ajax|json|fr/api|bourse)[^\"'`\s]{0,200})[\"'`]",js): hits.add(m)
+            for m in re.findall(r"fetch\(\s*([^,)]{0,200})",js): hits.add("fetch:"+m)
+            report["js_endpoints"][name]={"src":s[:120],"bytes":len(js),"hits":sorted(hits)[:80]}
+        except Exception as e: report["js_endpoints"][s[:80]]={"error":str(e)}
+(OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
