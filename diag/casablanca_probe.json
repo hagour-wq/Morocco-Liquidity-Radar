@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T11:53:24.302729+00:00",
+  "run_at": "2026-10-09T11:54:45.242145+00:00",
   "attempts": [
     {
       "url": "https://www.casablanca-bourse.com/",
@@ -25,7 +25,7 @@
       "url": "https://www.casablanca-bourse.com/",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78981,
+      "bytes": 78983,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     },
@@ -33,7 +33,7 @@
       "url": "https://www.casablanca-bourse.com/fr",
       "ctx": "certifi+intermediate",
       "status": 200,
-      "bytes": 78981,
+      "bytes": 78983,
       "content_type": "text/html; charset=UTF-8",
       "server": "WebServer"
     }
@@ -73,5 +73,79 @@
   ],
   "api_strings_js": [
     "/api/boursenova"
-  ]
+  ],
+  "pages": {
+    "actions": {
+      "status": 200,
+      "bytes": 107786,
+      "tables": 1,
+      "rows": 0,
+      "api": [],
+      "links": []
+    },
+    "indices": {
+      "status": 200,
+      "bytes": 54251,
+      "tables": 3,
+      "rows": 3,
+      "api": [],
+      "links": []
+    },
+    "volume": {
+      "status": 200,
+      "bytes": 36167,
+      "tables": 2,
+      "rows": 2,
+      "api": [],
+      "links": []
+    },
+    "capitalisation": {
+      "status": 200,
+      "bytes": 63925,
+      "tables": 1,
+      "rows": 1,
+      "api": [],
+      "links": []
+    },
+    "fiche_atw": {
+      "status": 200,
+      "bytes": 78983,
+      "tables": 4,
+      "rows": 20,
+      "api": [],
+      "links": [
+        "/sites/default/files/avis/2026-09/av-2026-126_fr.pdf",
+        "/sites/default/files/avis/2026-09/av-2026-127_fr.pdf",
+        "/sites/default/files/avis/2026-10/av-2026-128_fr.pdf",
+        "/sites/default/files/avis/2026-10/mat-av-2026-009_fr.pdf",
+        "/sites/default/files/instructions/2026-07/in-2026-002_fr.pdf",
+        "/sites/default/files/instructions/2026-07/in-2026-003_fr.pdf",
+        "/sites/default/files/instructions/2026-07/in-2026-004_fr.pdf",
+        "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+        "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+        "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+        "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf"
+      ]
+    },
+    "historique": {
+      "status": 200,
+      "bytes": 78983,
+      "tables": 4,
+      "rows": 20,
+      "api": [],
+      "links": [
+        "/sites/default/files/avis/2026-09/av-2026-126_fr.pdf",
+        "/sites/default/files/avis/2026-09/av-2026-127_fr.pdf",
+        "/sites/default/files/avis/2026-10/av-2026-128_fr.pdf",
+        "/sites/default/files/avis/2026-10/mat-av-2026-009_fr.pdf",
+        "/sites/default/files/instructions/2026-07/in-2026-002_fr.pdf",
+        "/sites/default/files/instructions/2026-07/in-2026-003_fr.pdf",
+        "/sites/default/files/instructions/2026-07/in-2026-004_fr.pdf",
+        "/sites/default/files/pemetteur/2026-09/sanlam_maroc_s1_26.pdf",
+        "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+        "/sites/default/files/pemetteur/2026-10/cp_disty_technologies_changement_ca.pdf",
+        "/sites/default/files/pemetteur/2026-10/ennakl_automobiles_s1_26.pdf"
+      ]
+    }
+  }
 }
