@@ -88,3 +88,11 @@ Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unav
 - **Analyse par quintiles** : écart Q1 − Q5 avant frais et t-stat, pour mesurer l'information du score indépendamment des frais.
 - **Calendrier** : tolérance de 7 jours calendaires entre séances (fermetures légales observées jusqu'à 6 jours).
 - **Limites** : rendements de prix (dividendes exclus), biais de survivance (titres cotés au 09/10/2026), ~2,7 ans d'historique, plusieurs horizons présentés côte à côte (biais de sélection si l'on retient le meilleur a posteriori). Performances passées : elles ne préjugent pas des performances futures.
+
+## Historique officiel du MASI (`collect_masi_history.py`, workflow « Historique officiel du MASI »)
+
+- **Source** : « Résumés de séance » PDF publiés sur `/market-data/editions-statistiques` (archive depuis le 01/08/2016, ~2 500 documents).
+- **Extraits** : clôture du MASI, performance journalière publiée, montant du marché central actions (`volume_mad`), montant global, hausses / baisses (`breadth`).
+- **Contrôles** : date du fichier = date imprimée ; MASI(t)/MASI(t−1) − 1 ≈ performance publiée (≤ 0,02 point), sauf si la séance précédente manque dans l'archive (`previous_session_missing_in_archive`, calendrier tiré des cotations ATW) ; valeurs douteuses non fusionnées et listées dans `data/masi_history_report.json`.
+- **Reprise** : `data/masi_official.json` mémorise la liste des PDF et les séances lues ; chaque exécution lit au plus 700 PDF en 25 minutes, les plus récents d'abord. Exécution quotidienne à 20:00 UTC.
+- **Fusion** : `data/market_history.json` reçoit le MASI officiel (`masi_source`), le montant du marché central et la largeur du marché ; toute valeur antérieure divergente (> 0,05 %) est journalisée dans `corrections`.
