@@ -17,6 +17,8 @@ def ratio(v,lo,hi,reverse=False):
  z=clamp(100*(v-lo)/(hi-lo))
  return 100-z if reverse else z
 def evaluate_fundamental(x):
+ if x.get("listing_exchange")!="Casablanca Stock Exchange" or x.get("listing_country")!="MA":
+  return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED","note":"Requires independently validated Casablanca listing; AMMC reporting alone is insufficient."}
  required=("ticker","name","reference_date","source_url","price_mad","eps_mad","book_value_per_share_mad","roe_pct","revenue_growth_pct","net_debt_ebitda","dividend_per_share_mad")
  missing=[k for k in required if x.get(k) is None or x.get(k)==""]
  if missing:return {"ticker":x.get("ticker"),"name":x.get("name"),"status":"INSUFFICIENT_DATA","missing_fields":missing}
@@ -34,6 +36,7 @@ def evaluate_fundamental(x):
  score=clamp(.30*components["valuation"]+.25*components["quality"]+.20*components["growth"]+.15*components["debt"]+.10*components["income"])
  return {"ticker":x["ticker"],"name":x["name"],"score":score,"status":"RESEARCH_ONLY","reference_date":x["reference_date"],"source_url":x["source_url"],"pe":round(pe,2),"pb":round(pb,2),"dividend_yield_pct":round(yield_pct,2),"components":{k:round(v,1) for k,v in components.items()},"note":"Cross-sector comparisons are indicative; bank/insurer metrics require separate methodology."}
 def evaluate_technical(ticker,name,rows):
+ if not ticker or not name:return {"ticker":ticker,"name":name,"status":"INVALID_INSTRUMENT"}
  rows=sorted((x for x in rows if valid(x.get("close")) and valid(x.get("volume")) and x.get("date")),key=lambda x:x["date"])
  if len(rows)<25:return {"ticker":ticker,"name":name,"status":"INSUFFICIENT_HISTORY","sessions":len(rows),"required_sessions":25}
  last=rows[-1]
@@ -55,7 +58,7 @@ def main():
  base=load("company_fundamentals.json",{"companies":[]})
  quotes=load("equity_history.json",{"companies":[]})
  fundamentals=[evaluate_fundamental(x) for x in base.get("companies",[])]
- technical=[evaluate_technical(x.get("ticker"),x.get("name"),x.get("rows",[])) for x in quotes.get("companies",[])]
+ technical=[evaluate_technical(x.get("ticker"),x.get("name"),x.get("rows",[])) if x.get("listing_exchange")=="Casablanca Stock Exchange" and x.get("listing_country")=="MA" else {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED"} for x in quotes.get("companies",[])]
  # Snapshot performance is displayed as an unranked watchlist only, never as a validated signal.
  dash=load("dashboard.json",{})
  rotation=dash.get("rotation",{})
