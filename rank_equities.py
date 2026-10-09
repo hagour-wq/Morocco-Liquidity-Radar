@@ -94,13 +94,26 @@ def evaluate_technical(ticker,name,rows,as_of=None):
   "components":{k:round(x,1) for k,x in comp.items()},
   "unavailable":[k for k,x in (("sma50",s50),("sma200",s200),("rsi14",ta.rsi(c)),("macd",m),("atr14",a)) if x is None],
   "note":"Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."}
+def issuer_facts(r,close,ref_date):
+ """ISIN et dernier dividende (bulletin de la cote). Rendement « dernier dividende / cours » calculé
+ seulement si le détachement date de moins de 15 mois : un dividende ancien n'est pas un rendement courant."""
+ out={"isin":r.get("isin"),"last_dividend_mad":r.get("last_dividend_mad"),"dividend_fiscal_year":r.get("dividend_fiscal_year"),"dividend_ex_date":r.get("dividend_ex_date")}
+ try:recent=(date.fromisoformat(ref_date)-date.fromisoformat(r["dividend_ex_date"])).days<=456
+ except (TypeError,ValueError,KeyError):recent=False
+ out["dividend_yield_pct"]=round(100*r["last_dividend_mad"]/close,2) if recent and valid(r.get("last_dividend_mad")) and valid(close) and close>0 else None
+ out["dividend_yield_basis"]="dernier dividende détaché / dernier cours" if out["dividend_yield_pct"] is not None else ("dernier dividende détaché il y a plus de 15 mois" if r.get("dividend_ex_date") else "aucun dividende publié au bulletin")
+ return out
 def main():
  base=load("company_fundamentals.json",{"companies":[]})
  quotes={"companies":equity_store.load_all()}
  fundamentals=[evaluate_fundamental(x) for x in base.get("companies",[])]
  technical=[evaluate_technical(x.get("ticker"),x.get("name"),x.get("rows",[])) if x.get("listing_exchange")=="Casablanca Stock Exchange" and x.get("listing_country")=="MA" else {"ticker":x.get("ticker"),"name":x.get("name"),"status":"EXCHANGE_NOT_VERIFIED"} for x in quotes.get("companies",[])]
  sectors={x.get("ticker"):x.get("sector") for x in quotes.get("companies",[])}
- for x in technical:x["sector"]=sectors.get(x.get("ticker"))
+ ref=load("issuer_reference.json",{}).get("issuers",{})
+ for x in technical:
+  x["sector"]=sectors.get(x.get("ticker"))
+  r=ref.get(x.get("ticker"))
+  if r:x.update(issuer_facts(r,x.get("close"),x.get("reference_date")))
  # Snapshot performance is displayed as an unranked watchlist only, never as a validated signal.
  dash=load("dashboard.json",{})
  rotation=dash.get("rotation",{})

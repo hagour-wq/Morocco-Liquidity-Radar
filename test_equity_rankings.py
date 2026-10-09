@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 from datetime import date,timedelta
-from rank_equities import evaluate_fundamental,evaluate_technical
+from rank_equities import evaluate_fundamental,evaluate_technical,issuer_facts
 class EquityRankingTests(unittest.TestCase):
  def test_unverified_listing_is_not_ranked(self):
   x=evaluate_fundamental({"ticker":"XYZ","name":"Example"})
@@ -63,4 +63,10 @@ class EquityRankingTests(unittest.TestCase):
   self.assertEqual(evaluate_technical("XYZ","Example",closure)["status"],"RESEARCH_ONLY")
   long_gap=[r for r in rows if not (rows[20]["date"]<r["date"]<=(date.fromisoformat(rows[20]["date"])+timedelta(days=10)).isoformat())]
   self.assertEqual(evaluate_technical("XYZ","Example",long_gap)["status"],"GAPPED_HISTORY")
+ def test_dividend_yield_only_when_recent(self):
+  r={"isin":"MA0000012445","last_dividend_mad":22.0,"dividend_fiscal_year":2025,"dividend_ex_date":"2026-07-08"}
+  self.assertEqual(issuer_facts(r,670.0,"2026-10-08")["dividend_yield_pct"],3.28)
+  old=dict(r,dividend_ex_date="2023-08-23")
+  self.assertIsNone(issuer_facts(old,670.0,"2026-10-08")["dividend_yield_pct"])
+  self.assertIsNone(issuer_facts(dict(r,last_dividend_mad=None),670.0,"2026-10-08")["dividend_yield_pct"])
 if __name__=="__main__":unittest.main()
