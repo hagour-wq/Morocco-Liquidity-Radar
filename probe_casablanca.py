@@ -80,3 +80,18 @@ if body:
 
 (OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k not in ("api_strings_js","scripts")},ensure_ascii=False,indent=1))
+
+# Pages secondaires (étape 2)
+pages={"actions":"https://www.casablanca-bourse.com/live-market/actions","indices":"https://www.casablanca-bourse.com/live-market/indices",
+       "volume":"https://www.casablanca-bourse.com/market-data/volume","capitalisation":"https://www.casablanca-bourse.com/market-data/capitalisation",
+       "fiche_atw":"https://www.casablanca-bourse.com/fr/live-market/instruments/ATW","historique":"https://www.casablanca-bourse.com/fr/historique-des-cours"}
+report["pages"]={}
+ctx=contexts.get("certifi+intermediate",contexts["certifi"])
+for k,u in pages.items():
+    try:
+        st,h,b=get(u,ctx); t=b.decode("utf-8","ignore"); (OUT/f"page_{k}.html").write_text(t,encoding="utf-8")
+        report["pages"][k]={"status":st,"bytes":len(b),"tables":t.count("<table"),"rows":t.count("<tr"),
+           "api":sorted(set(re.findall(r"[\"'](/api/[^\"'\s]{3,200})[\"']",t)))[:40],
+           "links":sorted(set(re.findall(r'href="([^"]*(?:histori|instrument|telecharg|download|\.xlsx|\.csv|\.pdf)[^"]*)"',t,re.I)))[:40]}
+    except Exception as e: report["pages"][k]={"error":f"{type(e).__name__}: {e}"}
+(OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
