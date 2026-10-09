@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T16:40:53.748669+00:00",
+  "generated_at": "2026-10-09T16:58:41.242740+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -5790,83 +5790,83 @@
     ],
     "snapshot_watchlist": [
       {
-        "ticker": "SNP",
-        "name": "SNEP",
+        "ticker": "T2S",
+        "name": "T2S GROUP HOLDING",
         "change_1d_pct": 5.21,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
-        "ticker": "DHO",
-        "name": "Delta Holding",
-        "change_1d_pct": 5.08,
+        "ticker": "CMT",
+        "name": "COMPAGNIE MINIERE DE TOUISSIT",
+        "change_1d_pct": 4.45,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
-        "ticker": "FBR",
-        "name": "Fenie Brossette",
-        "change_1d_pct": 4.24,
+        "ticker": "TMA",
+        "name": "TOTALENERGIES MARKETING MAROC",
+        "change_1d_pct": 3.54,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
-        "ticker": "BCI",
-        "name": "BMCI",
-        "change_1d_pct": 4.06,
+        "ticker": "CAP",
+        "name": "CASH PLUS S.A",
+        "change_1d_pct": 3.17,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
-        "note": "One-session movement; cannot rank expected profitability."
-      },
-      {
-        "ticker": "BCP",
-        "name": "BCP",
-        "change_1d_pct": 3.74,
-        "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
-        "note": "One-session movement; cannot rank expected profitability."
-      },
-      {
-        "ticker": "ZDJ",
-        "name": "Zellidja",
-        "change_1d_pct": -9.96,
-        "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
         "ticker": "SMI",
-        "name": "SMI",
-        "change_1d_pct": -3.88,
+        "name": "SOCIETE METALLURGIQUE D'IMITER",
+        "change_1d_pct": 2.44,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
-        "ticker": "LES",
-        "name": "Lesieur Cristal",
-        "change_1d_pct": -3.33,
+        "ticker": "JET",
+        "name": "JET CONTRACTORS",
+        "change_1d_pct": -3.16,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
-        "ticker": "ADH",
-        "name": "Addoha",
-        "change_1d_pct": -3.17,
+        "ticker": "SNP",
+        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
+        "change_1d_pct": -3.11,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       },
       {
-        "ticker": "LHM",
-        "name": "LafargeHolcim Maroc",
-        "change_1d_pct": -2.7,
+        "ticker": "CRS",
+        "name": "CARTIER SAADA",
+        "change_1d_pct": -3.11,
         "status": "SNAPSHOT_ONLY",
-        "reference_date": "2026-10-07",
+        "reference_date": "2026-10-09",
+        "note": "One-session movement; cannot rank expected profitability."
+      },
+      {
+        "ticker": "MUT",
+        "name": "MUTANDIS SCA",
+        "change_1d_pct": -2.71,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-09",
+        "note": "One-session movement; cannot rank expected profitability."
+      },
+      {
+        "ticker": "SNA",
+        "name": "STOKVIS NORD AFRIQUE",
+        "change_1d_pct": -2.53,
+        "status": "SNAPSHOT_ONLY",
+        "reference_date": "2026-10-09",
         "note": "One-session movement; cannot rank expected profitability."
       }
     ],

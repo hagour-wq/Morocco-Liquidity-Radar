@@ -1,11 +1,11 @@
 {
   "as_of": "2026-10-09",
-  "composite": -18,
+  "composite": -13,
   "regime": "NEUTRAL",
-  "conclusion": "Market Flow négatif (-22). Momentum 1 séance +0.29% et 5 séances -2.93%. Couverture 100%.",
+  "conclusion": "Market Flow neutre (-9). Momentum 1 séance +0.29% et 5 séances -2.93%. Couverture 70%.",
   "scores": {
     "liquidity": -22,
-    "market_flow": -22,
+    "market_flow": -9,
     "global": 8
   },
   "sources": [
@@ -35,9 +35,9 @@
     },
     {
       "name": "Bourse de Casablanca",
-      "dataset": "MASI, volumes, secteurs et valeurs",
-      "reference_date": "07/10/2026",
-      "status": "MASI CONNECTÉ via source secondaire recoupée · volumes/breadth partiels",
+      "dataset": "Cours, volumes et secteurs (81 actions) ; MASI (résumés de séance)",
+      "reference_date": "09/10/2026",
+      "status": "OFFICIEL · 66 titres échangés sur 81",
       "freshness": "quotidienne",
       "official_page": "https://www.casablanca-bourse.com/"
     }
@@ -51,109 +51,134 @@
     "ret_1d_pct": 0.29,
     "ret_5d_pct": -2.93,
     "ret_20d_pct": -9.77,
-    "volume_vs_available_avg": 0.43,
-    "volume_sessions": 19,
-    "breadth": 0.4265,
-    "coverage": 1.0,
+    "volume_vs_available_avg": null,
+    "breadth": 0.4815,
+    "coverage": 0.7,
     "components_used": [
       "momentum",
-      "volume",
       "breadth"
     ],
-    "confidence": "high"
+    "confidence": "medium"
   },
   "rotation": {
-    "reference_date": "2026-10-07",
-    "quality": "secondary_snapshot",
+    "reference_date": "2026-10-09",
+    "quality": "official_session",
+    "source": "Bourse de Casablanca — cours officiels (stock-historical)",
+    "computed_at": "2026-10-09T16:58:40.692214+00:00",
+    "min_turnover_mad": 100000,
     "sectors": [
       {
-        "name": "Industrials",
-        "change_pct": 1.19
+        "name": "Pétrole et Gaz",
+        "change_pct": 3.47
       },
       {
-        "name": "Sociétés de financement et autres activités financières",
-        "change_pct": 1.14
+        "name": "Services de transport",
+        "change_pct": 2.03
       },
       {
-        "name": "Télécommunications",
-        "change_pct": 1.12
+        "name": "Santé",
+        "change_pct": 1.96
       },
       {
-        "name": "Basic Materials",
-        "change_pct": -0.49
+        "name": "Industrie Agricole",
+        "change_pct": -1.89
+      },
+      {
+        "name": "Loisirs et Hôtels",
+        "change_pct": -1.95
+      },
+      {
+        "name": "Chimie",
+        "change_pct": -2.45
       }
     ],
     "leaders": [
       {
-        "ticker": "SNP",
-        "name": "SNEP",
+        "ticker": "T2S",
+        "name": "T2S GROUP HOLDING",
         "change_pct": 5.21
       },
       {
-        "ticker": "DHO",
-        "name": "Delta Holding",
-        "change_pct": 5.08
+        "ticker": "CMT",
+        "name": "COMPAGNIE MINIERE DE TOUISSIT",
+        "change_pct": 4.45
       },
       {
-        "ticker": "FBR",
-        "name": "Fenie Brossette",
-        "change_pct": 4.24
+        "ticker": "TMA",
+        "name": "TOTALENERGIES MARKETING MAROC",
+        "change_pct": 3.54
       },
       {
-        "ticker": "BCI",
-        "name": "BMCI",
-        "change_pct": 4.06
+        "ticker": "CAP",
+        "name": "CASH PLUS S.A",
+        "change_pct": 3.17
       },
       {
-        "ticker": "BCP",
-        "name": "BCP",
-        "change_pct": 3.74
+        "ticker": "SMI",
+        "name": "SOCIETE METALLURGIQUE D'IMITER",
+        "change_pct": 2.44
       }
     ],
     "laggards": [
       {
-        "ticker": "ZDJ",
-        "name": "Zellidja",
-        "change_pct": -9.96
+        "ticker": "JET",
+        "name": "JET CONTRACTORS",
+        "change_pct": -3.16
       },
       {
-        "ticker": "SMI",
-        "name": "SMI",
-        "change_pct": -3.88
+        "ticker": "SNP",
+        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
+        "change_pct": -3.11
       },
       {
-        "ticker": "LES",
-        "name": "Lesieur Cristal",
-        "change_pct": -3.33
+        "ticker": "CRS",
+        "name": "CARTIER SAADA",
+        "change_pct": -3.11
       },
       {
-        "ticker": "ADH",
-        "name": "Addoha",
-        "change_pct": -3.17
+        "ticker": "MUT",
+        "name": "MUTANDIS SCA",
+        "change_pct": -2.71
       },
       {
-        "ticker": "LHM",
-        "name": "LafargeHolcim Maroc",
-        "change_pct": -2.7
+        "ticker": "SNA",
+        "name": "STOKVIS NORD AFRIQUE",
+        "change_pct": -2.53
       }
     ],
     "active": [
       {
+        "ticker": "LBV",
+        "name": "LABEL VIE",
+        "volume_mad": 15573600.0
+      },
+      {
         "ticker": "ATW",
-        "name": "Attijariwafa bank",
-        "volume_mad": 61130000
+        "name": "ATTIJARIWAFA BANK",
+        "volume_mad": 14244400.3
       },
       {
         "ticker": "MNG",
-        "name": "Managem",
-        "volume_mad": 31910000
+        "name": "MANAGEM",
+        "volume_mad": 12777417.0
+      },
+      {
+        "ticker": "TGC",
+        "name": "TRAVAUX GENERAUX DE CONSTRUCTION DE CASABLANCA",
+        "volume_mad": 12743127.7
       },
       {
         "ticker": "MSA",
-        "name": "Marsa Maroc",
-        "volume_mad": 20330000
+        "name": "SOCIETE D'EXPLOITATION DES PORTS - MARSA MAROC",
+        "volume_mad": 11584476.5
       }
-    ]
+    ],
+    "breadth": {
+      "advancers": 26,
+      "decliners": 28,
+      "traded": 66,
+      "listed": 81
+    }
   },
   "liquidity_detail": {
     "score": -22,
@@ -255,7 +280,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T16:55:15.158797+00:00",
+    "computed_at": "2026-10-09T16:58:40.828929+00:00",
     "history_sessions": 1398,
     "observations": 1393,
     "usable_5d": 1336,
@@ -264,7 +289,7 @@
   },
   "data_quality": {
     "market_history_sessions": 1398,
-    "market_flow_coverage": 1.0,
+    "market_flow_coverage": 0.7,
     "liquidity_coverage": 1.0,
     "composite_status": "NEUTRAL",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
@@ -289,23 +314,23 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 1.0,
+  "composite_coverage": 0.9,
   "effective_weights": {
     "liquidity": 50.0,
-    "market_flow": 35.0,
+    "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-09T16:55:15.060380+00:00",
+  "retrieved_at": "2026-10-09T16:58:40.433225+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
-    "masi": 16797.1,
+    "masi": 16797.1032,
     "drawdown_from_sample_peak_pct": -16.98,
     "sample_peak": 20233.5,
     "sample_low": 9717.99,
     "sessions": 1398
   },
   "global_detail": {
-    "checked_at": "2026-10-09T16:38:23.001594+00:00",
+    "checked_at": "2026-10-09T16:56:40.080793+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -336,9 +361,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.30699920654297,
-        "change_5obs": 0.37,
-        "score": -3.0,
+        "value": 102.302001953125,
+        "change_5obs": 0.365,
+        "score": -2.9,
         "verified": true,
         "failed_sources": []
       },
@@ -347,9 +372,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 7807.2099609375,
-        "change_5obs": 1.094,
-        "score": 8.8,
+        "value": 7809.759765625,
+        "change_5obs": 1.127,
+        "score": 9.0,
         "verified": true,
         "failed_sources": []
       }
