@@ -94,6 +94,7 @@ Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unav
 - **Source** : « Résumés de séance » PDF publiés sur `/market-data/editions-statistiques` (archive depuis le 01/08/2016, ~2 500 documents).
 - **Extraits** : clôture du MASI, performance journalière publiée, montant du marché central actions (`volume_mad`), montant global, hausses / baisses (`breadth`).
 - **Contrôles** : date du fichier = date imprimée ; MASI(t)/MASI(t−1) − 1 ≈ performance publiée (≤ 0,02 point), sauf si la séance précédente manque dans l'archive (`previous_session_missing_in_archive`, calendrier tiré des cotations ATW) ; valeurs douteuses non fusionnées et listées dans `data/masi_history_report.json`.
+- **Format antérieur au 03/10/2018** : la mise en page des résumés de séance diffère ; le MASI n'y est pas reconnu, la séance n'est pas fusionnée (`unparsed_count` dans le rapport). Un PDF non lu n'est relu que si `PARSER_VERSION` augmente.
 - **Reprise** : `data/masi_official.json` mémorise la liste des PDF et les séances lues ; chaque exécution lit au plus 700 PDF en 25 minutes, les plus récents d'abord. Exécution quotidienne à 20:00 UTC.
 - **Fusion** : `data/market_history.json` reçoit le MASI officiel (`masi_source`), le montant du marché central et la largeur du marché ; toute valeur antérieure divergente (> 0,05 %) est journalisée dans `corrections`.
 
