@@ -124,3 +124,28 @@ for k in ["actions","indices","volume","cours","bulletins"]:
             report["js_endpoints"][name]={"src":s[:120],"bytes":len(js),"hits":sorted(hits)[:80]}
         except Exception as e: report["js_endpoints"][s[:80]]={"error":str(e)}
 (OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+
+# Étape 2c : test réel du service d'historique officiel
+from urllib.parse import urlencode
+api=None
+try:
+    t=(OUT/"page_cours.html").read_text(encoding="utf-8")
+    api=json.loads(re.search(r'data-drupal-selector="drupal-settings-json">(.*?)</script>',t,re.S).group(1))["boursenova"]["apiBaseUrl"]
+except Exception as e: report["api_base_error"]=str(e)
+api=api or "/api/boursenova"
+report["api_base"]=api
+report["history_test"]={}
+for sym in ["ATW","BCP","IAM","MSA","MNG"]:
+    for adj in ("false","true"):
+        q=urlencode({"instrument":sym,"market":"comptant","type":"actions","startDate":"2015-01-01","endDate":"2026-10-09","pageNumber":1,"pageSize":1000,"isCoursAjuste":adj})
+        u=urljoin("https://www.casablanca-bourse.com/",api)+"/stock-historical?"+q
+        k=f"{sym}_adj_{adj}"
+        try:
+            st,h,b=get(u,ctx,"application/json")
+            d=json.loads(b); items=d.get("items",[]) if isinstance(d,dict) else d
+            (OUT/f"hist_{k}.json").write_text(json.dumps(d,ensure_ascii=False),encoding="utf-8")
+            report["history_test"][k]={"status":st,"keys":list(d.keys()) if isinstance(d,dict) else None,"n":len(items),
+               "first":items[0] if items else None,"last":items[-1] if items else None,
+               "meta":{kk:vv for kk,vv in d.items() if kk!="items"} if isinstance(d,dict) else None}
+        except Exception as e: report["history_test"][k]={"url":u,"error":f"{type(e).__name__}: {e}"}
+(OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
