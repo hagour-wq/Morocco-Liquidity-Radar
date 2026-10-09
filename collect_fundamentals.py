@@ -46,6 +46,10 @@ def main():
         r = ref.get(t, {})
         rec = {**src, "isin": r.get("isin"), "shares": r.get("shares"), "shares_source": "bulletin de la cote " + str(json.loads(REF.read_text(encoding="utf-8")).get("bulletin_date")) if r else None,
                "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA", "collected_at": now}
+        if src["model"] not in REQUIRED:
+            rec.update(status="SECTOR_MODEL_PENDING", reason="modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués")
+            out["companies"].append(rec)
+            continue
         try:
             b = cb._get(src["url"], accept="application/pdf")
             text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
