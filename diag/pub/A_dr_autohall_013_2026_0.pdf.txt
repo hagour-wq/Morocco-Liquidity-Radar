@@ -1,0 +1,1026 @@
+https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/dr_autohall_013_2026_0.pdf
+
+ 
+ 
+ 
+Auto Hall 
+ 
+ 
+Document de référence relatif à l’exercice 2025 
+ 
+ 
+Enregistrement de l’Autorité Marocaine du Marché des Capitaux (AMMC) 
+Conformément aux dispositions de la circulaire de l’AMMC, le présent document de référence a été 
+enregistré par l’AMMC en date du 15/07/2026 sous la référence EN/EM/013/2026. 
+Le présent document de référence ne peut servir de base pour effectuer du démarchage ou pour la 
+collecte des ordres dans le cadre d’une opération financière que s’il fait partie d’un prospectus dument 
+visé par l’AMMC. 
+ 
+
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                      2 
+Avertissement 
+Le présent document de référence a été enregistré par l’AMMC. L’enregistrement du document de 
+référence n’implique pas d’authentification des informations présentées. Il a été effectué après examen de 
+la pertinence et de la cohérence de l’information donnée.  
+L’attention du public est attirée sur le fait que le présent document de référence ne peut servir de base 
+pour le démarchage financier ou la collecte d’ordres de participation à une opération financière s’il ne fait 
+pas partie d’un prospectus visé par l’AMMC. 
+Le présent document de référence peut faire l’objet d’actualisations ou rectifications. Les utilisateurs de 
+ce document de référence sont appelés à s’assurer de disposer, le cas échéant, desdites actualisations et 
+rectifications. 
+ 
+ 
+Document de référence AUTO HALL- Exercice 2025                                                                                                                3 
+Sommaire 
+Avertissement ........................................................................................................................................................ 2 
+Sommaire ............................................................................................................................................................... 3 
+ABREVIATIONS .................................................................................................................................................. 5 
+DEFINITIONS ...................................................................................................................................................... 8 
+PARTIE I - ATTESTATIONS ET COORDONNEES ...................................................................................... 9 
+I. Le Président du Conseil d’Administration ...................................................................................... 10 
+II. Les commissaires aux comptes .......................................................................................................... 11 
+III. Le conseiller financier ........................................................................................................................ 13 
+IV. Le responsable de l’information et de la communication financière ............................................. 15 
+PARTIE II - PRESENTATION GENERALE D’AUTO HALL..................................................................... 16 
+I. Renseignements à caractère général ................................................................................................. 17 
+II. Capital social ...................................................................................................................................... 19 
+III. Endettement ........................................................................................................................................ 26 
+IV. Gouvernance de l’émetteur ............................................................................................................... 39 
+PARTIE III - ACTIVITE DE AUTO HALL .................................................................................................... 58 
+I. Historique d’Auto Hall ...................................................................................................................... 59 
+II. Appartenance à un groupe ................................................................................................................ 60 
+III. Filiales d’Auto Hall ............................................................................................................................ 61 
+IV. Flux comptables et financiers faisant l’objet de conventions réglementées  .................................. 85 
+V. Secteur d’activité d’Auto Hall ........................................................................................................... 88 
+VI. Activité du Groupe Auto Hall ........................................................................................................... 96 
+VII. Approvisionnement .......................................................................................................................... 112 
+VIII. Informations environnementales et sociales .................................................................................. 114 
+IX. Stratégie d’investissement et moyens techniques .......................................................................... 130 
+PARTIE IV - SITUATION FINANCIÈRE .................................................................................................... 139 
+I. Rapports des commissaires aux comptes ....................................................................................... 140 
+I. Principaux indicateurs ..................................................................................................................... 159 
+II. Analyse des comptes annuels ........................................................................................................... 163 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                      4 
+PARTIE V - PERSPECTIVES ........................................................................................................................ 240 
+I. Perspectives de développement du secteur Automobile au Maroc .............................................. 241 
+II. Perspectives d’Auto Hall ................................................................................................................. 243 
+PARTIE VI - FACTEURS DE RISQUES ...................................................................................................... 245 
+I. Facteurs de risque ............................................................................................................................ 246 
+PARTIE VII - FAITS EXCEPTIONNELS ET LITIGES ............................................................................. 252 
+I. Faits exceptionnels ........................................................................................................................... 253 
+II. Litiges et affaires contentieuses ....................................................................................................... 253 
+PARTIE VIII - ANNEXES ............................................................................................................................... 254 
+I. Statuts ................................................................................................................................................ 255 
+II. Rapports généraux des commissaires aux comptes sociaux ......................................................... 255 
+III. Rapports généraux des commissaires aux comptes consolidés..................................................... 255 
+IV. Rapports spéciaux des commissaires aux comptes ........................................................................ 255 
+V. Rapports de gestion .......................................................................................................................... 255 
+ 
+ 
+Document de référence AUTO HALL- Exercice 2025                                                                                                                5 
+ABREVIATIONS 
+ADI Alliance Development Invest 
+ADM Société Nationale des Autoroutes du Maroc 
+AFM Africa Motors 
+AGO Assemblée Générale Ordinaire 
+AGE Assemblée Générale Extraordinaire 
+AH Auto Hall  
+AHCD  Auto Hall Capital Développement  
+AHI Auto Hall Immobilier 
+AHLM Auto Hall Luxury Motors 
+AHVI Auto Hall Véhicules Industriels 
+AIVAM Association des Importateurs de Véhicules au Maroc 
+ANAPEC Agence Nationale de Promotion de l'Emploi et des Compétences. 
+ATH Auto Hall S.A. 
+ATWB Attijariwafa Bank  
+B2B Business to Business 
+BCP Banque Centrale Populaire 
+Bank of Africa Banque Marocaine du Commerce Extérieur  
+BMCI Banque Marocaine pour le Commerce et l'Industrie 
+BNP  Banque Nationale de Paris 
+BTP Bâtiment et Travaux Publics 
+CA Chiffre d'Affaires 
+CAC Commissaires aux comptes 
+CAM Crédit Agricole du Maroc 
+CCA Comptes Courants d'Associés 
+CDD Contrat à Durée Déterminée 
+CDG Caisse de Dépôt et de Gestion  
+CDI Contrat à Durée Indéterminée 
+CDM Crédit du Maroc  
+CFG Casablanca Finance Group 
+CIH  Crédit Immobilier et Hôtelier 
+CIMR Caisse Interprofessionnelle Marocaine de Retraite 
+CN  Conditions normales 
+CT  Court Terme 
+COV Composés Organiques Volatils 
+DEA Diplôme d'Études Approfondies 
+DPS Droit Préférentiel de Souscription  
+EBE Excédent Brut d'Exploitation  
+ENSEEIHT Ecole Nationale Supérieure d'Electrotechnique, d'Electronique, d'Informatique, et 
+d'Hydraulique de Toulouse 
+ENSIMAG École Nationale Supérieure d'Informatique et de Mathématiques Appliquées  
+EPI Equipements de Protection Individuelle 
+ESCP Ecole Supérieure de Commerce de Paris 
+ESSEC Ecole Supérieure des Sciences Economiques et Commerciales 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                      6 
+ESTP École Spéciale des Travaux Publics de Paris 
+FC  Fonds de Commerce  
+FCA Stellantis (ex-Fiat Chrysler Automobile) 
+FIFO First In, First Out 
+FENAGRI Fédération Nationale de l'Agroalimentaire 
+FINEX Financement Export  
+FT Fonds de Titrisation 
+GW Goodwill 
+IFRIC International Financial Reporting Interpretations Committee 
+IS Impôt sur les Sociétés 
+ISCAE Institut Supérieur du Commerce et d'Administration des Entreprises 
+ISIN International Securities Identification Number 
+JPY Japanese Yen 
+KEUR Milliers d'Euros 
+KMAD Milliers de Dirhams  
+LC Lettre de Crédit  
+LED Light Emitting Diode 
+LLC Leader Location Camions 
+LLD Leader location Longue Durée 
+MAD Dirham Marocain 
+MASEN Moroccan Agency for Sustainable Energy  
+MASI Moroccan All Shares Index 
+MBA Master of Business Administration  
+MLT Moyen Long Terme  
+MMAD Millions de Dirhams 
+MSIN  Moroccan Securities Identification Number 
+OCP Office Chérifien des Phosphates  
+OICA Organisation Internationale des Constructeurs d’Automobiles 
+ONA  Omnium Nord-Africain  
+ONE Office National de l'Electricité  
+OPCVM Organisme de Placement Collectif en Valeur Mobilière  
+PDG Président Directeur General 
+PDM Part de Marché 
+PR Pièces de rechange 
+RAM Royal Air Maroc 
+RH Ressources humaines 
+ROA Return on Asset 
+ROE Return on Equity  
+RSE Responsabilité Sociétale des Entreprises 
+S2M Société Marocaine de Monétique. 
+SA Société Anonyme 
+SAAS Automobility Services  
+SAGFI  Societe d’analyse et de gestion financière  
+SAV Service Après Vente 
+SDA Société de Développement Automobile 
+ 
+Document de référence AUTO HALL- Exercice 2025                                                                                                                7 
+SBLC Stand By Letter of Credit 
+SFL Société Foncière de la Lagune  
+SGHM Société de Gestion de l’Hôtel Michlifen Ifrane  
+SGMB Saham Bank 
+SIE Société d'Investissement Energétique 
+SLM Société La Mamounia  
+SMAA Société Marocaine de l’Automobile Allemande S.A  
+SMAM Société Marocaine de l’Automobile Moderne 
+SMVN Société Marocaine des Voitures Nippones  
+SNTL Société Nationale des Transports et de la Logistique 
+SONADAC Société Nationale d'Aménagement Communal 
+SPJ Société Palais Jamai 
+SST Santé sécurité travail 
+STE Société 
+TMPA Tanger Med Port Authority  
+TMSA Tanger Med Special Agency 
+TP Travaux Publics  
+TTC Toutes Taxes Comprises 
+TVA Taxes sur la Valeur Ajoutée 
+VNC Valeur Nette Comptable 
+VP Véhicules Particuliers 
+VUL Véhicules Utilitaires légers 
+YTD Year To Date 
+ 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                      8 
+DEFINITIONS 
+Société  Fait référence à Auto Hall S.A. 
+Assemblées Générales (AGO 
+/ AGE/ AGM) 
+Réunions des actionnaires visant à approuver les comptes annuels  (AGO) ou 
+à décider de changements importants dans la société (AGE) , Assemblée 
+Générale Mixte (AGM) combinant en une seule réunion les résolutions 
+relevant de la compétence ordinaire et extraordinaire 
+ 
+Document de Référence 
+Conformément à la circulaire de l’AMMC n°03/19, le Document de Référence 
+est un document officiel regroupant l’ensemble des informations juridiques, 
+financières, opérationnelles et stratégiques d’une entreprise, destiné à assurer 
+la transparence et l’information permanente du public. 
+Groupe Désigne Auto Hall S.A et ses filiales 
+Prospectus 
+Le Prospectus, tel que défini par la circulaire de l’AMMC n°03/19, est un 
+document officiel présentant au public les caractéristiques d’une opération 
+financière, notamment dans le cadre d’une levée de fonds ou d’une 
+introduction en bourse. 
+Marque blanche Désigne les rémunérations perçues par le groupe en tant qu’intermédiaire 
+pour le financement des ventes à crédit. 
+    
+Document de référence Auto Hall - Exercice 2025                                                                                                                   9 
+PARTIE I - ATTESTATIONS ET COORDONNEES 
+    
+Document de référence Auto Hall - Exercice 2025                                                                                                                 10 
+I. Le Président du Conseil d’Administration 
+I.1 Identité  
+Dénomination ou raison sociale Auto Hall SA. 
+Représentant légal Karim GHELLAB 
+Fonction Président du Conseil d’Administration 
+Adresse km 12 autoroute Casablanca - Rabat sortie Qods 
+Numéro de téléphone 05 22 76 14 01 
+Adresse électronique k.ghellab@autohall.ma  
+ 
+I.2 Attestation du Président du conseil d’administration sur le document de 
+référence relatif à l’exercice 2025 
+Le Président du conseil d’administration atteste que les données du présent document de référence dont 
+il assume la responsabilité, sont conformes à la réalité. Elles comprennent toutes les informations 
+nécessaires au public pour fonder leur jugement sur le patrimoine, l’activité, la situation financière, les 
+résultats et les perspectives d’Auto Hall SA. Elles ne comportent pas d’omissions de nature à en altérer 
+la portée. 
+ 
+Karim GHELLAB  
+Auto Hall  
+Président du Conseil d’Administration 
+ 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                11 
+II. Les commissaires aux comptes 
+II.1 Identité 
+Dénomination et 
+raison sociale HDID &ASSOCIES FORVIS MAZARS DELOITTE 
+Qualité 
+Commissaire aux 
+Comptes / Auditeur 
+indépendant 
+Commissaire aux Comptes 
+/ Auditeur indépendant 
+Commissaire aux Comptes / Auditeur 
+indépendant 
+Représentant légal Mohamed HDID Adnane LOUKILI Adnane FAOUZI   
+Les CAC ayant 
+audité les comptes 
+d’Auto Hall 
+HDID &ASSOCIES FORVIS MAZARS DELOITTE 
+Fonction Associé Gérant Associé Associé 
+Adresse 4 rue Maati Jazouli 
+Anfa Casablanca 
+76 boulevard 
+Abdelmoumen résidence 
+Koutoubia Casablanca 
+Bd Sidi Mohammed Benabdellah  
+Bâtiment C - Tour Ivoire 3 - 3èmeétage  
+La Marina - Casablanca, Maroc 
+Numéro de 
+téléphone 
++212 (0)522 39 78 57 /  
++212 (0)522 39 78 52 +212 (0)5 22 42 34 23 +212(0)5 22 22 47 34 
+Numéro de fax 05 22 397 850 05 22 42 34 00 05 22 22 40 78/ 47 59 
+Adresse 
+électronique m.hdid@hdid.ma   adnane.loukili@mazars.ma  afaouzi@deloitte.com  
+Premier exercice 
+soumis au contrôle 2023  2016  2026 
+Date de début du 
+dernier mandat 
+AGO statuant sur les 
+comptes de l’exercice 
+2025 
+AGO statuant sur les 
+comptes de l’exercice 
+2022 
+AGO statuant sur les comptes de 
+l’exercice 2025 
+Date de fin du 
+dernier mandat 
+AGO statuant sur les 
+comptes de l’exercice 
+2028 
+AGO statuant sur les 
+comptes de l’exercice 
+2025 
+AGO statuant sur les comptes de 
+l’exercice 2028 
+II.2 Attestation de concordance des commissaires aux comptes relative aux 
+comptes sociaux et consolidés pour les exercices clos le 31 décembre 2023, 
+2024 et 2025  
+Nous avons procédé à la vérification des informations comptables et financières contenues dans le 
+présent document de référence en effectuant les diligences nécessaires et compte tenu des dispositions 
+légales et réglementaires en vigueur. Nos diligences on t consisté à nous assurer de la concordance 
+desdites informations avec : 
+▪ les états de synthèse annuels sociaux tels qu’audités par  les CACs Hdid & Associ és et Forvis 
+Mazars au titre des exercices clos au 31 décembre 2023, 2024 et 2025 ;  
+▪ les états de synthèse annuels consolidés tels qu’audités par les CACs Hdid & Associés et Forvis 
+Mazars au titre des exercices clos au 31 décembre 2023, 2024 et 2025 ; 
+Sur la base des diligences ci-dessus, nous n’avons pas d’observation à formuler sur la concordance des 
+informations comptables et financières fournies dans le présent document de référence, avec les états de 
+synthèse précités. 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                 12 
+ 
+ 
+HDID & ASSOCIES  
+Mohamed HDID 
+Associé  
+Deloitte 
+Adnane FAOUZI 
+Associé  
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                13 
+III. Le conseiller financier 
+III.1 Identité 
+Dénomination ou raison sociale Attijari Finances Corp. 
+Représentant légal M. Mohamed Idriss BERRADA 
+Fonction Directeur Général 
+Adresse Borj Attijari, Boulevard Main Street – Casablanca Finance City 
+Numéro de téléphone +212 (0) 5 22 42 94 30 
+Numéro de télécopieur +212 (0) 5 22 47 64 32 
+Adresse électronique i.berrada@attijari.ma 
+III.2 Attestation du conseiller financier sur le document de référence relatif à 
+l’exercice 2025 
+Le présent document de référence a été préparé par nos soins et sous notre responsabilité. Nous attestons 
+avoir effectué les diligences nécessaires pour nous assurer de la sincérité des informations qu'il contient.  
+Ces diligences ont notamment concerné l’analyse de l’environnement économique et financier d ’Auto 
+Hall à travers : 
+▪ les commentaires et analyses fournis par le management d ’Auto Hall et recueillis lors des due 
+diligences effectuées auprès de celui-ci ;  
+▪ l’analyse des comptes annuels sociaux et consolidés d ’Auto Hall relatifs aux exercices 202 3, 
+2024 et 2025 ; 
+▪ l’analyse des comptes annuels sociaux des filiales d’Auto Hall relatifs aux exercices 2023, 2024 
+et 2025 ; 
+▪ les rapports généraux des commissaires aux comptes sur les comptes sociaux et consolidés 
+d’Auto Hall pour les exercices clos aux 31 décembre 2023, 2024 et 2025 ;  
+▪ les rapports spéciaux des commissaires aux comptes relatifs aux exercices clos aux 31 décembre 
+2023, 2024 et 2025 ; 
+▪ les rapports de gestion d’Auto Hall relatifs aux exercices 2023, 2024 et 2025 ; 
+▪ Les rapports annuels d’Auto Hall relatifs aux exercices 2023, 2024 et 2025 ; 
+▪ les procès -verbaux des conseils d’administration, assemblées générales ordinaires , 
+extraordinaires et mixtes relatifs aux exercices 202 3, 2024, 202 5 et 202 6 jusqu’à la date 
+d’enregistrement du présent document de référence ; 
+▪ les rapports du conseil d’administration à l’assemblée générale relatifs aux exercices 2023, 2024 
+et 2025 et au titre de l’exercice en cours jusqu’à la date d’enregistrement du présent document 
+de référence.  
+A notre connaissance, le document de référence contient toutes les informations nécessaires au public 
+pour fonder son jugement sur le patrimoine, l’activité, la situation financière, les résultats et les 
+perspectives d’Auto Hall. Il ne comporte pas d’omissions de nature à en altérer la portée.  
+Il n’existe aucune relation financière ni commerciale entre Attijari Finances Corp. d’une part, et Auto 
+Hall d’autre part, hormis (i) le mandat de conseil qui les lie et (ii) les lignes de crédit bancaires 
+contractées par Auto Hall dans le cadre de son act ivité courante auprès de Attijariwafa Bank, société 
+mère d’Attijari Finances Corp. 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                 14 
+Compte tenu de tout ce qui précède, nous attestons avoir mis en œuvre toutes les mesures nécessaires 
+pour garantir l’objectivité de notre analyse et la qualité de la mission pour laquelle nous avons été 
+mandatés.  
+ 
+Mohamed Idriss Berrada 
+Attijari Finances Corp. 
+Directeur Général 
+ 
+Document de référence Auto Hall - Exercice 2025                                                                                                                15 
+IV. Le responsable de l’information et de la communication financière 
+Prénom et nom Mehdi Ouarti 
+Fonction Directeur pôle finances 
+Adresse km 12 autoroute Casablanca - Rabat sortie Qods 
+Numéro de téléphone +212 (0) 5 22 76 14 01/02 
+Adresse électronique m.ouarti@autohall.ma 
+ 
+    
+Document de référence Auto Hall - Exercice 2025                                                                                                                 16 
+PARTIE II - PRESENTATION GENERALE D’AUTO HALL  
+ 
+    
+Document de référence Auto Hall - Exercice 2025                                                                                                                 17 
+I. Renseignements à caractère général  
+Dénomination sociale Auto Hall S.A 
+Siège Social 64. Avenue Lalla Yacout Casablanca 
+Téléphone 05 22 76 14 00 / 02 
+Site Web https://www.autohall.ma/ 
+Forme juridique 
+Auto Hall est une société anonyme faisant appel public à l’épargne, qui est régie par 
+les lois en vigueur au Maroc, et notamment par la Loi 17-95 relative aux sociétés  
+anonymes. 
+Date de constitution 25/03/1927 
+Durée de vie 100 ans1 
+Numéro et lieu 
+d’inscription au RC N° 137 Casablanca 
+Exercice social L’exercice comptable commence le 1er Janvier et finit le 31 Décembre 
+Objet social 
+La société a pour objet, directement ou indirectement : 
+• le commerce, l'importation et l'industrie au Maroc et à l'étranger de toutes 
+marques d'automobiles, de tout matériel industriel, hydraulique et agricole, de 
+moteurs à explosion, de carburant, de toutes pièces de rechange, de tous 
+produits de consommation e t en général de tous appareils, accessoires et 
+fournitures concernant les moyens de culture, de matériel d'entreprises, de 
+terrassement et de transports mécaniques ; 
+• la création, l'acquisition, la location, l'exploitation de tous systèmes touchant 
+aux transports mécaniques, ainsi que la création, achat, vente et exploitation 
+de tous établissements, s'y rattachant ; 
+• l'étude, la recherche, la prise, l'acquisition sous toutes formes, l'apport, le débit, 
+la cession et l'exploitation, la représentation directe ou indirecte de tous 
+brevets, marques et procédés, l'acquisition, la cession, l'apport et l'exploitation 
+également directe ou indirecte de tous brevets, licences, agences, exclusivités 
+ou concessions ; 
+• toutes opérations accessoires, et notamment de crédits à la clientèle ; 
+• la création et l'exploitation d'agences ou succursales en tous pays ; 
+• la prise d'intérêts en tous pays et sous quelque forme que ce soit, dans toutes 
+les entreprises ou sociétés dont les exploitations, l'industrie et le commerce 
+seraient de nature à favoriser les propres exploitations, industrie et commerce 
+de la présente société ; 
+• généralement, toutes opérations industrielles, commerciales, financières, 
+agricoles, mobilières et immobilières qui pourraient se rattacher directement 
+ou indirectement à l'un quelconque des objets de la société ou à tous autres 
+objets similaires ou connexes ; 
+• la société pourra faire toutes opérations rentrant dans son objet soit seule, soit 
+en participation, soit en association sous quelque forme que ce soit, soit 
+directement, soit au courtage ou à la commission ; 
+Elle pourra, en outre faire toutes exploitations, soit par elle -même, soit par cession, 
+location ou régie, soit par tous autres modes, sans aucune exception, créer toutes 
+ 
+1 La durée de la société a été prorogée par décision de l’Assemblée Générale Extraordinaire en date du 17 mars 
+2026. 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                                18 
+sociétés, faire tous apports à des sociétés existantes, fusionner ou s'allier avec elles, 
+souscrire, acheter, vendre et revendre tous titres et droits sociaux ; prendre toutes 
+commandites et faire tous prêts. 
+Capital social au  
+31/12/2025 502 945 280,0 MAD 
+Documents juridiques 
+Les documents juridiques de la Société et notamment les statuts, les procès -verbaux 
+des assemblées générales et les rapports des commissaires aux comptes peuvent être 
+consultés au siège social de la Société. 
+Textes législatifs et 
+réglementaires 
+applicables à Auto Hall 
+De par sa forme juridique, Auto Hall est régie par le droit marocain et la loi N° 17 -95 
+du 30 août 1996 relative aux sociétés anonymes, tel que modifiée et complétée. 
+Le secteur dans lequel opère Auto Hall est soumis à la loi n°52 -05 portant code de la 
+route, relative aux véhicules promulgués par le Dahir n°2-10-421 du 29 septembre 2010.  
+De par la cotation de ses actions sur la Bourse de Casablanca, Auto Hall est soumise à 
+toutes les dispositions légales et réglementaires relatives au marché financier et 
+notamment :  
+• La loi n° 19-14 relative à la Bourse des Valeurs, aux sociétés de bourse et 
+aux conseillers en investissement financier ; 
+• Le Règlement général de l’Autorité Marocaine du Marché des Capitaux 
+approuvé par l’arrêté du Ministre de l’Economie et des Finances n°2169/16 du 
+14 Juillet 2016;  
+• La loi n° 44-12 relative à l'appel public à l'épargne et aux informations exigées 
+des personnes morales et organismes faisant appel public à l'épargne ; 
+• La circulaire de l’Autorité Marocaine du Marché des Capitaux, prise en 
+application de l’article 4-2 du dahir n° 1-93-212 précité ; 
+• La loi n°35 -96 relative à la création d’un dépositaire central et à l’institution 
+d’un régime général de l’inscription en compte de certaines valeurs. 
+• Le Règlement général du dépositaire central approuvé par l’arrêté du Ministre 
+de l’Economie et des Finances n°932 -98 du 16 avril 1998 et amendé par 
+l’arrêté du Ministre de l’Economie, des Finances, de la Privatisation et du 
+Tourisme n°196101 du 30 octobre 2001 et l’arrêté n°77-05 du 17 mars 2005 
+• La loi n°26 03 relative aux offres publiques sur le marché boursier marocain, 
+modifié et complété par la loi 46-06 et la loi 44-12. 
+Régime fiscal Auto Hall est soumise à l’impôt sur les sociétés au taux de droit commun, soit 3 4% en 
+2025; Auto Hall est soumise à la TVA (7%, 10% 14% et 20%). 
+Tribunal compétent en 
+cas de litige 
+Tribunal de commerce de Casablanca  
+Source : Auto Hall 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                              19 
+II. Capital social 
+II.1 Composition du capital 
+Au 31 décembre 2025, Auto Hall est dotée d’un capital social de 502 945 280 MAD, composé de 50 294 528 actions d’une valeur nominale de 10 MAD.  
+II.2 Historique du capital 
+Le capital de Auto Hall est resté stable sur les cinq dernières années. 
+II.3 Évolution de l’actionnariat 
+L’évolution de l’actionnariat d’Auto Hall sur les cinq derniers exercices se présente comme suit :  
+ Évolution de l’actionnariat d’Auto Hall  
+Actionnaires 
+25/05/2021 17/05/2022 31/05/2023 29/05/2024 27/05/2025 21/05/2026 
+Nombre de 
+titres et 
+droits de vote 
+% du 
+capital 
+et des 
+droits 
+de vote 
+Nombre de 
+titres et 
+droits de vote 
+% du 
+capital 
+et des 
+droits 
+de vote 
+Nombre de 
+titres et 
+droits de vote 
+Nombre 
+de titres 
+et 
+droits 
+de vote 
+Nombre de 
+titres et 
+droits de vote 
+% du 
+capital 
+et des 
+droits 
+de vote 
+Nombre de 
+titres et 
+droits de vote 
+% du 
+capital 
+et des 
+droits 
+de vote 
+Nombre de 
+titres et 
+droits de vote 
+% du 
+capital 
+et des 
+droits 
+de vote 
+AMANA 28 674 342 57,0% 29 322 853 58,3% 29 322 853 58,3% 29 322 853 58,3% 29 322 853 58,3% 29 322 853 58,3% 
+CIMR 7 516 313 14,9% 7 566 313 15,0% 7 566 313 15,0% 7 566 313 15,0% 7 566 313 15,0% 7 566 313 15,0% 
+Hakam 
+Abdellatif 
+Finance SA 
+5 201 661 10,3% 5 226 661 10,4% 5 226 661 10,4% 4 293 321 8,5% 4 096 313 8,1% 4 096 313 8,1% 
+Divers 
+actionnaires 8 902 212 17,7% 8 178 701 16,3% 8 178 701 16,3% 9 112 041 18,1% 9 309 049 18,5% 9 309 049 18,5% 
+Total 50 294 528 100,0% 50 294 528 100,0% 50 294 528 100,0% 50 294 528 100,0% 50 294 528 100,0% 50 294 528 100,0% 
+Source : Auto Hall  
+Aux dates de tenue des Assemblées Générales Ordinaires annuelles, arrêtant les comptes de chaque exercice, la répartition du capital et des droits de vote du 
+groupe Auto Hall est demeurée sensiblement inchangée, ne faisant apparaître aucune évolution significative dans la répartition du capital social. 
+A noter qu’aucun franchissement de seuil n’a eu lieu sur les 5 dernières années. 
+    
+Document de référence Auto Hall - Exercice 2025                                                                                                                                                                       
+                                        20 
+Actionnariat actuel de la Société 
+Au 21/05/2026, l’actionnariat de la Société se présente comme suit :  
+Actionnaires Nombre de titres et 
+droits de vote 
+% du capital et des 
+droits de vote 
+AMANA 29 322 853 58,3% 
+CIMR 7 566 313 15,0% 
+Hakam Abdellatif Finance SA 4 096 313 8,1% 
+Divers actionnaires 9 309 049 18,5% 
+Total 50 294 528 100,0% 
+Source : Auto Hall  
+II.4 Présentation des principaux actionnaires d’Auto Hall  
+II.4.1 Informations relatives à AMANA 
+AMANA est une société anonyme spécialisée dans les activités de participation et de promotion 
+immobilière dont le Conseil d’Administration est présidé par Moulay Souleimane Cherkaoui. 
+Dénomination AMANA 
+Siège social Km.5 route d’Azemmour Casablanca 
+Chiffre d'affaires au 31/12/2024 -  
+Produits financiers au 31/12/2024 58 646 KMAD 
+Résultat net au 31/12/2024 55 813 KMAD 
+Capital social au 31/12/2024 300 KMAD  
+Situation nette au 31/12/2024 509 464 KMAD 
+Actionnariat et % de détention au 31/12/2024 
+▪ Lalla Zoubida El Yacoubi (22,9%) 
+▪ Lalla Noufissa El Yacoubi (22,9%) 
+▪ Moulay Mohamed Cherkaoui (13,5%) 
+▪ Moulay Omar Cherkaoui (11,7%) 
+▪ Moulay Souleimane Cherkaoui (11,7%) 
+▪ Moulay Mehdi Cherkaoui (11,5%)  
+▪ Lalla Rabia Cherkaoui (5,7%) 
+Source : Auto Hall  
+II.4.2 Informations relatives à CIMR 
+Créée en 1949, la CIMR a pour mission de promouvoir un régime de retraite pérenne, équilibré et 
+solidaire, garantissant aux bénéficiaires une pension équitable dans le cadre d’une gestion efficace et de 
+qualité. Tous les bénéfices qu’elle dégage sont reversés dans le fonds et profitent donc aux pensions des 
+affiliés. Elle a le statut d’une société mutuelle de retraite depuis 2017 (auparavant association à but non 
+lucratif). 
+La CIMR compte, du fait de son assise financière, parmi les investisseurs institutionnels les plus actifs 
+du Royaume avec des participations dans plusieurs fonds ou sociétés opérant dans différents secteurs 
+clés de l’économie marocaine. 
+Le tableau ci-dessous présente les principales informations relatives à la CIMR : 
+ 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                              21 
+Dénomination CIMR 
+Siège social Intersection Bd de l’Aéropostale et Bd Main Street, 
+Casablanca 
+Fonds propres au 31/12/2024 92 9778 MMAD 
+Produits techniques au 31/12/2024 4 640 MMAD 
+Résultat net au 31/12/2024 2 745 MMAD 
+Principaux actionnaires au 31/12/2024 Sociétaires 
+Source : CIMR 
+ 
+II.4.3 Informations relatives à Hakam Abdellatif Finance SA 
+ABDELLATIF HAKAM FINANCE SA est une société de participation gérée par Mr ABDELLATIF 
+HAKAM.  
+Dénomination HAKAM ABDELLATIF FINANCE SA 
+Siège social Avenue Hassan II Route de Casablanca, Rabat 
+Chiffre d'affaires au 31/12/2024 -  
+Produits financiers au 31/12/2024 81 326 KMAD 
+Résultat net au 31/12/2024 74 910 KMAD 
+Capital social au 31/12/2024 10 000 KMAD 
+Situation nette au 31/12/2024 1 002 353 KMAD 
+Actionnariat et % de détention au 31/12/2024 
+▪ Naoual HAKAM (78,0%) 
+▪ Abdelatif HAKAM (21,0%) 
+▪ Micheline MUFFAT (0,8%)  
+▪ Kenza BENHAMOU (0,2%) 
+▪ Karim BENHAMOU (0,0%) 
+Source : Auto Hall 
+II.5 Pacte d’actionnaire 
+A ce jour, aucun pacte d’actionnaires n’existe entre les actionnaires de Auto Hall.  
+ 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                               22 
+II.6 Capital potentiel d’Auto Hall 
+L'Assemblée Générale Mixte, réunie en date du 21 mai 2026, après avoir pris connaissance du rapport 
+du conseil d'administration, a décidé d’une augmentation du capital de la société d'un montant maximal 
+de 500.000.000 MAD par voie d’appel public à l’épargne. Cette opération pourra être réalisée en une 
+ou plusieurs tranches selon les opportunités de marché.  
+L'Assemblée Générale décide qu'une première tranche sera réalisée avec maintien du Droit Préférentiel 
+de Souscription (DPS) des actionnaires à hauteur d’un montant maximal de 500.000.000 MAD.  
+L'Assemblée Générale décide qu'une seconde tranche pourra être réalisée à hauteur d’un montant dont 
+le cumul avec la première tranche n’excède pas 500.000.000 MAD, avec possibilité de suppression du 
+Droit Préférentiel de Souscription (DPS) des actionnaires . Dans ce cas, les actionnaires convoqueront 
+une assemblée générale extraordinaire ultérieure afin de satisfaire aux obligations légales en matière de 
+production d’un rapport du conseil d’administration et du rapport du commissaire aux comptes, et 
+donneront au conseil d’administration mandat pour la mettre en œuvre.  
+L’Assemblée Générale donne tout pouvoir au Conseil d’Administration pour mettre en œuvre 
+l’augmentation de capital selon les conditions de marché, en tenant compte des modalités établies par la 
+présente assemblée.  
+Le Conseil d’Administration disposera à cet effet de toute latitude pour en arrêter les modalités 
+d’exécution, sous réserve du respect desdites décisions de l’Assemblée Générale, et devra en informer 
+préalablement l’Assemblée Générale des actionnaires. 
+Conformément à l’article 188 de la Loi n°17-95, le montant de l’augmentation de capital social doit être 
+entièrement souscrit. A défaut, l’augmentation de capital est réputée non avenue.  
+ 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                              23 
+II.7 Négociabilité des titres de capital  
+Auto Hall est cotée à la Bourse de Casablanca depuis le 04 septembre 1941  sous le code «  ISIN 
+MA0000010969 » et le Ticker « ATH ». 
+Le titre de Auto Hall est coté sur le marché principal , compartiment « Marché Principal B  » de la  
+Bourse de Casablanca. Les actions de Auto Hall sont librement cessibles ou transmissibles. Il n’existe 
+aucune restriction en matière de négociabilité visant les actions de Auto Hall. 
+Le graphique ci -dessous illustre l’évolution du cours de Auto Hall au cours des 3 dernières années 
+jusqu’au 03/07/2026 : 
+ 
+ 
+Source : Bourse de Casablanca 
+  
+Entre le 03 juillet 2023 et le 03 juillet 2026, le cours de l'action Auto Hall est passé de 75,4 MAD à 71,0 
+MAD, soit une légère baisse globale de 5,8%. Cette évolution s'est déroulée en deux grandes phases : 
+une première phase de repli jusqu'au début de l'année 2024, suivie d'une reprise marquée à partir du 
+printemps 2024, portée par l'amélioration progressive de l'activité commerciale du groupe. Le titre a 
+ainsi atteint son plus haut de la période, à 96,2 MAD, début novembre 2025, avant d'entamer une phase 
+de correction pour s'établir à 7 1,0 MAD au 03 juillet 2026, soit une baisse de 2 6,2% par rapport à ce 
+pic. Sur la fin de la période, le titre confirme ce repli, passant de 75,0 MAD au 22 avril 2026 à 7 1,0 
+MAD au 03 juin 2026, soit une baisse de 5,3%. 
+Evolution du cours de Auto Hall sur des périodes de 1 mois, 3 mois, 6 mois, 1 an et 2 ans  
+  Période   
+Cours de début 
+de période Dernier cours Performance 
+  De A  (MAD) (MAD)    
+1 mois 03/06/2026 03/07/2026 69 71 2,9% 
+3 mois 03/04/2026 03/07/2026 79 71 -10,1% 
+6 mois 03/01/2026 03/07/2026 95,49 71 -25,6% 
+1 an 03/07/2025 03/07/2026 80,80 71 -12,1% 
+2 ans 03/07/2024 03/07/2026 72 71 -1,4% 
+Source : Bourse de Casablanca 
+Les principaux indicateurs d’évolution du cours de bourse du titre Auto Hall sont présentés dans les 
+tableaux ci-dessous : 
+ 
+ 0,0
+ 50,0
+ 100,0
+ 150,0
+ 200,0
+0
+1 000
+2 000
+3 000
+4 000
+5 000
+6 000
+03/07/2023
+21/07/2023
+09/08/2023
+30/08/2023
+18/09/2023
+09/10/2023
+26/10/2023
+15/11/2023
+04/12/2023
+21/12/2023
+10/01/2024
+30/01/2024
+16/02/2024
+06/03/2024
+25/03/2024
+16/04/2024
+06/05/2024
+23/05/2024
+11/06/2024
+02/07/2024
+19/07/2024
+08/08/2024
+30/08/2024
+20/09/2024
+09/10/2024
+28/10/2024
+15/11/2024
+05/12/2024
+24/12/2024
+13/01/2025
+31/01/2025
+19/02/2025
+10/03/2025
+27/03/2025
+17/04/2025
+07/05/2025
+26/05/2025
+13/06/2025
+03/07/2025
+22/07/2025
+11/08/2025
+02/09/2025
+22/09/2025
+09/10/2025
+28/10/2025
+17/11/2025
+05/12/2025
+24/12/2025
+13/01/2026
+02/02/2026
+19/02/2026
+10/03/2026
+31/03/2026
+17/04/2026
+07/05/2026
+26/05/2026
+18/06/2026
+VE  AH - Base 100  MASI - Base 100
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                               24 
+Principaux indicateurs d’évolution du cours « Auto Hall » 
+Indicateur 2024 2025 YTD2 
+Nombre d'actions composant le capital 50 294 528 50 294 528 50 294 528 
+Plus haut - cours de clôture (MAD) 81,5 107,0 96,7 
+Plus bas - cours de clôture (MAD) 62,0 64,2 66,0 
+Cours Moyen Pondéré (MAD) 69,8 83,5 78,7 
+Capitalisation boursière moyenne (MAD) 3 512 288 265 4 199 593 088 3 958 747 907 
+Source: Bourse de Casablanca 
+(1) Cours Moyen Pondéré = ∑ (𝑐𝑜𝑢𝑟𝑠 𝑑𝑒 𝑐𝑙ô𝑡𝑢𝑟𝑒 𝑥 𝑄𝑢𝑎𝑛𝑡𝑖𝑡é é𝑐ℎ𝑎𝑛𝑔é𝑒) / 𝑄𝑢𝑎𝑛𝑡𝑖𝑡é é𝑐ℎ𝑎𝑛𝑔é𝑒 𝑡𝑜𝑡𝑎𝑙𝑒  
+(2) Capitalisation boursière moyenne = Cours Moyen Pondéré x Nombre d’actions 
+Plus haut cours et plus bas cours par mois sur les 6 derniers mois du titre « Auto Hall » 
+En MAD Jan-26 Fév-26 Mars-26 Avr-26 Mai-26 Juin 26 
+Plus haut - Cours de clôture 96,7 95,0 86,0 80,0 75,5 73,9 
+Plus bas - Cours de clôture 91,0 90,0 75,0 74,0 68,0 66,0 
+Source: Bourse de Casablanca 
+Plus haut cours et plus bas cours par trimestre au cours des 6 derniers trimestres du titre « Auto Hall » 
+En MAD T1-2025 T2-2025 T3-2025 T4-2025 T1-2026 T2-2026 
+Plus haut - Cours de clôture 79,0 84,0 107,0 99,0 96,7 80,0 
+Plus bas - Cours de clôture 64,2 73,6 78,5 90,0 75,0 66,0 
+Source: Bourse de Casablanca 
+Volume quotidien moyen et volume global des transactions 
+En MAD 2024 2025 YTD3 
+Volume quotidien moyen 1 201 006 1 862 563 935 740 
+Volume global 295 447 425 460 052 940 115 095 999 
+Source: Bourse de Casablanca 
+Volume mensuel des transactions sur les 6 derniers mois du titre « Auto Hall » 
+En MMAD Jan-26 Fev-26 Mars-26 Avr-26 Mai 26 Juin 26 
+Volume mensuel des transactions 0,2 1,1 1,0 1,7 1,0 0,7 
+Source: Bourse de Casablanca 
+Volume trimestriel des transactions sur les 6 derniers trimestres du titre « Auto Hall » 
+En MMAD T1-2025 T2-2025 T3-2025 T4-2025 T1-2026 T2-2026 
+Volume trimestriel des transactions 2,5 1,6 2,8 0,6 0,8 1,1 
+Source: Bourse de Casablanca 
+ 
+ 
+2 Période allant du 01/01/2026 au 03/07/2026 
+3 Période allant du 01/01/2026 au 03/07/2026 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                              25 
+II.8 Politique de distribution de dividendes  
+II.8.1 Disposition statutaire 
+L’article 32 des statuts de Auto Hall prévoit « que le bénéfice distribuable est constitué par le bénéfice 
+net de l’exercice, après dotation à la réserve légale et affectation des résultats nets antérieurs reportés. 
+Sur ce bénéfice, l’assemblée générale peut prélever toutes sommes qu’elle juge à propos d’affecter à la 
+dotation de tous fonds de réserves facultatives, ordinaires ou extraordinaires, ou de reporter à nouveau. 
+Sur le solde, s’il en existe, l’assemblée générale fixe un premier dividende calculé sur le montant libéré 
+et non remboursé du capital social ; le reliquat peut constituer un superdividende sous déduction de toute 
+affectation de réserves. Dans les limites de la loi, l’assemblée générale peut décider, à titre exceptionnel, 
+la distribution des sommes prélevées sur les réserves facultatives dont elle a la disposition. » 
+II.8.2 Dividendes distribués au cours des trois derniers exercices 
+En MAD, sauf si indiqué 2023 2024 2025 
+Résultat net social (en KMAD) 169 651 185 156 104 436 
+Dividendes distribués au titre de l'exercice (en KMAD) 100 589 100 589 100 589 
+Taux de distribution (%)4 59,3% 54,3% 96,3% 
+Nombre d'actions 50 294 528 50 294 528 50 294 528 
+Valeur nominale  10 10 10 
+Résultat net par action5  3,4 3,7 2,1 
+Dividende par action au titre de l'exercice6 2,0 2,0 2,0 
+Source : Auto Hall  
+Auto Hall détermine sa politique de dividendes en fonction de plusieurs paramètres, tels que ses résultats 
+d’exploitation, l’environnement économique et sectoriel, ainsi que ses projections de trésorerie.  
+ 
+Auto Hall a distribué 59,3% des résultats de 2023 d’un montant de 100 589 KMAD soit un dividende 
+de 2,0 MAD par action et 54,3% au titre de l’exercice 2024 d’un montant de 100 589 KMAD, équivalent 
+à un dividende de 2,0 MAD par action. 
+ 
+Au titre de l’exercice 2025, Auto Hall a distribué 96,3 % de son résultat, représentant un montant de 
+100 589 KMAD, soit un dividende de 2,0 MAD par action. 
+ 
+4 Taux de distribution = Dividendes distribués au titre de l’exercice / Résultat net social  
+5 Résultat net par action = Résultat net social / Nombre d’actions 
+6 Dividende par action au titre de l’exercice = Dividendes distribués au titre de l’exercice / Nombre d’actions  
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                               26 
+III. Endettement 
+III.1 Dette privée 
+III.1.1 Récapitulatif des dettes privées de Auto Hall  
+Le tableau ci-dessous, présente le récapitulatif des dettes privées de Auto Hall sur les 3 dernières 
+années :  
+En KMAD  2023 2024 2025 Var. 23-24 Var. 24-25 
+Dette fonds de titrisation 505 135 648 924 729 312 28,5% 12,4% 
+Total dette privée  505 135 648 924 729 312 28,5% 12,4% 
+Source: Auto Hall 
+La dette privée d'Auto Hall est exclusivement constituée de la dette relative au Fonds de Titrisation 
+«FT Mobility ». 
+Sur la période 2023-2025, celle-ci affiche une progression continue, passant de 505 135 KMAD en 2023 
+à 648 924 KMAD en 2024 (+28,5%), puis à 729 312 KMAD en 2025 (+12,4%), traduisant un recours 
+croissant à ce mécanisme de financement en cohérence avec le développement de l'activité du Groupe. 
+III.2 Dette bancaire  
+III.2.1  Contrats signés avant fin décembre 2025 
+Les tableaux ci-dessous, présentent les caractéristiques des principaux contrats de crédit bancaire du 
+groupe : 
+Contrats Moyen et Long Terme  
+N° 1 
+Emprunteur Auto Hall Immobilier 
+Prêteur CFG Bank 
+Date d’effet  11/12/2023 
+Date de conclusion du contrat 11/12/2023 
+Montant du contrat  300 000 KMAD 
+Objet de l’emprunt Le refinancement d'actifs existants appartenant à l'emprunteur à hauteur de 
+300 MMAD 
+Durée Crédit spot sur 2 ans remboursable par un crédit à moyen terme sur 5 ans  
+Taux d’intérêt Taux d’intérêt annuel fixe hors taxe de 4,9% les 2 premières années et un 
+taux annuel de 5,35% pour le reste 
+Reste à rembourser au 31/12/2025 300 000 KMAD 
+Dont moins d’un an - 
+Dont plus d’un an 300 000 KMAD 
+Date d’échéance 03 décembre 2030 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                              27 
+Périodicité de remboursement Mensuelle 
+Sûretés/Hypothèques 
+- Hypothèque en premier rang sur des biens d'une valeur de 300 MMAD                                                       
+Cession de créances locatives indemnitaires en faveur de CFG BANK , 
+les titres nantis sont les suivants :  
+➢ 40054/32 - 40054/32 ( 21 MMAD) 
+➢ 808/F8 (31 MMAD) 
+➢ 13311/C (120 MMAD)  
+➢ 126746/03 (36 MMAD)  
+➢ 119390/03 (37,5 MMAD) 
+➢ 90653/18 (29,5 MMAD)  
+➢ 102562/13 (26 MMAD)  
+Principaux covenants financiers - Néant 
+Source: Auto Hall  
+N° 2 
+Emprunteur Leader location LD 
+Prêteur Crédit du Maroc 
+Date d’effet  15/03/2024 
+Date de conclusion du contrat 28/02/2024 
+Montant du contrat  60 000 KMAD  
+Objet de l’emprunt Refinancement des investissements du parc auto 
+Durée 60 Mois 
+Taux d’intérêt  Taux fixe 5% 
+Reste à rembourser au 31/12/2025 40 048 KMAD    
+Dont moins d’un an 11 830 KMAD  
+Dont plus d’un an 28 218 KMAD 
+Date d’échéance 15 février 2029 
+Périodicité de remboursement Mensuelle  
+Sûretés/Hypothèques - Néant 
+Principaux covenants financiers - Néant 
+Source : Auto Hall  
+    
+Document de référence Auto Hall - Exercice 2025                                                                                                                                                                                                               28 
+ 
+Contrats Court Terme 
+En KMAD Prêteur Date d’effet  Objet de 
+l’emprunt Taux d'intérêts7 Montant 
+accordé8 
+Montant 
+débloqué Date d'échéance  Périodicité de 
+remboursement Covenants 
+Crédit 1 CIH 2025 Spot Au cas par cas  100 000  150 000  31/12/2026 90 jours Néant 
+Crédit 2 SGMB 2025 Spot Au cas par cas  50 000  250 000  1 an 90 jours Néant 
+Crédit 3 BCP 2025 Spot Au cas par cas  150 000  150 000  31/05/2026 90 jours Néant 
+Crédit 4 BMCI 2025 Spot Au cas par cas 100 000  100 000  30/09/2026 90 jours Néant 
+Crédit 5 CDM 2025 Spot Au cas par cas 100 010  100 000  1 an 90 jours Néant 
+Crédit 6 CAM 2025 FC 5,50% 20 000  -  1 an 90 jours Néant 
+Crédit 7 Bank of 
+Africa 2025 Spot/FC Au cas par cas /5,20% 200 200  200 000  1 an 90 jours Néant 
+Crédit 8 ATWB 2025 Spot/FC Au cas par cas /5,20% 317 300  300 000  31/05/2026 90 jours Néant 
+Auto Hall SA     1 037 510  1 250 000 9    
+Crédit 9 BMCI 2025 Spot/ 
+Refinancement 
+Au cas par cas / Taux 
+Référence +1,2%  70 000  -  30/09/2026 90 jours Néant 
+Crédit 10 ATWB 2025 Spot/ 
+Refinancement 
+Taux Référence +1,5% 
+/ 5,20% 111 000  -  31/05/2026 90 jours Néant 
+AFRICAMOTORS     181 000 -    
+ 
+ 
+ 
+7 Le taux de référence appliqué aux contrats est déterminé par la banque émettrice, qui opte pour l'Euribor ou le SOFR selon le s conditions de marché en vigueur au moment 
+du tirage , retenant systématiquement l'indice le plus avantageux pour le client. 
+8 Montant accordé y compris les engagements par signature (LC, SBLC, cautions)  
+9 Le montant débloqué est supérieur au montant accordé en raison d’un accord ponctuel pour certains crédits qui n'entre pas dans le cadre des lignes de financement court 
+terme. 
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                              29 
+Crédit 11 CIH 2025 Refinancement Tx Référence +1,2% 475 000  98 000  31/12/2026 90 jours Néant 
+Crédit 12 SGMB 2025 Spot/Refinancement Au cas par cas /Tx 
+Référence +1,5% 90 000  23 705  31/10/2026 90 jours Néant 
+Crédit 13 BCP 2025 Spot/Refinancement  Au cas par cas/Tx 
+Référence +1,2%  80 000  70 000  31/05/2026 90 jours Néant 
+Crédit 14 BMCI 2025 Spot/Refinancement Au cas par cas/Tx 
+Référence +1,2%  120 000  -  30/09/026 90 jours Néant 
+Crédit 15 CDM 2025 Spot/Refinancement Au cas par cas/Tx 
+Référence +1,2%  80 000  22 049  1 an 90 jours Néant 
+Crédit 16 ATWB 2025 Refinancement/FC Tx Référence +1,5% 
+/5,20% 464 600  -  31/05/2026 90 jours Néant 
+SMAA     1 309 600  213 754     
+Crédit 17 CIH 2025 Refinancement / Escompte Tx de référence +1,2% 50 000  -  31/12/2026 90 jours Néant 
+Crédit 18 SGMB 2025 Spot  Au cas par cas  25 000  -  31/10/2026 90 jours Néant 
+Crédit 19 BCP 2025 Spot / Refinancement  Au cas par cas/Tx 
+Référence +1,2%  52 000  50 000  31/05/2026 90 jours Néant 
+Crédit 20 Bank of 
+Africa 2025 Spot/FC Au cas par cas/5,20% 50 000  -  1 an 90 jours Néant 
+Crédit 21 ATWB 2025 Refinancement /FC Tx Référence +1,5% 
+/5,20% 130 100  -  31/05/2026 90 jours Néant 
+Ajustement comptable10      4 417    
+DIAMOND MOTORS     307 100  54 417     
+Crédit 22 CIH 2025 Refinancement Tx de référence +1,2% 32 400  -  31/12/2026 90 jours Néant 
+Crédit 23 SGMB 2025 Spot  Au cas par cas 50 000  -  31/10/2026 90 jours Néant 
+Crédit 24 BCP 2025 Spot / Refinancement  Au cas par cas/Tx 
+Référence +1,2%  60 000  60 000  31/05/2026 90 jours Néant 
+Crédit 25 Bank of 
+Africa 2025 Spot / FC  Au cas par cas/5,20% 100 000  100 550  1 an 90 jours Néant 
+Crédit 26 ATWB 2025 Refinancement Tx Référence +1,5%  140 000  -  31/05/2026 90 jours Néant 
+AHVI     382 400  160 550     
+ 
+ 
+ 
+10 Ajustement comptable en fin d’année relatif à une régularisation chez Diamond Motors  
+ 
+Document de référence Auto Hall – Exercice 2025                                                                                                               30 
+Crédit 27 CIH 2025 Refinancement / Escompte Tx de référence +1,2% 30 000 0 31/12/2026 90 jours Néant 
+Crédit 28 SGMB 2025 Spot Au cas par cas /Tx 
+Référence +1,5% 120 000 50 000 31/10/2026 90 jours Néant 
+Crédit 29 BCP 2025 Spot/ Refinancement  Au cas par cas/Tx 
+Référence +1,2%  50 000 50 000 31/05/2026 90 jours Néant 
+Crédit 30 BMCI 2025 Spot / Refinancement  Au cas par cas/Tx 
+Référence +1,2%  80 000 - 1 an 90 jours Néant 
+Crédit 31 CDM 2025 Spot / Refinancement Au cas par cas/Tx 
+Référence +1,2% 140 000 140 000 1 an 90 jours Néant 
+Crédit 32 Bank of 
+Africa 2025 Spot / Refinancement Au cas par cas/Tx 
+Référence +1,2% 200 000 152 374 1 an 90 jours Néant 
+Crédit 33 ATWB 2025 Refinancement/FC Tx Référence +1,5% 252 000 - 31/05/2026 90 jours Néant 
+SCAMA     872 000  392 374     
+Crédit 34 SGMB 2025 Spot/ Refinancement/ SBLC Au cas par cas /Tx 
+Référence +1,5% 80 000  -  31/10/2026 90 jours Néant 
+Crédit 35 BCP 2025 Spot / Refinancement  Au cas par cas/Tx 
+Référence +1,2%  50 000  50 000  31/05/2026 90 jours Néant 
+Crédit 36 BMCI 2025 Spot / Refinancement  Au cas par cas/Tx 
+Référence +1,2%  70 000  -  1 an 90 jours Néant 
+Crédit 37 Bank of 
+Africa 2025 LC / Refinancement  8%CN/Tx Référence 
++1,2%  20 000  -  1 an 90 jours Néant 
+Crédit 38 ATWB 2025 Refinancement/ FC Tx Référence +1,5%  124 585  -  31/05/2026 90 jours Néant 
+SMVN       344 585  50 000     
+Crédit 39 SGMB 2025 Spot  Au cas par cas  16 000  -  31/10/2026 90 jours Néant 
+Crédit 40 CAM 2025 FC  5,20% 86 000  -  1 an 90 jours Néant 
+Crédit 41 Bank of 
+Africa 2025 FC 5,20% 5 000  -  1 an 90 jours Néant 
+Crédit 42 ATWB 2025 Refinancement Tx Référence +1,5%  50 300  -  31/05/2026 90 jours Néant 
+SOMMA       157 300  -     
+Crédit 43 ATWB 2025 FC 5,20% 2 000  -  31/05/2026 90 jours Néant 
+LLD   -  2 000  -     
+Crédit 44 ATWB 2025 FC 5,20% 1 000 -  31/05/2026 90 jours Néant 
+AHCOM     1 000  -     
+Crédit 45 ATWB 2025 FC 5,20% 5 000 -  31/05/2026 90 jours Néant 
+AOC     5 000  -     
+Crédit 46 ATWB 2025 FC/ cautions 5,20%/ 0,85% 85 000 -  31/05/2026 90 jours Néant 
+SMAM     85 000  -     
+Crédit 47 ATWB 2025 LC 20% CN 26 500 - 31/05/2026 90 jours Néant 

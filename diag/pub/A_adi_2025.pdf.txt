@@ -1,0 +1,359 @@
+https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/adi_2025.pdf
+
+Le rapport financier annuel du Groupe Alliances est disponible sur son site internet sous le lien suivant : https://www.alliances.co.ma/publications/rapport-financier-annuel/
+Les commentaires sur l’activité sont dans le communiqué financier du 31 décembre 2025 sous le lien suivant :
+https://www.alliances.co.ma/publications/communiques/
+BILAN ACTIF Exercice du 01/01/2025 au 31/12/2025
+31/12/2025 31/12/2024
+Brut Amort. et prov. Net Net
+ACTIF IMMOBILISE
+IMMOBILISATIONS EN NON VALEURS (A)      759.600,00  151.920,60  607.679,40  -   
+*  Frais préliminaires  -    -    -    -   
+*  Charges à repartir sur plusieurs  exercices  759.600,00  151.920,60  607.679,40  -   
+*  Primes de remboursement des obligations  -    -    -    -   
+IMMOBILISATIONS INCORPORELLES (B)      11.932.772,82  11.743.403,77  189.369,05  268.584,73 
+*  Immobilisation en recherche et développement  -    -    -    -   
+*  Brevets, marques, droits et valeurs similaires  7.138.656,50  7.078.892,48  59.764,02  93.212,09 
+*  Fonds commercial  -    -    -    -   
+*  Autres immobilisations incorporelles  4.794.116,32  4.664.511,29  129.605,03  175.372,64 
+IMMOBILISATIONS CORPORELLES (C)      97.594.900,32  53.772.699,96  43.822.200,36  43.794.084,85 
+*  Terrains  3.508.465,07  -    3.508.465,07  3.508.465,07 
+*  Constructions  16.766.280,15  12.156.132,40  4.610.147,75  5.402.762,37 
+*  Installations techniques, matériel et outillage  316.172,70  316.172,70  -    0,01 
+*  Matériel transport  256.994,94  256.994,94  -    2.853,63 
+*  Mobilier, matériel de bureau et aménag. divers  41.339.889,27  41.043.399,92  296.489,35  274.655,58 
+*  Autres immobilisations corporelles  35.407.098,19  -    35.407.098,19  34.605.348,19 
+*  Immobilisations corporelles en cours  -    -    -   
+IMMOBILISATIONS FINANCIERES (D)      2.800.807.394,73  871.380.265,44  1.929.427.129,29  1.799.159.339,15 
+*  Prêts immobilisés  -    -    -    -   
+*  Autres créances financières  98.043,38  -    98.043,38  98.043,38 
+*  Titres de participation  2.800.289.351,35  871.380.265,44  1.928.909.085,91  1.798.501.295,77 
+*  Autres titres immobilisés  420.000,00  -    420.000,00  560.000,00 
+ECARTS DE CONVERSION -ACTIF  (E)     -    -    -   
+*  Diminution des créances immobilisées  -    -    -   
+*  Augmentation des dettes financières  -    -    -   
+TOTAL I (A+B+C+D+E)  2.911.094.667,87  937.048.289,77  1.974.046.378,10  1.843.222.008,73 
+ACTIF CIRCULANT (HORS TRESORERIE)
+STOCKS (F)      70.266.265,65  47.686.103,73  22.580.161,92  22.269.068,92 
+*  Marchandises  7.733.553,69  -    7.733.553,69  7.661.068,69 
+*  Matières et fournitures consommables  -    -    -    -   
+*  Produits en cours  62.532.711,96  47.686.103,73  14.846.608,23  14.608.000,23 
+*  produits intermédiaires et produits résiduels  -    -    -    -   
+*  Produits finis  -    -    -    -   
+CREANCES DE L’ACTIF CIRCULANT (G)      3.709.623.374,45  914.731.321,34  2.794.892.053,11  2.574.636.853,01 
+*  Fournisseurs débiteurs, avances et acomptes  40.324.878,42  2.549.446,98  37.775.431,44  32.996.741,39 
+*  Clients et comptes rattachés  892.862.436,78  36.654.078,41  856.208.358,37  879.515.028,26 
+*  Personnel  1.579.123,04  1.564.057,00  15.066,04  28.232,80 
+*  Etat  125.101.857,35  125.101.857,35  131.941.784,26 
+*  Comptes d’associés  254.255.256,94  160.110.526,05  94.144.730,89  94.144.730,89 
+*  Autres débiteurs  2.383.603.545,32  713.853.212,90  1.669.750.332,42  1.433.374.438,41 
+*  Comptes de régularisation-Actif  11.896.276,60  11.896.276,60  2.635.897,00 
+TITRES VALEURS DE PLACEMENT (H)      29.999.995,74  -    29.999.995,74  -   
+ECARTS DE CONVERSION-ACTIF(Eléments circulants) ( I )  10.547,55  10.547,55  98.490,60 
+                    TOTAL II  ( F+G+H+I )      3.809.900.183,39  962.417.425,07  2.847.482.758,32  2.597.004.412,53 
+TRESORERIE
+TRESORERIE-ACTIF  6.176.910,62  -    6.176.910,62  (22.261.580,78)
+*  Chèques et valeurs à encaisser  -    -    -    -   
+*  Banques, TG et CCP  6.167.502,52  -    6.167.502,52  20.705.778,42 
+*  Caisse, Régie d’avances et accréditifs  9.408,10  -    9.408,10  43.243,40 
+                                     TOTAL III  6.176.910,62  -    6.176.910,62  20.749.021,82 
+TOTAL GENERAL I+II+III  6.727.171.761,88  1.899.465.714,84  4.827.706.047,04  4.460.975.443,08
+BILAN PASSIF Exercice du 01/01/2025 au 31/12/2025
+PASSIF 31/12/2025 31/12/2024
+FINANCEMENT PERMANANT
+CAPITAUX PROPRES
+*  Capital social ou personnel (1)  2.207.858.800,00  2.207.858.800,00 
+*  Moins : actionnaires, capital souscrit non appelé                                                 
+*  Capital appelé                                                                      
+dont versé 
+*  Prime d’émission, de fusion, d’apport  -    -   
+*  Ecarts de réévaluation  -    -   
+*  Réserve légale  70.394.930,75  69.987.010,78 
+*  Autres réserves  179.866.796,11  251.599.233,55 
+*  Report à nouveau  (2)  -    -   
+*  Résultat net de l’exercice (2)  204.066.106,77  8.158.399,33 
+Total des capitaux propres (A)  2.662.186.633,63  2.537.603.443,66 
+CAPITAUX PROPRES ASSIMILES (B)  -    -   
+* Subvention d’investissement  -    -   
+* Provisions réglementées  -    -   
+DETTES DE FINANCEMENT (C)  1.412.460.556,86  1.104.514.277,30 
+*  Emprunts obligataires  1.362.640.650,55  1.089.940.100,91 
+*  Autres dettes de financement  49.819.906,31  14.574.176,39 
+PROVISIONS DURABLES POUR RISQUES ET CHARGES (D)  -    -   
+*  Provisions pour risques  -    -   
+*  Provisions pour charges  -    -   
+COMPTES DE LIAISON DES ETABLISSEMENTS ET SUCCU-
+RSALES  -    -   
+ECARTS DE CONVERSION-PASSIF (E)  -    -   
+*  Augmentation des créances immobilisées  -    -   
+*  Diminution des dettes de financement  -    -   
+Total I(A+B+C+D+E+F)  4.074.647.190,49  3.642.117.720,96 
+PASSIF CIRCULANT (HORS TRESORERIE)
+DETTES DU PASSIF CIRCULANT (F)  741.454.882,03  764.147.630,57 
+*  Fournisseurs et comptes rattachés  202.694.352,76  198.598.199,26 
+*  Clients créditeurs, avances et acomptes  -    -   
+*  Personnel  32.038,00  62.106,00 
+*  Organismes sociaux  21.712,01  35.439,14 
+*  Etat  199.687.820,84  230.178.817,52 
+*  Comptes d’associés  -    -   
+*  Autres créanciers  287.961.433,67  221.698.118,90 
+*  Comptes de régularisation passif  51.057.524,75  113.574.949,75 
+AUTRES PROVISIONS POUR RISQUES ET CHARGES (G)  11.597.547,55  11.685.490,60 
+ECARTS DE CONVERSION-PASSIF (Eléments circulants) (H)  -    13.998,35 
+ Total II (F+G+H)  753.052.429,58  775.847.119,52 
+TRESORERIE
+TRESORERIE-PASSIF  6.426,97 43.010.602,60
+*  Crédits d’escompte  -    -   
+*  Crédits de trésorerie  -    -   
+*  Banques (soldes créditeurs)  6.426,97  43.010.602,60 
+Total III  6.426,97  -   
+TOTAL GENERAL I+II+III  4.827.706.047,04  4.460.975.443,08
+COMPTE DE PRODUITS ET DE CHARGES Exercice du 01/01/2025 au 31/12/2025
+NATURE
+Opérations
+Totaux de 
+l’exercice 
+Totaux de l’exer-
+cice précedentPropres à    
+l’exercice 
+Concernant 
+les exercices 
+précédents
+1 2 3=2+1 4
+EXPLOITATION
+I
+ PRODUITS D’EXPLOITATION  111.845.853,86  -    111.845.853,86  68.433.603,17 
+*  Ventes de marchandises (en l’état)  -    -    -    -   
+*  Ventes de biens et services produits  68.072.285,78  -    68.072.285,78  68.253.995,17 
+    Chiffre d’affaires  68.072.285,78  -    68.072.285,78  68.253.995,17 
+*  Variation de stocks de produits (1)  238.608,00  238.608,00  179.608,00 
+*  Immob. Prod. par l’entreprise pour elle-même  -    -    -    -   
+*  Subventions d’exploitation  -    -    -    -   
+*  Autres produits d’exploitation  -    -    -    -   
+*  Reprises d’exploitation, transferts de charges  43.534.960,08  -    43.534.960,08  -   
+II
+ CHARGES D’EXPLOITATION  70.489.276,20  271.890,00  70.761.166,20  149.770.517,01 
+*  Achats revendus(2) de marchandises  -    -    -    -   
+*  Achats consommés(2) de mat. et fourn.  23.047.326,31  -    23.047.326,31  2.392.944,98 
+*  Autres charges externes  26.682.308,00  271.890,00  26.954.198,00  20.056.532,70 
+*  Impôts et taxes  2.556.804,88  -    2.556.804,88  2.058.285,88 
+*  Charges de personnel  701.654,29  -    701.654,29  782.616,74 
+*  Autres charges d’exploitation  1.414.285,71  -    1.414.285,71  1.178.571,43 
+*  Dotations d’exploitation  16.086.897,01  -    16.086.897,01  123.301.565,28 
+III RESULTAT D’EXPLOITATION (I-II)  41.084.687,66  (81.336.913,84)
+FINANCIER
+IV
+PRODUITS FINANCIERS  280.015.851,67  -    280.015.851,67  174.636.678,83 
+*  Produits des titres de participation…  257.099.250,00  -    257.099.250,00  171.399.600,00 
+*  Gains de change  815,00  -    815,00  1.779,75 
+*  Intérêts et autres produits financiers  602.264,07  -    602.264,07  1.055.922,79 
+*  Reprises financières, transferts de charges  22.313.522,60  -    22.313.522,60  2.179.376,29 
+V
+ CHARGES FINANCIERES  39.456.944,01  -    39.456.944,01  64.498.268,54 
+*  Charges d’intérêts  36.455.734,16  -    36.455.734,16  38.940.877,17 
+*  Pertes de change  161.352,44  -    161.352,44  5.469,12 
+*  Autres charges financières  -    -    -    -   
+*  Dotations financières  2.839.857,41  -    2.839.857,41  25.551.922,25 
+VI RESULTAT FINANCIER (IV-V)   240.558.907,66  110.138.410,29 
+VII RESULTAT COURANT (III+VI)   281.643.595,32  28.801.496,45
+NON COURANT
+VIII
+ PRODUITS NON COURANTS  68.583,64  837,15  69.420,79  69.982.324,97 
+*  Produits des cessions d’immobilisations  61.597,08  -    61.597,08  68.490.000,00 
+*  Subventions d’équilibre  -    -    -    -   
+*  Reprises sur subventions d’investissement  -    -    -    -   
+*  Autres produits non courants  6.986,56  837,15  7.823,71  1.492.324,97 
+*  Reprises non courantes, transferts de charges  -    -    -    -   
+IX  CHARGES NON COURANTES  76.832.455,28  -    76.832.455,28  90.019.912,09 
+*  VNA des immobilisations cédées  75.653.432,00  -    75.653.432,00  70.990.000,00 
+*  Subventions accordées  -    -    -    -   
+*  Autres charges non courantes  1.179.023,28  -    1.179.023,28  19.029.912,09 
+*  Dotations non courantes aux amortissements et 
+aux provisions  -    -    -    -   
+X RESULTAT NON COURANT (VIII-IX)  (76.763.034,49)  (20.037.587,12)
+XI RESULTAT AVANT IMPOTS (VII+X)  204.880.560,83  8.763.909,33 
+XII IMPOTS SUR LES BENEFICES  814.454,06  -    814.454,06  605.510,00 
+XIII RESULTAT NET (XI-XII)  204.066.106,77  8.158.399,33 
+XIV TOTAL DES PRODUITS (I+IV+VIII)  391.931.126,32  313.052.606,97 
+XV TOTAL DES CHARGES (II+V+IX+XII)  187.865.019,55  304.894.207,64 
+XVI RESULTAT NET (total des produits-total des charges)  204.066.106,77  8.158.399,33
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • COMPTES SOCIAUX
+BILAN ACTIF (en milliers de dirhams)
+ACTIF 31-déc.-2025 31-déc.-2024
+Ecart d'acquisition  468.307     460.237    
+Immobilisations incorporelles  569     815    
+Immobilisations corporelles  709.504     686.231    
+Immobilisations financières  191.578     187.331    
+Titres mis en équivalence  58     58    
+Impôts différés actif  6.765     6.692    
+ACTIF IMMOBILISÉ  1.376.780     1.341.364    
+Stocks  5.187.558     5.106.391    
+Fournisseurs avances et acomptes  134.480     137.249    
+Clients  1.140.115     1.281.756    
+Personnel  504     498    
+Etat débiteur  896.553     912.443    
+Comptes courants d'associés  103.440     107.399    
+Autres débiteurs  282.551     268.769    
+Comptes de régularisation- actif  58.987     44.473    
+Titres et valeurs de placement  424.416     25.126    
+ACTIF CIRCULANT  8.228.603     7.884.105    
+Disponibilités  328.174     711.134    
+TRÉSORERIE ACTIF  328.174     711.134    
+TOTAL ACTIF  9.933.557     9.936.604    
+BILAN PASSIF (en milliers de dirhams)
+PASSIF 31-déc.-2025 31-déc.-2024
+CAPITAUX PROPRES DU GROUPE  3.993.181     3.668.286    
+Capital  2.207.859     2.207.859    
+Primes d'émission
+Réserves consolidées  1.377.942     1.159.542    
+Ecart de conversion des filiales en monnaie étrangères -221    -1.030    
+Résultat net de l'exercice (Part du Groupe)  407.601     301.915    
+INTÉRÊTS DES MINORITAIRES  91.737     77.914    
+Réserves des minoritaires  97.580     74.385    
+Résultats des minoritaires -5.843     3.528    
+CAPITAUX PROPRES CONSOLIDÉS  4.084.918     3.746.200    
+OBLIGATIONS REMBOURSABLES EN ACTIONS
+Dettes financières  1.980.718     1.681.143    
+Impôts différés passif  114.906     116.298    
+Provisions durables pour risques et charges  853.432     849.799    
+PASSIF IMMOBILISÉ  7.033.974     6.393.440    
+Fournisseurs et comptes rattachés  1.267.567     1.328.810    
+Clients avances et acomptes  425.928     684.706    
+Personnel et organismes sociaux  22.904     22.028    
+Etat créditeur  780.073     826.859    
+Comptes de régularisation passif  85.321     147.668    
+Autres provisions pour risques et charges  17.496     17.490    
+Comptes courants d'associés créditeurs  32.988     28.999    
+Autres dettes  133.947     295.070    
+PASSIF CIRCULANT  2.766.222     3.351.629    
+Trésorerie passif  133.361     191.534    
+TOTAL PASSIF  9.933.557     9.936.604    
+COMPTE DE RESULTAT (en milliers de dirhams)
+COMPTE DE PRODUITS ET DE CHARGES 2025 2024
+PRODUITS D'EXPLOITATION  1.899.450     1.691.728    
+Chiffre d'affaires  2.431.512     2.363.364    
+Variation des stocks -560.689    -735.391    
+Production immobilisée  13.221     18.596    
+Autres produits d'exploitation  1.855     31.525    
+Reprises d'exploitation  13.550     13.634    
+CHARGES D'EXPLOITATION  1.313.289     1.246.052    
+Achats consommés de matières  1.019.053     837.120    
+Autres charges externes  96.481     87.578    
+Impôts et taxes  93.055     85.416    
+Charges de personnel  72.911     68.412    
+Autres charges d'exploitation  3.323     2.511    
+Dotations d'exploitation  28.465     165.015    
+RÉSULTAT D'EXPLOITATION  586.160     445.676    
+Produits financiers  13.241     10.209    
+Charges financières  58.049     69.611    
+RÉSULTAT FINANCIER -44.808    -59.402    
+Produits non courants  10.371     71.514    
+Charges non courantes  32.524     54.891    
+RÉSULTAT NON COURANT -22.153     16.624    
+RÉSULTAT AVANT IMPÔT  519.199     402.897    
+Impôts sur les sociétés  69.486     44.149    
+Impôts différés -1.465     2.107    
+Dotations aux amortissements des écarts d'acquisition  55.080     56.856    
+Reprises d'amortissements des écarts d'acquisition  5.659     5.659    
+RÉSULTAT NET CONSOLIDÉ  401.758     305.444    
+RÉSULTAT DES SOCIÉTÉS MISES EN ÉQUIVALENCE
+RÉSULTAT NET CONSOLIDÉ  401.758     305.444    
+ - Part du groupe  407.601     301.915    
+ - Part des minoritaires -5.843     3.528    
+PÉRIMÈTRE 31-déc.-2025
+FILIALES % de Contrôle % d'intérêt Nature de Contrôle Méthode de consolidation
+ALLIANCES DEVELOPPEMENT IMMOBILIER 100,00% 100,00% Contrôle exclusif IG
+ALLIANCES MOD 100,00% 100,00% Contrôle exclusif IG
+ALGEST 99,96% 99,96% Contrôle exclusif IG
+ALTADEC 96,67% 96,67% Contrôle exclusif IG
+ALMES 72,60% 72,60% Contrôle exclusif IG
+EMT LEVAGE 95,00% 68,97% Contrôle exclusif IG
+EMT AGREGATS 99,99% 99,99% Contrôle exclusif IG
+ALLIANCES ADVISORY AFRICA 100,00% 100,00% Contrôle exclusif IG
+ALVI 100,00% 100,00% Contrôle exclusif IG
+ALTAG 79,99% 79,99% Contrôle exclusif IG
+GOLF RESORT PALACE 99,90% 99,90% Contrôle exclusif IG
+AGHOUATIM AL BARAKA 99,95% 99,95% Contrôle exclusif IG
+RIAD SOLTAN 99,99% 99,99% Contrôle exclusif IG
+ALLIANCES DARNA 100,00% 100,00% Contrôle exclusif IG
+SOCIETE IMMOBILIERE ZERKAOUIA 100,00% 100,00% Contrôle exclusif IG
+LA BELLE ROSERAIE 50,00% 49,95% Contrôle conjoint IP
+ATLAS NAKHIL 100,00% 100,00% Contrôle exclusif IG
+MAREMCO 100,00% 100,00% Contrôle exclusif IG
+DAR AL MOURAD IMMOBILIER 100,00% 100,00% Contrôle exclusif IG
+DILEM HOTEL DEVELOPEMENT 30,13% 30,10% Influence notable MEE
+BELYA STAR REALITY 100,00% 100,00% Contrôle exclusif IG
+OUED NEGRICO IMMOBILIER 100,00% 100,00% Contrôle exclusif IG
+RMILA RESORT 100,00% 100,00% Contrôle exclusif IG
+TANGER RESORT 100,00% 100,00% Contrôle exclusif IG
+M’DEQ DEVELOPPEMENT 100,00% 100,00% Contrôle exclusif IG
+SOCIETE DE PARTICIPATION LIXUS 100,00% 100,00% Contrôle exclusif IG
+SOCIETE D'AMENAGEMENT LIXUS 100,00% 100,00% Contrôle exclusif IG
+PIRON MAROC HOLDING 100,00% 100,00% Contrôle exclusif IG
+HOLDING ESSAOUIRA MOGADOR 100,00% 100,00% Contrôle exclusif IG
+PALMERAIE THOMAS PIRON 33,33% 33,33% Influence notable MEE
+BIDAYAT AL KHEIR  100,00% 100,00% Contrôle exclusif IG
+ALPHA PALACE SA 100,00% 99,90% Contrôle exclusif IG
+REMAL MOROCCO HOSPITALITY  100,00% 100,00% Contrôle exclusif IG
+LA VALLEE AUX GOLFS  100,00% 100,00% Contrôle exclusif IG
+COGEDIM 100,00% 100,00% Contrôle exclusif IG
+LES JARDINS DU LITTORAL 100,00% 100,00% Contrôle exclusif IG
+NAJILA 100,00% 100,00% Contrôle exclusif IG
+AL EXPERENCIA IMMOBILIER 100,00% 100,00% Contrôle exclusif IG
+ALLIANCES SUD DEVELOPPEMENT 100,00% 100,00% Contrôle exclusif IG
+SOCIETE IMMOBILIERE VALERIANE 100,00% 100,00% Contrôle exclusif IG
+PROMOGAM 100,00% 100,00% Contrôle exclusif IG
+SALIXUS CLUB  100,00% 100,00% Contrôle exclusif IG
+GOLF AKENZA RESORT 99,98% 99,93% Contrôle exclusif IG
+AL AOUAYEL IMMOBILIER 99,80% 99,80% Contrôle exclusif IG
+ERRAHMA PARK 50,00% 49,90% Contrôle exclusif IG
+SOCIETE IMMOBILIERE NEJMAT SAISS 100,00% 100,00% Contrôle exclusif IG
+SOCIETE IMMOBILIERE JARDINS DE NARCISSE  100,00% 100,00% Contrôle exclusif IG
+RENT NEGOCE 100,00% 100,00% Contrôle exclusif IG
+NAJILA II 98,00% 98,00% Contrôle exclusif IG
+AAB ROSERAIE 100,00% 99,95% Contrôle exclusif IG
+LAGUNE INVEST IMMO 100,00% 100,00% Contrôle exclusif IG
+ALLIXUS 2 100,00% 100,00% Contrôle exclusif IG
+ALLIANCES COTE D'IVOIRE 99,85% 99,85% Contrôle conjoint IP
+ALLIANCES DARNA MEHDIA 100,00% 100,00% Contrôle exclusif IG
+ALLIANCES DARNA KENITRA 100,00% 100,00% Contrôle exclusif IG
+ALLIANCES CONSTRUCTION AFRIQUE 100,00% 100,00% Contrôle exclusif IG
+ALLIANCES TAGHAZOUT 100,00% 100,00% Contrôle exclusif IG
+AL MAADEN COLLECTION 100,00% 99,90% Contrôle exclusif IG
+PRESTIGE DESK 100,00% 96,67% Contrôle exclusif IG
+ZIDAL 51,00% 51,00% Contrôle exclusif IG
+AKENZA CLUB HOUSE 100,00% 99,95% Contrôle exclusif IG
+AL MAADEN DIVERTISSEMENTS 100,00% 99,92% Contrôle exclusif IG
+RED CITY DEVELOPMENT 100,00% 100,00% Contrôle exclusif IG
+RED SANDS DEVELOPMENT 100,00% 100,00% Contrôle exclusif IG
+LITTORAL DEVELOPEMENT IMMOBILIER 49,93% 49,93% Contrôle conjoint IP
+EMERGENCE HABITAT 100,00% 100,00% Contrôle exclusif IG
+GRAND SUD FONCIER 100,00% 100,00% Contrôle exclusif IG
+RIAD & PARC IMMOBILIER 100,00% 100,00% Contrôle exclusif IG
+IG : Intégration Globale
+MEE : Mise en équivalence
+IP : Intégration Proportionnelle
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • COMPTES CONSOLIDÉS
+Le rapport financier annuel du Groupe Alliances est disponible sur son site internet sous le lien suivant : https://www.alliances.co.ma/publications/rapport-financier-annuel/
+Les commentaires sur l’activité sont dans le communiqué financier du 31 décembre 2025 sous le lien suivant :
+https://www.alliances.co.ma/publications/communiques/
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES
+ALLIANCES DEVELOPEMENT IMMOBILIER | 2025
+RÉSULTATS AU 31DECEMBRE 2025 • RAPPORTS COMMISSAIRES AUX COMPTES

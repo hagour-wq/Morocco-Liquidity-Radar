@@ -1,0 +1,1125 @@
+https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/dr_sgtm_037_2025_2.pdf
+
+ 
+ 
+ 
+SOCIETE GENERALE DES TRAVAUX DU MAROC 
+ 
+ 
+ 
+Document de référence relatif à l’exercice 2024 et 
+au premier semestre 2025 
+ 
+ 
+Enregistrement de l’Autorité Marocaine du Marché des Capitaux (AMMC) 
+Conformément aux dispositions de la circulaire de l’AMMC, le présent document de référence a été 
+enregistré par l’AMMC en date du 17 novembre 2025 sous la référence EN/EM/032/2025. 
+Le présent document de référence ne peut servir de base pour effectuer du démarchage ou pour la 
+collecte des ordres dans le cadre d’une opération financière que s’il fait partie d’un prospectus dument 
+visé par l’AMMC. 
+  
+
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                               2 
+Avertissement 
+Le présent document de référence a été enregistré par l’AMMC. L’enregistrement du document de 
+référence n’implique pas d’authentification des informations présentées. Il a été effectué après examen de 
+la pertinence et de la cohérence de l’information donnée.  
+L’attention du public est attirée sur le fait que le présent document de référence ne peut servir de base 
+pour le démarchage financier ou la collecte d’ordres de participation à une opération financière s’il ne fait 
+pas partie d’un prospectus visé par l’AMMC. 
+Le présent document de référence peut faire l’objet d’actualisations ou rectifications. Les utilisateurs de 
+ce document de référence sont appelés à s’assurer de disposer, le cas échéant, desdites actualisations et 
+rectifications. 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                3 
+Sommaire 
+Avertissement ........................................................................................................................................................ 2 
+Sommaire ............................................................................................................................................................... 3 
+ABREVIATIONS .................................................................................................................................................. 5 
+DEFINITIONS ...................................................................................................................................................... 7 
+PARTIE I - ATTESTATIONS ET COORDONNEES ...................................................................................... 8 
+I. Le Président du Conseil d’Administration ........................................................................................ 9 
+II. Les commissaires aux comptes .......................................................................................................... 10 
+III. Le conseiller financier ........................................................................................................................ 12 
+IV. Le responsable de l’information et de la communication financière ............................................. 14 
+PARTIE II - PRESENTATION GENERALE DE SGTM .............................................................................. 15 
+I. Renseignements à caractère général ................................................................................................. 17 
+II. Capital social ...................................................................................................................................... 19 
+III. Endettement ........................................................................................................................................ 31 
+IV. Gouvernance de l’émetteur ............................................................................................................... 58 
+PARTIE III - ACTIVITE DE SGTM ................................................................................................................ 73 
+I. Historique de SGTM .......................................................................................................................... 74 
+II. Appartenance à un groupe ................................................................................................................ 78 
+III. Filiales de SGTM ................................................................................................................................ 83 
+IV. Flux comptables et financiers faisant l’objet de conventions réglementées ................................ 105 
+V. Secteur d’activité de SGTM ............................................................................................................ 118 
+VI. Activité de SGTM ............................................................................................................................. 126 
+VII. Approvisionnement .......................................................................................................................... 143 
+VIII. Informations environnementales et sociales .................................................................................. 146 
+IX. Stratégie d’investissement et moyens techniques .......................................................................... 157 
+PARTIE IV - SITUATION FINANCIÈRE .................................................................................................... 163 
+I. Rapports des commissaires aux comptes ....................................................................................... 164 
+II. Principaux indicateurs ..................................................................................................................... 181 
+III. Analyse des comptes annuels ........................................................................................................... 186 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                               4 
+IV. Analyse des comptes semestriels ..................................................................................................... 260 
+PARTIE V - PERSPECTIVES ........................................................................................................................ 306 
+I. Perspectives de développement du marché .................................................................................... 307 
+II. Orientations stratégiques de SGTM ............................................................................................... 311 
+III. Prévisions chiffrées........................................................................................................................... 312 
+PARTIE VI - FACTEURS DE RISQUES ...................................................................................................... 313 
+I. Facteurs de risque ............................................................................................................................ 314 
+PARTIE VII - FAITS EXCEPTIONNELS ET LITIGES ............................................................................. 319 
+I. Faits exceptionnels ........................................................................................................................... 320 
+II. Litiges et affaires contentieuses ....................................................................................................... 320 
+PARTIE VIII - ANNEXES ............................................................................................................................... 321 
+I. Statuts ................................................................................................................................................ 322 
+II. Rapports généraux des commissaires aux comptes sociaux ......................................................... 322 
+III. Rapports généraux des commissaires aux comptes consolidés..................................................... 322 
+IV. Attestations d’examen limité relatives au 1er semestre 2025......................................................... 322 
+V. Attestations d’examen limité relatives aux comptes proforma .................................................... 322 
+VI. Rapports spéciaux des commissaires aux comptes ........................................................................ 322 
+VII. Rapports de gestion .......................................................................................................................... 323 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                5 
+ABREVIATIONS 
+AGE   Assemblée Générale Extraordinaire 
+AMDIE L'Agence Marocaine de Développement des Investissements et des Exportations  
+AMMC   Autorité Marocaine du Marché des Capitaux 
+ASMN   Avance Sur Marché Nantis 
+BAD Banque Africaine de Développement  
+BFR   Besoins en Fonds de Roulement 
+BHNS Bus à Haut Niveau de Service 
+BMCI   Banque Marocaine pour le Commerce et l'Industrie 
+BTP   Bâtiments et Travaux Publics 
+BU Business Unit 
+BVC   Bourse de Casablanca 
+CA  Chiffre d’Affaires 
+CAC   Commissaire aux Comptes 
+CAN   Coupe d’Afrique des Nations 
+CCA   Compte Courant d’Associés 
+CDG   Caisse de Dépôt et de Gestion 
+CDI   Contrat à Durée Indéterminée 
+CDM  Crédit du Maroc 
+CDD  Contrat à Durée Déterminée 
+CIH   Crédit Immobilier et Hôtelier 
+CNC Conseil National de la Comptabilité 
+CREDOC   Crédit Documentaire 
+CV   Curriculum Vitae 
+CVC   Chauffage Ventilation Climatisation 
+DGA   Directeur Général Adjoint 
+DGD   Directeur Général Délégué 
+DRH   Direction des Ressources Humaines 
+EEP   Établissements et Entreprises Publics 
+EBE   Excédent Brut d’Exploitation 
+EHTP École Mohammadia d'Ingénieurs 
+EMI   École Hassania Des Travaux Publics 
+EPC   Engineering, Procurement and Construction 
+EPCM  Engineering, Procurement, and Construction Management 
+ESG Critères Environnementaux, Sociaux et de Gouvernance 
+ETIC État des Informations Complémentaires 
+EUR   Euro 
+FCFA Franc de la Communauté Financière Africaine 
+GIE Groupement d’intérêt économique  
+HCP   Haut-Commissariat au Plan 
+HSE   Hygiène Sécurité Environnement 
+HT   Hors Taxes 
+IDE   Investissement Direct Étranger 
+IPO Introduction en bourse (Initial Public Offering) 
+IS   Impôt sur les Sociétés 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                               6 
+ISO   Organisation Internationale de Normalisation (International Organization for 
+Standardization) 
+JESA   Jacobs Engineering SA (bureau d’ingénierie marocain) 
+JLEC Jorf Lasfar Energy Company 
+JS CONSEIL   Cabinet de conseil (nom propre) 
+J2K Pipeline Jorf-Khouribga 
+KFCFA Milliers de Francs CFA 
+KMAD Milliers de Dirhams 
+KTSH Milliers de Shilling Tanzaniens 
+LGV   Ligne à Grande Vitesse 
+MAD   Dirham Marocain 
+MEP Matériel et Equipement de Production  
+MICEPP   Ministère de l’Investissement, de la Convergence et de l’Évaluation des Politiques 
+Publiques 
+MMAD  Millions de Dirhams 
+Mds MAD Milliards de Dirhams 
+OCDE   Organisation de Coopération et de Développement Économiques 
+OCP   Office Chérifien des Phosphates 
+OFPPT   Office de la Formation Professionnelle et de la Promotion du Travail 
+ONCF   Office National des Chemins de Fer 
+ONU   Organisation des Nations Unies 
+ORMVAG   Office Régional de Mise en Valeur Agricole du Gharb 
+PAP2 Plan d’Actions Prioritaires 
+PND Plan National de Développement 
+PSA Peugeot Société Anonyme 
+PV   Procès-Verbal 
+PWC   PricewaterhouseCoopers 
+QHSE   Qualité Hygiène Sécurité Environnement 
+REX   Résultat d’exploitation contributif 
+RH   Ressources Humaines 
+RSE   Responsabilité Sociétale des Entreprises 
+SAVM Société d’aménagement et de valorisation de Mehdia 
+SMI Système de Management Intégré 
+SOMAGEC   Société Maghrébine de Génie Civil 
+STEP Station de Transfert d'Énergie par Pompage 
+TCE   Tous Corps d’État 
+TCAM   Taux de Croissance Annuel Moyen 
+TMSA Tanger Med Special Agency 
+TP   Travaux Publics 
+TTC   Toutes Taxes Comprises 
+TVP   Titres et Valeurs de Placement 
+TVA   Taxe sur la Valeur Ajoutée 
+UM6P Université Mohammed VI Polytechnique 
+ 
+ 
+ 
+ 
+ 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                7 
+DEFINITIONS 
+Assemblées Générales (AGO / AGE) Réunions des actionnaires visant à approuver les comptes annuels 
+(AGO) ou à décider de changements importants dans la société (AGE) 
+Carnet de commandes 
+Le carnet de commandes regroupe l’ensemble des commandes reçues 
+mais non encore exécutées  et reflète ainsi le chiffre d’affaires 
+prévisionnel à venir. 
+Charte de l’Investissement 
+La Charte de l'Investissement (loi -cadre n° 03-22) est une réforme de 
+la politique d'investissement du Maroc promulguée en décembre 2022, 
+visant à moderniser l'environnement des affaires et à attirer les 
+investissements privés. 
+Document de Référence 
+Conformément à la circulaire de l’AMMC n°03/19, le Document de 
+Référence est un document officiel regroupant l’ensemble des 
+informations juridiques, financières, opérationnelles et stratégiques 
+d’une entreprise, destiné à assurer la transparence et l’infor mation 
+permanente du public. 
+Dation en paiement 
+Opération juridique par laquelle, en règlement de tout ou partie du 
+montant de sa dette, un débiteur cède la propriété d’un bien, d’un 
+ensemble de biens ou de droits, lui appartenant.  
+Émetteur/Société Fait référence à SGTM S.A 
+Groupe Désigne SGTM S.A et ses filiales 
+IPO (Initial Public Offering) Introduction en bourse d’une société par émission de ses premières 
+actions au public. 
+ISO Normes internationales pour assurer la qualité, la sécurité ou 
+l'efficacité des produits/services. 
+Prospectus 
+Le Prospectus, tel que défini par la circulaire de l’AMMC n°03/19, est 
+un document officiel présentant au public les caractéristiques d’une 
+opération financière, notamment dans le cadre d’une levée de fonds ou 
+d’une introduction en bourse. 
+Tous corps d’état Ensemble des travaux nécessaires à la réalisation complète d’un 
+bâtiment (gros œuvre et second œuvre). 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           8 
+PARTIE I - ATTESTATIONS ET COORDONNEES 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                          9 
+I. Le Président du Conseil d’Administration 
+I.1 Identité  
+Dénomination ou raison sociale Société Générale des Travaux du Maroc 
+Représentant légal M. M’hammed Kabbaj 
+Fonction Président du Conseil d’Administration 
+Adresse 2, Boulevard Zerktouni - Casablanca  
+Numéro de téléphone 05.22.88.80.00   
+Adresse électronique F.Naima@sgtm-maroc.com 
+ 
+I.2 Attestation du Président du conseil d’administration sur le document de 
+référence relatif à l’exercice 2024 et au premier semestre 2025 
+Le Président du conseil d’administration atteste que les données du présent document de référence dont 
+il assume la responsabilité, sont conformes à la réalité. Elles comprennent toutes les informations 
+nécessaires au public pour fonder leur jugement sur le patrimoine, l’activité, la situation financière, les 
+résultats et les perspectives de SGTM. Elles ne comportent pas d’omissions de nature à en altérer la 
+portée. 
+Casablanca, le 14/11/2025 
+M’hammed Kabbaj 
+Société Générale des Travaux du Maroc 
+Président du Conseil d’Administration 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           10 
+II. Les commissaires aux comptes 
+II.1 Identité 
+Dénomination et raison 
+sociale 
+Abdelmalek CHRAIBI 
+Expert-comptable PwC Maroc JS conseil  
+Qualité Commissaire aux 
+Comptes Commissaire aux Comptes Commissaire aux 
+Comptes 
+Représentant légal M. Abdelmalek 
+CHRAIBI M. Mounsif IGHIOUER  Jalil SAFRIOUI 
+Les CAC ayant audité 
+les comptes de SGTM 
+M. Abdelmalek 
+CHRAIBI M. Mounsif IGHIOUER Jalil SAFRIOUI 
+Fonction Expert-Comptable Associé Associé 
+Adresse 
+100, Boulevard 
+Abdelmoumen 
+Casablanca 
+Lot 57, Tour CFC Casa-Anfa 
+20100 Casablanca 
+Ghandi Mall Boulevard 
+Ghandi, Immeuble 9, 4ème 
+étage-Casablanca  
+Numéro de téléphone 05 22 23 78 00 05 22 99 98 00 05 22 99 58 42 
+Adresse électronique - mouncef.ighiouer@pwc.com 
+ 
+j.safrioui@sofirec.ma 
+ 
+Nature des comptes sous 
+revue (avant cotation) 
+▪ Comptes 
+sociaux 2022 
+▪ Comptes sociaux et 
+consolidés 
+▪ Comptes sociaux 
+(2024 à S1 2025) 
+▪ Comptes 
+consolidés (2022 
+à S1 2025) 
+Premier exercice soumis 
+au contrôle Exercice 2008 Exercice 2011 Exercice 2024 
+Date de 1ère nomination 
+/ renouvellement des 
+commissaires aux 
+comptes 
+AGO du 30/06/2020 AGO 30/06/2023 AGO du 28/06/2024 
+Date d’expiration du 
+mandat actuel 
+Mandat expiré à 
+l’AGO qui a statué sur 
+les comptes 2022 
+AGO qui statue sur les 
+comptes 2025 
+AGO qui statue sur les 
+comptes 2026 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           11 
+II.2 Attestation de concordance des commissaires aux comptes  relative aux 
+comptes sociaux et consolidés pour les exercices clos le 31 décembre 2022, 
+2023 et 2024 et au premier semestre 2025  
+Nous avons procédé à la vérification des informations comptables et financières contenues dans l e 
+présent document de référence en effectuant les diligences nécessaires et compte tenu des dispositions 
+légales et réglementaires en vigueur. Nos diligences ont consisté à nous assurer de la concordance 
+desdites informations avec : 
+▪ les états de synthèse annuels sociaux tels qu’audités par les co -commissaires aux comptes 
+Abdelmalek Chraibi et PwC au titre de l’exercice clos au 31 décembre 2022, par PwC au titre 
+de l’exercice clos au 31 décembre 2023 et par nos soins au titre de l’exer cice clos au 31 
+décembre 2024 ; 
+▪ les états de synthèse annuels consolidés tels qu’audités par nos soins au titre des exercices clos 
+au 31 décembre 2022, 2023 et 2024 ; 
+▪ les états de synthèse semestriels sociaux ayant fait l’objet d’un examen limité par nos soins au 
+titre du semestre clos au 30 juin 2025 ;  
+▪ les états de synthèse semestriels consolidés ayant fait l’objet d’un examen limité par nos soins 
+au titre du semestre clos au 30 juin 2025 ; 
+▪ les états de synthèse consolidés proforma établis au titre des exercices clos au 31 décembre 2023 
+et 2024, objet de notre examen limité ; 
+▪ les états de synthèse consolidés semestriels proforma établis au titre du semestre clos au 30 juin 
+2024, objet de notre examen limité. 
+Sur la base des diligences ci-dessus, nous n’avons pas d’observation à formuler sur la concordance des 
+informations comptables et financières fournies dans le présent document de référence, avec les états de 
+synthèse précités. 
+Casablanca, le 17/11/2025 
+ 
+ 
+ 
+ 
+  
+JS Conseil 
+Jalil Safrioui 
+Associé  
+PWC Maroc 
+Mounsif Ighiouer 
+Associé  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           12 
+III. Le conseiller financier 
+III.1 Identité 
+Dénomination ou raison sociale Attijari Finances Corp. 
+Représentant légal M. Mohamed Idriss BERRADA 
+Fonction Directeur Général 
+Adresse 163, Avenue Hassan II - Casablanca 
+Numéro de téléphone 05.22.47.64.35 
+Numéro de télécopieur 05.22.47.64.32 
+Adresse électronique i.berrada@attijari.ma 
+III.2 Attestation du conseiller financier sur le document de référence relatif à 
+l’exercice 2024 et au premier semestre 2025 
+Le présent document de référence a été préparé par nos soins et sous notre responsabilité. Nous attestons 
+avoir effectué les diligences nécessaires pour nous assurer de la sincérité des informations qu'il contient.  
+Ces diligences ont notamment concerné l’analyse de l’environnement économique et financier de 
+SGTM à travers : 
+▪ les commentaires et analyses fournis par le management de SGTM et recueillis lors des due 
+diligences effectuées auprès de celui-ci ;  
+▪ l’analyse des comptes annuels sociaux et consolidés de SGTM relatifs aux exercices 2022, 2023 
+et 2024 ; 
+▪ l’analyse des comptes annuels sociaux des filiales de SGTM relatifs aux exercices 2022, 2023 
+et 2024 et au premier semestre 2024 et 2025 ; 
+▪ les rapports généraux des commissaires aux comptes sur les comptes  sociaux et consolidés de 
+SGTM pour les exercices clos aux 31 décembre 2022, 2023 et 2024 ;  
+▪ les rapports spéciaux des commissaires aux comptes relatifs aux exercices clos aux 31 décembre 
+2022, 2023 et 2024 ; 
+▪ les rapports de gestion de SGTM relatifs aux exercices 2022, 2023 et 2024 ; 
+▪ les procès -verbaux des conseils d’administration, assemblées générales ordinaires, 
+extraordinaires et mixtes relatifs aux exercices 2022, 2023, 2024  et 2025 jusqu’à la date 
+d’enregistrement du présent document de référence ; 
+▪ les prévisions financières fournies par le management de SGTM ; 
+▪ l’analyse des comptes semestriels sociaux et consolidés relatifs aux semestres clos au 30 juin 
+2024 et au 30 juin 2025 ; 
+▪ les attestations d’examen limité des commissaires aux comptes sur les situations intermédiaires 
+relatives aux comptes sociaux et consolidés au titre des semestres clos le 30 juin 2025 ; 
+▪ l’analyse des comptes consolidés pro -forma relatifs aux exercices 2023 et 2024 et le premier 
+semestre de 2024 ; 
+▪ les attestations d’examen limité du commissaire aux comptes relatives aux comptes consolidés 
+proforma des exercices 2023 et 2024 et du premier semestre de 2024 ; 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           13 
+▪ les rapports du conseil d’administration à l’assemblée générale relatifs aux exercices 2022, 2023 
+et 2024 et au titre de l’exercice en cours jusqu’à la date d’enregistrement du présent document 
+de référence.  
+A notre connaissance, le document de référence contient toutes les informations nécessaires au public 
+pour fonder son jugement sur le patrimoine, l’activité, la situation financière , les résultats et les 
+perspectives de SGTM. Il ne comporte pas d’omissions de nature à en altérer la portée.  
+Il n’existe aucune relation financière ni commerciale entre Attijari Finances Corp. et SGTM, hormis le 
+mandat de conseil qui les lie. 
+Compte tenu de tout ce qui précède, nous attestons avoir mis en œuvre toutes les mesures nécessaires 
+pour garantir l’objectivité de notre analyse et la qualité de la mission pour laquelle nous avons été 
+mandatés.  
+Casablanca, le 14/11/2025 
+Mohamed Idriss Berrada 
+Attijari Finances Corp. 
+Directeur Général  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           14 
+IV. Le responsable de l’information et de la communication financière 
+Prénom et nom Anouar Hajji 
+Fonction Directeur Général Adjoint en charge des Finances 
+Adresse 2, Boulevard Zerktouni - Casablanca 
+Numéro de téléphone 05.22.88.80.00 
+Adresse électronique A.HAJJI@sgtm-maroc.com 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                          15 
+PARTIE II - PRESENTATION GENERALE DE SGTM  
+ 
+
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                          17 
+I. Renseignements à caractère général  
+Dénomination sociale Société Générale des Travaux du Maroc (S.G.T.M) 
+Siège Social 2, Boulevard Zerktouni Casablanca 
+Téléphone +212 (0) 5 22 88 80 00/01/02 
+Fax 
++212 (0) 5 22 32 05 69  
++212 (0) 5 22 33 42 80 
+Site Web www.sgtm-maroc.com 
+Forme juridique Société Anonyme à conseil d’administration 
+Date de constitution 03 janvier 1972 
+Durée de vie 99 ans 
+Numéro et lieu 
+d’inscription au RC 31.287 Casablanca 
+Exercice social Du 1er janvier au 31 décembre 
+Objet social 
+Selon l’article 3 des statuts de SGTM, la Société a pour objet tant au Maroc et dans tous 
+pays :  
+▪ l’étude et la réalisation de tous travaux publics et particuliers, de constructions 
+et de génie civil ; 
+▪ la création, l’installation, l’acquisition, la location et l’exploitation de tous 
+chantiers, usines, et établissements industriels pour la fabrication, la vente de 
+matériel et de matériaux de construction ; 
+▪ l’exploitation de carrières ; 
+▪ la fabrication de béton ; 
+▪ le transport pour le compte d’autrui ; 
+▪ l’obtention, l’acquisition, l’exploitation, la location et la cession de tous 
+brevets d’invention et licences relatifs à cette industrie ; 
+▪ la prise de participation dans toutes entreprises ou sociétés créées ou à créer, 
+ayant un objet similaire ou connexe, notamment par voie de souscription 
+d’actions, d’achat de titres ou de droits sociaux, d’apport de tout ou partie de 
+l’actif, d’absorption, de fusion, ou autrement ; 
+Plus généralement, toutes opérations industrielles, commerciales, financières, civiles ou 
+mobilières ou immobilières, pouvant se rattacher directement ou indirectement à l’un 
+des projets visés ci-dessus ou à tous objets similaires ou connexes. 
+Capital social au  
+30 septembre 2025 
+1 200 000 000 MAD, composé de  12 000 000 actions d’une valeur nominale de 100 
+MAD 
+Documents juridiques 
+Les documents juridiques de la Société et notamment les statuts, les procès-verbaux des 
+assemblées générales et les rapports des commissaires aux comptes peuvent être 
+consultés au siège social de la Société. 
+Textes législatifs et 
+réglementaires 
+applicables à SGTM 
+De par sa forme juridique, la Société est régie par la loi n°17 -95 promulguée par le 
+Dahir n°1-96-124 du 30 août 1996 relative aux sociétés anonymes. De par son activité, 
+SGTM est régie par le droit marocain et notamment : 
+▪ Loi n°39-08 formant code des droits réels promulguée par le dahir n°1-11-178 
+du 25 hijja (22 novembre 2011) telle que modifiée et complétée ; 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                          18 
+▪ Loi n°12-90 relative à l’urbanisme (promulguée par le dahir n°1-92-31 en date 
+du 15 hijja 1412 (17 juin 1992), telle que modifiée et complétée par la loi n°66- 
+12 relative à la répression des infractions dans le secteur de l’urbanisme et de 
+la construction (promulguée par le dahir n°1 -16-124 en date du 21 kaada (25 
+août 2016) ; 
+▪ Loi n°25-90 relative aux lotissements, groupes d'habitations et morcellements 
+(promulguée par le dahir n°1 -92-7 en date du 15 hijja 1412 (17 juin 1992)), 
+telle que modifiée et complétée par la loi n°66 -12 relative à la répression des 
+infractions dans le se cteur de l’urbanisme et de la construction (promulguée 
+par le dahir n°1-16-124 en date du 21 kaada (25 août 2016) ; 
+▪ Les dispositions applicables du Dahir 12 septembre 1913 tel que modifié et 
+complété portant Code des obligations et des contrats. 
+De par sa future cotation sur la BVC, SGTM sera soumise aux dispositions suivantes :  
+▪ La loi n° 44-12 relative à l'appel public à l'épargne et aux informations exigées 
+des personnes morales et organismes faisant appel public à l'épargne ;  
+▪ La loi 43-12 relative à l’AMMC ; 
+▪ Le Règlement Général de l’AMMC tel qu’approuvé par l’arrêté du Ministre 
+de l’Économie et des Finances n° 2169/16 du 14 juillet 2016 ; 
+▪ Les circulaires de l’AMMC en vigueur ; 
+▪ La loi n°35-96 relative à la création d’un dépositaire central et à l’institution 
+d’un régime général de l’inscription en compte de certaines valeurs (modifié 
+et complété par la loi n°43-02) ; 
+▪ Le Règlement Général du dépositaire central approuvé par l’arrêté du Ministre 
+de l’Economie et des Finances n°932 -98 du 16 avril 1998 et amendé par 
+l’arrêté du Ministre de l’Economie, des Finances, de la Privatisation et du 
+Tourisme n°1961-01 du 30 octobre  2001, et par l’arrêté n°77 -05 du 17 mars 
+2005 ; 
+▪ La loi n° 19-14 relative à la Bourse des Valeurs, aux sociétés de bourse et aux 
+conseillers en investissement financier ; 
+▪ Le Règlement général de la Bourse des Valeurs de Casablanca approuvé par 
+l’arrêté du Ministre de l’Economie et des Finances n°2208-19 du 3 juillet 2019 ; 
+▪ La loi n°26-03 relative aux offres publiques sur le marché boursier marocain 
+tel que modifié et complété par la loi n°46-06. 
+Régime fiscal 
+La société SGTM est régie par la législation fiscale de droit commun. Elle est assujettie 
+à l’IS au taux du barème progressif. Ses opérations sont soumises à la TVA au taux de 
+20%. 
+Tribunal compétent en 
+cas de litige Tribunal de Commerce de Casablanca 
+Source : SGTM
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                                                                                                                         19 
+II. Capital social 
+II.1 Composition du capital 
+Au 31 juillet 2025, SGTM est dotée d’un capital social de 1 200 000 000 MAD, composé de 12 000 000 actions d’une valeur nominale de 100 MAD.  
+Il convient de noter que l’Assemblée Générale Extraordinaire, tenue le 14/11/2025, a décidé de réduire la valeur nominale des actions de SGTM de 100 MAD 
+à 20 MAD avec prise d'effet le premier jour de cotation qui va porter ainsi le capital de 12 000 000 actions à 60 000 000 actions. 
+II.2 Historique du capital 
+Le tableau ci-dessous présente l’évolution du capital social de SGTM depuis sa création :  
+Date Nature de l’opération Bénéficiaire de 
+l’opération 
+Nombre 
+d’actions 
+émises 
+Prix 
+d’émission 
+(MAD) 
+Valeur 
+nominale 
+(MAD) 
+Prime 
+d'émission 
+par action 
+(MAD) 
+Droit 
+préférentiel 
+de 
+Souscription 
+Capital 
+social 
+initial 
+(MAD) 
+Montant de 
+l'opération 
+prime 
+incluse 
+(MAD) 
+Capital 
+social final 
+(MAD) 
+3 janvier 
+1972 
+Création de la société 
+SGTM 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 400 1 000 1 000 - - - 400 000 400 000 
+06 janvier 
+1976 
+Augmentation de capital en 
+numéraire d’un montant de 
+1.600.000 de dirhams par 
+l’émission de 1.600 
+d’actions nouvelles décidée 
+par l’AGE du 18 décembre 
+1975 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 1 600 1 000 1 000 - Maintien 400 000 1 600 000 2 000 000 
+25 juillet 
+1979 
+Augmentation de capital en 
+numéraire d’un montant de 
+3.000.000 de dirhams par 
+l’émission de 3.000 
+d’actions nouvelles décidée 
+par l’AGE du 1er mars 1979 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 3 000 1 000 1 000 - Maintien 2 000 000 3 000 000 5 000 000 
+29 
+décembre 
+1993 
+Augmentation de capital en 
+numéraire d’un montant de 
+10.000.000 de dirhams par 
+l’émission de 10.000 
+d’actions nouvelles décidée 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 10 000 1 000 1 000  - Maintien 5 000 000 10 000 000 15 000 000 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                                                                                                                         20 
+par l’AGE du 6 décembre 
+1993 
+29 juin 
+1994 
+Augmentation de capital 
+en numéraire  d’un 
+montant de 25.000.000 de 
+dirhams par l’émission de 
+25.000 d’actions 
+nouvelles décidée par 
+l’AGE du 6 juin 1994 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+▪ Mohamed Ali KABBAJ 
+▪ Brahim KABBAJ 
+▪ Jihane KABBAJ 
+▪ Hicham KABBAJ 
+25 000 1 000  1 000 - Maintien 15 000 000 25 000 000 40 000 000 
+19 mai 
+2003 
+Augmentation de capital 
+en numéraire  d’un 
+montant de 40.000.000 de 
+dirhams par l’émission de 
+40.000 d’actions 
+nouvelles décidée par 
+l’AGE du 19 mai 2003 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+▪ Mohamed Ali KABBAJ 
+▪ Brahim KABBAJ 
+▪ Jihane KABBAJ 
+▪ Hicham KABBAJ 
+40 000 1 000 1 000 - Maintien 40 000 000 40 000 000 80 000 000 
+29 
+décembre 
+2006 
+Augmentation de capital 
+en numéraire  d’un 
+montant de 50.000.000 de 
+dirhams par l’émission de 
+50.000 d’actions 
+nouvelles décidée et 
+constatée par l’AGE du 
+29 décembre 2006 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+▪ Mohamed Ali KABBAJ 
+▪ Brahim KABBAJ 
+▪ Jihane KABBAJ 
+▪ Hicham KABBAJ 
+50 000 1 000 1 000 - Maintien 80 000 000  50 000 000 130 000 000 
+29 mai 
+2009 
+Augmentation de capital 
+en numéraire  d’un 
+montant de 170.000.000 
+de dirhams par l’émission 
+de 170.000 d’actions 
+nouvelles décidée et 
+constatée par l’AGE du 
+29 mai 2009 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+▪ Mohamed Ali KABBAJ 
+▪ Brahim KABBAJ 
+▪ Jihane KABBAJ 
+▪ Hicham KABBAJ 
+170 000 1 000  1 000 - Maintien 130 000 000 170 000 000 300 000 000 
+29 mai 
+2009 
+Réduction de capital de la 
+valeur nominale de 1.000 
+à 100  pour atteindre un 
+nombre total d’actions de 
+▪ M’hammed KABBAJ 
+▪ Ahmed KABBAJ 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+- 100  100 -  300 000 000 - 300 000 000 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                                                                                                                         21 
+3.000.000 décidée par 
+l’AGE du 29 mai 2009 
+▪ Mohamed Ali KABBAJ 
+▪ Brahim KABBAJ 
+▪ Jihane KABBAJ 
+▪ Hicham KABBAJ 
+17 
+décembre 
+2019 
+Transfert de la totalité des 
+actions détenues par Feu 
+Monsieur Ahmed Kabbaj 
+à AKMH INVEST dans le 
+cadre de la succession à la 
+suite de son décès 
+▪ AKMH INVEST - - - - - 300 000 000 - 300 000 000 
+5 juin 
+2025 
+Cession d’une (1) action 
+de fonction ▪ Myriam KABBAJ 1 100 100 - - - - - 
+24 juin 
+juin 2025 
+Augmentation de capital 
+en numéraire d’un 
+montant de 100.000.000 
+de dirhams par l’émission 
+de 1.000.000 d’actions 
+nouvelles décidée par 
+l’AGE du 3 juin 2025 
+▪ M'hammed KABBAJ 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+▪ Hicham KABBAJ 
+▪ Brahim KABBAJ 
+▪ Mohamed Ali KABBAJ 
+▪ Myriam KABBAJ 
+▪ Jihane KABBAJ 
+1 000 000 100 100 - 
+ Maintien 
+(AKMH a 
+renoncé à 
+l’exercice de 
+son droit 
+préférentiel 
+de 
+souscription 
+au profit des 
+actionnaires 
+de AKMH) 
+300 000 000 100 000 000 400 000 000 
+10 juillet 
+2025 
+Augmentation de capital 
+par incorporation de 
+réserves d’un montant de 
+800.000.000 de dirhams 
+par l’émission de 
+8.000.000 actions 
+nouvelles décidée et 
+constatée par l’AGE du 
+10 juillet 2025 
+▪ M'hammed KABBAJ 
+▪ AKMH Invest 
+▪ Mohammed KABBAJ 
+▪ Hamza KABBAJ 
+▪ Hicham KABBAJ 
+▪ Brahim KABBAJ 
+▪ Mohamed Ali KABBAJ 
+▪ Myriam KABBAJ 
+▪ Jihane KABBAJ 
+8 000 000 100 100 - - 400 000 000 800 000 000 1 200 000 000 
+Source : SGTM 
+SGTM a été constituée le 3 janvier 1972 sous forme de Société Anonyme et au capital social de 400.000 dirhams. 
+L’Assemblée Générale Extraordinaire, tenue en date du 18 décembre 1975, a décidé de procéder à une augmentation du capital  en numéraire d’un montant de  
+1.600.000 dirhams par l’émission de 1.600 actions nouvelles d’une valeur nominale de 1000 dirhams chacune, et ayant pour effet de porter le capital social d’un 
+montant de 400.000 dirhams à un montant de 2.000.000 dirhams.  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                                                                                                                         22 
+L’Assemblée Générale Extraordinaire, tenue en date du 1er mars 1979, a décidé de procéder à une augmentation du capital en numéraire d’un montant de 
+3.000.000 dirhams par l’émission de 3.000 actions nouvelles d’une valeur nominale de 1000 dirhams chacune, et ayant pour effet de porter le capital social 
+d’un montant de 2.000.000 dirhams à un montant de 5.000.000 dirhams.  
+L’Assemblée Générale Extraordinaire, tenue en date du 6 décembre 1993, a décidé de procéder à une augmentation du capital en numéraire d’un montant de  
+10.000.000 dirhams par l’émission de 10.000 actions nouvelles d’une valeur nominale de 100 0 dirhams chacune, et ayant pour effet de porter le capital 
+social d’un montant de 5.000.000 dirhams à un montant de 15.000.000 dirhams.  
+L’Assemblée Générale Extraordinaire, tenue en date du 6 juin 1994, a décidé de procéder à une augmentation du capital par incorporation des réserves et apport 
+en numéraire d’un montant de 25.000.000 dirhams par l’émission de 25.000 actions nouvelles d’une valeur nominale de 1000 dirhams chacune, et ayant 
+pour effet de porter le capital social d’un montant de 15.000.000 dirhams à un montant de 40.000.000 dirhams.  
+L’Assemblée Générale Extraordinaire, tenue en date du 19 mai 2003, a décidé de procéder à une augmentation du capital par incorporation des réserves et apport 
+en numéraire d’un montant de 40.000.000 de dirhams par l’émission de 40.000 actions d’une valeur nominale de 1000 dirhams chacune, et ayant pour effet 
+de porter le capital social d’un montant de 40.000.000 dirhams à un montant de 80.000.000 dirhams.  
+L’Assemblée Générale Extraordinaire, tenue en date du 29 décembre 2006, a décidé de procéder à une augmentation du capital par incorporation de réserves 
+d’un montant de 50.000.000 de dirhams par l’émission de 50.000 actions nouvelles d’une valeur nominale de 1000 dirhams chacune, et ayant pour effet 
+de porter le capital social d’un montant de 80.000.000 dirhams à un montant de 130.000.000 dirhams.  
+L’Assemblée Générale Extraordinaire, tenue en date du 29 mai 2009, a décidé de procéder à une augmentation du capital par incorporation de réserves d’un 
+montant de 170.000.000 de dirhams par l’émission de 170.000 actions nouvelles d’une valeur nominale de 1000 dirhams chacune, et ayant pour effet de 
+porter le capital social d’un montant de 130.000.000 dirhams à un montant de 300.000.000 dirhams.  
+L’Assemblée Générale Extraordinaire, tenue en date du 29 mai 2009 a décidé de réduire la valeur nominale des actions d’un montant de 1000 dirhams par action 
+à un montant de 100 dirhams par action.  
+Le 17 décembre 2019, à la suite du transfert de la totalité des actions détenues par Feu Monsieur Ahmed Kabbaj à AKMH INVEST dans le cadre de la succession 
+à la suite de son décès, 1.410.000 actions ont été transféré à AKMH Invest qui est devenue actionnaire de la Société. 
+L’Assemblée Générale Extraordinaire, tenue en date du 3 juin 2025, a décidé de procéder à une augmentation du capital d’un montant de  
+100.000.000 dirhams par émission de 1.000.000 actions nouvelles d’une valeur nominale de 100 dirhams chacune, et ayant pour effet de porter le capital social 
+d’un montant de 300.000.000 dirhams à un montant de 400.000.000 dirhams. AKHMH INVEST n’a pas exercé ses droits préférentiels de souscription qui ont 
+ainsi expirés à la clôture de la période de souscription. 
+Le 5 juin 2025, une (1) action de fonction a été transféré d’AKMH Invest au profit de Madame Myriam Kabbaj à la suite de sa n omination en qualité 
+d’administrateur de SGTM. 
+L’Assemblée Générale Extraordinaire, tenue en date du 10 juillet 2025, a décidé de procéder à une augmentation du capital d’un montant de  
+800.000.000 dirhams par émission de 8.000.000 actions nouvelles d’une valeur nominale de 100 dirhams chacune, par incorporation des réserves à hauteur d’un 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                                                                                                                         23 
+montant de 800.000.000 dirhams , et ayant pour effet de porter le capital social d’un montant de 400 .000.000 dirhams à un montant de  
+1.200.000.000 dirhams. 
+II.3 Évolution de l’actionnariat 
+L’évolution de l’actionnariat de SGTM sur les cinq derniers exercices se présente comme suit :  
+ Évolution de l’actionnariat de SGTM 
+Actionnaires 
+31/12/2020 31/12/2021 31/12/2022 31/12/2023 31/12/2024 31/07/2025 
+Nombre 
+de titres 
+et droits 
+de vote 
+% du 
+capital et 
+des droits 
+de vote 
+Nombre 
+de titres 
+et droits 
+de vote 
+% du 
+capital et 
+des droits 
+de vote 
+Nombre 
+de titres 
+et droits 
+de vote 
+Nombre 
+de titres 
+et droits 
+de vote 
+Nombre 
+de titres 
+et droits 
+de vote 
+% du 
+capital et 
+des droits 
+de vote 
+Nombre 
+de titres 
+et droits 
+de vote 
+% du 
+capital et 
+des droits 
+de vote 
+Nombre 
+de titres 
+et droits 
+de vote 
+% du 
+capital et 
+des droits 
+de vote 
+Branche Feu M. Ahmed KABBAJ (co-fondateur) 
+AKMH INVEST 1 410 000 47,0% 1 410 000 47,0% 1 410 000 47,0% 1 410 000 47,0% 1 410 000 47,0% 4 229 997 35,2% 
+Mohammed KABBAJ 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 472 500 3,9% 
+Hamza KABBAJ 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 472 500 3,9% 
+Hicham KABBAJ 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 472 500 3,9% 
+Myriam Kabbaj - - - - - - - - - - 352 503 2,9% 
+Total branche AK 1 500 000 50,0% 1 500 000 50,0% 1 500 000 50,0% 1 500 000 50,0% 1 500 000 50,0% 6 000 000 50,0% 
+Branche M. M’hammed KABBAJ (co-fondateur) 
+M’hammed KABBAJ 1 410 000 47,0% 1 410 000 47,0% 1 410 000 47,0% 1 410 000 47,0% 1 410 000 47,0% 5 640 000 47,0% 
+Jihane KABBAJ 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 120 000 1,0% 
+Mohamed Ali KABBAJ 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 120 000 1,0% 
+Brahim KABBAJ 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 30 000 1,0% 120 000 1,0% 
+Total branche MK 1 500 000 50,0% 1 500 000 50,0% 1 500 000 50,0% 1 500 000 50,0% 1 500 000 50,0% 6 000 000 50,0% 
+Total 3 000 000 100,0% 3 000 000 100,0% 3 000 000 100,0% 3 000 000 100,0% 3 000 000 100,0% 12 000 000 100,0% 
+Source : SGTM 
+Entre le 31 décembre 2024 et le 31 juillet 2025, le capital social de la Société a augmenté de 300 000 000 dirhams à 1 200 000 000 dirhams.  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                                                                                                                                         24 
+L’Assemblée Générale Extraordinaire du 3 juin 2025 a décidé une première augmentation de capital de 100 000 000 dirhams, par émission de 1 000 000 d’actions 
+nouvelles d’une valeur nominale de 100 dirhams chacune, portant le capital social à 400 000 000 dirhams. AKMH a renoncé à l’exercice de son droit préférentiel 
+de souscription au profit des actionnaires de AKMH. 
+L’Assemblée Générale Extraordinaire du 10 juillet 2025 a décidé et constaté la réalisation d’une seconde augmentation de capital de 800 000 000 dirhams par 
+incorporation de réserves, réalisée par l’émission de 8 000 000 d’actions nouvelles d’une valeur nominale de 100 dirhams chacune, portant ainsi le capital social 
+à 1 200 000 000 dirhams. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025 25 
+Actionnariat actuel de la Société 
+A la date d’enregistrement du présent document de référence, l’actionnariat de la Société se présente 
+comme suit :  
+Actionnaires Nombre de titres et 
+droits de vote 
+% du capital et des 
+droits de vote 
+Branche feu M. Ahmed KABBAJ 
+AKMH INVEST 4 229 997 35,2% 
+Mohammed KABBAJ 472 500 3,9% 
+Hamza KABBAJ 472 500 3,9% 
+Hicham KABBAJ 472 500 3,9% 
+Myriam Kabbaj 352 503 2,9% 
+Total branche AK 6 000 000 50,0% 
+Branche M. M’hammed KABBAJ 
+M’hammed KABBAJ 5 640 000 47,0% 
+Jihane KABBAJ 120 000 1,0% 
+Mohamed Ali KABBAJ 120 000 1,0% 
+Brahim KABBAJ 120 000 1,0% 
+Total branche MK 6 000 000 50,0% 
+Total 12 000 000 100,0% 
+Source : SGTM 
+II.4 Présentation des principaux actionnaires de SGTM 
+II.4.1 Informations relatives à AKMH INVEST 
+AKMH INVEST SA est une holding qui détient les participations des  héritiers de Feu M. Ahmed 
+KABBAJ. Elle est détenue par ces derniers à 100%. 
+Dénomination AKMH INVEST SA 
+Siège social 59, Boulevard Zerktouni, 6ème étage N 18, Casablanca, 
+Maroc 
+Chiffre d'affaires consolidé au 31/12/2024 NA 
+Produits financiers au 31/12/2024 91 224 KMAD 
+Résultat net au 31/12/2024 90 982 KMAD 
+Capital social au 31/12/2024 300 KMAD 
+Situation nette au 31/12/2024 354 845 MMAD 
+Actionnariat et % de détention au 31/12/2024 
+▪ Mohammed KABBAJ : 25,0% 
+▪ Hamza KABBAJ : 25,0% 
+▪ Hicham KABBAJ : 25,0% 
+▪ Myriam KABBAJ : 25,0% 
+Source : SGTM 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           26 
+II.4.2 Informations relatives à M’hammed KABBAJ 
+M’hammed Kabbaj est le cofondateur et président de la Société Générale des Travaux du Maroc 
+(SGTM), l’un des principaux groupes marocains du BTP. Ingénieur de formation et diplômé en génie 
+civil de l’ESTP Paris, il a cofondé l’entreprise en 197 2, à Casablanca, avec son frère Ahmed Kabbaj. 
+Sous sa direction, SGTM s’est imposée comme un acteur national de référence, capable d’intervenir sur 
+l’ensemble de la chaîne de valeur, de la conception à la réalisation. Le groupe est aujourd’hui présent 
+sur d e nombreux chantiers d’envergure, publics et privés, dans les secteurs du bâtiment, des 
+infrastructures et de l’ingénierie. M’hammed Kabbaj incarne la continuité familiale et la vision 
+industrielle à long terme du groupe. 
+II.4.3 Informations relatives à Mohammed KABBAJ 
+Une présentation du parcours est disponible dans les sections IV.3.3 Conseil d’administration 
+(informations relatives à Mohammed Kabbaj). 
+II.4.4 Informations relatives à Hamza KABBAJ 
+Une présentation du parcours est disponible dans les sections IV.3.4 Conseil d’administration 
+(informations relatives à Hamza Kabbaj). 
+II.4.5 Informations relatives à Hicham KABBAJ 
+Une présentation du parcours est disponible dans les sections IV.3.8 Conseil d’administration 
+(informations relatives à Hicham Kabbaj). 
+II.4.6 Pacte d’actionnaires  
+Le pacte d’actionnaires relatif à la Société Générale des Travaux du Maroc (SGTM) S.A. (la Société), 
+dont les principales stipulations sont décrites ci -dessous, a été conclu entre AKMH Invest S.A. (la 
+Holding AK), Monsieur Mohammed Kabbaj, Monsieur Hamza Kabbaj, Monsieur Hicham Kabbaj et 
+Madame Myriam Kabbaj (ensemble, la Branche AK) et Monsieur M’Hammed Kabbaj, Madame Jihane 
+Kabbaj, Monsieur Mohamed Ali Kabbaj et Monsieur Brahim Kabbaj (ensemble, la Branche MK) 
+(ensemble, les Parties) en date du 14 novembre 2025 avec prise d’effet à la date de première cotation 
+des actions de la Société (le Pacte). 
+Le Pacte est notamment destiné à régir les relations entre les Parties en qualités d’actionnaires de la 
+Société et notamment d’organiser les conditions d’exercice du pouvoir au sein de la Société ainsi que 
+les règles applicables aux transferts d’actions de la Société.  
+Gouvernance de la Société  
+Le Conseil d’Administration doit être composé de neuf (9) membres devant être choisis et nommés par 
+l’assemblée générale ordinaire des actionnaires de la Société de la manière suivante :   trois (3) membres, 
+devant être désignés sur proposition de la Branche AK, trois (3) membres devant être désignés sur 
+proposition  de la Branche MK et trois (3) administrateurs indépendants, devant être désignés d’un 
+commun accord entre la Branche AK et la Branche MK ; et dans tous les cas sous réserve du respect des 
+incompatibilités légales. 
+Le Conseil d’Administration désigne à la majorité simple un président parmi ses membres lequel sera 
+choisi parmi les administrateurs proposés par la Branche MK puis parmi les administrateurs proposés 
+par la Branche AK (et ce, à chaque fois pour la durée du  mandat de l’administrateur désigné). Par 
+exception à ce principe, l’actuel Président du Conseil d’Administration (Monsieur M’Hammed Kabbaj) 
+a été choisi parmi les membres proposés par la Branche MK et restera en fonction, du fait de sa qualité 
+de fondateur, aussi longtemps qu’il en aura la volonté. 
+  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           27 
+Le Directeur G énéral pourra être assist é par deux (2) directeurs g énéraux d élégués nomm és par le  
+conseil d’administration et dont un (1) sera choisi sur proposition de la Branche AK, et l ’autre sur 
+proposition de la Branche MK. 
+Règles applicables à la prise de décisions 
+▪ Les décisions ordinaires sont prises à la majorité simple. 
+▪ Les d écisions dites « réservées » exigent une majorit é qualifiée incluant la majorit é des 
+administrateurs de la Branche AK et la majorit é des administrateurs de la Branche MK . Sont 
+notamment des d écisions r éservées : nomination/r évocation du Directeur G énéral et des  
+Directeurs G énéraux D élégués, orientations strat égiques, budget, plan d ’affaires, op érations 
+financières et d ’endettement au-delà de seuils, op érations significatives d ’actifs, contentieux 
+majeurs, approbation des comptes et affectation du r ésultat, opérations de march é (retrait de 
+cote, introduction en bourse de filiales), et conventions réglementées. 
+▪ Certaines décisions « importantes » (investissements, emprunts, garanties, soumissions à appel 
+d’offres, rémunérations au-delà de seuils, etc.) requièrent la signature du Directeur G énéral et 
+l’autorisation écrite préalable d’un administrateur de la Branche AK et d ’un administrateur de 
+la Branche MK, avec renvoi au conseil à majorité qualifiée en cas de saisine conjointe par deux 
+administrateurs. 
+Règles applicables aux cessions de titres 
+Les cessions suivantes sont libres : 
+▪ cession des actions de garantie aux membres du Conseil d’Administration.  
+▪ cession entre membre de la Branche MK à un autre membre de la Branche MK.  
+▪ cession par un membre de la Branche MK au profit de l’un ou plusieurs de ses descendants en 
+ligne directe.  
+▪ cession par Monsieur Moha mmed Kabbaj, Monsieur Hamza Kabbaj ou Monsieur Hicham 
+Kabbaj au profit de la Holding AK (et inversement). 
+▪ cession simultanée par tous les membres de la Branche MK au profit de toute société ou entité 
+constituée et immatriculée au Maroc ou dans un autre pays, dont le capital social et les droits de 
+votes sont détenus majoritairement par la Branche MK et/ou ses d escendants en ligne directe, 
+dont la gérance est assurée par un membre de la Branche MK et dont l’objet exclusif est la 
+détention d’actions et de participations, et  
+▪ cession par un membre d’une des branches à condition que (a) cette cession n’intervienne qu’à 
+compter d’une période de dix -huit (18) mois à compter de la date de  première cotation des 
+actions de la Soci été en Bourse et (b)  la participation globale de la branche concernée ne 
+devienne pas inférieure à sa participation à la date de première cotation des actions de la Société 
+en Bourse diminuée de 2,5%. 
+ 
+Les autres cas de cessions d’actions sont soumis aux principales règles suivantes :  
+▪ sous réserve des cas de cession libres, inaliénabilité temporaire des titres détenus par la Branche 
+AK et la Branche MK pour une durée de trois (3) ans à compter de la date de première cotation 
+des actions de la Société en Bourse. 
+▪ une procédure d’information préalable à toute cession d’actions (y compris en cas de cession 
+libre) par l’actionnaire cédant aux autres actionnaires. 
+▪ un engagement de maintien du contrôle de la Holding AK par les membres de la Branche AK 
+aussi longtemps que la Holding AK sera actionnaire de la Société. 
+▪ dans le cas d’une cession d’une partie ou de la totalité des actions de la Société par les membres 
+de la Branche MK à une holding MK, un engagement de maintien du contrôle de ladite holding 
+par les membres de la Branche MK aussi longtemps que ladite holding  sera actionnaire de la 
+Société. 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           28 
+▪ afin de préserver la parité entre la Branche AK et la Branche MK, un engagement des parties 
+de s’abstenir de procéder à toute acquisition de titres de la Société sur le marché central de la 
+Bourse de Casablanca ayant pour effet ou pour objet d’accroître la participation d’une Branche 
+au sein de la Société (sauf autorisation préalable et écrite des autres parties). 
+▪ un droit de préemption au bénéfice des autres Parties en cas de cession de titres de la Société 
+envisagée par une Partie, avec un ordre de priorité entre les autres actionnaires et des conditions 
+de transfert qui diffèrent selon l’identité de l’actionnaire cédant (membre de la Branche AK ou 
+membre de la Branche MK). 
+▪ un droit de cession conjointe proportionnelle au profit des autres actionnaires dans l’hypothèse 
+où un ou plusieurs actionnaire(s) souhaiterai(en)t céder des titres à un cessionnaire tiers. 
+Durée 
+Le Pacte a été conclu pour une durée initiale de vingt -cinq (25) ans à compter de la date de premi ère 
+cotation des actions de la Soci été à la Bourse de Casablanca, renouvelable par tacite reconduction par 
+périodes de cinq (5) ans, sauf dénonciation par l’un des actionnaires vingt -quatre (24) mois avant 
+l’échéance ; étant précisé que le Pacte prendra fin par anticipation (i) à l’issue d’un certain délai à 
+compter de la date à laquelle l’une des branches aura cessé de détenir un nombre de titres représentant 
+au moins 30% du capital social et des droits de vote de la Société et (ii) avec accord écrit de l’ensemble 
+des Parties. 
+II.4.7 Capital potentiel de SGTM  
+Le Conseil d’administration de SGTM, tenu en date du 13 novembre 2025 a décidé de procéder à 
+l’introduction en bourse de la Société sur le marché principal  de la Bourse de Casablanca, pour un 
+montant maximum de 5 040 000 000 de dirhams par voie de cession au public  (dont le cas échéant les 
+salariés de la Société et de ses affiliés, y compris le cas échéant, des entités sœurs) d’un maximum de 
+2.400.000 actions1 détenues par les actionnaires actuels dans le capital social de la Société et représentant 
+un maximum de 20% du capital social de la Société à un prix de cession maximum de 2.100 dirhams2. 
+Le conseil d’administration du 31 juillet 2025 a également proposé aux actionnaires la réduction de la 
+valeur nominale des actions constituant le capital social de la Société de 100 dirhams à 20 dirhams avec 
+prise d’effet à compter du premier jour de cotation des actions à la Bourse de Casablanca. 
+L'assemblée générale ordinaire et extraordinaire des actionnaires de SGTM en date du 14 novembre 
+2025, après avoir pris connaissance du rapport du conseil d'administration, a notamment :  
+▪ pris acte et autorisé en tant de besoin l’introduction en bourse de la Société par voie de cession 
+au public des actions de la Société d’un maximum de 2.400.000 actions3 détenues par certains 
+actionnaires actuels dans le capital social de la Société et représentant un maximum de 20% du 
+capital social de la Société, à un prix de cession maximum de 2.100 dirhams4 ; 
+▪ décide de réduire la valeur nominale des actions composant le capital social de la Société de 
+100 dirhams à 20 dirhams avec prise d’effet à compter du premier jour de cotation des actions 
+de la Société à la Bourse de Casablanca ; 
+▪ décide d’apporter les modifications nécessaires aux statuts de la Société afin de les mettre en 
+conformité avec les dispositions de la loi n°17 -95 relative aux sociétés anonymes et plus 
+globalement aux dispositions légales régissant les sociétés dont les titres de capital sont inscrits 
+ 
+1 A l’issue de la r éduction de la valeur nominale des actions de la Soci été de 100 dirhams à 20 dirhams par la  prochaine 
+assemblée générale extraordinaire et ordinaire, le nombre d’actions maximum serait de 12.000.000 actions. 
+2 A l’issue de la r éduction de la valeur nominale des actions de la Soci été de 100 dirhams à 20 dirhams par la  prochaine 
+assemblée générale extraordinaire et ordinaire, le prix de cession maximum serait de 420 dirhams. 
+3 A l’issue de la r éduction de la valeur nominale des actions de la Soci été de 100 dirhams à 20 dirhams par la  prochaine 
+assemblée g énérale extraordinaire et ordinaire, le nombre d ’actions maximum serait de 12.000.000  prochaine assembl ée 
+générale extraordinaire et ordinaire, le nombre d’actions maximum serait de 12.000.000 actions. 
+4 A l’issue de la réduction de la valeur nominale des actions de la Société de 100 dirhams à 20 dirhams par la  prochaine 
+assemblée générale extraordinaire et ordinaire, le prix de cession maximum serait de 420 dirhams. 
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           29 
+à la cote de la Bourse de Casablanca  avec prise d’effet à compter du premier jour de cotation 
+des actions de la Société à la Bourse de Casablanca ; 
+▪ autorisé en tant que de besoin  la délégation au conseil d’administration des pouvoirs les plus 
+étendus en vue notamment, de fixer les caractéristiques de l’IPO.  
+ 
+Le Conseil d’administration de SGTM tenu en date du 17 novembre 2025 a fixé les caractéristiques  
+définitives de l’IPO. 
+II.5 Négociabilité des titres de capital  
+L’article 13 des Statuts Refondus de la Société ne prévoit aucune restriction en matière de négociabilité 
+des titres de capital de cette dernière  
+II.6 Politique de distribution de dividendes  
+II.6.1 Disposition statutaire 
+L’Assemblée Générale Extraordinaire réunie le 14 novembre 2025 a décidé d’apporter les modifications 
+nécessaires aux statuts afin de les mettre en conformité avec les dispositions légales et réglementaires 
+régissant les sociétés cotées conformément au projet figurant en annexes (les Statuts Refondus).  Les 
+dispositions relatives à l’affectation des résultats sont décrites au niveau de des articles 35 et 36  des 
+Statuts Refondus. 
+II.6.2 Dividendes distribués au cours des trois derniers exercices 
+En MAD, sauf si indiqué 2022 2023 2024 
+Résultat net social (en KMAD) 453 750 524 722 764 092 
+Dividendes distribués au titre de l'exercice (en KMAD) 150 000  175 000  500 0005  
+Taux de distribution (%)6 33,1% 33,4% 65,4% 
+Nombre d'actions 3 000 000 3 000 000 12 000 000 
+Valeur nominale  100 100 100 
+Résultat net par action7  151,3 174,9 63,4 
+Dividende par action au titre de l'exercice8 50,0 58,3 41,7 
+Source : SGTM  
+SGTM S.A  détermine sa politique de dividendes en fonction de plusieurs paramètres, tels que ses 
+résultats d’exploitation, l’environnement économique et sectoriel, ainsi que ses projections de trésorerie.  
+ 
+SGTM a distribué 33,1% des résultats de 202 2 d’un montant de 150 000 KMAD et 33,4% au titre de 
+l’exercice 2023 soit 175 000 KMAD. Au titre de l’année 2024, SGTM a distribué 500 000 KMAD soit 
+un taux de distribution de 65,4%. 
+ 
+Il convient de noter que les actions nouvelles émises dans le cadre de chacune des deux augmentations 
+de capital intervenues en 2025 (i.e. augmentation de capital d’un montant de 100.000.000 de dirhams et 
+augmentation de capital d’un montant de 800.000.000 de dirhams sont assimilées aux actions anciennes 
+et portent jouissance à compter de la réalisation de l’augmentation de capital concernée). 
+ 
+5 Dont 279 000 KMAD seront versés avant la date de première cotation des actions de la Société  soit au plus tard 
+le 15 décembre 2025 
+6 Taux de distribution = Dividendes distribués au titre de l’exercice / Résultat net social  
+7 Résultat net par action = Résultat net social / Nombre d’actions 
+8 Dividende par action au titre de l’exercice = Dividendes distribués au titre de l’exercice / Nombre d’actions  
+ 
+Document de référence SGTM- Exercice 2024 et premier semestre 2025                                                                           30 
+ 
+Postérieurement à son introduction en bourse, SGTM, et sous réserve de son approbation par l’assemblée 
+générale des actionnaires conformément à la réglementation en vigueur, prévoit de reverser chaque 
+année à ses actionnaires un pourcentage du bénéfice net situé entre 50% et 100%. 
+  

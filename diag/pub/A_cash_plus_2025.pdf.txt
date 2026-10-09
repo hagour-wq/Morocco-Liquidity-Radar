@@ -1,0 +1,2332 @@
+https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cash_plus_2025.pdf
+
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+ACTIF (EN KMAD) NOTES 31/12/2025 31/12/2024
+Valeurs en caisse, Banques Centrales, Trésor public, CCP 4 204 250 209 399
+Actifs financiers à la juste valeur par résultat 5 515 168 156 378
+Instruments dérivés de couverture 0 0
+Actifs financiers à la juste valeur par capitaux propres 0 0
+Prêts et créances sur les établissements de crédit et assimilés 4 2 026 907 1 547 703
+Prêts et créances sur la clientèle 0 0
+Écart de réévaluation active des portefeuilles couverts en taux 0 0
+Placements détenus jusqu'à leur échéance 0 0
+Actifs d'impôt exigible 31 515
+Actifs d'impôt différé 13 38 645 29 257
+Comptes de régularisation et autres actifs 6 425 052 399 663
+Actifs non courants destinés à être cédés 0 0
+Participations dans des entreprises mises en équivalence 0 0
+Immeubles de placements 0 0
+Immobilisations corporelles (*) 7 8 633 616 576 202
+Immobilisations incorporelles 9 73 255 64 199
+Écart d'acquisition 10 51 704 51 704
+TOTAL DE L’ACTIF  3 968 628 3 035 020
+(*) y compris les droits d’utilisations sur les contrats de location IFRS 16 au titre de l’exercice 2025
+PASSIF (EN KMAD) NOTES 31/12/2025 31/12/2024
+Banques centrales, Trésor public, Service des chèques postaux 4 118 376 64 978
+Passifs financiers à la juste valeur par résultat 0 0
+Instruments dérivés de couverture 0 0
+Dettes envers les établissements de crédit et assimilés 11 27 632 30 577
+Dettes envers la clientèle 12 1 199 062 836 473
+Titres de créance émis  0 0
+Écart de réévaluation passif des portefeuilles couverts en taux  0 0
+Passifs d'impôt exigible 30 719 44 840
+Passifs d'impôt différé 13 772 998
+Comptes de régularisation et autres passifs 14 1 801 442 1 672 662
+Dettes liées aux actifs non courants destinés à être cédés 0 0
+Provisions techniques des contrats d'assurance 0 0
+Provisions 15 9 232 1 758
+Subventions et fonds assimilés  0 0
+Dettes subordonnées et fonds spéciaux de garantie  0 0
+CAPITAL SOCIAL 245 531 54 250
+RÉSERVES ET PRIMES DE CAPITAL 385 425 200 750
+RÉSERVES CONSOLIDÉES -90 846 -67 069
+dont Part groupe -82 476 -60 439
+dont Part des minoritaires -8 370 -6 630
+GAINS OU PERTES LATENTS OU DIFFÉRÉS
+Résultat net de l'exercice  241 283 194 803
+dont Part groupe  242 296 196 468
+dont Part des minoritaires  -1 013 -1 665
+TOTAL DU PASSIF  3 968 628 3 035 020
+L ’ÉTAT DU RÉSUL TAT GLOBAL (EN KMAD) NOTES 31/12/2025 31/12/2024
++ Intérêts et produits assimilés  7 733 5 615
+- Intérêts et charges assimilées  -28 020 -27 835
+MARGE D’INTÉRÊT 17 -20 287 -22 220
++ Commissions (Produits) 1 215 219 1 058 500
+- Commissions (Charges) -598 020 -542 807
+MARGE SUR COMMISSIONS 18 617 199 515 693
++/- Gains ou pertes nets sur instruments financiers à la juste valeur 
+par résultat 19 6 433 981
++/- Gains ou pertes nets sur actifs financiers disponibles à la vente 0
++ Produits des autres activités 18 568 624 530 655
+- Charges des autres activités 18 -308 702 -265 269
+PRODUIT NET BANCAIRE 863 267 759 840
+- Charges générales d'exploitation 20 -334 078 -307 225
+- Dotations aux amortissements et aux dépréciations des 
+immobilisations incorporelles et corporelles 21 -68 678 -56 591
+RÉSULTAT BRUT D’EXPLOITATION 460 511 396 024
+- Coût du risque 22 -10 051 -18 329
+RÉSULTAT D’EXPLOITATION 450 460 377 695
++/- Quote-part du résultat net des entreprises mises en 
+équivalence
++/- Gains ou pertes nets sur autres actifs 23 1 568 -9 124
++/- Variations de valeur des écarts d'acquisition 0
+RÉSULTAT AVANT Impôt 452 028 368 571
+- Impôts sur les résultats 24 -210 745 -173 768
++/- Résultat net d'impôt des activités arrêtées ou en cours de cession 0
+RÉSULTAT NET 241 283 194 803
+Intérêts minoritaires 17 -1 013 -1 665
+RÉSULTAT NET – PART DU GROUPE  242 296 196 468
+Résultat de base par action  9,87 362,15
+Résultat dilué par action  9,87 362,15 
+L ’ÉTAT DU RÉSUL TAT GLOBAL (EN KMAD) 31/12/2025 31/12/2024
+RÉSULTAT NET 241 283 194 803
+ÉLÉMENTS RECYCLABLES EN RÉSULTAT NET :  -
+Écarts de conversion  
+Réévaluation des actifs financiers à la juste valeur par capitaux propres recyclables  
+Réévaluation des instruments dérivés de couverture d’éléments recyclables  
+Quote-part des gains et pertes comptabilisés directement en capitaux propres 
+des entreprises mises en équivalence  
+Autres éléments comptabilisés par capitaux propres et recyclables  
+Impôts liés  
+ÉLÉMENTS NON RECYCLABLES EN RÉSULTAT NET :  -
+Réévaluation des immobilisations  
+Réévaluation (ou écarts actuariels) au titre des régimes à prestations définies  
+Réévaluation du risque de crédit propre des passifs financiers ayant fait l‘objet 
+d’une option de comptabilisation à la juste valeur par résultat  
+Réévaluation des instruments de capitaux propres comptabilisés 
+à la juste valeur par capitaux propres  
+Quote-part des gains et pertes comptabilisés directement 
+en capitaux propres sur entreprises mises en équivalence non recyclables  
+Autres éléments comptabilisés par capitaux propres non recyclables  
+Impôts liés  
+TOTAL DES GAINS ET PERTES COMPTABILISÉS DIRECTEMENT 
+EN CAPITAUX PROPRES
+RÉSULTAT NET ET GAINS ET PERTES COMPTABILISÉS DIRECTEMENT 
+EN CAPITAUX PROPRES 241 283 194 803
+Dont part du Groupe 242 296 196 468
+Dont part des intérêts minoritaires -1 013 -1 665
+L’ÉTAT DE LA SITUATION FINANCIÈRE CONSOLIDÉE SELON LE RÉFÉRENTIEL IFRS 
+(EN KMAD)
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+ÉTAT DES FLUX DE TRÉSORERIE CONSOLIDÉ (EN KMAD) 31/12/2025 31/12/2024
+RÉSULTAT AVANT IMPÔTS (A)   452 028 368 571
++/- Dotations nettes aux amortissements des immobilisations corporelles et incorporelles et provisions franchisés   68 677 56 591
++/- Dotations nettes pour dépréciation des écarts d'acquisition et des autres immobilisations  
++/- Dotations nettes pour dépréciation des actifs financiers  
++/- Dotations nettes aux provisions   10 745 19 578
++/- Quote-part de résultat liée aux sociétés mises en équivalence  
++/- Perte nette/gain net des activités d'investissement  
++/- Produits/charges des activités de financement  
++/- Autres mouvements    44 1 213
+= TOTAL (2) À (9) DES ÉLÉMENTS NON MONÉTAIRES INCLUS DANS LE RÉSULTAT NET AVANT IMPÔTS ET DES AUTRES AJUSTEMENTS (B)   79 466 77 382
++/- Flux liés aux opérations avec les établissements de crédit et assimilés 0 -
++/- Flux liés aux opérations avec la clientèle 362 589 615 785
++/- Flux liés aux autres opérations affectant des actifs ou passifs financiers - 231 957 - 65 270
++/- Flux liés aux autres opérations affectant des actifs ou passifs non financiers -  88 833 177 320
+- Impôts versés - 233 872 - 176 667
+= DIMINUTION/(AUGMENTATION) NETTE DES ACTIFS ET PASSIFS PROVENANT DES ACTIVITÉS OPÉRATIONNELLES (C) - 192 073 551 168
+FLUX NET DE TRÉSORERIE GENERE PAR L'ACTIVITE OPÉRATIONNELLE (TOTAL DES ÉLÉMENTS A, B ET C) (D)   339 421 997 121
++/- Flux liés aux actifs financiers et aux participations - 1 000 - 4 035
++/- Flux liés aux immeubles de placement 0
++/- Flux liés aux immobilisations corporelles et incorporelles - 46 939 - 51 036
+FLUX NET DE TRÉSORERIE LIE AUX OPÉRATIONS D'INVESTISSEMENT (E) - 47 939 - 55 071
++/- Flux de trésorerie provenant ou à destination des actionnaires 157 556 26 526
++/- Autres flux nets de trésorerie provenant des activités de financement - 28 378 - 23 296
+FLUX NET DE TRÉSORERIE LIE AUX OPÉRATIONS DE FINANCEMENT (F) 129 178 3 230
+EFFET DE LA VARIATION DES TAUX DE CHANGE SUR LA TRÉSORERIE ET ÉQUIVALENTS DE TRÉSORERIE 0
+AUGMENTATION/(DIMINUTION) NETTE DE LA TRÉSORERIE ET DES EQUIVALENTS DE TRÉSORERIE (TOTAL DES ÉLÉMENTS D, E ET F) 420 658 945 280
+COMPOSITION DE LA TRÉSORERIE 31/12/2025 31/12/2024
+TRÉSORERIE ET EQUIVALENTS DE TRÉSORERIE À L'OUVERTURE 1 692 124 746 844
+Caisse, banques centrales, CCP (actif & passif) 209 399 152 056
+Comptes (actif et passif) et prêts/emprunts à vue auprès des établissements de crédit 1 482 725 594 788
+TRÉSORERIE ET EQUIVALENTS DE TRÉSORERIE À LA CLÔTURE 2 112 782 1 692 124
+Caisse, banques centrales, CCP (actif & passif) 204 250 209 399
+Comptes (actif et passif) et prêts/emprunts à vue auprès des établissements de crédit 1 908 532 1 482 725
+VARIATION DE LA TRÉSORERIE NETTE 420 658 945 280
+TABLEAU DE VARIATION DES CAPITAUX PROPRES (EN KMAD)
+GROUPE CASH PLUS / EN KDH CAPITAL 
+RÉSERVES & 
+PRIMES LIÉES 
+AU CAPITAL 
+RÉSERVES ÉCART DE 
+RÉÉVALUATION RÉSULTAT
+CAPITAUX 
+PROPRES PART 
+DU GROUPE
+RÉSERVES 
+INTÉRÊT 
+MINORITAIRES
+RÉSULTAT 
+INTÉRÊT 
+MINORITAIRES
+CAPITAUX 
+PROPRES 
+CONSOLIDÉS
+AU 1ER JANVIER 2024 50 000 5 000 (47 056) 1 134 157 754 166 832 (152) (49) 166 631
+Augmentation de capital 4 250 195 750 200 000 200 000
+Dividendes distribués (173 475) (173 475) (173 475)
+Affectation du résultat décembre 2023 157 754 (157 754) - (49) 49 -
+Résultat de l'exercice 12-2024 196 468 196 468 (1 665) 194 803
+Écarts de conversion - -
+Entrée de périmètre (GPL & Leap Innovation) (4 592) (4 592) (611) (5 203)
+Var % détention GPE (GPE ) 5 815 5 815 (5 815) -
+Autres variations (19) - (19) (3) (22)
+AU 31 DÉCEMBRE 2024 54 250 200 750 (*) (61 573) 1 134 196 468 391 029 (6 630) (1 665) 382 734
+GROUPE CASH PLUS / EN KDH CAPITAL 
+RÉSERVES & 
+PRIMES LIÉES 
+AU CAPITAL 
+RVES LÉGALES RÉSERVES ÉCART DE 
+RÉÉVALUATION RÉSULTAT
+CAPITAUX 
+PROPRES PART 
+DU GROUPE
+RÉSERVES 
+INTÉRÊT 
+MINORITAIRES
+RÉSULTAT 
+INTÉRÊT 
+MINORITAIRES
+CAPITAUX 
+PROPRES 
+CONSOLIDÉS
+AU 1ER JANVIER 2025 54 250 195 750 5 000 -61 573 1 134 196 468 391 029 -6 630 -1 665 382 734
+Augmentation de capital IPO 20 000 380 000     400 000   375 955
+Augmentation de capital 171 281 -195 750     -24 469    
+Dividendes distribués    -217 975   -218 397   -218 397
+Affectation du résultat décembre 2024   425 196 043  -196 468 - -1 665 1 665 -
+Résultat de l'exercice 12-2025      242 296 242 296  -1 013 241 283
+Écarts de conversion       -   -
+Autres Variations (Reprise report 
+à nouveau  GPE & GPL)    -108   -108 -75  -183
+AU 31 DÉCEMBRE 2025 245 531 380 000 5 425 -83 613 1 134 242 296 790 351 -8 370 -1 013 781 393
+* Le montant inclus une prime d’émission de 195 750 KMAD et une réserve légale de 5 000 KMAD
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+NOTE 1. CADRE GÉNÉRAL
+CASH PLUS est une société anonyme de droit marocain constituée en mars 2004. Son 
+siège social est basé à l’angle Bd Abdelmoumen, 1 rue des pléiades, Casablanca.
+Dotée d’une position et de forte croissance, la société CASH PLUS a adopté une présence 
+multirégionale à travers ses 5 200 agences implantées dans différentes villes du royaume.
+Les activités du groupe CASH PLUS sont :
+  Le transfert d’argent au Maroc 
+  Le transfert d’argent à l’international
+  Change de devises 
+  Paiement de facture 
+  Paiement de vignettes, taxes et impôts
+Le groupe opère en parfaite collaboration avec différents partenaires : Western Union, 
+Money Gramm, RIA, Moneytrans, Lydec, Redal, RADEEMA, RAMSA, RAK, INWI, Orange, 
+Maroc télécom… 
+Le Groupe CASH PLUS se positionne aujourd’hui en leader et acteur majeur du marché 
+marocain, en mettant son organisation et la compétence de ses équipes et au service de 
+ses clients à travers son conseil et son expertise au niveau de l’analyse et la gestion des 
+risques.
+Le terme “Groupe” fait référence à l’ensemble économique composé de la Société CASH 
+PLUS et de ses filiales consolidées.
+NOTE 2. ÉVENEMENTS SIGNIFICATIFS INTERVENUS 
+AU COURS DE LA PERIODE
+  L’exercice 2025 est marqué par :
+  L’introduction en Bourse du groupe CASH PLUS 
+  CASH Plus a reçu l’avis de contrôle CNSS au titre des exercices 2021-2022-2023-
+2024 et janvier 2025
+  Le groupe a réorganisé ses activités en transférant les points de ventes du réseau 
+PAYMENT NETWORK à la société CASH PLUS pour concentrer PAYMENT NETWORK 
+dans l’activité de vente de recharge pour tout le réseau du Groupe CASH PLUS. 
+NOTE 3. RÈGLES ET MÉTHODES COMPTABLES
+Les états financiers consolidés du Groupe CASH PLUS sont préparés en conformité 
+avec les normes comptables internationales adoptées au sein de l’Union Européenne 
+au 31 décembre 2025 et telles que publiées à cette même date.
+Les normes comptables internationales comprennent les IFRS (International Financial 
+Reporting Standards), les IAS (International Accounting Standards) et leurs interprétations 
+SIC et IFRIC (Standards Interprétations Committee et International Financial Reporting 
+Interprétations Committee).
+Le Groupe a adopté les normes IFRS en janvier 2019 en appliquant les règles spécifiques 
+relatives à une première adoption IFRS 1 à partie du 01-01-2019. Les options retenues 
+dans le cadre de cette transition sont décrites dans les notes suivantes.
+Les états financiers consolidés du 31 décembre 2025 présentent des informations 
+comparatives pour l’exercice antérieur, établies selon le même référentiel IFRS. Les 
+méthodes comptables et les modalités de calcul adoptées dans les états financiers 
+consolidés au 31 décembre 2025 sont identiques à celles utilisées dans les états 
+financiers annuels 2024.
+3.1. BASE DE PRÉPARATION DES ÉTATS FINANCIERS
+  Les états financiers sont présentés en Milliers de Dirham Marocain.
+  L’état du résultat global consolidé est présenté par nature en deux tableaux distincts : le 
+compte de résultat et les autres éléments du résultat global.
+  Les postes de l’état de la situation financière consolidé sont présentés selon la 
+classification actifs courants / actifs non courants et passifs courants / passifs non 
+courants.
+  L’état des flux de trésorerie est présenté selon la méthode indirecte.
+  Les principes et méthodes comptables exposés ci-après ont été appliqués de manière 
+permanente à l’ensemble des périodes présentées dans les états financiers consolidés.
+  L’établissement des états financiers consolidés selon les normes IFRS implique qu’un 
+certain nombre d’estimations et d’hypothèses soient faites par la direction du Groupe, 
+ayant une incidence directe sur les états financiers. Ces estimations reposent sur la 
+continuité de l’exploitation et sont établies en fonction des éléments disponibles à la 
+date de leur réalisation.
+Le Groupe procède à ces estimations et appréciations de façon continue sur la base 
+de son expérience passée ainsi que de divers autres facteurs jugés raisonnables qui 
+constituent le fondement de ces appréciations. Les montants figurant dans ses futurs 
+états financiers consolidés sont susceptibles de différer de ces estimations en fonction 
+de l’évolution de ces hypothèses ou de conditions différentes. À noter que les principales 
+estimations significatives faites par le Groupe portent notamment sur le Goodwill et les 
+provisions.
+3.2. NOUVELLES NORMES ADOPTÉES COURANTS EXERCICE 2025
+Les normes, amendements de normes et interprétations publiées par l’IASB et applicables 
+de manière obligatoire à partir de l’exercice 2025 sont listés ci-dessous :
+Effets des variations des cours des monnaies étrangères (IAS 21)
+  Entrée en vigueur de l’amendement qui précise les modalités permettant de 
+déterminer si une monnaie étrangère n’est pas convertible à la date d’évaluation et, 
+dans un tel cas, l’objectif que doit remplir l’estimation du taux de change au comptant 
+à utiliser à cette date.
+Participations dans des entreprises associées et des joint ventures (IAS 28)
+  La méthode vise à clarifier les modalités d’application de la méthode de la mise 
+en équivalence, notamment afin de limiter la diversité des pratiques liées à cette 
+méthode (sans toutefois la redéfinir fondamentalement).
+Instruments financiers (IFRS 7 et IFRS 9)
+  Approbation par la Commission européenne, en mai 2025, des amendements de la 
+norme IFRS 9 clarifiant les modalités d’application du critère de « prêt basique » à 
+certains actifs financiers, ainsi que les modalités de décomptabilisation des passifs 
+financiers réglés par paiement électronique.
+  Approbation par la Commission européenne, en mai 2025, des amendements de la 
+norme IFRS 7 précisant les informations à fournir sur les instruments de capitaux 
+propres comptabilisés sur option à la juste valeur en contrepartie des autres éléments 
+du résultat global.
+  Publication, en décembre 2024, de l’amendement des normes IFRS 7 et IFRS 
+9 permettant de clarifier les modalités d’application de : (i) l’exemption dite 
+« d’usage propre » (« own-use ») aux contrats d’approvisionnement en énergie 
+verte (« Power Purchase Agreements/PPA ») avec livraison physique de l’énergie ; 
+et (ii) la comptabilité de couverture dans le cadre de contrats d’achat d’énergie verte 
+sans livraison physique (« Virtual Power Purchase Agreements/VPPA »).
+Ces modifications n’ont pas d’impact significatif sur les états financiers du groupe 
+CASH PLUS de 2025 et, par conséquent, les divulgations n’ont pas été effectuées.
+3.3. NOUVELLES NORMES ADOPTÉES COURANTS EXERCICE 2024
+Les normes, amendements de normes et interprétations publiées par l’IASB et applicables de 
+manière obligatoire à partir de l’exercice 2024 sont listés ci-dessous :
+  Amendements à IAS 7 et IFRS 7 - Accords de financement de fournisseurs : ces 
+amendements introduisent l’obligation de divulguer des informations qualitatives et 
+quantitatives sur ces accords, permettant aux utilisateurs des états financiers d’évaluer 
+leur impact sur les passifs, les flux de trésorerie et le risque de liquidité de l’entité ;
+  Amendments à IAS 1 - Classement des passifs en tant que passifs courants ou non 
+courants: ces amendements clarifient que, pour qu’une dette soit considérée comme 
+non courante, l’entreprise doit avoir le droit de différer son paiement d’au moins douze 
+mois après la date de clôture ;
+  Amendements à IFRS 16 - Passif de location relatif à une cession-bail:  ces amendements 
+précisent la méthode d’évaluation ultérieure des transactions de cession-bail, notamment 
+en ce qui concerne les opérations avec des loyers variables.
+Les normes et leurs amendements applicables, de façon obligatoire, à compter du 1er janvier 
+2024 sont sans impact significatif sur les comptes consolidés du Groupe portant sur la 
+période allant du 1er janvier 2024 au 31 décembre 2024.
+Normes et interprétations publiées mais non encore applicables au 31 décembre 2024 Le 
+Groupe n’a anticipé aucune des nouvelles normes et interprétations mentionnées ci-après 
+qui pourraient   le concerner et dont l’application n’est pas obligatoire au 1er janvier 2024 :
+  IFRS 18 - Présentation et informations à fournir dans les états financiers ;
+  Amendements à IAS 21 « Absence de convertibilité » - Effets des variations des cours 
+des monnaies étrangères ;
+  Amendements à IFRS 9 et IFRS 7 - Classification et évaluation des instruments financiers.
+Le Groupe est en cours d’analyse afin d’identifier les impacts éventuels de ces nouveaux 
+textes sur les comptes consolidés du Groupe.
+3.4. NOUVELLES NORMES ADOPTÉES AU 1ER JANVIER 2023 
+3.4.1. AMENDEMENTS À IAS 1, PRÉSENTATION DES ÉTATS FINANCIERS ET ÉNONCÉ 
+DE PRATIQUE IFRS 2, PORTER DES JUGEMENTS D’IMPORTANCE RELATIVE - 
+INFORMATIONS À FOURNIR SUR LES MÉTHODES COMPTABLES 
+L’IASB a publié l’information sur les méthodes comptables (Modifications d’IAS 1) en 
+février 2021, qui sont obligatoires à compter des périodes de reporting annuelles ouvertes 
+à compter du 1er janvier 2023. 
+Les modifications d’IAS 1 obligent les entités à fournir des «informations significatives 
+sur les méthodes comptables» plutôt que des «méthodes comptables importantes». 
+Les modifications fournissent des indications supplémentaires pour décider quelles 
+méthodes comptables doivent être divulguées. 
+Pour déterminer si une méthode comptable est importante ou non, il faut faire preuve 
+d’un jugement important. Les méthodes comptables divulguées par le groupe CASH PLUS 
+dans ce rapport illustrent certaines des méthodes comptables couramment applicables. 
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+NOTES AUX ÉTATS FINANCIERS CONSOLIDÉS
+3.4.2. AMENDEMENTS À IAS 12 IMPÔTS SUR LE RÉSUL TAT-IMPÔT DIFFÉRÉ LIÉ AUX 
+ACTIFS ET PASSIFS RÉSUL TANT D’UNE SEULE TRANSACTION : 
+Les modifications introduisent une autre exception à la dispense de reconnaissance 
+initiale. 
+Le groupe Cash plus continue de calculer ses impôts différés aux mêmes méthodes des 
+exercices précédents avec le taux d’imposition prévu pour chaque exercice 
+3.5. NORMES ADOPTÉES AU 1ER JANVIER 2022 
+Les normes et amendements qui entrent en vigueur pour la première fois en 2022 et qui 
+pourraient être applicables au Groupe CASH PLUS sont: 
+*  Référence au Cadre conceptuel (Amendements à IFRS 3) 
+*  Concessions locatives liées au COVID-19 au-delà du 30 juin 2021 (Amendements à IFRS 16)
+*  Immobilisations corporelles: Produit avant utilisation prévue (Amendements à IAS 16) 
+*  Contrats déficitaires-Coût d’exécution d’un Contrat (Amendements à IAS 37) 
+*  Améliorations annuelles (Cycle 2018-2020) – - Filiale en tant que Première Adoptante 
+(Amendements à IFRS 1) - Frais dans le Test des «10%» pour la Décomptabilisation des 
+Passifs (Amendements à IFRS 9 – - Incitations à la location (Amendements à IFRS 16 – - 
+Imposition dans les Évaluations à la Juste Valeur (Amendements à IAS 41) 
+  Ces modifications n’ont pas d’impact significatif sur les états financiers du groupe 
+CASH PLUS de 2023 et, par conséquent, les divulgations n’ont pas été effectuées. 
+3.6. NORMES ADOPTÉES AU 1ER JANVIER 2021 
+Les normes et amendements qui entrent en vigueur pour la première fois en 2021 et qui 
+pourraient être applicables au groupe CAHS PLUS sont: 
+*  Concessions locatives liées au COVID-19 au-delà du 30 juin 2021 (amendements à IFRS 16)
+*  Phase 2 de la réforme des taux d’intérêt de référence (Modifications d’IFRS 9, IAS 39, 
+IFRS 7, IFRS 4 et IFRS 16) 
+Ces modifications n’ont pas d’impact significatif sur les états financiers du groupe CASH 
+PLUS de 2023 et, par conséquent, les divulgations n’ont pas été effectuées.
+3.7. NOUVELLES NORMES ADOPTÉES COURANTS EXERCICE 2019
+3.7.1. NOUVELLE NORME IFRS 16 APPLICABLE À PARTIR DE JANVIER 2019
+La norme IFRS 16 a été publiée en mai 2016, en remplacement de la norme IAS 17 
+« contrats de location », IFRIC 4 «Déterminer si un accord contient un contrat de 
+location», SIC 15 «Avantages dans les contrats de location simple», et SIC 27 «Evaluation 
+de la substance des transactions impliquant la forme juridique d’un contrat de location». 
+Avec son entrée en application, à compter du 1er janvier 2019, la distinction entre « 
+location simple » et « location financement » est supprimée. Désormais, l’ensemble des 
+contrats de location ont le même traitement comptable. Le bien loué est enregistré à 
+l’actif du bilan au titre d’un « Droit d’Utilisation », et l’engagement financier associé au 
+passif, au titre d’une « Dette Locative ».
+Dans le compte de résultat, le droit d’utilisation est amorti linéairement et la dette 
+financière subit un amortissement sur la durée du contrat de location
+  La modalité de transition retenue par le groupe Cash Plus correspond à l’approche 
+rétrospective simple qui consiste à reconstituer le droit d’utilisation comme si la 
+norme avait toujours été appliquée et évaluer la dette locative à la somme actualisée 
+des loyers restants à verser (approche rétrospective simple). En conséquent, les 
+données comparatives relatives à l’exercice 2018 présentées en regard des données 
+de l’exercice 2019 ne sont pas retraitées.
+3.7.2. NOUVELLE INTERPRÉTATION IFRIC 23 APPLICABLE À PARTIR DE JANVIER 2019
+Le 7 juin 2017, l’IFRS Interprétations Committee a publié l’interprétation IFRIC 23. 
+Cette interprétation contient des dispositions relatives aux modalités comptables de 
+reconnaissance des conséquences fiscales liées au caractère incertain de l’impôt. La 
+nouvelle interprétation, adoptée par l’Union européenne le 23 octobre 2018, est applicable 
+au 1er janvier 2019. Le groupe estime qu’il n’existe pas de provision à constater au titre des 
+règles fiscales pour détermination de l’impôt.
+3.8. NORMES ADOPTÉES COURANTS EXERCICE 2018
+3.8.1. LA NORME IFRS 9 APPLICABLE À PARTIR DE JANVIER 2019
+La norme IFRS 9 a été publiée le 24 juillet 2014, en remplacement de l’IAS 39 « 
+Instruments financiers : comptabilisation et évaluation ».Cette norme établit les principes 
+de comptabilisation et d’information financière en matière d’actifs financiers et de passifs 
+financiers. Ces principes visent à remplacer ceux actuellement énoncés par la norme IAS 
+39, Instruments financiers (IFRS 9.1.1).
+La première application de la norme IFRS 9 au 01 janvier 2018, est d’application 
+rétrospective mais les données comparatives ne sont pas retraitées. L’impact est 
+constaté dans les réserves consolidées du groupe.
+3.8.2. LA NORME IFRS 15 APPLICABLE À PARTIR DE JANVIER 2018
+La norme IFRS 15 est applicable à partir de janvier 2018, qui décrit un cadre global unique 
+que les entités doivent utiliser pour comptabiliser les produits des activités ordinaires tirés 
+de contrats avec des clients. Elle remplace les normes actuelles sur la comptabilisation 
+des produits, notamment IAS 18, Produits des activités ordinaires et IAS 11, Contrats de 
+construction et les interprétations connexes.
+L’objectif d’IFRS 15 est d’établir les principes que l’entité doit appliquer pour présenter des 
+informations utiles aux utilisateurs des états financiers concernant la nature, le montant, 
+le calendrier et le degré d’incertitude des produits des activités ordinaires et des flux de 
+trésorerie provenant d’un contrat conclu avec un client.
+3.9. MÉTHODES DE CONSOLIDATION
+3.9.1. INTÉGRATION GLOBALE :
+Les sociétés dans lesquelles CASH PLUS exerce directement ou indirectement un 
+contrôle exclusif sont consolidées par intégration globale (Note 4). La notion de contrôle 
+d’une entité est basée sur trois critères :
+  Le pouvoir sur l’entité, c’est-à-dire la capacité de diriger les activités qui ont le plus 
+d’impacts sur sa rentabilité ;
+  L’exposition aux rendements variables de l’entité, qui peuvent être positifs, sous 
+forme de dividende ou de tout autre avantage économique, ou négatifs ;
+  Et le lien entre le pouvoir et ces rendements, soit la faculté d’exercer le pouvoir sur 
+l’entité de manière à influer sur les rendements obtenus.
+Le contrôle exclusif est présumé pour les sociétés dans lesquelles CASH PLUS SA détient 
+plus de 50% des droits de vote.
+Les opérations réciproques des sociétés intégrées globalement ainsi que les pertes et 
+profits internes sont éliminés en totalité dans les états financiers consolidés.
+3.9.2. MISE EN ÉQUIVALENCE :
+Les titres des sociétés dans lesquelles CASH PLUS exerce une influence notable sur les 
+politiques financières et opérationnelles sont consolidés par mise en équivalence. Cette 
+influence est présumée lorsqu’ CASH PLUS détient entre 20 et 50 % des droits de vote. 
+Aucune des sociétés du périmètre n’est consolidée par mise en équivalence (Note 4).
+3.10. REGROUPEMENT D’ENTREPRISES-GOODWILL
+Lors d’un regroupement d’entreprise, les actifs et les passifs de l’entité acquise sont 
+comptabilisés à leur juste valeur.
+La différence entre le coût d’acquisition et la quote-part dans la juste valeur des actifs et 
+passifs de la société acquise est comptabilisée en écart d’acquisition.
+Le processus d’analyse de l’écart d’acquisition doit être finalisé dans un délai d’un an à 
+compter de la date d’acquisition. Au-delà du délai de 12 mois, tout ajustement dont la 
+contrepartie est un actif ou un passif financier est, en principe, comptabilisé en résultat.
+Postérieurement à leur affectation, les écarts d’évaluation suivent les règles comptables 
+propres à leur nature.
+3.10.1. ÉCART D’ACQUISITION POSITIF
+L’écart résiduel éventuel correspondant à l’excédent du coût d’acquisition sur la part 
+de CASH PLUS dans la juste valeur des actifs et des passifs identifiables de l’entreprise 
+acquise à la date d’acquisition est inscrit à l’actif du bilan sous la rubrique « Écarts 
+d’acquisition ».
+L’écart d’acquisition provenant de l’acquisition d’une entreprise dans laquelle CASH PLUS 
+exerce une influence notable est inclus dans la valeur comptable de celle-ci.
+Les écarts d’acquisition positifs ne sont pas amortis. Ils font l’objet d’un test de 
+dépréciation dès l’apparition d’indices de pertes de valeur et au minimum une fois par 
+an. En cas de perte de valeur, la dépréciation constatée au compte de résultat, dans la 
+rubrique dépréciation d’actifs, est irréversible.
+3.10.2. ÉCART D’ACQUISITION NÉGATIF
+L’écart d’acquisition négatif représente l’excédent de la part d’CASH PLUS dans la juste 
+valeur des actifs et des passifs identifiables de l’entreprise acquise à la date d’acquisition.
+L’écart d’acquisition négatif est comptabilisé immédiatement au compte de résultat au 
+cours de la période d’acquisition.
+3.11. CONVERSION DES OPÉRATIONS EN MONNAIES ÉTRANGÈRES
+Les transactions réalisées en devises sont converties au taux de change du jour de 
+chacune des transactions.
+Les créances et dettes monétaires à la date de clôture sont converties au cours de change 
+en vigueur à cette date. Les pertes et les gains de change latents qui en résultent, sont 
+comptabilisés en résultat financier.
+3.12. IMMOBILISATIONS
+3.12.1. IMMOBILISATIONS INCORPORELLES
+Conformément à la norme IAS 38, « Immobilisations incorporelles », les immobilisations 
+incorporelles acquises figurent au bilan à leur coût d’acquisition diminué du cumul des 
+amortissements et des pertes de valeur.
+Les immobilisations incorporelles d’CASH PLUS (essentiellement des logiciels) sont 
+à durée de vie définie et sont amorties selon le mode linéaire sur une durée de 3 ans. 
+L’amortissement commence dès la mise en service de l’immobilisation.
+3.12.2. IMMOBILISATIONS CORPORELLES
+Conformément à la norme IAS 16, la valeur brute des immobilisations corporelles 
+correspond à leur coût d’acquisition ou de création.
+Les immobilisations corporelles sont évaluées au coût historique et ne font l’objet 
+d’aucune réévaluation.
+Le financement des immobilisations est essentiellement réalisé par autofinancement et il 
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+n’existe pas d’actif qui exige une longue période de préparation pour être utilisé ou vendu. 
+En conséquence, aucun coût d’emprunt n’est incorporé au coût des actifs.
+Les frais d’entretien et de réparation sont directement enregistrés en charges de 
+l’exercice, à l’exception de ceux permettant une augmentation des performances de 
+l’actif considéré ou de sa durée d’utilisation.
+Les amortissements sont calculés, à partir de la date de mise en service, suivant le mode 
+linéaire sur la base du coût d’acquisition ou de production, sous la déduction le cas 
+échéant de la valeur résiduelle.
+La durée d’amortissement est basée sur la durée d’utilité estimée :
+TYPE D’IMMOBILISATIONS MODE D’AMORTISSEMENT DURÉE D’AMORTISSEMENT
+Constructions Linéaire 5 ans
+Matériel de transport Linéaire 5 ans
+Installations générales et les agencements Linéaire 10 ans 
+Mobilier de bureau Linéaire 10 ans
+La norme IAS 16, « immobilisations corporelles », prévoit l’utilisation de durées 
+d’amortissement différenciées sur chacun des composants d’un même actif immobilisé. 
+Dans ce cadre, le Groupe n’a identifié aucune immobilisation corporelle comportant 
+plusieurs éléments à durée de vie ou rythme d’amortissement distincts.
+3.12.3. CONTRATS DE LOCATION
+Le Groupe CASH PLUS , comme preneur, a le choix d’appliquer la norme IFRS 16 selon la 
+méthode de rétroactivité complète ou selon la méthode de rétroactivité partielle. 
+  Méthode de rétroactivité complète : Appliquer IFRS 16 à l’ensemble des comptes 
+des exercices comparatifs comme si elle a toujours été appliquée 
+  Méthode de rétroactivité partielle : cette méthode peut être mise en place de deux 
+manières : 
+  Option 1 : Evaluer l’actif comme si IFRS 16 avait été appliquée depuis le début du 
+contrat de location, mais en utilisant le taux d’emprunt marginal à la date de transition 
+  Option 2 : Evaluer l’actif pour un montant égal à la dette locative (ajusté pour tenir 
+compter des régularisations et des paiements anticipés)
+Le Groupe CASH PLUS a retenu la méthode de rétroactivité partielle, (option 1) 
+a. L’évaluation du droit d’utilisation et de l’obligation locative 
+Le Groupe CASH PLUS a calculé l’obligation locative sur la base de la valeur actualisée 
+des paiements de contrat de loyer depuis sa date de contractualisation, sur la base d’un 
+taux d’actualisation. Les paiements de loyer comprennent les loyers fixes ainsi que les 
+augmentations triennales. 
+Parallèlement, l’actif lié aux droits d’utilisations comprend l’obligation locative initiale 
+déterminée ci-haut, les coûts de mise en service ainsi que l’obligation de rénovation, 
+déduction faite des avantages accordés par les preneurs.
+Les actifs liés aux droits d’utilisation sont inclus dans les postes d’immobilisations 
+corporelles et l’obligation locative est incluse dans les dettes financières non courantes 
+et dettes financières courantes.
+b. Taux d’actualisation retenu
+Selon la norme IFRS 16, le taux d’actualisation est le taux d’intérêt implicite du contrat de 
+location ou à défaut le taux marginal d’endettement du groupe CASH PLUS. 
+  c’est le taux d’intérêt que le groupe CASH PLUS aurait à payer pour emprunter, pour 
+une durée et avec une garantie similaires, les fonds nécessaires pour se procurer un 
+bien de valeur similaire à l’actif au titre de droit d’utilisation dans un environnement 
+économique similaire 
+  Pour le groupe CASH PLUS, le taux d’actualisation est estimé à 4.2 % (Taux marginal 
+d’endettement) 
+c. Durée retenue
+La durée retenue par le groupe CASH PLUS, pour le calcul des obligations locatives 
+des contrats de location en tant que locataire, en raison de caractère certain de 
+renouvellement des contrats de location des immeubles, est égale à : 
+  20 ans pour les contrats de location des immeubles 
+  Entre 4 à 5 ans pour les contrats de location de matériel de transport
+L’impact de l’IFRS 16 sur le groupe CASH PLUS est présenté ci-dessous comme suit :
+  Note 8 : Les droits d’utilisations 
+  Note 14 : Les passifs locatifs 
+3.12.4. DÉPRÉCIATION D’ACTIFS
+Les immobilisations corporelles et incorporelles amortissables font l’objet d’un test 
+de dépréciation dès l’apparition d’indices de perte de valeur. Une dépréciation est 
+comptabilisée lorsque la valeur nette comptable des actifs est supérieure à la valeur 
+recouvrable.
+La valeur recouvrable est la plus élevée entre la juste valeur et la valeur d’utilité. Cette 
+dernière est déterminée sur la base des flux de trésorerie actualisés attendus de 
+l’utilisation des actifs.
+Les dépréciations comptabilisées peuvent éventuellement être reprises dans la limite de 
+la valeur nette comptable qu’aurait eu l’immobilisation à la même date si elle n’avait pas 
+été dépréciée.
+La norme IAS 36 n’a pas eu d’impact sur les états financiers du Groupe CASH PLUS. En 
+effet, aucun indice de perte de valeur n’a été identifié au 31/12/2019.
+3.13. TRÉSORERIE ET ÉQUIVALENTS DE TRÉSORERIE :
+Conformément à la norme IAS 7 «Tableau des flux de trésorerie», la trésorerie et 
+équivalents de trésorerie figurant au bilan, comprend la trésorerie (fonds de caisse et 
+dépôts à vue) ainsi que les équivalents de trésorerie (placements à court terme, très 
+liquides, qui sont facilement convertibles en un montant connu de trésorerie et qui sont 
+soumis à un risque négligeable de changement de valeur).
+La trésorerie nette, dont la variation est présentée dans le tableau des flux de trésorerie, 
+est constituée de la trésorerie et des équivalents de trésorerie diminués des découverts 
+bancaires.
+3.14. INSTRUMENTS FINANCIERS
+La première application de la norme IFRS 9 au 1 er janvier 2018 est d’application 
+rétrospective, mais les dispositions transitoires de la norme offrent la possibilité, retenue 
+par le Groupe CASH PLUS, de ne pas retraiter les données comparatives des exercices 
+antérieurs.
+Au 1er janvier 2018, la norme IFRS 9 prévoit de comptabiliser directement dans les capitaux 
+propres (Réserves consolidées ou Gains et pertes comptabilisés directement en capitaux 
+propres) :
+  Les différences d’évaluation des actifs et passifs financiers,
+  Les provisions et dépréciations pour risque de perte attendue sur les encours 
+franchisés, partenaires et créances des commissions facturées.
+3.14.1. TRAITEMENT DES TITRES ET VALEURS DE PLACEMENT
+Le Groupe CASH PLUS détient pour le besoin d’optimiser sa gestion de trésorerie, un 
+actif financier sous forme de titres et valeurs de placement, évalué au prix du marché et 
+classé en tant que équivalent de trésorerie en raison de leurs Placements à court terme, 
+très liquides 
+  Facilement convertibles en un montant connu de trésorerie
+  Et soumis à un risque négligeable de changement de valeur 
+3.14.2. TRAITEMENT DES TITRES DE PARTICIPATION
+Les titres de participation détenus par le groupe CASH PLUS sont comptabilisés à leurs 
+coûts d’acquisition dans les comptes sociaux, et ils sont consolidés par la méthode 
+d’intégration globale et par conséquent sont exclus du champ d’application de la norme 
+IFRS 9.
+3.14.3. TRAITEMENT DE LA DÉPRÉCIATION DES ENCOURS FRANCHISÉS, 
+PARTENAIRES ET CRÉANCES DE FACTURES COMMISSIONS 
+La norme IFRS 9 apporte un nouveau modèle de provisionnement des créances 
+commerciales et des actifs financiers (prêts), basé sur les pertes de crédit attendues 
+(« expected CRÉDIT losses » ou « ECL »). Ce nouveau modèle qui s’applique aux actifs 
+financiers évalués au coût amorti ou aux actifs financiers à la juste valeur par capitaux 
+propres, constitue un changement par rapport au modèle actuel d’IAS 39, basé sur les 
+pertes de crédit avérées.
+La norme IFRS 9 marque le passage d’un modèle de dépréciation des actifs financiers 
+basée sur les pertes avérées à un modèle basé sur les pertes attendues en 3 phases : 
+  Niveau 1 : Provisionnement des pertes de crédit attendues sur les 12 mois 
+  Niveau 2 : Provisionnement des pertes attendues sur la durée de vie totale de l’actif 
+  Niveau 3 : Provisionnement des pertes des prêts en défaut ou proches du défaut 
+Le groupe CASH PLUS dispose des catégories d’encours financiers suivants : Franchisés, 
+Partenaires et commissions facturées et autres actifs (État, personnel …)
+Le taux de perte attendue associé à chaque catégorie d’encours financiers est évalué 
+sur les 8 dernières années par la moyenne de perte (Provision + Perte irrécouvrable) par 
+rapport à l’encours, fait ressortir les résultats suivants :
+  Taux de provisionnement de 1 % pour le stage 1 en 2025 au lieu de 0.3% en 2024
+  Taux de provisionnement de 12.86 % pour le stage 2 
+  Taux de provisionnement de 100.00 % pour le stage 3
+Adoption de modèle adapté à chaque profil d’encours. En effet, le groupe CASH PLUS a 
+retenu les modèles suivants d’évaluation de la perte attendue :
+CATÉGORIE D’ENCOURS FINANCIERS MÉTHODE ÉVALUATION DE LA PERTE ATTENDUE
+Franchisé
+Selon la méthode risk Value : Le groupe dispose d’une 
+classification selon l’historique de chaque franchisé par rapport 
+aux volumes, pertes et commission réalisés.
+Partenaires
+Selon le système de notation ( Agence de notation). Ce modèle 
+n’est pas pratiqué par le groupe et doit faire référence à une 
+évaluation du risque de contrepartie et de solvabilité des 
+différents partenaires.
+Cautionnement Cautions accordées aux partenaires avec risque faible
+Encours commission hors groupe Balance âgée pour évaluation de la provision selon le taux 
+de chute de créances de commissions
+ Encours commission groupe Balance âgée (sans provision)
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+Le changement de taux à 1% en raison de changement de la politique vis-à-vis 
+des franchisés qui consiste à ne plus avancer de la trésorerie qu’hauteur de solde 
+déjà par le franchisés dans sa situation tocken. Ainsi le système bloque toute 
+opération qui dépasse le seuil alimenté par le franchisé dans son solde Tocken. Doù, 
+une concentration des encours dans la bucket 1 au lieu de la bucket 1 et 2. D’oû le 
+renfocrement de taux dudit bucket 1.
+3.15. TRAITEMENT DES PASSIFS FINANCIERS
+Le traitement IFRS 9 par rapport aux passifs financiers n’a pas changé de manière 
+substantielle en comparaison avec l’IAS 39 
+Le groupe CASH PLUS a contracté :
+  En mars 2023, un emprunt de 40 Millions de dirhams pour financer l’expansion de 
+son activité et acquisition des filiales Leap Innovation, GPE
+Cet emprunt est évalué au coût amorti et, en conséquence, n’aura pas d’impact sur 
+les comptes consolidés dans la mesure que le montage financier n’a pas nécessité 
+des coûts significatifs.
+Le groupe CASH PLUS n’est pas concerné par les dispositions spécifiques à la 
+comptabilité de couverture.
+3.16. LES AVANTAGES DU PERSONNEL
+Les avantages du personnel comprennent :
+  Les avantages à court terme: désignent les avantages du personnel qui sont dus 
+intégralement dans les douze mois suivant la fin de la période pendant laquelle 
+les membres du personnel ont rendu les services correspondants.
+  Les avantages à long terme : désignent les avantages qui ne sont pas dus 
+intégralement dans les douze mois suivant la fin de la période pendant laquelle 
+les membres du personnel ont rendu les services correspondants. À noter que le 
+Groupe CASH PLUS ne prévoit aucun avantage qualifié de postérieur à l’emploi 
+suivant le référentiel IFRS.
+3.17. PROVISIONS
+Conformément à la norme IAS 37 «Provisions, passifs éventuels et actifs éventuels», les 
+provisions sont comptabilisées lorsque, à la clôture de l’exercice, le Groupe CASH PLUS 
+a une obligation à l’égard d’un tiers qui résulte d’un fait générateur passé et dont il est 
+probable ou certain qu’elle provoquera une sortie de ressources au bénéfice de ce tiers, 
+sans contrepartie au moins équivalente attendue de celui-ci.
+Cette obligation peut être d’ordre légal, réglementaire contractuel ou implicite. Ces 
+provisions sont estimées selon leur nature en tenant compte des hypothèses les plus 
+probables. 
+3.18. REVENUES 
+Les revenus du Groupe CASH PLUS se constitue essentiellement des commissions 
+reçues en rémunération sur les transactions sur le transfert de fonds (National et 
+International), l’encaissement sur factures et commissions sur opérations de change. 
+Les principes d’enregistrement et de reconnaissance du chiffre d’affaires adopté par 
+le groupe est le rattachement à leurs exercices d’émission de leurs primes. L’adoption 
+de la norme IFRS 15 pose comme principe fondamental que le groupe CASH PLUS  
+doit comptabiliser les produits des activités ordinaires de manière à montrer quand 
+les services promis aux clients sont fournis et le montant de contrepartie que le 
+groupe s’attend à avoir droit en échange de ces services. Ce principe fondamental est 
+présenté sous forme d’un modèle en cinq étapes : 
+  Etape 1 : Identifier les contrats avec des clients.
+  Etape 2 : Identifier les obligations de prestation prévues au contrat.
+  Etape 3 : Déterminer le prix de transaction.
+  Etape 4  : Répartir le prix de transaction entre les différentes obligations de 
+prestation prévues au contrat
+  Etape 5  : Comptabiliser les produits des activités ordinaires lorsque l’entité a 
+rempli (ou à mesure qu’elle remplit) une obligation de prestation
+La norme IFRS 15 inclut aussi un ensemble cohérent d’obligations d’information, qui 
+représente un accroissement considérable des obligations d’information actuelles sur 
+la comptabilisation des produits des activités ordinaires.
+Avant 2018, l’année d’entrée en vigueur de l’IFRS 15, le Groupe CASH PLUS 
+comptabilisait son chiffre d’affaires sur la base de la réalisation de transactions.
+Cette méthode de comptabilisation est basée sur la naissance d’une obligation de 
+prestation réalisée en une seule fois, pour qu’elle soit comptabilisée. 
+La norme IFRS 15 n’aura d’incidence ni sur la situation financière, ni sur le résultat de 
+CASH PLUS à l’ouverture de l’exercice 2018. 
+3.19. IMPÔTS SUR LE RÉSUL TAT
+Conformément à la norme IAS 12 « Impôts sur le résultat », les différences temporelles 
+entre les valeurs comptables des actifs et des passifs et leurs bases fiscales DONNÉnt 
+lieu à la constatation d’un impôt différé.
+Les impôts différés actifs sont des produits d’impôts futurs et correspondent à une 
+différence temporaire génératrice d’économie d’impôt dans le futur.
+Les impôts différés passifs sont liés à des retraitements de consolidation générateurs 
+de charge d’impôt dans le futur.
+Conformément à la norme IAS 12, les impôts différés ne sont pas actualisés.
+NOTE 4. TRÉSORERIE ET ÉQUIVALENTS DE TRÉSORERIE
+La trésorerie et les équivalents de trésorerie se composent de valeurs en caisse et 
+le solde net des actifs (Dépôt et compte courant) et des passifs (Découvert, crédit 
+de trésorerie et emprunts à vue) auprès des établissements de crédit, ainsi que les 
+équivalents de trésorerie (placements à court terme, très liquides, qui sont facilement 
+convertibles en un montant connu de trésorerie et qui sont soumis à un risque 
+négligeable de changement de valeur).
+Les comptes de trésorerie actifs et passifs se détaillent comme suit : 
+EN KMAD 31/12/2025 31/12/2024
+TRÉSORERIE ET ÉQUIVALENTS DE TRÉSORERIE À L’OUVERTURE 1 692 124 746 844
+Caisse, banques centrales, CCP (actif & passif) 209 399 152 056
+Comptes (actif et passif) et prêts/emprunts à vue auprès des établissements 
+de crédit 1 482 725 594 788
+TRÉSORERIE ET ÉQUIVALENTS DE TRÉSORERIE À LA CLÔTURE 2 112 781 1 692 124
+Caisse, banques centrales, CCP (actif & passif) 204 250 209 399
+Comptes (actif et passif) et prêts/emprunts à vue auprès des établissements de crédit 1 908 531 1 482 725
+VARIATION DE LA TRÉSORERIE NETTE 420 657 945 280
+NOTE 5. ACTIFS FINANCIERS À LA JUSTE VALEUR 
+Les actifs financiers à la juste valeur se composent des placements financiers évalué 
+à la juste valeur à travers le résultat.
+EN KMAD 31/12/2025 31/12/2024
+Titres d’OPCVM détenus 508 167 150 377
+Titres à JV (Titres non consolidés) 7 001 6 001
+ACTIFS FINANCIERS À LA JUSTE VALEUR 515 168 156 378
+La juste valeur des actifs financiers sont des valeurs de cotations du marché du 
+niveau 1 de la juste valeur au 31-12-2025.
+NOTE 6. COMPTES DE RÉGULARISATION ET AUTRES ACTIFS 
+Les encours des financiers (franchisés & partenaires et cautions ainsi que leurs 
+créances de commissions) ainsi que les autres débiteurs se présentent comme suit : 
+6.1. COMPTES DE RÉGULARISATION ET ENCOURS FINANCIERS 
+EN KMAD 31/12/2025 31/12/2024
+Franchisés 36 747 34 473
+Partenaires 147 421 110 150
+Cautionnement  5 429 5 261
+Créances sur commissions  165 579 92 467
+Créances en souffrances 15 181 13 468
+VALEUR BRUTE DES ENCOURS FINANCIERS 355 176 255 819
+Dépréciation -21 873 -20 315
+Provisions souffrances -15 181 -13 468
+VALEUR NETTES DES ENCOURS FINANCIERS 333 303 222 036
+État 63 861 53 554
+Personnel & Créances sociales 4 032 1 518
+Avances fournisseurs 1 756 1 059
+Charges constatées d’avances 926 367
+Autres comptes de régularisation 21 174 121 129
+AUTRES DÉBITEURS 91 749 177 627
+TOTAL 425 052 399 663
+6.2. RÉPARTITION DES ENCOURS FINANCIERS ET DÉPRÉCIATION PAR BUCKET 
+SOUS IFRS 9 
+La répartition des encours des financiers (franchisés, partenaires, commissions et 
+cautions) ainsi que leurs provisions correspondantes se présentent comme suit : 
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+• EXERCICE 2025
+AU 31/12/2025
+EN KMAD 
+VALEUR BRUTE DES ENCOURS FINANCIERS
+TOTAL BRUT
+DÉPRÉCIATION
+TOTAL 
+DÉPRÉCIATION VALEUR NETTEBUCKET 
+1
+BUCKET 
+2
+BUCKET 
+3
+BUCKET 
+1
+BUCKET 
+2
+BUCKET 
+3
+Franchisés 32 641 0 4 106 36 747 -326 0 -4 106 -4 432 32 315
+Partenaires 136 020 6 518 4 883 147 421 -1 011 -838 -4 883 -6 732 140 689
+Cautionnement 5 429 0 0 5 429 -55 0 0 -55 5 374
+Créances sur commissions 133 592 25 847 6 140 165 579 -1 965 -3 323 -5 366 -10 654 154 925
+Créances en souffrances 15 181 15 181 -15 181 -15 181 0
+TOTAL 307 682 32 365 30 310 370 357 -3 357 -4 161 -29 536 -37 054 333 303
+• EXERCICE 2024
+AU 31/12/2024
+EN KMAD 
+VALEUR BRUTE DES ENCOURS FINANCIERS
+TOTAL BRUT
+DÉPRÉCIATION
+TOTAL 
+DÉPRÉCIATION VALEUR NETTEBUCKET 
+1
+BUCKET 
+2
+BUCKET 
+3
+BUCKET 
+1
+BUCKET 
+2
+BUCKET 
+3
+Franchisés 21 685 3 236 9 552 34 473 -7 -416 -9 531 -9 954 24 519
+Partenaires 105 374 0 4 776 110 150 -3 0 -4 775 -4 778 105 372
+Cautionnement 5 261 0 0 5 261 0 0 0 0 5 261
+Créances sur commissions 86 052 865 5 550 92 467 -21 -111 -5 451 -5 583 86 884
+Créances en souffrances 13 468 13 468 -13 468 -13 468 0
+TOTAL 218 372 4 101 33 346 255 819 -31 -527 -33 225 -33 783 222 036
+NOTE 7. IMMOBILISATIONS CORPORELLES
+Les valeurs brutes et nettes des immobilisations corporelles y compris les droits d’utilisations (locations opérationnelles et leasing) se présentent comme suit :
+DROIT D’UTILISATION OUVERTURE 
+IMMOBILISATIONS 
+ACQUISITIONS / DROITS 
+D’UTLISATIONS IFRS 16
+CESSIONS
+/VIREMENT 
+DOTATIONS DE L ’EXERCICE 
+(IFRS 16 & LEASING) CLÔTURE
+Immeubles d’exploitation ifrs16 620 877 106 033 -32 005 - 694 905
+Constructions et agencements 123 929 13 616 -3 000 - 134 545
+Autres matériels d’exploitation & Transport 1 37 939 4 338 - 42 277
+Autres immobilisations corporelles d’exploitation 2 6 415 7 249 - 13 664
+VALEURS BRUTES 789 160 131 236 -35 005 - 885 391
+Amort. Immeubles d’exploitation ifrs 16 -121 975 9 690 -32 738 -145 023
+Amort. Constructions et agencements -64 411 -9 340 -73 751
+Amort. Matériels d’exploitations ( Mobilier, Mat de bureau & Matériel informatique & Transport ) -24 204 524 -4 514 -28 194
+Amort. Autres immobilisations corporelles d’exploitation -2 368 -2 439 -4 807
+TOTAL AMORTISSEMENT -212 958 - 10 214 -49 031 -251 775
+VALEURS NETTES 576 202 131 236 -24 791 -49 031 633 616
+NOTE 8. DROITS D’UTILISATIONS DES ACTIFS CORPORELS 
+Les valeurs brutes et nettes des droits d’utilisations (locations opérationnelles et leasing) se présentent comme suit :
+DROITS D’UTILISATIONS ( LOCATION & LEASING ) OUVERTURE DROITS D’UTILISATION (IFRS 
+16)
+RETRAIT /
+CESSIONS
+DOTATIONS DE L ’EXERCICE 
+(IFRS 16 & LEASING) CLÔTURE
+Immeubles d’exploitation ifrs16 620 877 106 033 -32 005 - 694 905
+Mobilier, matériel de bureau & matériel informatique - leasing - - - -
+Autres matériels d’exploitation & transport - leasing 889 -4 - 885
+Autres immobilisations corporelles exploitation - leasing 5 758 6 971 - 12 729
+VALEURS BRUTES 627 524 113 004 -32 009 - 708 519
+Amortissement immeubles d’exploitation -121 975 9 690 -32 738 -145 023
+Amortissement mobilier, matériel de bureau & matériel informatique - -
+Amortissement matériels d’exploitation & transport -477 -94 -571
+Amortissement autres immobilisations corporelles d’exploitation -2 125 63 -2 343 -4 405
+TOTAL AMORTISSEMENT -124 577 - 9 753 -35 175 -149 999
+VALEURS NETTES 502 947 113 004 -22 256 -35 175 558 520
+  1 Y compris les investissements réalisés en leasing 
+  2 Y compris les investissements réalisés en leasing 
+Le montant de la dotation d’amortissement de l’exercice 2025 de relative aux droits d’utilisation suite à l’adoption de l’IFRS 16 est de 35 175 KMAD.
+NOTE 9. IMMOBILISATIONS INCORPORELLES 
+Les valeurs brutes et nettes des immobilisations incorporelles se présentent comme suit :
+IMMOBILISATIONS CORPORELLES OUVERTURE ACQUISITIONS VAR.DE PÉRIMÈTRE DOTATIONS DE L ’EXERCICE CLÔTURE
+Immobilisations en recherche et développement 124 887 28 477 - 153 364
+Immobilisations incorporelles hors exploitation 12 649 226 - 12 875
+VALEURS BRUTES 137 536 28 703 - - 166 239
+Amort. immobilisations en recherche et développement -73 337 -19 647 -92 984
+Amort. Immobilisations incorporelles hors exploitation - - - -
+TOTAL AMORTISSEMENT -73 337 - - -19 647 -92 984
+VALEURS NETTES 64 199 28 703 - -19 647 73 255
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+NOTE 10. GOODWILL (ÉCART D’ACQUISITION)
+L’écart d’acquisition est détaillé comme suit :
+FILIALE ÉCART D’ACQUISITION EN KMAD
+PAYMENT NETWORK 51 704
+TOTAL 51 704
+10.1. TEST DE PERTE DE VALEUR SUR LES ÉCARTS D’ACQUISITION 
+Conformément à la norme IAS 36 – Dépréciation d’actifs, les goodwill ne sont pas amortis 
+mais font l’objet d’un test de dépréciation dès l’apparition d’indices de pertes de valeur 
+et au minimum une fois par an. En cas de perte de valeur, la dépréciation constatée au 
+compte de résultat, dans la rubrique dépréciation d’actifs, est irréversible. 
+Selon l’IAS 36, le test de dépréciation consiste à s’assurer que l’actif n’est pas comptabilisé 
+à une valeur qui excède sa valeur recouvrable. La valeur recouvrable d’un actif ou d’une 
+unité génératrice de trésorerie est la valeur la plus élevée entre sa juste valeur diminuée 
+des coûts de sortie et sa valeur d’utilité.
+Le modèle de test sur le goodwill de PAYMENT NETWORK est basé sur une seule Unité 
+génératrice de trésorerie (UGT) qui est la société PAYMENT NETWORK
+La valeur d’utilité est utilisée comme valeur recouvrable à comparer avec la valeur 
+comptable du goodwill. Ainsi, la valeur recouvrable des UGT définies a été déterminée 
+sur la base de l’actualisation des cash flows futures escomptés desdits UGT, à savoir la 
+méthode dite de «Discount Cash-Flow». 
+Le taux retenu pour l’actualisation des flux de trésorerie a été déterminé selon la méthode 
+du Coût Moyen Pondéré du Capital. Ainsi, le coût des fonds propres a été déterminé à 
+travers la méthode dite de MEDAF. Par conséquent, le taux sans risque retenu est de 
+3.11% correspondant aux rendements moyens des bons du trésor, une prime de risque de 
+7.5% correspondant à la prime de risque moyenne du marché marocain et un béta calculé 
+sur la base de données d’entité du même secteur d’activité de l’ordre 1.1. 
+Par ailleurs, le taux d’intérêts financiers a été estimé à travers la moyenne des charges 
+d’intérêts par rapport à l’encours moyen des dettes de financement.
+Ainsi le taux d’actualisation (WACC) au titre de l’exercice 2025 est de 10.3%. 
+Le taux de croissance perpétuelle retenu est de 1% correspondant au taux de croissance 
+moyen à long terme en raison de représentation d’une croissance stable et soutenue 
+au-delà de la période explicite du business plan, alignée avec les attentes de croissance 
+modérée dans les économies matures et les services non bancaires bien établies, ainsi 
+qu’avec les évolutions macroéconomiques (taux demeurant inférieur à l’inflation). 
+Les flux de trésoreries du business plan de l’IPO ont été pondéré à la baisse par un 
+coefficient d’EBIDTA de l’ordre de 0.73 pour tenir compte des résultats de l’exercice 2025 
+ainsi par la hausse de la charge d’impôt sur les sociétés de 1.3 pour tenir compte des 
+réintégrations fiscales.
+La période au cours de laquelle la direction a projeté les flux de trésorerie, approuvés par 
+la direction est sur une période de 5 ans.
+10.2. L ’ALLOCATION DU GOODWILL (ÉCART D’ACQUISITION) PAR UGT EN KMAD, 
+SE PRÉSENTE COMME SUIT AU 31/12/2025 :
+UGT EURSOL ( PAYMENT NETWORK)
+Valeur comptable de la participation 119 880
+10.3. TEST DE SENSIBILITÉ PAR UGT EN KMAD, SE PRÉSENTE COMME SUIT  
+AU 31/12/2025 :
+Le groupe CASH PLUS a réalisé une analyse de la sensibilité du test de dépréciation à 
+l’évolution des hypothèses clés utilisé pour déterminer la valeur recouvrable pour l’UGT 
+PAYMENT NETWORK. 
+Le management du groupe CASH PLUS estime que tout changement raisonnablement 
+possible des hypothèses clés sur lesquelles repose la valeur recouvrable des actifs. 
+L’utilisation de cette méthode nécessite l’estimation des flux de trésorerie futurs et la 
+détermination d’un taux d’actualisation afin de calculer la valeur actualisée des flux de 
+trésorerie. Les résultats de test de sensibilité se présente comme suit : 
+WACC 9,30% 9,80% 10,30% 10,80% 11,30%
+Cash flows actualisé (UGT PAYMENT 
+NETWORK) à 1% de taux de croissance 133 914 126 558 119 880 113 781 108 179
+Cash flows actualisé (UGT PAYMENT 
+NETWORK) à 0,5% de taux de croissance 127 860 121 155 115 029 109 401 104 205
+En conclusion, les valeurs recouvrables des goodwill par UGT sont largement supérieures 
+à leurs valeurs comptables. Par conséquent, il n’y a pas lieu de constater des dépréciations 
+dans les comptes au 31/12/2025.
+NOTE 11. DETTES FINANCIÈRES ET PASSIFS LOCATIFS 
+Les dettes financières et dettes locatives du leasing se présentent comme suit :
+11.1. RÉPARTITION DES DETTES FINANCIÈRES PAR CATÉGORIE ET ÉCHÉANCES
+EN KMAD
+2025
+2024A MOINS 
+D’UN AN
+DE 1 AN 
+À 5 ANS 
+AU-DELÀ 
+DE 5 ANS TOTAL
+Emprunts et dettes auprès des établissements 
+de crédit 0 10 880 8 283 19 163 27 063
+Dettes sur immobilisations en location-
+financement – IAS 17 2 481 5 988 0 8 469 3 514
+TOTAL DETTES FINANCIÈRES 0 0 0 27 632 30 577
+Les dettes financières à plus d’un an enregistrent essentiellement les échéances de 
+remboursement des dettes CMT auprès de la banque ainsi que les échéances de leasing 
+restantes à payer sur les durées de contrat de leasing de chaque contrat. 
+11.2. ECHÉANCIERS DES PAIEMENTS MINIMAUX DES DETTES LOCATIVES DE 
+CONTRAT DE LEASING :
+ECHÉANCIER DES PAIEMENTS MINIMAUX (EN KMAD) 2025 2024
+A moins d’un an 3 013 2 321
+De 1 à 5 ans 7 177 3 514
+Au-delà de 5 ans -
+TOTAL DES PAIEMENTS MINIMAUX 10 190 5 721
+DONT
+Intérêt 1 721 2 207
+Remboursement en principal 8 469 3 514
+NOTE 12. DETTES ENVERS LA CLIENTÈLE 
+Les valeurs dettes envers la clientèle se présentent comme suit :
+EN KMAD 31/12/2025 31/12/2024
+Dettes envers la clientèle   1 199 062 836 473
+TOTAL 1 199 062 836 473
+NOTE 13. ImpôtS DifféréS ACTIFS ET PASSIFS 
+La variation des impôts différés actifs et passifs de la période se présentent comme suit :
+EN KMAD OUVERTURE VARIATION 
+RÉSUL TAT
+IMPACT VAR 
+PÉRIMÈTRE CLÔTURE
+Impôt différé actif 29 257 9 388 38 645
+Impôt différé Passif -998 99 127 -772
+SOLDE NETTE D’IMPÔT DIFFÉRÉ 28 259 9 487 127 37 873
+Immobilisation en non-valeur 305 5 360 5 665
+Droit d’utilisation IFRS 16 17 194 4 830 2 22 026
+Provision IFRS 9 7 209 70 7 279
+Déficit reportable 4 358 -874 3 484
+Autres 191 191
+IMPÔT DIFFÉRÉ ACTIF 29 257 9 386 2 38 645
+Écart de réévaluation  -666 - - -666
+JV IFRS 9 Placement -120 120 -
+Autres -212 84 128 -
+Leasing - -103 -3 -106
+IMPÔT DIFFÉRÉ PASSIF -998 101 128 -772
+SOLDE NETTE D’IMPÔT DIFFÉRÉ 28 259 9 487 130 37 873
+NOTE 14. COMPTES DE RÉGULARISATION ET AUTRES PASSIFS 
+Les comptes des autres passifs et de régularisation de la période se présentent comme suit :
+14.1. SOLDE DES COMPTES DE RÉGULARISATION ET AUTRES PASSIFS 
+EN KMAD 2025 2024
+Encours Partenaires & Franchisés 900 300 668 765
+Fournisseurs 127 319 123 345
+Dettes Locatives IFRS 16 607 393 544 389
+Avances et acomptes reçues 147 646
+Dettes Sociales 15 625 18 799
+Dettes Fiscales 123 088 94 898
+Autres dettes et comptes de régularisation 27 570 221 820
+TOTAL 1 801 442 1 672 662
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+Les paiements minimaux des dette locatives sur locations opérationnelles de la période 
+se présentent comme suit :
+14.2. ECHÉANCIERS DES PAIEMENTS MINIMAUX DES DETTES LOCATIVES IFRS 16 :
+ECHÉANCIER DES PAIEMENTS MINIMAUX (EN KMAD) 2025 2024
+A moins d’un an 46 527 37 531 
+De 1 à 5 ans 250 843 203 575 
+Au-delà de 5 ans 603 152 460 203 
+TOTAL DES PAIEMENTS MINIMAUX 900 522 701 309 
+DONT
+Intérêt 293 130 156 920 
+Remboursement en principal 607 392 544 389
+NOTE 15. PROVISIONS
+Les provisions courantes et non courantes s’analysent comme suit :
+EN KMAD OUVERTURE DOTATION
+REPRISE 
+AVEC 
+UTILISATION 
+REPRISE 
+SANS 
+UTILISATION 
+CLÔTURE
+Provisions pour litiges 0 241 0 0 241
+Provision avantages aux personnel 0 0 0 0 0
+Autres Provisions pour risques et charges 1 758 7 626 0 393 8 991
+TOTAL 1 758 7 867 0 393 9 232
+Le montant de la provision pour risques et charges sont constitués pour couvrir :
+  Provisions pour risques généraux chez CASH PLUS pour 7  030 KDH (Risque 
+Contrôle CNSS)
+  Provisions pour risques généraux chez GPE pour 241 KDH 
+  Provisions pour risques généraux chez GPL pour 596 KDH 
+  Reprise sur Provisions pour risques généraux chez CASH PLUS pour 393 KDH  
+NOTE 16. CAPITAUX PROPRES
+Au 31-12-2025, le capital d’CASH PLUS SA est composé de 24 553 090 actions d’une 
+valeur nominale de 10 MAD, contre 100 MAD en 2024. Les actions sont toutes de la même 
+catégorie et a subi une augmentation de capital suite à l’introduction en bourse comme 
+suit :
+(EN MILLIERS DE DIRHAMS MAROCAINS) NOMBRE 
+D’ACTIONS MONTANT
+CAPITAL SOCIAL AU 01 JANVIER 2025 542 500 54 250
+Augmentation de capital IPO 22 297 781 20 000
+Augmentation de capital 1 712 809 171 281
+CAPITAL SOCIAL AU 31 DÉCEMBRE 2025 24 553 090 245 530.9
+La variation des réserves est expliquée au niveau du tableau de variation des capitaux propres.
+NOTE 17. MARGE D’INTÉRÊT
+Les intérêts constatés se présentent comme suit : 
+MARGE D’INTÉRÊT EN KMAD
+2025 2024
+PRODUITS CHARGES NET PRODUITS CHARGES NET 
+Intérêt bancaire 7 733 -3 333 4 700 5 615 -6 438 -823
+Charges financière Leasing -414 -414 -284 -284
+Charges financière IFRS 16 -24 573 -24 573 -21 113 -21 113
+TOTAL 8 260 -28 547 -20 287 5 615 -27 835 -22 220
+NOTE 18. COMMISSIONS NETTES 
+Les commissions pour activités bancaires et non bancaires de la période se présentent 
+comme suit : 
+COMMISSIONS EN KMAD
+2025 2024
+PRODUITS CHARGES NET PRODUITS CHARGES NET 
+Transfert de fonds 940 464 -598 020 342 444 849 808 -542 807 307 001
+Com.  sur moyens de paiement 274 755 274 755 208 692 208 692
+TOTAL COMMISSIONS 
+BANCAIRES 1 215 219 -598 020 617 199 1 058 500 -542 807 515 693
+Autres produits non bancaires 
+(Encaissement pour tiers) 567 811 -308 702 259 109 530 655 -265 269 265 386
+TOTAL COMMISSIONS NON 
+BANCAIRES 567 811 -308 702 259 109 530 655 -265 269 265 386
+TOTAL COMMISSIONS 
+BANCAIRES ET NON 
+BANCAIRES
+1 783 030 -906 722 876 308 1 589 155 -808 076 781 079
+NOTE 19. GAINS/PERTES SUR INSTRUMENTS FINANCIERS 
+A LA JUSTE VALEUR 
+Les gains sur les instruments financiers (OPCVM) de la période se présentent comme suit : 
+EN KMAD 2025 2024
+Gains réalisés sur actifs financiers 4 744 314
+Plus Values réalisées sur cessions  1 689 667
+GAIN/PERTE NETTE SUR ACTIFS FINANCIERS 6 433 981
+NOTE 20. CHARGES D’EXPLOITATIONS 
+Les charges d’exploitation se composent essentiellement des éléments détaillés ci-dessous : 
+CHARGES D’EXPLOITATION EN KMAD 2025 2024
+Charges de personnel -139 059 -121 871
+Impôt et taxes -10 216 -9 939
+Charges externes -184 803 -175 415
+TOTAL CHARGES EXPLOITATION -334 078 -307 225
+20.1. CHARGES DE PERSONNEL ET EFFECTIFS 
+Les charges de personnel de la période sont détaillées comme suit :
+CHARGES DE PERSONNEL EN KMAD 2025 2024
+Salaires et traitements -119 085 -101 856
+Autres charges sociales -17 439 -12 335
+Reste du poste des charges de personnel -2 535 -17 752
+CHARGES DE PERSONNEL -139 059 -121 871
+EFFECTIF MOYEN 374 372
+20.2. IMPÔT ET TAXES 
+Les impôts et taxes de la période sont détaillés comme suit : 
+IMPÔTS ET TAXES 2025 2024
+Taxes communales (TS, TSC) - 4 358 -  4 080 
+Taxe professionnelle - 1 343 - 1 501 
+Autres impôts & taxes - 4 515 - 4 358 
+TOTAL -10 216 -9 939
+20.3. CHARGES EXTERNES 
+Les charges externes de la période sont détaillées comme suit :
+CHARGES EXTERNES 2025 2024
+Loyers de crédit-bail et de location -456 -1 172
+Frais d’entretien et de réparation -3 408 -2 413
+Rémunérations d’intermédiaires et honoraires -47 901 -49 610
+Assurances - 2 222 -1 908
+Eau & Electricité -5 094 -4 267
+Transports Missions & Réceptions et déplacements -32 754 -24 644
+Publicité, publications et relations publiques -16 680 -25 456
+Frais postaux et télécommunications -5 431 -5 016
+Fournitures de bureaux -6 806 -10 278
+Autres charges externes -64 051 -50 651
+TOTAL -184 803 -175 415
+NOTE 21. DOTATIONS NETTES AUX AMORTISSEMENTS 
+DES IMMOBILISATIONS CORPORELLES ET INCORPORELLES 
+Les dotations nettes des provisions et amortissements des immobilisations corporelles 
+et incorporelles y compris les droits d’utilisations sur locations et leasing de la période sont 
+détaillées comme suit :
+EN KMAD 2025 2024
+Dotations nettes aux amortissements des immobilisations corporelles & Incorporelles -33 503 -27 665
+Dotations nettes aux amortissements des droits d’utlisation – leasing -2 437 -1 214
+Dotations nettes aux amortissements des droits d’utlisation - IFRS 16 -32 738 -27 712
+DOTATIONS NETTES AUX AMORTISSEMENTS DES IMMOBILISATIONS 
+CORPORELLES ET INCORPORELLES -68 678 -56 591
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+NOTE 22. COÛT DU RISQUE 
+Le coût du risque sur les encours des franchisés, commissions et partenaires ainsi que les risques généraux provisionnés de la période sont détaillés comme suit :
+COÛT DU RISQUE EN KMAD 2025 2024
+DOTATIONS AUX PROVISIONS -  18 141 -  23 135
+Provision pour franchisés et partenaires -  10 498 -  21 662
+Provision pour dépréciation titres 0 0
+Provisions pour risques généraux - 7 643 - 1 473
+REPRISES AUX PROVISIONS 8 090 4 806
+Reprises sur provision pour franchisés et partenaires 7 227 3 559
+Reprises sur provision pour dépréciation titres 0 1 247
+Reprises sur provision pour risques généraux 863
+COÛT DU RISQUE -  10 051 -  18 329
+NOTE 23. AUTRES GAINS ET PERTES SUR ACTIFS 
+Les autres gains et pertes sur actifs de la période sont détaillés comme suit :
+EN KMAD 2025 2024
+Autres produits 451 1 013
+Autres charges -1 012 -10 137
+Plus value sur cessions des immobilisations 2 129
+GAIN/PERTE NETTE SUR AUTRES ACTIFS 1 568 -9 124
+NOTE 24. IMPÔT SUR LE RÉSUL TAT
+24.1. PRÉSENTATION DISTINCTE DES COMPOSANTES DE LA CHARGE D’IMPÔT 
+EN KMAD 2025 2024
+Impôts exigibles -195 191 -161 689
+Contributions sociales -25 041 -20 917
+Impôts différés 9 487 8 838
+TOTAL -210 745 -173 768
+L’augmentation de l’impôt sur les sociétés exigible est due à l’augmentation de résultat de la filiale CASH PLUS. Le taux d’IS est de 39.25% au titre de 2025 au lieu de 38.5% pour 2024, 
+majoré de la contribution sociale de 5% pour la société CASH PLUS. 
+24.2. IMPÔTS DIFFÉRÉS COMPTABILISÉS AU BILAN
+EN KMAD OUVERTURE VARIATION RÉSUL TAT IMPACT VAR 
+PÉRIMÈTRE CLÔTURE
+Impôt différé actif 29 257 9 388 38 645
+Impôt différé Passif -998 99 127 -772
+SOLDE NETTE D’IMPÔT DIFFÉRÉ 28 259 9 487 127 37 873
+Immobilisation en non-valeur 305 5 360 5 665
+Droit d’utilisation IFRS 16 17 194 4 830 2 22 026
+Provision IFRS 9 7 209 70 7 279
+Déficit reportable  4 358 -874 3 484
+Autres 191 191
+IMPÔT DIFFÉRÉ ACTIF 29 257 9 386 2 38 645
+Écart de réévaluation -666 - - -666
+JV IFRS 9 Placement -120 120 -
+Autres -212 84 128 -
+Leasing - -103 -3 -106
+IMPÔT DIFFÉRÉ PASSIF -998 101 128 -772
+SOLDE NETTE D’IMPÔT DIFFÉRÉ 28 259 9 487 130 37 873
+24.3. RAPPROCHEMENT ENTRE LA CHARGE D’IMPÔT TOTALE ET LA CHARGE D’IMPÔT THÉORIQUE :
+EN KMAD 2025 2024
+Résultat net des sociétés intégrées 241 283 194 803
+Impôt sur les résultats (a) 210 745 173 768
+Résultat avant Impôt 452 028 368 571
+Taux d’imposition en vigueur 39,25% 38,50%
+CHARGE FISCALE AVANT RETRAITEMENTS (B) 177 421 141 900
+RAPPROCHEMENT (A) - (B) 33 324 31 868
+PREUVE D’IMPÔT 0 0
+Autres effets de l’impôt à taux réduit-CSS 25 041 20 990
+Différences permanentes 10 515 2 115
+Décalages temporaires 1 082 9 764
+Différences de taux N / N-1 -3 314 -1 001
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+NOTE 25. RÉSUL TAT PAR ACTION
+EN KMAD 2025 2024
+RÉSULTAT NET - PART GROUPE EN KMAD 242 296 196 468
+Nombre d’actions retenus 24 553 090 542 500
+RÉSULTAT DE BASE PAR ACTION EN MAD 9.86 362.15
+RÉSULTAT DILUÉ PAR ACTION EN MAD 9.86 362.15
+A ce jour, le Groupe n’a pas émis d’instrument financier ayant effet dilutif. Dès lors, le résultat de base par action est équivalent au résultat dilué par action.
+NOTE 26. PARTIES LIÉES
+Les parties liées avec lesquelles des transactions sont effectuées incluent les sociétés filiales dans lesquelles CASH PLUS jouit d’un contrôle exclusif. À noter que lesdites transactions 
+entre la société mère et ses filiales consolidées par intégration globale, qui sont des parties liées, ont été éliminées en consolidation. 
+RUBRIQUES (EN KMAD)
+2025
+CHARGES / PRODUITS ACTIFS PASSIFS
+COMMISSIONS DIVERS PRODUITS INTÉRÊTS CLIENTS 
+COMMISSIONS 
+PARTENAIRES 
+DÉBITEURS AVANCE CC FOURNISSEURS PARTENAIRES 
+CRÉDITEURS
+Filiales de CASH PLUS 4 588 113 681 528 39 702 29 201 6 650 18 338 6
+Autres parties liées
+TOTAL 4 588 113 681 528 39 702 29 201 6 650 18 338 6
+RUBRIQUES (EN KMAD)
+2024
+CHARGES / PRODUITS ACTIFS PASSIFS
+COMMISSIONS DIVERS PRODUITS INTÉRÊTS CLIENTS 
+COMMISSIONS 
+PARTENAIRES 
+DÉBITEURS AVANCE CC FOURNISSEURS PARTENAIRES 
+CRÉDITEURS
+Filiales de CASH PLUS 9 693 187 995 276 134 317 163 042 6 010 134 316 157 032
+Autres parties liées - 9 684 - - - 1 404
+TOTAL 9 693 187 995 276 134 317 163 042 6 010 134 316 157 032
+NOTE 27. ENGAGEMENTS HORS BILAN
+Les engagements donnés et reçus se présentent comme suit :
+27.1. ENGAGEMENTS DONNÉS 
+EN KMAD 2025 2024
+Caution CMI 0 0
+Nantissement FDC 0 0
+Autres engagements donnés 0 0
+TOTAL ENGAGEMENTS DONNÉS 0 0
+27.2. ENGAGEMENTS REÇUS 
+EN KMAD 2025 2024
+Avals, cautions et garanties reçus 9 500 2 000
+Dettes garanties par des actifs nantis ou hypothéqués 0 0
+Autres engagements reçus 0 0
+TOTAL ENGAGEMENTS REÇUS 9 500 2 000
+NOTE 28. PÉRIMETRE DE CONSOLIDATION
+28.1. PÉRIMETRE DE CONSOLIDATION 2025
+a. La liste des sociétés consolidées au titre de l’exercice 2025 se présente comme suit :
+ENTITÉ ACTIVITÉ POURCENTAGE DE CONTRÔLE EN % TYPE DE CONTRÔLE MÉTHODE DE CONSOLIDATION
+CASH PLUS TRANSFERT DE FONDS Mère Mère Mère 
+PAYMENT NETWORK FRANCHISE TRANSFERT DE FONDS 100% Contrôle exclusif Intégration globale
+MOBILAB DEVELOPPEMENT INFORMATIQUE 100% Contrôle exclusif Intégration globale
+AH VOYAGE AGENCE DE VOYAGE 100% Contrôle exclusif Intégration globale
+CASH PLUS VC PLACEMENT OU À LA GESTION DE VALEUR MOBILIÈRES 100% Contrôle exclusif Intégration globale
+GO PLUS EXPRESSE (GPE) MESSAGERIE 70% Contrôle exclusif Intégration globale
+GO PLUS LOGISTIQUE (GPL) MESSAGERIE 70% Contrôle exclusif Intégration globale
+LEAP INNOV NEGOCE 85% Contrôle exclusif Intégration globale
+b. Titres de participations non consolidées au titre de 2025
+CASH PLUS MALI Transfet de fonds 80% 80%
+NON CONSOLIDECASKY 
+WEGO
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+CONSOLIDÉS
+28.1. PÉRIMETRE DE CONSOLIDATION 2024
+a. La liste des sociétés consolidées au titre de l’exercice 2024 se présente comme suit :
+ENTITÉ ACTIVITÉ POURCENTAGE DE CONTRÔLE EN % TYPE DE CONTRÔLE MÉTHODE DE CONSOLIDATION
+CASH PLUS TRANSFERT DE FONDS Mère Mère Mère 
+PAYMENT NETWORK FRANCHISE TRANSFERT DE FONDS 100% Contrôle exclusif Intégration globale
+MOBILAB DEVELOPPEMENT INFORMATIQUE 100% Contrôle exclusif Intégration globale
+AH VOYAGE AGENCE DE VOYAGE 100% Contrôle exclusif Intégration globale
+CASH PLUS VC PLACEMENT OU À LA GESTION DE VALEUR MOBILIÈRES 100% Contrôle exclusif Intégration globale
+GO PLUS EXPRESSE ( GPE) MESSAGERIE 70% Contrôle exclusif Intégration globale
+GO PLUS LOGISTIQUE ( GPL) MESSAGERIE 70% Contrôle exclusif Intégration globale
+LEAP INNOV 85% Contrôle exclusif Intégration globale
+b. Titres de participations non consolidées au titre de 2024
+CASH PLUS MALI Transfet de fonds 80% 80%
+NON CONSOLIDECASKY 
+WEGO
+NOTE 29. RISQUES FINANCIERS 
+29.1. POLITIQUE DE GESTION DES RISQUES FINANCIERS
+Dans le cadre de ses activités de transfert d’argent et de services de paiement, 
+le Groupe Cash Plus est exposé à plusieurs catégories de risques financiers résultant de 
+l’utilisation d’instruments financiers.
+La politique de gestion des risques financiers du Groupe vise à :
+  identifier et mesurer les risques financiers,
+  mettre en place des mécanismes de couverture appropriés,
+  limiter l’exposition aux fluctuations des marchés financiers,
+  assurer la liquidité nécessaire au traitement des flux de transferts.
+La gestion des risques est centralisée au niveau de la Direction Financière Groupe, 
+conformément aux procédures internes de gestion des risques.
+Les principaux risques financiers auxquels le Groupe est exposé sont :
+1. Le risque de change
+2. Le risque de liquidité
+3. Le risque de taux d’intérêt
+29.2. RISQUE DE CHANGE : 
+Le risque de change provient principalement :
+  Des transferts internationaux effectués dans différentes devises,
+  Des soldes détenus auprès des correspondants internationaux et agents de 
+paiement,
+  Des conversions entre devises lors du règlement des transferts.
+Les principales devises concernées sont : EUR – USD.
+Le Groupe peut être exposé à des positions de change ouvertes temporaires, notamment 
+entre :
+  La réception des fonds,
+  Et le règlement auprès des bénéficiaires.
+Politique de gestion
+Pour limiter l’exposition au risque de change, le Groupe ajuste quotidiennement ses 
+positions en devises en négciant au jour le jour la cession des devises auprès des salles 
+de MARCHÉs et utilise des comptes bancaires multi-devises,
+29.3. RISQUE DE LIQUIDITÉ : 
+Le risque de liquidité correspond au risque que le Groupe ne puisse pas honorer ses 
+obligations financières à leur échéance.
+Dans le secteur du transfert d’argent, ce risque est particulièrement important en raison :
+  Des volumes élevés de paiements à honorer quotidiennement,
+  Du décalage entre encaissement et paiement des transferts.
+Gestion du risque
+Le Groupe gère ce risque par :
+  Un suivi quotidien de la trésorerie,
+  Des lignes de crédit confirmées auprès des banques,
+  Une diversification des partenaires bancaires.
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+29.4. RISQUE DE TAUX :
+Le groupe n’est pas exposé aux risques financiers liés aux variations au taux d’intérêt en 
+raison de la contractualisation d’un CMT à taux fixe
+NOTE 30.  ÉVÉNEMENTS POSTÉRIEURS À LA CLÔTURE
+Aucun événement postérieur à la clôture n’a d’incidence significative sur les comptes 
+consolidés arrêtés au 31 décembre 2025. 
+
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+SOCIAUX
+ACTIF (en milliers de DH) 31/12/2025 31/12/2024
+VALEURS EN CAISSE, BANQUES CENTRALES, TRÉSOR PUBLIC, 
+SERVICE DES CHÈQUES POSTAUX 204 250 197 074
+1.Valeurs en caisse, Banques centrales, Trésor public, 
+Service des chèques postaux 204 250 197 074
+CRÉANCES SUR LES ÉTABLISSEMENTS DE CRÉDIT ET ASSIMILÉS 2 003 888 1 483 922
+2. Créances sur les établissements de crédit et assimilés 2 003 888 1 483 922
+A vue 1 933 888 1 483 922
+A terme 70 000
+CRÉANCES SUR LA CLIENTÈLE
+3.Créances sur la clientèle 
+Crédits de trésorerie et à la consommation 
+Crédits à l’équipement 
+Crédits immobiliers 
+Autres crédits 
+CRÉANCES ACQUISES PAR AFFACTURAGE
+4. Créances acquises par affacturage 
+TITRES DE TRANSACTION ET DE PLACEMENT 508 168 150 063
+5. Titres de transaction et de placement 508 168 150 063
+Bons du trésor et valeurs assimilées 
+Autres titres de créance 
+AUTRES ACTIFS 301 636 535 114
+6. Autres actifs 301 636 535 114
+TITRES D’INVESTISSEMENT
+7. Titres d’investissement 
+Bons du Trésor et valeurs assimilées 
+Autres titres de créance 
+TITRES DE PARTICIPATION ET EMPLOIS ASSIMILÉS 81 155 81 155
+8. Titres de participation et emplois assimilés 81 155 81 155
+Créances subordonnées
+9. Créances subordonnées 
+IMMOBILISATIONS DONNÉES EN CRÉDIT-BAIL ET EN LOCATION
+10. Immobilisations données en crédit-bail et en location 
+IMMOBILISATIONS INCORPORELLES 72 063 62 990
+11. Immobilisations incorporelles 72 063 62 990
+IMMOBILISATIONS CORPORELLES 66 830 61 770
+12. Immobilisations corporelles 66 830 61 770
+TOTAL de L’ACTIF 3 237 989 2 572 088
+PASSIF (en milliers de DH) 31/12/2025 31/12/2024
+1. Banques centrales, Trésor public, Service des chèques postaux
+DETTES ENVERS LES ÉTABLISSEMENTS DE CRÉDIT ET ASSIMILÉS 137 483 91 985
+2. Dettes envers les établissements de crédit et assimilés 137 483 91 985
+A vue 118 320 64 922
+A terme 19 163 27 063
+DÉPÔTS DE LA CLIENTÈLE 1 199 062 836 473
+3. Dépôts de la clientèle
+Comptes à vue créditeurs
+Comptes d’épargne
+Dépôts à terme
+Autres comptes créditeurs 1 199 062 836 473
+TITRES DE CRÉANCE ÉMIS
+4. Titres de créance émis
+Titres de créance négociables émis
+Emprunts obligataires émis
+Autres titres de créance émis
+AUTRES PASSIFS 1 010 636 1 168 471
+5. Autres passifs 1 010 636 1 168 471
+Provisions pour risques et charges 8 395 1 758
+6. Provisions pour risques et charges 8 395 1 758
+PROVISIONS RÉGLEMENTÉES
+7. Provisions réglementées
+SUBVENTIONS, FONDS PUBLICS AFFECTÉS ET FONDS SPÉCIAUX 
+DE GARANTIE
+8. Subventions, fonds publics affectés et fonds spéciaux de garantie
+DETTES SUBORDONNÉES
+9. Dettes subordonnées
+ECARTS DE RÉÉVALUATION
+10. Ecarts de réévaluation
+RÉSERVES ET PRIMES LIÉES AU CAPITAL 385 425 200 750
+11. Réserves et primes liées au capital 385 425 200 750
+CAPITAL 245 531 54 250
+12. Capital 245 531 54 250
+ACTIONNAIRES. CAPITAL NON VERSÉ (-)
+13. Actionnaires. Capital non versé (-)
+REPORT À NOUVEAU (+/-) 2 5
+14. Report à nouveau (+/-) 2 5
+RÉSULTATS NETS EN INSTANCE D’AFFECTATION (+/-)
+15. Résultats nets en instance d’affectation (+/-)
+RÉSULTAT NET DE L’EXERCICE (+/-) 251 455 218 397
+16. Résultat net de l’exercice (+/-) 251 455 218 397
+TOTAL du PASSIF 3 237 989 2 572 088
+COMPTE DE PRODUITS ET CHARGES (en milliers de DH) 31/12/2025 31/12/2024
+I.PRODUITS D’EXPLOITATION BANCAIRE 1 294 141 1 119 246
+1.Intérêts et produits assimilés sur opérations avec les établissements de crédit 7 733 4 913
+2.Intérêts et produits assimilés sur opérations avec la clientèle 
+3.Intérêts et produits assimilés sur titres de créance 
+4.Produits sur titres de propriété 6 534 3 628
+5.Produits sur immobilisations en crédit-bail et en location 
+6.Commissions sur prestations de service 1 215 220 1 058 500
+7.Autres produits bancaires 64 654 52 204
+II.CHARGES D’EXPLOITATION BANCAIRE 601 042 557 165
+8.Intérêts et charges assimilées sur opérations avec les établissements de crédit 3 034 4 668
+9.Intérêts et charges assimilées sur opérations avec la clientèle 
+10.Intérêts et charges assimilées sur titres de créance émis 
+11.Charges sur immobilisations en crédit-bail et en location 
+12.Autres charges bancaires 598 008 552 497
+III.PRODUIT NET BANCAIRE 693 098 562 081
+13.Produits d’exploitation non bancaire 195 725 335 148
+14.Charges d’exploitation non bancaire 94 968 213 859
+IV.CHARGES GÉNÉRALES D’EXPLOITATION 321 767 274 332
+15.Charges de personnel 58 290 53 487
+16.Impôts et taxes 9 025 8 626
+17.Charges externes 218 395 185 392
+18.Autres charges générales d’exploitation 3 979 542
+19.Dotations aux amortissements et aux provisions des immobilisations 
+incorporelles et corporelles 32 078 26 285
+V.DOTATIONS AUX PROVISIONS ET PERTES SUR CRÉANCES 
+IRRECOUVRABLES 8 743 14 942
+20.Dotations aux provisions pour créances et engagements par signature en 
+souffrance 1 713 13 469
+21.Pertes sur créances irrécouvrables 
+22.Autres dotations aux provisions 7 030 1 473
+VI.REPRISES DE PROVISIONS ET RECUPERATIONS SUR CRÉANCES 
+AMORTIES 393 3 560
+23.Reprises de provisions pour créances et engagements par signature en 
+souffrance 3 560
+24.Récupérations sur créances amorties 
+25.Autres reprises de provisions 393
+VII.RÉSULTAT COURANT 463 738 397 655
+26.Produits non courants 559 669
+27.Charges non courantes 738 1 756
+VIII.RÉSULTAT AVANT IMPÔTS 463 558 396 568
+C- Impôts sur les résultats 212 103 178 171
+IX.RÉSULTAT NET DE L’EXERCICE 251 455 218 397
+TOTAL PRODUITS 1 490 817 1 458 622
+TOTAL CHARGES 1 239 362 1 240 226
+RÉSULTAT NET DE L’EXERCICE 251 455 218 397
+TABLEAU DES FLUX DE TRÉSORERIE (en milliers de DH) AU 31/12/2025 AU 31/12/2024
+1.(+) Produits d’exploitation bancaire perçus 1 279 346 1 110 320
+2.(+) Récupérations sur créances amorties
+3.(+) Produits d’exploitation non bancaire perçus 196 283 335 817
+4.(-) Charges d’exploitation bancaire versées 598 008 552 497
+5.(-) Charges d’exploitation non bancaire versées 95 706 215 615
+6.(-) Charges générales d’exploitation versées 285 710 247 505
+7.(-) Impôts sur les résultats versés 212 103 178 171
+I. FLUX DE TRÉSORERIE NETS PROVENANT DU COMPTE DE PRODUITS 
+ET CHARGES 284 102 252 349
+8.(+/-) Variation des créances sur les établissements de crédit et assimilés -70 000
+9.(+/-) Variation des créances sur la clientèle
+10.(+/-) Variation des Titres de transaction et de placement -358 105 -150 063
+11.(+/-) Variation des autres actifs 227 785 -101 011
+12.(+/-) Variation des titres Moudaraba et Moucharaka
+13.(+/-) Variation des immobilisations données en crédit-bail et en location
+14.(+) Variation des immobilisations données en Ijara
+15.(+) Variation des dépôts d’investissement placés auprès des EC et assimilés
+16.(+/-) Variation des dettes envers les établissements de crédit et assimilés -7 899 -7 509
+17.(+/-) Variation des dépôts de la clientèle 362 589 615 788
+18.(+/-) Variation des dettes envers la clientèle sur produits participatifs
+19.(+/-) Variation des titres de créances émis
+20.(+/-) Variation des autres passifs -157 835 315 879
+II. SOLDE DES VARIATIONS DES ACTIFS ET PASSIFS D’EXPLOITATION -3 464 673 084
+III. FLUX DE TRÉSORERIE NETS PROVENANT DES ACTIVITES 
+D’EXPLOITATION ( I + II) 281 165 925 432
+21.(+) Produit des cessions d’immobilisations financières(1)(4)
+22.(+) Produits des cessions d’immobilisations incorporelles et corporelles(4) 1
+23.(-) Acquisition d’immobilisations financières(1) 40
+24.(-) Acquisition d’immobilisations incorporelles et corporelles 46 211 50 319
+25.(+) Intérêts perçus(4) 8 261 5 298
+26.(+) Dividendes perçus(4) 6 534 3 628
+IV. FLUX DE TRÉSORERIE NETS PROVENANT DES ACTIVITES 
+D’INVESTISSEMENT -31 943 -41 434
+27.(+) Subventions, fonds publics et fonds spéciaux de garantie reçus
+28.(+) Emission de dettes subordonnées
+29.(+) Dépôts d’investissement reçus
+30.(+) Emission d’actions 531 025 200 000
+31.(-) Remboursement des capitaux propres et assimilés
+32.(-) Dépôts d’investissement remboursés (2)
+33.(-) Intérêts versés(4) 3 034 4 668
+34.(-) Rémunérations versées sur DI (3) (4)
+35.(-) Dividendes versés 373 469 173 475
+V. FLUX DE TRÉSORERIE NETS PROVENANT DES ACTIVITES 
+DE FINANCEMENT 154 522 21 857
+VI. VARIATION NETTE DE LA TRÉSORERIE (III + IV + V) 403 744 905 856
+VII. TRÉSORERIE À L’OUVERTURE DE L’EXERCICE 1 616 074 710 218
+VIII. TRÉSORERIE À LA CLOTURE DE L’EXERCICE 2 019 818 1 616 074
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+SOCIAUX
+ÉTAT DE SOLDE DE GESTION (en milliers de DH) 31/12/2025 31/12/2024
+1.(+) Intérêts et produits assimilés 7 733 4 913
+2.(-) Intérêts et charges assimilées 3 034 4 668
+MARGE D’INTÉRÊT 4 699 245
+3.(+) Produits sur immobilisations en crédit-bail et en location 
+4.(-) Charges sur immobilisations en crédit-bail et en location 
+RÉSULTAT DES OPÉRATIONS DE CRÉDIT-BAIL ET DE LOCATION 
+5.(+) Commissions perçues 1 215 220 1 058 500
+6.(-) Commissions servies 593 657 549 778
+MARGE SUR COMMISSIONS 621 563 508 723
+7.(+/-) Résultat des opérations sur titres de transaction 6 434 666
+8.(+/-) Résultat des opérations sur titres de placement 
+9.(+/-) Résultat des opérations de change 51 131 48 435
+10.(+/-) Résultat des opérations sur produits dérivés 
+RÉSULTAT DES OPÉRATIONS DE MARCHÉ 57 565 49 101
+11.(+) Divers autres produits bancaires 9 272 4 013
+12.(-) Diverses autres charges bancaires 
+PRODUIT NET BANCAIRE 693 098 562 081
+13.(+/-) Résultat des opérations sur immobilisations financières 
+14.(+) Autres produits d’exploitation non bancaire 195 725 335 148
+15.( -) Autres charges d’exploitation non bancaire 94 968 213 859
+16.( -) Charges générales d’exploitation 321 767 274 332
+RÉSULTAT BRUT D’EXPLOITATION 472 088 409 037
+17.(+/-) Dotations nettes des reprises aux provisions pour créances et engagements 
+par signature en souffrance -1 713 -9 909
+18.(+/-) Autres dotations nettes de reprises aux provisions -6 637 -1 473
+RÉSULTAT COURANT 463 738 397 655
+RÉSULTAT NON COURANT -179 -1 087
+19.(-) Impôts sur les résultats 212 103 178 171
+RÉSULTAT NET DE L’EXERCICE 251 455 218 397
+ÉTAT DE SOLDE DE GESTION (Suite) (en milliers de DH) 31/12/2025 31/12/2024
+(+/-) RÉSULTAT NET DE L'EXERCICE 251 455 218 397
+20.(+) Dotations aux amortissements et aux provisions des immobilisations 
+incorporelles et corporelles 32 078 26 285
+21.(+) Dotations aux provisions pour dépréciation des immobilisations financières 
+22.(+) Dotations aux provisions pour risques généraux 
+23.(+) Dotations aux provisions réglementées 
+24.(+) Dotations non courantes 
+25.(-) Reprises de provisions 
+26.(-) Plus-values de cession des immobilisations incorporelles et corporelles 
+27.(+) Moins-values de cession des immobilisations incorporelles et corporelles 
+28.(-) Plus-values de cession des immobilisations financières 
+29.(+) Moins-values de cession des immobilisations financières 
+30.(-) Reprises de subventions d'investissement reçues 
+(+/-) CAPACITE D'AUTOFINANCEMENT 283 534 244 682
+31.(-) Bénéfices distribués 413 725 173 475
+(+/-) AUTOFINANCEMENT -130 191 71 207
+ÉTAT DES ENGAGEMENTS HORS BILAN (en milliers de DH) 31/12/2025 31/12/2024
+ENGAGEMENTS DONNÉS 
+1.Engagements de financement donnés en faveur d'établissements de crédit et assimilés 
+2.Engagements de financement donnés en faveur de la clientèle 
+3.Engagements de garantie d'ordre d'établissements de crédit et assimilés 
+4.Engagements de garantie d'ordre de la clientèle 
+5.Titres achetés à réméré 
+6.Autres titres à livrer 
+ENGAGEMENTS RECUS 
+7.Engagements de financement reçus d'établissements de crédit et assimilés 
+8.Engagements de garantie reçus d'établissements de crédit et assimilés 9 500 2 000
+9.Engagements de garantie reçus de l'ÉTAT et d'organismes de garantie divers 
+10.Titres vendus à réméré 
+11.Autres titres à recevoir 
+ÉTAT DES DEROGATIONS DU 01/01/2025 AU 31/12/2025
+INDICATIONS 
+DES DEROGATIONS
+JUSTIFICATIONS 
+DES DEROGATIONS
+INFLUENCE DES DEROGATIONS SUR LE PATRIMOINE, 
+LA SITUATION FINANCIERE ET LES RÉSULTATS
+I. Dérogations aux principes comptables fondamentaux
+II. Dérogations aux méthodes d’évaluation
+III. Dérogations aux règles d’établissement et de présentation des états de synthèse
+NÉANT
+ÉTAT DES CHANGEMENTS DE METHODES DU 01/01/2025 AU 31/12/2025
+NATURE 
+DES CHANGEMENTS
+JUSTIFICATIONS 
+DES CHANGEMENTS
+INFLUENCE SUR LE PATRIMOINE, 
+LA SITUATION FINANCIERE ET LES RÉSULTATS
+I. Changements affectant les méthodes d’évaluation
+II. Changements affectant les règles de présentation NÉANT
+CRÉANCES SUR LES ÉTABLISSEMENTS DE CRÉDIT ET ASSIMILÉS DU 01/01/2025 AU 31/12/2025
+CRÉANCES BANK AL-MAGHRIB, TRÉSOR PUBLIC 
+ET SERVICE DES CHEQUES POSTAUX 
+BANQUES 
+AU MAROC 
+AUTRES ÉTABLISSEMENTS DE CRÉDIT 
+ET ASSIMILÉS AU MAROC 
+ÉTABLISSEMENT DE CRÉDIT 
+A L’ÉTRANGER 
+TOTAL 
+31/12/2025 
+TOTAL 
+31/12/2024 
+COMPTES ORDINAIRES DÉBITEURS 1 933 888 1 933 888 1 483 922
+VALEURS RECUES EN PENSION 
+- au jour le jour 
+- à terme 
+PRÊTS DE TRÉSORERIE 
+- au jour le jour 
+- à terme 70 000 70 000
+PRÊTS FINANCIERS 
+AUTRES CRÉANCES 
+INTÉRÊTS COURUS À RECEVOIR 
+CRÉANCES EN SOUFFRANCE 
+TOTAL 2 003 888 2 003 888 1 483 922
+CRÉANCES SUR LA CLIENTÈLE DU 01/01/2025 AU 31/12/2025
+CRÉANCES SECTEUR PUBLIC
+SECTEUR PRIVÉ
+TOTAL 
+31/12/2025 
+TOTAL 
+31/12/2024 ENTREPRISES 
+FINANCIÈRES
+ENTREPRISES 
+NON FINANCIÈRES
+AUTRE 
+CLIENTÈLE
+CRÉDITS DE TRÉSORERIE
+     - Comptes à vue débiteurs
+     - Créances commerciales sur le Maroc
+     - Crédits à l'exportation
+     - Autres crédits de trésorerie
+CRÉDITS À LA CONSOMMATION
+CRÉDITS À L'EQUIPEMENT
+CRÉDITS IMMOBILIERS
+AUTRES CRÉDITS
+CRÉANCES ACQUISES PAR AFFACTURAGE
+INTÉRÊTS COURUS À RECEVOIR
+CRÉANCES EN SOUFFRANCE
+    - Créances pré-douteuses
+    - Créances douteuses
+    - Créances compromises
+TOTAL
+NÉANT
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+SOCIAUX
+VALEURS DES TITRES DE TRANSACTION ET DE PLACEMENT ET DES TITRES D’INVESTISSEMENT (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+TITRES VALEUR COMPTABLE 
+BRUTE
+VALEUR 
+ACTUELLE
+VALEUR 
+DE REMBOURSEMENT
+PLUS-VALUES 
+LATENTES
+MOINS-VALUES 
+LATENTES PROVISIONS
+TITRES DE TRANSACTION 506 479 508 168 1 689
+BONS DU TRÉSOR ET VALEURS ASSIMILÉES
+OBLIGATIONS
+AUTRES TITRES DE CRÉANCE
+TITRES DE PROPRIÉTÉ 506 479 508 168 1 689
+TITRES DE PLACEMENT
+BONS DU TRÉSOR ET VALEURS ASSIMILÉES
+OBLIGATIONS
+AUTRES TITRES DE CRÉANCE
+TITRES DE PROPRIÉTÉ
+TITRES D'INVESTISSEMENT
+BONS DU TRÉSOR ET VALEURS ASSIMILÉES
+OBLIGATIONS
+AUTRES TITRES DE CRÉANCE
+DÉTAIL DES AUTRES ACTIF (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+ACTIF  31/12/2025 31/12/2024
+INSTRUMENTS OPTIONNELS ACHETES 
+OPÉRATIONS DIVERSES SUR TITRES 
+DÉBITEURS DIVERS 274 560 424 831
+- SOMMES DUES PAR L'ÉTAT 48 307 39 645
+- SOMMES DUES PAR LES ORGANISMES DE PREVOYANCE 
+- SOMMES DIVERSES DUES PAR LE PERSONNEL 1 729 1 663
+- COMPTES CLIENTS DE PRESTATIONS NON BANCAIRES 79 610 66 230
+- DIVERS AUTRES DÉBITEURS 144 914 317 293
+VALEURS ET EMPLOIS DIVERS 6 646 3 147
+COMPTES DE RÉGULARISATION 20 430 107 136
+- COMPTES D'AJUSTEMENT DES OPÉRATIONS DE HORS BILAN 
+- COMPTES D'ECARTS SUR DEVISES ET TITRES 
+- RÉSULTATS SUR PRODUITS DERIVES DE COUVERTURE 
+- CHARGES À REPARTIR SUR PLUSIEURS EXERCICES 14 222 604
+- COMPTES DE LIAISON ENTRE SIEGE, SUCCURSALES ET AGENCES AU MAROC 4 250 105 052
+- PRODUITS À RECEVOIR ET CHARGES CONSTATEES D'AVANCE 894 362
+AUTRES COMPTES DE RÉGULARISATION 1 065 1 119
+CRÉANCES EN SOUFFRANCE SUR OPÉRATIONS DIVERSES 
+TOTAL 301 636 535 114
+TITRE DE PARTICIPATION ET EMPLOIS ASSIMILÉS DU 01/01/2025 AU 31/12/2025
+RAISON SOCIALE 
+DE LA SOCIÉTÉ 
+ÉMETTRICE
+IF
+SECTEUR 
+D'ACTIVITÉ
+(1)
+CAPITAL 
+SOCIAL
+(2)
+PARTICIPATION 
+AU CAPITAL %
+(3)
+PRIX 
+D'ACQUISITION 
+GLOBAL
+(4)
+VALEUR 
+COMPTABLE 
+NETTE
+(5)
+EXTRAIT DES DERNIERS 
+ÉTATS DE SYNTHÈSE DE 
+LA SOCIÉTÉ ÉMETTRICE : 
+DATE DE CLÔTURE
+(6)
+EXTRAIT DES DERNIERS 
+ÉTATS DE SYNTHÈSE DE 
+LA SOCIÉTÉ ÉMETTRICE : 
+SITUATION NETTE
+(7)
+EXTRAIT DES DERNIERS 
+ÉTATS DE SYNTHÈSE DE 
+LA SOCIÉTÉ ÉMETTRICE : 
+RÉSULTAT NET
+(8)
+PRODUITS 
+INSCRITS 
+AU C.P.C DE 
+L'EXERCICE
+(9)
+Payment Network 1051290 TRANSFERT DE FOND 7 200 100 75 000 75 504 31/12/2025 12 002 10 600 383 818
+Mobilab 15251121 Développement 
+informatique 500 100 3 000 3 000 31/12/2025 8 048 7 448 33 010
+AH Voyage 15239709 Agence de voyage 350 100 300 300 31/12/2025 243 -4
+GO PLUS EXPRESS 42753913 MESSAGERIE 100 70 100 70 31/12/2025 -21 150 175 5 847
+GO PLUS LOGISTIQUE 53569977 MESSAGERIE 100 70 100 70 31/12/2025 -7 597 -283 50 145
+CASH PLUS VC 52655290
+PLACEMENT 
+OU À LA GESTION DE 
+VALEUR MOBILIÈRES
+1 000 100 1 000 1 000 31/12/2025 60 -531
+CASH PLUS MALI TRANSFERT DE FOND 4 800 80 1 211 1 211 31/12/2025 1 211
+TOTAL 14 050 80 711 81 155 -7 184 17 405 472 820
+VENTILATION DES TITRES DE TRANSACTION ET DE PLACEMENT ET DES TITRES D’INVESTISSEMENT PAR CATÉGORIE D’EMETTEUR (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+TITRES ÉTABLISSEMENTS DE CRÉDIT 
+ET ASSIMILÉS
+EMETTEURS PRIVÉS
+TOTAL 
+31/12/2025 
+TOTAL 
+31/12/2024 EMETTEURS 
+PUBLICS FINANCIERS NON FINANCIERS
+TITRES COTES
+BONS DU TRÉSOR ET VALEURS ASSIMILÉES
+OBLIGATIONS
+AUTRES TITRES DE CRÉANCE
+TITRES DE PROPRIÉTÉ
+TITRES NON COTES
+BONS DU TRÉSOR ET VALEURS ASSIMILÉES
+OBLIGATIONS
+AUTRES TITRES DE CRÉANCE
+TITRES DE PROPRIÉTÉ
+TOTAL
+NÉANT
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+SOCIAUX
+IMMOBILISATIONS DONNÉES EN CRÉDIT-BAIL, EN LOCATION AVEC OPTION D’ACHAT ET EN LOCATION SIMPLE (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+NATURE
+MONTANT 
+BRUT AU 
+DÉBUT DE 
+L'EXERCICE
+MONTANT DES 
+ACQUISITIONS 
+AU COURS DE 
+L'EXERCICE
+MONTANT DES 
+CESSIONS OU 
+RETRAITS AU 
+COURS DE 
+L'EXERCICE
+MONTANT 
+BRUT À 
+LA FIN DE 
+L'EXERCICE
+AMORTI PROVISIONS
+MONTANT NET 
+À LA FIN DE 
+L’EXERCICE
+DOTATION 
+AU TITRE DE 
+L'EXERCICE
+CUMUL DES 
+AMORTISSEMENTS
+DOTATION 
+AU TITRE DE 
+L'EXERCICE
+REPRISES DE 
+PROVISIONS
+CUMUL DES 
+PROVISIONS
+IMMOBILISATIONS DONNÉES EN CRÉDIT-BAIL 
+ET EN LOCATION AVEC OPTION D’ACHAT
+CRÉDIT-BAIL SUR IMMOBILISATIONS INCORPORELLES
+CRÉDIT-BAIL MOBILIER
+- Crédit-bail mobilier en cours
+- Crédit-bail mobilier loué
+- Crédit-bail mobilier non loué après résiliation
+CRÉDIT-BAIL IMMOBILIER
+- Crédit-bail immobilier en cours
+- Crédit-bail immobilier loué
+- Crédit-bail immobilier non loué après résiliation
+LOYERS COURUS À RECEVOIR
+LOYERS RESTRUCTURES
+LOYERS IMPAYES
+CRÉANCES EN SOUFFRANCE
+IMMOBILISATIONS DONNÉES EN LOCATION SIMPLE
+BIENS MOBILIERS EN LOCATION SIMPLE
+BIENS IMMOBILIERS EN LOCATION SIMPLE
+LOYERS COURUS À RECEVOIR
+LOYERS RESTRUCTURES
+LOYERS IMPAYES
+LOYERS EN SOUFFRANCE
+TOTAL
+NÉANT
+IMMOBILISATIONS INCORPORELLES ET CORPORELLES (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+NATURE 
+MONTANT 
+BRUT AU 
+DÉBUT DE 
+L'EXERCICE 
+MONTANT DES 
+ACQUISITIONS 
+AU COURS DE 
+L'EXERCICE 
+MONTANT DES 
+CESSIONS OU 
+RETRAITS AU 
+COURS DE 
+L'EXERCICE 
+MONTANT 
+BRUT À 
+LA FIN DE 
+L'EXERCICE 
+AMORTISSEMENTS ET/
+OU PROVISIONS : 
+MONTANT DES 
+AMORTISSEMENTS ET/
+OU PROVISIONS AU 
+DÉBUT DE L'EXERCICE 
+AMORTISSEMENTS 
+ET/OU PROVISIONS : 
+DOTATION AU TITRE 
+DE L'EXERCICE 
+AMORTISSEMENTS ET/
+OU PROVISIONS : 
+MONTANT DES 
+AMORTISSEMENTS 
+SUR IMMOBILISATIONS 
+SORTIES 
+AMORTISSEMENTS 
+ET/OU PROVISIONS : 
+CUMUL 
+MONTANT 
+NET À LA 
+FIN DE 
+L'EXERCICE 
+IMMOBILISATIONS INCORPORELLES 135 859 28 704 164 563 72 869 19 631 92 500 72 063
+- Droit au bail 
+- Immobilisations en recherche et développement 124 562 28 477 153 039 72 869 19 631 92 500 60 539
+- Autres immobilisations incorporelles d'exploitation 
+- Immobilisations incorporelles hors exploitation 11 297 228 11 524 0 11 524
+IMMOBILISATIONS CORPORELLES 135 770 17 507 1 153 276 74 000 12 447 1 86 446 66 830
+- Immeubles d'exploitation 1 240 1 240 530 47 577 663
+  Terrain d'exploitation 
+  Immeubles d'exploitation  Bureaux 
+  Immeubles d'exploitation  Logements de fonction 
+- Mobilier et matériel d'exploitation 
+  Mobilier de bureau d'exploitation 6 798 810 7 608 2 546 584 3 131 4 477
+  Matériel de bureau d'exploitation 7 102 871 7 973 4 310 472 4 782 3 191
+  Matériel Informatique 14 869 2 485 17 354 11 964 2 075 14 039 3 315
+  Matériel roulant rattaché à l'exploitation 
+  Autres matériels d'exploitation 1 838 15 1 1 852 684 293 1 976 876
+- Autres immobilisations corporelles d'exploitation 103 924 13 326 117 250 53 966 8 976 62 942 54 308
+- Immobilisations corporelles hors exploitation 
+  Terrains hors exploitation 
+  Immeubles hors exploitation 
+  Mobiliers et matériel hors exploitation 
+  Autres immobilisations corporelles hors exploitation 
+TOTAL 271 629 46 211 1 317 839 146 869 32 078 1 178 946 138 893
+DETTES ENVERS LES ÉTABLISSEMENTS DE CRÉDIT ET ASSIMILÉS (en milliers de DH)  DU 01/01/2025 AU 31/12/2025
+DETTES (en milliers de DH)
+ÉTABLISSEMENTS DE CRÉDIT 
+ET ASSIMILÉS AU MAROC - BANK 
+AL-MAGHRIB, TRÉSOR PUBLIC ET 
+SERVICE DES CHÈQUES POSTAUX 
+ÉTABLISSEMENTS DE CRÉDIT 
+ET ASSIMILÉS AU MAROC - 
+BANQUES AU MAROC 
+ÉTABLISSEMENTS DE CRÉDIT 
+ET ASSIMILÉS AU MAROC - AUTRES 
+ÉTABLISSEMENTS DE CRÉDIT ET 
+ASSIMILÉS AU MAROC 
+ÉTABLISSEMENTS 
+DE CRÉDIT À 
+L'ÉTRANGER 
+TOTAL 
+31/12/2025 
+TOTAL 
+31/12/2024 
+COMPTES ORDINAIRES CRÉDITEURS 137 483 137 483 91 985
+VALEURS DONNÉES EN PENSION 
+- au jour le jour 
+- à terme 
+EMPRUNTS DE TRÉSORERIE 137 483 137 483 91 985
+- au jour le jour 118 320 118 320 64 922
+- à terme 19 163 19 163 27 063
+EMPRUNTS FINANCIERS 
+AUTRES DETTES 
+INTÉRÊTS COURUS À PAYER 
+TOTAL 137 483 137 483 91 985
+DÉPÔTS DE LA CLIENTÈLE (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+DÉPÔTS (en milliers de DH) SECTEUR PUBLIC
+SECTEUR PRIVÉ TOTAL 
+31/12/2025 
+TOTAL 
+31/12/2024 ENTREPRISES FINANCIÈRES ENTREPRISES NON FINANCIÈRES AUTRE CLIENTÈLE
+COMPTES À VUE CRÉDITEURS
+COMPTES D'EPARGNE
+DÉPÔTS À TERME
+AUTRES COMPTES CRÉDITEURS 1 199 062 1 199 062 836 473
+INTÉRÊTS COURUS À PAYER
+TOTAL 1 199 062 1 199 062 836 473
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+SOCIAUX
+PROVISIONS (en milliers de DH)
+PROVISIONS ENCOURS 31/12/2024 DOTATIONS REPRISES AUTRES VARIATIONS ENCOURS 31/12/2025 
+Provisions, déduites de l'actif, sur: 13 469 1 713 15 181
+créances sur les établissements de crédit et assimilés 
+créances sur la clientèle 
+titres de placement 
+titres de participation et emplois assimilés 
+immobilisations en crédit-bail et en location 
+autres actifs 13 469 1 713 15 181
+Provisions inscrites au Passif 1 758 7 030 393 8 395
+Provisions pour risques d'exécution d'engagements par signature 
+Provisions pour risques de change 
+Provisions pour risques généraux 1 758 7 030 393 8 395
+Provisions pour pensions de retraite et obligations similaires 
+Provisions pour autres risques et charges 
+Provisions réglementées 
+TOTAL GÉNÉRAL 15 227 8 743 393 23 577
+CAPITAUX PROPRES (en milliers de DH)
+INTITULÉ 31/12/2024  AFFECTION DU RÉSULTAT  DISTRIBUTION EXCEPTIONNELLE  AUGMENTATION CAPITAL 1  AUGMENTATION CAPITAL 2 (IPO) 31/12/2025
+Réserve légale 5 000 425 5 425
+Report à nouveau 5 -3 2
+Résultat de l'exercice 218 397 217 975 251 455
+Prime d'émission 195 750 -195 750 380 000 380 000
+Capital Social 54 250 171 281 20 000 245 531
+TOTAL 473 402 218 397 -195 750 171 281 400 000 882 413
+VENTILATION DES EMPLOIS ET DES RESSOURCES SUIVANT LA DUREE RÉSIDUELLE (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+D< 1 MOIS 1 MOIS <D< 3 MOIS 3 MOIS <D< 1 AN 1 AN <D< 5 ANS D> 5 ANS TOTAL
+ACTIF 1 933 888 70 000 0 0 0 2 003 888
+Créances sur les établissements de crédit et assimilés 1 933 888 70 000 0 0 2 003 888
+Créances sur la clientèle 0 0 0 0 0 0
+Titres de créance 0 0 0 0 0 0
+Créances subordonnées 0 0 0 0 0 0
+Crédit-bail et assimilé 0 0
+PASSIF 1 317 382 0 0 19 163 0 1 336 545
+Dettes envers les établissements de crédit et assimilés 118 320 0 19 163 0 137 483
+Dettes envers la clientèle 1 199 062 0 0 0 0 1 199 062
+Titres de créance émis 0 0 0 0 0 0
+Emprunts subordonnés 0 0 0 0 0 0
+0
+NET 616 506 70 000 0 -19 163 0 667 343
+VALEURS ET SURETÉS RECUES ET DONNÉES  EN GARANTIE (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+VALEURS ET SÛRETÉS REÇUES EN GARANTIE VALEUR COMPTABLE NETTE
+RUBRIQUES DE L'ACTIF OU DU HORS BILAN 
+ENREGISTRANT LES CRÉANCES OU LES 
+ENGAGEMENTS PAR SIGNATURE DONNÉS
+MONTANTS DES CRÉANCES ET DES ENGAGEMENTS 
+PAR SIGNATURE DONNÉS COUVERTS 
+Bons duTrésor et valeurs assimilées
+Autres titres 
+Hypothèques
+Autres valeurs et sûretés réelles
+TOTAL
+VALEURS ET SÛRETÉS DONNÉES EN GARANTIE
+(en milliers de DH) VALEUR COMPTABLE NETTE
+RUBRIQUES DU PASSIF OU DU HORS BILAN 
+ENREGISTRANT LES DETTES OU LES ENGAGEMENTS 
+PAR SIGNATURE REÇUS
+MONTANTS DES DETTES OU DES ENGAGEMENTS 
+PAR SIGNATURE REÇUS COUVERTS 
+Bons du Trésor et valeurs assimilées
+Autres titres 
+Hypothèques
+Autres valeurs et sûretés réelles
+TOTAL
+NÉANT
+NÉANT
+DÉTAIL DES AUTRES PASSIF (en milliers de DH)
+PASSIF 31/12/2025 31/12/2024
+INSTRUMENTS OPTIONNELS VENDUS 
+OPÉRATIONS DIVERSES SUR TITRES 
+CRÉDITEURS DIVERS 1 003 244 956 930
+- SOMMES DUES À L'ÉTAT 108 310 106 329
+- SOMMES DUES AUX ORGANISMES DE PREVOYANCE 1 783 977
+- SOMMES DIVERSES DUES AU PERSONNEL 7 233 12 146
+- SOMMES DIVERSES DUES AUX ACTIONNAIRES ET ASSOCIES 
+- FOURNISSEURS DE BIENS ET SERVICES 125 887 169 345
+- DIVERS AUTRES CRÉDITEURS 760 030 668 132
+COMPTES DE RÉGULARISATION 7 392 211 541
+- COMPTES D'AJUSTEMENT DES OPÉRATIONS DE HORS BILAN 
+- COMPTES D'ECARTS SUR DEVISES ET TITRES 
+- RÉSULTATS SUR PRODUITS DERIVES DE COUVERTURE 
+- COMPTES DE LIAISON ENTRE SIEGE, SUCCURSALES ET AGENCES AU MAROC 1 258 202 932
+- CHARGES À PAYER ET PRODUITS CONSTATES D'AVANCE 2 086 1 660
+- AUTRES COMPTES DE RÉGULARISATION 4 048 6 950
+TOTAL 1 010 636 1 168 471
+DETAIL DES AUTRES PASSIFS 1 010 636 1 168 471
+MARGE D’INTÉRÊT (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+DÉSIGNATION 31/12/2025 31/12/2024
+INTÉRÊTS PERCUS  7 733     4 913    
+* Intérêts et produits assimilés sur opérations avec les établissements de crédit  7 733     4 913    
+* Intérêts et produits assimilés sur opérations avec la clientèle
+* Intérêts et produits assimilés sur titres de créance
+INTÉRÊTS SERVIS  3 034     4 668    
+* Intérêts et charges assimilées sur opérations avec les établissements de crédit  3 034     4 668    
+* Intérêts et charges assimilées sur opérations avec la clientèle
+* Intérêts et charges assimilées sur titres de créance émis
+MARGE D'INTÉRÊT  4 699     245    
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
+ÉTATS FINANCIERS
+AU 31 DÉCEMBRE 2025
+SOCIAUX
+COMMISSIONS SUR PRESTATIONS DE SERVICE (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+COMMISSIONS 31/12/2025 31/12/2024
+Commissions sur fonctionnement de comptes
+Commissions sur moyens de paiement
+Commissions sur opérations sur titres
+Commissions sur titres en gestion et en dépôt
+Commissions sur prestations de service sur crédit
+Commissions sur activités de conseil et d'assistance
+Commissions sur ventes de produits d'assurance
+Commissions sur autres prestations de service  1 215 220    1 058 500   
+TOTAL  1 215 220    1 058 500   
+RÉSUL TAT DES OPÉRATIONS DE MARCHÉ (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+RUBRIQUE 31/12/2025 31/12/2024
+ Gains sur titres de transaction  6 434    666   
+ Perte sur titres de transaction
+RÉSULTAT SUR TITRES DE TRANSACTION  6 434    666   
+Plus-values de cession sur titres de placement
+ Moins-values de cession sur titres de placement  -     
+RÉSULTAT SUR TITRES DE PLACEMENT  -     
+ Produits sur engagement sur titres
+ Charges sur engagement sur titres
+RÉSULTAT SUR ENGAGEMENTS SUR TITRES 
+ Produits sur engagement sur produits dérivés
+ Charges sur engagement sur produits dérivés
+ Produits sur opérations de change  55 483    51 154   
+ Charges sur opérations de change -4 352   -2 719   
+RÉSULTAT SUR OPÉRATIONS DE CHANGE  51 131    48 435   
+CHARGES  GÉNÉRALES  D’EXPLOITATION (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+RUBRIQUE 31/12/2025 31/12/2024
+CHARGES DU PERSONNEL  58 290     53 487    
+Dont salaires & appointements  53 483     41 413    
+dont charges d'assurances sociales  5 391     6 445    
+dont charges de retraite  4 119     688    
+dont charges de formation
+dont autres charges de personnel -4 703     4 942    
+IMPÔTS ET TAXES  9 025     8 626    
+Taxes urbaines & taxes d'élidité  4 071     3 690    
+Patente  958     999    
+Autres impôts & taxes  3 996     3 937    
+CHARGES EXTERNES  218 395     185 392    
+- Loyers de crédit-bail et de location  41 043     33 637    
+- Frais d'entretien et de réparation  2 957     2 066    
+- Rémunérations d'intermédiaires et honoraires  10 519     10 251    
+- Transports et déplacements  13 607     9 505    
+- Publicité,publications et relations publiques  16 652     25 429    
+- Autres charges externes  133 617     104 504    
+AUTRES CHARGES GÉNÉRALE D'EXPLOITATION  3 979     542    
+DOTATIONS AUX AMORTISSEMENTS ET AUX PROVISIONS 
+DES IMMOBILISATIONS INCORPORELLES ET CORPORELLES  32 079     26 285    
+TOTAL DES CHARGES GÉNÉRALES D'EXPLOITATION  321 768     274 332    
+AUTRES PRODUITS ET CHARGES (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+RUBRIQUE 31/12/2025 31/12/2024
+Autres produits bancaires 64 654 51 820
+Autres charges bancaires 598 008 552 497
+Produits d'exploitation non bancaires 195 725 335 148
+Charges d'exploitation non bancaires 94 968 213 859
+PRODUITS SUR TITRES DE PROPRIÉTÉ (en milliers de DH) DU 01/01/2025 AU 31/12/2025
+RUBRIQUE 31/12/2025 31/12/2024
+Produits sur titres de placement (de propriété)  -     
+ - Dividendes sur titres OPCVM  4 744   
+ - Dividendes sur autres titres de propriété
+ - Autres  produits sur titres de propriété  -      -     
+Produits sur titres de participation et emplois assimilés  -      -     
+ - Dividendes sur titres de participation  6 534    3 628   
+ - Dividendes sur participations liées
+ - Autres produits sur titres de propriété  -      -     
+Retrouvez notre communication financière sur : 
+https:/ /www.cashplus.ma/medias/communication-financiere
+Cash Plus 
+Siège Social : 1 rue des Pléiades,  
+Angle Bd Abdelmoumen,  
+Casablanca - Maroc
+Tél : +212 5 22 86 01 00
+Contact : communication.financiere@cashplus.ma
+À propos de Cash Plus
+Leader des services financiers et de proximité et acteur majeur de l'inclusion financière au Maroc, Cash Plus est un établissement de paiement agréé 
+disposant du premier réseau d'agences du Royaume avec plus de 5 200 points de vente. À travers ses canaux physiques et digitaux, le groupe 
+accompagne plus de 10 millions de clients par an avec ses services de transfert d'argent, comptes de paiement, change et services de proximité. 
+www.cashplus.ma
