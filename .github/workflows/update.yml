@@ -12,6 +12,9 @@ on:
       - "equity_store.py"
       - "backtest_technical.py"
       - "collect_bulletin.py"
+      - "collect_fundamentals.py"
+      - "extract_financials.py"
+      - "data/fundamentals_sources.json"
       - ".github/workflows/update.yml"
   schedule:
     - cron: "20 18 * * 1-5"
@@ -34,7 +37,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Unit tests (bloquants)
-        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py test_casablanca_collectors.py test_technical.py test_equity_store.py test_backtest_technical.py test_masi_history.py test_bulletin.py
+        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py test_casablanca_collectors.py test_technical.py test_equity_store.py test_backtest_technical.py test_masi_history.py test_bulletin.py test_fundamentals.py
       - name: MASI officiel (clôture de séance, Bourse de Casablanca)
         id: masi
         continue-on-error: true
@@ -59,6 +62,10 @@ jobs:
         id: bulletin
         continue-on-error: true
         run: python collect_bulletin.py
+      - name: Fondamentaux (comptes annuels publiés)
+        id: fundamentals
+        continue-on-error: true
+        run: python collect_fundamentals.py
       - name: Recalculate dashboard
         run: python update.py
       - name: Run diagnostic backtest (synchronise aussi dashboard.json)
@@ -95,6 +102,7 @@ jobs:
           GLOBAL: ${{ steps.global.outcome }}
           EQ: ${{ steps.equities.outcome }}
           BUL: ${{ steps.bulletin.outcome }}
+          FUND: ${{ steps.fundamentals.outcome }}
         run: |
           {
             echo "## État des collecteurs"
@@ -103,13 +111,14 @@ jobs:
             echo "| collect_market.py | MASI officiel (cœur) | $MASI |"
             echo "| collect_equities.py | Historique actions officiel (cœur) | $EQ |"
             echo "| collect_bulletin.py | Référentiel émetteurs / dividendes | $BUL |"
+            echo "| collect_fundamentals.py | Fondamentaux (comptes publiés) | $FUND |"
             echo "| collect_liquidity.py | BAM/AMMC (cœur) | $LIQ |"
             echo "| collect_bam.py | Publications BAM (cœur) | $BAM |"
             echo "| collect_global.py | Risque global (cœur) | $GLOBAL |"
             [ -f data/masi_collection_report.json ] && { echo; echo '```json'; cat data/masi_collection_report.json; echo '```'; }
           } >> "$GITHUB_STEP_SUMMARY"
           fail=0
-          for v in "MASI:$MASI" "EQ:$EQ" "BUL:$BUL" "LIQ:$LIQ" "BAM:$BAM" "GLOBAL:$GLOBAL"; do
+          for v in "MASI:$MASI" "EQ:$EQ" "BUL:$BUL" "FUND:$FUND" "LIQ:$LIQ" "BAM:$BAM" "GLOBAL:$GLOBAL"; do
             if [ "${v#*:}" = "failure" ]; then echo "::error::Collecteur cœur en échec : ${v%%:*}"; fail=1; fi
           done
           exit $fail

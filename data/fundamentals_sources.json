@@ -1,0 +1,11 @@
+{
+ "description": "Registre des publications officielles utilisées pour les fondamentaux (comptes annuels consolidés). Les URL pointent vers les documents publiés par la Bourse de Casablanca (page Publications émetteurs) ; aucun chiffre n'est saisi à la main.",
+ "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
+ "issuers": [
+  {"ticker": "ATW", "model": "bank", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Communication financière — résultats au 31 décembre 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/awb_2025.pdf"},
+  {"ticker": "BCP", "model": "bank", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Comptes consolidés IFRS au 31 décembre 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf"},
+  {"ticker": "IAM", "model": "corporate", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Comptes annuels 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf"},
+  {"ticker": "MSA", "model": "corporate", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Communication financière — comptes consolidés 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/marsa_2025.pdf"},
+  {"ticker": "MNG", "model": "corporate", "fiscal_year": 2025, "period_end": "2025-12-31", "document": "Communication financière — comptes consolidés 2025", "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/managem_2025.pdf"}
+ ]
+}
