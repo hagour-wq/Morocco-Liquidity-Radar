@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T11:43:53.350978+00:00",
+  "generated_at": "2026-10-09T12:05:45.199681+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.",
@@ -12,7 +12,68 @@
     "status": "AWAITING_VERIFIED_FUNDAMENTALS"
   },
   "short_term": {
-    "ranked": [],
+    "ranked": [
+      {
+        "ticker": "BCP",
+        "name": "BANQUE CENTRALE POPULAIRE",
+        "status": "RESEARCH_ONLY",
+        "score": 45.6,
+        "reference_date": "2026-10-08",
+        "return_5d_pct": -0.4,
+        "return_20d_pct": -0.81,
+        "volume_ratio": 0.1,
+        "volatility_daily_pct": 1.47,
+        "note": "Technical ranking is not a forecast or expected return."
+      },
+      {
+        "ticker": "ATW",
+        "name": "ATTIJARIWAFA BANK",
+        "status": "RESEARCH_ONLY",
+        "score": 41.8,
+        "reference_date": "2026-10-08",
+        "return_5d_pct": -1.18,
+        "return_20d_pct": -5.17,
+        "volume_ratio": 0.89,
+        "volatility_daily_pct": 0.9,
+        "note": "Technical ranking is not a forecast or expected return."
+      },
+      {
+        "ticker": "IAM",
+        "name": "ITISSALAT AL-MAGHRIB",
+        "status": "RESEARCH_ONLY",
+        "score": 29.2,
+        "reference_date": "2026-10-08",
+        "return_5d_pct": -3.69,
+        "return_20d_pct": -7.22,
+        "volume_ratio": 0.39,
+        "volatility_daily_pct": 1.16,
+        "note": "Technical ranking is not a forecast or expected return."
+      },
+      {
+        "ticker": "MSA",
+        "name": "SOCIETE D'EXPLOITATION DES PORTS - MARSA MAROC",
+        "status": "RESEARCH_ONLY",
+        "score": 17.4,
+        "reference_date": "2026-10-08",
+        "return_5d_pct": -5.71,
+        "return_20d_pct": -14.48,
+        "volume_ratio": 0.83,
+        "volatility_daily_pct": 1.21,
+        "note": "Technical ranking is not a forecast or expected return."
+      },
+      {
+        "ticker": "MNG",
+        "name": "MANAGEM",
+        "status": "RESEARCH_ONLY",
+        "score": 14.1,
+        "reference_date": "2026-10-08",
+        "return_5d_pct": -5.92,
+        "return_20d_pct": -16.94,
+        "volume_ratio": 0.3,
+        "volatility_daily_pct": 2.08,
+        "note": "Technical ranking is not a forecast or expected return."
+      }
+    ],
     "excluded": [],
     "snapshot_watchlist": [
       {
@@ -96,6 +157,6 @@
         "note": "One-session movement; cannot rank expected profitability."
       }
     ],
-    "status": "AWAITING_OHLCV_HISTORY"
+    "status": "AVAILABLE"
   }
 }

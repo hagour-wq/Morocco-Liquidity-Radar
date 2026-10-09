@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-10-09T12:05:14.782783+00:00",
+  "source": "https://www.casablanca-bourse.com/api/live-market/indices/historical?symbol=MASI",
+  "added": [],
+  "corrected": [],
+  "errors": [],
+  "official_sessions_received": 0,
+  "session_status": "open",
+  "session_date": "2026-10-09",
+  "session_written": null,
+  "total_sessions": 87
+}
