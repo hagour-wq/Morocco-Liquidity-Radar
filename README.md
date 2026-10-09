@@ -119,3 +119,14 @@ Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unav
 - **Résultat part du groupe sans libellé explicite** : ligne X voisine d'un résultat consolidé R et d'une ligne intérêts minoritaires M, retenue seulement si X + M = R pour N et N-1.
 - **Plausibilité de marché** (détection d'erreurs d'unité ou de périmètre) : PER implicite (capitalisation / résultat) entre 2 et 300, P/B implicite entre 0,1 et 40, résultat ≤ 1,5 × chiffre d'affaires ; sinon REJECTED.
 - **Couverture** : registre de 49 émetteurs (comptes 2025). Les statuts par émetteur et leurs motifs sont publiés dans `data/company_fundamentals.json` ; les modèles « assurance » sont en attente (SECTOR_MODEL_PENDING) et les PDF image (sans texte) restent UNREADABLE tant que la reconnaissance de caractères n'est pas en place.
+
+## Fiche société (`societe.html?t=<TICKER>`)
+
+Une page par valeur cotée, ouverte depuis les tickers des classements ou par recherche :
+- cours, capitalisation, variations 20 / 60 séances, liquidité (montant moyen 20 j) ;
+- historique du cours (3 mois, 6 mois, 1 an, tout) avec MM20 / MM50 / MM200 calculées uniquement après la dernière opération sur titres présumée, repères des opérations sur titres, montants échangés, info-bulle par séance ; séances recopiées par la source exclues ;
+- analyse technique (score et composantes, RSI, MACD, ATR, Bollinger, supports / résistances) ou motif d'exclusion ;
+- analyse fondamentale (score et composantes, PER, P/B, ROE, ratios sectoriels, périmètre consolidé / social) ou motif d'exclusion ;
+- résultats publiés : chaque poste avec N, N-1, unité et la ligne exacte lue dans le PDF source ;
+- dividende (bulletin de la cote) et qualité des données (statuts des séances, période couverte, ISIN, sources, date de collecte).
+Les titres sans historique exploitable (cours nuls : DIS, DLM, SAM) affichent un message explicite. Test : `node test_societe.cjs` (rendu des 81 valeurs avec les données de production, exécuté par la CI).

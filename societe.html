@@ -1,0 +1,177 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiche société · Equity Bourse</title>
+<style>
+:root{--bg:#071019;--panel:#0d1824;--panel2:#101e2c;--line:#203346;--text:#edf4fa;--muted:#8295a8;--green:#36d399;--red:#fb7185;--amber:#f4c15d;--blue:#69a9ff;--violet:#b49cff}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#071019,#09131e 55%,#071019);color:var(--text);font:14px Inter,Segoe UI,Arial,sans-serif}
+a{color:var(--blue)}.wrap{max-width:1320px;margin:auto;padding:22px 20px 50px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px}
+.brand{font-size:12px;letter-spacing:.18em;color:var(--blue);font-weight:800;text-decoration:none}
+h1{margin:6px 0 4px;font-size:26px}.muted{color:var(--muted)}.tiny{font-size:11px;color:var(--muted)}
+.pick{display:flex;gap:8px;align-items:center}.pick input{background:#0a1520;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;min-width:240px}
+.pick button,.seg button{background:#17293b;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 11px;font:inherit;font-size:12.5px;cursor:pointer}
+.seg{display:flex;gap:6px;flex-wrap:wrap}.seg button[aria-pressed=true]{border-color:var(--blue);color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:14px}
+.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:17px;min-width:0}
+.s12{grid-column:span 12}.s8{grid-column:span 8}.s6{grid-column:span 6}.s4{grid-column:span 4}.s3{grid-column:span 3}
+@media(max-width:900px){.s8,.s6,.s4,.s3{grid-column:span 12}}
+h2{font-size:16px;margin:2px 0 12px}.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.kpi{font-size:24px;font-weight:750;margin:6px 0}.good{color:var(--green)}.bad{color:var(--red)}.warn{color:var(--amber)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid #1b2c3d}.row:first-child{border-top:0}.row span:first-child{color:var(--muted)}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700;background:#17293b}.badge.ok{color:var(--green)}.badge.w{color:var(--amber)}.badge.x{color:var(--red)}
+.chartwrap{position:relative}canvas{width:100%;display:block}#price{height:320px}#vol{height:90px;margin-top:4px}
+.tip{position:absolute;pointer-events:none;background:#0a1520ee;border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:12px;display:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:8px 0}.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.tbl{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}.tbl th{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right;padding:7px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:8px 6px;border-top:1px solid #1b2c3d;text-align:right;white-space:nowrap}.tbl th:first-child,.tbl td:first-child{text-align:left}.tblwrap{overflow-x:auto}
+.src{max-width:420px;white-space:normal;text-align:left!important;color:var(--muted);font-size:11px}
+.bar{height:6px;background:#1d2d3d;border-radius:8px;overflow:hidden;margin-top:4px}.fill{height:100%;background:var(--blue)}
+.note{border-left:3px solid var(--amber);padding:8px 12px;background:#f4c15d10;border-radius:6px;margin-top:10px;font-size:12.5px}
+.footer{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+</style></head><body><main class="wrap">
+<div class="top"><div><a class="brand" href="index.html">← EQUITY BOURSE · TABLEAU DE BORD</a><h1 id="title">Fiche société</h1><div class="muted" id="ident">Chargement…</div></div>
+<form class="pick" id="pickf"><input id="pick" list="tickers" placeholder="Ticker ou société (ex. ATW)" aria-label="Choisir une société"><datalist id="tickers"></datalist><button>Ouvrir</button></form></div>
+<div id="err"></div>
+<section class="grid" id="content" hidden>
+<div class="card s3"><div class="label">Dernier cours</div><div class="kpi" id="last">—</div><div class="tiny" id="lastd">—</div></div>
+<div class="card s3"><div class="label">Capitalisation</div><div class="kpi" id="mcap">—</div><div class="tiny" id="shares">—</div></div>
+<div class="card s3"><div class="label">Variation 20 / 60 séances</div><div class="kpi" id="var">—</div><div class="tiny">Cours bruts, hors dividendes</div></div>
+<div class="card s3"><div class="label">Liquidité (montant moyen 20 j)</div><div class="kpi" id="liq">—</div><div class="tiny" id="liqw">—</div></div>
+<div class="card s12"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><h2 style="margin:0">Historique du cours</h2><div class="seg" id="periods"></div></div>
+<div class="legend"><span><i style="background:var(--blue)"></i>Clôture (MAD)</span><span><i style="background:var(--amber)"></i>MM20</span><span><i style="background:var(--violet)"></i>MM50</span><span><i style="background:var(--green)"></i>MM200</span><span><i style="background:#fb718599"></i>Opération sur titres présumée</span><span><i style="background:#69a9ff55;height:8px"></i>Montant échangé</span></div>
+<div class="chartwrap"><canvas id="price"></canvas><canvas id="vol"></canvas><div class="tip" id="tip"></div></div>
+<div class="tiny" id="chartnote" style="margin-top:8px"></div></div>
+<div class="card s6"><h2>Analyse technique</h2><div id="tech"></div></div>
+<div class="card s6"><h2>Analyse fondamentale</h2><div id="fund"></div></div>
+<div class="card s12"><h2>Résultats publiés</h2><div id="stmts"></div></div>
+<div class="card s6"><h2>Dividende</h2><div id="div"></div></div>
+<div class="card s6"><h2>Qualité des données & sources</h2><div id="quality"></div></div>
+</section>
+<div class="footer">Données officielles de la Bourse de Casablanca et comptes publiés par l'émetteur. Donnée absente = donnée non calculée, jamais estimée. Les scores mesurent des facteurs passés ou publiés selon une méthodologie définie : ce ne sont ni des prévisions ni des recommandations d'investissement.</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=(v,d=2)=>v==null||!isFinite(v)?'—':Number(v).toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d});
+const cls=v=>v>0?'good':v<0?'bad':'';
+const arrow=(v,s=' %')=>v==null?'—':'<span class="'+cls(v)+'">'+(v>0?'▲ +':v<0?'▼ ':'')+fmt(v)+s+'</span>';
+const big=v=>v==null?'—':Math.abs(v)>=1e9?fmt(v/1e9,2)+' Md MAD':Math.abs(v)>=1e6?fmt(v/1e6,1)+' M MAD':fmt(v,0)+' MAD';
+const row=(k,v,t)=>'<div class="row"'+(t?' title="'+esc(t)+'"':'')+'><span>'+k+'</span><strong>'+v+'</strong></div>';
+const J=u=>fetch(u+'?'+Date.now()).then(r=>{if(!r.ok)throw Error(u+' : HTTP '+r.status);return r.json()});
+const STATUS={INSUFFICIENT_HISTORY:'historique insuffisant',NO_VALID_PRICES:'cours nuls ou absents (titre vraisemblablement suspendu)',CORPORATE_ACTION_RECENT:'opération sur titres trop récente',FLAGGED_DATA_IN_WINDOW:'séance douteuse dans la fenêtre de calcul',STALE_DATA:'données trop anciennes',GAPPED_HISTORY:'trou dans l’historique',VOLUME_UNAVAILABLE:'volume indisponible',REJECTED:'contrôle de cohérence en échec',UNREADABLE:'PDF image sans texte exploitable',SECTOR_MODEL_PENDING:'modèle sectoriel en préparation',PARTIAL:'extraction incomplète',SOURCE_ERROR:'document inaccessible',STALE_OR_UNDATED:'comptes de plus de 18 mois',NO_PRICE:'cours indisponible',NOT_IN_REGISTRY:'émetteur absent du registre des comptes publiés'};
+const LABEL={revenue:'Chiffre d’affaires',pnb:'Produit net bancaire',ebitda:'EBITDA',operating_income:'Résultat d’exploitation',operating_expenses:'Charges générales d’exploitation',depreciation:'Dotations aux amortissements',cost_of_risk:'Coût du risque',net_income:'Résultat net de l’ensemble',net_income_group:'Résultat net part du groupe',eps:'Résultat par action (MAD)',equity_group:'Capitaux propres part du groupe',equity_total:'Capitaux propres totaux',minority_interests:'Intérêts minoritaires',net_debt:'Dette nette',total_assets:'Total bilan',customer_loans:'Crédits à la clientèle'};
+const IND={roe_pct:['ROE',' %'],operating_margin_pct:['Marge d’exploitation',' %'],net_margin_pct:['Marge nette',' %'],ebitda_margin_pct:['Marge d’EBITDA',' %'],revenue_growth_pct:['Croissance du chiffre d’affaires',' %'],net_income_growth_pct:['Croissance du résultat part du groupe',' %'],pnb_growth_pct:['Croissance du PNB',' %'],cost_income_pct:['Coefficient d’exploitation',' %'],cost_of_risk_to_pnb_pct:['Coût du risque / PNB',' %'],cost_of_risk_to_loans_pct:['Coût du risque / encours',' %'],equity_ratio_pct:['Autonomie financière',' %'],net_debt_to_ebitda:['Dette nette / EBITDA','×']};
+let state={rows:[],period:250,meta:null};
+
+function sma(c,n,i){if(i+1<n)return null;let s=0;for(let k=i-n+1;k<=i;k++)s+=c[k];return s/n}
+function draw(){
+ const all=state.rows, n=state.period>=all.length?all.length:state.period, rows=all.slice(all.length-n), off=all.length-n;
+ // moyennes mobiles calculées sur le segment postérieur à la dernière opération sur titres présumée uniquement
+ const caIdx=all.map((r,i)=>String(r.status).includes('corporate_action_suspected')?i:-1).filter(i=>i>=0), segStart=caIdx.length?caIdx[caIdx.length-1]:0;
+ const closes=all.map(r=>r.close);
+ const ma=p=>rows.map((_,j)=>{const i=off+j;if(i-p+1<segStart)return null;return sma(closes,p,i)});
+ const m20=ma(20),m50=ma(50),m200=ma(200);
+ const c=$('price'),v=$('vol'),dpr=devicePixelRatio||1;
+ [c,v].forEach(k=>{k.width=k.clientWidth*dpr;k.height=k.clientHeight*dpr;k.getContext('2d').setTransform(dpr,0,0,dpr,0,0)});
+ const W=c.clientWidth,H=c.clientHeight,VH=v.clientHeight,L=8,R=62,T=10,B=22,ctx=c.getContext('2d'),vx=v.getContext('2d');
+ const vals=rows.map(r=>r.close).concat(m20,m50,m200).filter(x=>x!=null&&x>0);if(!vals.length)return;
+ let mn=Math.min(...vals),mx=Math.max(...vals);const padv=(mx-mn)*.06||mx*.02;mn-=padv;mx+=padv;
+ const X=i=>L+i*(W-L-R)/Math.max(rows.length-1,1),Y=p=>T+(mx-p)/(mx-mn)*(H-T-B);
+ ctx.font='11px Arial';ctx.textBaseline='middle';
+ for(let k=0;k<=4;k++){const p=mn+(mx-mn)*k/4,y=Y(p);ctx.strokeStyle='#1b2c3d';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(L,y);ctx.lineTo(W-R,y);ctx.stroke();ctx.fillStyle='#8295a8';ctx.fillText(fmt(p,p>=100?0:2),W-R+6,y)}
+ const months=new Set();ctx.textBaseline='alphabetic';rows.forEach((r,i)=>{const m=r.date.slice(0,7);if(!months.has(m)){months.add(m)}});
+ const ticks=[...months],step=Math.ceil(ticks.length/Math.max(2,Math.floor((W-L-R)/70)));ticks.forEach((m,k)=>{if(k%step)return;const i=rows.findIndex(r=>r.date.startsWith(m));if(i<0)return;ctx.fillStyle='#8295a8';ctx.fillText(new Date(m+'-01').toLocaleDateString('fr-FR',{month:'short',year:'2-digit'}),X(i)-14,H-6)});
+ rows.forEach((r,i)=>{if(String(r.status).includes('corporate_action_suspected')){ctx.strokeStyle='#fb718599';ctx.setLineDash([4,4]);ctx.beginPath();ctx.moveTo(X(i),T);ctx.lineTo(X(i),H-B);ctx.stroke();ctx.setLineDash([])}});
+ const path=(arr,col,w)=>{ctx.strokeStyle=col;ctx.lineWidth=w;ctx.beginPath();let on=false;arr.forEach((p,i)=>{if(p==null||!(p>0)){on=false;return}on?ctx.lineTo(X(i),Y(p)):ctx.moveTo(X(i),Y(p));on=true});ctx.stroke()};
+ path(m200,'#36d399',1.2);path(m50,'#b49cff',1.2);path(m20,'#f4c15d',1.2);path(rows.map(r=>r.close),'#69a9ff',2);
+ const tv=rows.map(r=>r.turnover_mad),vmax=Math.max(...tv.filter(x=>x!=null),1),bw=Math.max(1,(W-L-R)/rows.length-1);
+ vx.fillStyle='#69a9ff55';tv.forEach((t,i)=>{if(t==null)return;const h=t/vmax*(VH-6);vx.fillRect(X(i)-bw/2,VH-h,bw,h)});
+ vx.fillStyle='#8295a8';vx.font='11px Arial';vx.fillText('max. '+big(vmax),L+2,11);
+ state.view={rows,X,m20,m50,m200,L,R,W};
+ const first=rows[0],last=rows[rows.length-1];
+ $('chartnote').textContent=rows.length+' séances affichées, du '+first.date+' au '+last.date+' · '+all.length+' séances en base. Cours officiels bruts (non ajustés des dividendes et opérations sur titres) ; moyennes mobiles calculées uniquement après la dernière opération sur titres présumée'+(caIdx.length?' ('+all[segStart].date+')':'')+'.';
+}
+function hover(e){const vw=state.view;if(!vw)return;const r=$('price').getBoundingClientRect(),x=e.clientX-r.left;const n=vw.rows.length;let i=Math.round((x-vw.L)/((vw.W-vw.L-vw.R)/Math.max(n-1,1)));i=Math.max(0,Math.min(n-1,i));const d=vw.rows[i],t=$('tip');
+ t.innerHTML='<b>'+esc(d.date)+'</b><br>Clôture '+fmt(d.close)+' MAD'+(d.high!=null?'<br>Plus haut / bas '+fmt(d.high)+' / '+fmt(d.low):'')+'<br>Montant '+(d.turnover_mad==null?'inconnu':big(d.turnover_mad))+(d.traded===false?'<br><span class="warn">Aucun échange</span>':'')+(vw.m50[i]?'<br>MM50 '+fmt(vw.m50[i]):'')+(d.status&&d.status!=='validated'?'<br><span class="warn">'+esc(d.status)+'</span>':'');
+ t.style.display='block';t.style.left=Math.min(x+12,r.width-t.offsetWidth-4)+'px';t.style.top='14px'}
+
+function techCard(t){
+ if(!t)return '<div class="tiny">Valeur absente du calcul technique.</div>';
+ if(t.score==null)return '<span class="badge x">Non analysable</span><div class="note">'+esc(STATUS[t.status]||t.status)+(t.note?' — '+esc(t.note):'')+(t.corporate_action_date?' (opération du '+esc(t.corporate_action_date)+', '+t.sessions_since+' séances depuis, '+t.required_sessions+' requises)':'')+'</div>';
+ const c=t.components||{},bb=t.bollinger||{},sr=t.support_resistance||{},m=t.macd||{};
+ const comp=[['Momentum 5 séances (35 %)','momentum_5d'],['Momentum 20 séances (25 %)','momentum_20d'],['Position / tendance (20 %)','trend'],['Volume relatif (10 %)','volume'],['Volatilité (10 %)','volatility']].map(([k,f])=>'<div style="margin:6px 0"><div class="tiny" style="display:flex;justify-content:space-between"><span>'+k+'</span><span>'+fmt(c[f],1)+'</span></div><div class="bar"><div class="fill" style="width:'+Math.max(0,Math.min(100,c[f]||0))+'%"></div></div></div>').join('');
+ return '<div style="display:flex;gap:10px;align-items:baseline"><div class="kpi">'+fmt(t.score,1)+'<span class="tiny"> /100</span></div><span class="badge '+(t.category==='ELIGIBLE'?'ok':'w')+'">'+(t.category==='ELIGIBLE'?'Éligible':'À surveiller')+'</span><span class="tiny">au '+esc(t.reference_date)+'</span></div>'+comp+
+ row('Variation 5 / 20 séances',arrow(t.return_5d_pct)+' · '+arrow(t.return_20d_pct))+row('RSI 14',fmt(t.rsi14,1),'Wilder, 14 séances')+
+ row('Clôture / MM20 · MM50 · MM200',fmt(t.sma20)+' · '+fmt(t.sma50)+' · '+(t.sma200==null?'n.d. ('+t.sessions_used+' séances)':fmt(t.sma200)))+
+ row('MACD (12, 26, 9)',fmt(m.macd,2)+' / signal '+fmt(m.signal,2))+row('ATR 14',fmt(t.atr14)+' MAD ('+fmt(t.atr14_pct)+' %)')+
+ row('Bandes de Bollinger (20, 2)',fmt(bb.lower)+' – '+fmt(bb.upper)+' · %B '+fmt(bb.percent_b,2))+
+ row('Support / résistance ('+(sr.window_sessions||20)+' séances)',fmt(sr.support)+' / '+fmt(sr.resistance),'Plus bas et plus haut des '+(sr.window_sessions||20)+' dernières séances')+
+ row('Volatilité annualisée (20 j)',fmt(t.volatility_annual_pct,1)+' %')+row('Volume relatif',fmt(t.volume_ratio,2)+'×')+
+ (t.liquidity&&t.liquidity.warning?'<div class="note">'+esc(t.liquidity.warning)+'</div>':'')+'<div class="tiny" style="margin-top:8px">'+esc(t.note||'')+'</div>'}
+
+function fundCard(f,c){
+ if(!f||f.score==null){const st=f?f.status:(c?c.status:'NOT_IN_REGISTRY');const why=f&&f.note?f.note:c&&(c.reason||(c.errors||[]).join(' ; '));
+  return '<span class="badge x">Non analysable</span><div class="note">'+esc(STATUS[st]||st)+(why?' — '+esc(why):'')+'</div>'+(c&&c.url?'<div class="tiny" style="margin-top:8px">Document examiné : <a href="'+esc(c.url)+'" target="_blank" rel="noopener">comptes '+esc(c.fiscal_year||'')+'</a></div>':'')}
+ const co=f.components||{};const comp=[['Valorisation (30 %)','valuation'],['Qualité (25 %)','quality'],['Croissance (20 %)','growth'],['Structure / risque (15 %)','structure'],['Dividende (10 %)','dividend']].map(([k,x])=>'<div style="margin:6px 0"><div class="tiny" style="display:flex;justify-content:space-between"><span>'+k+'</span><span>'+(co[x]==null?'non calculé':fmt(co[x],1))+'</span></div><div class="bar"><div class="fill" style="width:'+Math.max(0,Math.min(100,co[x]||0))+'%"></div></div></div>').join('');
+ const ind=f.indicators||{};
+ return '<div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap"><div class="kpi">'+fmt(f.score,1)+'<span class="tiny"> /100</span></div><span class="badge '+(f.category==='ELIGIBLE'?'ok':'w')+'">'+(f.category==='ELIGIBLE'?'Éligible':'À surveiller · score partiel')+'</span><span class="tiny">'+(f.model==='bank'?'modèle banque':'modèle société non financière')+' · comptes '+esc(f.fiscal_year)+(f.accounts_scope==='social'?' sociaux':' consolidés')+'</span></div>'+comp+
+ row('PER',f.pe==null?'—':fmt(f.pe,1)+'×','Cours du '+f.price_date+' / résultat part du groupe par action (nombre actuel de titres)')+row('P/B',f.pb==null?'—':fmt(f.pb,2)+'×')+row('ROE',fmt(f.roe_pct,1)+' %','Résultat part du groupe / capitaux propres part du groupe moyens N et N-1')+
+ Object.entries(IND).filter(([k])=>k!=='roe_pct'&&ind[k]!=null).map(([k,[l,u]])=>row(l,fmt(ind[k],u==='×'?2:1)+u)).join('')+
+ row('Niveau de risque',esc(f.risk_level||'—'),'Volatilité annualisée et liquidité du titre')+
+ ((f.notes||[]).length?'<div class="note">'+f.notes.map(esc).join('<br>')+'</div>':'')+'<div class="tiny" style="margin-top:8px">'+esc(f.note||'')+'</div>'}
+
+function stmtCard(c){
+ if(!c||!c.statements)return '<div class="tiny">'+(c?esc(STATUS[c.status]||c.status)+(c.reason?' — '+esc(c.reason):''):'Émetteur absent du registre des comptes publiés.')+'</div>';
+ const rows=Object.entries(c.statements).filter(([,x])=>x);
+ if(!rows.length)return '<div class="tiny">Aucune ligne d’état financier extraite.</div>';
+ const u=x=>x.unit===1e6?'M MAD':x.unit===1e3?'k MAD':x.unit===1?'MAD':'unité inconnue';
+ const val=(x,k,key)=>key==='eps'?fmt(x[k],2):x.unit?fmt(x[k],0):'—';
+ return '<div class="tiny" style="margin-bottom:8px">Statut d’extraction : <b>'+esc(c.status)+'</b> · comptes '+esc(c.fiscal_year||'')+' '+(c.scope==='social'?'sociaux':'consolidés')+' · clôture '+esc(c.period_end||'—')+' · <a href="'+esc(c.url)+'" target="_blank" rel="noopener">document source (PDF)</a> · collecté le '+esc((c.collected_at||'').slice(0,10))+'</div>'+
+ '<div class="tblwrap"><table class="tbl"><thead><tr><th>Poste</th><th>Exercice N</th><th>N-1</th><th>Variation</th><th>Unité</th><th>Ligne lue dans le document</th></tr></thead><tbody>'+
+ rows.map(([k,x])=>{const ch=x.previous?100*(x.current/x.previous-1):null;return '<tr><td>'+esc(LABEL[k]||k)+'</td><td>'+val(x,'current',k)+'</td><td>'+val(x,'previous',k)+'</td><td>'+(x.previous>0&&x.current!=null?arrow(ch):'—')+'</td><td>'+(k==='eps'?'MAD / action':u(x))+'</td><td class="src">'+esc(x.line)+(x.method?' <i>('+esc(x.method)+')</i>':'')+'</td></tr>'}).join('')+'</tbody></table></div>'+
+ ((c.errors||[]).length?'<div class="note">'+c.errors.map(esc).join('<br>')+'</div>':'')}
+
+function divCard(ref,price){
+ if(!ref)return '<div class="tiny">Émetteur absent du bulletin de la cote.</div>';
+ const age=ref.dividend_ex_date?(Date.now()-new Date(ref.dividend_ex_date))/864e5:null,y=ref.last_dividend_mad&&price&&age!=null&&age<=456?100*ref.last_dividend_mad/price:null;
+ return row('Dernier dividende',ref.last_dividend_mad==null?'—':fmt(ref.last_dividend_mad)+' MAD')+row('Exercice',esc(ref.dividend_fiscal_year||'—'))+row('Date de détachement',esc(ref.dividend_ex_date||'—'))+
+ row('Rendement (dernier dividende / cours)',y==null?'n.d.':fmt(y,2)+' %',y==null?'Non calculé : pas de détachement depuis moins de 15 mois':'')+row('Nominal',ref.nominal_mad==null?'—':fmt(ref.nominal_mad)+' MAD')+
+ '<div class="tiny" style="margin-top:8px">Source : bulletin de la cote du '+esc(state.refMeta.bulletin_date)+' (<a href="'+esc(state.refMeta.source_url)+'" target="_blank" rel="noopener">PDF</a>). Dividende ajusté publié par la Bourse ; historique pluriannuel non encore collecté.</div>'}
+
+function qualityCard(m,rows){
+ const st={};rows.forEach(r=>String(r.status||'validated').split(',').forEach(s=>st[s]=(st[s]||0)+1));
+ const noTrade=rows.filter(r=>r.traded===false).length;
+ return row('Séances en base',fmt(rows.length,0))+row('Période couverte',esc(rows[0].date)+' → '+esc(rows[rows.length-1].date))+
+ Object.entries(st).map(([k,v])=>row(k==='validated'?'Séances validées':'Statut « '+esc(k)+' »',fmt(v,0))).join('')+row('Séances sans échange',fmt(noTrade,0))+
+ row('ISIN',esc(state.ref?.isin||'—'))+row('Code valeur',esc(m.code_valeur||'—'))+row('Compartiment',esc(m.compartment||'—'))+
+ '<div class="tiny" style="margin-top:8px">Cours : Bourse de Casablanca (service '+esc(m.source_endpoint||'')+'), collecte du '+esc((m.updated_at||'').slice(0,16).replace('T',' '))+' UTC. Cours bruts : non ajustés. Les séances recopiées par la source ou douteuses sont conservées avec leur statut et exclues des calculs.</div>'}
+
+function render(t,data){
+ const [m,rk,cf,ref]=data;state.rows=m.rows.filter(r=>r.close>0&&!String(r.status).includes('stale_copy'));state.meta=m;state.refMeta=ref;state.ref=ref.issuers[t];
+ if(state.rows.length<5)throw Error(m.name+' ('+t+') : '+state.rows.length+' cours non nul(s) sur '+m.rows.length+' séances en base'+(state.rows.length?' ('+state.rows.map(r=>r.date+' : '+r.close+' MAD sans échange').join(', ')+')':'')+' — titre vraisemblablement suspendu de cotation ; pas d’historique exploitable.');
+ const st=rk.short_term,lt=rk.long_term,find=(arr,k)=>(arr||[]).find(x=>x.ticker===k);
+ const tech=find(st.ranked,t)||find(st.watch,t)||find(st.excluded,t),fund=find(lt.ranked,t)||find(lt.watch,t)||find(lt.excluded,t),comp=find(cf.companies,t);
+ document.title=m.name+' ('+t+') · Equity Bourse';$('title').textContent=m.name;
+ $('ident').innerHTML=esc(t)+' · '+esc(m.sector||'secteur n.d.')+' · ISIN '+esc(state.ref?.isin||'n.d.')+' · '+esc(m.compartment||'');
+ const r=state.rows,last=r[r.length-1],prev=r[r.length-2],ch=prev?100*(last.close/prev.close-1):null,R=n=>r.length>n?100*(last.close/r[r.length-1-n].close-1):null;
+ $('last').innerHTML=fmt(last.close)+' <span class="tiny">MAD</span>';$('lastd').innerHTML='Séance du '+esc(last.date)+' · '+arrow(ch)+' sur la séance';
+ $('mcap').textContent=big(last.market_cap_mad);$('shares').textContent=(m.shares_outstanding?fmt(m.shares_outstanding,0)+' titres':'—');
+ $('var').innerHTML=arrow(R(20))+' · '+arrow(R(60));
+ const lq=tech&&tech.liquidity;$('liq').textContent=lq?big(lq.avg_turnover_mad_20d):'—';$('liqw').textContent=lq?('Liquidité '+lq.tier+(lq.zero_volume_sessions?' · '+lq.zero_volume_sessions+' séance(s) sans échange sur 60':'')):'Non calculée';
+ $('tech').innerHTML=techCard(tech);$('fund').innerHTML=fundCard(fund,comp);$('stmts').innerHTML=stmtCard(comp);$('div').innerHTML=divCard(state.ref,last.close);$('quality').innerHTML=qualityCard(m,r);
+ const P=[['3 mois',63],['6 mois',126],['1 an',250],['Tout',1e9]];
+ $('periods').innerHTML=P.map(([l,n])=>'<button type="button" data-n="'+n+'" aria-pressed="'+(n===state.period)+'">'+l+'</button>').join('');
+ $('content').hidden=false;draw();
+}
+function load(t){
+ t=(t||'').trim().toUpperCase();$('err').innerHTML='';
+ if(!/^[A-Z0-9]{2,6}$/.test(t)){$('ident').textContent='Choisissez une société dans la liste.';return}
+ history.replaceState(null,'','?t='+t);$('ident').textContent='Chargement de '+t+'…';
+ Promise.all([J('data/equities/'+t+'.json'),J('data/equity_rankings.json'),J('data/company_fundamentals.json').catch(()=>({companies:[]})),J('data/issuer_reference.json').catch(()=>({issuers:{}}))])
+ .then(d=>render(t,d)).catch(e=>{$('content').hidden=true;$('ident').textContent='';$('err').innerHTML='<div class="note" style="margin-top:14px">Fiche indisponible : '+esc(e.message)+'</div>'})}
+J('data/equities/index.json').then(ix=>{$('tickers').innerHTML=ix.companies.map(c=>'<option value="'+esc(c.ticker)+'">'+esc(c.name)+'</option>').join('')}).catch(()=>{});
+$('pickf').onsubmit=e=>{e.preventDefault();load($('pick').value.split(/\s/)[0])};
+$('periods').onclick=e=>{const b=e.target.closest('button');if(!b)return;state.period=+b.dataset.n;[...$('periods').children].forEach(x=>x.setAttribute('aria-pressed',x===b));draw()};
+$('price').addEventListener('mousemove',hover);$('price').addEventListener('mouseleave',()=>$('tip').style.display='none');
+addEventListener('resize',()=>state.rows.length&&draw());
+load(new URLSearchParams(location.search).get('t')||'ATW');
+</script></body></html>
