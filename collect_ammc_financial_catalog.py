@@ -30,9 +30,8 @@ def scan(url):
  for a in p.links:
   absolute=urljoin(url,a["url"])
   label=a["text"]
-  if absolute.startswith("https://") and ("ammc.ma" in absolute or absolute.lower().endswith(".pdf")) and (label or ".pdf" in absolute.lower()):
-   if any(y in label+" "+absolute for y in ("2025","2026","Rapport","rapport","financier","FINANCIER","/sites/default/files/")):
-    records.append({"label":label[:160],"url":absolute})
+  if absolute.startswith("https://") and absolute.lower().split("?")[0].endswith(".pdf"):
+   records.append({"label":label[:160],"url":absolute})
  return list({x["url"]:x for x in records}.values())
 def main():
  output={"checked_at":datetime.now(timezone.utc).isoformat(),"source":BASE,"reports":[],"errors":[],"status":"DISCOVERY_ONLY","policy":"Issuer PDF links are source candidates, not verified numerical EPS, PER or dividend observations."}
@@ -43,6 +42,7 @@ def main():
     if item["url"] not in {x["url"] for x in output["reports"]}:output["reports"].append(item)
   except Exception as e:output["errors"].append({"url":url,"error":type(e).__name__+":"+str(e)[:150]})
  output["report_count"]=len(output["reports"])
+ output["link_policy"]="Only direct PDF document links; navigation and press-release pages are excluded"
  output["status"]="FOUND_LINKS" if output["reports"] else "NO_LINKS_VERIFIED"
  OUT.write_text(json.dumps(output,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print(json.dumps({"status":output["status"],"report_count":output["report_count"],"errors":len(output["errors"])},ensure_ascii=False))
