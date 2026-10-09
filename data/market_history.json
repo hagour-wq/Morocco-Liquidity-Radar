@@ -422,7 +422,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20181107.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2018-11-08",
@@ -575,7 +575,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20181122.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2018-11-23",
@@ -1051,7 +1051,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190102.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-01-03",
@@ -1170,7 +1170,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190114.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-01-15",
@@ -2479,7 +2479,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190502.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-05-03",
@@ -2887,7 +2887,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190610.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-06-11",
@@ -3499,7 +3499,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190731.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-08-01",
@@ -3635,7 +3635,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190815.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-08-16",
@@ -3686,7 +3686,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190822.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-08-23",
@@ -4112,6 +4112,23 @@
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190926.pdf",
     "quality": "official_session_summary",
     "control": "validated"
+  },
+  {
+    "date": "2019-09-30",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 11561.68,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": 0.27,
+    "volume_mad": 110553998.58,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 110553998.58,
+    "breadth": 0.4783,
+    "advancers": 22,
+    "decliners": 24,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20190930.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-10-01",
@@ -4570,7 +4587,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20191107.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-11-08",
@@ -4604,7 +4621,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20191112.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-11-13",
@@ -4672,7 +4689,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20191119.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2019-11-20",
@@ -5199,7 +5216,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200102.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-01-03",
@@ -6661,7 +6678,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200504.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-05-05",
@@ -6916,7 +6933,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200526.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-05-27",
@@ -7036,6 +7053,23 @@
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200604.pdf",
     "quality": "official_session_summary",
     "control": "validated"
+  },
+  {
+    "date": "2020-06-08",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 10154.93,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": 0.3,
+    "volume_mad": 82039671.92,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 82039671.92,
+    "breadth": 0.6957,
+    "advancers": 32,
+    "decliners": 14,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200608.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-06-09",
@@ -7257,6 +7291,23 @@
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200625.pdf",
     "quality": "official_session_summary",
     "control": "validated"
+  },
+  {
+    "date": "2020-06-29",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 10089.41,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": -0.24,
+    "volume_mad": 82590710.86,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 988716550.86,
+    "breadth": 0.4,
+    "advancers": 20,
+    "decliners": 30,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200629.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-06-30",
@@ -7616,6 +7667,23 @@
     "control": "validated"
   },
   {
+    "date": "2020-08-03",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 10122.65,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": -1.03,
+    "volume_mad": 29722633.76,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 29722633.76,
+    "breadth": 0.3684,
+    "advancers": 21,
+    "decliners": 36,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200803.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
+  },
+  {
     "date": "2020-08-04",
     "source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "masi": 10159.57,
@@ -7766,7 +7834,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200817.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-08-18",
@@ -7817,7 +7885,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20200824.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-08-25",
@@ -8633,7 +8701,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20201102.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-11-03",
@@ -8701,7 +8769,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20201109.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-11-10",
@@ -8820,7 +8888,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20201119.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2020-11-20",
@@ -9347,7 +9415,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210104.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-01-05",
@@ -9432,7 +9500,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210112.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-01-13",
@@ -10911,7 +10979,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210517.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-05-18",
@@ -11441,6 +11509,23 @@
     "control": "validated"
   },
   {
+    "date": "2021-07-01",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 12418.77,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": 0.08,
+    "volume_mad": 125007120.66,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 235863030.66,
+    "breadth": 0.4737,
+    "advancers": 27,
+    "decliners": 30,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210701.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
+  },
+  {
     "date": "2021-07-02",
     "source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "masi": 12426.0,
@@ -11676,7 +11761,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210723.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-07-26",
@@ -11761,7 +11846,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210802.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-08-03",
@@ -11863,7 +11948,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210811.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-08-12",
@@ -11982,7 +12067,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20210823.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-08-24",
@@ -12679,7 +12764,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20211021.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-10-22",
@@ -13019,7 +13104,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20211119.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-11-22",
@@ -13258,6 +13343,23 @@
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20211209.pdf",
     "quality": "official_session_summary",
     "control": "validated"
+  },
+  {
+    "date": "2021-12-13",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 13283.98,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": -0.42,
+    "volume_mad": 171712366.03,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 172441966.03,
+    "breadth": 0.4286,
+    "advancers": 21,
+    "decliners": 28,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20211213.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2021-12-14",
@@ -13614,7 +13716,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20220112.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2022-01-13",
@@ -14940,7 +15042,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20220504.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2022-05-05",
@@ -15756,7 +15858,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20220712.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2022-07-13",
@@ -16844,7 +16946,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20221011.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2022-10-12",
@@ -17320,7 +17422,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20221121.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2022-11-22",
@@ -17949,7 +18051,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230112.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-01-13",
@@ -19173,7 +19275,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230425.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-04-26",
@@ -19241,7 +19343,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230502.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-05-03",
@@ -19955,7 +20057,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230703.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-07-04",
@@ -20159,7 +20261,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230720.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-07-21",
@@ -20448,7 +20550,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230815.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-08-16",
@@ -20516,7 +20618,7 @@
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230822.pdf",
     "quality": "official_session_summary",
-    "control": "validated"
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-08-23",
@@ -20942,6 +21044,23 @@
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20230926.pdf",
     "quality": "official_session_summary",
     "control": "validated"
+  },
+  {
+    "date": "2023-10-02",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 11789.09,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": -0.64,
+    "volume_mad": 82880907.35,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 82880907.35,
+    "breadth": 0.339,
+    "advancers": 20,
+    "decliners": 39,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-07/fr/resume_seance_20231002.pdf",
+    "quality": "official_session_summary",
+    "control": "previous_session_missing_in_archive"
   },
   {
     "date": "2023-10-03",
