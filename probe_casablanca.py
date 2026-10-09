@@ -36,6 +36,28 @@ try:
     report["curl"]=(r.stdout+" "+r.stderr).strip()
 except Exception as e: report["curl"]=str(e)
 
+# Récupération du certificat intermédiaire manquant via l'AIA du certificat feuille.
+try:
+    sh=lambda c:subprocess.run(c,shell=True,capture_output=True,text=True,timeout=60)
+    sh("echo | openssl s_client -connect www.casablanca-bourse.com:443 -servername www.casablanca-bourse.com 2>/dev/null | openssl x509 -outform PEM > diag/leaf.pem")
+    aia=sh("openssl x509 -in diag/leaf.pem -noout -ext authorityInfoAccess").stdout
+    report["leaf_aia"]=aia.strip().splitlines()
+    url=re.search(r"CA Issuers - URI:(\S+)",aia).group(1)
+    sh(f"curl -sS -o diag/intermediate.der {url} && openssl x509 -inform DER -in diag/intermediate.der -out diag/intermediate.pem")
+    report["intermediate_url"]=url
+    report["intermediate_subject"]=sh("openssl x509 -in diag/intermediate.pem -noout -subject -issuer -enddate -fingerprint -sha256").stdout.strip().splitlines()
+    report["chain_verify"]=sh(f"openssl verify -CAfile {certifi.where()} -untrusted diag/intermediate.pem diag/leaf.pem").stdout.strip()
+    ctx=ssl.create_default_context(cafile=certifi.where()); ctx.load_verify_locations(cafile="diag/intermediate.pem")
+    contexts["certifi+intermediate"]=ctx
+    for url in ("https://www.casablanca-bourse.com/","https://www.casablanca-bourse.com/fr"):
+        a={"url":url,"ctx":"certifi+intermediate"}
+        try:
+            st,h,bb=get(url,ctx); a.update(status=st,bytes=len(bb),content_type=h.get("Content-Type"),server=h.get("Server"))
+            if body is None: body=bb.decode("utf-8","ignore"); report["home_url_ok"]=url
+        except Exception as e: a["error"]=f"{type(e).__name__}: {e}"
+        report["attempts"].append(a)
+except Exception as e: report["intermediate_error"]=f"{type(e).__name__}: {e}"
+
 if body:
     (OUT/"home.html").write_text(body,encoding="utf-8")
     report["has_next_data"]="__NEXT_DATA__" in body
@@ -44,7 +66,7 @@ if body:
     scripts=re.findall(r"<script[^>]+src=[\"']([^\"']+)",body)
     report["scripts"]=scripts[:60]
     found=set()
-    ctx=contexts["certifi"] if any(a.get("ctx")=="certifi" and "status" in a for a in report["attempts"]) else contexts["default"]
+    ctx=contexts.get("certifi+intermediate",contexts["certifi"])
     for s in scripts[:60]:
         try:
             _,_,js=get(urljoin("https://www.casablanca-bourse.com/",s),ctx,"*/*")
