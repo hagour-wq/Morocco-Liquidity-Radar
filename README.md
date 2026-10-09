@@ -84,7 +84,7 @@ Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unav
 - **Sans regard vers le futur** : à chaque date de rebalancement, `evaluate_technical(..., as_of=t)` ne voit que les séances ≤ t (test `test_score_ignores_sessions_after_as_of`).
 - **Portefeuille** : 10 meilleures valeurs éligibles (liquidité ≥ 1 M MAD/séance), équipondérées, achetées à la clôture de la séance suivante, détenues 5, 10 ou 20 séances. Aucune période sautée.
 - **Frais** : 0,6 % par aller simple (hypothèse courtage + commission Bourse + TVA), appliqués à la rotation effective.
-- **Références** : univers éligible équipondéré ; proxy MASI pondéré par la capitalisation publiée (corrélation 0,994 avec les clôtures MASI disponibles).
+- **Références** : MASI officiel (résumés de séance ; dernière clôture connue si la séance manque dans l'archive, tolérance 5 jours) et univers éligible équipondéré ; contrôle par un proxy pondéré par les capitalisations (corrélation 0,987 avec le MASI officiel sur 697 séances).
 - **Analyse par quintiles** : écart Q1 − Q5 avant frais et t-stat, pour mesurer l'information du score indépendamment des frais.
 - **Calendrier** : tolérance de 7 jours calendaires entre séances (fermetures légales observées jusqu'à 6 jours).
 - **Limites** : rendements de prix (dividendes exclus), biais de survivance (titres cotés au 09/10/2026), ~2,7 ans d'historique, plusieurs horizons présentés côte à côte (biais de sélection si l'on retient le meilleur a posteriori). Performances passées : elles ne préjugent pas des performances futures.

@@ -104,6 +104,7 @@ def run(HOLD, companies, cal, prices):
     reb = list(range(WARMUP, len(cal) - HOLD - 1, HOLD))
     strat, univ, cap, dates, quint, turnover = [], [], [], [], {q: [] for q in range(1, 6)}, []
     prev, prev_u = set(), set()
+    masi, masi_official = [], official_masi()
     cash_periods, sizes = 0, []
     spreads = []
     for i in reb:
@@ -138,6 +139,8 @@ def run(HOLD, companies, cal, prices):
         w = [(a[2], r) for a, r in w if a and a[2] and r is not None]
         tot = sum(a for a, _ in w)
         cap.append(sum(a * r for a, r in w) / tot if tot else 0.0)
+        m0, m1 = masi_asof(masi_official, d0), masi_asof(masi_official, d1)
+        masi.append(m1 / m0 - 1 if m0 and m1 else None)
         dates.append(d1)
         n = len(scored)
         if n < 10:
@@ -152,6 +155,9 @@ def run(HOLD, companies, cal, prices):
     years = (date.fromisoformat(dates[-1]) - date.fromisoformat(first_start)).days / 365.25 if dates else None
     validation = validate_proxy(prices, cal) if HOLD == HOLDS[0] else None
     excess = [a - b for a, b in zip(strat, cap)]
+    masi_cov = sum(x is not None for x in masi)
+    masi_ok = masi_cov == len(masi) and masi
+    excess_masi = [a - b for a, b in zip(strat, masi)] if masi_ok else []
     out = {
         "generated_at": datetime.now(timezone.utc).isoformat(), "status": "RESEARCH_ONLY",
         "period": {"start": first_start, "end": dates[-1] if dates else None, "years": round(years, 2) if years else None, "rebalances": len(dates)},
@@ -159,6 +165,9 @@ def run(HOLD, companies, cal, prices):
                        "execution": "clôture de la séance suivant le signal", "risk_free_annual_pct": 100 * RF_ANNUAL,
                        "eligibility": "catégorie ÉLIGIBLE à la date du signal (montant moyen 20 j ≥ 1 M MAD)"},
         "strategy": stats(strat, years), "equal_weight_universe": stats(univ, years), "cap_weighted_proxy_masi": stats(cap, years),
+        "masi_official": stats(masi, years) if masi_ok else {"status": "INCOMPLETE", "covered_periods": masi_cov, "periods": len(masi)},
+        "excess_vs_masi": {"mean_period_pct": round(100 * mean(excess_masi), 3), "t_stat": tstat(excess_masi),
+                           "hit_rate_pct": round(100 * sum(e > 0 for e in excess_masi) / len(excess_masi), 1)} if excess_masi else None,
         "excess_vs_proxy": {"mean_period_pct": round(100 * mean(excess), 3) if excess else None, "t_stat": tstat(excess),
                             "hit_rate_pct": round(100 * sum(e > 0 for e in excess) / len(excess), 1) if excess else None},
         "quintiles": {f"Q{q}": round(100 * mean(v), 3) for q, v in quint.items() if v},
@@ -168,7 +177,7 @@ def run(HOLD, companies, cal, prices):
         "dates": dates, "proxy_validation": validation,
         "limits": ["Rendements de prix : dividendes non inclus (stratégie et références).",
                    "Biais de survivance : univers limité aux titres cotés au 09/10/2026.",
-                   "Proxy MASI pondéré par la capitalisation totale, non flottante : approximation de l'indice officiel.",
+                   "Référence principale : MASI officiel (résumés de séance) ; le proxy pondéré par la capitalisation totale sert de contrôle.",
                    "Coûts de transaction : hypothèse de 0,6 % par aller simple ; impact de marché non modélisé au-delà du filtre de liquidité.",
                    "Environ 3 ans d'historique : une seule phase de marché, résultats statistiquement fragiles.",
                    "Performance passée : ne préjuge en rien des performances futures."],
@@ -193,6 +202,26 @@ def main():
         st, px, ew = v["strategy"] or {}, v["cap_weighted_proxy_masi"] or {}, v["equal_weight_universe"] or {}
         print(f"H{h}: stratégie {st.get('annualized_return_pct')} % (MDD {st.get('max_drawdown_pct')}) | univers EW {ew.get('annualized_return_pct')} | proxy MASI {px.get('annualized_return_pct')} | excès t={v['excess_vs_proxy']['t_stat']} | Q1-Q5 t={v['q1_minus_q5']['t_stat']}")
     print("validation proxy", out["proxy_validation"])
+
+
+def official_masi():
+    """Clôtures MASI de source officielle (résumés de séance ou séance clôturée), par date."""
+    p = Path("data/market_history.json")
+    if not p.exists():
+        return {}
+    return {r["date"]: r["masi"] for r in json.loads(p.read_text(encoding="utf-8"))
+            if r.get("masi") and "Bourse de Casablanca" in str(r.get("masi_source", ""))}
+
+
+def masi_asof(series, d, tolerance_days=5):
+    """Dernière clôture officielle ≤ d, si elle date de moins de tolerance_days (séance absente de l'archive)."""
+    if d in series:
+        return series[d]
+    prior = [k for k in series if k <= d]
+    if not prior:
+        return None
+    k = max(prior)
+    return series[k] if (date.fromisoformat(d) - date.fromisoformat(k)).days <= tolerance_days else None
 
 
 def validate_proxy(prices, cal):
