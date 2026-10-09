@@ -1,57 +1,94 @@
-"""Casablanca Stock Exchange official-data collector (V1).
+"""Collecteur MASI officiel (Bourse de Casablanca).
 
-Primary source: official Bourse de Casablanca pages.
-The collector is deliberately fail-closed: if required fields cannot be
-validated, it writes nothing to market_history.json.
+1. Historique officiel de l'indice (api/live-market/indices/historical) : comble
+   les séances manquantes et remplace toute valeur MASI non officielle.
+2. Statut de séance officiel : la séance du jour n'est écrite qu'une fois clôturée,
+   datée par la date de séance (et non par la date de collecte).
+
+Les champs volume_mad / breadth existants (autres sources) sont conservés tels quels
+avec leur provenance ; les nouvelles séances les laissent à null plutôt que de mélanger
+des bases de calcul différentes. Le montant officiel du jour est stocké séparément
+dans volume_mad_official.
+Échoue (code 1) si l'historique officiel de l'indice est inaccessible.
 """
-import json, re
+import json, sys
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.request import Request, urlopen
-import ssl, certifi
+import casablanca_source as cb
 
-HOME="https://www.casablanca-bourse.com/"
-OUT=Path("data/market_history.json")
-UA="Morocco-Liquidity-Radar/1.0 (+GitHub Actions)"
+OUT = Path("data/market_history.json")
+REPORT = Path("data/masi_collection_report.json")
+SRC = "Bourse de Casablanca (indices/historical)"
 
-def fetch(url):
-    req=Request(url,headers={"User-Agent":UA,"Accept-Language":"fr-FR,fr;q=0.9"})
-    with urlopen(req,timeout=30) as r:
-        return r.read().decode("utf-8","ignore")
-
-def number(s):
-    return float(s.replace("\u202f","").replace(" ","").replace(",", "."))
-
-def parse_home(html):
-    # Fallback official snapshot parser. Bulletin/PDF backfill is a separate stage.
-    text=re.sub(r"<[^>]+>"," ",html)
-    text=re.sub(r"\s+"," ",text)
-    masi=re.search(r"MASI\s*[+\-]?\d+[,.]\d+%\s*([\d\s]+[,.]\d+)",text,re.I)
-    vol=re.search(r"VOLUME GLOBAL\s*([\d\s]+)\s*MAD",text,re.I)
-    if not masi or not vol: return None
-    return {"masi":number(masi.group(1)),"volume_mad":number(vol.group(1))}
-
-def validate(row):
-    return 1000 < row["masi"] < 100000 and 0 <= row["volume_mad"] < 1e12
-
-def upsert(row):
-    rows=json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else []
-    rows=[x for x in rows if x.get("date")!=row["date"]]
-    rows.append(row); rows.sort(key=lambda x:x["date"])
-    OUT.write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding="utf-8")
 
 def main():
-    html=fetch(HOME)
-    p=parse_home(html)
-    if not p or not validate(p):
-        raise SystemExit("Official market snapshot failed validation; nothing written.")
-    # GitHub job runs after market close; date is retrieval date until bulletin confirms session date.
-    today=datetime.now(timezone.utc).date().isoformat()
-    p.update({"date":today,"source":"Bourse de Casablanca","source_url":HOME,
-              "retrieved_at":datetime.now(timezone.utc).isoformat(),
-              "quality":"official_snapshot_pending_bulletin_confirmation",
-              "breadth":None})
-    upsert(p)
-    print(json.dumps(p,ensure_ascii=False))
+    now = datetime.now(timezone.utc).isoformat()
+    rows = {r["date"]: r for r in json.loads(OUT.read_text(encoding="utf-8"))} if OUT.exists() else {}
+    rep = {"run_at": now, "source": cb.BASE + "/api/live-market/indices/historical?symbol=MASI",
+           "added": [], "corrected": [], "errors": []}
+    try:
+        snap = cb.live_snapshot()
+    except Exception as e:
+        snap = None
+        rep["errors"].append(f"live_snapshot: {type(e).__name__}: {e}")
+    today = datetime.now(timezone.utc).astimezone(cb.TZ).date().isoformat()
+    try:
+        hist, _ = cb.index_history("MASI")
+        # la valeur du jour n'est officielle qu'après clôture
+        hist = [h for h in hist if h["date"] < today or (snap and snap["session_status"] == "closed")]
+    except Exception as e:
+        hist = []
+        rep["errors"].append(f"index_history: {type(e).__name__}: {e}")
+    rep["official_sessions_received"] = len(hist)
+    if hist:
+        rep["official_first"], rep["official_last"] = hist[0]["date"], hist[-1]["date"]
+    for h in hist:
+        if not (1000 < h["close"] < 100000):
+            rep["errors"].append(f"valeur hors bornes {h}")
+            continue
+        r = rows.get(h["date"])
+        if r is None:
+            rows[h["date"]] = {"date": h["date"], "masi": h["close"], "volume_mad": None, "breadth": None,
+                               "source": SRC, "masi_source": SRC, "quality": "official_index_history", "collected_at": now}
+            rep["added"].append(h["date"])
+        elif r.get("masi_source") != SRC:
+            old = r.get("masi")
+            if old is None or abs(h["close"] / old - 1) > 0.0005:
+                rep["corrected"].append({"date": h["date"], "previous": old, "previous_source": r.get("source"), "official": h["close"]})
+            r["masi"] = h["close"]
+            r["masi_source"] = SRC
 
-if __name__=="__main__": main()
+    try:
+        if snap is None:
+            raise RuntimeError("instantané indisponible")
+        rep["session_status"], rep["session_date"] = snap["session_status"], snap["session_date"]
+        idx = snap["index"] or {}
+        if snap["session_status"] == "closed" and snap["session_date"] and idx.get("valeur"):
+            acts = snap["actions"]
+            up = sum(1 for a in acts if (a.get("variation") or 0) > 0)
+            down = sum(1 for a in acts if (a.get("variation") or 0) < 0)
+            d = snap["session_date"]
+            r = rows.setdefault(d, {"date": d, "volume_mad": None, "source": SRC})
+            r.update({"masi": float(idx["valeur"]), "masi_source": "Bourse de Casablanca (live-market, séance clôturée)",
+                      "volume_mad_official": round(sum(a.get("volume") or 0 for a in acts), 2),
+                      "breadth": round(up / (up + down), 4) if up + down else None,
+                      "breadth_source": "Bourse de Casablanca live-market/actions",
+                      "quality": "official_session_close", "collected_at": now})
+            rep["session_written"] = d
+        else:
+            rep["session_written"] = None
+    except Exception as e:
+        rep["errors"].append(f"live_snapshot: {type(e).__name__}: {e}")
+
+    ordered = [rows[k] for k in sorted(rows)]
+    if hist or rep.get("session_written"):
+        OUT.write_text(json.dumps(ordered, ensure_ascii=False, indent=2), encoding="utf-8")
+    rep["total_sessions"] = len(ordered)
+    REPORT.write_text(json.dumps(rep, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({k: (v if not isinstance(v, list) else len(v)) for k, v in rep.items()}, ensure_ascii=False))
+    if not hist:
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
