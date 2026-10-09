@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T19:19:57.404317+00:00",
+ "generated_at": "2026-10-09T19:28:52.348764+00:00",
  "source_registry": "data/fundamentals_sources.json",
  "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
  "companies": [
@@ -15,7 +15,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
@@ -123,7 +123,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -234,7 +234,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "UNREADABLE",
    "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
   },
@@ -250,7 +250,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "SECTOR_MODEL_PENDING",
    "reason": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués"
   },
@@ -266,7 +266,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "SECTOR_MODEL_PENDING",
    "reason": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués"
   },
@@ -282,7 +282,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -394,7 +394,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -492,7 +492,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable"
@@ -583,7 +583,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "SECTOR_MODEL_PENDING",
    "reason": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués"
   },
@@ -599,7 +599,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -748,7 +748,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -897,7 +897,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -970,7 +970,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables",
@@ -1046,7 +1046,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "BPA publié incohérent avec résultat / nombre de titres (rapport 1.07)",
@@ -1168,7 +1168,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
@@ -1290,7 +1290,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "BPA publié incohérent avec résultat / nombre de titres (rapport 0.00)",
@@ -1429,7 +1429,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "chiffre d'affaires introuvable"
@@ -1532,7 +1532,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -1632,7 +1632,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -1716,7 +1716,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
@@ -1789,7 +1789,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -1900,7 +1900,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -1954,7 +1954,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable"
@@ -2027,7 +2027,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -2083,7 +2083,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "BPA publié incohérent avec résultat / nombre de titres (rapport 1.65)"
@@ -2206,7 +2206,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -2320,7 +2320,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "UNREADABLE",
    "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
   },
@@ -2336,7 +2336,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
@@ -2407,7 +2407,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "BPA publié incohérent avec résultat / nombre de titres (rapport 0.00)",
@@ -2503,7 +2503,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -2556,7 +2556,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
@@ -2630,7 +2630,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [
@@ -2753,7 +2753,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -2843,7 +2843,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -2957,7 +2957,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -3049,7 +3049,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -3127,7 +3127,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "UNREADABLE",
    "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
   },
@@ -3143,7 +3143,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -3245,7 +3245,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "SECTOR_MODEL_PENDING",
    "reason": "modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués"
   },
@@ -3261,7 +3261,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "UNREADABLE",
    "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
   },
@@ -3277,7 +3277,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -3400,7 +3400,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
@@ -3474,7 +3474,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
@@ -3558,7 +3558,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "UNREADABLE",
    "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"
   },
@@ -3574,7 +3574,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable"
@@ -3636,7 +3636,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [
@@ -3751,7 +3751,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable",
@@ -3796,7 +3796,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "REJECTED",
    "errors": [
     "résultat net part du groupe introuvable"
@@ -3886,7 +3886,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-09T19:19:57.404317+00:00",
+   "collected_at": "2026-10-09T19:28:52.348764+00:00",
    "status": "VERIFIED",
    "errors": [],
    "notes": [],
