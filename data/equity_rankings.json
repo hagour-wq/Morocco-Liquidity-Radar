@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-09T12:17:21.795267+00:00",
+  "generated_at": "2026-10-09T13:17:37.326185+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Value 30%, quality 25%, growth 20%, leverage 15%, dividend 10%. Non-bank positive earnings comparables only.",
-    "short_term": "Momentum 5D 35%, 20D 25%, distance SMA20 20%, relative volume 10%, realized volatility 10%. At least 25 dated closes and daily volumes required.",
+    "short_term": "Momentum 5 séances 35 %, 20 séances 25 %, position clôture / MM50 (MM20 si < 50 séances) 20 %, volume relatif 10 %, volatilité annualisée 20 j (inverse) 10 %. Minimum 25 séances après toute opération sur titres présumée. ÉLIGIBLE : montant moyen 20 j ≥ 1 M MAD et aucune séance sans échange sur 60 j ; sinon À SURVEILLER. Volume inconnu (enregistrement incomplet de la source) exclu des moyennes, jamais compté comme zéro.",
     "warning": "Rankings indicate relative factor scores, NOT expected returns or guaranteed profitability. Missing data exclude candidates."
   },
   "long_term": {
@@ -17,63 +17,324 @@
         "ticker": "BCP",
         "name": "BANQUE CENTRALE POPULAIRE",
         "status": "RESEARCH_ONLY",
-        "score": 45.6,
+        "category": "ELIGIBLE",
+        "score": 45.1,
         "reference_date": "2026-10-08",
+        "close": 246.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
         "return_5d_pct": -0.4,
         "return_20d_pct": -0.81,
+        "momentum_60d_pct": -5.38,
         "volume_ratio": 0.1,
-        "volatility_daily_pct": 1.47,
-        "note": "Technical ranking is not a forecast or expected return."
+        "volatility_annual_pct": 23.65,
+        "rsi14": 49.0,
+        "sma20": 245.78,
+        "sma50": 247.56,
+        "sma200": 255.93,
+        "close_vs_sma200_pct": -3.88,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -0.502,
+          "signal": -0.299,
+          "histogram": -0.204
+        },
+        "atr14": 5.86,
+        "atr14_pct": 2.38,
+        "bollinger": {
+          "middle": 245.782,
+          "upper": 253.813,
+          "lower": 237.752,
+          "percent_b": 0.514,
+          "bandwidth_pct": 6.534
+        },
+        "support_resistance": {
+          "support": 235.0,
+          "resistance": 251.9,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 21579962,
+          "avg_turnover_mad_60d": 10052342,
+          "avg_shares_20d": 87263,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 47.5,
+          "momentum_20d": 47.3,
+          "trend": 46.8,
+          "volume": 0,
+          "volatility": 72.7
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
       },
       {
         "ticker": "ATW",
         "name": "ATTIJARIWAFA BANK",
         "status": "RESEARCH_ONLY",
-        "score": 41.8,
+        "category": "ELIGIBLE",
+        "score": 41.6,
         "reference_date": "2026-10-08",
+        "close": 670.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
         "return_5d_pct": -1.18,
         "return_20d_pct": -5.17,
+        "momentum_60d_pct": -1.76,
         "volume_ratio": 0.89,
-        "volatility_daily_pct": 0.9,
-        "note": "Technical ranking is not a forecast or expected return."
+        "volatility_annual_pct": 13.7,
+        "rsi14": 34.0,
+        "sma20": 684.73,
+        "sma50": 692.97,
+        "sma200": 705.38,
+        "close_vs_sma200_pct": -5.02,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -7.293,
+          "signal": -5.846,
+          "histogram": -1.447
+        },
+        "atr14": 9.5,
+        "atr14_pct": 1.42,
+        "bollinger": {
+          "middle": 684.73,
+          "upper": 706.632,
+          "lower": 662.828,
+          "percent_b": 0.164,
+          "bandwidth_pct": 6.397
+        },
+        "support_resistance": {
+          "support": 661.0,
+          "resistance": 710.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 39457216,
+          "avg_turnover_mad_60d": 26763486,
+          "avg_shares_20d": 57846,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 42.6,
+          "momentum_20d": 32.8,
+          "trend": 33.4,
+          "volume": 25.8,
+          "volatility": 92.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
       },
       {
         "ticker": "IAM",
         "name": "ITISSALAT AL-MAGHRIB",
         "status": "RESEARCH_ONLY",
-        "score": 29.2,
+        "category": "ELIGIBLE",
+        "score": 27.9,
         "reference_date": "2026-10-08",
+        "close": 90.0,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
         "return_5d_pct": -3.69,
         "return_20d_pct": -7.22,
+        "momentum_60d_pct": -1.64,
         "volume_ratio": 0.39,
-        "volatility_daily_pct": 1.16,
-        "note": "Technical ranking is not a forecast or expected return."
+        "volatility_annual_pct": 17.75,
+        "rsi14": 31.1,
+        "sma20": 94.16,
+        "sma50": 96.15,
+        "sma200": 98.08,
+        "close_vs_sma200_pct": -8.24,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -1.602,
+          "signal": -1.078,
+          "histogram": -0.524
+        },
+        "atr14": 1.55,
+        "atr14_pct": 1.72,
+        "bollinger": {
+          "middle": 94.163,
+          "upper": 98.169,
+          "lower": 90.158,
+          "percent_b": -0.02,
+          "bandwidth_pct": 8.508
+        },
+        "support_resistance": {
+          "support": 89.9,
+          "resistance": 97.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 13720991,
+          "avg_turnover_mad_60d": 15499731,
+          "avg_shares_20d": 144433,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 26.9,
+          "momentum_20d": 25.9,
+          "trend": 18.0,
+          "volume": 0,
+          "volatility": 84.5
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
       },
       {
         "ticker": "MSA",
         "name": "SOCIETE D'EXPLOITATION DES PORTS - MARSA MAROC",
         "status": "RESEARCH_ONLY",
-        "score": 17.4,
+        "category": "ELIGIBLE",
+        "score": 16.5,
         "reference_date": "2026-10-08",
+        "close": 744.9,
+        "sessions_used": 728,
+        "segment_start": "2023-10-23",
+        "corporate_action_date": null,
         "return_5d_pct": -5.71,
         "return_20d_pct": -14.48,
-        "volume_ratio": 0.83,
-        "volatility_daily_pct": 1.21,
-        "note": "Technical ranking is not a forecast or expected return."
+        "momentum_60d_pct": -13.88,
+        "volume_ratio": 0.82,
+        "volatility_annual_pct": 15.19,
+        "rsi14": 18.8,
+        "sma20": 808.37,
+        "sma50": 842.65,
+        "sma200": 860.78,
+        "close_vs_sma200_pct": -13.46,
+        "trend_basis": "MM50",
+        "macd": {
+          "macd": -26.275,
+          "signal": -19.741,
+          "histogram": -6.534
+        },
+        "atr14": 17.93,
+        "atr14_pct": 2.41,
+        "bollinger": {
+          "middle": 808.37,
+          "upper": 875.144,
+          "lower": 741.596,
+          "percent_b": 0.025,
+          "bandwidth_pct": 16.521
+        },
+        "support_resistance": {
+          "support": 737.0,
+          "resistance": 875.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 31869245,
+          "avg_turnover_mad_60d": 19882792,
+          "avg_shares_20d": 39254,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 14.3,
+          "momentum_20d": 1.7,
+          "trend": 0,
+          "volume": 21.5,
+          "volatility": 89.6
+        },
+        "unavailable": [],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
       },
       {
         "ticker": "MNG",
         "name": "MANAGEM",
         "status": "RESEARCH_ONLY",
-        "score": 14.1,
+        "category": "ELIGIBLE",
+        "score": 13.9,
         "reference_date": "2026-10-08",
+        "close": 1495.0,
+        "sessions_used": 48,
+        "segment_start": "2026-07-27",
+        "corporate_action_date": "2026-07-27",
         "return_5d_pct": -5.92,
         "return_20d_pct": -16.94,
-        "volume_ratio": 0.3,
-        "volatility_daily_pct": 2.08,
-        "note": "Technical ranking is not a forecast or expected return."
+        "momentum_60d_pct": null,
+        "volume_ratio": 0.25,
+        "volatility_annual_pct": 31.55,
+        "rsi14": 36.1,
+        "sma20": 1595.7,
+        "sma50": null,
+        "sma200": null,
+        "close_vs_sma200_pct": null,
+        "trend_basis": "MM20",
+        "macd": null,
+        "atr14": 66.18,
+        "atr14_pct": 4.43,
+        "bollinger": {
+          "middle": 1595.7,
+          "upper": 1725.506,
+          "lower": 1465.894,
+          "percent_b": 0.112,
+          "bandwidth_pct": 16.269
+        },
+        "support_resistance": {
+          "support": 1380.0,
+          "resistance": 1798.0,
+          "window_sessions": 20
+        },
+        "liquidity": {
+          "avg_turnover_mad_20d": 29150237,
+          "avg_turnover_mad_60d": 40192443,
+          "avg_shares_20d": 18049,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 1,
+          "window_sessions": 48,
+          "tier": "élevée",
+          "warning": null
+        },
+        "incomplete_volume_dates": [
+          "2026-09-17"
+        ],
+        "components": {
+          "momentum_5d": 13.0,
+          "momentum_20d": 0,
+          "trend": 18.4,
+          "volume": 0,
+          "volatility": 56.9
+        },
+        "unavailable": [
+          "sma50",
+          "sma200",
+          "macd"
+        ],
+        "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."
       }
     ],
+    "watch": [],
     "excluded": [],
     "snapshot_watchlist": [
       {
