@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T12:06:51.377319+00:00",
+  "run_at": "2026-10-09T12:11:37.672621+00:00",
   "source": "Bourse de Casablanca",
   "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
   "session_status": "open",
@@ -22,7 +22,8 @@
       "last_close": 670.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "zero_volume_sessions": 1
+      "zero_volume_sessions": 1,
+      "corporate_actions_suspected": []
     },
     "BCP": {
       "status": "OK",
@@ -33,7 +34,8 @@
       "last_close": 246.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "zero_volume_sessions": 1
+      "zero_volume_sessions": 1,
+      "corporate_actions_suspected": []
     },
     "IAM": {
       "status": "OK",
@@ -44,7 +46,8 @@
       "last_close": 90.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "zero_volume_sessions": 2
+      "zero_volume_sessions": 2,
+      "corporate_actions_suspected": []
     },
     "MSA": {
       "status": "OK",
@@ -55,7 +58,8 @@
       "last_close": 744.9,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "zero_volume_sessions": 1
+      "zero_volume_sessions": 1,
+      "corporate_actions_suspected": []
     },
     "MNG": {
       "status": "OK",
@@ -68,10 +72,19 @@
       "flags_sample": [
         [
           "2026-07-27",
-          "move_gt_10pct"
+          "corporate_action_suspected"
         ]
       ],
-      "zero_volume_sessions": 9
+      "zero_volume_sessions": 9,
+      "corporate_actions_suspected": [
+        {
+          "date": "2026-07-27",
+          "estimated_factor": 9,
+          "previous_close": 12500.0,
+          "open": 1340.0,
+          "status": "à confirmer par un avis officiel ; aucune série ajustée n'est produite"
+        }
+      ]
     }
   },
   "status": "OK"
