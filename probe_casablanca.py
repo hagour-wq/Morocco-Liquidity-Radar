@@ -181,3 +181,34 @@ for path in ["/instruments","/stock-live","/indices","/market-summary"]:
         report["history_variants"]["ep"+path]={"status":st,"sample":json.dumps(d,ensure_ascii=False)[:600]}
     except Exception as e: report["history_variants"]["ep"+path]={"error":f"{type(e).__name__}: {e}"[:200]}
 (OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+
+# Étape 2e : profondeur historique, ajusté vs brut, historique MASI
+report["depth"]={}
+for y in range(2026,2009,-1):
+    q={"instrument":"ATW  ","market":"comptant","type":"actions","startDate":f"{y-1}-10-09","endDate":f"{y}-10-08","pageNumber":1,"pageSize":1000}
+    try:
+        st,d=getj(base+urlencode(q)); it=d.get("items",[])
+        report["depth"][str(y)]={"n":len(it),"first":it[-1]["seance"] if it else None,"last":it[0]["seance"] if it else None}
+        if not it: break
+    except Exception as e: report["depth"][str(y)]={"error":str(e)[:200]}; break
+for adj in ("false","true"):
+    q={"instrument":"ATW  ","market":"comptant","type":"actions","startDate":"2025-10-09","endDate":"2026-10-08","pageNumber":1,"pageSize":1000,"isCoursAjuste":adj}
+    st,d=getj(base+urlencode(q)); (OUT/f"atw_1y_adj_{adj}.json").write_text(json.dumps(d,ensure_ascii=False),encoding="utf-8")
+for k,u in {"masi_cours":"https://www.casablanca-bourse.com/live-market/indices/cours?symbol=MASI"}.items():
+    try:
+        st,h,b=get(u,ctx); t=b.decode("utf-8","ignore"); (OUT/f"page_{k}.html").write_text(t,encoding="utf-8")
+        report["pages"][k]={"status":st,"bytes":len(b)}
+        for s in re.findall(r'<script[^>]+src="(/sites/default/files/js/[^"]+)"',t):
+            s=_h.unescape(s)
+            if s in seen: continue
+            seen.add(s); _,_,js=get(urljoin("https://www.casablanca-bourse.com/",s),ctx,"*/*"); js=js.decode("utf-8","ignore")
+            (OUT/f"js_idx_{len(seen)}.js").write_text(js,encoding="utf-8")
+    except Exception as e: report["pages"][k]={"error":str(e)[:200]}
+for q in [{"instrument":"MASI","market":"comptant","type":"indices","startDate":"2025-10-09","endDate":"2026-10-08","pageNumber":1,"pageSize":1000},
+          {"instrument":"MASI","startDate":"2025-10-09","endDate":"2026-10-08"}]:
+    for ep in ["/index-historical","/indices-historical","/indice-historical","/stock-historical"]:
+        try:
+            st,d=getj(urljoin("https://www.casablanca-bourse.com/",api)+ep+"?"+urlencode(q))
+            report["history_variants"][f"masi{ep}_{len(q)}"]={"status":st,"sample":json.dumps(d,ensure_ascii=False)[:300]}
+        except Exception as e: report["history_variants"][f"masi{ep}_{len(q)}"]={"error":str(e)[:120]}
+(OUT/"casablanca_probe.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
