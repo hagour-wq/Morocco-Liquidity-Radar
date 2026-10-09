@@ -1,0 +1,304 @@
+https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/managem_2025.pdf
+
+(1) capital personnel débiteur (–)
+(2) bénéficiaire (+); déficitaire (–)
+(1)  Variation de stocks : stock final-stock initial; augmentation (+) ; diminution (-)
+(2)  Achats revendus ou consommés : achats - variation de stocks.
+BILAN ACTIF  Exercice du 01/01/2025 au 31/12/2025
+ACTIF
+Exercice Exercice Précédent
+Brut Amortissements et 
+provisions Net Net
+ACTIF IMMOBILISÉ
+IMMOBILISATIONS EN NON VALEURS (A) 66 442 445,86 55 519 313,31 10 923 132,55 15 253 826,83
+• Frais préliminaires 49 096 145,75 38 340 490,65 10 755 655,10 14 340 874,38
+• Charges à repartir sur plusieurs exercices 17 346 300,11 17 178 822,66 167 477,45 912 952,45
+• Primes de remboursement des obligations 
+IMMOBILISATIONS INCORPORELLES (B) 238 589 612,97 230 470 884,46 8 118 728,51 32 984 266,06
+• Immobilisation en recherche et développement 187 063 132,74 187 063 132,74
+• Brevets, marques, droits et valeurs similaires 46 595 289,47 43 407 751,72 3 187 537,75 2 194 148,19
+• Fonds commercial 
+• Autres immobilisations incorporelles 4 931 190,76 4 931 190,76 30 790 117,87
+IMMOBILISATIONS CORPORELLES (C) 202 607 037,24 136 064 300,75 66 542 736,49 64 022 487,37
+• Terrains 12 787 930,78 12 787 930,78 12 787 930,78
+• Constructions 73 263 750,15 33 594 813,10 39 668 937,05 41 182 190,77
+• Installations techniques, matériel et outillage 6 565 706,35 5 764 966,65 800 739,70 707 546,17
+• Matériel de transport 2 336 897,74 2 336 897,74 221 735,45
+• Mobilier, matériel de bureau et aménagements divers 99 636 404,45 94 367 623,26 5 268 781,19 5 762 705,85
+• Autres immobilisations corporelles 
+• Immobilisations corporelles en cours 8 016 347,77 8 016 347,77 3 360 378,35
+IMMOBILISATIONS FINANCIÈRES (D) 8 289 088 339,72 8 289 088 339,72 8 173 946 123,34
+• Prêts immobilisés 3 268 378 161,66 3 268 378 161,66 3 458 166 751,49
+• Autres créances financières 10 000,00 10 000,00 10 000,00
+• Titres de participation 5 020 700 178,06 5 020 700 178,06 4 715 769 371,85
+• Autres titres immobilisés 
+ÉCARTS DE CONVERSION-ACTIF  (E) 268 744 955,11 268 744 955,11 13 222 902,27
+• Diminution des créances immobilisées 268 744 955,11 268 744 955,11 13 222 902,27
+• Augmentation des dettes de financement 
+TOTAL I (A+B+C+D+E) 9 065 472 390,90 422 054 498,52 8 643 417 892,38 8 299 429 605,87
+ACTIF CIRCULANT
+STOCKS (F)
+• Marchandises 
+• Matières et fournitures consommables 
+• Produits en cours 
+• Produits intermédiaires et produits résiduels 
+• Produits finis 
+CRÉANCES DE L'ACTIF CIRCULANT  (G) 8 772 985 953,15 8 772 985 953,15 7 518 472 785,98
+• Fournisseurs, débiteurs, avances et acomptes 29 408 755,77 29 408 755,77 29 167 413,77
+• Clients et comptes rattachés 1 789 183 622,61 1 789 183 622,61 1 554 813 353,85
+• Personnel - Débiteur 66 712,07 66 712,07 78 179,22
+• État - Débiteur 145 441 799,41 145 441 799,41 127 128 791,69
+• Comptes d'associés 6 782 682 817,89 6 782 682 817,89 5 779 752 689,60
+• Autres débiteurs 9 476 637,87 9 476 637,87 26 949 635,32
+• Comptes de régularisation-Actif 16 725 607,53 16 725 607,53 582 722,53
+TITRES ET VALEURS DE PLACEMENT (H) 
+ÉCARTS DE CONVERSION-ACTIF  (I)  
+(Eléments circulants) 123 461 873,15 123 461 873,15 11 992 270,61
+TOTAL II (F+G+H+I ) 8 896 447 826,30 8 896 447 826,30 7 530 465 056,59
+TRÉSORERIE
+TRESORERIE-ACTIF 452 345 020,92 452 345 020,92 120 025 251,64
+• Chéques et valeurs à encaisser 
+• Banques, TG et CCP débiteurs 452 219 931,61 452 219 931,61 119 853 505,82
+• Caisse, régie d'avances et accréditifs 125 089,31 125 089,31 171 745,82
+TOTAL III 452 345 020,92 452 345 020,92 120 025 251,64
+TOTAL GÉNÉRAL I+II+III 18 414 265 238,12 422 054 498,52 17 992 210 739,60 15 949 919 914,10
+BILAN PASSIF  Exercice clos le 31 décembre 2025
+PASSIF Exercice Exercice Précédent 
+Net
+FINANCEMENT PERMANENT
+CAPITAUX PROPRES 6 417 759 925,32 6 360 493 281,12
+Capital social ou personnel   (1) 1 186 467 600,00 1 186 467 600,00
+moins: actionnaires, capital souscrit non appelé
+=  Capital appelé dont versé 1 186 467 600,00 1 186 467 600,00
+Primes d’émission, de fusion, d’apport 4 494 153 323,00 4 494 153 323,00
+Ecarts de réévaluation
+Réserve légale 118 646 750,00 99 913 080,00
+Autres réserves 100 646 510,00
+Report à nouveau  (2) 86 638 568,12 263 387 842,89
+Résultats nets en Instance d’affectation  (2)
+Résultat net de l’exercice  (2) 531 853 684,20 215 924 925,23
+Total des Capitaux propres       (A) 6 417 759 925,32 6 360 493 281,12
+CAPITAUX PROPRES ASSIMILES (B)
+Subventions d’investissement
+Autres provisions réglementées
+DETTES DE FINANCEMENT (C) 6 000 000 000,00 5 000 000 000,00
+Emprunts Obligataires 2 000 000 000,00 2 000 000 000,00
+Autres dettes de financement 4 000 000 000,00 3 000 000 000,00
+PROVISIONS DURABLES POUR RISQUES & CHARGES (D) 268 744 955,11 13 222 902,27
+Provisions pour risques 268 744 955,11 13 222 902,27
+Provisions pour charges
+ECARTS DE CONVERSION - PASSIF (E) 3 604 232,95 25 291 725,60
+Augmentation des créances Immobilisées 3 604 232,95 25 291 725,60
+Diminution des dettes de financement
+TOTAL I (A+B+C+D+E) 12 690 109 113,38 11 399 007 908,99
+PASSIF CIRCULANT
+DETTES DU PASSIF CIRCULANT (F) 2 170 286 708,58 1 942 500 298,52
+• Fournisseurs et comptes rattachés 57 358 598,46 69 554 410,59
+• Clients créditeurs, avances et acomptes
+• Personnel - Créditeur 46 148 486,02 19 025 990,57
+• Organismes Sociaux 27 881 789,04 14 589 845,47
+• État - Créditeur 26 699 926,72 53 905 211,61
+• Comptes d'associés - Créditeurs 1 834 858 412,06 1 656 843 412,06
+• Autres Créanciers
+• Comptes de régularisation - Passif 177 339 496,28 128 581 428,22
+AUTRES PROVISIONS POUR RISQUES ET CHARGES (G) 123 461 873,15 11 992 270,61
+ÉCARTS DE CONVERSION - PASSIF (Eléments circulants) (H) 57 845 978,47 96 343 427,33
+TOTAL II (F+G+H) 2 351 594 560,20 2 050 835 996,46
+TRÉSORERIE
+TRÉSORERIE - PASSIF 2 950 507 066,02 2 500 076 008,65
+• Crédits d’escompte
+• Crédits de trésorerie 2 950 000 000,00 2 500 000 000,00
+• Banques (soldes créditeurs) 507 066,02 76 008,65
+TOTAL III 2 950 507 066,02 2 500 076 008,65
+TOTAL GÉNÉRAL I+II+III 17 992 210 739,60 15 949 919 914,10
+COMPTE DE PRODUITS ET CHARGES  (HORS TAXES) 
+NATURE
+Opérations
+Totaux
+de l’exercice
+3=1+2
+Totaux de
+l’exercice
+précédent
+4
+Propres à
+l’exercice
+1
+Concernant les
+exercices
+précédents
+2
+EXPLOITATION
+I
+PRODUITS D’EXPLOITATION 539 605 454,35 539 605 454,35 493 108 481,33
+• Ventes de marchandises (en l'état)
+• Ventes de biens et services produits 531 120 142,59 531 120 142,59 467 157 384,92
+• Chiffres d’affaires 531 120 142,59 531 120 142,59 467 157 384,92
+• Variation de stocks de produits(±) (1)
+•  Immobilisations produites par l’entreprise pour 
+elle-même 543 511,76 543 511,76
+• Subventions d’exploitation
+• Autres produits d'exploitation 7 941 800,00 7 941 800,00 8 025 000,00
+• Reprises d'exploitation, transferts de charges 17 926 096,41
+TOTAL I 539 605 454,35 539 605 454,35 493 108 481,33
+II
+CHARGES D’EXPLOITATION 389 625 214,94 54 851,00 389 680 065,94 321 969 639,97
+• Achats revendus (2) de marchandises
+•  Achats consommés (2) de matières et 
+   fournitures 51 720 184,03 54 851,00 51 775 035,03 37 626 263,91
+• Autres charges externes 91 287 193,62 91 287 193,62 112 921 993,03
+• Impôts et taxes 29 452 500,54 29 452 500,54 27 047 428,34
+• Charges de personnel 173 606 053,45 173 606 053,45 127 089 276,83
+• Autres charges d’exploitation 2 760 000,00 2 760 000,00 2 057 000,00
+• Dotations d’exploitation 40 799 283,30 40 799 283,30 15 227 677,86
+TOTAL II 389 625 214,94 54 851,00 389 680 065,94 321 969 639,97
+III RÉSULTAT D’EXPLOITATION (I-II) 149 980 239,41 -54 851,00 149 925 388,41 171 138 841,36
+FINANCIER
+IV
+PRODUITS FINANCIERS 1 888 525 064,47 1 888 525 064,47 774 633 739,44
+•  Produits des titres de participation et autres 
+titres immobilisés 700 256 207,99 700 256 207,99 105 628 800,00
+• Gains de change 621 592,05 621 592,05 35 291,82
+• Intérêts et autres produits financiers 477 502 091,55 477 502 091,55 442 410 746,50
+• Reprises financières, transferts de charges 710 145 172,88 710 145 172,88 226 558 901,12
+TOTAL IV 1 888 525 064,47 1 888 525 064,47 774 633 739,44
+V
+CHARGES FINANCIÈRES 814 472 963,88 1 797 655,01 816 270 618,89 545 709 969,80
+• Charges d’intérêts 387 481 615,87 1 797 655,01 389 279 270,88 385 295 888,79
+• Pertes de change 27 550 515,49 27 550 515,49 320 908,13
+• Autres charges financières 7 234 004,26 7 234 004,26
+• Dotations financières 392 206 828,26 392 206 828,26 160 093 172,88
+TOTAL V 814 472 963,88 1 797 655,01 816 270 618,89 545 709 969,80
+VI RÉSULTAT FINANCIER (IV-V) 1 074 052 100,59 -1 797 655,01 1 072 254 445,58 228 923 769,64
+VII RÉSULTAT COURANT (III+VI) 1 224 032 340,00 -1 852 506,01 1 222 179 833,99 400 062 611,00
+NON COURANT
+VIII
+PRODUITS NON COURANTS 310 197 003,00 310 197 003,00 53 301 973,23
+• Produits des cessions d’immobilisations 298 869 000,00 298 869 000,00 29 733 973,23
+• Subventions d’équilibre
+• Reprises sur subventions d’investissement
+• Autres produits non courants 11 328 003,00 11 328 003,00
+• Reprises non courantes, transferts de charges 23 568 000,00
+TOTAL VIII 310 197 003,00 310 197 003,00 53 301 973,23
+IX
+CHARGES NON COURANTES 996 201 227,79 996 201 227,79 202 021 381,00
+•  Valeurs nettes d’amortissements 
+des immobilisations cédées 989 999 133,79 989 999 133,79 200 000 088,00
+• Subventions accordées
+• Autres charges non courantes 6 202 094,00 6 202 094,00 2 021 293,00
+•  Dotations non courantes aux  
+amortissements et aux provisions
+TOTAL IX 996 201 227,79 996 201 227,79 202 021 381,00
+X RÉSULTAT NON COURANT (VIII±IX) -686 004 224,79 -686 004 224,79 -148 719 407,77
+XI RÉSULTAT AVANT IMPÔTS (VII-X) 538 028 115,21 -1 852 506,01 536 175 609,20 251 343 203,23
+XII IMPÔTS SUR LES RÉSULTATS 4 321 925,00 4 321 925,00 35 418 278,00
+XIII RÉSULTAT NET (XI-XII) 533 706 190,21 -1 852 506,01 531 853 684,20 215 924 925,23
+XIV TOTAL DES PRODUITS (I+IV+VIII) 2 738 327 521,82 2 738 327 521,82 1 321 044 194,00
+XV TOTAL DES CHARGES (II+V+IX+XII) 2 204 621 331,61 1 852 506,01 2 206 473 837,62 1 105 119 268,77
+XVI RÉSULTAT NET (PRODUITS-CHARGES) 533 706 190,21 -1 852 506,01 531 853 684,20 215 924 925,23
+ÉTATS FINANCIERS SOCIAUX
+AU 31 DÉCEMBRE 2025
+ÉTATS FINANCIERS SOCIAUX
+AU 31 DÉCEMBRE 2025
+RAPPORT DES COMMISSAIRES  
+AUX COMPTES
+
+ÉTATS FINANCIERS CONSOLIDÉS
+AU 31 DÉCEMBRE 2025
+ÉTAT DE LA SITUATION FINANCIÈRE
+ACTIF (En millions de dirhams) 31-déc.-25 31-déc.-24
+Goodwill 305,4 305,4
+Immobilisations incorporelles, net 4 730,0 4 531,5
+Immobilisations corporelles net 16 613,8 14 933,7
+Immobilisations en droit d'usage 181,8 180,1
+Immeubles de placement, net 8,9 8,9
+Participations dans les entreprises associées 209,1 166,3
+Autres actifs financiers 332,4 408,4
+- Instruments dérivés de couverture 0,0 92,6
+- Prêts et créances, net 71,1 48,0
+- Actifs financiers à la juste valeur par le résultat 261,3 267,9
+Impôts différés actifs 298,1 129,2
+Autres débiteurs non courants, net 73,8 77,4
+Actifs non courants 22 753,2 20 741,0
+Stocks et en-cours, net 2 774,8 2 079,7
+Créances clients, net 2 554,8 1 686,2
+Autres débiteurs courants, net 2 909,8 2 779,7
+Trésorerie et équivalent de trésorerie 4 390,3 2 589,1
+Actifs non courants détenus en vue de la vente 2 323,0 349,6
+Actif courant 14 952,6 9 484,2
+TOTAL ACTIF 37 705,9 30 225,2
+ÉTAT DE LA SITUATION FINANCIÈRE
+PASSIF (En millions de dirhams) 31-déc.-25 31-déc.-24
+Capital 1 186,5 1 186,5
+Primes d'émission et de fusion 4 449,4 4 449,4
+Réserves 2 835,6 4 019,7
+Ecarts de conversion 4,9 412,4
+Résultat net part du groupe 3 002,0 619,8
+Capitaux propres attribuables aux actionnaires 
+ordinaires de la société mère 11 478,3 10 687,8
+Intérêts minoritaires 1 051,3 730,9
+Capitaux propres de l'ensemble consolidé 12 529,6 11 418,7
+Provisions 215,4 231,5
+Avantages du personnel 292,0 261,0
+Dettes financières non courantes 10 544,2 7 951,6
+- Instruments financiers dérivés 1 707,9 560,7
+- Dettes envers les établissements de crédit 6 751,2 5 324,7
+- Dettes représentées par un titre 2 000,0 2 000,0
+       Dont Dettes liées aux contrats à droit d'usage 85,1 66,2
+Impôts différés Passifs 10,9 12,0
+Autres créditeurs non courants 788,7 71,4
+Passifs non courants 11 851,1 8 527,4
+Dettes financières courantes 6 487,2 5 028,3
+- Instruments financiers dérivés 0,0 19,7
+- Dettes envers les établissements de crédit 6 487,2 5 008,6
+Dettes fournisseurs courantes 2 266,1 2 661,0
+Autres créditeurs courants 3 990,7 2 520,8
+Passifs liés aux actifs non courants destinés à la vente 
+et activités abandonnées 581,1 69,0
+Passif courant 13 325,2 10 279,2
+TOTAL PASSIF 25 176,3 18 806,6
+TOTAL CAPITAUX PROPRES ET PASSIFS 37 705,9 30 225,2
+COMPTE DE RÉSULTAT CONSOLIDÉ
+(En millions de dirhams) 31-déc.-25 31-déc.-24
+Chiffre d’affaires 13 693,6 8 859,4
+Autres produits de l’activité 1 047,9 363,9
+Produits des activités ordinaires 14 741,5 9 223,3
+Achats -6 497,1 -4 301,1
+Autres charges externes -4 042,5 -3 328,7
+Frais de personnel -1 416,3 -1 344,2
+Impôts et taxes -164,9 -109,1
+Amortissements et provisions d’exploitation -2 012,4 -1 368,9
+Autres produits et charges d’exploitation 3 389,0 2 481,1
+Charges d’exploitation courantes -10 744,3 -7 971,0
+Résultat d’exploitation courant 3 997,2 1 252,3
+Cessions d’actifs 0,0 1,1
+Cessions de filiales et participations -6,2 27,0
+Ecarts d’acquisition négatifs 0,0 44,6
+Autres produits et charges d’exploitation non courants 1,8 -37,2
+Autres produits et charges d’exploitation -4,4 35,4
+Résultat des activités opérationnelles 3 992,8 1 287,7
+Produits d’intérêts 96,6 58,8
+Charges d’intérêts -772,5 -529,5
+Autres produits et charges financiers 481,1 156,5
+Résultat financier -194,7 -314,3
+Résultat avant impôts des entreprises intégrées 3 798,0 973,5
+Impôts sur les bénéfices -456,0 -260,2
+Impôts différés 66,9 61,7
+Résultat net des entreprises intégrées 3 409,0 775,0
+Part dans les résultats des sociétés mises en 
+équivalence 61,4 12,5
+Résultat net des activités poursuivies 3 470,4 787,5
+Résultat net des activités abandonnées 0,0 0,0
+Résultat de l’ensemble consolidé 3 470,4 787,5
+Intérêts minoritaires 468,4 167,6
+Résultat net - Part du groupe 3 002,0 619,8
+Nb d’actions - Mère 11 864 676 11 864 676
+Calcul du résultat par action 253,1 54,8
+Le rapport financier annuel comprenant le jeu complet des états 
+financiers au 31 décembre 2025 sera mis en ligne à partir du  
+30 avril 2026 sur le site internet de Managem, à l’adresse  
+suivante: https:/ /www.managemgroup.com/
+ÉTATS FINANCIERS CONSOLIDÉS
+AU 31 DÉCEMBRE 2025
+RAPPORT DES COMMISSAIRES 
+AUX COMPTES

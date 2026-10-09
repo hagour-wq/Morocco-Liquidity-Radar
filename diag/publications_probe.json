@@ -1,0 +1,425 @@
+{
+ "pages": {
+  "0": 16,
+  "1": 16,
+  "2": 16,
+  "3": 16,
+  "4": 16,
+  "5": 16,
+  "6": 16,
+  "7": 16,
+  "8": 16,
+  "9": 16,
+  "10": 16,
+  "11": 16,
+  "12": 16,
+  "13": 16,
+  "14": 16,
+  "15": 16,
+  "16": 16,
+  "17": 16,
+  "18": 16,
+  "19": 16,
+  "20": 16,
+  "21": 16,
+  "22": 16,
+  "23": 16,
+  "24": 16,
+  "25": 16,
+  "26": 16,
+  "27": 16,
+  "28": 16,
+  "29": 16,
+  "30": 16,
+  "31": 16,
+  "32": 16,
+  "33": 16,
+  "34": 16,
+  "35": 16,
+  "36": 16,
+  "37": 16,
+  "38": 16,
+  "39": 16,
+  "40": 16,
+  "41": 16,
+  "42": 16,
+  "43": 16,
+  "44": 16,
+  "45": 16,
+  "46": 16,
+  "47": 16,
+  "48": 16,
+  "49": 16,
+  "50": 16,
+  "51": 16,
+  "52": 16,
+  "53": 16,
+  "54": 16,
+  "55": 16,
+  "56": 16,
+  "57": 16,
+  "58": 16,
+  "59": 16,
+  "60": 16,
+  "61": 16,
+  "62": 16,
+  "63": 16,
+  "64": 16,
+  "65": 16,
+  "66": 16,
+  "67": 16,
+  "68": 16,
+  "69": 16,
+  "70": 16,
+  "71": 16,
+  "72": 16,
+  "73": 16,
+  "74": 16,
+  "75": 16,
+  "76": 16,
+  "77": 16,
+  "78": 16,
+  "79": 16
+ },
+ "candidates": {
+  "ATW": [
+   {
+    "url": "/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf",
+    "ctx": "60,22%du capital de Société Générale Ghana <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-10/cp_attijariwafa_bank_accord_acquisition_participation_sg_ghana.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Atti"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/awb_s1_26.pdf",
+    "ctx": " Résultats financiers du 1er semestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/awb_s1_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - Résultats financiers du 1er semestre ",
+    "saved": "ATW_awb_s1_26.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_post_ago_02_06_26.pdf",
+    "ctx": "jariwafa Bank - CP post AGO du 2 juin 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_post_ago_02_06_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP post AGO du 2 juin "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_t1_26.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_t1_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP relatif aux indicateurs du 1er "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/awb_2025.pdf",
+    "ctx": "Box=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"> 2026-02-24 Attijariwafa Bank - Résultats financiers 2025 ",
+    "saved": "ATW_awb_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_t3_25.pdf",
+    "ctx": "tif aux indicateurs du 3ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_t3_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP relatif aux indicateurs du 3ème"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/awb_s1_25.pdf",
+    "ctx": " Résultats financiers du 1er semestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/awb_s1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - Résultats financiers du 1er semestre "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_post_age_23_06_25_0.pdf",
+    "ctx": "ariwafa Bank - CP post AGE du 23 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_post_age_23_06_25_0.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP post AGE du 23 ju"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_t1_25.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_t1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP relatif aux indicateurs du 1er "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_awb_age_23_06_25.pdf",
+    "ctx": "e convocation à l&#039;AGE du 23 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_awb_age_23_06_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - Avis de convocation à l&#"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_post_ago_30_04_25.pdf",
+    "ctx": "riwafa Bank - CP post AGO du 30 avril 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_post_ago_30_04_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP post AGO du 30 avri"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_awb_fusion_borj_attijari.pdf",
+    "ctx": "ion de Borj Attijari par Attijariwafa Bank <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_awb_fusion_borj_attijari.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - Avis de fusion-ab"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_awb_ago_30_04_25.pdf",
+    "ctx": " convocation à l&#039;AGO du 30 avril 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_awb_ago_30_04_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - Avis de convocation à l&#"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_awb_fusion_absorption_borj_attijari.pdf",
+    "ctx": "ar voie d&#039;absorption de Borj Attijari <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_awb_fusion_absorption_borj_attijari.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Attijariwafa Bank - CP relat"
+   }
+  ],
+  "BCP": [
+   {
+    "url": "/sites/default/files/pemetteur/2026-09/cp_bcp_s1_26.pdf",
+    "ctx": "relatif aux résultats du 1er semestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-09/cp_bcp_s1_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - CP relatif aux résultats d",
+    "saved": "BCP_cp_bcp_s1_26.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/ni_bcp_rachat_015_2026.pdf",
+    "ctx": " relative au programme de rachat d’actions <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/ni_bcp_rachat_015_2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger BCP – L’AMMC vise la notice d’information re"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_bcp_ago_24_06_26.pdf",
+    "ctx": "de convocation à l&#039;AGO du 24 juin 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_bcp_ago_24_06_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - Avis de convocat"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf",
+    "ctx": "trale Populaire - Résultats financiers 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - Résultats financiers 2025\" ",
+    "saved": "BCP_bcp_2025_0.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_bcp_finalisation_acquisistion_abi.pdf",
+    "ctx": "#039;Atlantic Business International (ABI) <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_bcp_finalisation_acquisistion_abi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - CP"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_bcp_t3_25.pdf",
+    "ctx": "tif aux indicateurs du 3ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_bcp_t3_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - CP relatif aux indicateurs"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/bcp_s1_25.pdf",
+    "ctx": " Résultats financiers du 1er semestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/bcp_s1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - Résultats financiers du 1er s"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_bcp_s1_2025.pdf",
+    "ctx": "relatif aux résultats du 1er semestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_bcp_s1_2025.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - CP relatif aux résultats",
+    "saved": "BCP_cp_bcp_s1_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_bcp_t2_25.pdf",
+    "ctx": "tif aux indicateurs du 2ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_bcp_t2_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger BCP - CP relatif aux indicateurs du 2ème trimestre 202"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/ni_bcp_rachat_017_2025.pdf",
+    "ctx": "tive au programme de rachat d&#039;actions <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/ni_bcp_rachat_017_2025.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger BCP – L&#039;AMMC vise la notice d&#039;info",
+    "saved": "BCP_ni_bcp_rachat_017_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_bcp_ago_30_06_25.pdf",
+    "ctx": "e convocation à l&#039;AGO du 30 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_bcp_ago_30_06_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger BCP - Avis de convocation à l&#039;AGO du 30 "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_bcp_t1_25.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_bcp_t1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - CP relatif aux indicateurs"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/bcp_2024.pdf",
+    "ctx": "entrale Populaire - Résultats financiers 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/bcp_2024.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - Résultats financiers 2024\" "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_bcp_t4_24.pdf",
+    "ctx": "tif aux indicateurs du 4ème trimestre 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_bcp_t4_24.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Banque Centrale Populaire - CP relatif aux indicateurs",
+    "saved": "BCP_cp_bcp_t4_24.pdf.txt"
+   }
+  ],
+  "IAM": [
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/maroc_telecom_cp_resultats_s12026_le_matin.pdf",
+    "ctx": "lecom - Résultats du premier semestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/maroc_telecom_cp_resultats_s12026_le_matin.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - Résultat",
+    "saved": "IAM_maroc_telecom_cp_resultats_s12026_le_matin.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_iam_t1_2026.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_iam_t1_2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - CP relatif aux indicateurs du 1er tr"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/ni_pr_iam_005_2026.pdf",
+    "ctx": "tive au programme de rachat d&#039;actions <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/ni_pr_iam_005_2026.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - notice d&#039;information relati"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf",
+    "ctx": "-26 Maroc Telecom - Résultats financiers 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - Résultats financiers 2025\" ",
+    "saved": "IAM_maroc_telecom_2025_0.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_maroc_telecom_ago_26_03_26.pdf",
+    "ctx": "e convocation à l&#039;AGO du 26 mars 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_maroc_telecom_ago_26_03_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - Avis de convocation"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_cooptation_administrateur.pdf",
+    "ctx": "f à la cooptation d&#039;un administrateur <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_cooptation_administrateur.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - CP relat"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_t3_25.pdf",
+    "ctx": "tif aux indicateurs du 3ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_t3_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - CP relatif aux indicateurs d"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/maroc_telecom_s1_25_0.pdf",
+    "ctx": " Résultats financiers du 1er semestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/maroc_telecom_s1_25_0.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - Résultats financiers du 1er s"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_changement_mode_gouvernance.pdf",
+    "ctx": "latif au changement de mode de gouvernance <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_changement_mode_gouvernance.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - CP rel"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_maroc_telecom_agm_18_06_25.pdf",
+    "ctx": "e convocation à l&#039;AGM du 18 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_maroc_telecom_agm_18_06_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - Avis de convocation"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_t1_25.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_t1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - CP relatif aux indicateurs d"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/ni_pr_iam_006_2025.pdf",
+    "ctx": "tive au programme de rachat d&#039;actions <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/ni_pr_iam_006_2025.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - notice d&#039;information relati",
+    "saved": "IAM_ni_pr_iam_006_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_partenariat_inwi.pdf",
+    "ctx": " signature d&#039;un partenariat avec Inwi <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_maroc_telecom_partenariat_inwi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - CP relatif à la s"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/maroc_telecom_2024.pdf",
+    "ctx": "03-26 Maroc Telecom - Résultats financiers 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/maroc_telecom_2024.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Maroc Telecom - Résultats financiers 2024\" "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/maroc_telecom_rfa_2024_0.pdf",
+    "ctx": " 2025-03-10 Maroc Telecom - RFA 2024 "
+   }
+  ],
+  "MSA": [
+   {
+    "url": "/sites/default/files/pemetteur/2026-09/marsa_s1_26.pdf",
+    "ctx": " Résultats financiers du 1er semestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-09/marsa_s1_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - Résultats financiers du 1er semestre 2026",
+    "saved": "MSA_marsa_s1_26.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-08/cp_marsa_maroc_t2_26.pdf",
+    "ctx": "tif aux indicateurs du 2ème trimestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-08/cp_marsa_maroc_t2_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux indicateurs du 2è"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp-marsa-maroc.pdf",
+    "ctx": "minal à conteneurs 3 du port de Casablanca <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp-marsa-maroc.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif à la prorogation de 20 ans "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t1_26.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t1_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux indicateurs du 1e"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_marsa_maroc_ago_25_06_26.pdf",
+    "ctx": "e convocation à l&#039;AGO du 25 juin 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_marsa_maroc_ago_25_06_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - Avis de convocation à l"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/marsa_2025.pdf",
+    "ctx": "- Résultats financiers 2025 et CP RFA 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/marsa_2025.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - Résultats financiers 2025 et CP RFA 2025\" ",
+    "saved": "MSA_marsa_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_2025.pdf",
+    "ctx": "- CP relatif aux résultats financiers 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_2025.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux résultats financie",
+    "saved": "MSA_cp_marsa_maroc_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_t4_25.pdf",
+    "ctx": "tif aux indicateurs du 4ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_t4_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux indicateurs du 4ème tri",
+    "saved": "MSA_cp_marsa_t4_25.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_signature_partenariat_liberia.pdf",
+    "ctx": "itation de deux jetées au port de Monrovia <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_signature_partenariat_liberia.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relat"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_finalisation_operation_terminal_investment_capital_west_med.pdf",
+    "ctx": " au capital de West Med Container Terminal <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_finalisation_operation_terminal_investment_capital_west_med.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharge"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t3_25.pdf",
+    "ctx": "tif aux indicateurs du 3ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t3_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux indicateurs du 3è"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_accord_partenariat_cma_terminals.pdf",
+    "ctx": "n accord de partenariat avec CMA Terminals <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_accord_partenariat_cma_terminals.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP re"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t2_25.pdf",
+    "ctx": "tif aux indicateurs du 2ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t2_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux indicateurs du 2è"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_ports4impact_raja_club.pdf",
+    "ctx": "e dans le capital du Raja Club Athletic SA <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_ports4impact_raja_club.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif à Ports4Im"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t1_25.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_t1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux indicateurs du 1e"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_marsa_maroc_ago_25_06_25.pdf",
+    "ctx": "e convocation à l&#039;AGO du 25 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_marsa_maroc_ago_25_06_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - Avis de convocation à l"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/marsa_maroc_cp_rfa_2024.pdf",
+    "ctx": "- Résultats financiers 2024 et CP RFA 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/marsa_maroc_cp_rfa_2024.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - Résultats financiers 2024 et "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_boluda_towage.pdf",
+    "ctx": " au groupement Boluda Towage - Marsa Maroc <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_boluda_towage.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif au groupement"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_2024.pdf",
+    "ctx": "- CP relatif aux résultats financiers 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_marsa_maroc_2024.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Marsa Maroc - CP relatif aux résultats financie"
+   }
+  ],
+  "MNG": [
+   {
+    "url": "/sites/default/files/pemetteur/2026-08/cp_managem_t2_26.pdf",
+    "ctx": "tif aux indicateurs du 2ème trimestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-08/cp_managem_t2_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux indicateurs du 2ème trime"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_post_agm_25_06_26-1%29.pdf",
+    "ctx": "6-30 Managem - CP post AGM du 25 juin 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_post_agm_25_06_26-1%29.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP post AGM du 25 juin "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_acquisition_sound_energy_meridja.pdf",
+    "ctx": "du capital de Sound Energy Meridja Limited <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_acquisition_sound_energy_meridja.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif à "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_erratum_resolution_agm_25_06_26.pdf",
+    "ctx": "e résolution de l&#039;AGM du 25 juin 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_erratum_resolution_agm_25_06_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP rectificati"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_t1_26.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2026 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_t1_26.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux indicateurs du 1er trimes"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/managem_2025.pdf",
+    "ctx": "m - Résultats financiers 2025 et CP RFA 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/managem_2025.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - Résultats financiers 2025 et CP RFA 2025\" ",
+    "saved": "MNG_managem_2025.pdf.txt"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_accord_strategique_soudan.pdf",
+    "ctx": " stratégique avec son partenaire au Soudan <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_accord_strategique_soudan.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif à la conc"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_t3_25.pdf",
+    "ctx": "tif aux indicateurs du 3ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_t3_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux indicateurs du 3ème trime"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_production_premier_lingot_mine_boto.pdf",
+    "ctx": "ot d&#039;or de la mine de Boto au Sénégal <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_production_premier_lingot_mine_boto.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_t2_25.pdf",
+    "ctx": "tif aux indicateurs du 2ème trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_t2_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux indicateurs du 2ème trime"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_post_ago_11_06_25.pdf",
+    "ctx": "6-13 Managem - CP post AGO du 11 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_post_ago_11_06_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP post AGO du 11 juin 2025\""
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_t1_25.pdf",
+    "ctx": "atif aux indicateurs du 1er trimestre 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_t1_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux indicateurs du 1er trimes"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/avis_managem_ago_11_06_25.pdf",
+    "ctx": "e convocation à l&#039;AGO du 11 juin 2025 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/avis_managem_ago_11_06_25.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - Avis de convocation à l&#039;AG"
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/managem_2024_cp_rfa_2024.pdf",
+    "ctx": "- Résultats financiers 2024 et CP RFA 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/managem_2024_cp_rfa_2024.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - Résultats financiers 2024 et CP "
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_2024.pdf",
+    "ctx": "- CP relatif aux résultats financiers 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_2024.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux résultats financiers 2024\""
+   },
+   {
+    "url": "/sites/default/files/pemetteur/2026-07/cp_managem_t4_24.pdf",
+    "ctx": "tif aux indicateurs du 4ème trimestre 2024 <a class=\"btn-download\" href=\"/sites/default/files/pemetteur/2026-07/cp_managem_t4_24.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Telecharger Managem - CP relatif aux indicateurs du 4ème trime",
+    "saved": "MNG_cp_managem_t4_24.pdf.txt"
+   }
+  ]
+ },
+ "total_links": 1068
+}
