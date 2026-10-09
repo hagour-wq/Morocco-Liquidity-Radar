@@ -1,6 +1,6 @@
 import unittest
 from pathlib import Path
-from extract_financials import split_two, extract, checks, parse_tail, unit_at
+from extract_financials import split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten
 from rank_equities import evaluate_fundamental
 
 FX = Path("tests/fixtures")
@@ -159,6 +159,73 @@ class ScopeTests(unittest.TestCase):
         f["net_income_group"]["mad"] *= 1000                             # erreur d'unité simulée
         d, e, n = checks(f, "corporate", 14159207, 1015.0)
         self.assertTrue(any("PER implicite" in x for x in e))
+
+
+class RobustnessTests(unittest.TestCase):
+    """Cas réels relevés sur les comptes 2025 (SNEP, CMT, Addoha, Risma, Cartier Saada, Taqa, Aradei)."""
+    def test_signs_dashes_and_decimal_points(self):
+        self.assertEqual(parse_tail("- 185 186 -43 811")[:2], (-185186.0, -43811.0))           # SNP : perte
+        self.assertEqual(parse_tail("1.13 0.68")[:2], (1.13, 0.68))                             # ADH : BPA à point décimal
+        self.assertIsNone(parse_tail("124 211 405,73 - 123 837 936,73 102 403 753,01"))        # colonnes incohérentes : rien plutôt que faux
+        self.assertEqual(parse_tail("105 777 740 75 299 358 61 709 782")[:2], (105777740.0, 75299358.0))
+
+    def test_column_order_from_header(self):
+        t = flatten("Compte de résultat consolidé\n2024 2025\nChiffre d'affaires 1 263 775 1 633 532\n")
+        self.assertEqual(year_order_at(t, t.index("Chiffre")), "asc")
+        f = extract("COMPTE DE RESULTAT CONSOLIDE (en milliers de MAD)\n2024 2025\nChiffre d'affaires 1 263 775 1 633 532\n"
+                    "Résultat net part du groupe 183 024 269 622\n", "corporate")
+        self.assertEqual((f["revenue"]["current"], f["net_income_group"]["current"]), (1633532.0, 269622.0))
+        p = flatten("STE X Du 1/4/2025 Au 31/3/2026\nExercice Exercice Précédent\nVI = RESULTAT D'EXPLOITATION -13 821 353,73 16 946 033,61\n")
+        self.assertEqual(year_order_at(p, p.index("VI =")), "desc")                      # une période n'est pas un en-tête de colonnes
+
+    def test_unit_inferred_only_when_unique(self):
+        txt = ("COMPTE DE RESULTAT CONSOLIDE\nChiffre d'affaires 2 708 923 803 2 594 688 796\nRésultat net - Part du groupe 453 719 263 274 184 241\n"
+               "BILAN (en milliers de dirhams)\nCapitaux propres part du groupe 9 481 695 9 319 494\n")
+        f = extract(txt, "corporate")
+        self.assertIsNone(f["net_income_group"]["unit"])
+        d, e, n = checks(f, "corporate", 402551254, 30.12)
+        self.assertEqual(f["net_income_group"]["unit"], 1.0)                                  # ROE 4,8 % : seule unité plausible
+        self.assertTrue(any("déduite" in x for x in n))
+        self.assertAlmostEqual(d["roe_pct"], 100 * 453719263 / ((9481695e3 + 9319494e3) / 2), places=3)
+
+    def test_group_share_without_label_requires_published_eps(self):
+        base = ("COMPTE DE RESULTAT CONSOLIDE (en milliers de dirhams)\nChiffre d'affaires 11 931 188 7 596 821\n"
+                "Résultat consolidé 952 053 521 810\nDont part du groupe 952 053 521 810\nCapitaux Propres Part Groupe 4 544 126 1 761 218\n")
+        good = extract(base + "Résultat par action 27,5 16,5\n", "corporate")
+        d, e, n = checks(good, "corporate", 34674332, 634.9)
+        self.assertEqual(e, [])
+        self.assertEqual(good["net_income_group"]["mad"], 952053e3)
+        bad = extract(base, "corporate")                                                        # sans BPA : rejet
+        d, e, n = checks(bad, "corporate", 34674332, 634.9)
+        self.assertTrue(any("non confirmée par un BPA" in x for x in e))
+
+
+class InsuranceTests(unittest.TestCase):
+    def test_ifrs17_insurer(self):
+        txt = ("COMPTE DE RESULTAT CONSOLIDE (en milliers de dirhams)\nProduits des activités d'assurance 4.1  6.396.362  6.186.016\n"
+               "Charges afférentes aux activités d'assurance 5.6 -5.605.173 -5.417.866\nRÉSUL TAT NET (PART DU GROUPE) 676.523 690.920\n"
+               "BILAN (en milliers de dirhams)\nCAPITAUX PROPRES - PART DU GROUPE 6.062.749 5.729.361 5.346.604\nTOTAL ACTIF 24.385.015 22.252.831 21.096.397\n")
+        f = extract(txt, "insurance")
+        self.assertEqual(f["net_income_group"]["mad"], 676523e3)          # « RÉSUL TAT » recollé, groupes à point
+        self.assertEqual(f["equity_group"]["mad"], 6062749e3)             # 3 colonnes : N, N-1 retraité, ouverture
+        d, e, n = checks(f, "insurance", 5341874, 2955.0)
+        self.assertEqual(e, [])
+        self.assertAlmostEqual(d["insurance_expense_ratio_pct"], 100 * 5605173 / 6396362, places=4)
+        x = evaluate_fundamental({"ticker": "SAH", "name": "Sanlam", "model": "insurance", "status": "VERIFIED", "period_end": "2025-12-31",
+                                  "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA", "derived": d},
+                                 price=2955.0, price_date="2026-10-09", dividend_yield=3.3, volatility=20, liquidity_tier="moyenne")
+        self.assertEqual(x["category"], "ELIGIBLE")
+        self.assertIsNotNone(x["components"]["quality"])
+
+
+class LossTests(unittest.TestCase):
+    def test_loss_gives_zero_earnings_valuation(self):
+        base = {"ticker": "SNP", "name": "SNEP", "model": "corporate", "status": "VERIFIED", "period_end": "2025-12-31",
+                "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA"}
+        loss = evaluate_fundamental({**base, "derived": {"eps_current_shares_mad": -77.16, "book_value_per_share_mad": 202.9}}, price=289.0, price_date="2026-10-09")
+        gain = evaluate_fundamental({**base, "derived": {"eps_current_shares_mad": 20.0, "book_value_per_share_mad": 202.9}}, price=289.0, price_date="2026-10-09")
+        self.assertIsNone(loss["pe"])
+        self.assertLess(loss["components"]["valuation"], gain["components"]["valuation"])
 
 
 if __name__ == "__main__":

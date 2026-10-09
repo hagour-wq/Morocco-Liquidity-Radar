@@ -23,7 +23,11 @@ FUND_BOUNDS={
  "bank":{"pe":(6,20,True),"pb":(0.8,3.5,True),"roe":(5,20,False),"cost_income":(35,65,True),"pnb_growth":(-5,15,False),
          "ni_growth":(-20,40,False),"cost_of_risk_loans":(0.3,2.5,True),"dividend_yield":(0,7,False)},
  "corporate":{"pe":(8,30,True),"pb":(1,8,True),"roe":(0,30,False),"operating_margin":(0,40,False),"revenue_growth":(-10,25,False),
-              "ni_growth":(-20,40,False),"net_debt_ebitda":(0,4,True),"equity_ratio":(10,60,False),"dividend_yield":(0,7,False)}}
+              "ni_growth":(-20,40,False),"net_debt_ebitda":(0,4,True),"equity_ratio":(10,60,False),"dividend_yield":(0,7,False)},
+ # assurances (IFRS 17) : charges / produits des activités d'assurance (proxy du ratio combiné, brut de réassurance),
+ # capitaux propres / total bilan faute de marge de solvabilité publiée dans le document
+ "insurance":{"pe":(6,25,True),"pb":(0.8,4,True),"roe":(5,20,False),"insurance_expense_ratio":(80,100,True),"revenue_growth":(-5,15,False),
+              "ni_growth":(-20,40,False),"equity_ratio":(5,30,False),"dividend_yield":(0,7,False)}}
 FUND_WEIGHTS={"valuation":30,"quality":25,"growth":20,"structure":15,"dividend":10}
 FUND_MAX_AGE_DAYS=548   # comptes annuels : valables jusqu'à ~18 mois après la clôture
 def _avg(xs):
@@ -34,7 +38,7 @@ def evaluate_fundamental(c,price=None,price_date=None,dividend_yield=None,volati
  Valorisation 30 %, qualité 25 %, croissance 20 %, structure / risque 15 %, dividende 10 %.
  Composante manquante : score calculé sur les poids disponibles, marqué partiel et classé « À surveiller »."""
  t,name=c.get("ticker"),c.get("name")
- base={"ticker":t,"name":name,"model":c.get("model"),"fiscal_year":c.get("fiscal_year"),"source_url":c.get("url"),"accounts_scope":c.get("scope"),"category":"NON_ANALYSABLE"}
+ base={"ticker":t,"name":name,"model":c.get("model"),"fiscal_year":c.get("fiscal_year"),"source_url":c.get("url"),"accounts_scope":c.get("scope"),"text_source":c.get("text_source"),"category":"NON_ANALYSABLE"}
  if c.get("listing_exchange")!="Casablanca Stock Exchange" or c.get("listing_country")!="MA":
   return {**base,"status":"EXCHANGE_NOT_VERIFIED","note":"Cotation à Casablanca non vérifiée."}
  if c.get("status")!="VERIFIED":
@@ -49,11 +53,17 @@ def evaluate_fundamental(c,price=None,price_date=None,dividend_yield=None,volati
  pb=price/bv if valid(bv) and bv>0 else None
  m=c["model"];B=FUND_BOUNDS[m]
  r=lambda k,x:None if x is None else ratio(x,B[k][0],B[k][1],B[k][2])
- comp={"valuation":_avg([r("pe",pe),r("pb",pb)]),"dividend":r("dividend_yield",dividend_yield)}
+ # perte : le PER n'est pas défini mais la valorisation par les bénéfices est la pire possible (0), jamais ignorée
+ pe_score=0.0 if valid(eps) and eps<=0 else r("pe",pe)
+ comp={"valuation":_avg([pe_score,r("pb",pb)]),"dividend":r("dividend_yield",dividend_yield)}
  if m=="bank":
   comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("cost_income",d.get("cost_income_pct"))]),
               growth=_avg([r("pnb_growth",d.get("pnb_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),
               structure=r("cost_of_risk_loans",d.get("cost_of_risk_to_loans_pct")))
+ elif m=="insurance":
+  comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("insurance_expense_ratio",d.get("insurance_expense_ratio_pct"))]),
+              growth=_avg([r("revenue_growth",d.get("revenue_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),
+              structure=r("equity_ratio",d.get("equity_ratio_pct")))
  else:
   comp.update(quality=_avg([r("roe",d.get("roe_pct")),r("operating_margin",d.get("operating_margin_pct"))]),
               growth=_avg([r("revenue_growth",d.get("revenue_growth_pct")),r("ni_growth",d.get("net_income_growth_pct"))]),

@@ -9,28 +9,44 @@ indicateurs dérivés. Statuts :
 - UNREADABLE : document sans texte exploitable (PDF image).
 Sortie : data/company_fundamentals.json — chaque grandeur garde la ligne source, l'unité et l'URL.
 """
-import io, json, sys
+import io, json, re, sys
 from datetime import datetime, timezone
 from pathlib import Path
 import casablanca_source as cb
 from extract_financials import extract, checks
+import ocr_pdf
 
 SOURCES = Path("data/fundamentals_sources.json")
 REF = Path("data/issuer_reference.json")
 OUT = Path("data/company_fundamentals.json")
 REQUIRED = {"bank": ["pnb", "net_income_group", "equity_total", "minority_interests", "cost_of_risk", "operating_expenses"],
-            "corporate": ["revenue", "net_income_group", "equity_total|equity_group"]}
+            "corporate": ["revenue", "net_income_group", "equity_total|equity_group"],
+            "insurance": ["revenue", "net_income_group", "equity_group|equity_total"]}
 
 
-def analyse(src, text, shares, price=None):
-    if len(text.strip()) < 2000:
-        return {"status": "UNREADABLE", "reason": "document sans texte exploitable (PDF image) : reconnaissance de caractères non mise en place"}
+MIN_TEXT = 2000
+
+
+def analyse(src, text, shares, price=None, text_source="pdf_text"):
+    if len(text.strip()) < MIN_TEXT:
+        return {"status": "UNREADABLE", "text_source": text_source,
+                "reason": "document sans texte exploitable (PDF image)" + (" ; OCR également insuffisant" if text_source == "ocr" else "")}
+    if text_source == "ocr":
+        text = ocr_pdf.clean_lines(text)
     fin = extract(text, src["model"])
+    period = re.search(r"\bdu\s+(\d{1,2})/(\d{1,2})/(20\d\d)\s+au\s+(\d{1,2})/(\d{1,2})/(20\d\d)", text, re.I)
+    period_end = f"{period.group(6)}-{int(period.group(5)):02d}-{int(period.group(4)):02d}" if period else None
     derived, errors, notes = checks(fin, src["model"], shares, price)
     missing = [k for k in REQUIRED[src["model"]] if not any(fin.get(x) for x in k.split("|"))
                and not (k == "minority_interests" and fin.get("_scope") == "social")]
     status = "REJECTED" if errors else "PARTIAL" if missing else "VERIFIED"
-    return {"status": status, "errors": errors, "notes": notes, "missing": missing,
+    extra = {}
+    if period_end and period_end != src.get("period_end"):
+        extra = {"period_end": period_end, "period_end_registry": src.get("period_end")}
+        notes.append(f"exercice du {period.group(1)}/{period.group(2)}/{period.group(3)} au {period.group(4)}/{period.group(5)}/{period.group(6)} (lu dans le document)")
+    if text_source == "ocr":
+        notes.insert(0, "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués")
+    return {**extra, "text_source": text_source, "status": status, "errors": errors, "notes": notes, "missing": missing,
             "scope": fin.get("_scope"),
             "statements": {k: ({kk: x[kk] for kk in ("current", "previous", "unit", "mad", "mad_previous", "line", "layout", "ambiguous_split", "method") if kk in x} if x else None)
                            for k, x in fin.items() if not k.startswith("_")},
@@ -49,13 +65,18 @@ def main():
         rec = {**src, "isin": r.get("isin"), "shares": r.get("shares"), "shares_source": "bulletin de la cote " + str(json.loads(REF.read_text(encoding="utf-8")).get("bulletin_date")) if r else None,
                "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA", "collected_at": now}
         if src["model"] not in REQUIRED:
-            rec.update(status="SECTOR_MODEL_PENDING", reason="modèle sectoriel « assurance » non encore implémenté : pas de ratios industriels appliqués")
+            rec.update(status="SECTOR_MODEL_PENDING", reason=f"modèle sectoriel « {src['model']} » non implémenté : pas de ratios industriels appliqués")
             out["companies"].append(rec)
             continue
         try:
             b = cb._get(src["url"], accept="application/pdf")
             text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(b)).pages)
-            rec.update(analyse(src, text, r.get("shares"), r.get("reference_price_mad")))
+            source = "pdf_text"
+            if len(text.strip()) < MIN_TEXT and ocr_pdf.available():
+                text, info = ocr_pdf.ocr_pdf(b)
+                source = "ocr"
+                rec["ocr"] = info
+            rec.update(analyse(src, text, r.get("shares"), r.get("reference_price_mad"), source))
         except Exception as e:
             rec.update(status="SOURCE_ERROR", reason=f"{type(e).__name__}: {e}"[:200])
         out["companies"].append(rec)
