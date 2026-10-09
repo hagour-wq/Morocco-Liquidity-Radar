@@ -1,0 +1,35 @@
+name: Inspect historical Casablanca research data
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "inspect_zenodo_casablanca.py"
+      - ".github/workflows/zenodo-equity-research.yml"
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Inspect licensed academic historical archive
+        run: python inspect_zenodo_casablanca.py
+      - name: Archive evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zenodo-casablanca-archive-report
+          path: data/zenodo_casablanca_inspection.json
+          if-no-files-found: warn
+      - name: Commit verified archive manifest
+        run: |
+          git config user.name "mlr-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/zenodo_casablanca_inspection.json
+          git diff --cached --quiet || git commit -m "data: inspect Casablanca research archive"
+          git push
