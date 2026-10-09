@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 from statistics import mean
-from datetime import date
+from datetime import date,datetime,timezone
 
-HIST=Path("data/market_history.json"); OUT=Path("data/backtest.json")
+HIST=Path("data/market_history.json"); OUT=Path("data/backtest.json"); DASH=Path("data/dashboard.json")
 def pct(a,b): return None if not a or not b else (a/b-1)*100
 def clamp(x,a=-100,b=100): return max(a,min(b,x))
 def gap_days(a,b): return (date.fromisoformat(b)-date.fromisoformat(a)).days
@@ -34,4 +34,18 @@ def main():
       "usable_5d":stats["5d"]["n"],"directional_accuracy_5d_pct":stats["5d"]["directional_accuracy_pct"],
       "sample_warning":"Interpret only after sufficient historical depth; no transaction costs or execution model.","series":obs}
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    sync_dashboard(out)
+
+MIN_RELIABLE_N=100
+def sync_dashboard(out,dash=DASH):
+    """Dashboard backtest block is derived from backtest.json on every run, never edited by hand."""
+    if not dash.exists():return
+    d=json.loads(dash.read_text(encoding="utf-8"))
+    n=out["usable_5d"]
+    d["backtest"]={"status":"experimental","method":"momentum_direction_5d","source_file":"data/backtest.json",
+      "computed_at":datetime.now(timezone.utc).isoformat(),"history_sessions":out["history_sessions"],
+      "observations":out["observations"],"usable_5d":n,"directional_accuracy_5d_pct":out["directional_accuracy_5d_pct"],
+      "warning":(f"Échantillon de {n} observations à 5 séances (< {MIN_RELIABLE_N}) : non concluant. " if n<MIN_RELIABLE_N else "")
+        +"Diagnostic sur le MASI, sans coûts de transaction ; ne constitue pas une prévision."}
+    dash.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 if __name__=="__main__":main()
