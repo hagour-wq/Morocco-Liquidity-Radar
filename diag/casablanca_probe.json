@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-09T11:52:47.066921+00:00",
+  "run_at": "2026-10-09T11:53:24.302729+00:00",
   "attempts": [
     {
       "url": "https://www.casablanca-bourse.com/",
@@ -20,6 +20,22 @@
       "url": "https://www.casablanca-bourse.com/fr",
       "ctx": "certifi",
       "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://www.casablanca-bourse.com/",
+      "ctx": "certifi+intermediate",
+      "status": 200,
+      "bytes": 78981,
+      "content_type": "text/html; charset=UTF-8",
+      "server": "WebServer"
+    },
+    {
+      "url": "https://www.casablanca-bourse.com/fr",
+      "ctx": "certifi+intermediate",
+      "status": 200,
+      "bytes": 78981,
+      "content_type": "text/html; charset=UTF-8",
+      "server": "WebServer"
     }
   ],
   "openssl_chain": [
@@ -29,5 +45,33 @@
     "   i:C = GB, O = Sectigo Limited, CN = Sectigo Public Server Authentication CA DV R36",
     "    Verify return code: 21 (unable to verify the first certificate)"
   ],
-  "curl": "000 20 curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above."
+  "curl": "000 20 curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.",
+  "leaf_aia": [
+    "Authority Information Access: ",
+    "    CA Issuers - URI:http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt",
+    "    OCSP - URI:http://ocsp.sectigo.com"
+  ],
+  "intermediate_url": "http://crt.sectigo.com/SectigoPublicServerAuthenticationCADVR36.crt",
+  "intermediate_subject": [
+    "subject=C = GB, O = Sectigo Limited, CN = Sectigo Public Server Authentication CA DV R36",
+    "issuer=C = GB, O = Sectigo Limited, CN = Sectigo Public Server Authentication Root R46",
+    "notAfter=Mar 21 23:59:59 2036 GMT",
+    "sha256 Fingerprint=8C:54:C3:34:B6:6B:A4:E4:26:77:2A:F4:A3:F9:13:6C:19:A1:AE:C7:29:FD:B2:8C:53:5C:07:A5:A4:EF:22:E0"
+  ],
+  "chain_verify": "diag/leaf.pem: OK",
+  "home_url_ok": "https://www.casablanca-bourse.com/",
+  "has_next_data": false,
+  "masi_mentions": 10,
+  "api_strings_home": [
+    "https://www.casablanca-bourse.com/apropos/communiques-officiels/42735-morocco-capital-market-days-une-grande-reussite-pour-ledition",
+    "https://www.casablanca-bourse.com/market-data/capitalisation"
+  ],
+  "scripts": [
+    "/pagefind/pagefind-ui.js",
+    "/core/assets/vendor/jquery/jquery.min.js?v=4.0.0",
+    "/sites/default/files/js/js_eTWn_QrGcA6689kY28-uQmTlBXrHTHDg8pgrNaXwEDU.js?scope=footer&amp;delta=1&amp;language=fr&amp;theme=bn_institutional&amp;include=eJxLyovPzCsuySwpLcnMz0vM0U8rys8r0UlCF07PyU9KzNEtLqnMycxLBwBebBXo"
+  ],
+  "api_strings_js": [
+    "/api/boursenova"
+  ]
 }
