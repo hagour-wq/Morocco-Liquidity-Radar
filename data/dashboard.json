@@ -1,12 +1,12 @@
 {
   "as_of": "2026-10-07",
-  "composite": -8,
+  "composite": -9,
   "regime": "NEUTRAL",
   "conclusion": "Market Flow neutre (-7). Momentum 1 séance +0.58% et 5 séances -4.19%. Couverture 70%.",
   "scores": {
     "liquidity": -15,
     "market_flow": -7,
-    "global": 11
+    "global": 9
   },
   "sources": [
     {
@@ -253,7 +253,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-09T11:38:25.007860+00:00",
+    "computed_at": "2026-10-09T11:43:49.325996+00:00",
     "history_sessions": 87,
     "observations": 82,
     "usable_5d": 47,
@@ -293,7 +293,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-08T21:02:31.645817+00:00",
+  "retrieved_at": "2026-10-09T11:43:49.273350+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16990.77,
@@ -303,7 +303,7 @@
     "sessions": 28
   },
   "global_detail": {
-    "checked_at": "2026-10-08T21:02:30.760826+00:00",
+    "checked_at": "2026-10-09T11:43:48.578862+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -322,10 +322,10 @@
         "series": "VIXCLS",
         "source": "CBOE",
         "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-        "date": "2026-10-07",
-        "value": 15.08,
-        "change_5obs": -7.711,
-        "score": 30.8,
+        "date": "2026-10-08",
+        "value": 15.41,
+        "change_5obs": -5.979,
+        "score": 23.9,
         "verified": true,
         "failed_sources": []
       },
@@ -333,10 +333,10 @@
         "series": "DXY",
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
-        "date": "2026-10-08",
-        "value": 102.10600280761719,
-        "change_5obs": 0.006,
-        "score": -0.0,
+        "date": "2026-10-09",
+        "value": 102.13099670410156,
+        "change_5obs": 0.197,
+        "score": -1.6,
         "verified": true,
         "failed_sources": []
       },
@@ -353,7 +353,7 @@
       }
     },
     "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-    "score": 11,
+    "score": 9,
     "fresh_for_scoring": true
   }
 }
