@@ -1,0 +1,27 @@
+{
+ "pages": {
+  "/fr": 78428,
+  "/fr/live-market/marche-actions-listing": 78428,
+  "/fr/marche-actions": 78428,
+  "/fr/emetteurs": 78428,
+  "/fr/market-data": 78428,
+  "/fr/live-market/actions": 78428
+ },
+ "links": [
+  "/emetteurs/calendrier-financier"
+ ],
+ "detail": {
+  "/emetteurs/calendrier-financier": {
+   "len": 401467,
+   "api": [],
+   "drupal_keys": [
+    "path",
+    "pluralDelimiter",
+    "suppressDeprecationErrors",
+    "boursenova",
+    "user"
+   ],
+   "excerpt": "n.style.display = 'none'; } }); searchDropdown.addEventListener('click', (e) => e.stopPropagation()); } } }); Accueil Émetteurs Calendrier financier Calendrier financier Consultez les calendriers des dividendes et des assemblées générales des sociétés cotées à la Bourse de Casablanca. Calendrier des dividendes Calendrier des Assemblées Générales Année : 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 Émetteur Date de détachement Date de paiement Type dividende Montant Année : 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 Filtrer par objet Filtrer par objet Tout sélectionner Émetteur Nature de l'assemblée générale Date À propos des dividendes Les dividendes représentent la part des bénéfices distribuée aux actionnaires. Le calendrier indique les dates clés : détachement du coupon, mise en paiement et exercice. Le montant unitaire correspond au dividende par action versé avant application du prélèvement fiscal en vigueur. Dates importantes Détachement du coupon Date à partir de laquelle l'action ne donne plus droit au dividende de l'exercice en cours. Mise en paiement Date à laquelle le dividende est effectivement versé aux actionnaires éligibles. À propos des Assemblées Générales Les Assemblées Générales sont des réunions obligatoires où les actionnaires prennent des décisions importantes concernant la gouvernance et la stratégie de l'entreprise. Les AG ordinaires approuvent les comptes annuels et la distribution des dividendes, tandis que les AG extraordinaires statuent sur les modifications statutaires. Types d'assemblées Assemblée Générale Ordinaire (AGO) Approuve les comptes annuels, le rapport de gestion et décid"
+  }
+ }
+}
