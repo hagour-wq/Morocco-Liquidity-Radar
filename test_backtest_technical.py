@@ -44,5 +44,13 @@ class MetricTests(unittest.TestCase):
         self.assertIsNone(bt.asof(pts, "2026-01-01"))
 
 
+class MasiAsOfTests(unittest.TestCase):
+    def test_missing_archive_session_uses_last_close_within_tolerance(self):
+        s = {"2026-09-16": 17984.0, "2026-09-21": 17991.02}
+        self.assertEqual(bt.masi_asof(s, "2026-09-18"), 17984.0)
+        self.assertIsNone(bt.masi_asof(s, "2026-09-30"))
+        self.assertIsNone(bt.masi_asof(s, "2026-01-01"))
+
+
 if __name__ == "__main__":
     unittest.main()
