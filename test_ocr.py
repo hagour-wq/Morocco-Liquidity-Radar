@@ -26,6 +26,18 @@ def image_pdf(lines):
     return buf.getvalue()
 
 
+class CleanLinesTests(unittest.TestCase):
+    """Lignes OCR réelles (pages à deux colonnes, séparateurs, points parasites)."""
+    def test_two_column_pages(self):
+        c = ocr_pdf.clean_lines("Chiffre d'affaires 36 699 36 681 s'élèvent à un montant de Dirhams 1 593 millions.\n"
+                                "Ecarts d'acquisition m4 995 | nas | Chiffre d'affaires 188 069 172 249 15 820\n"
+                                "Résultats net part du groupe 73 801 66 626 E Fidaroc\nRÉSULTAT NET - PART DU GROUPE 72656. 72354")
+        self.assertIn("Chiffre d'affaires 36 699 36 681", c.splitlines())
+        self.assertIn("Chiffre d'affaires 188 069 172 249 15 820", c.splitlines())
+        self.assertIn("Résultats net part du groupe 73 801 66 626", c.splitlines())
+        self.assertIn("RÉSULTAT NET - PART DU GROUPE 72656 72354", c.splitlines())
+
+
 @unittest.skipUnless(ocr_pdf.available(), "tesseract / pdftoppm absents")
 class OcrTests(unittest.TestCase):
     def test_image_pdf_is_read_and_checked(self):

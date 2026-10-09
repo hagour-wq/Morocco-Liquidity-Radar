@@ -12,7 +12,7 @@ NOTE = r"(?:\s+(?:N\s?\.\s?\d{1,2}|Note\s+\d{1,2})|\s+\d{1,2}(?:\.\d{1,2})+(?:\s
 SUFFIX = r"(?:\s*\([^)\n]{0,80}\))?"                              # « (ou des propriétaires de la société mère) »
 TAIL = r"\s+((?:[-–]\s?)?\(?\d[\d ,.()%+–-]*)\s*$"                              # zone numérique en fin de ligne
 
-RNPG = r"R[ÉE]SULTAT NET(?: DE L'EXERCICE| CONSOLIDÉ)?\s*[-,(]?\s*PART DU GROUPE\)?"
+RNPG = r"R[ÉE]SULTATS? NETS?(?: DE L'EXERCICE| CONSOLIDÉ)?\s*[-,(]?\s*PART DU GROUPE\)?"
 LABELS = {
     "bank": {
         "pnb": [r"PRODUIT NET BANCAIRE(?: IFRS| CONSOLIDÉ)?"],
@@ -36,8 +36,8 @@ LABELS = {
         "net_income_group": [RNPG],
         "eps": [r"Résultat (?:de base |net )?par action(?: en MAD)?", r"Calcul du résultat par action"],
         "equity_group": [r"Capitaux propres attribuables aux (?:actionnaires\s*ordinaires|propriétaires) de la société mère",
-                         r"(?:Total )?Capitaux propres,?\s*\(?(?:part du groupe|du groupe|part groupe)\)?"],
-        "equity_total": [r"Capitaux propres de l'ensemble consolidé", r"Total (?:des )?capitaux propres(?: consolidés)?", r"Capitaux propres (?:totaux|consolidés)"],
+                         r"(?:Total )?Capitaux propres\s*[-,]?\s*\(?(?:part du groupe|du groupe|part groupe)\)?"],
+        "equity_total": [r"Capitaux propres (?:de l'|d')ensemble(?: consolidé)?", r"Total (?:des )?capitaux propres(?: consolidés)?", r"Capitaux propres (?:totaux|consolidés)"],
         "minority_interests": [],
         "net_debt": [r"Endettement net", r"Dette nette"],
         "total_assets": [r"TOTAL ACTIF(?: IFRS)?", r"Total actif"],
@@ -235,23 +235,63 @@ def flatten(text):
     return re.sub(r"[ \t\u00a0\u202f\u2009]+", " ", t)
 
 
-PREFIX = r"(?:(?:[IVX]{1,5}|\d{1,2})\s*[.)=-]?\s*(?:=\s*)?|Dont\s*:?\s*|[•*]\s*|Net\s+)?"
+PREFIX = r"(?:(?:[IVX]{1,5}|\d{1,2})\s*[.)=-]?\s*(?:=\s*)?|Dont\s*:?\s*|[•*:|]\s*|Net\s+)?"
+
+
+_PAIR_RAW = re.compile(r"(?<![\w/.-])(\d{1,2}[/.]\d{1,2}[/.])?(20[0-4]\d)\s*\|?\s+(\d{1,2}[/.]\d{1,2}[/.])?(20[0-4]\d)(?![\w/.-])")
+
+
+class _Pair:
+    """Deux dates de clôture côte à côte : années seules, ou dates complètes de même jour / mois (« 31/12/2024 31/12/2025 »)."""
+    @staticmethod
+    def search(line):
+        for m in _PAIR_RAW.finditer(line):
+            d1, y1, d2, y2 = m.groups()
+            if (d1 or "") == (d2 or "") and y1 != y2:
+                return _Match(y1, y2)
+        return None
+
+
+class _Match:
+    def __init__(self, a, b):
+        self._g = (a, b)
+
+    def group(self, i):
+        return self._g[i - 1]
+
+
+_PAIR = _Pair()
+_DOC_ORDER = {}
+
+
+def doc_year_order(flat):
+    """Ordre des colonnes commun à tout le document : en-têtes à exactement deux années consécutives
+    et en-têtes « Exercice / Exercice précédent » ; tous doivent concorder, sinon None."""
+    k = hash(flat)
+    if k not in _DOC_ORDER:
+        orders = set()
+        for line in flat.split("\n"):
+            if re.search(r"exercice\s+(?:n\s+)?exercice\s+pr[ée]c[ée]dent", line, re.I):
+                orders.add("desc")
+            years = re.findall(r"(?<!\d)20[0-4]\d(?!\d)", line)
+            m = _PAIR.search(line)
+            if m and len(years) == 2 and abs(int(m.group(1)) - int(m.group(2))) == 1:
+                orders.add("asc" if m.group(1) < m.group(2) else "desc")
+        _DOC_ORDER[k] = orders.pop() if len(orders) == 1 else None
+    return _DOC_ORDER[k]
 
 
 def year_order_at(flat, pos):
     """Ordre des colonnes annoncé par l'en-tête le plus proche (« 2024 2025 » = N-1 puis N)."""
     head = flat[max(0, pos - 2500):pos].split("\n")
     for line in reversed(head[:-1] if head else []):
-        if len(line) > 140:
-            continue
         if re.search(r"exercice\s+(?:n\s+)?exercice\s+pr[ée]c[ée]dent|exercice\s+n\s+exercice\s+n\s*-\s*1", line, re.I):
             return "desc"
         if re.search(r"\bdu\b.*\bau\b|p[ée]riode", line, re.I):   # « Du 1/4/2025 Au 31/3/2026 » : une période, pas deux colonnes
             continue
-        ys = [int(y) for y in re.findall(r"(?<!\d)(20[0-4]\d)(?!\d)", line)]
-        rest = re.sub(r"\d{1,2}[/.-]\d{1,2}[/.-]20\d\d|(?<!\d)20[0-4]\d(?!\d)|\d{1,2}-\w+\.?-\d\d", "", line)
-        if len(ys) >= 2 and len(re.findall(r"\d", rest)) <= 4 and ys[0] != ys[1]:
-            return "asc" if ys[0] < ys[1] else "desc"
+        pair = _PAIR.search(line)
+        if pair and pair.group(1) != pair.group(2):   # deux dates de clôture côte à côte = en-tête des colonnes
+            return "asc" if pair.group(1) < pair.group(2) else "desc"
     return None
 
 
@@ -266,7 +306,7 @@ def find(text, patterns, start=0, end=None, all_matches=False):
                 continue
             rec = {"current": two[0], "previous": two[1], "layout": two[2], "ambiguous_split": two[3], "line": m.group(0).strip()[:220],
                    "unit": unit_at(flat, start + m.start(), m.group(1)), "pos": start + m.start()}
-            if not rec["layout"].startswith(("N-1", "CPC", "N / N-1 /")) and year_order_at(flat, start + m.start()) == "asc":
+            if not rec["layout"].startswith(("N-1", "CPC", "N / N-1 /")) and (year_order_at(flat, start + m.start()) or doc_year_order(flat)) == "asc":
                 rec.update(current=two[1], previous=two[0], layout=rec["layout"] + " — en-tête « N-1 puis N » : colonnes inversées")
             if not all_matches:
                 return rec

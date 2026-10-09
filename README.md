@@ -118,6 +118,11 @@ Un indicateur dont l'historique est insuffisant vaut `null` et figure dans `unav
 - **Unités** : dernière mention « milliers / millions / en dirhams (dhs, MAD) » sur une ligne d'en-tête (les lignes chiffrées sont ignorées) ; montants à centimes = dirhams.
 - **Résultat part du groupe sans libellé explicite** : ligne X voisine d'un résultat consolidé R et d'une ligne intérêts minoritaires M, retenue seulement si X + M = R pour N et N-1.
 - **Plausibilité de marché** (détection d'erreurs d'unité ou de périmètre) : PER implicite (capitalisation / résultat) entre 2 et 300, P/B implicite entre 0,1 et 40, résultat ≤ 1,5 × chiffre d'affaires ; sinon REJECTED.
+- **Ordre des colonnes** : en-tête « 2024 2025 » ou « 31/12/2024 31/12/2025 » le plus proche (ou, à défaut, en-têtes concordants de tout le document ; « Exercice / Exercice précédent » pour les états CGNC) ; une période « Du … Au … » n'est pas un en-tête de colonnes.
+- **Unités absentes** : déduites seulement si une seule unité est plausible (ROE entre −60 % et 100 %, sinon PER et P/B de marché) ; la déduction est notée sur la grandeur.
+- **Résultat sans mention « part du groupe »** : retenu uniquement si BPA publié × nombre de titres le confirme à 3 % près.
+- **Assurances (IFRS 17)** : produits et charges des activités d'assurance (rapport charges / produits, brut de réassurance, comme approximation du ratio combiné), ROE, croissance, capitaux propres / total bilan (la marge de solvabilité n'est pas publiée dans les documents examinés). Bornes : PER 6–25, P/B 0,8–4, ROE 5–20 %, charges / produits 100 → 80 %, autonomie 5–30 %.
+- **PDF sans couche texte** : lus par OCR (tesseract, français, 300 dpi, `ocr_pdf.py`) ; les pages à deux colonnes sont recoupées ligne par ligne ; mêmes contrôles croisés, mention « OCR » sur le site.
 - **Couverture** : registre de 49 émetteurs (comptes 2025). Les statuts par émetteur et leurs motifs sont publiés dans `data/company_fundamentals.json` ; les modèles « assurance » sont en attente (SECTOR_MODEL_PENDING) et les PDF image (sans texte) restent UNREADABLE tant que la reconnaissance de caractères n'est pas en place.
 
 ## Fiche société (`societe.html?t=<TICKER>`)

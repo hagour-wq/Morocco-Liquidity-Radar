@@ -31,6 +31,8 @@ def analyse(src, text, shares, price=None, text_source="pdf_text"):
     if len(text.strip()) < MIN_TEXT:
         return {"status": "UNREADABLE", "text_source": text_source,
                 "reason": "document sans texte exploitable (PDF image)" + (" ; OCR également insuffisant" if text_source == "ocr" else "")}
+    if text_source == "ocr":
+        text = ocr_pdf.clean_lines(text)
     fin = extract(text, src["model"])
     period = re.search(r"\bdu\s+(\d{1,2})/(\d{1,2})/(20\d\d)\s+au\s+(\d{1,2})/(\d{1,2})/(20\d\d)", text, re.I)
     period_end = f"{period.group(6)}-{int(period.group(5)):02d}-{int(period.group(4)):02d}" if period else None
