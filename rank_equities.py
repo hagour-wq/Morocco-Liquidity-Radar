@@ -40,17 +40,22 @@ def evaluate_fundamental(x):
 TECH_MIN_SESSIONS=25
 def _r(v,d=2):return None if v is None else round(v,d)
 def evaluate_technical(ticker,name,rows):
+ raw_rows=sorted((x for x in rows if x.get("date")),key=lambda x:x["date"])
  """Indicateurs complets (technical.py) sur le segment postérieur à la dernière opération sur titres présumée.
  Score = momentum 5J 35 % + 20J 25 % + position / tendance 20 % + volume relatif 10 % + volatilité 10 %."""
  if not ticker or not name:return {"ticker":ticker,"name":name,"status":"INVALID_INSTRUMENT","category":"NON_ANALYSABLE"}
- rows=sorted((x for x in rows if valid(x.get("close")) and x.get("date")),key=lambda x:x["date"])
+ raw=len(rows)
+ # séances recopiées par la source (ex. 17/09/2026) : exclues ; cours nuls (titre suspendu) : exclus
+ rows=sorted((x for x in rows if valid(x.get("close")) and x["close"]>0 and x.get("date") and "stale_copy" not in str(x.get("status",""))),key=lambda x:x["date"])
  base={"ticker":ticker,"name":name,"category":"NON_ANALYSABLE"}
- if len(rows)<TECH_MIN_SESSIONS:return {**base,"status":"INSUFFICIENT_HISTORY","sessions":len(rows),"required_sessions":TECH_MIN_SESSIONS}
+ if len(rows)<TECH_MIN_SESSIONS:
+  if raw>=TECH_MIN_SESSIONS:return {**base,"status":"NO_VALID_PRICES","sessions":raw,"valid_price_sessions":len(rows),"note":"Cours nuls ou absents : titre vraisemblablement suspendu de cotation."}
+  return {**base,"status":"INSUFFICIENT_HISTORY","sessions":len(rows),"required_sessions":TECH_MIN_SESSIONS}
  ca=[i for i,x in enumerate(rows) if "corporate_action_suspected" in str(x.get("status",""))]
  seg=rows[ca[-1]:] if ca else rows
  if len(seg)<TECH_MIN_SESSIONS:return {**base,"status":"CORPORATE_ACTION_RECENT","corporate_action_date":rows[ca[-1]]["date"],"sessions_since":len(seg),"required_sessions":TECH_MIN_SESSIONS}
- soft=("validated","corporate_action_suspected","incomplete_volume")
- flagged=[x["date"] for x in seg[-TECH_MIN_SESSIONS:] if x.get("status") not in (None,)+soft]
+ soft={"validated","corporate_action_suspected","incomplete_volume"}
+ flagged=[x["date"] for x in seg[-TECH_MIN_SESSIONS:] if not set(str(x.get("status") or "validated").split(","))<=soft]
  if flagged:return {**base,"status":"FLAGGED_DATA_IN_WINDOW","flagged_dates":flagged,"note":"Anomaly inside the 25-session window; no technical score."}
  last=seg[-1]
  try:age=(date.today()-date.fromisoformat(last["date"])).days
@@ -75,13 +80,14 @@ def evaluate_technical(ticker,name,rows):
  m=ta.macd(c);bb=ta.bollinger(c);sr=ta.support_resistance(h,l);a=ta.atr(h,l,c)
  cat="ELIGIBLE" if liq and liq["tier"]!="faible" and liq["zero_volume_sessions"]==0 else "WATCH"
  incomplete=[x["date"] for x in seg[-60:] if x.get("incomplete_volume")]
+ stale=[x["date"] for x in raw_rows[-60:] if "stale_copy" in str(x.get("status",""))]
  return {"ticker":ticker,"name":name,"status":"RESEARCH_ONLY","category":cat,"score":score,"reference_date":last["date"],"close":last["close"],
   "sessions_used":len(seg),"segment_start":seg[0]["date"],"corporate_action_date":rows[ca[-1]]["date"] if ca else None,
   "return_5d_pct":_r(r5),"return_20d_pct":_r(r20),"momentum_60d_pct":_r(r60),"volume_ratio":_r(vr),
   "volatility_annual_pct":_r(vol),"rsi14":_r(ta.rsi(c),1),"sma20":_r(s20),"sma50":_r(s50),"sma200":_r(s200),
   "close_vs_sma200_pct":_r(100*(c[-1]/s200-1)) if s200 else None,"trend_basis":trend_basis,
   "macd":{k:_r(x,3) for k,x in m.items()} if m else None,"atr14":_r(a),"atr14_pct":_r(100*a/c[-1]) if a else None,
-  "bollinger":{k:_r(x,3) for k,x in bb.items()} if bb else None,"support_resistance":sr,"liquidity":liq,"incomplete_volume_dates":incomplete,
+  "bollinger":{k:_r(x,3) for k,x in bb.items()} if bb else None,"support_resistance":sr,"liquidity":liq,"incomplete_volume_dates":incomplete,"excluded_stale_dates":stale,
   "components":{k:round(x,1) for k,x in comp.items()},
   "unavailable":[k for k,x in (("sma50",s50),("sma200",s200),("rsi14",ta.rsi(c)),("macd",m),("atr14",a)) if x is None],
   "note":"Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation."}

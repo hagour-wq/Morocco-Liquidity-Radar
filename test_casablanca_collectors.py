@@ -2,7 +2,7 @@ import unittest
 from datetime import date
 from unittest.mock import patch
 import casablanca_source as cb
-from collect_equities import to_row, validate_row, split_factor
+from collect_equities import to_row, validate_row, split_factor, annotate
 
 ITEM = {"seance": "08/10/2026", "ouverture": 680, "dernierCours": 670, "plusHaut": 680, "plusBas": 670,
         "titresEchanges": 49319, "volumeEchanges": 33070916.7, "nbTransactions": 113, "capitalisation": 144144362130}
@@ -69,6 +69,17 @@ class VolumeSemanticsTests(unittest.TestCase):
         r = to_row({"seance": "08/10/2026", "dernierCours": 1599, "titresEchanges": None}, "now")
         self.assertEqual(r["volume"], 0.0)
         self.assertIs(r["traded"], False)
+
+
+class StaleCopyTests(unittest.TestCase):
+    def test_copy_of_previous_session_is_flagged(self):
+        d16 = to_row(dict(ITEM, seance="16/09/2026", plusHaut=869, plusBas=845, dernierCours=868, ouverture=845), "now")
+        d17 = to_row(dict(ITEM, seance="17/09/2026", plusHaut=869, plusBas=845, dernierCours=842, ouverture=None,
+                          titresEchanges=0, volumeEchanges=0, nbTransactions=0), "now")
+        annotate([d16, d17])
+        self.assertEqual(d16["status"], "validated")
+        self.assertIn("stale_copy_of_previous_session", d17["status"])
+        self.assertNotIn("ohlc_incoherent", d17["status"])
 
 
 class CorporateActionTests(unittest.TestCase):
