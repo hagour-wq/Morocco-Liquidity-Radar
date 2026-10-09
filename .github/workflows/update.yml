@@ -4,9 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - "backfill_equities.py"
-      - "backfill_equities_fallback.py"
-      - "backfill_equities_public.py"
+      - "casablanca_source.py"
+      - "collect_market.py"
+      - "collect_equities.py"
       - "rank_equities.py"
       - ".github/workflows/update.yml"
   schedule:
@@ -28,8 +28,8 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Unit tests (bloquants)
-        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py
-      - name: Collect Casablanca snapshot
+        run: python -m unittest -v test_global_collector.py test_bam_collector.py test_equity_rankings.py test_backfill_equities.py test_equity_fallback.py test_equity_public_archive.py test_backtest_sync.py test_casablanca_collectors.py
+      - name: MASI officiel (clôture de séance, Bourse de Casablanca)
         id: masi
         continue-on-error: true
         run: python collect_market.py
@@ -45,25 +45,14 @@ jobs:
         id: global
         continue-on-error: true
         run: python collect_global.py
+      - name: Historique OHLCV officiel des actions (Bourse de Casablanca)
+        id: equities
+        continue-on-error: true
+        run: python collect_equities.py
       - name: Recalculate dashboard
         run: python update.py
       - name: Run diagnostic backtest (synchronise aussi dashboard.json)
         run: python backtest.py
-      - name: Backfill historical individual equity prices and volumes
-        id: eq_official
-        continue-on-error: true
-        env:
-          EQUITY_BACKFILL_START: "2025-01-01"
-          EQUITY_BACKFILL_PAGES: "70"
-        run: python backfill_equities.py
-      - name: Independent Casablanca stock history fallback
-        id: eq_fallback
-        continue-on-error: true
-        run: python backfill_equities_fallback.py
-      - name: Recover already published equity history from independent public archive
-        id: eq_public
-        continue-on-error: true
-        run: python backfill_equities_public.py
       - name: Build equity fundamental and technical rankings
         run: python rank_equities.py
       - name: Verify dashboard renders with current data (bloquant)
@@ -72,11 +61,10 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: equity-historical-diagnostics
+          name: collector-reports
           path: |
-            data/equity_backfill_diagnostic.json
-            data/equity_fallback_diagnostic.json
-            data/equity_public_history_diagnostic.json
+            data/masi_collection_report.json
+            data/equity_collection_report.json
           if-no-files-found: warn
       - name: Commit refreshed data
         run: |
@@ -93,27 +81,21 @@ jobs:
           LIQ: ${{ steps.liquidity.outcome }}
           BAM: ${{ steps.bam.outcome }}
           GLOBAL: ${{ steps.global.outcome }}
-          EQ1: ${{ steps.eq_official.outcome }}
-          EQ2: ${{ steps.eq_fallback.outcome }}
-          EQ3: ${{ steps.eq_public.outcome }}
+          EQ: ${{ steps.equities.outcome }}
         run: |
           {
             echo "## État des collecteurs"
             echo "| Collecteur | Rôle | Résultat |"
             echo "|---|---|---|"
-            echo "| collect_market.py | MASI (cœur) | $MASI |"
+            echo "| collect_market.py | MASI officiel (cœur) | $MASI |"
+            echo "| collect_equities.py | Historique actions officiel (cœur) | $EQ |"
             echo "| collect_liquidity.py | BAM/AMMC (cœur) | $LIQ |"
             echo "| collect_bam.py | Publications BAM (cœur) | $BAM |"
             echo "| collect_global.py | Risque global (cœur) | $GLOBAL |"
-            echo "| backfill_equities.py | Actions, expérimental | $EQ1 |"
-            echo "| backfill_equities_fallback.py | Actions, expérimental | $EQ2 |"
-            echo "| backfill_equities_public.py | Actions, expérimental | $EQ3 |"
+            [ -f data/masi_collection_report.json ] && { echo; echo '```json'; cat data/masi_collection_report.json; echo '```'; }
           } >> "$GITHUB_STEP_SUMMARY"
-          for v in "EQ1:$EQ1" "EQ2:$EQ2" "EQ3:$EQ3"; do
-            [ "${v#*:}" = "failure" ] && echo "::warning::Collecteur actions expérimental en échec (${v%%:*}) — source non validée."
-          done
           fail=0
-          for v in "MASI:$MASI" "LIQ:$LIQ" "BAM:$BAM" "GLOBAL:$GLOBAL"; do
+          for v in "MASI:$MASI" "EQ:$EQ" "LIQ:$LIQ" "BAM:$BAM" "GLOBAL:$GLOBAL"; do
             if [ "${v#*:}" = "failure" ]; then echo "::error::Collecteur cœur en échec : ${v%%:*}"; fail=1; fi
           done
           exit $fail

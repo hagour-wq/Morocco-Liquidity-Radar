@@ -1,57 +1,79 @@
-"""Casablanca Stock Exchange official-data collector (V1).
+"""Collecteur MASI officiel (Bourse de Casablanca) — clôture quotidienne.
 
-Primary source: official Bourse de Casablanca pages.
-The collector is deliberately fail-closed: if required fields cannot be
-validated, it writes nothing to market_history.json.
+La Bourse ne publie pas d'historique quotidien du MASI par API (le service
+indices/historical ne renvoie que l'intraday du jour). Ce collecteur enregistre donc,
+à chaque exécution après la clôture, la séance du jour :
+- MASI de clôture (live-market, index_data.valeur), uniquement si la séance est « closed » ;
+- séance confirmée par la présence d'une cotation ATW à cette date dans stock-historical
+  (évite d'écrire un jour férié ou un week-end) ;
+- montant échangé officiel (somme des montants des actions) et largeur du marché
+  (hausses / (hausses + baisses)).
+Les séances antérieures déjà stockées ne sont jamais modifiées. Les nouvelles séances
+stockent le montant officiel dans volume_mad_official et laissent volume_mad à null,
+pour ne pas mélanger des bases de calcul différentes.
+Code de sortie 1 si la source est inaccessible ou incohérente ; 0 si rien à écrire (séance
+non clôturée ou jour sans séance) avec la raison dans data/masi_collection_report.json.
 """
-import json, re
-from datetime import datetime, timezone
+import json, sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.request import Request, urlopen
-import ssl, certifi
+import casablanca_source as cb
 
-HOME="https://www.casablanca-bourse.com/"
-OUT=Path("data/market_history.json")
-UA="Morocco-Liquidity-Radar/1.0 (+GitHub Actions)"
+OUT = Path("data/market_history.json")
+REPORT = Path("data/masi_collection_report.json")
+SRC = "Bourse de Casablanca (live-market, séance clôturée)"
 
-def fetch(url):
-    req=Request(url,headers={"User-Agent":UA,"Accept-Language":"fr-FR,fr;q=0.9"})
-    with urlopen(req,timeout=30) as r:
-        return r.read().decode("utf-8","ignore")
 
-def number(s):
-    return float(s.replace("\u202f","").replace(" ","").replace(",", "."))
+def build_row(snap, now):
+    idx = snap["index"] or {}
+    masi = float(idx["valeur"])
+    if not 1000 < masi < 100000:
+        raise ValueError(f"MASI hors bornes : {masi}")
+    acts = snap["actions"]
+    up = sum(1 for a in acts if (a.get("variation") or 0) > 0)
+    down = sum(1 for a in acts if (a.get("variation") or 0) < 0)
+    return {"date": snap["session_date"], "masi": masi, "masi_previous_close": idx.get("veille"),
+            "masi_high": idx.get("high"), "masi_low": idx.get("low"), "volume_mad": None,
+            "volume_mad_official": round(sum(a.get("volume") or 0 for a in acts), 2),
+            "breadth": round(up / (up + down), 4) if up + down else None,
+            "advancers": up, "decliners": down, "instruments": len(acts),
+            "source": SRC, "masi_source": SRC, "source_url": cb.BASE + "/live-market/indices/cours?symbol=MASI",
+            "quality": "official_session_close", "collected_at": now}
 
-def parse_home(html):
-    # Fallback official snapshot parser. Bulletin/PDF backfill is a separate stage.
-    text=re.sub(r"<[^>]+>"," ",html)
-    text=re.sub(r"\s+"," ",text)
-    masi=re.search(r"MASI\s*[+\-]?\d+[,.]\d+%\s*([\d\s]+[,.]\d+)",text,re.I)
-    vol=re.search(r"VOLUME GLOBAL\s*([\d\s]+)\s*MAD",text,re.I)
-    if not masi or not vol: return None
-    return {"masi":number(masi.group(1)),"volume_mad":number(vol.group(1))}
-
-def validate(row):
-    return 1000 < row["masi"] < 100000 and 0 <= row["volume_mad"] < 1e12
-
-def upsert(row):
-    rows=json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else []
-    rows=[x for x in rows if x.get("date")!=row["date"]]
-    rows.append(row); rows.sort(key=lambda x:x["date"])
-    OUT.write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding="utf-8")
 
 def main():
-    html=fetch(HOME)
-    p=parse_home(html)
-    if not p or not validate(p):
-        raise SystemExit("Official market snapshot failed validation; nothing written.")
-    # GitHub job runs after market close; date is retrieval date until bulletin confirms session date.
-    today=datetime.now(timezone.utc).date().isoformat()
-    p.update({"date":today,"source":"Bourse de Casablanca","source_url":HOME,
-              "retrieved_at":datetime.now(timezone.utc).isoformat(),
-              "quality":"official_snapshot_pending_bulletin_confirmation",
-              "breadth":None})
-    upsert(p)
-    print(json.dumps(p,ensure_ascii=False))
+    now = datetime.now(timezone.utc)
+    rep = {"run_at": now.isoformat(), "written": None, "reason": None, "errors": []}
+    try:
+        snap = cb.live_snapshot()
+        rep.update(session_status=snap["session_status"], session_date=snap["session_date"],
+                   masi_live=(snap["index"] or {}).get("valeur"))
+        if snap["session_status"] != "closed":
+            rep["reason"] = "séance non clôturée : rien n'est écrit"
+        else:
+            d = snap["session_date"]
+            day = datetime.fromisoformat(d).date()
+            atw = cb.stock_history("ATW", day - timedelta(days=7), day)
+            if not any(cb.parse_seance(x["seance"]).isoformat() == d for x in atw):
+                rep["reason"] = f"aucune cotation ATW le {d} : jour sans séance, rien n'est écrit"
+            else:
+                rows = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else []
+                rows = [r for r in rows if r.get("date") != d] + [build_row(snap, now.isoformat())]
+                rows.sort(key=lambda r: r["date"])
+                OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+                rep["written"] = d
+                rep["total_sessions"] = len(rows)
+    except Exception as e:
+        rep["errors"].append(f"{type(e).__name__}: {e}")
+    REPORT.write_text(json.dumps(rep, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(rep, ensure_ascii=False))
+    for err in rep["errors"]:
+        print(f"::error title=collect_market::{err}")
+    if rep["reason"]:
+        print(f"::notice title=collect_market::{rep['reason']}")
+    if rep["errors"]:
+        sys.exit(1)
 
-if __name__=="__main__": main()
+
+if __name__ == "__main__":
+    main()
