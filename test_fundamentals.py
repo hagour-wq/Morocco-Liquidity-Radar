@@ -1,6 +1,6 @@
 import unittest
 from pathlib import Path
-from extract_financials import split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten
+from extract_financials import split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten, equity_from_variation
 from rank_equities import evaluate_fundamental
 
 FX = Path("tests/fixtures")
@@ -264,6 +264,28 @@ class LossTests(unittest.TestCase):
         gain = evaluate_fundamental({**base, "derived": {"eps_current_shares_mad": 20.0, "book_value_per_share_mad": 202.9}}, price=289.0, price_date="2026-10-09")
         self.assertIsNone(loss["pe"])
         self.assertLess(loss["components"]["valuation"], gain["components"]["valuation"])
+
+
+class VariationTableTests(unittest.TestCase):
+    """CFG Bank, comptes consolidés 2025 : capitaux propres lus dans le tableau de variation (lignes réelles)."""
+    TXT = ("  TABLEAU DE VARIATION DES CAPITAUX PROPRES CONSOLIDE (En milliers de DH)\n"
+           "Capitaux propres au 31 décembre 2024 700.159    638.545    10.524    591.589   -127.897    1.812.920    27.144    1.840.062   \n"
+           "Capitaux propres au 31 décembre 2025 700.159    645.289    -      849.400   -130.645    2.065.577    21.553    2.087.129   \n")
+
+    def test_group_minorities_total_with_identity(self):
+        ev = equity_from_variation(self.TXT)
+        self.assertEqual((ev["equity_group"]["current"], ev["equity_group"]["previous"]), (2065577, 1812920))
+        self.assertEqual(ev["minority_interests"]["current"], 21553)
+        self.assertEqual(ev["equity_total"]["current"], 2087129)
+        self.assertEqual(ev["equity_group"]["unit"], 1000)
+
+    def test_rejected_when_identity_fails(self):
+        bad = self.TXT.replace("2.087.129", "2.187.129")
+        self.assertIsNone(equity_from_variation(bad))      # exercice courant incohérent : rien n'est retenu
+
+    def test_needs_previous_year(self):
+        one = "\n".join(l for l in self.TXT.splitlines() if "2024" not in l)
+        self.assertIsNone(equity_from_variation(one))
 
 
 if __name__ == "__main__":

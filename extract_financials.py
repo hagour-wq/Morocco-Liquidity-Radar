@@ -447,6 +447,37 @@ def _select_consolidated(text, labels, model, rn):
     return out
 
 
+def equity_from_variation(text):
+    """Capitaux propres part du groupe lus dans le tableau de variation des capitaux propres
+    (lignes « Capitaux propres au 31 décembre AAAA … part du groupe, minoritaires, total ») :
+    retenus seulement si part du groupe + minoritaires = total, pour l'exercice et le précédent."""
+    flat = flatten(text)
+    rows = {}
+    for m in re.finditer(r"^\s*Capitaux propres au 31 d[ée]cembre (20\d\d)\s+(.*?)\s*$", flat, re.M | re.I):
+        toks = normalize_tail(m.group(2)).split()
+        nums = []
+        for tk in toks[-3:]:
+            n = _number([tk])
+            nums.append(n)
+        if len(nums) == 3 and None not in nums and _close(nums[0] + nums[1], nums[2], 0, 2.5):
+            rows[int(m.group(1))] = (nums, m.group(0).strip(), m.start())
+    if not rows:
+        return None
+    y = max(rows)
+    if y - 1 not in rows:
+        return None
+    (g, mi, tot), line, pos = rows[y]
+    (g0, mi0, tot0), _, _ = rows[y - 1]
+    unit = unit_at(flat, pos, line)
+    base = {"unit": unit, "layout": "tableau de variation : part du groupe + minoritaires = total (vérifié)",
+            "ambiguous_split": False, "line": line[:220], "pos": pos}
+    names = {"equity_group": "part du groupe", "minority_interests": "intérêts minoritaires", "equity_total": "total"}
+    vals = {"equity_group": (g, g0), "minority_interests": (mi, mi0), "equity_total": (tot, tot0)}
+    return {k: {**base, "current": c, "previous": p,
+                "method": f"capitaux propres ({names[k]}) au 31/12/{y} et {y - 1} lus dans le tableau de variation des capitaux propres"}
+            for k, (c, p) in vals.items()}
+
+
 def extract(text, model):
     """Comptes consolidés si le document contient une ligne « résultat net part du groupe » chiffrée ;
     sinon comptes sociaux (champ scope). Chaque grandeur est prise dans le tableau le plus proche de
@@ -489,6 +520,13 @@ def extract(text, model):
                                   "unit": parts[0]["unit"], "layout": parts[0]["layout"], "ambiguous_split": any(x["ambiguous_split"] for x in parts),
                                   "line": " + ".join(x["line"] for x in parts)[:440], "pos": parts[0]["pos"],
                                   "method": "chiffre d'affaires = ventes de marchandises + ventes de biens et services produits (CPC)"}
+    if scope == "consolidated" and not out.get("equity_group"):
+        ev = equity_from_variation(text)
+        if ev:
+            out["equity_group"] = ev["equity_group"]
+            for k in ("equity_total", "minority_interests"):   # complétés seulement s'ils manquent, depuis le même tableau
+                if not out.get(k):
+                    out[k] = ev[k]
     for key in list(LABELS[model]):
         out.setdefault(key, None)
     for key, f in out.items():

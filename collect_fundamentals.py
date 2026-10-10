@@ -25,6 +25,7 @@ REQUIRED = {"bank": ["pnb", "net_income_group", "equity_total", "minority_intere
 
 
 MIN_TEXT = 2000
+RANK = {"UNREADABLE": 0, "REJECTED": 1, "PARTIAL": 2, "VERIFIED": 3}
 OCR_CACHE = Path("data/ocr_cache")
 
 
@@ -91,7 +92,18 @@ def main():
                 text, info = ocr_cached(b)
                 source = "ocr"
                 rec["ocr"] = info
-            rec.update(analyse(src, text, r.get("shares"), r.get("reference_price_mad"), source))
+            res = analyse(src, text, r.get("shares"), r.get("reference_price_mad"), source)
+            if src.get("force_ocr") and source == "pdf_text" and ocr_pdf.available():
+                # couche texte altérée (chiffres coupés) : la page est relue par OCR, et la meilleure lecture est conservée
+                otext, info = ocr_cached(b)
+                ores = analyse(src, otext, r.get("shares"), r.get("reference_price_mad"), "ocr")
+                if RANK.get(ores["status"], 0) > RANK.get(res["status"], 0):
+                    ores["notes"] = [n for n in ores.get("notes", []) if "sans couche texte" not in n]
+                    ores["notes"].insert(0, f"texte obtenu par reconnaissance de caractères (OCR) : couche texte du PDF altérée ({src['force_ocr']}) ; mêmes contrôles croisés appliqués")
+                    res, rec["ocr"] = ores, info
+                else:
+                    res.setdefault("notes", []).append(f"OCR essayé ({src['force_ocr']}) mais pas meilleur que la couche texte (statut OCR : {ores['status']})")
+            rec.update(res)
         except Exception as e:
             rec.update(status="SOURCE_ERROR", reason=f"{type(e).__name__}: {e}"[:200])
         out["companies"].append(rec)
