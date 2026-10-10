@@ -170,7 +170,8 @@ def main():
     cached_files=d.get("official_file_cache",{}).get("ammc_opcvm",[])
     ammc_files=list(dict.fromkeys(discovered_files+cached_files))
     d["ammc_workbook_inspection"]=[inspect_excel(u) for u in ammc_files]
-    good=[x for x in d["ammc_workbook_inspection"] if x.get("status")=="SCHEMA_READ"]
+    from build_liquidity_view import file_date
+    good=sorted([x for x in d["ammc_workbook_inspection"] if x.get("status")=="SCHEMA_READ"],key=lambda x:file_date(x.get("url",""))or"",reverse=True)   # plus récent d'abord
     if len(good)>=2:
         cur=parse_opcvm_snapshot(good[0]); prev=parse_opcvm_snapshot(good[1])
         d["opcvm_flow_estimate"]={"current":cur,"previous":prev,"flows":adjusted_flow(cur,prev),"quality":"estimated_from_official_AMMC_NAV_and_performance","warning":"Not official subscriptions/redemptions; valuation-adjusted estimate."}
@@ -184,7 +185,7 @@ def main():
             d["opcvm_signal"]=sig
             comp=d["components"]["opcvm"]
             comp["score"]=sig["score"]; comp["verified"]=True
-            comp["reference_date"]="2026-09-25"
+            comp["reference_date"]=file_date(good[0]["url"]) or comp.get("reference_date")
             comp["raw"]["estimated_adjusted_flow_signal"]=sig
             comp["note"]="Score derived from official AMMC NAV and category performance; adjusted flows are estimates, not official subscriptions/redemptions."
     d["ammc_file_pool"]={"discovered":len(discovered_files),"cached":len(cached_files),"usable_candidates":len(ammc_files)}

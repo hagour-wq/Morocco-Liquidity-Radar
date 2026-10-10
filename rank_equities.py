@@ -5,6 +5,7 @@ signals require enough per-security OHLCV observations and historical continuity
 import json,math
 import technical as ta
 import equity_store
+import explain_fundamentals as xf
 from pathlib import Path
 from datetime import date,datetime,timezone
 ROOT=Path("data")
@@ -202,7 +203,9 @@ def main():
   dy=tx.get("dividend_yield_pct")
   if "dividend_yield_pct" not in tx and valid(lr.get("close")) and (ref.get(t) or cal is not None):dy=issuer_facts(ref.get(t),lr["close"],lr.get("date"),divs_of(t),cas.get(t,())).get("dividend_yield_pct")
   x=evaluate_fundamental(c,lr.get("close"),lr.get("date"),dy,tx.get("volatility_annual_pct"),(tx.get("liquidity") or {}).get("tier"))
-  x["sector"]=sectors.get(t);fundamentals.append(x)
+  x["sector"]=sectors.get(t);x["liquidity"]=tx.get("liquidity");x["volatility_annual_pct"]=tx.get("volatility_annual_pct");fundamentals.append(x)
+ meds=xf.peer_medians(fundamentals)
+ for x in fundamentals:xf.explain(x,meds)
  f_rank=sorted((x for x in fundamentals if x.get("category")=="ELIGIBLE"),key=lambda x:x["score"],reverse=True)
  f_watch=sorted((x for x in fundamentals if x.get("category")=="WATCH"),key=lambda x:x["score"],reverse=True)
  t_rank=sorted((x for x in technical if x.get("category")=="ELIGIBLE"),key=lambda x:x["score"],reverse=True)

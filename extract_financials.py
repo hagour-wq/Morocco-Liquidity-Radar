@@ -603,7 +603,7 @@ def checks(fin, model, shares_now, price=None):
         if rev and rp:
             d["revenue_growth_pct"] = 100 * (rev / rp - 1)
         ta = v(fin.get("total_assets"))
-        if ta and (eq_group or eq_total):
+        if ta and (eq_group or eq_total) and 0 < (eq_total or eq_group) / ta <= 1:
             d["equity_ratio_pct"] = 100 * (eq_total or eq_group) / ta
         if rev is None:
             errors.append("produits des activités d'assurance / primes introuvables")
@@ -624,7 +624,11 @@ def checks(fin, model, shares_now, price=None):
             d["net_debt_to_ebitda"] = nd / eb
         ta = v(fin.get("total_assets"))
         if ta and eq_total:
-            d["equity_ratio_pct"] = 100 * eq_total / ta   # autonomie financière : capitaux propres totaux / total bilan
+            r = 100 * eq_total / ta   # autonomie financière : capitaux propres totaux / total bilan
+            if 0 < r <= 100:
+                d["equity_ratio_pct"] = r
+            else:
+                notes.append(f"total bilan incohérent avec les capitaux propres (rapport {r:.0f} %) : autonomie financière non calculée")
         if rev is None:
             errors.append("chiffre d'affaires introuvable")
     rp = v(fin.get("net_income_group"), "mad_previous")
