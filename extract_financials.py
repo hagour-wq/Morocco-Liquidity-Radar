@@ -9,8 +9,8 @@ import math
 import re
 
 NOTE = r"(?:\s+(?:N\s?\.\s?\d{1,2}|Note\s+\d{1,2})|\s+\d{1,2}(?:\.\d{1,2})+(?:\s*/\s*\d{1,2}(?:\.\d{1,2})+)?)?"       # renvoi de note « 3.4 », « 2.4 / 2.12 »
-SUFFIX = r"(?:\s*\([^)\n]{0,80}\))?"                              # « (ou des propriétaires de la société mère) »
-TAIL = r"\s+((?:[-–]\s?)?\(?\d[\d ,.()%+–-]*)\s*$"                              # zone numérique en fin de ligne
+SUFFIX = r"(?:\s*\((?:\d{1,2}|(?=[^)\n]*[A-Za-zÀ-ÿ])[^)\n]{0,80})\))?"                              # « (ou des propriétaires de la société mère) »
+TAIL = r"\s+((?:[-–]\s?)?\(?\d[\d ,.()%+–-]*)[A-Z]?\s*$"     # zone numérique en fin de ligne (lettre isolée collée : texte vertical en marge)                              # zone numérique en fin de ligne
 
 RNPG = r"R[ÉE]SULTATS? NETS?(?: DE L'EXERCICE| CONSOLIDÉ)?\s*[-,(]?\s*PART DU GROUPE\)?"
 LABELS = {
@@ -29,7 +29,7 @@ LABELS = {
         "customer_loans": [r"Prêts et créances sur la clientèle(?:, au coût amorti)?"],
     },
     "corporate": {
-        "revenue": [r"Chiffre d'affaires(?: consolidé)?(?=\s+(?:-?\d|N\s?\.|Note))", r"Produits des activités ordinaires"],
+        "revenue": [r"Chiffres? d'affaires(?: consolidé)?(?=\s+(?:-?\d|N\s?\.|Note))", r"Produits des activit[ÉE]s ordinaires"],
         "ebitda": [r"EBITDA(?=\s+-?\d)", r"Excédent brut d'exploitation(?=\s+-?\d)"],
         "operating_income": [r"Résultat d'exploitation(?: courant)?", r"Résultat opérationnel(?: courant)?", r"Résultat des activités opérationnelles"],
         "net_income": [r"Résultat net de l'ensemble consolidé", r"Résultat de l'ensemble consolidé", r"Résultat net consolidé"],
@@ -37,9 +37,11 @@ LABELS = {
         "eps": [r"Résultat (?:de base |net )?par action(?: en MAD)?", r"Calcul du résultat par action"],
         "equity_group": [r"Capitaux propres attribuables aux (?:actionnaires\s*ordinaires|propriétaires) de la société mère",
                          r"(?:Total )?Capitaux propres\s*[-,]?\s*\(?(?:part du groupe|du groupe|part groupe)\)?"],
-        "equity_total": [r"Capitaux propres (?:de l'|d')ensemble(?: consolidé)?", r"Total (?:des )?capitaux propres(?: consolidés)?", r"Capitaux propres (?:totaux|consolidés)"],
+        "equity_total": [r"Capitaux propres (?:de l'|d')ensemble(?: consolidé)?", r"Total (?:des )?capitaux propres(?: consolidés)?", r"Capitaux propres (?:totaux|consolidés)",
+                         r"Capitaux propres(?=\s+-?\d)"],
         "minority_interests": [],
         "net_debt": [r"Endettement net", r"Dette nette"],
+        "share_capital": [r"Capital(?: social)?(?=\s+-?\d)"],
         "total_assets": [r"TOTAL ACTIF(?: IFRS)?", r"Total actifs?(?=\s+-?\d)", r"TOTAL DE L\s?'\s?ACTIF", r"Total (?:du )?bilan", r"TOTAL DU PASSIF"],
     },
     "insurance": {
@@ -59,7 +61,7 @@ SOCIAL = {
     "corporate": {
         "revenue": [r"Chiffres? d'affaires(?=\s+-?\d)"],
         "operating_income": [r"R[ÉE]SULTAT D'EXPLOITATION"],
-        "net_income_group": [r"R[ÉE]SULTAT NET DE L'EXERCICE", r"R[ÉE]SULTAT NET(?=\s*\(XI ?- ?XII\))"],
+        "net_income_group": [r"R[ÉE]SULTATS? NETS? DE L'EXERCICE", r"R[ÉE]SULTAT NET(?=\s*\(XI ?- ?XII\))", r"R[ÉE]SULTAT NET(?=\s+-?\d)"],
         "equity_total": [r"T ?otal des capitaux propres"],
         "total_assets": [r"TOTAL (?:GÉNÉRAL|GENERAL|ACTIF)(?:\s*\(?\s*I\s*\+\s*II\s*\+\s*III\s*\)?)?"],
     },
@@ -74,7 +76,7 @@ SOCIAL = {
     "insurance": {},   # comptes sociaux d'assurance (modèle CGNC assurances) : non retenus, colonnes brutes / cessions / nettes
 }
 CONSOLIDATED_RN = r"(?:R[ÉE]SULTAT (?:NET )?(?:TOTAL )?(?:DE L'ENSEMBLE )?CONSOLIDÉ(?: DE L'EXERCICE)?|R[ÉE]SULTAT NET DU GROUPE)"   # le second : états consolidés PCEC
-BALANCE = {"equity_group", "equity_total", "minority_interests", "net_debt", "total_assets", "customer_loans"}
+BALANCE = {"equity_group", "equity_total", "minority_interests", "net_debt", "total_assets", "customer_loans", "share_capital"}
 PER_SHARE = {"eps"}
 
 
@@ -111,11 +113,11 @@ def _close(x, y, rel=0.0, absolute=1.5):
     return abs(x - y) <= max(absolute, rel * max(abs(x), abs(y)))
 
 
-def _pct_ok(cur, prev, pct):
+def _pct_ok(cur, prev, pct, dec=2):
     """Variation publiée compatible avec N / N-1, compte tenu de l'arrondi des montants affichés."""
     if not prev:
         return False
-    tol = 100 * 0.5 / abs(prev) * (1 + abs(cur / prev)) + 0.15
+    tol = 100 * 0.5 / abs(prev) * (1 + abs(cur / prev)) + max(0.15, 0.5 * 10 ** -dec)
     return abs(100 * (cur / prev - 1) - pct) <= tol
 
 
@@ -156,7 +158,9 @@ def _parse_tail(tail):
     - CPC marocain : propres à l'exercice, exercices précédents, total N (= somme), total N-1 ;
     - trois colonnes N / N / N-1 (colonne intermédiaire vide) ou N / N-1 / écart ;
     - trois colonnes de même ordre de grandeur sans identité : deux premières retenues (marqué ambigu)."""
-    pcts = [float(p.replace(",", ".").replace(" ", "")) for p in re.findall(r"([+-]?\s?\d+(?:,\d+)?)\s*%", tail)]
+    raw = re.findall(r"([+-]?\s?\d+(?:,\d+)?)\s*%", tail)
+    pcts = [float(p.replace(",", ".").replace(" ", "")) for p in raw]
+    dec = len(raw[0].split(",")[1]) if raw and "," in raw[0] else 0
     seg = re.split(r"[+-]?\s?\d+(?:,\d+)?\s*%", tail)[0]
     toks = re.findall(r"-?\(?\d+(?:,\d+)?\)?", seg)
     if len(toks) < 2:
@@ -164,14 +168,14 @@ def _parse_tail(tail):
     if pcts:
         sols = set()
         for a, b in _partitions(toks, 2):
-            if _pct_ok(a, b, pcts[0]):
+            if _pct_ok(a, b, pcts[0], dec):
                 sols.add((a, b, "N / N-1 / variation %"))
-            elif _pct_ok(b, a, pcts[0]):
+            elif _pct_ok(b, a, pcts[0], dec):
                 sols.add((b, a, "N-1 / N / variation % (ordre vérifié par le %)"))
         for a, b, c in _partitions(toks, 3):
-            if _close(a - b, c) and _pct_ok(a, b, pcts[0]):
+            if _close(a - b, c) and _pct_ok(a, b, pcts[0], dec):
                 sols.add((a, b, "N / N-1 / écart / variation %"))
-            elif _close(b - a, c) and _pct_ok(b, a, pcts[0]):
+            elif _close(b - a, c) and _pct_ok(b, a, pcts[0], dec):
                 sols.add((b, a, "N-1 / N / écart / variation %"))
         if sols:
             vals = {(x[0], x[1]) for x in sols}
@@ -182,13 +186,15 @@ def _parse_tail(tail):
     for a, b, c, d in _partitions(toks, 4):
         if abs(c) >= 1000 and abs(a + b - c) <= (0.011 if "," in tail else 1.0):
             sols.setdefault("CPC : exercice + exercices précédents = total N ; total N-1", set()).add((c, d))
+        elif a == 0 and b == 0 and abs(c) >= 1000 and abs(d) >= 1 and 0.05 <= abs(c / d) <= 20:
+            sols.setdefault("CPC : colonnes de détail vides ; total N ; total N-1", set()).add((c, d))
         elif abs(c) >= 1000 and b >= 0 and abs(a - b - c) <= (0.011 if "," in tail else 1.0):
             sols.setdefault("Bilan actif : brut − amortissements = net N ; net N-1", set()).add((c, d))
     if not sols:
         for a, b, c in _partitions(toks, 3):
             if a == b and a != 0:
                 sols.setdefault("N / total N / N-1", set()).add((b, c))
-            elif _close(a - b, c) and c != 0:
+            elif _close(a - b, c) and c != 0 and not (b == 0 and a == c):   # « X 0,00 X » : propres + précédents = total N, sans N-1
                 sols.setdefault("N / N-1 / écart", set()).add((a, b))
     if sols:
         layout, vals = next(iter(sols.items()))
@@ -225,24 +231,30 @@ def unit_at(text, pos, tail=""):
         nxt = next((x for x in lines[i + 1:i + 3] if x.strip()), "")
         if _PAIR.search(nxt) and _chart_axis(lines, lines.index(nxt, i + 1)):
             continue   # « (en MDH) » au-dessus d'un graphique en barres : pas l'unité des tableaux
+        if re.match(r"\s*\(?(?:en|montants? en)\s+(?:kmad|kdh|mmad|mdh|milliers|millions)\b", l, re.I):
+            for m in list(UNIT_RE.finditer(l))[:1]:
+                best = 1e3 if m.group(1) else 1e6 if m.group(2) else 1.0
+            continue
         if re.search(r"\.\s*$", l) or (len(l.split()) > 14 and not re.search(r"\((?:en |montants? )[^)]*\)", l, re.I)):
             continue   # phrase de texte (« … 130 millions de dirhams. ») : pas un en-tête de tableau
         if not l or re.search(r"(?:\d{1,3}(?: \d{3})+|\d,\d+|\d{4,})\s*\)?\s*$", l) and not re.search(r"(?:19|20)\d\d\s*$", l):
             continue
         for m in UNIT_RE.finditer(l):
             best = 1e3 if m.group(1) else 1e6 if m.group(2) else 1.0
-    if re.search(r"\d{1,3} \d{3} \d{3},\d{2}\b", tail):
+    if re.search(r"\d{1,3}([ .])\d{3}\1\d{3},\d{2}\b", tail):
         best = 1.0   # montants à centimes : dirhams (un tableau en milliers n'affiche pas de centimes)
     return best
 
 
 def flatten(text):
-    text = re.sub(r"(R[ÉE]SUL)\s+(TAT)", r"\1\2", text, flags=re.I)
+    text = re.sub(r"R([ÉE])SUL ?T ?A ?T", r"R\1SULTAT", text)           # « RÉSUL T A T » : lettres espacées dans la couche texte
+    text = re.sub(r"(R[ée]sul)\s+(tat)", r"\1\2", text, flags=re.I)
+    text = re.sub(r"(\d) ,(\d{2})(?!\d)", r"\1,\2", text)                # « 107 ,91 » : espace parasite avant les centimes
     t = text.replace("\u2019", "'").replace("\u2018", "'").replace("\u2013", "-").replace("\u2014", "-")
     return re.sub(r"[ \t\u00a0\u202f\u2009]+", " ", t)
 
 
-PREFIX = r"(?:(?:[IVX]{1,5}|\d{1,2})\s*[.)=-]?\s*(?:=\s*)?|Dont\s*:?\s*|[•*:|]\s*|Net\s+)?"
+PREFIX = r"(?:(?:[IVX]{1,5}|\d{1,2})\s*[.)=\[-]?\s*(?:=\s*)?|Dont\s*:?\s*|[•*:|]\s*|-\s+(?=[A-Za-zÀ-ÿ])|Net\s+|[A-Z]\s+)?"   # « T Total… », « E Chiffres… » : lettre du texte vertical en marge
 
 
 _PAIR_RAW = re.compile(r"(?<![\w/.-])(\d{1,2}[/.]\d{1,2}[/.])?(20[0-4]\d)\s*\|?\s+(\d{1,2}[/.]\d{1,2}[/.])?(20[0-4]\d)(?![\w/.-])")
@@ -383,7 +395,7 @@ def _to_mad(f, key):
     if key in PER_SHARE:
         f["mad"], f["mad_previous"] = f["current"], f["previous"]
     elif f["unit"]:
-        f["mad"], f["mad_previous"] = f["current"] * f["unit"], f["previous"] * f["unit"]
+        f["mad"], f["mad_previous"] = f["current"] * f["unit"], (None if f["previous"] is None else f["previous"] * f["unit"])
     else:
         f["mad"] = f["mad_previous"] = None
     return f
@@ -456,8 +468,8 @@ def _select_consolidated(text, labels, model, rn):
             if rn and rn.get("unit") and key in ("equity_total", "equity_group", "total_assets"):
                 # fonds propres ou total bilan très inférieurs au résultat de l'exercice : ligne d'un autre tableau
                 # (seuil : 25 % du résultat, soit un ROE de 400 % ; une société qui distribue tout peut avoir des fonds propres < résultat)
-                cands = [c for c in cands if not c.get("unit") or c["current"] * c["unit"] >= 0.25 * abs(rn["current"] * rn["unit"])]
-            out[key] = _nearest(cands, anchor, rn)
+                cands = [c for c in cands if not c.get("unit") or c["current"] < 0 or c["current"] * c["unit"] >= 0.25 * abs(rn["current"] * rn["unit"])]   # négatif : situation nette négative, signalée ensuite
+            out[key] = _nearest(cands, anchor, rn) if key not in PER_SHARE else (min(cands, key=lambda c: abs(c["pos"] - anchor)) if cands else None)
             if out[key]:
                 out[key] = dict(out[key])
                 break
@@ -476,14 +488,22 @@ def _last_three_with_identity(toks):
     (« 2.065.577 ») ou en groupes séparés par des espaces (« 1 485 722 717 1 486 439 ») : toutes les découpes des
     derniers jetons sont essayées, et la ligne n'est retenue que si une seule vérifie l'identité."""
     sols = set()
-    tail = toks[-9:]
+    tail = []
+    for t in reversed(toks[-12:]):   # suite finale de jetons numériques seulement
+        if not re.fullmatch(r"-?\(?\d[\d,]*\)?", t):
+            break
+        tail.insert(0, t)
     n = len(tail)
     for i in range(n - 2):
         for j in range(i + 1, n - 1):
             for k in range(j + 1, n):
                 a, b, c = _number(tail[i:j]), _number(tail[j:k]), _number(tail[k:])
-                if None not in (a, b, c) and _close(a + b, c, 0, 2.5) and c != 0:
-                    sols.add((a, b, c))
+                if None in (a, b, c):
+                    continue
+                if _close(a + b, c, 0, 2.5) and c != 0:
+                    sols.add((a, b, c))                       # part du groupe, minoritaires, total
+                elif _close(b + c, a, 0, 2.5) and a != 0 and abs(c) >= abs(b):
+                    sols.add((c, b, a))                       # total, minoritaires, part du groupe (Label'Vie)
     return list(sols)[0] if len(sols) == 1 else None
 
 
@@ -494,7 +514,7 @@ def equity_from_variation(text):
     flat = flatten(text)
     rows = {}
     # « Capitaux propres (clôture) au 31 décembre AAAA … part du groupe  minoritaires  total » (coquille « propores » tolérée)
-    for m in re.finditer(r"^\s*Capitaux propo?res (?:cl[ôo]ture )?au 31 d[ée]cembre (20\d\d)(?! corrig)\s+(.*?)\s*$", flat, re.M | re.I):
+    for m in re.finditer(r"^\s*(?:Capitaux propo?res (?:cl[ôo]ture )?au 31 d[ée]cembre|Situation au 31 d[ée]cembre|SITUATION A LA CL[ÔO]TURE DE L'EXERCICE) (20\d\d)(?! corrig)\s+(.*?)\s*$", flat, re.M | re.I):
         toks = normalize_tail(m.group(2)).split()
         trio = _last_three_with_identity(toks)
         if trio:
@@ -605,6 +625,38 @@ def social_loans(text, anchor=None):
     return None
 
 
+def social_equity_from_split_passif(text, net_income):
+    """Passif CGNC extrait en deux blocs (montants d'un côté, libellés de l'autre, Cartier Saada) :
+    dans le bloc « BILAN - PASSIF », la paire (N, N-1) P suivie de lignes dont la somme vaut P et dont la dernière
+    est égale au résultat net du CPC, pour N ET N-1, est le total des capitaux propres (capital … résultat).
+    Exige aussi le libellé « Total des capitaux propres » dans la même page."""
+    if not net_income or net_income.get("previous") is None:
+        return None
+    flat = flatten(text)
+    for m in re.finditer(r"BILAN\s*-?\s*PASSIF", flat, re.I):
+        seg = flat[m.start(): m.start() + 6000]
+        if not re.search(r"TOTAL DES CAPITAUX PROPRES", seg, re.I):
+            continue
+        pairs = []
+        for line in seg.split("\n")[1:80]:
+            mm = re.fullmatch(r"\s*(-?\d{1,3}(?: \d{3})*,\d{2})\s+(-?\d{1,3}(?: \d{3})*,\d{2})\s*", line)
+            pairs.append(tuple(float(g.replace(" ", "").replace(",", ".")) for g in mm.groups()) if mm else None)
+        for i, p in enumerate(pairs):
+            if not p or p[0] <= 0:
+                continue
+            acc = [0.0, 0.0]
+            for q in pairs[i + 1:]:
+                if q is None:
+                    break
+                acc[0] += q[0]; acc[1] += q[1]
+                if (abs(q[0] - net_income["current"]) <= 0.011 and abs(q[1] - net_income["previous"]) <= 0.011
+                        and abs(acc[0] - p[0]) <= 0.02 and abs(acc[1] - p[1]) <= 0.02):
+                    return {"current": p[0], "previous": p[1], "unit": 1.0, "layout": "N / N-1", "ambiguous_split": False,
+                            "pos": m.start(), "line": f"{p[0]:,.2f} {p[1]:,.2f}".replace(",", " "),
+                            "method": "passif CGNC extrait sans libellés : total = somme des postes de capitaux propres jusqu'au résultat de l'exercice (égal au résultat du CPC), N et N-1"}
+    return None
+
+
 def extract(text, model):
     """Comptes consolidés si le document contient une ligne « résultat net part du groupe » chiffrée ;
     sinon comptes sociaux (champ scope). Chaque grandeur est prise dans le tableau le plus proche de
@@ -615,7 +667,9 @@ def extract(text, model):
         rn_all = group_share_from_split(text)
     rn_all = [x for x in rn_all if x["unit"]] or rn_all
     flat = flatten(text)
-    has_consolidated = bool(re.search(r"^[^\n]*(?:consolid|part du groupe)[^\n]*\d{3}\s*\)?\s*$", flat, re.I | re.M))
+    # ligne chiffrée mentionnant le consolidé / la part du groupe (un en-tête « … CONSOLIDE 31/12/2025 31/12/2024 » ne compte pas)
+    has_consolidated = any(not re.search(r"(?:19|20)\d\d\s*\)?[ \t]*$", m.group(0))
+                           for m in re.finditer(r"^[^\n]*(?:consolid|part du groupe)[^\n]*\d{3}[ \t]*\)?[ \t]*$", flat, re.I | re.M))
     if not rn_all and has_consolidated:   # ligne « (dont) part du groupe » isolée : retenue seulement si le BPA publié la confirme (contrôlé dans checks)
         alts = [x for x in find(text, [r"(?:Dont\s*:?\s*)?(?:R[ée]sultat\s+(?:net\s+)?)?part (?:du )?groupe",
                                  r"R[ée]sultat (?:net )?de l'exercice", r"R[ée]sultat net des activités maintenues"], all_matches=True)
@@ -646,8 +700,21 @@ def extract(text, model):
             if not out.get("cost_of_risk"):
                 out["cost_of_risk"] = social_cost_of_risk(text)
             out["customer_loans"] = social_loans(text)
+        if model == "corporate" and not out.get("equity_total"):
+            out["equity_total"] = social_equity_from_split_passif(text, out.get("net_income_group"))
         if model == "corporate" and not out.get("revenue"):
             parts = [x for x in (find(text, [r"Ventes de marchandises(?: \(en l'état\))?"]), find(text, [r"Ventes de biens et services produits"])) if x]
+            if parts and all(x["current"] == x["previous"] for x in parts):
+                parts = []   # lignes « propres à l'exercice / total N » sans N-1 : N-1 inconnu, non recopié
+            if not parts:   # « Chiffre(s) d'affaires X 0,00 X » : propres à l'exercice + précédents = total N ; N-1 absent de la ligne
+                flat = flatten(text)
+                for m in re.finditer(r"^\s*" + PREFIX + r"Chiffres? d'affaires\s+(\d[\d .]*,\d{2})\s+0,00\s+(\d[\d .]*,\d{2})\s*[A-Z]?\s*$", flat, re.M | re.I):
+                    a, c = (float(normalize_tail(g).replace(" ", "").replace(",", ".")) for g in m.groups())
+                    if a == c and a > 0:
+                        out["revenue"] = {"current": c, "previous": None, "unit": unit_at(flat, m.start(), m.group(2)), "layout": "CPC : propres à l'exercice + précédents = total N (N-1 non publié sur la ligne)",
+                                          "ambiguous_split": False, "line": m.group(0).strip()[:220], "pos": m.start(),
+                                          "method": "chiffre d'affaires de l'exercice seul : N-1 absent de la ligne, croissance non calculée"}
+                        break
             if parts:
                 out["revenue"] = {"current": sum(x["current"] for x in parts), "previous": sum(x["previous"] for x in parts),
                                   "unit": parts[0]["unit"], "layout": parts[0]["layout"], "ambiguous_split": any(x["ambiguous_split"] for x in parts),
@@ -679,7 +746,7 @@ UNITS = (1.0, 1e3, 1e6)
 
 def _set_unit(f, u, why, notes, key):
     f["unit"], f["unit_method"] = u, why
-    f["mad"], f["mad_previous"] = f["current"] * u, f["previous"] * u
+    f["mad"], f["mad_previous"] = f["current"] * u, (None if f["previous"] is None else f["previous"] * u)
     notes.append(f"{key} : unité non indiquée dans le document, déduite ({why}) : {({1.0: 'MAD', 1e3: 'milliers', 1e6: 'millions'})[u]}")
 
 
@@ -729,6 +796,19 @@ def infer_units(fin, model, shares_now, price, notes):
             _set_unit(f, ok(us), "rapport plausible au total bilan (10-100 %)", notes, "customer_loans")
 
 
+def _capital_increase_explains(fin, eps, shares_now, implied, rn):
+    """Augmentation de capital dans l'exercice (SGTM 2025 : capital 300 → 1 200 MMAD) : nombre de titres N-1
+    = titres actuels × capital N-1 / capital N. Accepté seulement si le BPA publié N se situe entre les titres N-1
+    et N (nombre moyen pondéré) ET si le BPA publié N-1 correspond au résultat N-1 / titres N-1 (à 3 %)."""
+    cap, e = fin.get("share_capital"), fin.get("eps")
+    rn_prev = v(fin.get("net_income_group"), "mad_previous")
+    if not (cap and e and cap["current"] > cap["previous"] > 0 and e.get("previous") and rn_prev):
+        return False
+    shares_prev = shares_now * cap["previous"] / cap["current"]
+    return (shares_prev * 0.97 <= implied <= shares_now * 1.03
+            and abs(rn_prev / shares_prev / e["previous"] - 1) <= 0.03)
+
+
 def checks(fin, model, shares_now, price=None):
     """Contrôles croisés ; renvoie (indicateurs dérivés, anomalies bloquantes, notes)."""
     errors, notes, d = [], [], {}
@@ -768,6 +848,10 @@ def checks(fin, model, shares_now, price=None):
                     # le BPA publié étant calculé sur le nombre moyen pondéré de l'exercice
                     notes.append(f"BPA publié calculé sur {round(implied):,} titres, {shares_now:,} titres aujourd'hui (rapport {ratio:.2f}) : "
                                  f"augmentation de capital probable ; BPA recalculé sur le nombre actuel de titres".replace(",", " "))
+                elif _capital_increase_explains(fin, eps, shares_now, implied, rn):
+                    cap = fin["share_capital"]
+                    notes.append(f"BPA publié calculé sur {round(implied):,} titres (nombre moyen), {shares_now:,} titres aujourd'hui : capital porté de "
+                                 f"{cap['previous']:,.0f} à {cap['current']:,.0f} dans l'exercice (bilan publié) ; BPA N-1 cohérent avec le capital N-1".replace(",", " "))
                 else:
                     errors.append(f"BPA publié incohérent avec résultat / nombre de titres (rapport {ratio:.2f})")
     if fin.get("net_income_group") and fin["net_income_group"].get("needs_eps_check"):
@@ -788,7 +872,9 @@ def checks(fin, model, shares_now, price=None):
         d["equity_group_method"] = "capitaux propres totaux − intérêts minoritaires (" + fin["minority_interests"].get("method", "") + ")"
     if eq_group is None:
         errors.append("capitaux propres part du groupe introuvables")
-    elif eq_group <= 0 or (eq_total and eq_group > eq_total * 1.001):
+    elif eq_group <= 0:
+        errors.append(f"situation nette négative : capitaux propres part du groupe de {eq_group / 1e6:,.1f} M MAD au bilan publié ; ROE et P/B non calculables".replace(",", " ").replace(".", ","))
+    elif eq_total and eq_total > 0 and eq_group > eq_total * 1.001:
         errors.append("capitaux propres part du groupe incohérents")
     d["equity_group_mad"] = eq_group
     if eq_group and eq_group > 0 and rn:
@@ -831,6 +917,10 @@ def checks(fin, model, shares_now, price=None):
             errors.append("produits des activités d'assurance / primes introuvables")
     else:
         rev, op = v(fin.get("revenue")), v(fin.get("operating_income"))
+        opp = v(fin.get("operating_income"), "mad_previous")
+        if op and opp and not 0.01 <= abs(op / opp) <= 100:   # colonnes du CPC dispersées (« -47 077 » contre « 106 205 594 »)
+            notes.append(f"résultat d'exploitation écarté : N et N-1 d'ordres de grandeur incompatibles ({op:,.0f} / {opp:,.0f} MAD), colonnes mal alignées dans le document".replace(",", " "))
+            op = None
         if rev and op is not None:
             d["operating_margin_pct"] = 100 * op / rev
         if rev and rn is not None:
@@ -863,7 +953,11 @@ def checks(fin, model, shares_now, price=None):
         if rn and rn > 0:
             per = mcap / rn
             d["implied_per"] = per
-            if not 2 <= per <= 300:
+            rnf, eqf = fin.get("net_income_group") or {}, fin.get("equity_group") or fin.get("equity_total") or {}
+            same_published_unit = rnf.get("unit") and rnf.get("unit") == eqf.get("unit") and "unit_method" not in rnf and "unit_method" not in eqf
+            if per > 300 and same_published_unit and eq_group and 0.1 <= mcap / eq_group <= 40:
+                notes.append(f"PER {per:.0f} non significatif : résultat quasi nul (ROE {100 * rn / eq_group:.2f} %), unités publiées identiques pour le résultat et les capitaux propres")
+            elif not 2 <= per <= 300:
                 errors.append(f"PER implicite {per:.3g} hors bornes [2 ; 300] : unité ou périmètre suspect")
         if eq_group and eq_group > 0:
             pb = mcap / eq_group

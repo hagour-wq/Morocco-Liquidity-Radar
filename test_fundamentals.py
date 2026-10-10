@@ -1,6 +1,6 @@
 import unittest
 from pathlib import Path
-from extract_financials import split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten, equity_from_variation, social_bank_equity, social_cost_of_risk, _social_like
+from extract_financials import social_equity_from_split_passif, _capital_increase_explains, split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten, equity_from_variation, social_bank_equity, social_cost_of_risk, _social_like
 from rank_equities import evaluate_fundamental
 
 FX = Path("tests/fixtures")
@@ -318,6 +318,60 @@ class PcecTests(unittest.TestCase):
     def test_roman_numbered_pcec_line_is_not_flagged_social(self):
         self.assertFalse(_social_like({"line": "IV. CHARGES GENERALES D'EXPLOITATION 356 638 325 628"}))
         self.assertTrue(_social_like({"line": "III = RESULTAT COURANT 1 234 1 111"}))
+
+
+class RejectBatchTests(unittest.TestCase):
+    """Corrections du lot « rejets » (lignes réelles des comptes 2025)."""
+    def test_vertical_margin_letter_and_dash_prefix(self):
+        self.assertEqual(parse_tail("59.914.634,13 55.159.969,69")[:2], (59914634.13, 55159969.69))
+        t = extract("Résultat net de l'exercice (2) 59.914.634,13 55.159.969,69N\nT Total des capitaux propres        (A) 195 438 452,04 193 090 661,08\n", "corporate")
+        self.assertEqual(t["net_income_group"]["current"], 59914634.13)
+        self.assertEqual(t["equity_total"]["current"], 195438452.04)
+
+    def test_cpc_line_with_empty_detail_columns(self):
+        self.assertEqual(parse_tail("0,00 0,00 69 547 790,96 67 814 205,42")[:2], (69547790.96, 67814205.42))
+
+    def test_three_columns_own_plus_previous_is_not_n_minus_1(self):
+        r = parse_tail("979.733.874,82 0,00 979.733.874,82")
+        self.assertFalse(r and r[1] == 0)            # jamais « N-1 = 0 »
+
+    def test_spaced_letters_and_space_before_cents(self):
+        f = flatten(" XIII  RÉSUL T A T NET ( XI - XII )  25 878 107 ,91 19 364 056,78")
+        self.assertIn("RÉSULTAT NET", f)
+        self.assertIn("25 878 107,91", f)
+
+    def test_variation_table_total_first_order(self):
+        t = ("SITUATION A LA CLOTURE DE L'EXERCICE 2024 3 500 767 138,79 91 020 189,77 3 409 746 949,02\n"
+             "SITUATION A LA CLOTURE DE L'EXERCICE 2025 3 774 471 165,05 104 317 165,15 3 670 153 999,90\n")
+        ev = equity_from_variation(t)
+        self.assertEqual((ev["equity_group"]["current"], ev["minority_interests"]["current"], ev["equity_total"]["current"]),
+                         (3670153999.90, 104317165.15, 3774471165.05))
+
+    def test_capital_increase_explains_eps(self):
+        fin = {"share_capital": {"current": 1200000, "previous": 300000}, "eps": {"current": 37, "previous": 39},
+               "net_income_group": {"mad_previous": 589759e3}}
+        self.assertTrue(_capital_increase_explains(fin, 37, 60e6, 1341942e3 / 37, 1341942e3))
+        fin["eps"]["previous"] = 30                  # BPA N-1 non cohérent : refusé
+        self.assertFalse(_capital_increase_explains(fin, 37, 60e6, 1341942e3 / 37, 1341942e3))
+
+    def test_split_passif_equity_sum_and_result(self):
+        t = ("BILAN - PASSIF\nExercice Exercice Précédent\n167 108 094,68 152 299 965,73\n52 650 000,00 52 650 000,00\n0,00 0,00\n"
+             "2 606 640,90 2 606 640,90\n115 122 500,00 74 672 000,00\n5 265 000,00 5 265 000,00\n0,00 0,00\n17 106 324,83 11 369 808,27\n"
+             "0,00 0,00\n-25 642 371,05 5 736 516,56\n167 108 094,68 152 299 965,73\nTOTAL DES CAPITAUX PROPRES ( a )\n")
+        e = social_equity_from_split_passif(t, {"current": -25642371.05, "previous": 5736516.56})
+        self.assertEqual((e["current"], e["previous"]), (167108094.68, 152299965.73))
+        self.assertIsNone(social_equity_from_split_passif(t, {"current": -25642371.05, "previous": 1.0}))
+
+
+class CapitalUnitRescueTests(unittest.TestCase):
+    def test_unit_from_published_share_capital(self):
+        from collect_fundamentals import capital_unit_rescue
+        fin = {"share_capital": {"current": 46595.40, "previous": 46595.40, "unit": 1.0},
+               "equity_group": {"current": 262142.60, "previous": 247790.33, "unit": 1.0}}
+        out, note = capital_unit_rescue("Société Anonyme au capital de 46.595.400 Dirhams - R.C.Tanger", fin)
+        self.assertEqual(out["equity_group"]["mad"], 262142600.0)
+        self.assertIn("capital social publié", note)
+        self.assertIsNone(capital_unit_rescue("au capital de 50.000.000 Dirhams", fin))   # aucun rapport exact 1 / 1 000 / 1 000 000 : rien
 
 
 if __name__ == "__main__":
