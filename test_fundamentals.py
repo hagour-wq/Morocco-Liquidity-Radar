@@ -1,6 +1,6 @@
 import unittest
 from pathlib import Path
-from extract_financials import split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten, equity_from_variation
+from extract_financials import split_two, extract, checks, parse_tail, unit_at, year_order_at, flatten, equity_from_variation, social_bank_equity, social_cost_of_risk, _social_like
 from rank_equities import evaluate_fundamental
 
 FX = Path("tests/fixtures")
@@ -286,6 +286,38 @@ class VariationTableTests(unittest.TestCase):
     def test_needs_previous_year(self):
         one = "\n".join(l for l in self.TXT.splitlines() if "2024" not in l)
         self.assertIsNone(equity_from_variation(one))
+
+
+class PcecTests(unittest.TestCase):
+    """Établissements de crédit au format PCEC (lignes réelles Salafin, EQDOM 2025, en milliers de DH)."""
+    PASSIF = ("en milliers de DH\n    PASSIF 31/12/2025 31/12/2024\n"
+              "Provisions réglementées 17 673 19 798\nDettes subordonnées 0 0\n"
+              "Réserves et primes liées au capital 462 304 461 319\nCapital 312 412 312 412\n"
+              "Actionnaires. Capital non versé (-) 0 0\nReport à nouveau (+/-) 0 0\n"
+              "Résultats nets en instance d'affectation (+/-) 0 0\nRésultat net de l'exercice (+/-) 96 117 93 147\n"
+              "Total du Passif 3 813 381 3 726 279\n")
+    CPC = ("DOTATIONS AUX PROVISIONS ET PERTES SUR CREANCES 323 327 85 296\nIRRECOUVRABLES\n"
+           "REPRISES DE PROVISIONS ET RECUPERATIONS SUR 287 311 9 291\nCREANCES AMORTIES\n")
+
+    def test_equity_is_sum_of_passif_items_checked_against_result(self):
+        e = social_bank_equity(self.PASSIF, {"current": 96117, "previous": 93147})
+        self.assertEqual((e["current"], e["previous"]), (870833, 866878))
+        self.assertIsNone(social_bank_equity(self.PASSIF, {"current": 99999, "previous": 93147}))   # résultat discordant
+
+    def test_cost_of_risk_is_net_of_reprises(self):
+        c = social_cost_of_risk(self.CPC)
+        self.assertEqual((c["current"], c["previous"]), (-36016, -76005))
+
+    def test_variation_table_with_space_grouped_amounts_and_typo(self):
+        t = ("Capitaux propores clôture au 31 décembre 2024  167 025    83 325    -      1 136 810    -      1 387 160      623          1 387 783   \n"
+             "Capitaux propores clôture au 31 décembre 2025  167 025    83 325    -      1 235 372    -      1 485 722    717    1 486 439   \n")
+        ev = equity_from_variation(t)
+        self.assertEqual((ev["equity_group"]["current"], ev["minority_interests"]["current"], ev["equity_total"]["current"]), (1485722, 717, 1486439))
+        self.assertEqual(ev["equity_group"]["previous"], 1387160)
+
+    def test_roman_numbered_pcec_line_is_not_flagged_social(self):
+        self.assertFalse(_social_like({"line": "IV. CHARGES GENERALES D'EXPLOITATION 356 638 325 628"}))
+        self.assertTrue(_social_like({"line": "III = RESULTAT COURANT 1 234 1 111"}))
 
 
 if __name__ == "__main__":

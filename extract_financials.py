@@ -16,7 +16,7 @@ RNPG = r"R[ÉE]SULTATS? NETS?(?: DE L'EXERCICE| CONSOLIDÉ)?\s*[-,(]?\s*PART DU 
 LABELS = {
     "bank": {
         "pnb": [r"PRODUIT NET BANCAIRE(?: IFRS| CONSOLIDÉ)?"],
-        "operating_expenses": [r"Charges générales d'exploitation"],
+        "operating_expenses": [r"Charges g[ée]n[ée]rales d'exploitation"],
         "depreciation": [r"Dotations aux amortissements et aux dépréciations des immobilisations incorporelles et corporelles",
                          r"Dotations aux amortissements et aux dépréciations des immobilisations"],
         "cost_of_risk": [r"Coût du risque(?: de crédit)?"],
@@ -25,7 +25,7 @@ LABELS = {
         "eps": [r"Résultat (?:de base |net )?par action"],
         "equity_total": [r"Capitaux propres(?: consolidés)?(?=\s+-?\d)", r"Total capitaux propres(?: consolid[ée]s)?"],
         "minority_interests": [],
-        "total_assets": [r"TOTAL ACTIF(?: IFRS)?"],
+        "total_assets": [r"TOTAL ACTIF(?: IFRS)?", r"TOTAL DE L\s?'\s?ACTIF"],
         "customer_loans": [r"Prêts et créances sur la clientèle(?:, au coût amorti)?"],
     },
     "corporate": {
@@ -65,7 +65,7 @@ SOCIAL = {
     },
     "bank": {
         "pnb": [r"PRODUIT NET BANCAIRE"],
-        "operating_expenses": [r"Charges générales d'exploitation"],
+        "operating_expenses": [r"Charges g[ée]n[ée]rales d'exploitation"],
         "cost_of_risk": [r"Coût du risque"],
         "net_income_group": [r"R[ÉE]SULTAT NET DE L'EXERCICE"],
         "equity_total": [r"Capitaux propres(?=\s+-?\d)"],
@@ -73,7 +73,7 @@ SOCIAL = {
     },
     "insurance": {},   # comptes sociaux d'assurance (modèle CGNC assurances) : non retenus, colonnes brutes / cessions / nettes
 }
-CONSOLIDATED_RN = r"R[ÉE]SULTAT (?:NET )?(?:TOTAL )?(?:DE L'ENSEMBLE )?CONSOLIDÉ(?: DE L'EXERCICE)?"
+CONSOLIDATED_RN = r"(?:R[ÉE]SULTAT (?:NET )?(?:TOTAL )?(?:DE L'ENSEMBLE )?CONSOLIDÉ(?: DE L'EXERCICE)?|R[ÉE]SULTAT NET DU GROUPE)"   # le second : états consolidés PCEC
 BALANCE = {"equity_group", "equity_total", "minority_interests", "net_debt", "total_assets", "customer_loans"}
 PER_SHARE = {"eps"}
 
@@ -389,7 +389,7 @@ def _to_mad(f, key):
     return f
 
 
-SOCIAL_SIGNATURE = re.compile(r"^\s*(?:[IVX]{1,5}\s*(?:=\s*)?[A-ZÉ]|T ?otal des capitaux propres\s*\(A\))")
+SOCIAL_SIGNATURE = re.compile(r"^\s*(?:[IVX]{1,5}\b\s*(?:=\s*)?[A-ZÉ]|T ?otal des capitaux propres\s*\(A\))")
 
 
 def _social_like(c):
@@ -464,7 +464,27 @@ def _select_consolidated(text, labels, model, rn):
         if key == "equity_group" and out[key]:
             bs_anchor = out[key]["pos"]
     out["minority_interests"] = minorities_near(text, out.get("equity_total")) if model == "bank" or not out.get("equity_group") else None
+    if model == "bank" and not out.get("cost_of_risk"):   # états consolidés au format PCEC : pas de ligne « Coût du risque »
+        out["cost_of_risk"] = social_cost_of_risk(text, pl_anchor)
+    if model == "bank" and not out.get("customer_loans") and out["cost_of_risk"] and "PCEC" in out["cost_of_risk"].get("method", ""):
+        out["customer_loans"] = social_loans(text, pl_anchor)
     return out
+
+
+def _last_three_with_identity(toks):
+    """Trois derniers montants (a, b, c) de la ligne avec a + b = c. Les montants peuvent être d'un seul jeton
+    (« 2.065.577 ») ou en groupes séparés par des espaces (« 1 485 722 717 1 486 439 ») : toutes les découpes des
+    derniers jetons sont essayées, et la ligne n'est retenue que si une seule vérifie l'identité."""
+    sols = set()
+    tail = toks[-9:]
+    n = len(tail)
+    for i in range(n - 2):
+        for j in range(i + 1, n - 1):
+            for k in range(j + 1, n):
+                a, b, c = _number(tail[i:j]), _number(tail[j:k]), _number(tail[k:])
+                if None not in (a, b, c) and _close(a + b, c, 0, 2.5) and c != 0:
+                    sols.add((a, b, c))
+    return list(sols)[0] if len(sols) == 1 else None
 
 
 def equity_from_variation(text):
@@ -473,14 +493,12 @@ def equity_from_variation(text):
     retenus seulement si part du groupe + minoritaires = total, pour l'exercice et le précédent."""
     flat = flatten(text)
     rows = {}
-    for m in re.finditer(r"^\s*Capitaux propres au 31 d[ée]cembre (20\d\d)\s+(.*?)\s*$", flat, re.M | re.I):
+    # « Capitaux propres (clôture) au 31 décembre AAAA … part du groupe  minoritaires  total » (coquille « propores » tolérée)
+    for m in re.finditer(r"^\s*Capitaux propo?res (?:cl[ôo]ture )?au 31 d[ée]cembre (20\d\d)(?! corrig)\s+(.*?)\s*$", flat, re.M | re.I):
         toks = normalize_tail(m.group(2)).split()
-        nums = []
-        for tk in toks[-3:]:
-            n = _number([tk])
-            nums.append(n)
-        if len(nums) == 3 and None not in nums and _close(nums[0] + nums[1], nums[2], 0, 2.5):
-            rows[int(m.group(1))] = (nums, m.group(0).strip(), m.start())
+        trio = _last_three_with_identity(toks)
+        if trio:
+            rows[int(m.group(1))] = (trio, m.group(0).strip(), m.start())
     if not rows:
         return None
     y = max(rows)
@@ -496,6 +514,95 @@ def equity_from_variation(text):
     return {k: {**base, "current": c, "previous": p,
                 "method": f"capitaux propres ({names[k]}) au 31/12/{y} et {y - 1} lus dans le tableau de variation des capitaux propres"}
             for k, (c, p) in vals.items()}
+
+
+SOCIAL_BANK_EQUITY = [   # passif PCEC (établissements de crédit) : postes de capitaux propres, avec leur signe
+    ("reserves", r"R[ée]serves et primes li[ée]es au capital", 1, True),
+    ("capital", r"Capital(?!\s*(?:non|appel))", 1, True),
+    ("unpaid", r"Actionnaires\s*\.?\s*Capital non vers[ée]\s*\(-\)", -1, False),
+    ("retained", r"Report [àa] nouveau\s*\(\+/-\)", 1, False),
+    ("pending", r"R[ée]sultats? nets? en instance d'affectation\s*\(\+/-\)", 1, False),
+    ("result", r"R[ée]sultat net de l'exercice\s*\(\+/-\)", 1, True),
+]
+
+
+def social_bank_equity(text, net_income):
+    """Comptes sociaux d'un établissement de crédit (PCEC) : le passif n'a pas de ligne « total des capitaux propres ».
+    Capitaux propres = réserves et primes + capital − capital non versé + report à nouveau + résultats en instance
+    d'affectation + résultat de l'exercice, lus dans le bloc qui se termine par « Total du passif ».
+    Retenus seulement si le résultat du passif est égal au résultat net du compte de produits et charges (N et N-1)."""
+    if not net_income:
+        return None
+    flat = flatten(text)
+    for m in re.finditer(r"^\s*Total du passif", flat, re.M | re.I):
+        lo, hi = max(0, m.start() - 4000), m.start()
+        parts, ok = {}, True
+        for key, pat, sign, required in SOCIAL_BANK_EQUITY:
+            f = find(text, [pat], lo, hi, all_matches=True)
+            f = f[-1] if f else None   # ligne la plus proche du total
+            if not f:
+                seg = flat[lo:hi]
+                if re.search(r"^\s*(?:\d{1,2}\s*\.\s*)?" + pat + r"[^\n\d]*$", seg, re.M | re.I):
+                    f = {"current": 0.0, "previous": 0.0, "unit": None}   # poste présent, sans montant
+                elif required:
+                    ok = False
+                    break
+                else:
+                    continue
+            parts[key] = (f, sign)
+        if not ok:
+            continue
+        res = parts["result"][0]
+        if not (_close(res["current"], net_income["current"], 0, 1) and _close(res["previous"], net_income["previous"], 0, 1)):
+            continue
+        cur = sum(sign * abs(f["current"]) if key == "unpaid" else sign * f["current"] for key, (f, sign) in parts.items())
+        prev = sum(sign * abs(f["previous"]) if key == "unpaid" else sign * f["previous"] for key, (f, sign) in parts.items())
+        return {"current": cur, "previous": prev, "unit": parts["capital"][0]["unit"] or res["unit"], "layout": "N / N-1",
+                "ambiguous_split": False, "pos": m.start(), "line": " + ".join(f"{k} {f['current']:.0f}" for k, (f, _) in parts.items()),
+                "method": "comptes sociaux PCEC : capital + réserves et primes + report à nouveau + résultats en instance + résultat de l'exercice − capital non versé (résultat du passif = résultat du CPC)"}
+    return None
+
+
+def social_cost_of_risk(text, anchor=None):
+    """PCEC (comptes sociaux ou consolidés) : coût du risque = dotations aux provisions et pertes sur créances
+    irrécouvrables − reprises de provisions et récupérations sur créances amorties (charge nette, en négatif).
+    Avec une ancre (résultat consolidé), les lignes du compte de résultat le plus proche sont retenues."""
+    dots = find(text, [r"DOTATIONS AUX PROVISIONS ET PERTES SUR CR[ÉE]ANCES(?:\s+IRR[ÉE]COUVRABLES)?"], all_matches=True)
+    reps = find(text, [r"REPRISES DE PROVISIONS ET R[ÉE]CUP[ÉE]RATIONS SUR(?:\s+CR[ÉE]ANCES AMORTIES)?"], all_matches=True)
+    if not dots or not reps:
+        return None
+    pick = (lambda xs: min(xs, key=lambda x: abs(x["pos"] - anchor))) if anchor is not None else (lambda xs: xs[0])
+    dot = pick(dots)
+    rep = min(reps, key=lambda x: abs(x["pos"] - dot["pos"]))
+    if abs(rep["pos"] - dot["pos"]) > 2000:
+        return None
+    return {"current": -(dot["current"] - rep["current"]), "previous": -(dot["previous"] - rep["previous"]),
+            "unit": dot["unit"] or rep["unit"], "layout": dot["layout"], "ambiguous_split": dot["ambiguous_split"] or rep["ambiguous_split"],
+            "pos": dot["pos"], "line": (dot["line"] + " − " + rep["line"])[:440],
+            "method": "format PCEC : dotations aux provisions et pertes sur créances − reprises et récupérations"}
+
+
+def social_loans(text, anchor=None):
+    """PCEC : encours financés = créances sur la clientèle + immobilisations données en crédit-bail et en location
+    (sociétés de crédit-bail : l'essentiel du risque de crédit est porté par ces immobilisations), lus dans le bloc
+    qui se termine par « Total de l'actif »."""
+    flat = flatten(text)
+    totals = list(re.finditer(r"^\s*TOTAL DE L\s?'\s?ACTIF", flat, re.M | re.I))
+    if anchor is not None:   # états consolidés : le bilan le plus proche du compte de résultat retenu
+        totals.sort(key=lambda m: abs(m.start() - anchor))
+    for m in totals:
+        lo, hi = max(0, m.start() - 4000), m.start()
+        cl = find(text, [r"Cr[ée]ances sur la client[èe]le"], lo, hi, all_matches=True)
+        cb = find(text, [r"Immobilisations donn[ée]es en cr[ée]dit-bail et en location", r"Op[ée]rations de cr[ée]dit-bail et de location"], lo, hi, all_matches=True)
+        if not cl:
+            continue
+        cl, cb = cl[-1], (cb[-1] if cb else None)
+        parts = [x for x in (cl, cb) if x]
+        return {"current": sum(x["current"] for x in parts), "previous": sum(x["previous"] for x in parts),
+                "unit": cl["unit"], "layout": cl["layout"], "ambiguous_split": any(x["ambiguous_split"] for x in parts),
+                "pos": cl["pos"], "line": " + ".join(x["line"] for x in parts)[:440],
+                "method": "format PCEC : créances sur la clientèle" + (" + crédit-bail et location" if cb else "")}
+    return None
 
 
 def extract(text, model):
@@ -533,6 +640,12 @@ def extract(text, model):
         scope, labels = "social", SOCIAL[model]
         for key, pats in labels.items():
             out[key] = find(text, pats)
+        if model == "bank":
+            if not out.get("equity_total"):
+                out["equity_total"] = social_bank_equity(text, out.get("net_income_group"))
+            if not out.get("cost_of_risk"):
+                out["cost_of_risk"] = social_cost_of_risk(text)
+            out["customer_loans"] = social_loans(text)
         if model == "corporate" and not out.get("revenue"):
             parts = [x for x in (find(text, [r"Ventes de marchandises(?: \(en l'état\))?"]), find(text, [r"Ventes de biens et services produits"])) if x]
             if parts:
@@ -602,11 +715,18 @@ def infer_units(fin, model, shares_now, price, notes):
             us = [u for u in UNITS if lo <= abs(f["current"] * u / ref) <= hi]
             if ok(us):
                 _set_unit(f, ok(us), "rapport plausible au résultat ou aux capitaux propres", notes, k)
+    pnb = v(fin.get("pnb"))   # après le PNB, éventuellement déduit ci-dessus ; fourchettes de largeur < 1 000 : une seule unité possible
+    for k, lo, hi in (("operating_expenses", 0.05, 1.5), ("cost_of_risk", 0.005, 1.5)):
+        f = fin.get(k)
+        if f and f.get("unit") is None and pnb and f["current"]:
+            us = [u for u in UNITS if lo <= abs(f["current"] * u / pnb) <= hi]
+            if ok(us):
+                _set_unit(f, ok(us), "rapport plausible au produit net bancaire", notes, k)
     f, ta = fin.get("customer_loans"), v(fin.get("total_assets"))   # après le total bilan, éventuellement déduit ci-dessus
     if f and f.get("unit") is None and ta and f["current"] > 0:
-        us = [u for u in UNITS if 0.1 <= f["current"] * u / ta <= 0.95]
+        us = [u for u in UNITS if 0.1 <= f["current"] * u / ta <= 1.0]
         if ok(us):
-            _set_unit(f, ok(us), "rapport plausible au total bilan (10-95 %)", notes, "customer_loans")
+            _set_unit(f, ok(us), "rapport plausible au total bilan (10-100 %)", notes, "customer_loans")
 
 
 def checks(fin, model, shares_now, price=None):
@@ -684,8 +804,9 @@ def checks(fin, model, shares_now, price=None):
         if pnb and cor is not None:
             d["cost_of_risk_to_pnb_pct"] = 100 * abs(cor) / pnb
         loans, assets = v(fin.get("customer_loans")), v(fin.get("total_assets"))
-        if loans is not None and (loans <= 0 or (assets and not 0.1 <= loans / assets <= 0.95)):
-            notes.append(f"encours de crédits à la clientèle écarté ({loans / 1e6:,.0f} M MAD) : négatif ou hors de 10-95 % du total bilan, ligne d'un autre tableau".replace(",", " "))
+        if loans is not None and (loans <= 0 or (assets and not 0.1 <= loans / assets <= 1.0)):
+            notes.append(f"encours de crédits à la clientèle écarté ({loans / 1e6:,.0f} M MAD) : ".replace(",", " ") +
+                         "négatif ou hors de 10-100 % du total bilan, ligne d'un autre tableau")
             loans = None
         if loans and cor is not None:
             d["cost_of_risk_to_loans_pct"] = 100 * abs(cor) / loans
