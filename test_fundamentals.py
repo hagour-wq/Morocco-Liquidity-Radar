@@ -212,6 +212,32 @@ class BalanceTotalTests(unittest.TestCase):
         self.assertAlmostEqual(d["equity_ratio_pct"], 100 * 788101 / 3919529, places=3)   # capitaux propres part du groupe à défaut du total
 
 
+class BankRobustnessTests(unittest.TestCase):
+    """CIH, CDM : graphiques du communiqué, unités dans le texte, minoritaires à néant, augmentation de capital."""
+    def test_chart_axis_and_prose_units_ignored(self):
+        txt = ("RNPG\n(en MDH)\n2024 2025\n875,9\n1 089,4\n+24,4 %\n"
+               "représentent 1,6 milliards de dirhams pour une exigence de 130 millions de dirhams.\n"
+               "COMPTE DE RESULTAT CONSOLIDE en Kdh\nPRODUIT NET BANCAIRE 5 422 526 4 739 507\n"
+               "RESULTAT NET PART DU GROUPE 1 089 362 875 878\n")
+        f = extract(txt, "bank")
+        self.assertEqual(f["net_income_group"]["current"], 1089362.0)       # pas d'inversion par l'axe « 2024 2025 »
+        self.assertEqual(f["net_income_group"]["unit"], 1e3)                # « en Kdh », pas « (en MDH) » ni la phrase
+
+    def test_nil_minorities_and_capital_increase(self):
+        txt = ("BILAN CONSOLIDE (En milliers de DH)\nCapitaux propres 8 203 010 7 878 853\nRéserves consolidées 2 551 543 2 273 030\n"
+               "Part du groupe 2 551 543 2 273 030\nPart des minoritaires - -\nRésultat net de l'exercice 863 551 740 949\n"
+               "Part du groupe 863 551 740 949\nPart des minoritaires - -\n"
+               "COMPTE DE RÉSULTAT CONSOLIDÉ (En milliers de DH)\nPRODUIT NET BANCAIRE 3 568 401 3 303 182\n"
+               "Coût du risque -383 113 -398 408\nCharges générales d'exploitation 1 359 551 1 345 385\n"
+               "Résultat net part du groupe 863 551 740 949\nRésultat par action 79,36 68,09\n")
+        f = extract(txt, "bank")
+        self.assertEqual(f["minority_interests"]["current"], 0.0)
+        d, e, n = checks(f, "bank", 11626499, 921.0)
+        self.assertEqual(e, [])
+        self.assertTrue(any("augmentation de capital probable" in x for x in n))   # BPA sur nombre moyen pondéré (rapport 1,07)
+        self.assertAlmostEqual(d["equity_group_mad"], 8203010e3)
+
+
 class InsuranceTests(unittest.TestCase):
     def test_ifrs17_insurer(self):
         txt = ("COMPTE DE RESULTAT CONSOLIDE (en milliers de dirhams)\nProduits des activités d'assurance 4.1  6.396.362  6.186.016\n"

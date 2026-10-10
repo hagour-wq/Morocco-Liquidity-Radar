@@ -220,8 +220,13 @@ def unit_at(text, pos, tail=""):
     dans les 6 000 caractères qui précèdent ; à défaut, montants à centimes ⇒ dirhams."""
     lo = max(0, pos - 6000)
     best = None
-    for line in re.finditer(r"[^\n]*", text[lo:pos]):
-        l = line.group(0)
+    lines = text[lo:pos].split("\n")
+    for i, l in enumerate(lines):
+        nxt = next((x for x in lines[i + 1:i + 3] if x.strip()), "")
+        if _PAIR.search(nxt) and _chart_axis(lines, lines.index(nxt, i + 1)):
+            continue   # « (en MDH) » au-dessus d'un graphique en barres : pas l'unité des tableaux
+        if re.search(r"\.\s*$", l) or (len(l.split()) > 14 and not re.search(r"\((?:en |montants? )[^)]*\)", l, re.I)):
+            continue   # phrase de texte (« … 130 millions de dirhams. ») : pas un en-tête de tableau
         if not l or re.search(r"(?:\d{1,3}(?: \d{3})+|\d,\d+|\d{4,})\s*\)?\s*$", l) and not re.search(r"(?:19|20)\d\d\s*$", l):
             continue
         for m in UNIT_RE.finditer(l):
@@ -266,18 +271,28 @@ _PAIR = _Pair()
 _DOC_ORDER = {}
 
 
+_LONE_NUMBER = re.compile(r"^\s*[-+]?[\d\s]+(?:,\d+)?\s*%?\s*$")
+
+
+def _chart_axis(lines, i):
+    """Ligne « 2024 2025 » suivie d'une valeur seule : axe d'un graphique en barres, pas un en-tête de tableau."""
+    nxt = next((l for l in lines[i + 1:i + 3] if l.strip()), "")
+    return bool(_LONE_NUMBER.match(nxt))
+
+
 def doc_year_order(flat):
     """Ordre des colonnes commun à tout le document : en-têtes à exactement deux années consécutives
     et en-têtes « Exercice / Exercice précédent » ; tous doivent concorder, sinon None."""
     k = hash(flat)
     if k not in _DOC_ORDER:
         orders = set()
-        for line in flat.split("\n"):
+        lines = flat.split("\n")
+        for i, line in enumerate(lines):
             if re.search(r"exercice\s+(?:n\s+)?exercice\s+pr[ée]c[ée]dent", line, re.I):
                 orders.add("desc")
             years = re.findall(r"(?<!\d)20[0-4]\d(?!\d)", line)
             m = _PAIR.search(line)
-            if m and len(years) == 2 and abs(int(m.group(1)) - int(m.group(2))) == 1:
+            if m and len(years) == 2 and abs(int(m.group(1)) - int(m.group(2))) == 1 and not _chart_axis(lines, i):
                 orders.add("asc" if m.group(1) < m.group(2) else "desc")
         _DOC_ORDER[k] = orders.pop() if len(orders) == 1 else None
     return _DOC_ORDER[k]
@@ -286,7 +301,10 @@ def doc_year_order(flat):
 def year_order_at(flat, pos):
     """Ordre des colonnes annoncé par l'en-tête le plus proche (« 2024 2025 » = N-1 puis N)."""
     head = flat[max(0, pos - 2500):pos].split("\n")
-    for line in reversed(head[:-1] if head else []):
+    for j in range(len(head) - 2, -1, -1):
+        line = head[j]
+        if _PAIR.search(line) and _chart_axis(head, j):
+            continue
         if re.search(r"exercice\s+(?:n\s+)?exercice\s+pr[ée]c[ée]dent|exercice\s+n\s+exercice\s+n\s*-\s*1", line, re.I):
             return "desc"
         if re.search(r"\bdu\b.*\bau\b|p[ée]riode", line, re.I):   # « Du 1/4/2025 Au 31/3/2026 » : une période, pas deux colonnes
@@ -333,6 +351,11 @@ def minorities_near(text, equity):
                 "unit": parts[0]["unit"], "line": " + ".join(x["line"][-70:] for x in parts)[:500],
                 "method": f"somme de {len(parts)} lignes « Part des minoritaires » du bilan",
                 "ambiguous_split": any(x["ambiguous_split"] for x in parts)}
+    seg = flatten(text)[lo:hi]
+    nil = re.findall(r"^\s*Part des minoritaires\s+-\s+-\s*$", seg, re.M)
+    if len(nil) >= 2 and not re.search(r"^\s*Part des minoritaires\s+-?\d", seg, re.M):
+        return {"current": 0.0, "previous": 0.0, "unit": equity.get("unit"), "line": f"{len(nil)} lignes « Part des minoritaires - - »",
+                "method": "intérêts minoritaires à néant (lignes « Part des minoritaires » sans montant)", "ambiguous_split": False}
     return None
 
 
@@ -410,6 +433,9 @@ def _select_consolidated(text, labels, model, rn):
             cands = find(text, [p], all_matches=True)
             if rn and key not in BALANCE:
                 cands = [c for c in cands if abs(c["pos"] - pl_anchor) <= MAX_PL_DISTANCE]
+            if rn and rn.get("unit") and key in ("equity_total", "equity_group", "total_assets"):
+                # fonds propres ou total bilan inférieurs au résultat de l'exercice : ligne d'un autre tableau
+                cands = [c for c in cands if not c.get("unit") or c["current"] * c["unit"] >= abs(rn["current"] * rn["unit"])]
             out[key] = _nearest(cands, anchor, rn)
             if out[key]:
                 out[key] = dict(out[key])
@@ -509,7 +535,8 @@ def infer_units(fin, model, shares_now, price, notes):
     rn_mad = v(rn)
     eq_mad = v(eq)
     rules = {"revenue": (rn_mad, 1.0, 700), "pnb": (rn_mad, 1.0, 700), "net_income": (rn_mad, 0.8, 1.7),
-             "equity_total": (eq_mad, 1.0, 1.7), "equity_group": (v(fin.get("equity_total")), 0.5, 1.0), "total_assets": (eq_mad, 1.0, 40)}
+             "equity_total": (eq_mad, 1.0, 1.7), "equity_group": (v(fin.get("equity_total")), 0.5, 1.0), "total_assets": (eq_mad, 1.0, 40),
+             "minority_interests": (v(fin.get("equity_total")), 0.0001, 0.6)}
     for k, (ref, lo, hi) in rules.items():
         f = fin.get(k)
         if f and f.get("unit") is None and ref and f["current"]:
@@ -552,6 +579,11 @@ def checks(fin, model, shares_now, price=None):
                 if round(ratio) >= 2 and abs(ratio / round(ratio) - 1) <= 0.03:
                     notes.append(f"BPA publié calculé sur {round(implied):,} titres, {shares_now:,} titres aujourd'hui : "
                                  f"opération sur titres (facteur {round(ratio)}), BPA recalculé sur le nombre actuel de titres".replace(",", " "))
+                elif 1.03 < ratio <= 1.35 and not (fin.get("net_income_group") or {}).get("needs_eps_check"):
+                    # plus de titres aujourd'hui que dans le BPA publié : augmentation de capital probable,
+                    # le BPA publié étant calculé sur le nombre moyen pondéré de l'exercice
+                    notes.append(f"BPA publié calculé sur {round(implied):,} titres, {shares_now:,} titres aujourd'hui (rapport {ratio:.2f}) : "
+                                 f"augmentation de capital probable ; BPA recalculé sur le nombre actuel de titres".replace(",", " "))
                 else:
                     errors.append(f"BPA publié incohérent avec résultat / nombre de titres (rapport {ratio:.2f})")
     if fin.get("net_income_group") and fin["net_income_group"].get("needs_eps_check"):
