@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T13:27:43.113036+00:00",
+  "generated_at": "2026-10-10T13:43:32.849144+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -63,7 +63,7 @@
         "profile": "Contrasté",
         "strengths": [
           "Valorisation attractive : PER 10,2× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 1,00× (mieux que la médiane des sociétés non financières : 3,4×)",
-          "Rentabilité élevée : ROE 10,1 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 113,4 %",
+          "Rentabilité et marges : note 67/100 — ROE 10,1 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 113,4 %",
           "Croissance : chiffre d’affaires 6,8 %, résultat part du groupe 79,7 % sur un an",
           "Solidité financière : capitaux propres / total bilan 55,4 %"
         ],
@@ -139,7 +139,7 @@
         "profile": "Solide",
         "strengths": [
           "Valorisation attractive : PER 10,7× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,19× (mieux que la médiane des banques : 1,3×)",
-          "Rentabilité élevée : ROE 12,5 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 38,5 %",
+          "Rentabilité et efficacité : note 69/100 — ROE 12,5 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 38,5 %",
           "Croissance : PNB 14,4 %, résultat part du groupe 24,4 % sur un an",
           "Solidité financière : coût du risque 1,02 % des crédits",
           "Dividende : rendement 4,65 % sur 12 mois (mieux que la médiane des banques : 3,9 %)"
@@ -208,7 +208,7 @@
         "volatility_annual_pct": 30.54,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 26,0 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 39,3 %",
+          "Rentabilité et marges : note 92/100 — ROE 26,0 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 39,3 %",
           "Croissance : chiffre d’affaires 48,8 %, résultat part du groupe 112,7 % sur un an",
           "Solidité financière : capitaux propres / total bilan 78,2 %"
         ],
@@ -283,7 +283,7 @@
         "profile": "Contrasté",
         "strengths": [
           "Valorisation attractive : PER 11,3× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 3,86× (moins bien que la médiane des sociétés non financières : 3,4×)",
-          "Rentabilité élevée : ROE 39,4 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 36,9 %",
+          "Rentabilité et marges : note 96/100 — ROE 39,4 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 36,9 %",
           "Dividende : rendement 4,44 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
         ],
         "watchpoints": [
@@ -492,7 +492,7 @@
         "volatility_annual_pct": 22.48,
         "profile": "Solide",
         "strengths": [
-          "Rentabilité élevée : ROE 30,2 % (mieux que la médiane des sociétés non financières : 17,2 %)",
+          "Rentabilité et marges : note 100/100 — ROE 30,2 % (mieux que la médiane des sociétés non financières : 17,2 %)",
           "Croissance : chiffre d’affaires 57,0 %, résultat part du groupe 82,5 % sur un an"
         ],
         "watchpoints": [
@@ -567,7 +567,7 @@
           "Solidité financière : capitaux propres / total bilan 50,6 %"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 9,0 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 12,9 %",
+          "Rentabilité et marges faibles : note 31/100 — ROE 9,0 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 12,9 %",
           "Cours très volatil : 41,2 % annualisés"
         ],
         "peer_comparison": {
@@ -633,7 +633,7 @@
         "volatility_annual_pct": 21.2,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 19,1 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 41,2 %",
+          "Rentabilité et efficacité : note 87/100 — ROE 19,1 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 41,2 %",
           "Croissance : PNB 32,5 %, résultat part du groupe 41,5 % sur un an",
           "Solidité financière : coût du risque 0,21 % des crédits"
         ],
@@ -710,7 +710,7 @@
         "profile": "Solide",
         "strengths": [
           "Valorisation attractive : PER 10,4× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,23× (mieux que la médiane des banques : 1,3×)",
-          "Rentabilité élevée : ROE 12,3 % (moins bien que la médiane des banques : 12,4 %), coefficient d'exploitation 40,5 %"
+          "Rentabilité et efficacité : note 65/100 — ROE 12,3 % (moins bien que la médiane des banques : 12,4 %), coefficient d'exploitation 40,5 %"
         ],
         "watchpoints": [],
         "peer_comparison": {
@@ -776,7 +776,7 @@
         "volatility_annual_pct": 13.7,
         "profile": "Solide",
         "strengths": [
-          "Rentabilité élevée : ROE 16,1 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 37,9 %",
+          "Rentabilité et efficacité : note 82/100 — ROE 16,1 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 37,9 %",
           "Solidité financière : coût du risque 0,82 % des crédits"
         ],
         "watchpoints": [],
@@ -984,7 +984,7 @@
           "Croissance : chiffre d’affaires 20,6 %, résultat part du groupe 92,5 % sur un an"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 14,0 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 6,7 %",
+          "Rentabilité et marges faibles : note 32/100 — ROE 14,0 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 6,7 %",
           "Cours très volatil : 38,8 % annualisés"
         ],
         "peer_comparison": {
@@ -1050,7 +1050,7 @@
         "volatility_annual_pct": 17.97,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 44,1 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 44,3 %",
+          "Rentabilité et marges : note 100/100 — ROE 44,1 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 44,3 %",
           "Croissance : chiffre d’affaires 15,5 %, résultat part du groupe 25,4 % sur un an",
           "Solidité financière : capitaux propres / total bilan 49,3 %"
         ],
@@ -1202,7 +1202,7 @@
           "Solidité financière : capitaux propres / total bilan 45,7 %"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 4,8 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 17,6 %",
+          "Rentabilité et marges faibles : note 30/100 — ROE 4,8 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 17,6 %",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois"
         ],
         "peer_comparison": {
@@ -1409,7 +1409,7 @@
         "volatility_annual_pct": 31.36,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 27,1 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 29,2 %",
+          "Rentabilité et marges : note 82/100 — ROE 27,1 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 29,2 %",
           "Croissance : chiffre d’affaires 54,6 %, résultat part du groupe 384,4 % sur un an"
         ],
         "watchpoints": [
@@ -1632,7 +1632,7 @@
           "Solidité financière : capitaux propres / total bilan 46,0 %"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 3,5 % (moins bien que la médiane des sociétés non financières : 17,2 %)",
+          "Rentabilité et marges faibles : note 12/100 — ROE 3,5 % (moins bien que la médiane des sociétés non financières : 17,2 %)",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois",
           "Liquidité faible : 0,01 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles"
         ],
@@ -1701,7 +1701,7 @@
           "Croissance : chiffre d’affaires 17,7 %, résultat part du groupe n.d. % sur un an"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE -31,9 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation -17,9 %",
+          "Rentabilité et marges faibles : note 0/100 — ROE -31,9 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation -17,9 %",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois",
           "Liquidité faible : 0,58 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
           "Cours très volatil : 39,7 % annualisés"
@@ -1845,7 +1845,7 @@
         "volatility_annual_pct": 33.74,
         "profile": "Incomplet",
         "strengths": [
-          "Rentabilité élevée : ROE 44,8 % (mieux que la médiane des sociétés non financières : 17,2 %)",
+          "Rentabilité et marges : note 100/100 — ROE 44,8 % (mieux que la médiane des sociétés non financières : 17,2 %)",
           "Dividende : rendement 4,64 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
         ],
         "watchpoints": [
@@ -1920,7 +1920,7 @@
         "volatility_annual_pct": 6.77,
         "profile": "Incomplet",
         "strengths": [
-          "Rentabilité élevée : ROE 104,6 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 33,8 %",
+          "Rentabilité et marges : note 92/100 — ROE 104,6 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 33,8 %",
           "Dividende : rendement 4,96 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
         ],
         "watchpoints": [
@@ -1982,7 +1982,7 @@
         "volatility_annual_pct": null,
         "profile": "Incomplet",
         "strengths": [
-          "Rentabilité élevée : ROE 24,2 % (mieux que la médiane des sociétés non financières : 17,2 %)",
+          "Rentabilité et marges : note 81/100 — ROE 24,2 % (mieux que la médiane des sociétés non financières : 17,2 %)",
           "Croissance : chiffre d’affaires 17,8 %, résultat part du groupe n.d. % sur un an",
           "Solidité financière : capitaux propres / total bilan 46,9 %"
         ],
