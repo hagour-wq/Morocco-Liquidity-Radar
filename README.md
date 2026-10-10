@@ -152,4 +152,4 @@ Les titres sans historique exploitable (cours nuls : DIS, DLM, SAM) affichent un
 ## Lecture du score fondamental (`explain_fundamentals.py`)
 
 - Points forts (critère ≥ 65 / 100) et points de vigilance (≤ 35 / 100 ou risque identifié : liquidité faible, volatilité > 35 %, résultat en hausse de plus de 100 %, donnée manquante), chiffres à l'appui et comparaison à la médiane des sociétés analysées du même modèle sectoriel.
-- Profil : **Solide** (score ≥ 55, aucun critère faible hors dividende, liquidité suffisante), **Contrasté** (au moins un point de vigilance), **Incomplet** (critère non calculable). Règles identiques pour toutes les sociétés ; ce n'est pas une recommandation.
+- Profil : **Solide** (score ≥ 55, aucun critère faible hors dividende, liquidité suffisante, volatilité ≤ 35 %), **Contrasté** (au moins un point de vigilance), **Incomplet** (critère non calculable). Règles identiques pour toutes les sociétés ; ce n'est pas une recommandation.
