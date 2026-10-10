@@ -850,7 +850,7 @@ def checks(fin, model, shares_now, price=None):
                                  f"augmentation de capital probable ; BPA recalculé sur le nombre actuel de titres".replace(",", " "))
                 elif _capital_increase_explains(fin, eps, shares_now, implied, rn):
                     cap = fin["share_capital"]
-                    notes.append(f"BPA publié calculé sur {round(implied):,} titres (nombre moyen), {shares_now:,} titres aujourd'hui : capital porté de "
+                    notes.append(f"BPA publié calculé sur {round(implied):,} titres (nombre moyen) ; {shares_now:,} titres aujourd'hui : capital porté de ".replace(",", " ") +
                                  f"{cap['previous']:,.0f} à {cap['current']:,.0f} dans l'exercice (bilan publié) ; BPA N-1 cohérent avec le capital N-1".replace(",", " "))
                 else:
                     errors.append(f"BPA publié incohérent avec résultat / nombre de titres (rapport {ratio:.2f})")
@@ -870,6 +870,13 @@ def checks(fin, model, shares_now, price=None):
         pt, pm = v(fin.get("equity_total"), "mad_previous"), v(fin.get("minority_interests"), "mad_previous")
         prev_group = pt - pm if pt is not None and pm is not None else None
         d["equity_group_method"] = "capitaux propres totaux − intérêts minoritaires (" + fin["minority_interests"].get("method", "") + ")"
+    nf, gf = fin.get("net_income"), fin.get("net_income_group")
+    if (eq_group is None and eq_total is not None and minor is None and scope != "social" and nf and gf
+            and nf.get("previous") is not None and gf.get("previous") is not None
+            and _close(nf["current"], gf["current"], 0, 0.5) and _close(nf["previous"], gf["previous"], 0, 0.5)):
+        # aucun intérêt minoritaire : résultat net consolidé = part du groupe en N et N-1 (Maghreb Oxygène)
+        eq_group, prev_group = eq_total, v(fin.get("equity_total"), "mad_previous")
+        d["equity_group_method"] = "capitaux propres totaux : pas d'intérêts minoritaires (résultat net consolidé = part du groupe, N et N-1)"
     if eq_group is None:
         errors.append("capitaux propres part du groupe introuvables")
     elif eq_group <= 0:
@@ -956,7 +963,7 @@ def checks(fin, model, shares_now, price=None):
             rnf, eqf = fin.get("net_income_group") or {}, fin.get("equity_group") or fin.get("equity_total") or {}
             same_published_unit = rnf.get("unit") and rnf.get("unit") == eqf.get("unit") and "unit_method" not in rnf and "unit_method" not in eqf
             if per > 300 and same_published_unit and eq_group and 0.1 <= mcap / eq_group <= 40:
-                notes.append(f"PER {per:.0f} non significatif : résultat quasi nul (ROE {100 * rn / eq_group:.2f} %), unités publiées identiques pour le résultat et les capitaux propres")
+                notes.append(f"PER {per:.0f} non significatif : résultat quasi nul (ROE {100 * rn / eq_group:.2f} %)".replace(".", ",") + ", unités publiées identiques pour le résultat et les capitaux propres")
             elif not 2 <= per <= 300:
                 errors.append(f"PER implicite {per:.3g} hors bornes [2 ; 300] : unité ou périmètre suspect")
         if eq_group and eq_group > 0:
