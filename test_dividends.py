@@ -53,7 +53,11 @@ class YieldTests(unittest.TestCase):
         self.assertEqual(x["dividend_yield_pct"], round(100 * 5.5 / 1479, 2))   # et non 55 / 1 479 = 3,7 %
         self.assertTrue(x["dividend_notes"])
         y = issuer_facts({}, 1479.0, "2026-10-09", self.by["MNG"]["dividends"], ca_dates=["2026-07-27"])
-        self.assertIsNone(y["dividend_yield_pct"])                                 # montant ajusté inconnu : écarté
+        self.assertIsNone(y["dividend_yield_pct"])                                 # montant ajusté inconnu : écarté, pas 0
+
+    def test_no_dividend_in_calendar_is_zero_not_missing(self):
+        x = issuer_facts({}, 100.0, "2026-10-09", [{"ex_date": "2023-06-01", "amount_mad": 5.0, "type": "Ordinaire"}])
+        self.assertEqual(x["dividend_yield_pct"], 0.0)                             # fait observé : aucun détachement sur 12 mois
 
     def test_exceptional_dividend_excluded_from_yield(self):
         x = issuer_facts({}, 425.2, "2026-10-09", self.by["ARD"]["dividends"])

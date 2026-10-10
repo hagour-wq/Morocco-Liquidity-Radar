@@ -200,6 +200,18 @@ class RobustnessTests(unittest.TestCase):
         self.assertTrue(any("non confirmée par un BPA" in x for x in e))
 
 
+class BalanceTotalTests(unittest.TestCase):
+    def test_gross_minus_depreciation_layout(self):                      # bilan actif CGNC : brut, amortissements, net N, net N-1
+        self.assertEqual(parse_tail("6 839 901 119,98 4 715 615 220,19 2 124 285 899,79 1 743 538 914,53")[:2], (2124285899.79, 1743538914.53))
+
+    def test_total_assets_labels(self):
+        f = extract("BILAN CONSOLIDE (en milliers de MAD)\nCapitaux propres part du groupe 788 101 720 476\nTOTAL DE L 'ACTIF 3 919 529 3 430 306\n"
+                    "COMPTE DE RESULTAT\nChiffre d'affaires 3 251 072 2 940 457\nRésultat net part du groupe 112 330 57 886\n", "corporate")
+        self.assertEqual(f["total_assets"]["mad"], 3919529e3)
+        d, e, n = checks(f, "corporate", 1980000, 1225.0)
+        self.assertAlmostEqual(d["equity_ratio_pct"], 100 * 788101 / 3919529, places=3)   # capitaux propres part du groupe à défaut du total
+
+
 class InsuranceTests(unittest.TestCase):
     def test_ifrs17_insurer(self):
         txt = ("COMPTE DE RESULTAT CONSOLIDE (en milliers de dirhams)\nProduits des activités d'assurance 4.1  6.396.362  6.186.016\n"

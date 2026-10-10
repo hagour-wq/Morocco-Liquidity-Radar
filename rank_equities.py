@@ -161,7 +161,7 @@ def issuer_facts(r,close,ref_date,divs=None,ca_dates=()):
       notes.append(f"dividende du {d['ex_date']} écarté : détaché avant une opération sur titres, montant ajusté inconnu");continue
     if d["type"]=="Exceptionnel":exc+=amt
     else:reg+=amt
-   out.update(dividend_yield_pct=round(100*reg/close,2) if reg>0 else None,dividends_12m_mad=round(reg,4),
+   out.update(dividend_yield_pct=round(100*reg/close,2) if reg>0 else (None if notes else 0.0),dividends_12m_mad=round(reg,4),
               exceptional_dividends_12m_mad=round(exc,4) or None,dividend_events_12m=len(win),dividend_notes=notes or None,
               dividend_yield_basis="dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours" if reg>0 else "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)")
    if win:
