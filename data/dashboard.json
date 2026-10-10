@@ -1,12 +1,12 @@
 {
   "as_of": "2026-10-09",
-  "composite": -13,
+  "composite": -14,
   "regime": "NEUTRAL",
   "conclusion": "Market Flow neutre (-9). Momentum 1 séance +0.29% et 5 séances -2.93%. Couverture 70%.",
   "scores": {
     "liquidity": -22,
     "market_flow": -9,
-    "global": 9
+    "global": 6
   },
   "sources": [
     {
@@ -64,7 +64,7 @@
     "reference_date": "2026-10-09",
     "quality": "official_session",
     "source": "Bourse de Casablanca — cours officiels (stock-historical)",
-    "computed_at": "2026-10-10T01:36:23.721240+00:00",
+    "computed_at": "2026-10-10T11:33:35.274199+00:00",
     "min_turnover_mad": 100000,
     "sectors": [
       {
@@ -284,7 +284,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-10T01:36:23.878791+00:00",
+    "computed_at": "2026-10-10T11:33:35.387271+00:00",
     "history_sessions": 1976,
     "observations": 1971,
     "usable_5d": 1890,
@@ -322,7 +322,7 @@
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-10T01:36:23.393780+00:00",
+  "retrieved_at": "2026-10-10T11:33:35.081235+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
     "masi": 16797.1032,
@@ -332,7 +332,7 @@
     "sessions": 1976
   },
   "global_detail": {
-    "checked_at": "2026-10-10T01:23:42.208933+00:00",
+    "checked_at": "2026-10-10T11:19:42.450134+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -351,10 +351,10 @@
         "series": "VIXCLS",
         "source": "CBOE",
         "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-        "date": "2026-10-08",
-        "value": 15.41,
-        "change_5obs": -5.979,
-        "score": 23.9,
+        "date": "2026-10-09",
+        "value": 14.84,
+        "change_5obs": -3.07,
+        "score": 12.3,
         "verified": true,
         "failed_sources": []
       },
@@ -363,9 +363,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-10-09",
-        "value": 102.23100280761719,
-        "change_5obs": 0.295,
-        "score": -2.4,
+        "value": 102.20999908447266,
+        "change_5obs": 0.275,
+        "score": -2.2,
         "verified": true,
         "failed_sources": []
       },
@@ -382,7 +382,7 @@
       }
     },
     "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-    "score": 9,
+    "score": 6,
     "fresh_for_scoring": true
   }
 }

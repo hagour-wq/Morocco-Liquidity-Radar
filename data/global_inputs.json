@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-10T01:23:42.208933+00:00",
+  "checked_at": "2026-10-10T11:19:42.450134+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -18,10 +18,10 @@
       "series": "VIXCLS",
       "source": "CBOE",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "date": "2026-10-08",
-      "value": 15.41,
-      "change_5obs": -5.979,
-      "score": 23.9,
+      "date": "2026-10-09",
+      "value": 14.84,
+      "change_5obs": -3.07,
+      "score": 12.3,
       "verified": true,
       "failed_sources": []
     },
@@ -30,9 +30,9 @@
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
       "date": "2026-10-09",
-      "value": 102.23100280761719,
-      "change_5obs": 0.295,
-      "score": -2.4,
+      "value": 102.20999908447266,
+      "change_5obs": 0.275,
+      "score": -2.2,
       "verified": true,
       "failed_sources": []
     },
@@ -49,5 +49,5 @@
     }
   },
   "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-  "score": 9
+  "score": 6
 }
