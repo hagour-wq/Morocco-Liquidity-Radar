@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T11:33:35.664877+00:00",
+  "generated_at": "2026-10-10T11:50:33.420272+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -62,8 +62,8 @@
         "volatility_annual_pct": 43.71,
         "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 10,2× (mieux que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 1,00× (mieux que la médiane des sociétés non financières : 3,3×)",
-          "Rentabilité élevée : ROE 10,1 % (moins bien que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 113,4 %",
+          "Valorisation attractive : PER 10,2× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 1,00× (mieux que la médiane des sociétés non financières : 3,4×)",
+          "Rentabilité élevée : ROE 10,1 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 113,4 %",
           "Croissance : chiffre d’affaires 6,8 %, résultat part du groupe 79,7 % sur un an",
           "Solidité financière : capitaux propres / total bilan 55,4 %"
         ],
@@ -73,11 +73,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 4 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -208,21 +208,21 @@
         "volatility_annual_pct": 30.54,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 26,0 % (mieux que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 39,3 %",
+          "Rentabilité élevée : ROE 26,0 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 39,3 %",
           "Croissance : chiffre d’affaires 48,8 %, résultat part du groupe 112,7 % sur un an",
           "Solidité financière : capitaux propres / total bilan 78,2 %"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 24,4× (moins bien que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 5,83× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 24,4× (moins bien que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 5,83× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Résultat en hausse de 113 % : vérifier s'il s'agit d'un élément exceptionnel non récurrent"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -281,8 +281,8 @@
         "volatility_annual_pct": 17.75,
         "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 11,3× (mieux que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 3,86× (moins bien que la médiane des sociétés non financières : 3,3×)",
-          "Rentabilité élevée : ROE 39,4 % (mieux que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 36,9 %",
+          "Valorisation attractive : PER 11,3× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 3,86× (moins bien que la médiane des sociétés non financières : 3,4×)",
+          "Rentabilité élevée : ROE 39,4 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 36,9 %",
           "Dividende : rendement 4,44 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
         ],
         "watchpoints": [
@@ -291,11 +291,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -431,11 +431,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 3 point(s) fort(s), 1 point(s) de vigilance"
       },
@@ -491,7 +491,7 @@
         "volatility_annual_pct": 22.48,
         "profile": "Solide",
         "strengths": [
-          "Rentabilité élevée : ROE 30,2 % (mieux que la médiane des sociétés non financières : 16,5 %)",
+          "Rentabilité élevée : ROE 30,2 % (mieux que la médiane des sociétés non financières : 17,2 %)",
           "Croissance : chiffre d’affaires 57,0 %, résultat part du groupe 82,5 % sur un an"
         ],
         "watchpoints": [
@@ -499,11 +499,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Solide — 2 point(s) fort(s), 1 point(s) de vigilance"
       },
@@ -561,21 +561,21 @@
         "volatility_annual_pct": 41.23,
         "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 18,1× (mieux que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 1,59× (mieux que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation attractive : PER 18,1× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 1,59× (mieux que la médiane des sociétés non financières : 3,4×)",
           "Croissance : chiffre d’affaires 25,6 %, résultat part du groupe 33,7 % sur un an",
           "Solidité financière : capitaux propres / total bilan 50,6 %"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 9,0 % (moins bien que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 12,9 %",
+          "Rentabilité faible : ROE 9,0 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 12,9 %",
           "Cours très volatil : 41,2 % annualisés"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -699,7 +699,7 @@
         "volatility_annual_pct": 37.75,
         "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 17,4× (mieux que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 1,78× (mieux que la médiane des sociétés non financières : 3,3×)"
+          "Valorisation attractive : PER 17,4× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 1,78× (mieux que la médiane des sociétés non financières : 3,4×)"
         ],
         "watchpoints": [
           "Dividende modeste : rendement 1,24 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)",
@@ -707,11 +707,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 1 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -840,16 +840,16 @@
           "Croissance : chiffre d’affaires 20,6 %, résultat part du groupe 92,5 % sur un an"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 14,0 % (moins bien que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 6,7 %",
+          "Rentabilité faible : ROE 14,0 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 6,7 %",
           "Cours très volatil : 38,8 % annualisés"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 1 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -906,21 +906,21 @@
         "volatility_annual_pct": 17.97,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 44,1 % (mieux que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 44,3 %",
+          "Rentabilité élevée : ROE 44,1 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 44,3 %",
           "Croissance : chiffre d’affaires 15,5 %, résultat part du groupe 25,4 % sur un an",
           "Solidité financière : capitaux propres / total bilan 49,3 %"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 35,1× (moins bien que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 13,78× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 35,1× (moins bien que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 13,78× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Dividende modeste : rendement 1,45 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -983,17 +983,17 @@
           "Solidité financière : capitaux propres / total bilan 57,5 %"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 29,3× (moins bien que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 4,31× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 29,3× (moins bien que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 4,31× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Dividende modeste : rendement 2,24 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)",
           "Cours très volatil : 53,0 % annualisés"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 2 point(s) fort(s), 3 point(s) de vigilance"
       },
@@ -1058,16 +1058,16 @@
           "Solidité financière : capitaux propres / total bilan 45,7 %"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 4,8 % (moins bien que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 17,6 %",
+          "Rentabilité faible : ROE 4,8 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 17,6 %",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 2 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -1133,11 +1133,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 1 point(s) fort(s), 3 point(s) de vigilance"
       },
@@ -1202,11 +1202,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 2 point(s) fort(s), 1 point(s) de vigilance"
       },
@@ -1265,21 +1265,21 @@
         "volatility_annual_pct": 31.36,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 27,1 % (mieux que la médiane des sociétés non financières : 16,5 %), marge d'exploitation 29,2 %",
+          "Rentabilité élevée : ROE 27,1 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 29,2 %",
           "Croissance : chiffre d’affaires 54,6 %, résultat part du groupe 384,4 % sur un an"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 58,5× (moins bien que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 15,29× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 58,5× (moins bien que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 15,29× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Résultat en hausse de 384 % : vérifier s'il s'agit d'un élément exceptionnel non récurrent",
           "Dividende modeste : rendement 0,37 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 2 point(s) fort(s), 3 point(s) de vigilance"
       },
@@ -1339,16 +1339,16 @@
           "Croissance : chiffre d’affaires 49,4 %, résultat part du groupe 41,0 % sur un an"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 32,9× (moins bien que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 5,11× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 32,9× (moins bien que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 5,11× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Dividende modeste : rendement 1,36 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 1 point(s) fort(s), 2 point(s) de vigilance"
       },
@@ -1488,17 +1488,17 @@
           "Solidité financière : capitaux propres / total bilan 46,0 %"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE 3,5 % (moins bien que la médiane des sociétés non financières : 16,5 %)",
+          "Rentabilité faible : ROE 3,5 % (moins bien que la médiane des sociétés non financières : 17,2 %)",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois",
           "Liquidité faible : 0,01 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 1 point(s) fort(s), 3 point(s) de vigilance"
       },
@@ -1557,18 +1557,18 @@
           "Croissance : chiffre d’affaires 17,7 %, résultat part du groupe n.d. % sur un an"
         ],
         "watchpoints": [
-          "Rentabilité faible : ROE -31,9 % (moins bien que la médiane des sociétés non financières : 16,5 %), marge d'exploitation -17,9 %",
+          "Rentabilité faible : ROE -31,9 % (moins bien que la médiane des sociétés non financières : 17,2 %), marge d'exploitation -17,9 %",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois",
           "Liquidité faible : 0,58 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
           "Cours très volatil : 39,7 % annualisés"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Contrasté — 1 point(s) fort(s), 4 point(s) de vigilance"
       }
@@ -1629,7 +1629,7 @@
         "volatility_annual_pct": 22.38,
         "profile": "Incomplet",
         "strengths": [
-          "Valorisation attractive : PER 17,5× (mieux que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 2,79× (mieux que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation attractive : PER 17,5× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 2,79× (mieux que la médiane des sociétés non financières : 3,4×)",
           "Croissance : chiffre d’affaires 29,3 %, résultat part du groupe 47,3 % sur un an"
         ],
         "watchpoints": [
@@ -1637,11 +1637,11 @@
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Incomplet — 2 point(s) fort(s), 1 point(s) de vigilance"
       },
@@ -1700,21 +1700,95 @@
         "volatility_annual_pct": 33.74,
         "profile": "Incomplet",
         "strengths": [
-          "Rentabilité élevée : ROE 44,8 % (mieux que la médiane des sociétés non financières : 16,5 %)",
+          "Rentabilité élevée : ROE 44,8 % (mieux que la médiane des sociétés non financières : 17,2 %)",
           "Dividende : rendement 4,64 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 18,1× (mieux que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 7,77× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 18,1× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 7,77× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Liquidité faible : 0,01 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
           "Donnée non calculable : structure financière (score partiel)"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Incomplet — 2 point(s) fort(s), 3 point(s) de vigilance"
+      },
+      {
+        "ticker": "AFM",
+        "name": "AFMA SA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afma_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "ocr",
+        "category": "WATCH",
+        "status": "RESEARCH_ONLY",
+        "score": 56.7,
+        "partial": true,
+        "missing_components": [
+          "structure"
+        ],
+        "price_mad": 1250.0,
+        "price_date": "2026-10-09",
+        "pe": 17.2,
+        "pb": 17.76,
+        "roe_pct": 104.62,
+        "dividend_yield_pct": 4.96,
+        "risk_level": "élevé",
+        "eps_mad": 72.66,
+        "book_value_per_share_mad": 70.37,
+        "indicators": {
+          "roe_pct": 104.62,
+          "operating_margin_pct": 33.78,
+          "net_margin_pct": 22.95,
+          "revenue_growth_pct": 10.6,
+          "net_income_growth_pct": 0.42
+        },
+        "components": {
+          "valuation": 29.1,
+          "dividend": 70.9,
+          "quality": 92.2,
+          "growth": 46.5,
+          "structure": null
+        },
+        "notes": [
+          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+        ],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Assurances",
+        "liquidity": {
+          "avg_turnover_mad_20d": 18626,
+          "avg_turnover_mad_60d": 396798,
+          "avg_shares_20d": 15,
+          "zero_volume_sessions": 33,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 33 séance(s) sans échange sur 60"
+        },
+        "volatility_annual_pct": 6.77,
+        "profile": "Incomplet",
+        "strengths": [
+          "Rentabilité élevée : ROE 104,6 % (mieux que la médiane des sociétés non financières : 17,2 %), marge d'exploitation 33,8 %",
+          "Dividende : rendement 4,96 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
+        ],
+        "watchpoints": [
+          "Valorisation exigeante : PER 17,2× (mieux que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 17,76× (moins bien que la médiane des sociétés non financières : 3,4×)",
+          "Liquidité faible : 0,02 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
+          "Donnée non calculable : structure financière (score partiel)"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Incomplet — 2 point(s) fort(s), 3 point(s) de vigilance"
       },
@@ -1762,22 +1836,22 @@
         "volatility_annual_pct": null,
         "profile": "Incomplet",
         "strengths": [
-          "Rentabilité élevée : ROE 24,2 % (mieux que la médiane des sociétés non financières : 16,5 %)",
+          "Rentabilité élevée : ROE 24,2 % (mieux que la médiane des sociétés non financières : 17,2 %)",
           "Croissance : chiffre d’affaires 17,8 %, résultat part du groupe n.d. % sur un an",
           "Solidité financière : capitaux propres / total bilan 46,9 %"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 35,8× (moins bien que la médiane des sociétés non financières : 23,7×), cours / valeur comptable 7,79× (moins bien que la médiane des sociétés non financières : 3,3×)",
+          "Valorisation exigeante : PER 35,8× (moins bien que la médiane des sociétés non financières : 23,3×), cours / valeur comptable 7,79× (moins bien que la médiane des sociétés non financières : 3,4×)",
           "Aucun dividende ordinaire détaché sur les 12 derniers mois",
           "Donnée non calculable : dividende (score partiel)"
         ],
         "peer_comparison": {
           "model": "corporate",
-          "peers": 20,
-          "median_pe": 23.67,
-          "median_pb": 3.31,
-          "median_roe_pct": 16.5,
-          "median_dividend_yield_pct": 2.52
+          "peers": 21,
+          "median_pe": 23.32,
+          "median_pb": 3.39,
+          "median_roe_pct": 17.21,
+          "median_dividend_yield_pct": 2.55
         },
         "summary": "Incomplet — 3 point(s) fort(s), 3 point(s) de vigilance"
       }
@@ -1806,30 +1880,6 @@
           "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 1 séance(s) sans échange sur 60"
         },
         "volatility_annual_pct": 15.37
-      },
-      {
-        "ticker": "AFM",
-        "name": "AFMA SA",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afma_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "ocr",
-        "category": "NON_ANALYSABLE",
-        "status": "REJECTED",
-        "note": "capitaux propres part du groupe introuvables; manquant : equity_total|equity_group",
-        "sector": "Assurances",
-        "liquidity": {
-          "avg_turnover_mad_20d": 18626,
-          "avg_turnover_mad_60d": 396798,
-          "avg_shares_20d": 15,
-          "zero_volume_sessions": 33,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "faible",
-          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 33 séance(s) sans échange sur 60"
-        },
-        "volatility_annual_pct": 6.77
       },
       {
         "ticker": "ALM",
