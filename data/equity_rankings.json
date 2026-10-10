@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T01:21:02.513754+00:00",
+  "generated_at": "2026-10-10T01:36:24.317116+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -60,7 +60,7 @@
           "warning": null
         },
         "volatility_annual_pct": 43.71,
-        "profile": "Solide",
+        "profile": "Contrasté",
         "strengths": [
           "Valorisation attractive : PER 10,2× (mieux que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 1,00× (mieux que la médiane des sociétés non financières : 3,6×)",
           "Rentabilité élevée : ROE 10,1 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 113,4 %",
@@ -79,7 +79,7 @@
           "median_roe_pct": 17.92,
           "median_dividend_yield_pct": 2.55
         },
-        "summary": "Solide — 4 point(s) fort(s), 2 point(s) de vigilance"
+        "summary": "Contrasté — 4 point(s) fort(s), 2 point(s) de vigilance"
       },
       {
         "ticker": "SMI",
@@ -553,7 +553,7 @@
           "warning": null
         },
         "volatility_annual_pct": 37.75,
-        "profile": "Solide",
+        "profile": "Contrasté",
         "strengths": [
           "Valorisation attractive : PER 17,4× (mieux que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 1,78× (mieux que la médiane des sociétés non financières : 3,6×)"
         ],
@@ -569,7 +569,7 @@
           "median_roe_pct": 17.92,
           "median_dividend_yield_pct": 2.55
         },
-        "summary": "Solide — 1 point(s) fort(s), 2 point(s) de vigilance"
+        "summary": "Contrasté — 1 point(s) fort(s), 2 point(s) de vigilance"
       },
       {
         "ticker": "BCP",
