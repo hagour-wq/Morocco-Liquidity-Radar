@@ -97,7 +97,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-10T15:11:47.167284+00:00",
+  "collector_checked_at": "2026-10-10T15:29:22.124866+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
