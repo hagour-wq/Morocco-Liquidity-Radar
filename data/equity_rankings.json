@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T23:38:55.117628+00:00",
+  "generated_at": "2026-10-10T00:08:18.546904+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -380,51 +380,6 @@
         ],
         "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Industrie Pharmaceutique"
-      },
-      {
-        "ticker": "ADH",
-        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "pdf_text",
-        "category": "ELIGIBLE",
-        "status": "RESEARCH_ONLY",
-        "score": 51.4,
-        "partial": false,
-        "missing_components": [],
-        "price_mad": 29.99,
-        "price_date": "2026-10-09",
-        "pe": 26.61,
-        "pb": 1.27,
-        "roe_pct": 4.83,
-        "dividend_yield_pct": 1.67,
-        "risk_level": "moyen",
-        "eps_mad": 1.13,
-        "book_value_per_share_mad": 23.55,
-        "indicators": {
-          "roe_pct": 4.83,
-          "operating_margin_pct": 17.58,
-          "net_margin_pct": 16.75,
-          "revenue_growth_pct": 4.4,
-          "equity_ratio_pct": 45.66,
-          "net_income_growth_pct": 65.48
-        },
-        "components": {
-          "valuation": 55.8,
-          "dividend": 23.9,
-          "quality": 30.1,
-          "growth": 70.6,
-          "structure": 71.3
-        },
-        "notes": [
-          "equity_group : unité non indiquée dans le document, déduite (rentabilité des capitaux propres plausible) : MAD",
-          "equity_total : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD",
-          "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD"
-        ],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Participation et promotion immobilières"
       },
       {
         "ticker": "CSR",
@@ -855,6 +810,53 @@
         ],
         "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Assurances"
+      },
+      {
+        "ticker": "ADH",
+        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "pdf_text",
+        "category": "WATCH",
+        "status": "RESEARCH_ONLY",
+        "score": 54.5,
+        "partial": true,
+        "missing_components": [
+          "dividend"
+        ],
+        "price_mad": 29.99,
+        "price_date": "2026-10-09",
+        "pe": 26.61,
+        "pb": 1.27,
+        "roe_pct": 4.83,
+        "dividend_yield_pct": null,
+        "risk_level": "moyen",
+        "eps_mad": 1.13,
+        "book_value_per_share_mad": 23.55,
+        "indicators": {
+          "roe_pct": 4.83,
+          "operating_margin_pct": 17.58,
+          "net_margin_pct": 16.75,
+          "revenue_growth_pct": 4.4,
+          "equity_ratio_pct": 45.66,
+          "net_income_growth_pct": 65.48
+        },
+        "components": {
+          "valuation": 55.8,
+          "dividend": null,
+          "quality": 30.1,
+          "growth": 70.6,
+          "structure": 71.3
+        },
+        "notes": [
+          "equity_group : unité non indiquée dans le document, déduite (rentabilité des capitaux propres plausible) : MAD",
+          "equity_total : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD",
+          "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD"
+        ],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Participation et promotion immobilières"
       },
       {
         "ticker": "OUL",
@@ -1400,7 +1402,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-09",
         "dividend_yield_pct": 4.47,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 11.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "ATW",
@@ -1472,7 +1478,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-08",
         "dividend_yield_pct": 3.28,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 22.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "LBV",
@@ -1544,7 +1554,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-01",
         "dividend_yield_pct": 3.17,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 120.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "ARD",
@@ -1616,7 +1630,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-19",
         "dividend_yield_pct": 1.32,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 5.71,
+        "exceptional_dividends_12m_mad": 17.29,
+        "dividend_events_12m": 2,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CDM",
@@ -1684,11 +1702,15 @@
         "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Banques",
         "isin": "MA0000010381",
-        "last_dividend_mad": 47.81,
+        "last_dividend_mad": 48.0,
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-04",
-        "dividend_yield_pct": 5.14,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividend_yield_pct": 5.16,
+        "dividends_12m_mad": 48.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "TQM",
@@ -1760,7 +1782,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-16",
         "dividend_yield_pct": 2.38,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 38.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "BOA",
@@ -1832,7 +1858,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-16",
         "dividend_yield_pct": 2.78,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 5.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CFG",
@@ -1904,7 +1934,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-10",
         "dividend_yield_pct": 2.11,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 4.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "IAM",
@@ -1976,7 +2010,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-04",
         "dividend_yield_pct": 4.44,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 4.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "TGC",
@@ -2048,7 +2086,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-08-07",
         "dividend_yield_pct": 2.31,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 15.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "RIS",
@@ -2120,7 +2162,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-22",
         "dividend_yield_pct": 3.06,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 9.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "GTM",
@@ -2194,7 +2240,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-14",
         "dividend_yield_pct": 2.03,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 12.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MSA",
@@ -2266,7 +2316,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-17",
         "dividend_yield_pct": 1.45,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 11.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "TMA",
@@ -2338,7 +2392,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-18",
         "dividend_yield_pct": 6.65,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 89.57,
+        "exceptional_dividends_12m_mad": 67.0,
+        "dividend_events_12m": 2,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "ATH",
@@ -2410,7 +2468,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-05-15",
         "dividend_yield_pct": 3.36,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 2.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "DHO",
@@ -2482,7 +2544,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-13",
         "dividend_yield_pct": 4.24,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 2.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CSR",
@@ -2554,7 +2620,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-22",
         "dividend_yield_pct": 5.26,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 9.0,
+        "exceptional_dividends_12m_mad": 1.0,
+        "dividend_events_12m": 2,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CRS",
@@ -2626,7 +2696,11 @@
         "dividend_fiscal_year": 2018,
         "dividend_ex_date": "2019-09-18",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "AKT",
@@ -2698,7 +2772,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-08-17",
         "dividend_yield_pct": 1.36,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 14.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "T2S",
@@ -2770,7 +2848,11 @@
         "dividend_fiscal_year": null,
         "dividend_ex_date": null,
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "aucun dividende publié au bulletin"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "CIH",
@@ -2842,7 +2924,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-01",
         "dividend_yield_pct": 4.65,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 14.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "ADH",
@@ -2913,8 +2999,12 @@
         "last_dividend_mad": 0.5,
         "dividend_fiscal_year": 2024,
         "dividend_ex_date": "2025-09-19",
-        "dividend_yield_pct": 1.67,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividend_yield_pct": null,
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "SMI",
@@ -2986,7 +3076,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-15",
         "dividend_yield_pct": 2.55,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 150.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CAP",
@@ -3058,7 +3152,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-04",
         "dividend_yield_pct": 4.63,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 9.73,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MNG",
@@ -3126,11 +3224,17 @@
         "note": "Score de facteurs techniques sur cours bruts ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Mines",
         "isin": "MA0000012866",
-        "last_dividend_mad": 5.5,
+        "last_dividend_mad": 55.0,
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-15",
         "dividend_yield_pct": 0.37,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 5.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": [
+          "dividende du 2026-07-15 (55.0 MAD) ajusté de l'opération sur titres : 5.5 MAD (bulletin de la cote)"
+        ],
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "LHM",
@@ -3202,7 +3306,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-12",
         "dividend_yield_pct": 6.29,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 96.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CMA",
@@ -3274,7 +3382,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-06",
         "dividend_yield_pct": 4.64,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 65.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "CMG",
@@ -3346,7 +3458,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-16",
         "dividend_yield_pct": 2.5,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 6.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "VCN",
@@ -3418,7 +3534,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-22",
         "dividend_yield_pct": 2.97,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 8.44,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "RDS",
@@ -3490,7 +3610,11 @@
         "dividend_fiscal_year": 2018,
         "dividend_ex_date": "2019-09-19",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "ADI",
@@ -3562,7 +3686,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-21",
         "dividend_yield_pct": 1.24,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 4.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "HPS",
@@ -3634,7 +3762,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-16",
         "dividend_yield_pct": 1.54,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 8.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "JET",
@@ -3706,7 +3838,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-13",
         "dividend_yield_pct": 1.33,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 20.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       }
     ],
     "watch": [
@@ -3780,7 +3916,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-14",
         "dividend_yield_pct": 5.54,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 110.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "OUL",
@@ -3852,7 +3992,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-19",
         "dividend_yield_pct": 3.28,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 40.15,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "BAL",
@@ -3922,7 +4066,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-24",
         "dividend_yield_pct": 2.76,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 5.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "PRO",
@@ -3992,7 +4140,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-11",
         "dividend_yield_pct": 2.03,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 30.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "SRM",
@@ -4064,7 +4216,11 @@
         "dividend_fiscal_year": 2017,
         "dividend_ex_date": "2018-09-19",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "AFM",
@@ -4136,7 +4292,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-08",
         "dividend_yield_pct": 4.96,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 62.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "NEJ",
@@ -4206,7 +4366,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-04-30",
         "dividend_yield_pct": 3.13,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 176.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "REB",
@@ -4276,7 +4440,11 @@
         "dividend_fiscal_year": 2014,
         "dividend_ex_date": "2015-07-06",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "EQD",
@@ -4346,7 +4514,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-23",
         "dividend_yield_pct": 3.8,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 57.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "DRI",
@@ -4416,7 +4588,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-31",
         "dividend_yield_pct": 3.35,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 140.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MOX",
@@ -4488,7 +4664,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-03-24",
         "dividend_yield_pct": 1.03,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 4.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MAB",
@@ -4560,7 +4740,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-08-28",
         "dividend_yield_pct": 5.9,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 53.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "IMO",
@@ -4631,8 +4815,12 @@
         "last_dividend_mad": 1.0,
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-23",
-        "dividend_yield_pct": 1.1,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividend_yield_pct": 6.08,
+        "dividends_12m_mad": 5.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 4,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "UMR",
@@ -4702,7 +4890,11 @@
         "dividend_fiscal_year": 2023,
         "dividend_ex_date": "2024-09-09",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "SAH",
@@ -4774,7 +4966,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-08-19",
         "dividend_yield_pct": 3.35,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 98.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "AFI",
@@ -4846,7 +5042,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-19",
         "dividend_yield_pct": 6.11,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 20.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "DWY",
@@ -4918,7 +5118,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-24",
         "dividend_yield_pct": 5.89,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 44.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "NKL",
@@ -4990,7 +5194,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-06",
         "dividend_yield_pct": 5.98,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 2.81,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MLE",
@@ -5062,7 +5270,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-17",
         "dividend_yield_pct": 3.73,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 14.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "SBM",
@@ -5134,7 +5346,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-10",
         "dividend_yield_pct": 5.4,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 107.0,
+        "exceptional_dividends_12m_mad": 20.0,
+        "dividend_events_12m": 2,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "GAZ",
@@ -5206,7 +5422,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-03-24",
         "dividend_yield_pct": 4.84,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 175.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "M2M",
@@ -5278,7 +5498,11 @@
         "dividend_fiscal_year": 2017,
         "dividend_ex_date": "2018-09-19",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "SLF",
@@ -5350,7 +5574,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-04",
         "dividend_yield_pct": 7.13,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 30.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "ATL",
@@ -5422,7 +5650,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-19",
         "dividend_yield_pct": 4.96,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 5.9,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MIC",
@@ -5494,7 +5726,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-17",
         "dividend_yield_pct": 5.39,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 40.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "DYT",
@@ -5566,7 +5802,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-26",
         "dividend_yield_pct": 5.75,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 19.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "IBC",
@@ -5638,7 +5878,11 @@
         "dividend_fiscal_year": 2010,
         "dividend_ex_date": "2011-09-21",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "CTM",
@@ -5710,7 +5954,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-09-17",
         "dividend_yield_pct": 3.21,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 26.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "SNA",
@@ -5782,7 +6030,11 @@
         "dividend_fiscal_year": 2014,
         "dividend_ex_date": "2015-06-18",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "COL",
@@ -5854,7 +6106,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-10",
         "dividend_yield_pct": 4.64,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 3.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "LES",
@@ -5926,7 +6182,11 @@
         "dividend_fiscal_year": 2024,
         "dividend_ex_date": "2025-06-30",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "ZDJ",
@@ -5998,7 +6258,11 @@
         "dividend_fiscal_year": 2011,
         "dividend_ex_date": "2012-06-21",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "MUT",
@@ -6070,7 +6334,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-01",
         "dividend_yield_pct": 4.88,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 10.5,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "S2M",
@@ -6142,7 +6410,11 @@
         "dividend_fiscal_year": 2017,
         "dividend_ex_date": "2018-07-25",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "INV",
@@ -6214,7 +6486,11 @@
         "dividend_fiscal_year": 2020,
         "dividend_ex_date": "2019-09-16",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "AGM",
@@ -6284,7 +6560,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-14",
         "dividend_yield_pct": 4.64,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 310.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "MDP",
@@ -6356,7 +6636,11 @@
         "dividend_fiscal_year": 2009,
         "dividend_ex_date": null,
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "aucun dividende publié au bulletin"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "WAA",
@@ -6428,7 +6712,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-06-18",
         "dividend_yield_pct": 3.15,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 150.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "SNP",
@@ -6500,7 +6788,11 @@
         "dividend_fiscal_year": 2022,
         "dividend_ex_date": "2023-09-14",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "STR",
@@ -6572,7 +6864,11 @@
         "dividend_fiscal_year": 2011,
         "dividend_ex_date": "2012-05-24",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "BCI",
@@ -6644,7 +6940,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-17",
         "dividend_yield_pct": 2.58,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 14.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "FBR",
@@ -6716,7 +7016,11 @@
         "dividend_fiscal_year": 2011,
         "dividend_ex_date": "2012-06-25",
         "dividend_yield_pct": null,
-        "dividend_yield_basis": "dernier dividende détaché il y a plus de 15 mois"
+        "dividends_12m_mad": 0.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 0,
+        "dividend_notes": null,
+        "dividend_yield_basis": "aucun dividende ordinaire détaché sur 12 mois (calendrier officiel)"
       },
       {
         "ticker": "SID",
@@ -6788,7 +7092,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-20",
         "dividend_yield_pct": 3.15,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 52.0,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       },
       {
         "ticker": "SOT",
@@ -6860,7 +7168,11 @@
         "dividend_fiscal_year": 2025,
         "dividend_ex_date": "2026-07-01",
         "dividend_yield_pct": 2.24,
-        "dividend_yield_basis": "dernier dividende détaché / dernier cours"
+        "dividends_12m_mad": 6.6,
+        "exceptional_dividends_12m_mad": null,
+        "dividend_events_12m": 1,
+        "dividend_notes": null,
+        "dividend_yield_basis": "dividendes ordinaires détachés sur 12 mois (calendrier officiel) / dernier cours"
       }
     ],
     "excluded": [
