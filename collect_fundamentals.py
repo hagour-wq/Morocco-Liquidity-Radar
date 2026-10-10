@@ -43,6 +43,33 @@ def ocr_cached(data):
     return text, {**info, "cache": "nouvelle lecture", "sha256": h}
 
 
+def capital_unit_rescue(text, fin):
+    """En-têtes d'unité faux (Aluminium du Maroc : « EN M MAD » sur des montants en milliers) : l'unité du tableau est
+    déduite du capital social publié en dirhams (« au capital de 46.595.400 Dirhams ») rapporté à la ligne « Capital »
+    du bilan retenu (46 595,40) — rapport exact de 1, 1 000 ou 1 000 000 exigé. Utilisé seulement si les contrôles de
+    PER / P/B échouent avec les unités lues, et retenu seulement s'ils réussissent ensuite."""
+    import copy
+    from extract_financials import flatten, PER_SHARE
+    m = re.search(r"au capital (?:social )?de\s+(\d{1,3}(?:[ .]\d{3})+)(?:,00)?\s*(?:de\s+)?(?:dirhams|dhs?|mad)\b", flatten(text), re.I)
+    cap = fin.get("share_capital")
+    if not m or not cap or not cap.get("current"):
+        return None
+    published = float(re.sub(r"[ .]", "", m.group(1)))
+    u = next((u for u in (1.0, 1e3, 1e6) if abs(published / (cap["current"] * u) - 1) <= 0.001), None)
+    if u is None:
+        return None
+    out = copy.deepcopy(fin)
+    for k, f in out.items():
+        if isinstance(f, dict) and "current" in f and k not in PER_SHARE and f.get("unit") != u:
+            f["unit"], f["unit_method"] = u, "capital social publié"
+            f["mad"] = f["current"] * u
+            f["mad_previous"] = None if f.get("previous") is None else f["previous"] * u
+    fr = lambda x, d: f"{x:,.{d}f}".replace(",", " ").replace(".", ",")
+    note = (f"unités des états déduites du capital social publié ({fr(published, 0)} MAD = {fr(cap['current'], 2)} × {fr(u, 0)}) : "
+            "en-têtes d'unité du document incohérents avec les montants")
+    return out, note
+
+
 def analyse(src, text, shares, price=None, text_source="pdf_text"):
     if len(text.strip()) < MIN_TEXT:
         return {"status": "UNREADABLE", "text_source": text_source,
@@ -55,6 +82,12 @@ def analyse(src, text, shares, price=None, text_source="pdf_text"):
     period = re.search(r"\bdu\s+(\d{1,2})/(\d{1,2})/(20\d\d)\s+au\s+(\d{1,2})/(\d{1,2})/(20\d\d)", text, re.I)
     period_end = f"{period.group(6)}-{int(period.group(5)):02d}-{int(period.group(4)):02d}" if period else None
     derived, errors, notes = checks(fin, src["model"], shares, price)
+    if any("hors bornes" in e for e in errors):
+        fixed = capital_unit_rescue(text, fin)
+        if fixed:
+            d2, e2, n2 = checks(fixed[0], src["model"], shares, price)
+            if not e2:
+                fin, derived, errors, notes = fixed[0], d2, e2, [fixed[1]] + n2
     missing = [k for k in REQUIRED[src["model"]] if not any(fin.get(x) for x in k.split("|"))
                and not (k == "minority_interests" and fin.get("_scope") == "social")]
     status = "REJECTED" if errors else "PARTIAL" if missing else "VERIFIED"
@@ -87,6 +120,10 @@ def main():
                "listing_exchange": "Casablanca Stock Exchange", "listing_country": "MA", "collected_at": now}
         if src["model"] not in REQUIRED:
             rec.update(status="SECTOR_MODEL_PENDING", reason=f"modèle sectoriel « {src['model']} » non implémenté : pas de ratios industriels appliqués")
+            out["companies"].append(rec)
+            continue
+        if src.get("no_statements"):   # document vérifié manuellement : pas d'états financiers à extraire
+            rec.update(status="NO_STATEMENTS", reason="document publié sans états financiers : " + src["no_statements"])
             out["companies"].append(rec)
             continue
         try:
