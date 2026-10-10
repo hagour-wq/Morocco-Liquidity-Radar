@@ -29,6 +29,9 @@ class ExplainTests(unittest.TestCase):
         self.assertEqual(d["profile"], "Contrasté")
         self.assertTrue(any("Liquidité faible" in s for s in d["watchpoints"]))
         self.assertEqual(meds["corporate"]["pe"], 12.0)
+        v = item("V", volatility_annual_pct=43.7)
+        xf.explain(v, meds)
+        self.assertEqual(v["profile"], "Contrasté")                   # cours trop volatil pour un profil « Solide »
 
     def test_exceptional_profit_flagged(self):
         x = item("X", indicators={"net_income_growth_pct": 287.0})

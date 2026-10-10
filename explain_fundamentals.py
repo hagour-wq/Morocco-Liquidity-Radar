@@ -5,7 +5,8 @@ Les règles sont explicites et identiques pour toutes les sociétés :
 - point fort : composante ≥ 65 / 100 ; point de vigilance : composante ≤ 35 / 100 ;
 - comparaison aux pairs : médiane des sociétés analysées du même modèle sectoriel (banque, assurance, société) ;
 - profil :
-  « Solide » : score ≥ 55, comptes complets, aucune composante ≤ 35 (hors dividende), liquidité suffisante ;
+  « Solide » : score ≥ 55, comptes complets, aucune composante ≤ 35 (hors dividende), liquidité suffisante,
+              volatilité annualisée ≤ 35 % ;
   « Contrasté » : comptes complets mais au moins un point de vigilance ;
   « Incomplet » : une composante n'a pas pu être calculée (catégorie À surveiller).
 Ce n'est ni une prévision ni une recommandation d'achat ou de vente.
@@ -107,7 +108,7 @@ def explain(x, med):
     weak_comp = [k for k, val in c.items() if k != "dividend" and val is not None and val <= WEAK]
     if missing:
         profile = "Incomplet"
-    elif x["score"] >= 55 and not weak_comp and liq.get("tier") != "faible":
+    elif x["score"] >= 55 and not weak_comp and liq.get("tier") != "faible" and (x.get("volatility_annual_pct") or 0) <= 35:
         profile = "Solide"
     else:
         profile = "Contrasté"
