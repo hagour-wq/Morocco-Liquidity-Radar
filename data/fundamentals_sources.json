@@ -98,7 +98,8 @@
    "fiscal_year": 2025,
    "period_end": "2025-12-31",
    "document": "Communication financière annuelle 2025",
-   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/boa_2025.pdf"
+   "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/boa_2025.pdf",
+   "force_ocr": "chiffres coupés dans la couche texte, ex. « 5 514  07 9 »"
   },
   {
    "ticker": "CAP",
