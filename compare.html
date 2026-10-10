@@ -1,0 +1,152 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comparateur · Equity Bourse</title>
+<style>
+:root{--bg:#071019;--panel:#0d1824;--panel2:#101e2c;--line:#203346;--text:#edf4fa;--muted:#8295a8;--green:#36d399;--red:#fb7185;--amber:#f4c15d;--blue:#69a9ff}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#071019,#09131e 55%,#071019);color:var(--text);font:14px Inter,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1320px;margin:auto;padding:26px 16px 50px}a{color:var(--blue)}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px}
+.brand{font-size:12px;letter-spacing:.18em;color:var(--blue);font-weight:800}h1{margin:6px 0 3px;font-size:26px}
+.muted,.tiny{color:var(--muted)}.tiny{font-size:12px}.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px}
+.ctx{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.ctx b{font-size:18px}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;border:1px solid var(--line)}
+.g{color:var(--green)}.r{color:var(--red)}.a{color:var(--amber)}
+.pill.g{background:#36d39918;border-color:#36d39955}.pill.r{background:#fb718518;border-color:#fb718555}.pill.a{background:#f4c15d18;border-color:#f4c15d55}.pill.n{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{background:#0a1520;border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer;color:var(--text);text-align:left;font:inherit;max-width:100%}
+.chip:hover{border-color:var(--blue)}.chip.on{border-color:var(--blue);background:#69a9ff14}.chip small{display:block;color:var(--muted);font-size:11.5px;margin-top:2px}
+.pick{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+input{background:#0a1520;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 10px;font:inherit;min-width:220px;max-width:100%}
+button.btn{background:#69a9ff22;border:1px solid #69a9ff66;color:var(--text);border-radius:8px;padding:8px 12px;cursor:pointer;font:inherit}
+.sel{display:inline-flex;align-items:center;gap:6px;background:#69a9ff18;border:1px solid #69a9ff55;border-radius:999px;padding:4px 6px 4px 12px;font-weight:700}
+.sel button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:16px;line-height:1}
+.scroll{overflow-x:auto;margin-top:6px}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{position:sticky;top:0;background:var(--panel2);font-size:15px}
+td.k{color:var(--muted);width:210px;font-size:13px}
+tr.sec td{background:#0a1520;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:800;padding:7px 10px}
+.best{font-weight:800;box-shadow:inset 3px 0 0 var(--blue);background:#69a9ff10}.best::after{content:" ★";color:var(--blue)}
+.verdict{font-weight:750;line-height:1.35}
+ul.l{margin:0;padding-left:16px}ul.l li{margin:3px 0;font-size:12.5px;line-height:1.35}
+.empty{padding:26px;text-align:center;color:var(--muted)}
+.how{font-size:12.5px;line-height:1.5;color:var(--muted)}.how b{color:var(--text)}
+@media(max-width:700px){h1{font-size:22px}td.k{width:130px}}
+</style></head><body><main class="wrap">
+<header class="top"><div><div class="brand">EQUITY BOURSE · COMPARATEUR</div><h1>Comparer des actions</h1>
+<div class="tiny">Fondamentaux (garder 1 à 3 ans) + signal technique (moment d'entrée) + risques, côte à côte.</div></div>
+<div class="tiny"><a href="index.html">← Tableau de bord</a></div></header>
+
+<section class="card"><div class="ctx" id="ctx"><span class="tiny">Chargement du contexte de marché…</span></div></section>
+
+<section class="card">
+<div class="label">Short-list : critères réunis (fondamentaux + moment)</div>
+<div class="how" style="margin-top:6px">Titres dont le <b>profil fondamental est « Solide »</b>, le <b>signal technique ≥ 50/100</b> et la <b>liquidité suffisante</b>. Cliquez pour ajouter au comparateur (4 titres maximum).</div>
+<div class="chips" id="short"></div>
+<div class="label" style="margin-top:14px">Bonnes sociétés, point d'entrée à attendre</div>
+<div class="how" style="margin-top:6px">Profil « Solide » mais signal technique &lt; 50 : fondamentaux au rendez-vous, cours sans dynamique favorable aujourd'hui.</div>
+<div class="chips" id="wait"></div>
+</section>
+
+<section class="card">
+<div class="label">Titres comparés</div>
+<div class="pick"><input id="q" list="all" placeholder="Ajouter un titre : nom ou ticker"><datalist id="all"></datalist><button class="btn" id="add">Ajouter</button><span id="sel"></span></div>
+<div id="out"></div>
+<div class="how" style="margin-top:12px"><b>Lecture :</b> ★ (case surlignée) = meilleure valeur de la ligne parmi les titres comparés (PER et cours / valeur comptable : le plus bas ; rendement, ROE, croissance : le plus haut ; volatilité : la plus basse).
+<b>Signal technique</b> : ≥ 60 favorable, 40-60 neutre, &lt; 40 défavorable. <b>Verdict</b> : règles explicites appliquées aux chiffres publiés et aux cours, identiques pour toutes les valeurs.
+Ce comparateur résume des faits et des règles ; ce n'est ni une prévision ni une recommandation d'achat ou de vente.</div>
+</section>
+</main>
+<script>
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num=(v,d=1)=>v==null||isNaN(v)?null:Number(v).toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d});
+const F=(v,d=1,u='')=>{const n=num(v,d);return n==null?'n.d.':n+u};
+const S=(v,d=1)=>v==null?'n.d.':(v>0?'▲ +':v<0?'▼ ':'')+num(v,d)+' %';
+let LT={},ST={},ALL=[],sel=[];
+const techLabel=s=>s==null?['non calculé','n']:s>=60?['favorable','g']:s>=40?['neutre','a']:['défavorable','r'];
+const PROF={Solide:'g',Contrasté:'a',Incomplet:'n'};
+function verdict(t){
+ const f=LT[t],s=ST[t],liqLow=((f||s||{}).liquidity||{}).tier==='faible';
+ if(!f)return ['Pas d’analyse fondamentale (comptes non vérifiés ou non publiés)','n'];
+ const solid=f.profile==='Solide',ts=s?.score;
+ if(liqLow)return ['Liquidité faible : entrées et sorties difficiles, à réserver à de petits montants','r'];
+ if(solid&&ts!=null&&ts>=50)return ['Critères réunis : fondamentaux solides et dynamique de cours favorable','g'];
+ if(solid)return ['Bonne société, point d’entrée à attendre (signal technique '+(ts==null?'non calculé':'< 50')+')','a'];
+ if(ts!=null&&ts>=60)return ['Dynamique de cours favorable mais fondamentaux contrastés : profil spéculatif','a'];
+ return ['Fondamentaux contrastés et dynamique non favorable : points de vigilance à examiner','r'];
+}
+const ROWS=[
+ ['Verdict'],
+ ['Synthèse',t=>{const[v,c]=verdict(t);return '<span class="verdict '+c+'">'+esc(v)+'</span>'}],
+ ['Profil long terme',t=>LT[t]?'<span class="pill '+(PROF[LT[t].profile]||'n')+'">'+esc(LT[t].profile||'—')+'</span>':'n.d.'],
+ ['Score fondamental /100',t=>LT[t]?.score,'max',1],
+ ['Signal technique /100',t=>{const s=ST[t]?.score,[l,c]=techLabel(s);return s==null?'<span class="pill n">non calculé</span>':'<b>'+F(s)+'</b> <span class="pill '+c+'">'+l+'</span>'}],
+ ['Liquidité (moy. 20 séances)',t=>{const q=(LT[t]||ST[t]||{}).liquidity;return q?F(q.avg_turnover_mad_20d/1e6,1,' M MAD/j')+' · <span class="'+(q.tier==='faible'?'r':q.tier==='élevée'?'g':'a')+'">'+esc(q.tier)+'</span>':'n.d.'}],
+ ['Valorisation'],
+ ['Cours (MAD)',t=>{const x=ST[t]||LT[t];return x?F(x.close??x.price_mad,2)+' <span class="tiny">'+esc(x.reference_date||x.price_date||'')+'</span>':'n.d.'}],
+ ['PER',t=>LT[t]?.pe,'min',1,'×'],
+ ['Cours / valeur comptable',t=>LT[t]?.pb,'min',2,'×'],
+ ['Rendement dividende (12 mois)',t=>LT[t]?.dividend_yield_pct??ST[t]?.dividend_yield_pct,'max',2,' %'],
+ ['Rentabilité & croissance'],
+ ['ROE',t=>LT[t]?.roe_pct,'max',1,' %'],
+ ['Marge nette',t=>LT[t]?.indicators?.net_margin_pct,'max',1,' %'],
+ ['Croissance CA / PNB (1 an)',t=>LT[t]?.indicators?.revenue_growth_pct??LT[t]?.indicators?.pnb_growth_pct,'max',1,' %'],
+ ['Croissance du résultat (1 an)',t=>LT[t]?.indicators?.net_income_growth_pct,'max',1,' %'],
+ ['Solidité',t=>{const i=LT[t]?.indicators||{};if(i.cost_of_risk_to_loans_pct!=null)return 'coût du risque '+F(i.cost_of_risk_to_loans_pct,2,' % des crédits');if(i.net_debt_to_ebitda!=null)return 'dette nette / EBITDA '+F(i.net_debt_to_ebitda,2,'×');if(i.equity_ratio_pct!=null)return 'capitaux propres / bilan '+F(i.equity_ratio_pct,1,' %');return 'n.d.'}],
+ ['Moment d’entrée (technique)'],
+ ['Variation 5 séances',t=>ST[t]?.return_5d_pct,'max',1,' %',true],
+ ['Variation 20 séances',t=>ST[t]?.return_20d_pct,'max',1,' %',true],
+ ['Cours vs moyenne 200 séances',t=>ST[t]?.close_vs_sma200_pct,null,1,' %',true],
+ ['RSI 14',t=>{const r=ST[t]?.rsi14;if(r==null)return 'n.d.';return F(r)+' <span class="tiny">'+(r>=70?'zone de surachat':r<=30?'zone de survente':'zone neutre')+'</span>'}],
+ ['Support / résistance (20 s.)',t=>{const z=ST[t]?.support_resistance;return z?F(z.support,2)+' / '+F(z.resistance,2)+' MAD':'n.d.'}],
+ ['Volatilité annualisée',t=>ST[t]?.volatility_annual_pct??LT[t]?.volatility_annual_pct,'min',1,' %'],
+ ['Points forts et risques'],
+ ['Points forts',t=>{const l=LT[t]?.strengths||[];return l.length?'<ul class="l">'+l.map(x=>'<li class="g">'+esc(x)+'</li>').join('')+'</ul>':'<span class="tiny">aucun critère ≥ 65/100</span>'}],
+ ['Points de vigilance',t=>{const l=[...(LT[t]?.watchpoints||[])];const w=(ST[t]?.liquidity||{}).warning;if(w&&!l.some(x=>x.includes('Liquidité')))l.push(w);return l.length?'<ul class="l">'+l.map(x=>'<li class="a">'+esc(x)+'</li>').join('')+'</ul>':'<span class="tiny">aucun</span>'}],
+ ['Fiche détaillée',t=>'<a href="societe.html?t='+encodeURIComponent(t)+'">ouvrir la fiche '+esc(t)+' →</a>'],
+];
+function render(){
+ document.getElementById('sel').innerHTML=sel.map(t=>'<span class="sel">'+esc(t)+'<button title="Retirer" data-r="'+esc(t)+'">×</button></span>').join(' ');
+ document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',sel.includes(c.dataset.t)));
+ try{history.replaceState(null,'','?t='+sel.join(','))}catch(e){}
+ const out=document.getElementById('out');
+ if(!sel.length){out.innerHTML='<div class="empty">Choisissez des titres dans la short-list ou ajoutez-en par leur nom.</div>';return}
+ const name=t=>(LT[t]||ST[t]||{}).name||t, sect=t=>(LT[t]||ST[t]||{}).sector||'';
+ let h='<div class="scroll"><table><thead><tr><th></th>'+sel.map(t=>'<th>'+esc(name(t))+'<div class="tiny">'+esc(t)+' · '+esc(sect(t))+'</div></th>').join('')+'</tr></thead><tbody>';
+ for(const [k,fn,best,d,u,signed] of ROWS){
+  if(!fn){h+='<tr class="sec"><td colspan="'+(sel.length+1)+'">'+esc(k)+'</td></tr>';continue}
+  const vals=sel.map(t=>fn(t));
+  let bi=-1;
+  if(best&&sel.length>1){const nums=vals.map(v=>typeof v==='number'?v:null);const ok=nums.filter(v=>v!=null);
+   if(ok.length>1){const target=best==='max'?Math.max(...ok):Math.min(...ok);if(ok.filter(v=>v===target).length===1)bi=nums.indexOf(target)}}
+  h+='<tr><td class="k">'+esc(k)+'</td>'+vals.map((v,i)=>'<td'+(i===bi?' class="best"':'')+'>'+(typeof v==='number'?(signed?'<span class="'+(v>0?'g':v<0?'r':'')+'">'+S(v,d)+'</span>':F(v,d??1,u||'')):(v??'n.d.'))+'</td>').join('')+'</tr>';
+ }
+ out.innerHTML=h+'</tbody></table></div>';
+}
+function add(t){t=(t||'').trim().toUpperCase();if(!t)return;const m=ALL.find(x=>x.t===t)||ALL.find(x=>x.n.toUpperCase()===t)||ALL.find(x=>(x.t+' — '+x.n).toUpperCase()===t);if(!m)return;
+ if(sel.includes(m.t))return;if(sel.length>=4)sel.shift();sel.push(m.t);render()}
+document.addEventListener('click',e=>{const r=e.target.dataset?.r;if(r){sel=sel.filter(x=>x!==r);render()}const c=e.target.closest?.('.chip');if(c){const t=c.dataset.t;sel.includes(t)?sel=sel.filter(x=>x!==t):add(t);render()}});
+document.getElementById('add').onclick=()=>{add(document.getElementById('q').value);document.getElementById('q').value=''};
+document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter'){add(e.target.value);e.target.value=''}});
+Promise.all([fetch('data/equity_rankings.json').then(r=>r.json()),fetch('data/dashboard.json').then(r=>r.json()).catch(()=>null)]).then(([R,D])=>{
+ for(const x of [...(R.long_term.ranked||[]),...(R.long_term.watch||[])])LT[x.ticker]=x;
+ for(const x of [...(R.short_term.ranked||[]),...(R.short_term.watch||[])])ST[x.ticker]=x;
+ const tk=[...new Set([...Object.keys(LT),...Object.keys(ST)])];
+ ALL=tk.map(t=>({t,n:(LT[t]||ST[t]).name||t})).sort((a,b)=>a.n.localeCompare(b.n));
+ document.getElementById('all').innerHTML=ALL.map(x=>'<option value="'+esc(x.t)+' — '+esc(x.n)+'">').join('');
+ const solid=Object.values(LT).filter(x=>x.profile==='Solide'&&(x.liquidity||{}).tier!=='faible');
+ const sc=x=>ST[x.ticker]?.score;
+ const chip=(x,why)=>'<button class="chip" data-t="'+esc(x.ticker)+'"><b>'+esc(x.ticker)+'</b> '+esc(x.name)+'<small>'+why+'</small></button>';
+ const short=solid.filter(x=>sc(x)!=null&&sc(x)>=50).sort((a,b)=>(b.score+sc(b))-(a.score+sc(a)));
+ const wait=solid.filter(x=>!(sc(x)!=null&&sc(x)>=50)).sort((a,b)=>b.score-a.score);
+ document.getElementById('short').innerHTML=short.length?short.map(x=>chip(x,'Fond. '+F(x.score,0)+' · Tech. '+F(sc(x),0)+' · PER '+F(x.pe,1,'×')+' · Rdt '+F(x.dividend_yield_pct,1,' %'))).join(''):'<span class="tiny">Aucun titre ne réunit les trois critères à la dernière séance.</span>';
+ document.getElementById('wait').innerHTML=wait.length?wait.map(x=>chip(x,'Fond. '+F(x.score,0)+' · Tech. '+(sc(x)==null?'n.d.':F(sc(x),0))+' · PER '+F(x.pe,1,'×'))).join(''):'<span class="tiny">Aucun.</span>';
+ if(D){const reg={RISK_ON:['favorable','g'],NEUTRAL:['neutre','a'],RISK_OFF:['défavorable','r']}[D.regime]||[D.regime||'n.d.','n'];
+  document.getElementById('ctx').innerHTML='<div><div class="label">Contexte de marché</div><b class="'+reg[1]+'">Régime '+reg[0]+'</b></div><div><div class="label">Score composite (−100 à +100)</div><b>'+(D.composite>0?'+':'')+F(D.composite,0)+'</b></div><div class="tiny" style="max-width:640px">'+esc(D.conclusion||'')+'</div><div class="tiny">Données au '+esc(D.as_of||'—')+'</div>'}
+ else document.getElementById('ctx').innerHTML='<span class="tiny">Contexte de marché indisponible.</span>';
+ const q=new URLSearchParams(location.search).get('t');
+ sel=q?q.split(',').filter(t=>LT[t]||ST[t]).slice(0,4):short.slice(0,3).map(x=>x.ticker);
+ if(!sel.length)sel=solid.slice(0,3).map(x=>x.ticker);
+ render();
+}).catch(e=>{document.getElementById('out').innerHTML='<div class="empty">Données indisponibles : '+esc(e.message)+'</div>'});
+</script></body></html>
