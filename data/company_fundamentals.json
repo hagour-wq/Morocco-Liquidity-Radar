@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T13:01:27.291998+00:00",
+ "generated_at": "2026-10-10T13:17:21.394310+00:00",
  "source_registry": "data/fundamentals_sources.json",
  "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
  "companies": [
@@ -15,7 +15,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -131,7 +131,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -243,7 +243,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -252,6 +252,20 @@
     "cache": "réutilisé",
     "sha256": "755d3815f62ebdb4e53a453982bb4a6d7d90b42c4664d4592770f5dbf1c3125a"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": ". Augmentation des dettes de financement D SA 1 |",
+     "after": ". Augmentation des dettes de financement D SA 1 1"
+    },
+    {
+     "before": "Comptes d'associés 1 |",
+     "after": "Comptes d'associés 1 1"
+    },
+    {
+     "before": "S [Personne | 36284031",
+     "after": "S [Personne 1 36 284 031"
+    }
+   ],
    "text_source": "ocr",
    "status": "REJECTED",
    "errors": [
@@ -260,16 +274,25 @@
     "chiffre d'affaires introuvable"
    ],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "3 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [
-    "revenue",
     "net_income_group",
     "equity_total|equity_group"
    ],
    "scope": "social",
    "statements": {
-    "revenue": null,
+    "revenue": {
+     "current": 43951933.16,
+     "previous": 43110076.58,
+     "unit": null,
+     "mad": null,
+     "mad_previous": null,
+     "line": "Chiffre d'affaires 43.951.933,16 43.951.933,16 43.110.076,58",
+     "layout": "N / total N / N-1",
+     "ambiguous_split": false
+    },
     "operating_income": null,
     "net_income_group": null,
     "equity_total": null,
@@ -300,7 +323,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -309,11 +332,94 @@
     "cache": "réutilisé",
     "sha256": "326568d19c061e299ec7906df540162aea137854145121d238a2d3ca53bb1a26"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "immobilis, corporelles en cours 937 937 1036",
+     "after": "immobilis, corporelles en cours 937 937 1 036"
+    },
+    {
+     "before": "TOTAL 1 {A+B+C+D+E) 169 749 34 996 134 753 119973",
+     "after": "TOTAL 1 {A+B+C+D+E) 169 749 34 996 134 753 119 973"
+    },
+    {
+     "before": "STOCKS {F} Personnel 2 602 2992",
+     "after": "STOCKS {F} Personnel 2 602 2 992"
+    },
+    {
+     "before": "Rae DE — en de . 1e rs : 1222 ER Re a TRES Organismes sociaux 2819 2489",
+     "after": "Rae DE — en de . 1e rs : 1222 ER Re a TRES Organismes sociaux 2 819 2 489"
+    },
+    {
+     "before": "Comptes d'associés Comptes de régularisation Passif 3736 2654",
+     "after": "Comptes d'associés Comptes de régularisation Passif 3 736 2 654"
+    },
+    {
+     "before": "ECARTS DE CONVERSION - ACTIF (I) Total 1 (F+G#H) 805606 769155",
+     "after": "ECARTS DE CONVERSION - ACTIF (I) Total 1 (F+G#H) 805 606 769 155"
+    },
+    {
+     "before": "pes ni Se a 9 nt 9 ; . Banques {soides créditeurs) 28 366 2901",
+     "after": "pes ni Se a 9 nt 9 ; . Banques {soides créditeurs) 28 366 2 901"
+    },
+    {
+     "before": "TOTAL GENERAL {+ H + Ml 989 784 47 826 941957 566269",
+     "after": "TOTAL GENERAL {+ H + Ml 989 784 47 826 941 957 566 269"
+    },
+    {
+     "before": "Produits des titres participation et autres titres Immobilisés 11981 11981",
+     "after": "Produits des titres participation et autres titres Immobilisés 11 981 11 981"
+    },
+    {
+     "before": "TOTAL 14801 14 801",
+     "after": "TOTAL 14 801 14 801"
+    },
+    {
+     "before": "Charges d'intérêts 4080 4 040",
+     "after": "Charges d'intérêts 4 080 4 040"
+    },
+    {
+     "before": "XH_ IMPOTS SUR LES RESULTATS 18 392 18392",
+     "after": "XH_ IMPOTS SUR LES RESULTATS 18 392 18 392"
+    },
+    {
+     "before": "Résultats consolidés de l'exercice 72656 72354",
+     "after": "Résultats consolidés de l'exercice 72 656 72 354"
+    },
+    {
+     "before": "immobilisations incorporelles 25157 21 920",
+     "after": "immobilisations incorporelles 25 157 21 920"
+    },
+    {
+     "before": "Titres mis en équivalence Résultat minoritaire 795 1868",
+     "after": "Titres mis en équivalence Résultat minoritaire 795 1 868"
+    },
+    {
+     "before": "Autres actifs financiers 1165 893",
+     "after": "Autres actifs financiers 1 165 893"
+    },
+    {
+     "before": "Actifs d'impôts différés 7145 6518",
+     "after": "Actifs d'impôts différés 7 145 6 518"
+    },
+    {
+     "before": "EE : Dettes financières courantes : 51475 27 947",
+     "after": "EE : Dettes financières courantes : 51 475 27 947"
+    },
+    {
+     "before": "Dotations nettes aux amortissements, dépréciations et aux provisions -23 446 -20491",
+     "after": "Dotations nettes aux amortissements, dépréciations et aux provisions -23 446 -20 491"
+    },
+    {
+     "before": "RÉSULTAT NET - PART DU GROUPE 72656 72354",
+     "after": "RÉSULTAT NET - PART DU GROUPE 72 656 72 354"
+    }
+   ],
    "text_source": "ocr",
    "status": "VERIFIED",
    "errors": [],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "20 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [],
    "scope": "consolidated",
@@ -324,7 +430,7 @@
      "unit": 1000.0,
      "mad": 72656000.0,
      "mad_previous": 72354000.0,
-     "line": "RÉSULTAT NET - PART DU GROUPE 72656 72354",
+     "line": "RÉSULTAT NET - PART DU GROUPE 72 656 72 354",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
@@ -366,7 +472,7 @@
      "unit": 1000.0,
      "mad": 70370000.0,
      "mad_previous": 68519000.0,
-     "line": ": CAPITAUX PROPRES PART DU GROUPE 70 370 68 519",
+     "line": ":\nCAPITAUX PROPRES PART DU GROUPE 70 370 68 519",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
@@ -376,7 +482,7 @@
      "unit": 1000.0,
      "mad": 71500000.0,
      "mad_previous": 70867000.0,
-     "line": "4 CAPITAUX PROPRES D'ENSEMBLE 71 500 70 867",
+     "line": "4\nCAPITAUX PROPRES D'ENSEMBLE 71 500 70 867",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
@@ -413,7 +519,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -422,11 +528,34 @@
     "cache": "réutilisé",
     "sha256": "d1d70e90202dfa0df7e3235fae266ae8c7e4a82d0e945400f2bc715d564f37e6"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "masses NA 995 31824",
+     "after": "masses NA 995 31 824"
+    },
+    {
+     "before": "EE 25852 168282",
+     "after": "EE 25 852 168 282"
+    },
+    {
+     "before": "Clients et comptes rattachés 828 264 51701 | | 328 264 517,01 406 736 413,58 2003 317,60 1987 86461",
+     "after": "Clients et comptes rattachés 828 264 51701 | | 328 264 517,01 406 736 413,58 2003 317,60 1 987 86 461"
+    },
+    {
+     "before": "Autres créditeurs non courants 4218 2714",
+     "after": "Autres créditeurs non courants 4 218 2 714"
+    },
+    {
+     "before": "Autres créditeurs courants 13 594 12826",
+     "after": "Autres créditeurs courants 13 594 12 826"
+    }
+   ],
    "text_source": "ocr",
    "status": "VERIFIED",
    "errors": [],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "5 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [],
    "scope": "consolidated",
@@ -506,7 +635,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -619,7 +748,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -728,7 +857,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -843,7 +972,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -852,6 +981,84 @@
     "cache": "réutilisé",
     "sha256": "8b499c7123a37bfa15a47813feaeb10aee3ccf1476cb2ae4d4f77abf6ee8d5f3"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "Actif immobilisé Réserves consolidées 1411 503 1311579",
+     "after": "Actif immobilisé Réserves consolidées 1 411 503 1 311 579"
+    },
+    {
+     "before": "Ecart d'acquisition 960 1098",
+     "after": "Ecart d'acquisition 960 1 098"
+    },
+    {
+     "before": "Placements affectés aux opérations d'assurance 14316 352 13 284 255",
+     "after": "Placements affectés aux opérations d'assurance 14 316 352 13 284 255"
+    },
+    {
+     "before": "Part des cessionnaires dans les provisions techniques 1047 771 1154445",
+     "after": "Part des cessionnaires dans les provisions techniques 1 047 771 1 154 445"
+    },
+    {
+     "before": "Assurés, intermédiaires et comptes rattachés débiteurs 2151 054 2334573",
+     "after": "Assurés, intermédiaires et comptes rattachés débiteurs 2 151 054 2 334 573"
+    },
+    {
+     "before": "2 667 436 2617796",
+     "after": "2 667 436 2 617 796"
+    },
+    {
+     "before": "Primes émises brutes 1786 734] 1250 388",
+     "after": "Primes émises brutes 1786 734] 1 250 388"
+    },
+    {
+     "before": "Acquisitions - cessions d'immeubles (261] 13 694 12481",
+     "after": "Acquisitions - cessions d'immeubles (261] 13 694 12 481"
+    },
+    {
+     "before": "Dividendes versés (82 239) 42155 5",
+     "after": "Dividendes versés (82 239) 42 155 5"
+    },
+    {
+     "before": "Personnel débiteur 5 313 997.43 5 313 997,49 4976 12545",
+     "after": "Personnel débiteur 5 313 997.43 5 313 997,49 4 976 12 545"
+    },
+    {
+     "before": "Charges financières non techniques courantes 2183 574,70 0.0d 2183874704 878 28847",
+     "after": "Charges financières non techniques courantes 2183 574,70 0.0d 2183874704 878 28 847"
+    },
+    {
+     "before": "Dotations non techniques oocl d'où GoÙ 20748000 8",
+     "after": "Dotations non techniques oocl d'où GoÙ 20 748 000 8"
+    },
+    {
+     "before": "PARC BOUSKOURA SOGEPIB PARC INDUSTRIEL 1000000] room sus] vussize] ia sausaes] ésotasisd 80 18900",
+     "after": "PARC BOUSKOURA SOGEPIB PARC INDUSTRIEL 1000000] room sus] vussize] ia sausaes] ésotasisd 80 18 900"
+    },
+    {
+     "before": "“Fat 172856 232 1] 12 826 232 4] 172 826 2324",
+     "after": "“Fat 172856 232 1] 12 826 232 4] 172 826 2 324"
+    },
+    {
+     "before": "1231558540 12315 585.20 A9 10361",
+     "after": "1231558540 12315 585.20 49 10 361"
+    },
+    {
+     "before": "Cessiennaires et cptes rattachés créditeurs 495 809 552,90 493 809 952,99] 500 079 880 |",
+     "after": "Cessiennaires et cptes rattachés créditeurs 495 809 552,90 493 809 952,99] 500 079 880 1"
+    },
+    {
+     "before": "Actions cotées a224TaS24] 4143987408] 504013987347] 896161 12940",
+     "after": "Actions cotées a224TaS24] 4143987408] 504013987347] 896 161 12 940"
+    },
+    {
+     "before": "Prasons pour armes non acquises ass 1s2rs7 a ca] wear] 25273 2130",
+     "after": "Prasons pour armes non acquises ass 1s2rs7 a ca] wear] 25 273 2 130"
+    },
+    {
+     "before": "TOTAL (A8) 2ovussozrse] esse] 6542543 47",
+     "after": "TOTAL (A8) 2ovussozrse] esse] 6 542 543 47"
+    }
+   ],
    "text_source": "ocr",
    "status": "REJECTED",
    "errors": [
@@ -859,7 +1066,8 @@
     "capitaux propres part du groupe introuvables"
    ],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "19 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [
     "net_income_group",
@@ -905,7 +1113,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1055,7 +1263,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1206,43 +1414,1035 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
-   "text_source": "pdf_text",
-   "status": "REJECTED",
-   "errors": [
-    "résultat net part du groupe introuvable",
-    "part du groupe lue sous un résultat consolidé, non confirmée par un BPA publié cohérent",
-    "capitaux propres part du groupe introuvables",
-    "PNB introuvable"
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
+   "ocr": {
+    "engine": "tesseract",
+    "language": "fra",
+    "pages": 20,
+    "dpi": 300,
+    "cache": "réutilisé",
+    "sha256": "a6ac0967dbff96944bc9f86a03f4db9d482ddfcfbbc8b63ad3d868206699b180"
+   },
+   "ocr_amount_repairs": [
+    {
+     "before": "233 milliards de DH à fin décembre DH à fin décembre 2025 149",
+     "after": "233 milliards de DH à fin décembre DH à fin décembre 2 025 149"
+    },
+    {
+     "before": "1.111 Tableau des flux de trésorerie - Autres actifs financiers à la juste valeur par résultat 2468 478 1720 743",
+     "after": "1.111 Tableau des flux de trésorerie - Autres actifs financiers à la juste valeur par résultat 2 468 478 1 720 743"
+    },
+    {
+     "before": "emprunts à vue auprès des établissements de crédit. Titres au coût amorti 46 514 657 44929 732",
+     "after": "emprunts à vue auprès des établissements de crédit. Titres au coût amorti 46 514 657 44 929 732"
+    },
+    {
+     "before": "Prêts et créances sur les établissements de crédit et assimilés, au coût amorti 34836085 35151660",
+     "after": "Prêts et créances sur les établissements de crédit et assimilés, au coût amorti 34 836 085 35 151 660"
+    },
+    {
+     "before": "aux immeubles de placement, aux actifs financiers détenus jusqu'à l'échéance et Actif d'impôt différé 2669 784 2610179",
+     "after": "ux immeubles de placement, aux actifs financiers détenus jusqu'à l'échéance et Actif d'impôt différé 2 669 784 2 610 179"
+    },
+    {
+     "before": "titres de créances négociables Comptes de régularisation et autres actifs 12 462 536 8395 221",
+     "after": "titres de créances négociables Comptes de régularisation et autres actifs 12 462 536 8 395 221"
+    },
+    {
+     "before": "Participations dans les entreprises mises en équivalence 1085358 1008 702",
+     "after": "Participations dans les entreprises mises en équivalence 1 085 358 1 008 702"
+    },
+    {
+     "before": ", . ou use . . . Immobilisations corporelles 9294030 8 693 686",
+     "after": ", . ou use . . . Immobilisations corporelles 9 294 030 8 693 686"
+    },
+    {
+     "before": "trésorerie liés aux acquisitions et aux cessions de filiales, entreprises  immobiisations incorporelles 1757020 1597 149",
+     "after": "sorerie liés aux acquisitions et aux cessions de filiales, entreprises  immobiisations incorporelles 1 757 020 1 597 149"
+    },
+    {
+     "before": "associées ou coentreprises consolidées ainsi que ceux liés aux acquisitions et aux  Ecartd'acquisition 1018097 1018097",
+     "after": "sociées ou coentreprises consolidées ainsi que ceux liés aux acquisitions et aux  Ecartd'acquisition 1 018 097 1 018 097"
+    },
+    {
+     "before": "P P g . Dettes envers les établissements de crédit et assimilés 71016 843 80 247 308",
+     "after": "P P g . Dettes envers les établissements de crédit et assimilés 71 016 843 80 247 308"
+    },
+    {
+     "before": "11.12 Utilisation d’estimations dans la préparation des états financiers Passif d'impôt courant 2 423 616 2036 293",
+     "after": "11.12 Utilisation d’estimations dans la préparation des états financiers Passif d'impôt courant 2 423 616 2 036 293"
+    },
+    {
+     "before": "Passif d'impôt différé 1292 471 1226 720",
+     "after": "Passif d'impôt différé 1 292 471 1 226 720"
+    },
+    {
+     "before": ". . x 2 1: : . . : Provisions pour risques et charges 2188 574 1876 793",
+     "after": ". . x 2 1: : . . : Provisions pour risques et charges 2 188 574 1 876 793"
+    },
+    {
+     "before": "A À h h ï Dettes subordonnées 12088 543 12145 994",
+     "after": "A À h h ï Dettes subordonnées 12 088 543 12 145 994"
+    },
+    {
+     "before": ". . . Capital et réservers liées 22177 528 21375 867",
+     "after": ". . . Capital et réservers liées 22 177 528 21 375 867"
+    },
+    {
+     "before": "- Part du groupe 4 930 178 3449 115",
+     "after": "- Part du groupe 4 930 178 3 449 115"
+    },
+    {
+     "before": "- Part des minoritaires 6 428 490 5 642190",
+     "after": "- Part des minoritaires 6 428 490 5 642 190"
+    },
+    {
+     "before": "financiers pour procéder aux estimations nécessaires. - Part du groupe 3813 552 3427420",
+     "after": "financiers pour procéder aux estimations nécessaires. - Part du groupe 3 813 552 3 427 420"
+    },
+    {
+     "before": "- Part des minoritaires 1700 527 1548 686",
+     "after": "- Part des minoritaires 1 700 527 1 548 686"
+    },
+    {
+     "before": "TOTAL CAPITAUX PROPRES CONSOLIDES AO 426 437 36 814 698",
+     "after": "TOTAL CAPITAUX PROPRES CONSOLIDES 40 426 437 36 814 698"
+    },
+    {
+     "before": "Intérêts et produits assimilés 20 931865 20 367 886",
+     "after": "Intérêts et produits assimilés 20 931 865 20 367 886"
+    },
+    {
+     "before": "s estimations ayant un effet significatif sur les comptes concernent Intérêts et charges assimilées -6 608 893 -7184 574",
+     "after": " estimations ayant un effet significatif sur les comptes concernent Intérêts et charges assimilées -6 608 893 -7 184 574"
+    },
+    {
+     "before": ". . I . MARGE D'INTÉRÊT 14 322 972 13183 312",
+     "after": ". . I . MARGE D'INTÉRÊT 14 322 972 13 183 312"
+    },
+    {
+     "before": "principalement : Commissions perçues 5053713 4 766 379",
+     "after": "principalement : Commissions perçues 5 053 713 4 766 379"
+    },
+    {
+     "before": "Vous. Vu . . Dune MARGE SUR COMMISSIONS 4181595 3915 952",
+     "after": "Vous. Vu . . Dune MARGE SUR COMMISSIONS 4 181 595 3 915 952"
+    },
+    {
+     "before": "Produit net des autres activités 1201504 1091930",
+     "after": "Produit net des autres activités 1 201 504 1 091 930"
+    },
+    {
+     "before": "+ La détermination des provisions destinées à couvrir les risques de pertes et PRODUIT NET BANCAIRE 20338747 18716574",
+     "after": " La détermination des provisions destinées à couvrir les risques de pertes et PRODUIT NET BANCAIRE 20 338 747 18 716 574"
+    },
+    {
+     "before": "RÉSULTAT BRUT D'EXPLOITATION 11033 238 10 026 536",
+     "after": "RÉSULTAT BRUT D'EXPLOITATION 11 033 238 10 026 536"
+    },
+    {
+     "before": "RÉSULTAT D'EXPLOITATION 7 745 617 6848936",
+     "after": "RÉSULTAT D'EXPLOITATION 7 745 617 6 848 936"
+    },
+    {
+     "before": "RÉSULTAT AVANT IMPÔT 7902059 6 980 277",
+     "after": "RÉSULTAT AVANT IMPÔT 7 902 059 6 980 277"
+    },
+    {
+     "before": "Fidaroc BD RÉSULTAT NET 5 514 079 4 976106",
+     "after": "Fidaroc BD RÉSULTAT NET 5 514 079 4 976 106"
+    },
+    {
+     "before": "( ) Résultat Hors-groupe 1700 527 1548 686",
+     "after": "( ) Résultat Hors-groupe 1 700 527 1 548 686"
+    },
+    {
+     "before": "è GrantThomnton JBDO RÉSULTAT NET - PART DU GROUPE 3813 552 3 427 420",
+     "after": "è GrantThomnton JBDO RÉSULTAT NET - PART DU GROUPE 3 813 552 3 427 420"
+    },
+    {
+     "before": "c un niveau d'assurance moins élevé qu’un audit. Nous n'avons pas effectué un audit et, en Résultat net 5514079 4 976106",
+     "after": "n niveau d'assurance moins élevé qu’un audit. Nous n'avons pas effectué un audit et, en Résultat net 5 514 079 4 976 106"
+    },
+    {
+     "before": " milliard de dirhams présentant des incertitudes liées à leurs valeurs de réalisation. Écarts de Conversion 42814 418251",
+     "after": "illiard de dirhams présentant des incertitudes liées à leurs valeurs de réalisation. Écarts de Conversion 42 814 418 251"
+    },
+    {
+     "before": "LS asosfé Part du groupe 3812876 3352320",
+     "after": "LS asosfé Part du groupe 3 812 876 3 352 320"
+    },
+    {
+     "before": "Part des intérêts minoritaires 1751299 1365 452",
+     "after": "Part des intérêts minoritaires 1 751 299 1 365 452"
+    },
+    {
+     "before": "Opérations sur capital 32207 682 087 -714 294",
+     "after": "Opérations sur capital 32 207 682 087 -714 294"
+    },
+    {
+     "before": "Variations d'actifs et passifs comptabilisées directement en capitaux propres 157 495 157 495 2422 159 917",
+     "after": "Variations d'actifs et passifs comptabilisées directement en capitaux propres 157 495 157 495 2 422 159 917"
+    },
+    {
+     "before": "Résultat avant impôts 7902058 6 980 278",
+     "after": "Résultat avant impôts 7 902 058 6 980 278"
+    },
+    {
+     "before": "res immobilisations eo s Prestation de services bancaires et financiers 1259 983 617 229 642754 1239 288 585 762 653 526",
+     "after": " immobilisations eo s Prestation de services bancaires et financiers 1 259 983 617 229 642 754 1 239 288 585 762 653 526"
+    },
+    {
+     "before": "+/- Dotations nettes pour dépréciation des actifs financiers -129 747 77635",
+     "after": "+/- Dotations nettes pour dépréciation des actifs financiers -129 747 77 635"
+    },
+    {
+     "before": "+/- Autres mouvements 43 068 -651345",
+     "after": "+/- Autres mouvements 43 068 -651 345"
+    },
+    {
+     "before": "Total des éléments non monétaires inclus dans le résultat net avant impôts et des autres ajustements 2705 137 2 619 192",
+     "after": "Total des éléments non monétaires inclus dans le résultat net avant impôts et des autres ajustements 2 705 137 2 619 192"
+    },
+    {
+     "before": "+/- Flux liés aux autres opérations affectant des actifs ou passifs financiers 1577 509 -4 460 297",
+     "after": "+/- Flux liés aux autres opérations affectant des actifs ou passifs financiers 1 577 509 -4 460 297"
+    },
+    {
+     "before": "+J- Flux liés aux immeubles de placement 2529 72 352",
+     "after": "+J- Flux liés aux immeubles de placement 2 529 72 352"
+    },
+    {
+     "before": "+/- Flux liés aux immobilisations corporelles et incorporelles -2 230 281 -1001711",
+     "after": "+/- Flux liés aux immobilisations corporelles et incorporelles -2 230 281 -1 001 711"
+    },
+    {
+     "before": "Flux net de trésorerie lié aux opérations d'investissement -2 086 497 -1062 763",
+     "after": "Flux net de trésorerie lié aux opérations d'investissement -2 086 497 -1 062 763"
+    },
+    {
+     "before": "+/- Flux de trésorerie provenant ou à destination des actionnaires -2729 673 -1928 905",
+     "after": "+/- Flux de trésorerie provenant ou à destination des actionnaires -2 729 673 -1 928 905"
+    },
+    {
+     "before": "+/- Autres flux de trésorerie nets provenant des activités de financement -861194 1373 517",
+     "after": "+/- Autres flux de trésorerie nets provenant des activités de financement -861 194 1 373 517"
+    },
+    {
+     "before": "Caisse, Banques centrales, CCP (actif & passif, 21190 824 18 474 878",
+     "after": "Caisse, Banques centrales, CCP (actif & passif, 21 190 824 18 474 878"
+    },
+    {
+     "before": "Caisse, Banques centrales, CCP (actif & passif) 24108 086 21190 824",
+     "after": "Caisse, Banques centrales, CCP (actif & passif) 24 108 086 21 190 824"
+    },
+    {
+     "before": "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit -5 733 460 2832 898",
+     "after": "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit -5 733 460 2 832 898"
+    },
+    {
+     "before": "Pertes sur créances irrécouvrables -834 326 -1136 645",
+     "after": "Pertes sur créances irrécouvrables -834 326 -1 136 645"
+    },
+    {
+     "before": "FONDS PROPRES 22900932 674975 1779645 (168642) 15239527 40426437 21864088 578809 1672785 (131620) 12830635 36814698",
+     "after": "FONDS PROPRES 22900932 674975 1779645 (168642) 15239527 40426437 21864088 578809 1672785 (131620) 12 830 635 36 814 698"
+    },
+    {
+     "before": "Opérations de pension 711577 141102",
+     "after": "Opérations de pension 711 577 141 102"
+    },
+    {
+     "before": "DE CREDITS AVANT DEPRECIATION 34902 549 35 239 785",
+     "after": "DE CREDITS AVANT DEPRECIATION 34 902 549 35 239 785"
+    },
+    {
+     "before": "D VALEUR AU BILAN 25841273 25627724",
+     "after": "D VALEUR AU BILAN 25 841 273 25 627 724"
+    },
+    {
+     "before": "DE CREDITS NETS DE DEPRECIATION 34836084 35151660",
+     "after": "DE CREDITS NETS DE DEPRECIATION 34 836 084 35 151 660"
+    },
+    {
+     "before": "TOTAL DES DETTES ENVERS LES ETABLISSEMENTS DE CREDIT 71016 843 80 247 308",
+     "after": "TOTAL DES DETTES ENVERS LES ETABLISSEMENTS DE CREDIT 71 016 843 80 247 308"
+    },
+    {
+     "before": "Opérations de pension 15 760 294 20 412511",
+     "after": "Opérations de pension 15 760 294 20 412 511"
+    },
+    {
+     "before": "Immobilisations corporelles 9294030 8 693 686",
+     "after": "Immobilisations corporelles 9 294 030 8 693 686"
+    },
+    {
+     "before": "Dont droits d'utilisation 995 538 1120 742",
+     "after": "Dont droits d'utilisation 995 538 1 120 742"
+    },
+    {
+     "before": "Instruments de dettes comptabilisés Dont dette locative 1005 496 1175 616",
+     "after": "Instruments de dettes comptabilisés Dont dette locative 1 005 496 1 175 616"
+    },
+    {
+     "before": "sur les établissments de crédit 34901645 - 904 34902 549 53230 - 13233 66463",
+     "after": "sur les établissments de crédit 34901645 - 904 34902 549 53230 - 13 233 66 463"
+    },
+    {
+     "before": "sur les établissments de crédit 35 202968 - 36 817 35 239785 55855 - 32271 88126",
+     "after": "sur les établissments de crédit 35 202968 - 36 817 35 239785 55855 - 32 271 88 126"
+    },
+    {
+     "before": "Comptes d'épargne 48 756 160 47102 989",
+     "after": "Comptes d'épargne 48 756 160 47 102 989"
+    },
+    {
+     "before": "Bons de caisse 2932 723 3 297 279",
+     "after": "Bons de caisse 2 932 723 3 297 279"
+    },
+    {
+     "before": "Autres comptes crediteurs 10 661 057 9958 551",
+     "after": "Autres comptes crediteurs 10 661 057 9 958 551"
+    },
+    {
+     "before": "Etablissements de Crédit . Construits avant 1986 20",
+     "after": "Etablissements de Crédit . Construits avant 1 986 20"
+    },
+    {
+     "before": "Les titres en provenance des catégories \" Titres de l'activité de Construits après 1986 40",
+     "after": "Les titres en provenance des catégories \" Titres de l'activité de Construits après 1 986 40"
+    },
+    {
+     "before": "Valeurs en caisse, Banques centrales, Trésor public, Service des chéques postaux 6055746 6094 414",
+     "after": "Valeurs en caisse, Banques centrales, Trésor public, Service des chéques postaux 6 055 746 6 094 414"
+    },
+    {
+     "before": "- Crédits et financements participatifs à l'équipement 41728 700 34074735",
+     "after": "- Crédits et financements participatifs à l'équipement 41 728 700 34 074 735"
+    },
+    {
+     "before": ". Crédits et financements participatifs immobiliers 39150 584 39 814 816",
+     "after": ". Crédits et financements participatifs immobiliers 39 150 584 39 814 816"
+    },
+    {
+     "before": ". Autres crédits et financements participatifs 25 124 965 31064 250",
+     "after": ". Autres crédits et financements participatifs 25 124 965 31 064 250"
+    },
+    {
+     "before": "Créances acquises par affacturage 3164 618 2738 363",
+     "after": "Créances acquises par affacturage 3 164 618 2 738 363"
+    },
+    {
+     "before": ". Bons du Trésor et valeurs assimilées 36976 917",
+     "after": ". Bons du Trésor et valeurs assimilées 36 976 917"
+    },
+    {
+     "before": "Autres titres de créance 264028 248348",
+     "after": "Autres titres de créance 264 028 248 348"
+    },
+    {
+     "before": "Tir d'ÉDVES See OS 109 gg gs Autres pessifs 10839 420 72677501",
+     "after": "Tir d'ÉDVES See OS 109 gg gs Autres pessifs 10 839 420 72 677 501"
+    },
+    {
+     "before": "— Bons du Trésor et Valeurs àssimilées BB 718879 8705033",
+     "after": "— Bons du Trésor et Valeurs àssimilées BB 718 879 8 705 033"
+    },
+    {
+     "before": "| AUTTES tIFTES de COR 29796 2283922",
+     "after": "| AUTTES tIFTES de COR 29 796 2 283 922"
+    },
+    {
+     "before": ". Participation dans les entreprises liées 11281 271 10 747 084",
+     "after": ". Participation dans les entreprises liées 11 281 271 10 747 084"
+    },
+    {
+     "before": ". Autres titres de participation et emplois assimilés 2732738 2 914 768",
+     "after": ". Autres titres de participation et emplois assimilés 2 732 738 2 914 768"
+    },
+    {
+     "before": "- Titres de Moudaraba et Mouchargkg \"= = ____ Réserves et primes liées au capital 19 974 709 19 218005",
+     "after": "- Titres de Moudaraba et Mouchargkg \"= = ____ Réserves et primes liées au capital 19 974 709 19 218 005"
+    },
+    {
+     "before": "Se ———— ES 72020 78",
+     "after": "Se ———— ES 72 020 78"
+    },
+    {
+     "before": "Immobilisations corporelles 3176 656 2735 593",
+     "after": "Immobilisations corporelles 3 176 656 2 735 593"
+    },
+    {
+     "before": "ENGAGEMENTS DONNES 58 000 550 40 563 241 (-) Intérêts et charges assimilées 3 505 540 3924954",
+     "after": "ENGAGEMENTS DONNES 58 000 550 40 563 241 (-) Intérêts et charges assimilées 3 505 540 3 924 954"
+    },
+    {
+     "before": "Engagements de garantie d'ordre de la clientèle 17440901 13669615",
+     "after": "Engagements de garantie d'ordre de la clientèle 17 440 901 13 669 615"
+    },
+    {
+     "before": "Autres titres à fivrer 16 240 990 1567535 -) Charges sur immobilisations en crédit-bail et location 33204 30 726",
+     "after": "Autres titres à fivrer 16 240 990 1567535 -) Charges sur immobilisations en crédit-bail et location 33 204 30 726"
+    },
+    {
+     "before": "ENGAGEMENTS RECUS \"24130 239 22821781",
+     "after": "ENGAGEMENTS RECUS \"24130 239 22 821 781"
+    },
+    {
+     "before": "AUÈTSS LES À PR EVOIE 5D0809 72239 — + Commissions perçues 2166 642 2 018 099",
+     "after": "AUÈTSS LES À PR EVOIE 5D0809 72239 — + Commissions perçues 2 166 642 2 018 099"
+    },
+    {
+     "before": "TT MARGE SUR COMMISSIONS 1482598 1329 319",
+     "after": "TT MARGE SUR COMMISSIONS 1 482 598 1 329 319"
+    },
+    {
+     "before": "| 51/12/2025 | 12/2025 | 5/12/2024 | 12/2024 () Résultat des opérations sur produits dérivés - 14261 54 593",
+     "after": "| 51/12/2025 | 12/2025 | 5/12/2024 | 12/2024 () Résultat des opérations sur produits dérivés - 14 261 54 593"
+    },
+    {
+     "before": "RÉSULTAT DES OPÉRATIONS DE MARCHÉ 1873972 1722059",
+     "after": "RÉSULTAT DES OPÉRATIONS DE MARCHÉ 1 873 972 1 722 059"
+    },
+    {
+     "before": "produits assimilés sur opérations avec la clientèe 6 908 092 6758 609 () Diverses autres charges bancaires 358917 323372",
+     "after": "oduits assimilés sur opérations avec la clientèe 6 908 092 6758 609 () Diverses autres charges bancaires 358 917 323 372"
+    },
+    {
+     "before": "oduits sur titres de Moudaraba et Moucharaka = = +) résultat des opérations sur Immibilisations financières 35 938 79553",
+     "after": "duits sur titres de Moudaraba et Moucharaka = = +) résultat des opérations sur Immibilisations financières 35 938 79 553"
+    },
+    {
+     "before": " immobilisations en crédit-bail et en location 38 283 A7 968 +) Autres produits d'exploitation non bancaire 75109 68 998",
+     "after": "immobilisations en crédit-bail et en location 38 283 A7 968 +) Autres produits d'exploitation non bancaire 75 109 68 998"
+    },
+    {
+     "before": "Produits sur immobilisations données en ljara = = (-) Autres charges d'exploitation non bancaire 42 222 19145",
+     "after": "Produits sur immobilisations données en ljara = = (-) Autres charges d'exploitation non bancaire 42 222 19 145"
+    },
+    {
+     "before": "CHARGES D'EXPLOITATION BANCAIRE 8 223 046 8388957",
+     "after": "CHARGES D'EXPLOITATION BANCAIRE 8 223 046 8 388 957"
+    },
+    {
+     "before": "sements de crédit et assimilés 1608 277 1815 277 {#) autres dotations nettes de reprises aux provisions -293 818 -400065",
+     "after": "ements de crédit et assimilés 1608 277 1815 277 {#) autres dotations nettes de reprises aux provisions -293 818 -400 065"
+    },
+    {
+     "before": "Intérêts et charges sur opérations avec la clientèle 1152178 1238 556",
+     "after": "Intérêts et charges sur opérations avec la clientèle 1 152 178 1 238 556"
+    },
+    {
+     "before": "Intérêts et charges assimilées sur titres de créance émis 745 085 871121",
+     "after": "Intérêts et charges assimilées sur titres de créance émis 745 085 871 121"
+    },
+    {
+     "before": "ER ————————————î—î—î@2——_ 2 — RESULTAT NET DE L'EXERCICE 2170 762 1886 195",
+     "after": "ER ————————————î—î—î@2——_ 2 — RESULTAT NET DE L'EXERCICE 2 170 762 1 886 195"
+    },
+    {
+     "before": "Transfert de produits sur dépôts d'investissement reçus = = (+) RESULTAT NET DE L'EXERCICE 2170 762 1886195",
+     "after": "Transfert de produits sur dépôts d'investissement reçus = = (+) RESULTAT NET DE L'EXERCICE 2 170 762 1 886 195"
+    },
+    {
+     "before": "Charges externes 1708 720 1690 468 -) Plus-values de cession des immobilisations incorporelles et corporelles 11037 797",
+     "after": "Charges externes 1708 720 1690 468 -) Plus-values de cession des immobilisations incorporelles et corporelles 11 037 797"
+    },
+    {
+     "before": "PERTES SUR CREANCES IRRECOUVRABLES 2489 839 2509 638 (+) Moins-values de cession des immobilisations financières 29050 7",
+     "after": "ERTES SUR CREANCES IRRECOUVRABLES 2489 839 2509 638 (+) Moins-values de cession des immobilisations financières 29 050 7"
+    },
+    {
+     "before": "Récupérations sur créances amorties 37104 33130",
+     "after": "Récupérations sur créances amorties 37 104 33 130"
+    },
+    {
+     "before": "Autres reprises de provisions 57 888 35450",
+     "after": "Autres reprises de provisions 57 888 35 450"
+    },
+    {
+     "before": "RESULTAT COURANT 3418096 2974 368",
+     "after": "RESULTAT COURANT 3 418 096 2 974 368"
+    },
+    {
+     "before": "RESULTAT AVANT IMPOTS 3281456 2805 738 (+) Récupérations sur créances amorties 37104 33130",
+     "after": "RESULTAT AVANT IMPOTS 3281456 2805 738 (+) Récupérations sur créances amorties 37 104 33 130"
+    },
+    {
+     "before": "RESULTAT NET DE L'EXERCICE 2170 762 1886195 (-) Charges d'exploitation bancaire versées 9971759 9999 762",
+     "after": "RESULTAT NET DE L'EXERCICE 2170 762 1886195 (-) Charges d'exploitation bancaire versées 9 971 759 9 999 762"
+    },
+    {
+     "before": "(-) signifie moins (-) Charges d'exploitation non bancaire versées 71272 19145",
+     "after": "(-) signifie moins (-) Charges d'exploitation non bancaire versées 71 272 19 145"
+    },
+    {
+     "before": "(+) signifie plus (-) Charges générales d'exploitation versées 3595194 3453270",
+     "after": "(+) signifie plus (-) Charges générales d'exploitation versées 3 595 194 3 453 270"
+    },
+    {
+     "before": "1.FLUX DE TRÉSORERIE NETS PROVENANT DU COMPTE DE PRODUITS ET CHARGES 2584178 2148 582",
+     "after": "1.FLUX DE TRÉSORERIE NETS PROVENANT DU COMPTE DE PRODUITS ET CHARGES 2 584 178 2 148 582"
+    },
+    {
+     "before": "(+) Créances sur la clientèle -4 422364 -13 478 298",
+     "after": "(+) Créances sur la clientèle -4 422 364 -13 478 298"
+    },
+    {
+     "before": "(+) Titres de transaction et de placement 1818 523 -12 373 500",
+     "after": "(+) Titres de transaction et de placement 1 818 523 -12 373 500"
+    },
+    {
+     "before": "Fidaroc BDO (+) Autres actifs -1220 830 -15103",
+     "after": "Fidaroc BDO (+) Autres actifs -1 220 830 -15 103"
+    },
+    {
+     "before": "(+) Dépôts d'investissement placés auprès des établissements de crédit et assimilés -1513 000 250 000",
+     "after": "(+) Dépôts d'investissement placés auprès des établissements de crédit et assimilés -1 513 000 250 000"
+    },
+    {
+     "before": "BANKOF AFRICA S À (+) Dettes envers les établissements de crédit et assimilés -4 050 592 7743 882",
+     "after": "BANKOF AFRICA S À (+) Dettes envers les établissements de crédit et assimilés -4 050 592 7 743 882"
+    },
+    {
+     "before": "l'état des informations complémentaires (ETIC) relatifs à l'exercice du 1° janvier (+) Autres passifs -1836 759 3724 873",
+     "after": "état des informations complémentaires (ETIC) relatifs à l'exercice du 1° janvier (+) Autres passifs -1 836 759 3 724 873"
+    },
+    {
+     "before": "que. IIl.FLUX DE TRESORERIE NETS PROVENANT DES ACTIVITES D'EXPLOITATION (1 + 11} 2233903 -2180013 Q+u ) 2233903 -2180013",
+     "after": " IIl.FLUX DE TRESORERIE NETS PROVENANT DES ACTIVITES D'EXPLOITATION (1 + 11} 2233903 -2180013 Q+u ) 2 233 903 -2 180 013"
+    },
+    {
+     "before": "s effectué un audit et, en conséquence, nous n'exprimons ) Acquisition d'immobilisations financières (1) \"585 451 822624",
+     "after": " effectué un audit et, en conséquence, nous n'exprimons ) Acquisition d'immobilisations financières (1) \"585 451 822 624"
+    },
+    {
+     "before": "'actifs immobiliers hors exploitation, acquis par voie de dation, pour un montant total (+) Intérêts perçus 27 895 49754",
+     "after": "actifs immobiliers hors exploitation, acquis par voie de dation, pour un montant total (+) Intérêts perçus 27 895 49 754"
+    },
+    {
+     "before": "s relevé de faits qui nous laissent IV.FLUX DE TRESORERIE NETS PROVENANT DES ACTIVITES D'INVESTISSEMENT -749 590 2608712",
+     "after": "relevé de faits qui nous laissent IV.FLUX DE TRESORERIE NETS PROVENANT DES ACTIVITES D'INVESTISSEMENT -749 590 2 608 712"
+    },
+    {
+     "before": "624 por V.FLUX DE TRESORERIE NETS PROVENANT DES ACTIVITES DE FINANCEMENT -1522 982 -1470 237",
+     "after": "624 por V.FLUX DE TRESORERIE NETS PROVENANT DES ACTIVITES DE FINANCEMENT -1 522 982 -1 470 237"
+    },
+    {
+     "before": "Faïçal MEKQUAR Amine BAAKILI VIVARIATION NETTE DE LA TRÉSORERIE (1l1+ IV +V) -38 669 -1041538",
+     "after": "Faïçal MEKQUAR Amine BAAKILI VIVARIATION NETTE DE LA TRÉSORERIE (1l1+ IV +V) -38 669 -1 041 538"
+    },
+    {
+     "before": "Associé Associé VILTRESORERIE A L'OUVERTURE DE L'EXERCICE 6094 414 7135 953",
+     "after": "Associé Associé VILTRESORERIE A L'OUVERTURE DE L'EXERCICE 6 094 414 7 135 953"
+    },
+    {
+     "before": "VIILTRESORERIE A LA CLOTURE DE L'EXERCICE 6055 746 6094 414",
+     "after": "VIILTRESORERIE A LA CLOTURE DE L'EXERCICE 6 055 746 6 094 414"
+    },
+    {
+     "before": "Obligations =  S8s2  - 428956 1014167 907279",
+     "after": "Obligations =  S8s2  - 428 956 1 014 167 907 279"
+    },
+    {
+     "before": "TOTAL 1976 350 = 1976 350 439 950 1976 350 A39 950",
+     "after": "TOTAL 1976 350 = 1 976 350 439 950 1 976 350 439 950"
+    },
+    {
+     "before": "Instruments optionnels achetés -1481 -2 309",
+     "after": "Instruments optionnels achetés -1 481 -2 309"
+    },
+    {
+     "before": "Débiteurs divers 2071090 1643 076",
+     "after": "Débiteurs divers 2 071 090 1 643 076"
+    },
+    {
+     "before": "Sommes dues par l'Etat 1827 347 1429 360",
+     "after": "Sommes dues par l'Etat 1 827 347 1 429 360"
+    },
+    {
+     "before": "Divers autres débiteurs 82700 74 053",
+     "after": "Divers autres débiteurs 82 700 74 053"
+    },
+    {
+     "before": "Valeurs et emplois divers 3052328 3108 290",
+     "after": "Valeurs et emplois divers 3 052 328 3 108 290"
+    },
+    {
+     "before": "Produits à recevoir et charges constatées d'avance 578678 663032",
+     "after": "Produits à recevoir et charges constatées d'avance 578 678 663 032"
+    },
+    {
+     "before": "TOTAL 9414675 8162050",
+     "after": "TOTAL 9 414 675 8 162 050"
+    },
+    {
+     "before": "Immobilisations incorporelles 1674 810 -4 545 785 140 146 2080 445 692863 137 212869 = 905 869 1174 576",
+     "after": "Immobilisations incorporelles 1674 810 -4 545 785 140 146 2080 445 692863 137 212869 = 905 869 1 174 576"
+    },
+    {
+     "before": " immobilisations incorporelles d'exploitation 1577 660 -22 545785 140 146 1983 277 692863 137 212 869 = 905 869 1077 408",
+     "after": "immobilisations incorporelles d'exploitation 1577 660 -22 545785 140 146 1983 277 692863 137 212 869 = 905 869 1 077 408"
+    },
+    {
+     "before": "Immeubles d'exploitation 2361606 = 345 945 3 699 2703 852 416 362 = 29 214 576 445 000 2258 852",
+     "after": "Immeubles d'exploitation 2361606 = 345 945 3 699 2703 852 416 362 = 29 214 576 445 000 2 258 852"
+    },
+    {
+     "before": "Immeubles d'exploitation - Bureaux 2 128 823 = 343 424 20177 2 470 230 416 362 - 29 214 576 445 000 2025 230",
+     "after": "Immeubles d'exploitation - Bureaux 2 128 823 = 343 424 20177 2 470 230 416 362 - 29 214 576 445 000 2 025 230"
+    },
+    {
+     "before": "Autres matériel d'exploitation 108 929 = 1074 = 110 004 101 261 = 1606 = 102 868 7136",
+     "after": "Autres matériel d'exploitation 108 929 = 1074 = 110 004 101 261 = 1606 = 102 868 7 136"
+    },
+    {
+     "before": "Au jour le jour 4360 317 2002823 = = 6363140 600 002",
+     "after": "Au jour le jour 4360 317 2002823 = = 6 363 140 600 002"
+    },
+    {
+     "before": "A terme 24 319150 2 017 628 = = 26 336778 44 740 351",
+     "after": "A terme 24 319150 2 017 628 = = 26 336 778 44 740 351"
+    },
+    {
+     "before": "Autres dettes 9318 3592 70 337 E 83 246 1107 893",
+     "after": "Autres dettes 9318 3592 70 337 E 83 246 1 107 893"
+    },
+    {
+     "before": "DH 1473 900 1 318% 10 ANS 1473 900",
+     "after": "DH 1473 900 1 318% 10 ANS 1 473 900"
+    },
+    {
+     "before": "Instruments optionnels vendus -7 559 1768",
+     "after": "Instruments optionnels vendus -7 559 1 768"
+    },
+    {
+     "before": "Opérations diverses sur titres 2 897 659 5726084",
+     "after": "Opérations diverses sur titres 2 897 659 5 726 084"
+    },
+    {
+     "before": "Créditeurs divers 2705088 3 006 266",
+     "after": "Créditeurs divers 2 705 088 3 006 266"
+    },
+    {
+     "before": "Comptes de régularisation 5244232 3943 382",
+     "after": "Comptes de régularisation 5 244 232 3 943 382"
+    },
+    {
+     "before": "Comptes d'écart sur devises et titres = = Crédits documentaires import 3 360 412 1954705",
+     "after": "Comptes d'écart sur devises et titres = = Crédits documentaires import 3 360 412 1 954 705"
+    },
+    {
+     "before": "Résultats sur produits dérivés de couverture = = Acceptations ou engagements de payer 1397 586 1641217",
+     "after": "Résultats sur produits dérivés de couverture = = Acceptations ou engagements de payer 1 397 586 1 641 217"
+    },
+    {
+     "before": "…—\"—\"—— .…—…… —…\"…\"— — \"— —.…——— Engagements de garantie d'ordre d'établissements de crédit et assimilés 11976131 -99111",
+     "after": "—\"—— .…—…… —…\"…\"— — \"— —.…——— Engagements de garantie d'ordre d'établissements de crédit et assimilés 11 976 131 -99 111"
+    },
+    {
+     "before": "Crédits documentaires export confirmés 83973 27 853",
+     "after": "Crédits documentaires export confirmés 83 973 27 853"
+    },
+    {
+     "before": "En milliers de DH Autres cautions, avals et garanties donnés 11876 695 6 119 139",
+     "after": "En milliers de DH Autres cautions, avals et garanties donnés 11 876 695 6 119 139"
+    },
+    {
+     "before": "Provisions pour risques d'exécution d'engagements p Garanties de crédits 8 045167 9 614 704",
+     "after": "Provisions pour risques d'exécution d'engagements p Garanties de crédits 8 045 167 9 614 704"
+    },
+    {
+     "before": " risques de change = E E = = Engagements de garantie reçus de l'Etat et d'organismes de garantie divers 3774 373 3966781",
+     "after": "sques de change = E E = = Engagements de garantie reçus de l'Etat et d'organismes de garantie divers 3 774 373 3 966 781"
+    },
+    {
+     "before": "Provisions pour risques généraux 1571449 25 283 - 9 1596 741",
+     "after": "Provisions pour risques généraux 1571449 25 283 - 9 1 596 741"
+    },
+    {
+     "before": "Intérêts perçus 8944288 8 763 398",
+     "after": "Intérêts perçus 8 944 288 8 763 398"
+    },
+    {
+     "before": "Intérêts et produits assimilés sur opérations avec la clientèle 6 908 092 6758 609",
+     "after": "Intérêts et produits assimilés sur opérations avec la clientèle 6 908 092 6 758 609"
+    },
+    {
+     "before": "En milliers de DH Intérêts et produits assimilés sur titres de créance 1477 990 1353 813",
+     "after": "En milliers de DH Intérêts et produits assimilés sur titres de créance 1 477 990 1 353 813"
+    },
+    {
+     "before": "n u —— Intérêts servis 3 505 540 3924954",
+     "after": "n u —— Intérêts servis 3 505 540 3 924 954"
+    },
+    {
+     "before": "Intérêts et charges assimilés sur opérations avec les établissements de crédit 1608 277 1815277",
+     "after": "Intérêts et charges assimilés sur opérations avec les établissements de crédit 1 608 277 1 815 277"
+    },
+    {
+     "before": "(EDBOA O8/02/2024 O8/02/202 361% 25000,00 … Intérêts et charges assimilés sur titres de créance émis 745 085 871121",
+     "after": "(EDBOA O8/02/2024 O8/02/202 361% 25000,00 … Intérêts et charges assimilés sur titres de créance émis 745 085 871 121"
+    },
+    {
+     "before": "Autres réserves 7 867 329 807 300 - 1084 572 7590 057",
+     "after": "Autres réserves 7 867 329 807 300 - 1 084 572 7 590 057"
+    },
+    {
+     "before": "Primes d'émission, de fusion et d'apport 10 890 370 - 1033 976 11924 346",
+     "after": "Primes d'émission, de fusion et d'apport 10 890 370 - 1 033 976 11 924 346"
+    },
+    {
+     "before": "Capital 2157 863 = 44955 2 202 819",
+     "after": "Capital 2157 863 = 44 955 2 202 819"
+    },
+    {
+     "before": "Capital appelé 2157863 = 44955 2202819",
+     "after": "Capital appelé 2157863 = 44 955 2 202 819"
+    },
+    {
+     "before": "Autres titres 29 254062",
+     "after": "Autres titres 29 254 062"
+    },
+    {
+     "before": "par signature reçus couverts Impôts sur les sociétés 1110 694",
+     "after": "par signature reçus couverts Impôts sur les sociétés 1 110 694"
+    },
+    {
+     "before": "Montant | -) Impôt théorique sur résultat courant 1186 366",
+     "after": "Montant | -) Impôt théorique sur résultat courant 1 186 366"
+    },
+    {
+     "before": "Créances sur la clientèle 13166 553",
+     "after": "Créances sur la clientèle 13 166 553"
+    },
+    {
+     "before": "Banques centrales, Trésor public, Service des chèques postaux = Sur charges 21691 432 982 433 128 21545",
+     "after": "Banques centrales, Trésor public, Service des chèques postaux = Sur charges 21 691 432 982 433 128 21 545"
+    },
+    {
+     "before": "Dettes envers les établissements de crédit et assimilés 10 551078",
+     "after": "Dettes envers les établissements de crédit et assimilés 10 551 078"
+    },
+    {
+     "before": "Dépôts de la clientèle 11382 207",
+     "after": "Dépôts de la clientèle 11 382 207"
+    },
+    {
+     "before": "Hors bilan 21954 599",
+     "after": "Hors bilan 21 954 599"
+    },
+    {
+     "before": "Commissions perçues 2166 642 2 018 099",
+     "after": "Commissions perçues 2 166 642 2 018 099"
+    },
+    {
+     "before": "Sur opérations avec les établissements de crédit = = TOTAL) 1531351965 160 633297",
+     "after": "Sur opérations avec les établissements de crédit = = TOTAL) 1531351965 160 633 297"
+    },
+    {
+     "before": "Sur ventes de produits d'assurances = - Résultats nets en instance d'affectation = Dividendes 1078 932",
+     "after": "Sur ventes de produits d'assurances = - Résultats nets en instance d'affectation = Dividendes 1 078 932"
+    },
+    {
+     "before": "Sur autres prestations de service 85 026 59377",
+     "after": "Sur autres prestations de service 85 026 59 377"
+    },
+    {
+     "before": "En milliers de DH TOTAL A 1886 285",
+     "after": "En milliers de DH TOTAL 4 1 886 285"
+    },
+    {
+     "before": "Produits 5515 313 5143182",
+     "after": "Produits 5 515 313 5 143 182"
+    },
+    {
+     "before": "Gains sur les titres de transaction 3001133 3 523 445",
+     "after": "Gains sur les titres de transaction 3 001 133 3 523 445"
+    },
+    {
+     "before": "Gains sur les opérations de change 2 093 049 1396 287",
+     "after": "Gains sur les opérations de change 2 093 049 1 396 287"
+    },
+    {
+     "before": "Pertes sur les titres de transaction 2182178 2533557",
+     "after": "Pertes sur les titres de transaction 2 182 178 2 533 557"
+    },
+    {
+     "before": "Moins value de cession sur titres de placement 168166 2710",
+     "after": "Moins value de cession sur titres de placement 168 166 2 710"
+    },
+    {
+     "before": "Pertes surles produits dérivés 151425 87245",
+     "after": "Pertes surles produits dérivés 151 425 87 245"
+    },
+    {
+     "before": "RESULTAT 1873972 1722059",
+     "after": "RESULTAT 1 873 972 1 722 059"
+    },
+    {
+     "before": "Impôts et taxes 77599 72586",
+     "after": "Impôts et taxes 77 599 72 586"
+    },
+    {
+     "before": "Charges extérieures 1709185 1690 785",
+     "after": "Charges extérieures 1 709 185 1 690 785"
+    },
+    {
+     "before": "Titres dont l'établissement est dépositaire 61776 45 852 335 139 739 281 511 766",
+     "after": "Titres dont l'établissement est dépositaire 61 776 45 852 335 139 739 281 511 766"
+    },
+    {
+     "before": "Titres d'OPCVM gérés en vertu d'un mandat de gestion = = = - Effectifs rémuncrés 1658 A 666",
+     "after": "Titres d'OPCVM gérés en vertu d'un mandat de gestion = = = - Effectifs rémuncrés 1 658 4 666"
+    },
+    {
+     "before": "Autres actifs dont l'établissement est dépositaire = = = - Effectifs utilisés AO A6",
+     "after": "Autres actifs dont l'établissement est dépositaire = = = - Effectifs utilisés 40 46"
+    },
+    {
+     "before": "Titres de participation 2266 906",
+     "after": "Titres de participation 2 266 906"
+    },
+    {
+     "before": "Emplois assimilés 316 478 96044",
+     "after": "Emplois assimilés 316 478 96 044"
+    },
+    {
+     "before": "Autres charges bancaires 2684 302 2433 270",
+     "after": "Autres charges bancaires 2 684 302 2 433 270"
+    },
+    {
+     "before": "Charges d'exploitation non bancaires 71272 19145",
+     "after": "Charges d'exploitation non bancaires 71 272 19 145"
+    },
+    {
+     "before": "Reprises de provisions et récupérations sur créances amorties 431873 736251",
+     "after": "Reprises de provisions et récupérations sur créances amorties 431 873 736 251"
+    },
+    {
+     "before": "MARTKO (MAGHREB ARAB TRADING C° Ets financier 12000 600 000",
+     "after": "MARTKO (MAGHREB ARAB TRADING C° Ets financier 12 000 600 000"
+    },
+    {
+     "before": "TITRES DE PARTICIPATION 177166 1746 175 420",
+     "after": "TITRES DE PARTICIPATION 177 166 1 746 175 420"
+    },
+    {
+     "before": "BOA GROUP Ets de crédit/étranger 435192 93154 535",
+     "after": "BOA GROUP Ets de crédit/étranger 435 192 93 154 535"
+    },
+    {
+     "before": "BANQUE DE DEVELOPPEMENT DU MALI Ets de crédit étranger 121726 50 000 268 220",
+     "after": "BANQUE DE DEVELOPPEMENT DU MALI Ets de crédit étranger 121 726 50 000 268 220"
+    },
+    {
+     "before": "BOA UGANDA Ets de crédit/étranger 7116 055 150 000 000 000",
+     "after": "BOA UGANDA Ets de crédit/étranger 7 116 055 150 000 000 000"
+    },
+    {
+     "before": "BOA EUROSERVICES Ets financier 3768 4 831000",
+     "after": "BOA EUROSERVICES Ets financier 3 768 4 831 000"
+    },
+    {
+     "before": "PROPARCO Ets crédit multi-national 957142 1353 513 248",
+     "after": "PROPARCO Ets crédit multi-national 957 142 1 353 513 248"
+    },
+    {
+     "before": "BANQUE MAGHREBINE D'INVESTISSEMENT ET DE COMMERCE EXTERIEUR Ets crédit 6000 150 000 000",
+     "after": "BANQUE MAGHREBINE D'INVESTISSEMENT ET DE COMMERCE EXTERIEUR Ets crédit 6 000 150 000 000"
+    },
+    {
+     "before": "AMETHIS III Sté d'invest en capital à risque 1975 42 867",
+     "after": "AMETHIS III Sté d'invest en capital à risque 1 975 42 867"
+    },
+    {
+     "before": "AMETHIS FINANCE LUXEMBOURG Sté d'invest en capital à risque 1836 87 577",
+     "after": "AMETHIS FINANCE LUXEMBOURG Sté d'invest en capital à risque 1 836 87 577"
+    },
+    {
+     "before": "SOGEPOS Sté d'aménagement 46 216 35 000 000 13,20 A4 622 - A4 622",
+     "after": "SOGEPOS Sté d'aménagement 46 216 35 000 000 13,20 A4 622 - 44 622"
+    },
+    {
+     "before": "AUTRES TITRES DE PARTICIPATION 412190 67 291 344 899",
+     "after": "AUTRES TITRES DE PARTICIPATION 412 190 67 291 344 899"
+    },
+    {
+     "before": "AKENZA IMMO 4 328 = A 328",
+     "after": "AKENZA IMMO 4 328 = 4 328"
+    },
+    {
+     "before": "lin) ir-bankofafrica.ma , | 2",
+     "after": "lin) ir-bankofafrica.ma , 1 2"
+    },
+    {
+     "before": "Valeurs en caisse, Banques centrales, Trésor public, Service des chéques postaux 1519 2109",
+     "after": "Valeurs en caisse, Banques centrales, Trésor public, Service des chéques postaux 1 519 2 109"
+    },
+    {
+     "before": "Créances sur les établissements de crédit et assimilés 8259090 6072882",
+     "after": "Créances sur les établissements de crédit et assimilés 8 259 090 6 072 882"
+    },
+    {
+     "before": ". A vue 1372112 1522990 | À vue 1 084 490 1111 463",
+     "after": ". A vue 1372112 1522990 | À vue 1 084 490 1 111 463"
+    },
+    {
+     "before": "SE — . A terme 14333758 11844 250",
+     "after": "SE — . A terme 14 333 758 11 844 250"
+    },
+    {
+     "before": "Créances sur la clientèle 6 678 760 5366 429",
+     "after": "Créances sur la clientèle 6 678 760 5 366 429"
+    },
+    {
+     "before": ". Autres crédits et financements participatifs 3685 3619",
+     "after": ". Autres crédits et financements participatifs 3 685 3 619"
+    },
+    {
+     "before": "Titres de transaction et de placement 4100 945 3129 740",
+     "after": "Titres de transaction et de placement 4 100 945 3 129 740"
+    },
+    {
+     "before": ". Bons du Trésor et valeurs assimilées 3 966 561 3042355",
+     "after": ". Bons du Trésor et valeurs assimilées 3 966 561 3 042 355"
+    },
+    {
+     "before": "Autres actifs 1135 493 1102273",
+     "after": "Autres actifs 1 135 493 1 102 273"
+    },
+    {
+     "before": "| Bons du Trésor et valeurs assimilées Eu L Provisions pour risques et charges 2939 2893",
+     "after": "| Bons du Trésor et valeurs assimilées Eu L Provisions pour risques et charges 2 939 2 893"
+    },
+    {
+     "before": "———————————————————————————————————————— Capital 4564 5056",
+     "after": "———————————————————————————————————————— Capital 4 564 5 056"
+    },
+    {
+     "before": "Immobilisations incorporelles 4166 1405",
+     "after": "Immobilisations incorporelles 4 166 1 405"
+    },
+    {
+     "before": "TOTAL DE L'ACTIF 21 448 361 16684156",
+     "after": "TOTAL DE L'ACTIF 21 448 361 16 684 156"
+    },
+    {
+     "before": "ENGAGEMENTS DONNES 4769 295 1096785",
+     "after": "ENGAGEMENTS DONNES 4 769 295 1 096 785"
+    },
+    {
+     "before": "Engagements de garantie reçus d'établissements de crédit et assimilés 4175 256 2405 608",
+     "after": "Engagements de garantie reçus d'établissements de crédit et assimilés 4 175 256 2 405 608"
+    },
+    {
+     "before": "d'organismes de garantie divers 2 315 290 2504 548 (+) Produits sur immobilisations en crédit-bail et location 8572 8417",
+     "after": "organismes de garantie divers 2 315 290 2504 548 (+) Produits sur immobilisations en crédit-bail et location 8 572 8 417"
+    },
+    {
+     "before": "Titres vendus à réméré 2 [ (-) Charges sur immobilisations en crédit-bail et location 8084 5607",
+     "after": "Titres vendus à réméré 2 [ (-) Charges sur immobilisations en crédit-bail et location 8 084 5 607"
+    },
+    {
+     "before": "Autres titres à recevoir : . RÉSULTAT DES OPÉRATIONS DE CRÉDIT-BAIL ET LOCATION 487 2810",
+     "after": "Autres titres à recevoir : . RÉSULTAT DES OPÉRATIONS DE CRÉDIT-BAIL ET LOCATION 487 2 810"
+    },
+    {
+     "before": "PRODUITS D'EXPLOITATION BANCAIRE 1565 146 1235 862",
+     "after": "PRODUITS D'EXPLOITATION BANCAIRE 1 565 146 1 235 862"
+    },
+    {
+     "before": "Produits sur titres de propriété (1) et certificats de Sukuks 2500 449",
+     "after": "Produits sur titres de propriété (1) et certificats de Sukuks 2 500 449"
+    },
+    {
+     "before": "\"  , RÉSULTAT DES OPÉRATIONS DE MARCHÉ (1 88198 67198",
+     "after": "\"  , RÉSULTAT DES OPÉRATIONS DE MARCHÉ (1 88 198 67 198"
+    },
+    {
+     "before": "EE +) Di rt duits b il 2500 449",
+     "after": "EE +) Di rt duits b il 2 500 449"
+    },
+    {
+     "before": "Intérêts et charges assimilées sur titres de créance émis - - (2 Charges générales d'exploitation 7585 995",
+     "after": "Intérêts et charges assimilées sur titres de créance émis - - (2 Charges générales d'exploitation 7 585 995"
+    },
+    {
+     "before": "A RESULTAT BRUT D'EXPLOITATION 311274 195176",
+     "after": "A RESULTAT BRUT D'EXPLOITATION 311 274 195 176"
+    },
+    {
+     "before": "Charges sur immobilisations en crédit-bail et en location 8084 5607",
+     "after": "Charges sur immobilisations en crédit-bail et en location 8 084 5 607"
+    },
+    {
+     "before": "EE, RESULTAT COURANT 311258 195168",
+     "after": "EE, RESULTAT COURANT 311 258 195 168"
+    },
+    {
+     "before": "\"2, RESULTAT NON COURANT -9 627 -7183",
+     "after": "\"2, RESULTAT NON COURANT -9 627 -7 183"
+    },
+    {
+     "before": "————\"—————————— (-) Impôts sur les résultats 122169 75140",
+     "after": "————\"—————————— (-) Impôts sur les résultats 122 169 75 140"
+    },
+    {
+     "before": "CHARGES GENERALES D'EXPLOITATION 9585 9395",
+     "after": "CHARGES GENERALES D'EXPLOITATION 9 585 9 395"
+    },
+    {
+     "before": "rges etes 9 (+) Dotations aux amortissements et aux provisions des immobilisations incorporelles et corporelles 1032 443",
+     "after": "ges etes 9 (+) Dotations aux amortissements et aux provisions des immobilisations incorporelles et corporelles 1 032 443"
+    },
+    {
+     "before": "Dotations aux amortissements et aux provisions des immobilisations incorporelles et corporelles 1032 443",
+     "after": "Dotations aux amortissements et aux provisions des immobilisations incorporelles et corporelles 1 032 443"
+    },
+    {
+     "before": "Impôts sur les résultats 122169 75140",
+     "after": "Impôts sur les résultats 122 169 75 140"
+    }
    ],
+   "text_source": "ocr",
+   "status": "VERIFIED",
+   "errors": [],
    "notes": [
-    "OCR essayé (chiffres coupés dans la couche texte, ex. « 5 514  07 9 ») mais pas meilleur que la couche texte (statut OCR : REJECTED)"
+    "texte obtenu par reconnaissance de caractères (OCR) : couche texte du PDF altérée (chiffres coupés dans la couche texte, ex. « 5 514  07 9 ») ; mêmes contrôles croisés appliqués",
+    "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : milliers",
+    "customer_loans : unité non indiquée dans le document, déduite (rapport plausible au total bilan (10-95 %)) : milliers",
+    "245 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
-   "missing": [
-    "pnb",
-    "equity_total",
-    "minority_interests"
-   ],
+   "missing": [],
    "scope": "consolidated",
    "statements": {
     "net_income_group": {
-     "current": 3812876.0,
-     "previous": 3352320.0,
-     "unit": null,
-     "mad": null,
-     "mad_previous": null,
-     "line": "Part du groupe 3 812 876 3 352 320",
+     "current": 3813552.0,
+     "previous": 3427420.0,
+     "unit": 1000.0,
+     "mad": 3813552000.0,
+     "mad_previous": 3427420000.0,
+     "line": "RÉSULTAT NET - PART DU GROUPE 3 813 552 3 427 420",
      "layout": "N / N-1",
-     "ambiguous_split": false,
-     "method": "résultat sans mention « part du groupe » : retenu car confirmé par le BPA publié × nombre de titres (écart ≤ 3 %)"
+     "ambiguous_split": false
     },
-    "pnb": null,
+    "pnb": {
+     "current": 20338747.0,
+     "previous": 18716574.0,
+     "unit": 1000.0,
+     "mad": 20338747000.0,
+     "mad_previous": 18716574000.0,
+     "line": "PRODUIT NET BANCAIRE 20 338 747 18 716 574",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
     "operating_expenses": {
      "current": -8233620.0,
      "previous": -7760566.0,
-     "unit": null,
-     "mad": null,
-     "mad_previous": null,
+     "unit": 1000.0,
+     "mad": -8233620000.0,
+     "mad_previous": -7760566000.0,
      "line": "Charges générales d'exploitation -8 233 620 -7 760 566",
      "layout": "N / N-1",
      "ambiguous_split": false
@@ -1251,24 +2451,81 @@
     "cost_of_risk": {
      "current": -3287621.0,
      "previous": -3177600.0,
-     "unit": null,
-     "mad": null,
-     "mad_previous": null,
+     "unit": 1000.0,
+     "mad": -3287621000.0,
+     "mad_previous": -3177600000.0,
      "line": "Coût du risque -3 287 621 -3 177 600",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "net_income": null,
+    "net_income": {
+     "current": 5514079.0,
+     "previous": 4976106.0,
+     "unit": 1000.0,
+     "mad": 5514079000.0,
+     "mad_previous": 4976106000.0,
+     "line": "RÉSULTAT NET 5 514 079 4 976 106",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
     "eps": null,
-    "equity_total": null,
-    "total_assets": null,
-    "customer_loans": null,
-    "minority_interests": null
+    "equity_total": {
+     "current": 40426437.0,
+     "previous": 36814698.0,
+     "unit": 1000.0,
+     "mad": 40426437000.0,
+     "mad_previous": 36814698000.0,
+     "line": "TOTAL CAPITAUX PROPRES CONSOLIDES 40 426 437 36 814 698",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
+    "total_assets": {
+     "current": 437677787.0,
+     "previous": 423278818.0,
+     "unit": 1000.0,
+     "mad": 437677787000.0,
+     "mad_previous": 423278818000.0,
+     "line": "TOTAL ACTIF IFRS 437 677 787 423 278 818",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
+    "customer_loans": {
+     "current": 230849356.0,
+     "previous": 225617043.0,
+     "unit": 1000.0,
+     "mad": 230849356000.0,
+     "mad_previous": 225617043000.0,
+     "line": "Prêts et créances sur la clientèle, au coût amorti 230 849 356 225 617 043",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
+    "minority_interests": {
+     "current": 8129017.0,
+     "previous": 7190876.0,
+     "unit": 1000.0,
+     "mad": 8129017000.0,
+     "mad_previous": 7190876000.0,
+     "line": "- Part des minoritaires 6 428 490 5 642 190 + - Part des minoritaires 1 700 527 1 548 686",
+     "ambiguous_split": false,
+     "method": "somme de 2 lignes « Part des minoritaires » du bilan"
+    }
    },
    "derived": {
     "scope": "consolidated",
-    "equity_group_mad": null,
-    "market_cap_mad": 39650738580.0
+    "eps_current_shares_mad": 17.3121,
+    "equity_group_method": "capitaux propres totaux − intérêts minoritaires (somme de 2 lignes « Part des minoritaires » du bilan)",
+    "equity_group_mad": 32297420000.0,
+    "roe_pct": 12.3174,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 146.6186,
+    "cost_income_pct": 40.4824,
+    "cost_of_risk_to_pnb_pct": 16.1643,
+    "cost_of_risk_to_loans_pct": 1.4241,
+    "pnb_growth_pct": 8.667,
+    "net_income_growth_pct": 11.266,
+    "market_cap_mad": 39650738580.0,
+    "implied_per": 10.3973,
+    "implied_pb": 1.2277
    }
   },
   {
@@ -1283,7 +2540,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -1357,7 +2614,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1491,7 +2748,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1634,7 +2891,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1779,7 +3036,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1912,7 +3169,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -2013,7 +3270,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -2108,7 +3365,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "period_end_registry": "2025-12-31",
    "text_source": "pdf_text",
    "status": "REJECTED",
@@ -2185,7 +3442,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -2297,7 +3554,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2363,7 +3620,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2437,7 +3694,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2504,7 +3761,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2628,7 +3885,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2757,7 +4014,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -2766,11 +4023,110 @@
     "cache": "réutilisé",
     "sha256": "b41ed8341415013735470d3299927bf44a499537255a591d89a2d24cf2a0fe40"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "Goodwill 8 969 9094",
+     "after": "Goodwill 8 969 9 094"
+    },
+    {
+     "before": "Autres immobilisations incorporelles 10 295 11654",
+     "after": "Autres immobilisations incorporelles 10 295 11 654"
+    },
+    {
+     "before": "Droits d'utilisation de l'actif 1578 1593",
+     "after": "Droits d'utilisation de l'actif 1 578 1 593"
+    },
+    {
+     "before": "Actifs financiers non courants 2 858 3201",
+     "after": "Actifs financiers non courants 2 858 3 201"
+    },
+    {
+     "before": "Créances d'exploitation et autres 12 698 12554",
+     "after": "Créances d'exploitation et autres 12 698 12 554"
+    },
+    {
+     "before": "Trésorerie et équivalents de trésorerie 1979 1966",
+     "after": "Trésorerie et équivalents de trésorerie 1 979 1 966"
+    },
+    {
+     "before": "Intérêts minoritaires 3 794 4307",
+     "after": "Intérêts minoritaires 3 794 4 307"
+    },
+    {
+     "before": "Emprunts et autres passifs financiers à court terme 18 812 9154",
+     "after": "Emprunts et autres passifs financiers à court terme 18 812 9 154"
+    },
+    {
+     "before": "Passifs courants 45 266 39054",
+     "after": "Passifs courants 45 266 39 054"
+    },
+    {
+     "before": "Coût de l'endettement financier net 1015 966",
+     "after": "Coût de l'endettement financier net 1 015 966"
+    },
+    {
+     "before": "Résultat net - Part du groupe (en millions MAD) 1801 6 968",
+     "after": "Résultat net - Part du groupe (en millions MAD) 1 801 6 968"
+    },
+    {
+     "before": ": F 7 4397",
+     "after": ": F 7 4 397"
+    },
+    {
+     "before": "Diménution des Créances inmobilisées 3 607 ô 3 607 13418",
+     "after": "Diménution des Créances inmobilisées 3 607 ô 3 607 13 418"
+    },
+    {
+     "before": "PROVISIONS DURABLES POUR RISQUES ET CHARGES (D) 12054 42 627",
+     "after": "PROVISIONS DURABLES POUR RISQUES ET CHARGES (D) 12 054 42 627"
+    },
+    {
+     "before": ". Provisions pour risques 3 607 33438",
+     "after": ". Provisions pour risques 3 607 33 438"
+    },
+    {
+     "before": ". Provisions pour charges 8 447 9189",
+     "after": ". Provisions pour charges 8 447 9 189"
+    },
+    {
+     "before": ". Comptes de régularisation passif 1 756424 1 907 606",
+     "after": ". Comptes de régularisation passif 1 756 424 1 907 606"
+    },
+    {
+     "before": "TRESORERIE-P ASSIF 1724996 12 189 597",
+     "after": "TRESORERIE-P ASSIF 1 724 996 12 189 597"
+    },
+    {
+     "before": "Ventes de biens et services produits 17 870 932 ° 17 870 932 18096 034",
+     "after": "Ventes de biens et services produits 17 870 932 ° 17 870 932 18 096 034"
+    },
+    {
+     "before": "HI. RESULTAT D'EXPLOITATION 1H 630 241 ° 6439 241 7268 276",
+     "after": "HI. RESULTAT D'EXPLOITATION 1H 630 241 ° 6 439 241 7 268 276"
+    },
+    {
+     "before": ": : TOTAL Y | 1745530 L 2 1745 530 714 576",
+     "after": ": : TOTAL Y | 1745530 L 2 1 745 530 714 576"
+    },
+    {
+     "before": "VII RESULTAT COURANT El « VI 649310 x 655 100 8204 506",
+     "after": "VII RESULTAT COURANT El « VI 649310 x 655 100 8 204 506"
+    },
+    {
+     "before": "re ner dsgg 2547828 ô 24708 41219",
+     "after": "re ner dsgg 2547828 ô 24 708 41 219"
+    },
+    {
+     "before": "TOTAL IX 1 004 209 L 1 004 209 74977",
+     "after": "TOTAL IX 1 004 209 L 1 004 209 74 977"
+    }
+   ],
    "text_source": "ocr",
    "status": "VERIFIED",
    "errors": [],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "24 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [],
    "scope": "consolidated",
@@ -2781,7 +4137,7 @@
      "unit": 1000000.0,
      "mad": 6968000000.0,
      "mad_previous": 1801000000.0,
-     "line": "Résultat net - Part du groupe (en millions MAD) 1801 6 968",
+     "line": "Résultat net - Part du groupe (en millions MAD) 1 801 6 968",
      "layout": "N / N-1 — en-tête « N-1 puis N » : colonnes inversées",
      "ambiguous_split": false
     },
@@ -2871,7 +4227,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2943,7 +4299,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3052,7 +4408,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3115,7 +4471,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3190,7 +4546,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3314,7 +4670,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3418,7 +4774,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3533,7 +4889,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3636,7 +4992,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3724,7 +5080,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -3733,19 +5089,112 @@
     "cache": "réutilisé",
     "sha256": "42ee482ad11389ffa508463c8a2de0b4f0fce85bbec7b5e1c8325cb244ce83f2"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "Le chiffre d'affaires sécurisé s'établit à 3,7 Mds DH à fin 2025, correspondant à 13702 80",
+     "after": "Le chiffre d'affaires sécurisé s'établit à 3,7 Mds DH à fin 2025, correspondant à 13 702 80"
+    },
+    {
+     "before": "Ainsi, le Groupe porte son potentiel global de chiffre d'affaires en cours de 2024 202",
+     "after": "Ainsi, le Groupe porte son potentiel global de chiffre d'affaires en cours de 2 024 202"
+    },
+    {
+     "before": "Produits des titres de partic. et autres titres immo. - - - - 14 . FHotations d'exploitation 11869487 18017516",
+     "after": "Produits des titres de partic. et autres titres immo. - - - - 14 . FHotations d'exploitation 11 869 487 18 017 516"
+    },
+    {
+     "before": "D Moins passif circulant 1.450.665.205,34  1.294.539.524,87 - 156.125.680,47 Rae OT OO” 207 |",
+     "after": "D Moins passif circulant 1.450.665.205,34  1.294.539.524,87 - 156.125.680,47 Rae OT OO” 207 1"
+    },
+    {
+     "before": "Autres créances RSNGIÈrES A 2",
+     "after": "Autres créances RSNGIÈrES 4 2"
+    },
+    {
+     "before": "L Pass d'impôts dires | 72% | 7",
+     "after": "L Pass d'impôts dires | 72% 1 7"
+    },
+    {
+     "before": "Autres tiers et impôt société 1 696 706 1115 256 581 450",
+     "after": "Autres tiers et impôt société 1 696 706 1 115 256 581 450"
+    },
+    {
+     "before": "Emissions d'emprunts nets des remboursement 62.747 (36.749) | 99497",
+     "after": "Emissions d'emprunts nets des remboursement 62.747 (36.749) 1 99 497"
+    },
+    {
+     "before": "marché. Autres débiteurs 1581 039 1350 957",
+     "after": "marché. Autres débiteurs 1 581 039 1 350 957"
+    },
+    {
+     "before": ": : A : Lo se Le . Actif nets 2 214429 2 012 699",
+     "after": ": : A : Lo se Le . Actif nets 2 214 429 2 012 699"
+    },
+    {
+     "before": "tion suite au lancement de l'opération de Liquidation du fonds. Clients créditeurs, avances et acomptes 1211044 1152 006",
+     "after": "n suite au lancement de l'opération de Liquidation du fonds. Clients créditeurs, avances et acomptes 1 211 044 1 152 006"
+    },
+    {
+     "before": " et ses filiales (RDS IV et RDS V) avec engagement de procéder au rachat Comptes de réaularisations passif 197630 155718",
+     "after": "t ses filiales (RDS IV et RDS V) avec engagement de procéder au rachat Comptes de réaularisations passif 197 630 155 718"
+    },
+    {
+     "before": "Badalona Immo 6015 6117",
+     "after": "Badalona Immo 6 015 6 117"
+    },
+    {
+     "before": "Autres informations Excellence Immo IV 16742 18 086",
+     "after": "Autres informations Excellence Immo IV 16 742 18 086"
+    },
+    {
+     "before": "urants s'entend pour des actifs et passifs que l'entité s'attend à pouvoir réaliser ou régler : Sakan Colodor 6 485 6494",
+     "after": "rants s'entend pour des actifs et passifs que l'entité s'attend à pouvoir réaliser ou régler : Sakan Colodor 6 485 6 494"
+    },
+    {
+     "before": "Note 2 : Périmètre de consolidation SAADA COTE D'IVOIRE 6543 6 600",
+     "after": "Note 2 : Périmètre de consolidation SAADA COTE D'IVOIRE 6 543 6 600"
+    },
+    {
+     "before": "Brevet et droits similaires 2141 2143",
+     "after": "Brevet et droits similaires 2 141 2 143"
+    },
+    {
+     "before": "Autres Immobilisations Incorporelles 4100 4100",
+     "after": "Autres Immobilisations Incorporelles 4 100 4 100"
+    },
+    {
+     "before": "ST Immobilisations Incoporelles 6241 6243",
+     "after": "ST Immobilisations Incoporelles 6 241 6 243"
+    },
+    {
+     "before": "Installations techniques, matériel, outillage et matériel de transport 18 1253",
+     "after": "Installations techniques, matériel, outillage et matériel de transport 18 1 253"
+    },
+    {
+     "before": "Réserve foncière 1206 636 1187 538",
+     "after": "Réserve foncière 1 206 636 1 187 538"
+    },
+    {
+     "before": "Produits en cours 2678 481 2265 065",
+     "after": "Produits en cours 2 678 481 2 265 065"
+    },
+    {
+     "before": "Produits finis 1 255 408 1551 612",
+     "after": "Produits finis 1 255 408 1 551 612"
+    }
+   ],
    "text_source": "ocr",
    "status": "REJECTED",
    "errors": [
-    "capitaux propres part du groupe introuvables",
     "chiffre d'affaires introuvable",
     "PER implicite 886 hors bornes [2 ; 300] : unité ou périmètre suspect"
    ],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "23 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [
-    "revenue",
-    "equity_total|equity_group"
+    "revenue"
    ],
    "scope": "consolidated",
    "statements": {
@@ -3764,7 +5213,16 @@
     "operating_income": null,
     "net_income": null,
     "eps": null,
-    "equity_group": null,
+    "equity_group": {
+     "current": 3739480.0,
+     "previous": 3735121.0,
+     "unit": 1000.0,
+     "mad": 3739480000.0,
+     "mad_previous": 3735121000.0,
+     "line": "CAPITAUX PROPRES PART GROUPE 3.739.480 3.735.121",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
     "equity_total": null,
     "net_debt": null,
     "total_assets": {
@@ -3782,9 +5240,14 @@
    "derived": {
     "scope": "consolidated",
     "eps_current_shares_mad": 0.1715,
-    "equity_group_mad": null,
+    "equity_group_mad": 3739480000.0,
+    "roe_pct": 0.1202,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 142.68,
+    "equity_ratio_pct": 46.9181,
     "market_cap_mad": 3983745200.0,
-    "implied_per": 886.4587
+    "implied_per": 886.4587,
+    "implied_pb": 1.0653
    }
   },
   {
@@ -3799,7 +5262,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3902,7 +5365,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4008,7 +5471,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -4017,13 +5480,196 @@
     "cache": "réutilisé",
     "sha256": "7a5059952b0ec435dba0222b6786e5c999c6ccc7b736df58327a0abe42690c9d"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "ACTIF IMMOBILISÉ 814791 861926",
+     "after": "ACTIF IMMOBILISÉ 814 791 861 926"
+    },
+    {
+     "before": "Immobilisations incorporelles 1445 24103",
+     "after": "Immobilisations incorporelles 1 445 24 103"
+    },
+    {
+     "before": "é 952 1019 652",
+     "after": "é 952 1 019 652"
+    },
+    {
+     "before": "Immobilisations financières 1264 2135",
+     "after": "Immobilisations financières 1 264 2 135"
+    },
+    {
+     "before": "Éred x 31060 Pen Résultat net de l'exercice 343357 215357",
+     "after": "Éred x 31060 Pen Résultat net de l'exercice 343 357 215 357"
+    },
+    {
+     "before": "ù Intérêts minoritaires 18682 22925",
+     "after": "ù Intérêts minoritaires 18 682 22 925"
+    },
+    {
+     "before": "ACTIF CIRCULANT 1541600 1434084",
+     "after": "ACTIF CIRCULANT 1 541 600 1 434 084"
+    },
+    {
+     "before": "Stocks et en cours 505794 444359",
+     "after": "Stocks et en cours 505 794 444 359"
+    },
+    {
+     "before": "Créances d'exploitation 18256 353550",
+     "after": "Créances d'exploitation 18 256 353 550"
+    },
+    {
+     "before": "Créances diverses 142 642 68792",
+     "after": "Créances diverses 142 642 68 792"
+    },
+    {
+     "before": "TRÉSORERIE - ACTIF 104117 94736",
+     "after": "TRÉSORERIE - ACTIF 104 117 94 736"
+    },
+    {
+     "before": "TOTAL ACTIF 2460508 2390786",
+     "after": "TOTAL ACTIF 2 460 508 2 390 786"
+    },
+    {
+     "before": "PRODUITS D'EXPLOITATION 3187006 2874766",
+     "after": "PRODUITS D'EXPLOITATION 3 187 006 2 874 766"
+    },
+    {
+     "before": "Ventes de marchandises 294913 231642",
+     "after": "Ventes de marchandises 294 913 231 642"
+    },
+    {
+     "before": "Ventes de biens et services 2785 323 2630 990",
+     "after": "Ventes de biens et services 2 785 323 2 630 990"
+    },
+    {
+     "before": "CHIFFRE D'AFFAIRES 3080236 2862632",
+     "after": "CHIFFRE D'AFFAIRES 3 080 236 2 862 632"
+    },
+    {
+     "before": "Variation des stocks et autres produits 106 770 12134",
+     "after": "Variation des stocks et autres produits 106 770 12 134"
+    },
+    {
+     "before": "CHARGES D'EXPLOITATION 2663261 2460754",
+     "after": "CHARGES D'EXPLOITATION 2 663 261 2 460 754"
+    },
+    {
+     "before": "Achats revendus et consommés 683 058 663733",
+     "after": "Achats revendus et consommés 683 058 663 733"
+    },
+    {
+     "before": "Impôts et taxes 1362769 1232436",
+     "after": "Impôts et taxes 1 362 769 1 232 436"
+    },
+    {
+     "before": "p Flux net de trésorerie généré par l'activité (1) 299584 163519",
+     "after": "p Flux net de trésorerie généré par l'activité (1) 299 584 163 519"
+    },
+    {
+     "before": "Autres charges d'exploitation 204026 2547",
+     "after": "Autres charges d'exploitation 204 026 2 547"
+    },
+    {
+     "before": "RÉSULTAT COURANT 534104 422078",
+     "after": "RÉSULTAT COURANT 534 104 422 078"
+    },
+    {
+     "before": "RÉSULTAT AVANT IMPÔTS 541917 360482",
+     "after": "RÉSULTAT AVANT IMPÔTS 541 917 360 482"
+    },
+    {
+     "before": "Dotations aux amortissements des écarts d'acquisition 9862 9862",
+     "after": "Dotations aux amortissements des écarts d'acquisition 9 862 9 862"
+    },
+    {
+     "before": "RÉSULTAT NET PART DU GROUPE 343357 215357",
+     "after": "RÉSULTAT NET PART DU GROUPE 343 357 215 357"
+    },
+    {
+     "before": "INTÉRÊT MINORITAIRES 4243 893",
+     "after": "INTÉRÊT MINORITAIRES 4 243 893"
+    },
+    {
+     "before": "Dividendes distribués azra 45274 2500",
+     "after": "Dividendes distribués azra 45 274 2 500"
+    },
+    {
+     "before": "Dividendes distribués 282965 22065 282065",
+     "after": "Dividendes distribués 282 965 22 065 282 065"
+    },
+    {
+     "before": "2 [Terrains 179 595 699,30 - 1795969930 179595 69930",
+     "after": "2 [Terrains 179 595 699,30 - 1795969930 179 595 69 930"
+    },
+    {
+     "before": "Matières et fournitures consommables 190 803 85426 3078062586 1600232840 140606 23420",
+     "after": "Matières et fournitures consommables 190 803 85426 3078062586 1600232840 140 606 23 420"
+    },
+    {
+     "before": "parsonna 36585 80120",
+     "after": "parsonna 36 585 80 120"
+    },
+    {
+     "before": "Fournisseurs débiteurs, avances & accomptes 878 112,00 533 083,00 345 029,00 12732643 2",
+     "after": "Fournisseurs débiteurs, avances & accomptes 878 112,00 533 083,00 345 029,00 12 732 643 2"
+    },
+    {
+     "before": "Autres débiteurs 95 61256205 29926695  953132950 10972092",
+     "after": "Autres débiteurs 95 61256205 29926695  953 132 950 10 972 092"
+    },
+    {
+     "before": "z Subventions d'exploitation . . . : a Variation de stocks de produits 2574322940 3585 80576",
+     "after": "z Subventions d'exploitation . . . : a Variation de stocks de produits 2574322940 3 585 80 576"
+    },
+    {
+     "before": "x Achats consommés (2) de matières et fournitures 469785 85092 10476475  46989061567 469028 77450",
+     "after": "x Achats consommés (2) de matières et fournitures 469785 85092 10476475  46989061567 469 028 77 450"
+    },
+    {
+     "before": "Gains de change 56782646 - 56782646 119142025 12",
+     "after": "Gains de change 56782646 - 56 782 646 119 142 025 12"
+    },
+    {
+     "before": "o Valeurs nettes d'amortsissement des immobilisations 4320320934 8320328934 14225 14518",
+     "after": "o Valeurs nettes d'amortsissement des immobilisations 4320320934 8320328934 14 225 14 518"
+    },
+    {
+     "before": "* Frais préliminaires 1318952800 13189 52800",
+     "after": "* Frais préliminaires 1318952800 13 189 52 800"
+    },
+    {
+     "before": "* Installations techniques, matériel et outillage 803 672 753,82 69332140,59 71136315 8332189510 796 79436246",
+     "after": "* Installations techniques, matériel et outillage 803 672 753,82 69332140,59 71136315 8332189510 796 79 436 246"
+    },
+    {
+     "before": "Prêts immobilisés 8472059 8472059",
+     "after": "Prêts immobilisés 8 472 059 8 472 059"
+    },
+    {
+     "before": "État 4318723186 350 108,04 4283712382 43187 23186",
+     "after": "État 4318723186 350 108,04 4283712382 43 187 23 186"
+    },
+    {
+     "before": "Clients créditeurs, avances et acomptes 1450924078 10140 340,00 4368 90078",
+     "after": "Clients créditeurs, avances et acomptes 1450924078 10140 340,00 4 368 90 078"
+    },
+    {
+     "before": "état 195 281 352,46 74142762 194.539 92484 195 261 35246",
+     "after": "état 195 281 352,46 74142762 194.539 92 484 195 261 35 246"
+    },
+    {
+     "before": "AUTRES ENGAGEMENTS DONNES :ADM 19752000 33252000",
+     "after": "AUTRES ENGAGEMENTS DONNES :ADM 19 752 000 33 252 000"
+    }
+   ],
    "text_source": "ocr",
    "status": "REJECTED",
    "errors": [
     "capitaux propres part du groupe introuvables"
    ],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "45 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [
     "equity_total|equity_group"
@@ -4036,7 +5682,7 @@
      "unit": 1000.0,
      "mad": 343357000.0,
      "mad_previous": 215357000.0,
-     "line": "RÉSULTAT NET PART DU GROUPE 343357 215357",
+     "line": "RÉSULTAT NET PART DU GROUPE 343 357 215 357",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
@@ -4046,7 +5692,7 @@
      "unit": 1000.0,
      "mad": 3080236000.0,
      "mad_previous": 2862632000.0,
-     "line": "CHIFFRE D'AFFAIRES 3080236 2862632",
+     "line": "CHIFFRE D'AFFAIRES 3 080 236 2 862 632",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
@@ -4072,7 +5718,7 @@
      "unit": 1000.0,
      "mad": 2460508000.0,
      "mad_previous": 2390786000.0,
-     "line": "TOTAL ACTIF 2460508 2390786",
+     "line": "TOTAL ACTIF 2 460 508 2 390 786",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
@@ -4101,7 +5747,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4215,7 +5861,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -4290,7 +5936,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4385,7 +6031,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -4394,6 +6040,24 @@
     "cache": "réutilisé",
     "sha256": "9cd9516b6c439b791f13e855f9bacb03a0e619957f9e471e8edf8afaac0f4e8b"
    },
+   "ocr_amount_repairs": [
+    {
+     "before": "PUBLICATION DU RAPPORT FINANCIER ANNUEL 2025 1",
+     "after": "PUBLICATION DU RAPPORT FINANCIER ANNUEL 2 025 1"
+    },
+    {
+     "before": "consolidé de 32,4 MMAD), contre -16,6 MMAD au cours de l'exercice 2024 2",
+     "after": "consolidé de 32,4 MMAD), contre -16,6 MMAD au cours de l'exercice 2 024 2"
+    },
+    {
+     "before": "ÉMPANO MO) Groupe Stokvis Groupe Stokvis (consolidé) [_frorars ue PH ee RSS 22:70 70 1800",
+     "after": "ÉMPANO MO) Groupe Stokvis Groupe Stokvis (consolidé) [_frorars ue PH ee RSS 22:70 70 1 800"
+    },
+    {
+     "before": "ma en cliquant sur le lien suivant : https://www.stokvis.ma/investisseurs/ x [Chiffres d'affaires \"| _12.447.476,34[ 7 |",
+     "after": "ma en cliquant sur le lien suivant : https://www.stokvis.ma/investisseurs/ x [Chiffres d'affaires \"| _12.447.476,34[ 7 1"
+    }
+   ],
    "text_source": "ocr",
    "status": "REJECTED",
    "errors": [
@@ -4402,7 +6066,8 @@
     "chiffre d'affaires introuvable"
    ],
    "notes": [
-    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+    "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+    "4 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [
     "revenue",
@@ -4449,7 +6114,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4560,7 +6225,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4676,7 +6341,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -4722,7 +6387,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4826,7 +6491,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:01:27.291998+00:00",
+   "collected_at": "2026-10-10T13:17:21.394310+00:00",
    "period_end_registry": "2025-12-31",
    "text_source": "pdf_text",
    "status": "VERIFIED",

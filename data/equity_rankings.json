@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T13:12:31.707932+00:00",
+  "generated_at": "2026-10-10T13:27:43.113036+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -138,20 +138,20 @@
         "volatility_annual_pct": 23.81,
         "profile": "Solide",
         "strengths": [
-          "Valorisation attractive : PER 10,7× (mieux que la médiane des banques : 12,5×), cours / valeur comptable 1,19× (mieux que la médiane des banques : 1,4×)",
-          "Rentabilité élevée : ROE 12,5 % (moins bien que la médiane des banques : 12,5 %), coefficient d'exploitation 38,5 %",
+          "Valorisation attractive : PER 10,7× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,19× (mieux que la médiane des banques : 1,3×)",
+          "Rentabilité élevée : ROE 12,5 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 38,5 %",
           "Croissance : PNB 14,4 %, résultat part du groupe 24,4 % sur un an",
           "Solidité financière : coût du risque 1,02 % des crédits",
-          "Dividende : rendement 4,65 % sur 12 mois (mieux que la médiane des banques : 4,5 %)"
+          "Dividende : rendement 4,65 % sur 12 mois (mieux que la médiane des banques : 3,9 %)"
         ],
         "watchpoints": [],
         "peer_comparison": {
           "model": "bank",
-          "peers": 5,
-          "median_pe": 12.52,
-          "median_pb": 1.35,
-          "median_roe_pct": 12.51,
-          "median_dividend_yield_pct": 4.47
+          "peers": 6,
+          "median_pe": 11.81,
+          "median_pb": 1.33,
+          "median_roe_pct": 12.41,
+          "median_dividend_yield_pct": 3.88
         },
         "summary": "Solide — 5 point(s) fort(s), 0 point(s) de vigilance"
       },
@@ -264,7 +264,8 @@
           "structure": 34.0
         },
         "notes": [
-          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+          "24 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
         ],
         "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Télécommunications",
@@ -354,18 +355,18 @@
         "volatility_annual_pct": 28.3,
         "profile": "Solide",
         "strengths": [
-          "Valorisation attractive : PER 12,5× (moins bien que la médiane des banques : 12,5×), cours / valeur comptable 1,32× (mieux que la médiane des banques : 1,4×)",
+          "Valorisation attractive : PER 12,5× (moins bien que la médiane des banques : 11,8×), cours / valeur comptable 1,32× (mieux que la médiane des banques : 1,3×)",
           "Solidité financière : coût du risque 0,61 % des crédits",
-          "Dividende : rendement 5,16 % sur 12 mois (mieux que la médiane des banques : 4,5 %)"
+          "Dividende : rendement 5,16 % sur 12 mois (mieux que la médiane des banques : 3,9 %)"
         ],
         "watchpoints": [],
         "peer_comparison": {
           "model": "bank",
-          "peers": 5,
-          "median_pe": 12.52,
-          "median_pb": 1.35,
-          "median_roe_pct": 12.51,
-          "median_dividend_yield_pct": 4.47
+          "peers": 6,
+          "median_pe": 11.81,
+          "median_pb": 1.33,
+          "median_roe_pct": 12.41,
+          "median_dividend_yield_pct": 3.88
         },
         "summary": "Solide — 3 point(s) fort(s), 0 point(s) de vigilance"
       },
@@ -632,23 +633,95 @@
         "volatility_annual_pct": 21.2,
         "profile": "Contrasté",
         "strengths": [
-          "Rentabilité élevée : ROE 19,1 % (mieux que la médiane des banques : 12,5 %), coefficient d'exploitation 41,2 %",
+          "Rentabilité élevée : ROE 19,1 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 41,2 %",
           "Croissance : PNB 32,5 %, résultat part du groupe 41,5 % sur un an",
           "Solidité financière : coût du risque 0,21 % des crédits"
         ],
         "watchpoints": [
-          "Valorisation exigeante : PER 18,0× (moins bien que la médiane des banques : 12,5×), cours / valeur comptable 3,22× (moins bien que la médiane des banques : 1,4×)",
-          "Dividende modeste : rendement 2,11 % sur 12 mois (moins bien que la médiane des banques : 4,5 %)"
+          "Valorisation exigeante : PER 18,0× (moins bien que la médiane des banques : 11,8×), cours / valeur comptable 3,22× (moins bien que la médiane des banques : 1,3×)",
+          "Dividende modeste : rendement 2,11 % sur 12 mois (moins bien que la médiane des banques : 3,9 %)"
         ],
         "peer_comparison": {
           "model": "bank",
-          "peers": 5,
-          "median_pe": 12.52,
-          "median_pb": 1.35,
-          "median_roe_pct": 12.51,
-          "median_dividend_yield_pct": 4.47
+          "peers": 6,
+          "median_pe": 11.81,
+          "median_pb": 1.33,
+          "median_roe_pct": 12.41,
+          "median_dividend_yield_pct": 3.88
         },
         "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
+      },
+      {
+        "ticker": "BOA",
+        "name": "BANK OF AFRICA",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/boa_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "ocr",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 62.6,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 180.0,
+        "price_date": "2026-10-09",
+        "pe": 10.4,
+        "pb": 1.23,
+        "roe_pct": 12.32,
+        "dividend_yield_pct": 2.78,
+        "risk_level": "faible",
+        "eps_mad": 17.31,
+        "book_value_per_share_mad": 146.62,
+        "indicators": {
+          "roe_pct": 12.32,
+          "cost_income_pct": 40.48,
+          "cost_of_risk_to_pnb_pct": 16.16,
+          "cost_of_risk_to_loans_pct": 1.42,
+          "pnb_growth_pct": 8.67,
+          "net_income_growth_pct": 11.27
+        },
+        "components": {
+          "valuation": 76.4,
+          "dividend": 39.7,
+          "quality": 65.2,
+          "growth": 60.2,
+          "structure": 48.9
+        },
+        "notes": [
+          "texte obtenu par reconnaissance de caractères (OCR) : couche texte du PDF altérée (chiffres coupés dans la couche texte, ex. « 5 514  07 9 ») ; mêmes contrôles croisés appliqués",
+          "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : milliers",
+          "customer_loans : unité non indiquée dans le document, déduite (rapport plausible au total bilan (10-95 %)) : milliers",
+          "245 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
+        ],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques",
+        "liquidity": {
+          "avg_turnover_mad_20d": 6571235,
+          "avg_turnover_mad_60d": 4016728,
+          "avg_shares_20d": 34778,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "volatility_annual_pct": 12.4,
+        "profile": "Solide",
+        "strengths": [
+          "Valorisation attractive : PER 10,4× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,23× (mieux que la médiane des banques : 1,3×)",
+          "Rentabilité élevée : ROE 12,3 % (moins bien que la médiane des banques : 12,4 %), coefficient d'exploitation 40,5 %"
+        ],
+        "watchpoints": [],
+        "peer_comparison": {
+          "model": "bank",
+          "peers": 6,
+          "median_pe": 11.81,
+          "median_pb": 1.33,
+          "median_roe_pct": 12.41,
+          "median_dividend_yield_pct": 3.88
+        },
+        "summary": "Solide — 2 point(s) fort(s), 0 point(s) de vigilance"
       },
       {
         "ticker": "ATW",
@@ -703,17 +776,17 @@
         "volatility_annual_pct": 13.7,
         "profile": "Solide",
         "strengths": [
-          "Rentabilité élevée : ROE 16,1 % (mieux que la médiane des banques : 12,5 %), coefficient d'exploitation 37,9 %",
+          "Rentabilité élevée : ROE 16,1 % (mieux que la médiane des banques : 12,4 %), coefficient d'exploitation 37,9 %",
           "Solidité financière : coût du risque 0,82 % des crédits"
         ],
         "watchpoints": [],
         "peer_comparison": {
           "model": "bank",
-          "peers": 5,
-          "median_pe": 12.52,
-          "median_pb": 1.35,
-          "median_roe_pct": 12.51,
-          "median_dividend_yield_pct": 4.47
+          "peers": 6,
+          "median_pe": 11.81,
+          "median_pb": 1.33,
+          "median_roe_pct": 12.41,
+          "median_dividend_yield_pct": 3.88
         },
         "summary": "Solide — 2 point(s) fort(s), 0 point(s) de vigilance"
       },
@@ -839,19 +912,19 @@
         "volatility_annual_pct": 23.65,
         "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 11,1× (mieux que la médiane des banques : 12,5×), cours / valeur comptable 1,35× (moins bien que la médiane des banques : 1,4×)",
-          "Dividende : rendement 4,47 % sur 12 mois (moins bien que la médiane des banques : 4,5 %)"
+          "Valorisation attractive : PER 11,1× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,35× (moins bien que la médiane des banques : 1,3×)",
+          "Dividende : rendement 4,47 % sur 12 mois (mieux que la médiane des banques : 3,9 %)"
         ],
         "watchpoints": [
           "Structure financière tendue : coût du risque 1,79 % des crédits"
         ],
         "peer_comparison": {
           "model": "bank",
-          "peers": 5,
-          "median_pe": 12.52,
-          "median_pb": 1.35,
-          "median_roe_pct": 12.51,
-          "median_dividend_yield_pct": 4.47
+          "peers": 6,
+          "median_pe": 11.81,
+          "median_pb": 1.33,
+          "median_roe_pct": 12.41,
+          "median_dividend_yield_pct": 3.88
         },
         "summary": "Contrasté — 2 point(s) fort(s), 1 point(s) de vigilance"
       },
@@ -1754,7 +1827,8 @@
           "structure": null
         },
         "notes": [
-          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+          "5 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
         ],
         "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Assurances",
@@ -1828,7 +1902,8 @@
           "structure": null
         },
         "notes": [
-          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués",
+          "20 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
         ],
         "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
         "sector": "Assurances",
@@ -1938,7 +2013,7 @@
         "text_source": "ocr",
         "category": "NON_ANALYSABLE",
         "status": "REJECTED",
-        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : revenue, net_income_group, equity_total|equity_group",
+        "note": "résultat net part du groupe introuvable; capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; manquant : net_income_group, equity_total|equity_group",
         "sector": "Bâtiment et Matériaux de Construction",
         "liquidity": {
           "avg_turnover_mad_20d": 66345,
@@ -1999,30 +2074,6 @@
           "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
         },
         "volatility_annual_pct": 32.16
-      },
-      {
-        "ticker": "BOA",
-        "name": "BANK OF AFRICA",
-        "model": "bank",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/boa_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "pdf_text",
-        "category": "NON_ANALYSABLE",
-        "status": "REJECTED",
-        "note": "résultat net part du groupe introuvable; part du groupe lue sous un résultat consolidé, non confirmée par un BPA publié cohérent; capitaux propres part du groupe introuvables; PNB introuvable; manquant : pnb, equity_total, minority_interests",
-        "sector": "Banques",
-        "liquidity": {
-          "avg_turnover_mad_20d": 6571235,
-          "avg_turnover_mad_60d": 4016728,
-          "avg_shares_20d": 34778,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "élevée",
-          "warning": null
-        },
-        "volatility_annual_pct": 12.4
       },
       {
         "ticker": "CAP",
@@ -2322,7 +2373,7 @@
         "text_source": "ocr",
         "category": "NON_ANALYSABLE",
         "status": "REJECTED",
-        "note": "capitaux propres part du groupe introuvables; chiffre d'affaires introuvable; PER implicite 886 hors bornes [2 ; 300] : unité ou périmètre suspect; manquant : revenue, equity_total|equity_group",
+        "note": "chiffre d'affaires introuvable; PER implicite 886 hors bornes [2 ; 300] : unité ou périmètre suspect; manquant : revenue",
         "sector": "Participation et promotion immobilières",
         "liquidity": {
           "avg_turnover_mad_20d": 3411292,
