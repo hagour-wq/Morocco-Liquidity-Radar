@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T11:50:33.420272+00:00",
+  "generated_at": "2026-10-10T12:57:12.286970+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -138,20 +138,20 @@
         "volatility_annual_pct": 23.81,
         "profile": "Solide",
         "strengths": [
-          "Valorisation attractive : PER 10,7× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,19× (mieux que la médiane des banques : 1,3×)",
-          "Rentabilité élevée : ROE 12,5 % (mieux que la médiane des banques : 12,3 %), coefficient d'exploitation 38,5 %",
+          "Valorisation attractive : PER 10,7× (mieux que la médiane des banques : 12,5×), cours / valeur comptable 1,19× (mieux que la médiane des banques : 1,4×)",
+          "Rentabilité élevée : ROE 12,5 % (moins bien que la médiane des banques : 12,5 %), coefficient d'exploitation 38,5 %",
           "Croissance : PNB 14,4 %, résultat part du groupe 24,4 % sur un an",
           "Solidité financière : coût du risque 1,02 % des crédits",
-          "Dividende : rendement 4,65 % sur 12 mois (mieux que la médiane des banques : 4,6 %)"
+          "Dividende : rendement 4,65 % sur 12 mois (mieux que la médiane des banques : 4,5 %)"
         ],
         "watchpoints": [],
         "peer_comparison": {
           "model": "bank",
-          "peers": 4,
-          "median_pe": 11.81,
-          "median_pb": 1.33,
-          "median_roe_pct": 12.34,
-          "median_dividend_yield_pct": 4.56
+          "peers": 5,
+          "median_pe": 12.52,
+          "median_pb": 1.35,
+          "median_roe_pct": 12.51,
+          "median_dividend_yield_pct": 4.47
         },
         "summary": "Solide — 5 point(s) fort(s), 0 point(s) de vigilance"
       },
@@ -354,18 +354,18 @@
         "volatility_annual_pct": 28.3,
         "profile": "Solide",
         "strengths": [
-          "Valorisation attractive : PER 12,5× (moins bien que la médiane des banques : 11,8×), cours / valeur comptable 1,32× (mieux que la médiane des banques : 1,3×)",
+          "Valorisation attractive : PER 12,5× (moins bien que la médiane des banques : 12,5×), cours / valeur comptable 1,32× (mieux que la médiane des banques : 1,4×)",
           "Solidité financière : coût du risque 0,61 % des crédits",
-          "Dividende : rendement 5,16 % sur 12 mois (mieux que la médiane des banques : 4,6 %)"
+          "Dividende : rendement 5,16 % sur 12 mois (mieux que la médiane des banques : 4,5 %)"
         ],
         "watchpoints": [],
         "peer_comparison": {
           "model": "bank",
-          "peers": 4,
-          "median_pe": 11.81,
-          "median_pb": 1.33,
-          "median_roe_pct": 12.34,
-          "median_dividend_yield_pct": 4.56
+          "peers": 5,
+          "median_pe": 12.52,
+          "median_pb": 1.35,
+          "median_roe_pct": 12.51,
+          "median_dividend_yield_pct": 4.47
         },
         "summary": "Solide — 3 point(s) fort(s), 0 point(s) de vigilance"
       },
@@ -580,6 +580,77 @@
         "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
       },
       {
+        "ticker": "CFG",
+        "name": "CFG BANK",
+        "model": "bank",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cfg_bank_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "pdf_text",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 63.4,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 190.0,
+        "price_date": "2026-10-09",
+        "pe": 17.96,
+        "pb": 3.22,
+        "roe_pct": 19.1,
+        "dividend_yield_pct": 2.11,
+        "risk_level": "moyen",
+        "eps_mad": 10.58,
+        "book_value_per_share_mad": 59.0,
+        "indicators": {
+          "roe_pct": 19.1,
+          "cost_income_pct": 41.16,
+          "cost_of_risk_to_pnb_pct": 3.66,
+          "cost_of_risk_to_loans_pct": 0.21,
+          "pnb_growth_pct": 32.49,
+          "net_income_growth_pct": 41.49
+        },
+        "components": {
+          "valuation": 12.5,
+          "dividend": 30.1,
+          "quality": 86.8,
+          "growth": 100.0,
+          "structure": 100
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Banques",
+        "liquidity": {
+          "avg_turnover_mad_20d": 3818003,
+          "avg_turnover_mad_60d": 4403360,
+          "avg_shares_20d": 18835,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "volatility_annual_pct": 21.2,
+        "profile": "Contrasté",
+        "strengths": [
+          "Rentabilité élevée : ROE 19,1 % (mieux que la médiane des banques : 12,5 %), coefficient d'exploitation 41,2 %",
+          "Croissance : PNB 32,5 %, résultat part du groupe 41,5 % sur un an",
+          "Solidité financière : coût du risque 0,21 % des crédits"
+        ],
+        "watchpoints": [
+          "Valorisation exigeante : PER 18,0× (moins bien que la médiane des banques : 12,5×), cours / valeur comptable 3,22× (moins bien que la médiane des banques : 1,4×)",
+          "Dividende modeste : rendement 2,11 % sur 12 mois (moins bien que la médiane des banques : 4,5 %)"
+        ],
+        "peer_comparison": {
+          "model": "bank",
+          "peers": 5,
+          "median_pe": 12.52,
+          "median_pb": 1.35,
+          "median_roe_pct": 12.51,
+          "median_dividend_yield_pct": 4.47
+        },
+        "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
+      },
+      {
         "ticker": "ATW",
         "name": "ATTIJARIWAFA BANK",
         "model": "bank",
@@ -632,17 +703,17 @@
         "volatility_annual_pct": 13.7,
         "profile": "Solide",
         "strengths": [
-          "Rentabilité élevée : ROE 16,1 % (mieux que la médiane des banques : 12,3 %), coefficient d'exploitation 37,9 %",
+          "Rentabilité élevée : ROE 16,1 % (mieux que la médiane des banques : 12,5 %), coefficient d'exploitation 37,9 %",
           "Solidité financière : coût du risque 0,82 % des crédits"
         ],
         "watchpoints": [],
         "peer_comparison": {
           "model": "bank",
-          "peers": 4,
-          "median_pe": 11.81,
-          "median_pb": 1.33,
-          "median_roe_pct": 12.34,
-          "median_dividend_yield_pct": 4.56
+          "peers": 5,
+          "median_pe": 12.52,
+          "median_pb": 1.35,
+          "median_roe_pct": 12.51,
+          "median_dividend_yield_pct": 4.47
         },
         "summary": "Solide — 2 point(s) fort(s), 0 point(s) de vigilance"
       },
@@ -768,19 +839,19 @@
         "volatility_annual_pct": 23.65,
         "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 11,1× (mieux que la médiane des banques : 11,8×), cours / valeur comptable 1,35× (moins bien que la médiane des banques : 1,3×)",
-          "Dividende : rendement 4,47 % sur 12 mois (moins bien que la médiane des banques : 4,6 %)"
+          "Valorisation attractive : PER 11,1× (mieux que la médiane des banques : 12,5×), cours / valeur comptable 1,35× (moins bien que la médiane des banques : 1,4×)",
+          "Dividende : rendement 4,47 % sur 12 mois (moins bien que la médiane des banques : 4,5 %)"
         ],
         "watchpoints": [
           "Structure financière tendue : coût du risque 1,79 % des crédits"
         ],
         "peer_comparison": {
           "model": "bank",
-          "peers": 4,
-          "median_pe": 11.81,
-          "median_pb": 1.33,
-          "median_roe_pct": 12.34,
-          "median_dividend_yield_pct": 4.56
+          "peers": 5,
+          "median_pe": 12.52,
+          "median_pb": 1.35,
+          "median_roe_pct": 12.51,
+          "median_dividend_yield_pct": 4.47
         },
         "summary": "Contrasté — 2 point(s) fort(s), 1 point(s) de vigilance"
       },
@@ -1976,30 +2047,6 @@
           "warning": null
         },
         "volatility_annual_pct": 44.74
-      },
-      {
-        "ticker": "CFG",
-        "name": "CFG BANK",
-        "model": "bank",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cfg_bank_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "pdf_text",
-        "category": "NON_ANALYSABLE",
-        "status": "REJECTED",
-        "note": "capitaux propres part du groupe introuvables; manquant : equity_total, minority_interests",
-        "sector": "Banques",
-        "liquidity": {
-          "avg_turnover_mad_20d": 3818003,
-          "avg_turnover_mad_60d": 4403360,
-          "avg_shares_20d": 18835,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "moyenne",
-          "warning": null
-        },
-        "volatility_annual_pct": 21.2
       },
       {
         "ticker": "CRS",
