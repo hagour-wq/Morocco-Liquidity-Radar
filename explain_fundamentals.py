@@ -63,10 +63,13 @@ def explain(x, med):
              f", charges / produits d'assurance {_f(ind.get('insurance_expense_ratio_pct'))} %" if m == "insurance" else
              f", marge d'exploitation {_f(ind.get('operating_margin_pct'))} %" if ind.get("operating_margin_pct") is not None else "")
     roe_txt = f"ROE {_f(x.get('roe_pct'))} %{cmp(x.get('roe_pct'), med.get('roe_pct'), False, ' %')}{extra}"
+    # la note de qualité combine ROE et efficacité (coefficient d'exploitation, ratio de sinistralité, marge) :
+    # le libellé le dit, pour ne pas écrire « rentabilité élevée » à côté d'un ROE inférieur à la médiane
+    q_name = {"bank": "Rentabilité et efficacité", "insurance": "Rentabilité et sinistralité"}.get(m, "Rentabilité et marges")
     if q is not None and q >= STRONG:
-        strengths.append("Rentabilité élevée : " + roe_txt)
+        strengths.append(f"{q_name} : note {q:.0f}/100 — " + roe_txt)
     elif q is not None and q <= WEAK:
-        watch.append("Rentabilité faible : " + roe_txt)
+        watch.append(f"{q_name} faibles : note {q:.0f}/100 — " + roe_txt)
     # Croissance
     g = c.get("growth")
     top = ind.get("pnb_growth_pct") if m == "bank" else ind.get("revenue_growth_pct")
