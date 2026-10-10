@@ -374,5 +374,17 @@ class CapitalUnitRescueTests(unittest.TestCase):
         self.assertIsNone(capital_unit_rescue("au capital de 50.000.000 Dirhams", fin))   # aucun rapport exact 1 / 1 000 / 1 000 000 : rien
 
 
+class NoMinorityTests(unittest.TestCase):
+    def test_total_equity_is_group_when_consolidated_result_equals_group_share(self):
+        f = lambda c, p: {"current": c, "previous": p, "unit": 1000.0, "mad": c * 1e3, "mad_previous": p * 1e3, "line": "", "layout": "N / N-1"}
+        fin = {"net_income_group": f(15447, 12428), "net_income": f(15447, 12428), "equity_total": f(319225, 307028),
+               "revenue": f(330365, 311411), "_scope": "consolidated"}
+        d, e, n = checks(fin, "corporate", None)
+        self.assertEqual(e, [])
+        self.assertEqual(d["equity_group_mad"], 319225e3)
+        fin["net_income"] = f(16000, 12428)            # minoritaires au résultat : pas de déduction
+        self.assertIn("capitaux propres part du groupe introuvables", checks(fin, "corporate", None)[1])
+
+
 if __name__ == "__main__":
     unittest.main()
