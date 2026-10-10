@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T00:44:16.484082+00:00",
+  "generated_at": "2026-10-10T01:21:02.513754+00:00",
   "status": "RESEARCH_ONLY",
   "methodology": {
     "long_term": "Valorisation 30 % (PER, P/B), qualité 25 % (ROE + coefficient d'exploitation pour les banques, marge d'exploitation sinon), croissance 20 % (PNB ou chiffre d'affaires, résultat net), structure / risque 15 % (coût du risque / encours pour les banques ; dette nette / EBITDA sinon, ou à défaut autonomie financière = capitaux propres / total bilan), dividende 10 %. Bornes propres à chaque modèle sectoriel. Composante manquante : score partiel, catégorie À SURVEILLER. Comptes publiés de moins de 18 mois uniquement.",
@@ -8,6 +8,293 @@
   },
   "long_term": {
     "ranked": [
+      {
+        "ticker": "ARD",
+        "name": "ARADEI CAPITAL",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/aradei_capital_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "pdf_text",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 75.5,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 433.9,
+        "price_date": "2026-10-09",
+        "pe": 10.2,
+        "pb": 1.0,
+        "roe_pct": 10.05,
+        "dividend_yield_pct": 1.32,
+        "risk_level": "élevé",
+        "eps_mad": 42.52,
+        "book_value_per_share_mad": 433.2,
+        "indicators": {
+          "roe_pct": 10.05,
+          "operating_margin_pct": 113.41,
+          "net_margin_pct": 82.61,
+          "revenue_growth_pct": 6.79,
+          "ebitda_margin_pct": 73.46,
+          "equity_ratio_pct": 55.39,
+          "net_income_growth_pct": 79.66
+        },
+        "components": {
+          "valuation": 95.0,
+          "dividend": 18.9,
+          "quality": 66.8,
+          "growth": 74.0,
+          "structure": 90.8
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Sociétés de placement immobilier",
+        "liquidity": {
+          "avg_turnover_mad_20d": 1365786,
+          "avg_turnover_mad_60d": 722510,
+          "avg_shares_20d": 3136,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "volatility_annual_pct": 43.71,
+        "profile": "Solide",
+        "strengths": [
+          "Valorisation attractive : PER 10,2× (mieux que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 1,00× (mieux que la médiane des sociétés non financières : 3,6×)",
+          "Rentabilité élevée : ROE 10,1 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 113,4 %",
+          "Croissance : chiffre d’affaires 6,8 %, résultat part du groupe 79,7 % sur un an",
+          "Solidité financière : capitaux propres / total bilan 55,4 %"
+        ],
+        "watchpoints": [
+          "Dividende modeste : rendement 1,32 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)",
+          "Cours très volatil : 43,7 % annualisés"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 20,
+          "median_pe": 22.96,
+          "median_pb": 3.62,
+          "median_roe_pct": 17.92,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Solide — 4 point(s) fort(s), 2 point(s) de vigilance"
+      },
+      {
+        "ticker": "SMI",
+        "name": "SOCIETE METALLURGIQUE D'IMITER",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/smi_2025.pdf",
+        "accounts_scope": "social",
+        "text_source": "pdf_text",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 70.3,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 5880.0,
+        "price_date": "2026-10-09",
+        "pe": 24.36,
+        "pb": 5.83,
+        "roe_pct": 26.0,
+        "dividend_yield_pct": 2.55,
+        "risk_level": "moyen",
+        "eps_mad": 241.39,
+        "book_value_per_share_mad": 1009.2,
+        "indicators": {
+          "roe_pct": 26.0,
+          "operating_margin_pct": 39.27,
+          "net_margin_pct": 25.36,
+          "revenue_growth_pct": 48.76,
+          "equity_ratio_pct": 78.15,
+          "net_income_growth_pct": 112.68
+        },
+        "components": {
+          "valuation": 28.3,
+          "dividend": 36.4,
+          "quality": 92.5,
+          "growth": 100.0,
+          "structure": 100
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Mines",
+        "liquidity": {
+          "avg_turnover_mad_20d": 4508857,
+          "avg_turnover_mad_60d": 4754989,
+          "avg_shares_20d": 708,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "volatility_annual_pct": 30.54,
+        "profile": "Contrasté",
+        "strengths": [
+          "Rentabilité élevée : ROE 26,0 % (mieux que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 39,3 %",
+          "Croissance : chiffre d’affaires 48,8 %, résultat part du groupe 112,7 % sur un an",
+          "Solidité financière : capitaux propres / total bilan 78,2 %"
+        ],
+        "watchpoints": [
+          "Valorisation exigeante : PER 24,4× (moins bien que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 5,83× (moins bien que la médiane des sociétés non financières : 3,6×)",
+          "Résultat en hausse de 113 % : vérifier s'il s'agit d'un élément exceptionnel non récurrent"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 20,
+          "median_pe": 22.96,
+          "median_pb": 3.62,
+          "median_roe_pct": 17.92,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
+      },
+      {
+        "ticker": "IAM",
+        "name": "ITISSALAT AL-MAGHRIB",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "ocr",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 69.9,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 90.0,
+        "price_date": "2026-10-09",
+        "pe": 11.35,
+        "pb": 3.86,
+        "roe_pct": 39.38,
+        "dividend_yield_pct": 4.44,
+        "risk_level": "faible",
+        "eps_mad": 7.93,
+        "book_value_per_share_mad": 23.29,
+        "indicators": {
+          "roe_pct": 39.38,
+          "operating_margin_pct": 36.93,
+          "net_margin_pct": 19.0,
+          "revenue_growth_pct": -0.05,
+          "equity_ratio_pct": 27.01,
+          "net_income_growth_pct": 286.9
+        },
+        "components": {
+          "valuation": 72.0,
+          "dividend": 63.4,
+          "quality": 96.2,
+          "growth": 64.2,
+          "structure": 34.0
+        },
+        "notes": [
+          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
+        ],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Télécommunications",
+        "liquidity": {
+          "avg_turnover_mad_20d": 13140938,
+          "avg_turnover_mad_60d": 15276734,
+          "avg_shares_20d": 138388,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "élevée",
+          "warning": null
+        },
+        "volatility_annual_pct": 17.75,
+        "profile": "Contrasté",
+        "strengths": [
+          "Valorisation attractive : PER 11,3× (mieux que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 3,86× (moins bien que la médiane des sociétés non financières : 3,6×)",
+          "Rentabilité élevée : ROE 39,4 % (mieux que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 36,9 %",
+          "Dividende : rendement 4,44 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
+        ],
+        "watchpoints": [
+          "Résultat en hausse de 287 % : vérifier s'il s'agit d'un élément exceptionnel non récurrent",
+          "Structure financière tendue : capitaux propres / total bilan 27,0 %"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 20,
+          "median_pe": 22.96,
+          "median_pb": 3.62,
+          "median_roe_pct": 17.92,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Contrasté — 3 point(s) fort(s), 2 point(s) de vigilance"
+      },
+      {
+        "ticker": "COL",
+        "name": "COLORADO",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/colorado_rfa_2025.pdf",
+        "accounts_scope": "social",
+        "text_source": "pdf_text",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 66.5,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 75.5,
+        "price_date": "2026-10-09",
+        "pe": 18.58,
+        "pb": 3.39,
+        "roe_pct": 18.85,
+        "dividend_yield_pct": 4.64,
+        "risk_level": "élevé",
+        "eps_mad": 4.06,
+        "book_value_per_share_mad": 22.28,
+        "indicators": {
+          "roe_pct": 18.85,
+          "operating_margin_pct": 17.96,
+          "net_margin_pct": 10.49,
+          "revenue_growth_pct": 3.14,
+          "equity_ratio_pct": 61.55,
+          "net_income_growth_pct": 44.43
+        },
+        "components": {
+          "valuation": 58.9,
+          "dividend": 66.3,
+          "quality": 53.8,
+          "growth": 68.8,
+          "structure": 100
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Bâtiment et Matériaux de Construction",
+        "liquidity": {
+          "avg_turnover_mad_20d": 68726,
+          "avg_turnover_mad_60d": 122247,
+          "avg_shares_20d": 881,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
+        },
+        "volatility_annual_pct": 23.29,
+        "profile": "Contrasté",
+        "strengths": [
+          "Croissance : chiffre d’affaires 3,1 %, résultat part du groupe 44,4 % sur un an",
+          "Solidité financière : capitaux propres / total bilan 61,5 %",
+          "Dividende : rendement 4,64 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
+        ],
+        "watchpoints": [
+          "Liquidité faible : 0,07 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 20,
+          "median_pe": 22.96,
+          "median_pb": 3.62,
+          "median_roe_pct": 17.92,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Contrasté — 3 point(s) fort(s), 1 point(s) de vigilance"
+      },
       {
         "ticker": "TGC",
         "name": "TRAVAUX GENERAUX DE CONSTRUCTION DE CASABLANCA",
@@ -567,6 +854,150 @@
         "summary": "Contrasté — 2 point(s) fort(s), 3 point(s) de vigilance"
       },
       {
+        "ticker": "ADH",
+        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "pdf_text",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 49.1,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 29.99,
+        "price_date": "2026-10-09",
+        "pe": 26.61,
+        "pb": 1.27,
+        "roe_pct": 4.83,
+        "dividend_yield_pct": 0.0,
+        "risk_level": "moyen",
+        "eps_mad": 1.13,
+        "book_value_per_share_mad": 23.55,
+        "indicators": {
+          "roe_pct": 4.83,
+          "operating_margin_pct": 17.58,
+          "net_margin_pct": 16.75,
+          "revenue_growth_pct": 4.4,
+          "equity_ratio_pct": 45.66,
+          "net_income_growth_pct": 65.48
+        },
+        "components": {
+          "valuation": 55.8,
+          "dividend": 0,
+          "quality": 30.1,
+          "growth": 70.6,
+          "structure": 71.3
+        },
+        "notes": [
+          "equity_group : unité non indiquée dans le document, déduite (rentabilité des capitaux propres plausible) : MAD",
+          "equity_total : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD",
+          "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD"
+        ],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Participation et promotion immobilières",
+        "liquidity": {
+          "avg_turnover_mad_20d": 3951503,
+          "avg_turnover_mad_60d": 6301089,
+          "avg_shares_20d": 121298,
+          "zero_volume_sessions": 0,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "moyenne",
+          "warning": null
+        },
+        "volatility_annual_pct": 30.46,
+        "profile": "Contrasté",
+        "strengths": [
+          "Croissance : chiffre d’affaires 4,4 %, résultat part du groupe 65,5 % sur un an",
+          "Solidité financière : capitaux propres / total bilan 45,7 %"
+        ],
+        "watchpoints": [
+          "Rentabilité faible : ROE 4,8 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 17,6 %",
+          "Aucun dividende ordinaire détaché sur les 12 derniers mois"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 20,
+          "median_pe": 22.96,
+          "median_pb": 3.62,
+          "median_roe_pct": 17.92,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Contrasté — 2 point(s) fort(s), 2 point(s) de vigilance"
+      },
+      {
+        "ticker": "OUL",
+        "name": "SOCIETE LES EAUX MINERALES D'OULMES",
+        "model": "corporate",
+        "fiscal_year": 2025,
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/oulmes_2025_cp_rfa_2025.pdf",
+        "accounts_scope": "consolidated",
+        "text_source": "pdf_text",
+        "category": "ELIGIBLE",
+        "status": "RESEARCH_ONLY",
+        "score": 49.0,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 1225.0,
+        "price_date": "2026-10-09",
+        "pe": 21.59,
+        "pb": 3.08,
+        "roe_pct": 14.89,
+        "dividend_yield_pct": 3.28,
+        "risk_level": "élevé",
+        "eps_mad": 56.73,
+        "book_value_per_share_mad": 398.03,
+        "indicators": {
+          "roe_pct": 14.89,
+          "operating_margin_pct": 8.78,
+          "net_margin_pct": 3.46,
+          "revenue_growth_pct": 10.56,
+          "equity_ratio_pct": 20.65,
+          "net_income_growth_pct": 94.05
+        },
+        "components": {
+          "valuation": 54.2,
+          "dividend": 46.9,
+          "quality": 35.8,
+          "growth": 79.4,
+          "structure": 21.3
+        },
+        "notes": [],
+        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
+        "sector": "Boissons",
+        "liquidity": {
+          "avg_turnover_mad_20d": 8306,
+          "avg_turnover_mad_60d": 5601,
+          "avg_shares_20d": 7,
+          "zero_volume_sessions": 28,
+          "missing_volume_sessions": 0,
+          "window_sessions": 60,
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 28 séance(s) sans échange sur 60"
+        },
+        "volatility_annual_pct": 35.86,
+        "profile": "Contrasté",
+        "strengths": [
+          "Croissance : chiffre d’affaires 10,6 %, résultat part du groupe 94,0 % sur un an"
+        ],
+        "watchpoints": [
+          "Structure financière tendue : capitaux propres / total bilan 20,6 %",
+          "Liquidité faible : 0,01 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
+          "Cours très volatil : 35,9 % annualisés"
+        ],
+        "peer_comparison": {
+          "model": "corporate",
+          "peers": 20,
+          "median_pe": 22.96,
+          "median_pb": 3.62,
+          "median_roe_pct": 17.92,
+          "median_dividend_yield_pct": 2.55
+        },
+        "summary": "Contrasté — 1 point(s) fort(s), 3 point(s) de vigilance"
+      },
+      {
         "ticker": "CSR",
         "name": "COSUMAR",
         "model": "corporate",
@@ -851,146 +1282,66 @@
           "median_dividend_yield_pct": null
         },
         "summary": "Contrasté — 1 point(s) fort(s), 3 point(s) de vigilance"
-      }
-    ],
-    "watch": [
-      {
-        "ticker": "IAM",
-        "name": "ITISSALAT AL-MAGHRIB",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "ocr",
-        "category": "WATCH",
-        "status": "RESEARCH_ONLY",
-        "score": 76.2,
-        "partial": true,
-        "missing_components": [
-          "structure"
-        ],
-        "price_mad": 90.0,
-        "price_date": "2026-10-09",
-        "pe": 11.35,
-        "pb": 3.86,
-        "roe_pct": 39.38,
-        "dividend_yield_pct": 4.44,
-        "risk_level": "faible",
-        "eps_mad": 7.93,
-        "book_value_per_share_mad": 23.29,
-        "indicators": {
-          "roe_pct": 39.38,
-          "operating_margin_pct": 36.93,
-          "net_margin_pct": 19.0,
-          "revenue_growth_pct": -0.05,
-          "net_income_growth_pct": 286.9
-        },
-        "components": {
-          "valuation": 72.0,
-          "dividend": 63.4,
-          "quality": 96.2,
-          "growth": 64.2,
-          "structure": null
-        },
-        "notes": [
-          "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués"
-        ],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Télécommunications",
-        "liquidity": {
-          "avg_turnover_mad_20d": 13140938,
-          "avg_turnover_mad_60d": 15276734,
-          "avg_shares_20d": 138388,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "élevée",
-          "warning": null
-        },
-        "volatility_annual_pct": 17.75,
-        "profile": "Incomplet",
-        "strengths": [
-          "Valorisation attractive : PER 11,3× (mieux que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 3,86× (moins bien que la médiane des sociétés non financières : 3,6×)",
-          "Rentabilité élevée : ROE 39,4 % (mieux que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 36,9 %",
-          "Dividende : rendement 4,44 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
-        ],
-        "watchpoints": [
-          "Résultat en hausse de 287 % : vérifier s'il s'agit d'un élément exceptionnel non récurrent",
-          "Donnée non calculable : structure financière (score partiel)"
-        ],
-        "peer_comparison": {
-          "model": "corporate",
-          "peers": 20,
-          "median_pe": 22.96,
-          "median_pb": 3.62,
-          "median_roe_pct": 17.92,
-          "median_dividend_yield_pct": 2.55
-        },
-        "summary": "Incomplet — 3 point(s) fort(s), 2 point(s) de vigilance"
       },
       {
-        "ticker": "ARD",
-        "name": "ARADEI CAPITAL",
+        "ticker": "SNP",
+        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
         "model": "corporate",
         "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/aradei_capital_2025.pdf",
+        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/snep_2025.pdf",
         "accounts_scope": "consolidated",
         "text_source": "pdf_text",
-        "category": "WATCH",
+        "category": "ELIGIBLE",
         "status": "RESEARCH_ONLY",
-        "score": 72.8,
-        "partial": true,
-        "missing_components": [
-          "structure"
-        ],
-        "price_mad": 433.9,
+        "score": 35.6,
+        "partial": false,
+        "missing_components": [],
+        "price_mad": 280.0,
         "price_date": "2026-10-09",
-        "pe": 10.2,
-        "pb": 1.0,
-        "roe_pct": 10.05,
-        "dividend_yield_pct": 1.32,
+        "pe": null,
+        "pb": 1.38,
+        "roe_pct": -31.95,
+        "dividend_yield_pct": 0.0,
         "risk_level": "élevé",
-        "eps_mad": 42.52,
-        "book_value_per_share_mad": 433.2,
+        "eps_mad": -77.16,
+        "book_value_per_share_mad": 202.94,
         "indicators": {
-          "roe_pct": 10.05,
-          "operating_margin_pct": 113.41,
-          "net_margin_pct": 82.61,
-          "revenue_growth_pct": 6.79,
-          "ebitda_margin_pct": 73.46,
-          "net_income_growth_pct": 79.66
+          "roe_pct": -31.95,
+          "operating_margin_pct": -17.93,
+          "net_margin_pct": -24.83,
+          "revenue_growth_pct": 17.74,
+          "equity_ratio_pct": 28.48
         },
         "components": {
-          "valuation": 95.0,
-          "dividend": 18.9,
-          "quality": 66.8,
-          "growth": 74.0,
-          "structure": null
+          "valuation": 47.3,
+          "dividend": 0,
+          "quality": 0.0,
+          "growth": 79.3,
+          "structure": 37.0
         },
         "notes": [],
         "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Sociétés de placement immobilier",
+        "sector": "Chimie",
         "liquidity": {
-          "avg_turnover_mad_20d": 1365786,
-          "avg_turnover_mad_60d": 722510,
-          "avg_shares_20d": 3136,
+          "avg_turnover_mad_20d": 580544,
+          "avg_turnover_mad_60d": 370633,
+          "avg_shares_20d": 1912,
           "zero_volume_sessions": 0,
           "missing_volume_sessions": 0,
           "window_sessions": 60,
-          "tier": "moyenne",
-          "warning": null
+          "tier": "faible",
+          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
         },
-        "volatility_annual_pct": 43.71,
-        "profile": "Incomplet",
+        "volatility_annual_pct": 39.7,
+        "profile": "Contrasté",
         "strengths": [
-          "Valorisation attractive : PER 10,2× (mieux que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 1,00× (mieux que la médiane des sociétés non financières : 3,6×)",
-          "Rentabilité élevée : ROE 10,1 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 113,4 %",
-          "Croissance : chiffre d’affaires 6,8 %, résultat part du groupe 79,7 % sur un an"
+          "Croissance : chiffre d’affaires 17,7 %, résultat part du groupe n.d. % sur un an"
         ],
         "watchpoints": [
-          "Dividende modeste : rendement 1,32 % sur 12 mois (moins bien que la médiane des sociétés non financières : 2,5 %)",
-          "Cours très volatil : 43,7 % annualisés",
-          "Donnée non calculable : structure financière (score partiel)"
+          "Rentabilité faible : ROE -31,9 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation -17,9 %",
+          "Aucun dividende ordinaire détaché sur les 12 derniers mois",
+          "Liquidité faible : 0,58 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
+          "Cours très volatil : 39,7 % annualisés"
         ],
         "peer_comparison": {
           "model": "corporate",
@@ -1000,8 +1351,10 @@
           "median_roe_pct": 17.92,
           "median_dividend_yield_pct": 2.55
         },
-        "summary": "Incomplet — 3 point(s) fort(s), 3 point(s) de vigilance"
-      },
+        "summary": "Contrasté — 1 point(s) fort(s), 4 point(s) de vigilance"
+      }
+    ],
+    "watch": [
       {
         "ticker": "RIS",
         "name": "RISMA",
@@ -1072,149 +1425,6 @@
           "median_dividend_yield_pct": 2.55
         },
         "summary": "Incomplet — 2 point(s) fort(s), 1 point(s) de vigilance"
-      },
-      {
-        "ticker": "SMI",
-        "name": "SOCIETE METALLURGIQUE D'IMITER",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/smi_2025.pdf",
-        "accounts_scope": "social",
-        "text_source": "pdf_text",
-        "category": "WATCH",
-        "status": "RESEARCH_ONLY",
-        "score": 65.0,
-        "partial": true,
-        "missing_components": [
-          "structure"
-        ],
-        "price_mad": 5880.0,
-        "price_date": "2026-10-09",
-        "pe": 24.36,
-        "pb": 5.83,
-        "roe_pct": 26.0,
-        "dividend_yield_pct": 2.55,
-        "risk_level": "moyen",
-        "eps_mad": 241.39,
-        "book_value_per_share_mad": 1009.2,
-        "indicators": {
-          "roe_pct": 26.0,
-          "operating_margin_pct": 39.27,
-          "net_margin_pct": 25.36,
-          "revenue_growth_pct": 48.76,
-          "net_income_growth_pct": 112.68
-        },
-        "components": {
-          "valuation": 28.3,
-          "dividend": 36.4,
-          "quality": 92.5,
-          "growth": 100.0,
-          "structure": null
-        },
-        "notes": [],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Mines",
-        "liquidity": {
-          "avg_turnover_mad_20d": 4508857,
-          "avg_turnover_mad_60d": 4754989,
-          "avg_shares_20d": 708,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "moyenne",
-          "warning": null
-        },
-        "volatility_annual_pct": 30.54,
-        "profile": "Incomplet",
-        "strengths": [
-          "Rentabilité élevée : ROE 26,0 % (mieux que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 39,3 %",
-          "Croissance : chiffre d’affaires 48,8 %, résultat part du groupe 112,7 % sur un an"
-        ],
-        "watchpoints": [
-          "Valorisation exigeante : PER 24,4× (moins bien que la médiane des sociétés non financières : 23,0×), cours / valeur comptable 5,83× (moins bien que la médiane des sociétés non financières : 3,6×)",
-          "Résultat en hausse de 113 % : vérifier s'il s'agit d'un élément exceptionnel non récurrent",
-          "Donnée non calculable : structure financière (score partiel)"
-        ],
-        "peer_comparison": {
-          "model": "corporate",
-          "peers": 20,
-          "median_pe": 22.96,
-          "median_pb": 3.62,
-          "median_roe_pct": 17.92,
-          "median_dividend_yield_pct": 2.55
-        },
-        "summary": "Incomplet — 2 point(s) fort(s), 3 point(s) de vigilance"
-      },
-      {
-        "ticker": "COL",
-        "name": "COLORADO",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/colorado_rfa_2025.pdf",
-        "accounts_scope": "social",
-        "text_source": "pdf_text",
-        "category": "WATCH",
-        "status": "RESEARCH_ONLY",
-        "score": 60.6,
-        "partial": true,
-        "missing_components": [
-          "structure"
-        ],
-        "price_mad": 75.5,
-        "price_date": "2026-10-09",
-        "pe": 18.58,
-        "pb": 3.39,
-        "roe_pct": 18.85,
-        "dividend_yield_pct": 4.64,
-        "risk_level": "élevé",
-        "eps_mad": 4.06,
-        "book_value_per_share_mad": 22.28,
-        "indicators": {
-          "roe_pct": 18.85,
-          "operating_margin_pct": 17.96,
-          "net_margin_pct": 10.49,
-          "revenue_growth_pct": 3.14,
-          "net_income_growth_pct": 44.43
-        },
-        "components": {
-          "valuation": 58.9,
-          "dividend": 66.3,
-          "quality": 53.8,
-          "growth": 68.8,
-          "structure": null
-        },
-        "notes": [],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Bâtiment et Matériaux de Construction",
-        "liquidity": {
-          "avg_turnover_mad_20d": 68726,
-          "avg_turnover_mad_60d": 122247,
-          "avg_shares_20d": 881,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "faible",
-          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
-        },
-        "volatility_annual_pct": 23.29,
-        "profile": "Incomplet",
-        "strengths": [
-          "Croissance : chiffre d’affaires 3,1 %, résultat part du groupe 44,4 % sur un an",
-          "Dividende : rendement 4,64 % sur 12 mois (mieux que la médiane des sociétés non financières : 2,5 %)"
-        ],
-        "watchpoints": [
-          "Liquidité faible : 0,07 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
-          "Donnée non calculable : structure financière (score partiel)"
-        ],
-        "peer_comparison": {
-          "model": "corporate",
-          "peers": 20,
-          "median_pe": 22.96,
-          "median_pb": 3.62,
-          "median_roe_pct": 17.92,
-          "median_dividend_yield_pct": 2.55
-        },
-        "summary": "Incomplet — 2 point(s) fort(s), 2 point(s) de vigilance"
       },
       {
         "ticker": "AGM",
@@ -1365,154 +1575,6 @@
         "summary": "Incomplet — 2 point(s) fort(s), 3 point(s) de vigilance"
       },
       {
-        "ticker": "ADH",
-        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "pdf_text",
-        "category": "WATCH",
-        "status": "RESEARCH_ONLY",
-        "score": 54.5,
-        "partial": true,
-        "missing_components": [
-          "dividend"
-        ],
-        "price_mad": 29.99,
-        "price_date": "2026-10-09",
-        "pe": 26.61,
-        "pb": 1.27,
-        "roe_pct": 4.83,
-        "dividend_yield_pct": null,
-        "risk_level": "moyen",
-        "eps_mad": 1.13,
-        "book_value_per_share_mad": 23.55,
-        "indicators": {
-          "roe_pct": 4.83,
-          "operating_margin_pct": 17.58,
-          "net_margin_pct": 16.75,
-          "revenue_growth_pct": 4.4,
-          "equity_ratio_pct": 45.66,
-          "net_income_growth_pct": 65.48
-        },
-        "components": {
-          "valuation": 55.8,
-          "dividend": null,
-          "quality": 30.1,
-          "growth": 70.6,
-          "structure": 71.3
-        },
-        "notes": [
-          "equity_group : unité non indiquée dans le document, déduite (rentabilité des capitaux propres plausible) : MAD",
-          "equity_total : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD",
-          "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : MAD"
-        ],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Participation et promotion immobilières",
-        "liquidity": {
-          "avg_turnover_mad_20d": 3951503,
-          "avg_turnover_mad_60d": 6301089,
-          "avg_shares_20d": 121298,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "moyenne",
-          "warning": null
-        },
-        "volatility_annual_pct": 30.46,
-        "profile": "Incomplet",
-        "strengths": [
-          "Croissance : chiffre d’affaires 4,4 %, résultat part du groupe 65,5 % sur un an",
-          "Solidité financière : capitaux propres / total bilan 45,7 %"
-        ],
-        "watchpoints": [
-          "Rentabilité faible : ROE 4,8 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation 17,6 %",
-          "Aucun dividende ordinaire détaché sur les 12 derniers mois",
-          "Donnée non calculable : dividende (score partiel)"
-        ],
-        "peer_comparison": {
-          "model": "corporate",
-          "peers": 20,
-          "median_pe": 22.96,
-          "median_pb": 3.62,
-          "median_roe_pct": 17.92,
-          "median_dividend_yield_pct": 2.55
-        },
-        "summary": "Incomplet — 2 point(s) fort(s), 3 point(s) de vigilance"
-      },
-      {
-        "ticker": "OUL",
-        "name": "SOCIETE LES EAUX MINERALES D'OULMES",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/oulmes_2025_cp_rfa_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "pdf_text",
-        "category": "WATCH",
-        "status": "RESEARCH_ONLY",
-        "score": 53.9,
-        "partial": true,
-        "missing_components": [
-          "structure"
-        ],
-        "price_mad": 1225.0,
-        "price_date": "2026-10-09",
-        "pe": 21.59,
-        "pb": 3.08,
-        "roe_pct": 14.89,
-        "dividend_yield_pct": 3.28,
-        "risk_level": "élevé",
-        "eps_mad": 56.73,
-        "book_value_per_share_mad": 398.03,
-        "indicators": {
-          "roe_pct": 14.89,
-          "operating_margin_pct": 8.78,
-          "net_margin_pct": 3.46,
-          "revenue_growth_pct": 10.56,
-          "net_income_growth_pct": 94.05
-        },
-        "components": {
-          "valuation": 54.2,
-          "dividend": 46.9,
-          "quality": 35.8,
-          "growth": 79.4,
-          "structure": null
-        },
-        "notes": [],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Boissons",
-        "liquidity": {
-          "avg_turnover_mad_20d": 8306,
-          "avg_turnover_mad_60d": 5601,
-          "avg_shares_20d": 7,
-          "zero_volume_sessions": 28,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "faible",
-          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance ; 28 séance(s) sans échange sur 60"
-        },
-        "volatility_annual_pct": 35.86,
-        "profile": "Incomplet",
-        "strengths": [
-          "Croissance : chiffre d’affaires 10,6 %, résultat part du groupe 94,0 % sur un an"
-        ],
-        "watchpoints": [
-          "Liquidité faible : 0,01 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
-          "Cours très volatil : 35,9 % annualisés",
-          "Donnée non calculable : structure financière (score partiel)"
-        ],
-        "peer_comparison": {
-          "model": "corporate",
-          "peers": 20,
-          "median_pe": 22.96,
-          "median_pb": 3.62,
-          "median_roe_pct": 17.92,
-          "median_dividend_yield_pct": 2.55
-        },
-        "summary": "Incomplet — 1 point(s) fort(s), 3 point(s) de vigilance"
-      },
-      {
         "ticker": "CMT",
         "name": "COMPAGNIE MINIERE DE TOUISSIT",
         "model": "corporate",
@@ -1574,79 +1636,6 @@
           "median_dividend_yield_pct": 2.55
         },
         "summary": "Incomplet — 3 point(s) fort(s), 3 point(s) de vigilance"
-      },
-      {
-        "ticker": "SNP",
-        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
-        "model": "corporate",
-        "fiscal_year": 2025,
-        "source_url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/snep_2025.pdf",
-        "accounts_scope": "consolidated",
-        "text_source": "pdf_text",
-        "category": "WATCH",
-        "status": "RESEARCH_ONLY",
-        "score": 40.1,
-        "partial": true,
-        "missing_components": [
-          "structure",
-          "dividend"
-        ],
-        "price_mad": 280.0,
-        "price_date": "2026-10-09",
-        "pe": null,
-        "pb": 1.38,
-        "roe_pct": -31.95,
-        "dividend_yield_pct": null,
-        "risk_level": "élevé",
-        "eps_mad": -77.16,
-        "book_value_per_share_mad": 202.94,
-        "indicators": {
-          "roe_pct": -31.95,
-          "operating_margin_pct": -17.93,
-          "net_margin_pct": -24.83,
-          "revenue_growth_pct": 17.74
-        },
-        "components": {
-          "valuation": 47.3,
-          "dividend": null,
-          "quality": 0.0,
-          "growth": 79.3,
-          "structure": null
-        },
-        "notes": [],
-        "note": "Score de facteurs fondamentaux sur comptes publiés ; ce n'est ni une prévision ni une recommandation.",
-        "sector": "Chimie",
-        "liquidity": {
-          "avg_turnover_mad_20d": 580544,
-          "avg_turnover_mad_60d": 370633,
-          "avg_shares_20d": 1912,
-          "zero_volume_sessions": 0,
-          "missing_volume_sessions": 0,
-          "window_sessions": 60,
-          "tier": "faible",
-          "warning": "Liquidité faible : montant moyen < 1 M MAD/séance"
-        },
-        "volatility_annual_pct": 39.7,
-        "profile": "Incomplet",
-        "strengths": [
-          "Croissance : chiffre d’affaires 17,7 %, résultat part du groupe n.d. % sur un an"
-        ],
-        "watchpoints": [
-          "Rentabilité faible : ROE -31,9 % (moins bien que la médiane des sociétés non financières : 17,9 %), marge d'exploitation -17,9 %",
-          "Aucun dividende ordinaire détaché sur les 12 derniers mois",
-          "Liquidité faible : 0,58 M MAD échangés en moyenne par séance (20 j) — entrées et sorties difficiles",
-          "Cours très volatil : 39,7 % annualisés",
-          "Donnée non calculable : structure financière, dividende (score partiel)"
-        ],
-        "peer_comparison": {
-          "model": "corporate",
-          "peers": 20,
-          "median_pe": 22.96,
-          "median_pb": 3.62,
-          "median_roe_pct": 17.92,
-          "median_dividend_yield_pct": 2.55
-        },
-        "summary": "Incomplet — 1 point(s) fort(s), 5 point(s) de vigilance"
       }
     ],
     "excluded": [
@@ -3646,7 +3635,7 @@
         "last_dividend_mad": 1.0,
         "dividend_fiscal_year": 2018,
         "dividend_ex_date": "2019-09-18",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -3798,7 +3787,7 @@
         "last_dividend_mad": null,
         "dividend_fiscal_year": null,
         "dividend_ex_date": null,
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -3950,7 +3939,7 @@
         "last_dividend_mad": 0.5,
         "dividend_fiscal_year": 2024,
         "dividend_ex_date": "2025-09-19",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -4560,7 +4549,7 @@
         "last_dividend_mad": 3.0,
         "dividend_fiscal_year": 2018,
         "dividend_ex_date": "2019-09-19",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -5166,7 +5155,7 @@
         "last_dividend_mad": 13.0,
         "dividend_fiscal_year": 2017,
         "dividend_ex_date": "2018-09-19",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -5390,7 +5379,7 @@
         "last_dividend_mad": 2.5,
         "dividend_fiscal_year": 2014,
         "dividend_ex_date": "2015-07-06",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -5840,7 +5829,7 @@
         "last_dividend_mad": 1.0,
         "dividend_fiscal_year": 2023,
         "dividend_ex_date": "2024-09-09",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -6448,7 +6437,7 @@
         "last_dividend_mad": 25.0,
         "dividend_fiscal_year": 2017,
         "dividend_ex_date": "2018-09-19",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -6828,7 +6817,7 @@
         "last_dividend_mad": 18.0,
         "dividend_fiscal_year": 2010,
         "dividend_ex_date": "2011-09-21",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -6980,7 +6969,7 @@
         "last_dividend_mad": 0.5,
         "dividend_fiscal_year": 2014,
         "dividend_ex_date": "2015-06-18",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7132,7 +7121,7 @@
         "last_dividend_mad": 3.0,
         "dividend_fiscal_year": 2024,
         "dividend_ex_date": "2025-06-30",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7208,7 +7197,7 @@
         "last_dividend_mad": 20.0,
         "dividend_fiscal_year": 2011,
         "dividend_ex_date": "2012-06-21",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7360,7 +7349,7 @@
         "last_dividend_mad": 15.5,
         "dividend_fiscal_year": 2017,
         "dividend_ex_date": "2018-07-25",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7436,7 +7425,7 @@
         "last_dividend_mad": 8.0,
         "dividend_fiscal_year": 2020,
         "dividend_ex_date": "2019-09-16",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7586,7 +7575,7 @@
         "last_dividend_mad": null,
         "dividend_fiscal_year": 2009,
         "dividend_ex_date": null,
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7738,7 +7727,7 @@
         "last_dividend_mad": 16.0,
         "dividend_fiscal_year": 2022,
         "dividend_ex_date": "2023-09-14",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7814,7 +7803,7 @@
         "last_dividend_mad": 4.0,
         "dividend_fiscal_year": 2011,
         "dividend_ex_date": "2012-05-24",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
@@ -7966,7 +7955,7 @@
         "last_dividend_mad": 5.0,
         "dividend_fiscal_year": 2011,
         "dividend_ex_date": "2012-06-25",
-        "dividend_yield_pct": null,
+        "dividend_yield_pct": 0.0,
         "dividends_12m_mad": 0.0,
         "exceptional_dividends_12m_mad": null,
         "dividend_events_12m": 0,
