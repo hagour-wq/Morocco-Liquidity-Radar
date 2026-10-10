@@ -434,8 +434,9 @@ def _select_consolidated(text, labels, model, rn):
             if rn and key not in BALANCE:
                 cands = [c for c in cands if abs(c["pos"] - pl_anchor) <= MAX_PL_DISTANCE]
             if rn and rn.get("unit") and key in ("equity_total", "equity_group", "total_assets"):
-                # fonds propres ou total bilan inférieurs au résultat de l'exercice : ligne d'un autre tableau
-                cands = [c for c in cands if not c.get("unit") or c["current"] * c["unit"] >= abs(rn["current"] * rn["unit"])]
+                # fonds propres ou total bilan très inférieurs au résultat de l'exercice : ligne d'un autre tableau
+                # (seuil : 25 % du résultat, soit un ROE de 400 % ; une société qui distribue tout peut avoir des fonds propres < résultat)
+                cands = [c for c in cands if not c.get("unit") or c["current"] * c["unit"] >= 0.25 * abs(rn["current"] * rn["unit"])]
             out[key] = _nearest(cands, anchor, rn)
             if out[key]:
                 out[key] = dict(out[key])
