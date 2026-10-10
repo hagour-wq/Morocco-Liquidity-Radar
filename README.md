@@ -142,3 +142,14 @@ Les titres sans historique exploitable (cours nuls : DIS, DLM, SAM) affichent un
 - **Contrôles** : rapprochement émetteur → ticker par nom normalisé (sociétés radiées conservées à part) ; montants nuls ou invalides rejetés et listés ; doublons supprimés ; recoupement avec le dernier dividende ajusté du bulletin de la cote (écart signalé, ex. Managem : 55 MAD publiés avant la division du nominal par 10, 5,5 MAD ajustés).
 - **Rendement** : dividendes ordinaires et optionnels détachés sur les 12 derniers mois / dernier cours ; dividendes exceptionnels affichés à part, hors rendement ; un dividende détaché avant une opération sur titres est remplacé par le montant ajusté du bulletin, ou écarté s'il est inconnu.
 - **Affichage** : tableau de bord (prochains et derniers détachements, prochaines assemblées) et fiche société (historique complet, dernière / prochaine assemblée).
+
+## Répartition de l'épargne collective (`build_liquidity_view.py`)
+
+- **Source** : statistiques hebdomadaires officielles des OPCVM publiées par l'AMMC (actif net par catégorie : monétaire, obligataire court et moyen-long terme, diversifiés, actions, contractuels ; indices de performance).
+- **Officiel** : encours, part de chaque catégorie, variations publiées. **Estimé** : collecte nette hebdomadaire = actif net fin − actif net début × (1 + performance de l'indice de la catégorie), entre deux publications consécutives ; cumul sur 4 et 8 semaines. Non calculé (jamais 0) quand l'indice de performance n'est pas publié (contractuels).
+- Historique conservé dans `data/opcvm_history.json` ; sortie `data/liquidity_allocation.json` ; affichage « Où va l'argent ? » sur le tableau de bord.
+
+## Lecture du score fondamental (`explain_fundamentals.py`)
+
+- Points forts (critère ≥ 65 / 100) et points de vigilance (≤ 35 / 100 ou risque identifié : liquidité faible, volatilité > 35 %, résultat en hausse de plus de 100 %, donnée manquante), chiffres à l'appui et comparaison à la médiane des sociétés analysées du même modèle sectoriel.
+- Profil : **Solide** (score ≥ 55, aucun critère faible hors dividende, liquidité suffisante), **Contrasté** (au moins un point de vigilance), **Incomplet** (critère non calculable). Règles identiques pour toutes les sociétés ; ce n'est pas une recommandation.
