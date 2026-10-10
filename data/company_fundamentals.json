@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T13:33:24.583821+00:00",
+ "generated_at": "2026-10-10T14:01:34.766403+00:00",
  "source_registry": "data/fundamentals_sources.json",
  "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
  "companies": [
@@ -15,7 +15,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -131,7 +131,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -243,7 +243,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -323,7 +323,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -519,7 +519,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -635,7 +635,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -748,7 +748,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -857,7 +857,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -972,7 +972,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -1113,7 +1113,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1263,7 +1263,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1414,7 +1414,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -2411,7 +2411,7 @@
    "notes": [
     "texte obtenu par reconnaissance de caractères (OCR) : couche texte du PDF altérée (chiffres coupés dans la couche texte, ex. « 5 514  07 9 ») ; mêmes contrôles croisés appliqués",
     "total_assets : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : milliers",
-    "customer_loans : unité non indiquée dans le document, déduite (rapport plausible au total bilan (10-95 %)) : milliers",
+    "customer_loans : unité non indiquée dans le document, déduite (rapport plausible au total bilan (10-100 %)) : milliers",
     "245 ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)"
    ],
    "missing": [],
@@ -2540,7 +2540,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2614,7 +2614,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -2695,7 +2695,16 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "total_assets": null,
+    "total_assets": {
+     "current": 83161200.0,
+     "previous": 73387482.0,
+     "unit": 1000.0,
+     "mad": 83161200000.0,
+     "mad_previous": 73387482000.0,
+     "line": "Total de l'Actif 83 161 200 73 387 482",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
     "customer_loans": {
      "current": 62862585.0,
      "previous": 56622038.0,
@@ -2715,13 +2724,23 @@
      "line": "3 lignes « Part des minoritaires - - »",
      "ambiguous_split": false,
      "method": "intérêts minoritaires à néant (lignes « Part des minoritaires » sans montant)"
+    },
+    "equity_group": {
+     "current": 8203010.0,
+     "previous": 7878853.0,
+     "unit": 1000.0,
+     "mad": 8203010000.0,
+     "mad_previous": 7878853000.0,
+     "line": "CAPITAUX PROPRES CLÔTURE AU 31 DECEMBRE 2025 1 088 121 3 662 492 - 3 415 095 37 302 - 8 203 010 - 8 203 010",
+     "layout": "tableau de variation : part du groupe + minoritaires = total (vérifié)",
+     "ambiguous_split": false,
+     "method": "capitaux propres (part du groupe) au 31/12/2025 et 2024 lus dans le tableau de variation des capitaux propres"
     }
    },
    "derived": {
     "scope": "consolidated",
     "shares_implied_by_published_eps": 10881439,
     "eps_current_shares_mad": 74.2744,
-    "equity_group_method": "capitaux propres totaux − intérêts minoritaires (intérêts minoritaires à néant (lignes « Part des minoritaires » sans montant))",
     "equity_group_mad": 8203010000.0,
     "roe_pct": 10.7394,
     "roe_basis": "capitaux propres part du groupe moyens N / N-1",
@@ -2748,7 +2767,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -2891,7 +2910,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3036,7 +3055,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3169,7 +3188,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3270,7 +3289,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3365,7 +3384,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "period_end_registry": "2025-12-31",
    "text_source": "pdf_text",
    "status": "REJECTED",
@@ -3442,7 +3461,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3554,7 +3573,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3620,7 +3639,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3694,59 +3713,136 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
-   "status": "REJECTED",
-   "errors": [
-    "résultat net part du groupe introuvable",
-    "part du groupe lue sous un résultat consolidé, non confirmée par un BPA publié cohérent",
-    "capitaux propres part du groupe introuvables",
-    "PNB introuvable"
+   "status": "VERIFIED",
+   "errors": [],
+   "notes": [
+    "net_income_group : unité non indiquée dans le document, déduite (capitalisation boursière : PER et P/B plausibles) : milliers",
+    "equity_group : unité non indiquée dans le document, déduite (capitalisation boursière : PER et P/B plausibles) : milliers",
+    "pnb : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : milliers",
+    "equity_total : unité non indiquée dans le document, déduite (rapport plausible au résultat ou aux capitaux propres) : milliers",
+    "operating_expenses : unité non indiquée dans le document, déduite (rapport plausible au produit net bancaire) : milliers",
+    "cost_of_risk : unité non indiquée dans le document, déduite (rapport plausible au produit net bancaire) : milliers",
+    "customer_loans : unité non indiquée dans le document, déduite (rapport plausible au total bilan (10-100 %)) : milliers"
    ],
-   "notes": [],
-   "missing": [
-    "equity_total",
-    "minority_interests",
-    "cost_of_risk",
-    "operating_expenses"
-   ],
+   "missing": [],
    "scope": "consolidated",
    "statements": {
     "net_income_group": {
      "current": 98561.0,
      "previous": -5320.0,
-     "unit": null,
-     "mad": null,
-     "mad_previous": null,
+     "unit": 1000.0,
+     "mad": 98561000.0,
+     "mad_previous": -5320000.0,
      "line": "33. Part du groupe 98 561 -5 320",
      "layout": "N / N-1",
      "ambiguous_split": false,
-     "method": "résultat sans mention « part du groupe » : retenu car confirmé par le BPA publié × nombre de titres (écart ≤ 3 %)"
+     "method": "part du groupe = « XI. RESULTAT NET DU GROUPE 99 261 -4 715 » − « 34. Part des intérêts minoritaires 699 605 » (somme vérifiée N et N-1)"
     },
     "pnb": {
      "current": 601924.0,
      "previous": 550137.0,
-     "unit": null,
-     "mad": null,
-     "mad_previous": null,
+     "unit": 1000.0,
+     "mad": 601924000.0,
+     "mad_previous": 550137000.0,
      "line": "PRODUIT NET BANCAIRE 601 924 550 137",
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "operating_expenses": null,
+    "operating_expenses": {
+     "current": 356638.0,
+     "previous": 325628.0,
+     "unit": 1000.0,
+     "mad": 356638000.0,
+     "mad_previous": 325628000.0,
+     "line": "IV. CHARGES GENERALES D'EXPLOITATION 356 638 325 628",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
     "depreciation": null,
-    "cost_of_risk": null,
+    "cost_of_risk": {
+     "current": -88124.0,
+     "previous": -135061.0,
+     "unit": 1000.0,
+     "mad": -88124000.0,
+     "mad_previous": -135061000.0,
+     "line": "V.DOTATIONS AUX PROVISIONS ET PERTES SUR CREANCES IRRECOUVRABLES 374 492 473 264 − VI. REPRISES DE PROVISIONS ET RECUPERATIONS SUR CREANCES AMORTIES 286 368 338 203",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "format PCEC : dotations aux provisions et pertes sur créances − reprises et récupérations"
+    },
     "net_income": null,
     "eps": null,
-    "equity_total": null,
-    "total_assets": null,
-    "customer_loans": null,
-    "minority_interests": null
+    "equity_total": {
+     "current": 1486439.0,
+     "previous": 1387783.0,
+     "unit": 1000.0,
+     "mad": 1486439000.0,
+     "mad_previous": 1387783000.0,
+     "line": "Capitaux propores clôture au 31 décembre 2025 167 025 83 325 - 1 235 372 - 1 485 722 717 1 486 439",
+     "layout": "tableau de variation : part du groupe + minoritaires = total (vérifié)",
+     "ambiguous_split": false,
+     "method": "capitaux propres (total) au 31/12/2025 et 2024 lus dans le tableau de variation des capitaux propres"
+    },
+    "total_assets": {
+     "current": 10542113.0,
+     "previous": 9210088.0,
+     "unit": 1000.0,
+     "mad": 10542113000.0,
+     "mad_previous": 9210088000.0,
+     "line": "Total de l'Actif 10 542 113 9 210 088",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
+    "customer_loans": {
+     "current": 8001394.0,
+     "previous": 7227431.0,
+     "unit": 1000.0,
+     "mad": 8001394000.0,
+     "mad_previous": 7227431000.0,
+     "line": "3.Créances sur la clientèle 5 901 087 5 554 084 + 4.Opérations de crédit-bail et de location 2 100 307 1 673 347",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "format PCEC : créances sur la clientèle + crédit-bail et location"
+    },
+    "minority_interests": {
+     "current": 717.0,
+     "previous": 623.0,
+     "unit": null,
+     "mad": null,
+     "mad_previous": null,
+     "line": "Capitaux propores clôture au 31 décembre 2025 167 025 83 325 - 1 235 372 - 1 485 722 717 1 486 439",
+     "layout": "tableau de variation : part du groupe + minoritaires = total (vérifié)",
+     "ambiguous_split": false,
+     "method": "capitaux propres (intérêts minoritaires) au 31/12/2025 et 2024 lus dans le tableau de variation des capitaux propres"
+    },
+    "equity_group": {
+     "current": 1485722.0,
+     "previous": 1387160.0,
+     "unit": 1000.0,
+     "mad": 1485722000.0,
+     "mad_previous": 1387160000.0,
+     "line": "Capitaux propores clôture au 31 décembre 2025 167 025 83 325 - 1 235 372 - 1 485 722 717 1 486 439",
+     "layout": "tableau de variation : part du groupe + minoritaires = total (vérifié)",
+     "ambiguous_split": false,
+     "method": "capitaux propres (part du groupe) au 31/12/2025 et 2024 lus dans le tableau de variation des capitaux propres"
+    }
    },
    "derived": {
     "scope": "consolidated",
-    "equity_group_mad": null,
-    "market_cap_mad": 2505375000.0
+    "eps_current_shares_mad": 59.0097,
+    "equity_group_mad": 1485722000.0,
+    "roe_pct": 6.8615,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 889.5207,
+    "cost_income_pct": 59.2497,
+    "cost_of_risk_to_pnb_pct": 14.6404,
+    "cost_of_risk_to_loans_pct": 1.1014,
+    "pnb_growth_pct": 9.4135,
+    "market_cap_mad": 2505375000.0,
+    "implied_per": 25.4195,
+    "implied_pb": 1.6863
    }
   },
   {
@@ -3761,7 +3857,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -3885,7 +3981,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -4014,7 +4110,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -4227,7 +4323,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -4299,7 +4395,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4408,7 +4504,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -4471,18 +4567,12 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
-   "status": "REJECTED",
-   "errors": [
-    "capitaux propres part du groupe introuvables"
-   ],
+   "status": "VERIFIED",
+   "errors": [],
    "notes": [],
-   "missing": [
-    "equity_total",
-    "cost_of_risk",
-    "operating_expenses"
-   ],
+   "missing": [],
    "scope": "social",
    "statements": {
     "pnb": {
@@ -4495,8 +4585,27 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "operating_expenses": null,
-    "cost_of_risk": null,
+    "operating_expenses": {
+     "current": 102651.0,
+     "previous": 100240.0,
+     "unit": 1000.0,
+     "mad": 102651000.0,
+     "mad_previous": 100240000.0,
+     "line": "IV.CHARGES GENERALES D'EXPLOITATION 102 651 100 240",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
+    "cost_of_risk": {
+     "current": -82015.0,
+     "previous": -97241.0,
+     "unit": 1000.0,
+     "mad": -82015000.0,
+     "mad_previous": -97241000.0,
+     "line": "V.DOTATIONS AUX PROVISIONS ET PERTES SUR CREANCES IRRECOUVRABLES 205 126 238 478 − VI.REPRISES DE PROVISIONS ET RECUPERATIONS SUR CREANCES AMORTIES 123 111 141 237",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "format PCEC : dotations aux provisions et pertes sur créances − reprises et récupérations"
+    },
     "net_income_group": {
      "current": 107295.0,
      "previous": 105304.0,
@@ -4507,7 +4616,17 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "equity_total": null,
+    "equity_total": {
+     "current": 1227913.0,
+     "previous": 1159493.0,
+     "unit": 1000.0,
+     "mad": 1227913000.0,
+     "mad_previous": 1159493000.0,
+     "line": "reserves 423774 + capital 277677 + unpaid 0 + retained 419167 + pending 0 + result 107295",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "comptes sociaux PCEC : capital + réserves et primes + report à nouveau + résultats en instance + résultat de l'exercice − capital non versé (résultat du passif = résultat du CPC)"
+    },
     "total_assets": {
      "current": 14298867.0,
      "previous": 13259462.0,
@@ -4518,20 +4637,38 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
+    "customer_loans": {
+     "current": 13917114.0,
+     "previous": 12942103.0,
+     "unit": 1000.0,
+     "mad": 13917114000.0,
+     "mad_previous": 12942103000.0,
+     "line": "3.Créances sur la clientèle 10 986 9 387 + 10.Immobilisations données en crédit-bail et en location 13 906 128 12 932 716",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "format PCEC : créances sur la clientèle + crédit-bail et location"
+    },
     "depreciation": null,
     "net_income": null,
     "eps": null,
-    "minority_interests": null,
-    "customer_loans": null
+    "minority_interests": null
    },
    "derived": {
     "scope": "social",
     "eps_current_shares_mad": 38.6402,
-    "equity_group_mad": null,
+    "equity_group_method": "comptes sociaux : total des capitaux propres (pas d'intérêts minoritaires)",
+    "equity_group_mad": 1227913000.0,
+    "roe_pct": 8.9884,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 442.2094,
+    "cost_income_pct": 26.5112,
+    "cost_of_risk_to_pnb_pct": 21.1816,
+    "cost_of_risk_to_loans_pct": 0.5893,
     "pnb_growth_pct": 2.1129,
     "net_income_growth_pct": 1.8907,
     "market_cap_mad": 1041010323.2,
-    "implied_per": 9.7023
+    "implied_per": 9.7023,
+    "implied_pb": 0.8478
    }
   },
   {
@@ -4546,7 +4683,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4670,7 +4807,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -4774,7 +4911,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4889,7 +5026,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4992,7 +5129,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -5080,7 +5217,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -5262,7 +5399,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5365,7 +5502,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5471,7 +5608,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -5747,7 +5884,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5861,18 +5998,15 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
-   "status": "REJECTED",
-   "errors": [
-    "capitaux propres part du groupe introuvables"
+   "status": "VERIFIED",
+   "errors": [],
+   "notes": [
+    "operating_expenses : unité non indiquée dans le document, déduite (rapport plausible au produit net bancaire) : milliers",
+    "cost_of_risk : unité non indiquée dans le document, déduite (rapport plausible au produit net bancaire) : milliers"
    ],
-   "notes": [],
-   "missing": [
-    "equity_total",
-    "cost_of_risk",
-    "operating_expenses"
-   ],
+   "missing": [],
    "scope": "social",
    "statements": {
     "pnb": {
@@ -5885,8 +6019,27 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "operating_expenses": null,
-    "cost_of_risk": null,
+    "operating_expenses": {
+     "current": 150883.0,
+     "previous": 140202.0,
+     "unit": 1000.0,
+     "mad": 150883000.0,
+     "mad_previous": 140202000.0,
+     "line": "CHARGES GENERALES D'EXPLOITATION 150 883 140 202",
+     "layout": "N / N-1",
+     "ambiguous_split": false
+    },
+    "cost_of_risk": {
+     "current": -36016.0,
+     "previous": -76005.0,
+     "unit": 1000.0,
+     "mad": -36016000.0,
+     "mad_previous": -76005000.0,
+     "line": "DOTATIONS AUX PROVISIONS ET PERTES SUR CREANCES 323 327 85 296 − REPRISES DE PROVISIONS ET RECUPERATIONS SUR 287 311 9 291",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "format PCEC : dotations aux provisions et pertes sur créances − reprises et récupérations"
+    },
     "net_income_group": {
      "current": 96117.0,
      "previous": 93147.0,
@@ -5897,7 +6050,17 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
-    "equity_total": null,
+    "equity_total": {
+     "current": 870833.0,
+     "previous": 866878.0,
+     "unit": 1000.0,
+     "mad": 870833000.0,
+     "mad_previous": 866878000.0,
+     "line": "reserves 462304 + capital 312412 + unpaid 0 + retained 0 + pending 0 + result 96117",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "comptes sociaux PCEC : capital + réserves et primes + report à nouveau + résultats en instance + résultat de l'exercice − capital non versé (résultat du passif = résultat du CPC)"
+    },
     "total_assets": {
      "current": 3813381.0,
      "previous": 3726279.0,
@@ -5908,20 +6071,38 @@
      "layout": "N / N-1",
      "ambiguous_split": false
     },
+    "customer_loans": {
+     "current": 3333006.0,
+     "previous": 3185738.0,
+     "unit": 1000.0,
+     "mad": 3333006000.0,
+     "mad_previous": 3185738000.0,
+     "line": "Créances sur la clientèle 2 076 735 2 144 585 + Immobilisations données en crédit-bail et en location 1 256 271 1 041 153",
+     "layout": "N / N-1",
+     "ambiguous_split": false,
+     "method": "format PCEC : créances sur la clientèle + crédit-bail et location"
+    },
     "depreciation": null,
     "net_income": null,
     "eps": null,
-    "minority_interests": null,
-    "customer_loans": null
+    "minority_interests": null
    },
    "derived": {
     "scope": "social",
     "eps_current_shares_mad": 30.7661,
-    "equity_group_mad": null,
+    "equity_group_method": "comptes sociaux : total des capitaux propres (pas d'intérêts minoritaires)",
+    "equity_group_mad": 870833000.0,
+    "roe_pct": 11.0625,
+    "roe_basis": "capitaux propres part du groupe moyens N / N-1",
+    "book_value_per_share_mad": 278.7451,
+    "cost_income_pct": 39.2889,
+    "cost_of_risk_to_pnb_pct": 9.3783,
+    "cost_of_risk_to_loans_pct": 1.0806,
     "pnb_growth_pct": 1.4232,
     "net_income_growth_pct": 3.1885,
     "market_cap_mad": 1330562282.1,
-    "implied_per": 13.8432
+    "implied_per": 13.8432,
+    "implied_pb": 1.5279
    }
   },
   {
@@ -5936,7 +6117,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6031,7 +6212,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -6114,7 +6295,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6225,7 +6406,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6341,7 +6522,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -6387,7 +6568,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6491,7 +6672,7 @@
    "shares_source": "bulletin de la cote 2026-10-09",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-10-10T13:33:24.583821+00:00",
+   "collected_at": "2026-10-10T14:01:34.766403+00:00",
    "period_end_registry": "2025-12-31",
    "text_source": "pdf_text",
    "status": "VERIFIED",
