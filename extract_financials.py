@@ -40,7 +40,7 @@ LABELS = {
         "equity_total": [r"Capitaux propres (?:de l'|d')ensemble(?: consolidé)?", r"Total (?:des )?capitaux propres(?: consolidés)?", r"Capitaux propres (?:totaux|consolidés)"],
         "minority_interests": [],
         "net_debt": [r"Endettement net", r"Dette nette"],
-        "total_assets": [r"TOTAL ACTIF(?: IFRS)?", r"Total actif"],
+        "total_assets": [r"TOTAL ACTIF(?: IFRS)?", r"Total actifs?(?=\s+-?\d)", r"TOTAL DE L\s?'\s?ACTIF", r"Total (?:du )?bilan", r"TOTAL DU PASSIF"],
     },
     "insurance": {
         "revenue": [r"Produits des activités d'assurance", r"Primes (?:émises|acquises)(?: brutes)?"],
@@ -61,7 +61,7 @@ SOCIAL = {
         "operating_income": [r"R[ÉE]SULTAT D'EXPLOITATION"],
         "net_income_group": [r"R[ÉE]SULTAT NET DE L'EXERCICE", r"R[ÉE]SULTAT NET(?=\s*\(XI ?- ?XII\))"],
         "equity_total": [r"T ?otal des capitaux propres"],
-        "total_assets": [r"TOTAL (?:GÉNÉRAL|ACTIF)"],
+        "total_assets": [r"TOTAL (?:GÉNÉRAL|GENERAL|ACTIF)(?:\s*\(?\s*I\s*\+\s*II\s*\+\s*III\s*\)?)?"],
     },
     "bank": {
         "pnb": [r"PRODUIT NET BANCAIRE"],
@@ -182,6 +182,8 @@ def _parse_tail(tail):
     for a, b, c, d in _partitions(toks, 4):
         if abs(c) >= 1000 and abs(a + b - c) <= (0.011 if "," in tail else 1.0):
             sols.setdefault("CPC : exercice + exercices précédents = total N ; total N-1", set()).add((c, d))
+        elif abs(c) >= 1000 and b >= 0 and abs(a - b - c) <= (0.011 if "," in tail else 1.0):
+            sols.setdefault("Bilan actif : brut − amortissements = net N ; net N-1", set()).add((c, d))
     if not sols:
         for a, b, c in _partitions(toks, 3):
             if a == b and a != 0:
@@ -623,8 +625,8 @@ def checks(fin, model, shares_now, price=None):
         if nd is not None and eb:
             d["net_debt_to_ebitda"] = nd / eb
         ta = v(fin.get("total_assets"))
-        if ta and eq_total:
-            r = 100 * eq_total / ta   # autonomie financière : capitaux propres totaux / total bilan
+        if ta and (eq_total or eq_group):
+            r = 100 * (eq_total or eq_group) / ta   # autonomie financière : capitaux propres totaux / total bilan
             if 0 < r <= 100:
                 d["equity_ratio_pct"] = r
             else:
