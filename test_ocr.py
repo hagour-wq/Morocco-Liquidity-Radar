@@ -1,7 +1,7 @@
 """OCR : un PDF image (sans couche texte) est lu par tesseract puis analysé avec les mêmes contrôles."""
 import io, shutil, unittest
 import ocr_pdf
-from extract_financials import extract, checks
+from extract_financials import extract, checks, detach_labels
 
 LINES = ["COMPTE DE RESULTAT CONSOLIDE (en milliers de dirhams) 2025 2024",
          "Chiffre d'affaires 3 251 072 2 940 457",
@@ -53,6 +53,40 @@ class CacheTests(unittest.TestCase):
         self.assertEqual(len(calls), 2)                       # même PDF : une seule lecture
         self.assertEqual((a[1]["cache"], b[1]["cache"]), ("nouvelle lecture", "réutilisé"))
         self.assertEqual(c[1]["cache"], "nouvelle lecture")
+
+
+class RepairAmountsTests(unittest.TestCase):
+    """Lignes réelles de l'OCR des comptes consolidés 2025 de Bank of Africa."""
+    def fix(self, text):
+        return ocr_pdf.repair_amounts(text)[0].splitlines()
+
+    def test_lost_thousands_spaces_with_unique_split(self):
+        out = self.fix("RÉSULTAT NET - PART DU GROUPE 3813 552 3 427 420\nFidaroc BD RÉSULTAT NET 5 514 079 4 976106\n"
+                       "PRODUIT NET BANCAIRE 20338747 18716574")
+        self.assertEqual(out[0], "RÉSULTAT NET - PART DU GROUPE 3 813 552 3 427 420")
+        self.assertEqual(out[1], "Fidaroc BD RÉSULTAT NET 5 514 079 4 976 106")
+        self.assertEqual(out[2], "PRODUIT NET BANCAIRE 20 338 747 18 716 574")
+
+    def test_standard_and_ambiguous_lines_untouched(self):
+        for line in ("Coût du risque -3 287 621 -3 177 600", "En milliers de DH 2025 2024", "Total 1 234 567 890"):
+            self.assertEqual(self.fix(line)[0], line)
+
+    def test_letter_digit_needs_confirmation_elsewhere(self):
+        line = "TOTAL CAPITAUX PROPRES CONSOLIDES AO 426 437 36 814 698"
+        self.assertEqual(self.fix(line)[0], line)                                   # non confirmé : laissé tel quel
+        att = "\ncapitaux propres consolidés totalisant KMAD 40.426.437, dont un bénéfice"
+        self.assertEqual(self.fix(line + att)[0], "TOTAL CAPITAUX PROPRES CONSOLIDES 40 426 437 36 814 698")
+
+
+class DetachLabelsTests(unittest.TestCase):
+    def test_label_after_other_column_text_is_detached(self):
+        t, n = detach_labels("couvrir les risques de pertes et PRODUIT NET BANCAIRE 20 338 747 18 716 574", "bank")
+        self.assertEqual(n, 1)
+        self.assertEqual(t.splitlines()[1], "PRODUIT NET BANCAIRE 20 338 747 18 716 574")
+
+    def test_lowercase_fragment_of_longer_label_not_detached(self):
+        line = "Dépréciations sur prêts et créances sur la clientèle -21 886 409 -19 952 451"
+        self.assertEqual(detach_labels(line, "bank"), (line, 0))
 
 
 @unittest.skipUnless(ocr_pdf.available(), "tesseract / pdftoppm absents")

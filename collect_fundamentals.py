@@ -13,7 +13,7 @@ import io, json, re, sys
 from datetime import datetime, timezone
 from pathlib import Path
 import casablanca_source as cb
-from extract_financials import extract, checks
+from extract_financials import extract, checks, detach_labels
 import ocr_pdf
 
 SOURCES = Path("data/fundamentals_sources.json")
@@ -47,8 +47,10 @@ def analyse(src, text, shares, price=None, text_source="pdf_text"):
     if len(text.strip()) < MIN_TEXT:
         return {"status": "UNREADABLE", "text_source": text_source,
                 "reason": "document sans texte exploitable (PDF image)" + (" ; OCR également insuffisant" if text_source == "ocr" else "")}
+    repaired = []
     if text_source == "ocr":
-        text = ocr_pdf.clean_lines(text)
+        text, repaired = ocr_pdf.repair_amounts(ocr_pdf.clean_lines(text))
+        text, detached = detach_labels(text, src["model"])
     fin = extract(text, src["model"])
     period = re.search(r"\bdu\s+(\d{1,2})/(\d{1,2})/(20\d\d)\s+au\s+(\d{1,2})/(\d{1,2})/(20\d\d)", text, re.I)
     period_end = f"{period.group(6)}-{int(period.group(5)):02d}-{int(period.group(4)):02d}" if period else None
@@ -62,6 +64,9 @@ def analyse(src, text, shares, price=None, text_source="pdf_text"):
         notes.append(f"exercice du {period.group(1)}/{period.group(2)}/{period.group(3)} au {period.group(4)}/{period.group(5)}/{period.group(6)} (lu dans le document)")
     if text_source == "ocr":
         notes.insert(0, "texte obtenu par reconnaissance de caractères (OCR) : PDF publié sans couche texte ; mêmes contrôles croisés appliqués")
+    if repaired:
+        extra["ocr_amount_repairs"] = repaired
+        notes.append(f"{len(repaired)} ligne(s) de montants OCR recomposée(s) (espaces de milliers perdus ou lettre lue pour un chiffre, découpe unique exigée ; détail : ocr_amount_repairs)")
     return {**extra, "text_source": text_source, "status": status, "errors": errors, "notes": notes, "missing": missing,
             "scope": fin.get("_scope"),
             "statements": {k: ({kk: x[kk] for kk in ("current", "previous", "unit", "mad", "mad_previous", "line", "layout", "ambiguous_split", "method") if kk in x} if x else None)
