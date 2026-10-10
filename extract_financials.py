@@ -23,7 +23,7 @@ LABELS = {
         "net_income": [r"R[ÉE]SULTAT NET(?: CONSOLIDÉ)?(?=\s+-?\d)"],
         "net_income_group": [RNPG],
         "eps": [r"Résultat (?:de base |net )?par action"],
-        "equity_total": [r"Capitaux propres(?: consolidés)?(?=\s+-?\d)", r"Total capitaux propres"],
+        "equity_total": [r"Capitaux propres(?: consolidés)?(?=\s+-?\d)", r"Total capitaux propres(?: consolid[ée]s)?"],
         "minority_interests": [],
         "total_assets": [r"TOTAL ACTIF(?: IFRS)?"],
         "customer_loans": [r"Prêts et créances sur la clientèle(?:, au coût amorti)?"],
@@ -336,6 +336,26 @@ def find(text, patterns, start=0, end=None, all_matches=False):
     return found if all_matches else None
 
 
+def detach_labels(text, model):
+    """Texte OCR d'une page à deux colonnes : « …risques de pertes et PRODUIT NET BANCAIRE 20 338 747 18 716 574 ».
+    Quand un libellé connu des états financiers suivi de ses montants apparaît au milieu d'une ligne, le texte qui le
+    précède (autre colonne, logo) est renvoyé sur une ligne à part. Les montants ne sont pas modifiés."""
+    pats = [p for ps in LABELS[model].values() for p in ps] + [RNPG]
+    rx = [re.compile(r"(?<![\w'])" + p + SUFFIX + NOTE + TAIL, re.I) for p in pats]
+    out, moved = [], 0
+    for line in text.split("\n"):
+        # libellé de tableau commençant par une majuscule (« PRODUIT NET… », « Coût du risque ») : un fragment en minuscules
+        # (« …dépréciations sur prêts et créances… ») est la fin d'un autre libellé et n'est pas détaché
+        starts = [m.start() for r in rx for m in [r.search(line)] if m and m.start() > 0 and line[:m.start()].strip() and line[m.start()].isupper()]
+        if starts and not any(r.match(line.lstrip()) for r in rx):
+            k = min(starts)
+            out += [line[:k].rstrip(), line[k:]]
+            moved += 1
+        else:
+            out.append(line)
+    return "\n".join(out), moved
+
+
 def minorities_near(text, equity):
     """Intérêts minoritaires au bilan, lus autour de la ligne « Capitaux propres » : ligne unique
     « Intérêts minoritaires » ou somme des lignes « … Part des minoritaires »."""
@@ -582,6 +602,11 @@ def infer_units(fin, model, shares_now, price, notes):
             us = [u for u in UNITS if lo <= abs(f["current"] * u / ref) <= hi]
             if ok(us):
                 _set_unit(f, ok(us), "rapport plausible au résultat ou aux capitaux propres", notes, k)
+    f, ta = fin.get("customer_loans"), v(fin.get("total_assets"))   # après le total bilan, éventuellement déduit ci-dessus
+    if f and f.get("unit") is None and ta and f["current"] > 0:
+        us = [u for u in UNITS if 0.1 <= f["current"] * u / ta <= 0.95]
+        if ok(us):
+            _set_unit(f, ok(us), "rapport plausible au total bilan (10-95 %)", notes, "customer_loans")
 
 
 def checks(fin, model, shares_now, price=None):
@@ -658,7 +683,10 @@ def checks(fin, model, shares_now, price=None):
             d["cost_income_pct"] = 100 * (abs(opex) + abs(dep or 0)) / pnb
         if pnb and cor is not None:
             d["cost_of_risk_to_pnb_pct"] = 100 * abs(cor) / pnb
-        loans = v(fin.get("customer_loans"))
+        loans, assets = v(fin.get("customer_loans")), v(fin.get("total_assets"))
+        if loans is not None and (loans <= 0 or (assets and not 0.1 <= loans / assets <= 0.95)):
+            notes.append(f"encours de crédits à la clientèle écarté ({loans / 1e6:,.0f} M MAD) : négatif ou hors de 10-95 % du total bilan, ligne d'un autre tableau".replace(",", " "))
+            loans = None
         if loans and cor is not None:
             d["cost_of_risk_to_loans_pct"] = 100 * abs(cor) / loans
         pp = v(fin.get("pnb"), "mad_previous")
