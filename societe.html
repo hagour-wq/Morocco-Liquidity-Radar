@@ -28,7 +28,7 @@ h2{font-size:16px;margin:2px 0 12px}.label{font-size:11px;letter-spacing:.12em;t
 .note{border-left:3px solid var(--amber);padding:8px 12px;background:#f4c15d10;border-radius:6px;margin-top:10px;font-size:12.5px}
 .footer{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
 </style></head><body><main class="wrap">
-<div class="top"><div><a class="brand" href="index.html">← EQUITY BOURSE · TABLEAU DE BORD</a><h1 id="title">Fiche société</h1><div class="muted" id="ident">Chargement…</div></div>
+<div class="top"><div><a class="brand" href="index.html">← EQUITY BOURSE · TABLEAU DE BORD</a> <a class="brand" id="cmplink" href="compare.html" style="margin-left:14px">COMPARER →</a><h1 id="title">Fiche société</h1><div class="muted" id="ident">Chargement…</div></div>
 <form class="pick" id="pickf"><input id="pick" list="tickers" placeholder="Ticker ou société (ex. ATW)" aria-label="Choisir une société"><datalist id="tickers"></datalist><button>Ouvrir</button></form></div>
 <div id="err"></div>
 <section class="grid" id="content" hidden>
@@ -186,4 +186,4 @@ $('periods').onclick=e=>{const b=e.target.closest('button');if(!b)return;state.p
 $('price').addEventListener('mousemove',hover);$('price').addEventListener('mouseleave',()=>$('tip').style.display='none');
 addEventListener('resize',()=>state.rows.length&&draw());
 load(new URLSearchParams(location.search).get('t')||'ATW');
-</script></body></html>
+</script><script>try{const t=new URLSearchParams(location.search).get('t');if(t)document.getElementById('cmplink').href='compare.html?t='+encodeURIComponent(t)}catch(e){}</script></body></html>

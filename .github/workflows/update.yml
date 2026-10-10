@@ -91,7 +91,7 @@ jobs:
       - name: Backtest du score technique (sans regard vers le futur)
         run: python backtest_technical.py
       - name: Verify dashboard renders with current data (bloquant)
-        run: node test_dashboard.cjs && node test_societe.cjs
+        run: node test_dashboard.cjs && node test_societe.cjs && node test_compare.cjs
       - name: Preserve collector diagnostics even on failure
         if: always()
         uses: actions/upload-artifact@v4
