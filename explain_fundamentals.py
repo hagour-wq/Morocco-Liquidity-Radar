@@ -14,7 +14,7 @@ Ce n'est ni une prévision ni une recommandation d'achat ou de vente.
 from statistics import median
 
 STRONG, WEAK = 65, 35
-MODEL_LABEL = {"bank": "banques", "insurance": "assurances", "corporate": "sociétés non financières"}
+MODEL_LABEL = {"bank": "établissements de crédit", "insurance": "assurances", "corporate": "sociétés non financières"}
 
 
 def _f(v, d=1):
