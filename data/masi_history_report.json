@@ -1,18 +1,18 @@
 {
- "run_at": "2026-10-09T20:09:47.854788+00:00",
+ "run_at": "2026-10-12T20:12:18.763915+00:00",
  "source": "https://www.casablanca-bourse.com/market-data/editions-statistiques",
  "errors": [],
- "parsed": 540,
+ "parsed": 1,
  "corrections": [],
  "added": [],
- "listing_pages": 3,
+ "listing_pages": 4,
  "listing_complete": true,
- "pdfs_listed": 2515,
+ "pdfs_listed": 2516,
  "listed_range": [
   "2016-08-01",
-  "2026-10-09"
+  "2026-10-12"
  ],
- "remaining_before_run": 540,
+ "remaining_before_run": 1,
  "remaining_after_run": 0,
  "unparsed_format": [
   "2016-08-01",
@@ -21,10 +21,10 @@
   "…"
  ],
  "unparsed_count": 540,
- "sessions_official": 1975,
+ "sessions_official": 1976,
  "official_range": [
   "2018-10-03",
-  "2026-10-09"
+  "2026-10-12"
  ],
  "anomalies": [],
  "archive_gaps": [
@@ -81,5 +81,5 @@
   "2018-11-22",
   "2018-11-07"
  ],
- "market_history_sessions": 1976
+ "market_history_sessions": 1977
 }
