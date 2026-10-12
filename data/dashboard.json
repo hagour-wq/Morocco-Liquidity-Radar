@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-09",
-  "composite": -14,
-  "regime": "NEUTRAL",
-  "conclusion": "Market Flow neutre (-9). Momentum 1 séance +0.29% et 5 séances -2.93%. Couverture 70%.",
+  "as_of": "2026-10-12",
+  "composite": -4,
+  "regime": "CALIBRATION",
+  "conclusion": "Market Flow neutre (+15). Momentum 1 séance +0.94% et 5 séances -1.19%. Couverture 70%.",
   "scores": {
-    "liquidity": -22,
-    "market_flow": -9,
-    "global": 6
+    "liquidity": -21,
+    "market_flow": 15,
+    "global": 4
   },
   "sources": [
     {
@@ -36,8 +36,8 @@
     {
       "name": "Bourse de Casablanca",
       "dataset": "Cours, volumes et secteurs (81 actions) ; MASI (résumés de séance)",
-      "reference_date": "09/10/2026",
-      "status": "OFFICIEL · 66 titres échangés sur 81",
+      "reference_date": "12/10/2026",
+      "status": "OFFICIEL · 67 titres échangés sur 81",
       "freshness": "quotidienne",
       "official_page": "https://www.casablanca-bourse.com/"
     }
@@ -48,11 +48,11 @@
     "score_activation": "after source validation and sufficient history"
   },
   "market_flow_detail": {
-    "ret_1d_pct": 0.29,
-    "ret_5d_pct": -2.93,
-    "ret_20d_pct": -9.77,
+    "ret_1d_pct": 0.94,
+    "ret_5d_pct": -1.19,
+    "ret_20d_pct": -7.86,
     "volume_vs_available_avg": null,
-    "breadth": 0.4815,
+    "breadth": 0.661,
     "coverage": 0.7,
     "components_used": [
       "momentum",
@@ -61,128 +61,128 @@
     "confidence": "medium"
   },
   "rotation": {
-    "reference_date": "2026-10-09",
+    "reference_date": "2026-10-12",
     "quality": "official_session",
     "source": "Bourse de Casablanca — cours officiels (stock-historical)",
-    "computed_at": "2026-10-10T16:18:44.238382+00:00",
+    "computed_at": "2026-10-12T18:50:06.311560+00:00",
     "min_turnover_mad": 100000,
     "sectors": [
       {
+        "name": "Industrie Pharmaceutique",
+        "change_pct": 5.39
+      },
+      {
+        "name": "Participation et promotion immobilières",
+        "change_pct": 3.04
+      },
+      {
+        "name": "Sylviculture et Papier",
+        "change_pct": 3.03
+      },
+      {
+        "name": "Sociétés de placement immobilier",
+        "change_pct": -0.13
+      },
+      {
+        "name": "Transport",
+        "change_pct": -0.49
+      },
+      {
         "name": "Pétrole et Gaz",
-        "change_pct": 3.47
-      },
-      {
-        "name": "Services de transport",
-        "change_pct": 2.03
-      },
-      {
-        "name": "Santé",
-        "change_pct": 1.96
-      },
-      {
-        "name": "Industrie Agricole",
-        "change_pct": -1.89
-      },
-      {
-        "name": "Loisirs et Hôtels",
-        "change_pct": -1.95
-      },
-      {
-        "name": "Chimie",
-        "change_pct": -2.45
+        "change_pct": -0.49
       }
     ],
     "leaders": [
       {
-        "ticker": "T2S",
-        "name": "T2S GROUP HOLDING",
-        "change_pct": 5.21
+        "ticker": "S2M",
+        "name": "SOCIETE MAGHREBINE DE MONETIQUE",
+        "change_pct": 6.75
       },
       {
-        "ticker": "CMT",
-        "name": "COMPAGNIE MINIERE DE TOUISSIT",
-        "change_pct": 4.45
+        "ticker": "SOT",
+        "name": "SOCIETE DE THERAPEUTIQUE MAROCAINE",
+        "change_pct": 6.1
       },
       {
-        "ticker": "TMA",
-        "name": "TOTALENERGIES MARKETING MAROC",
-        "change_pct": 3.54
+        "ticker": "LHM",
+        "name": "Holcim Maroc S.A",
+        "change_pct": 6.09
       },
       {
-        "ticker": "CAP",
-        "name": "CASH PLUS S.A",
-        "change_pct": 3.17
+        "ticker": "AGM",
+        "name": "AGMA",
+        "change_pct": 4.79
       },
       {
-        "ticker": "SMI",
-        "name": "SOCIETE METALLURGIQUE D'IMITER",
-        "change_pct": 2.44
+        "ticker": "ADH",
+        "name": "DOUJA PROMOTION GROUPE ADDOHA SA",
+        "change_pct": 4.03
       }
     ],
     "laggards": [
       {
+        "ticker": "CMT",
+        "name": "COMPAGNIE MINIERE DE TOUISSIT",
+        "change_pct": -2.92
+      },
+      {
         "ticker": "JET",
         "name": "JET CONTRACTORS",
-        "change_pct": -3.16
+        "change_pct": -1.33
       },
       {
-        "ticker": "SNP",
-        "name": "SOCIETE NATIONALE D'ELECTROLYSE ET DE PETROCHIMIE",
-        "change_pct": -3.11
+        "ticker": "CDM",
+        "name": "CREDIT DU MAROC",
+        "change_pct": -0.86
       },
       {
-        "ticker": "CRS",
-        "name": "CARTIER SAADA",
-        "change_pct": -3.11
+        "ticker": "TMA",
+        "name": "TOTALENERGIES MARKETING MAROC",
+        "change_pct": -0.45
       },
       {
-        "ticker": "MUT",
-        "name": "MUTANDIS SCA",
-        "change_pct": -2.71
-      },
-      {
-        "ticker": "SNA",
-        "name": "STOKVIS NORD AFRIQUE",
-        "change_pct": -2.53
+        "ticker": "ATH",
+        "name": "AUTO HALL",
+        "change_pct": -0.42
       }
     ],
     "active": [
       {
-        "ticker": "LBV",
-        "name": "LABEL VIE",
-        "volume_mad": 15573600.0
-      },
-      {
         "ticker": "ATW",
         "name": "ATTIJARIWAFA BANK",
-        "volume_mad": 14244400.3
-      },
-      {
-        "ticker": "MNG",
-        "name": "MANAGEM",
-        "volume_mad": 12777417.0
-      },
-      {
-        "ticker": "TGC",
-        "name": "TRAVAUX GENERAUX DE CONSTRUCTION DE CASABLANCA",
-        "volume_mad": 12743127.7
+        "volume_mad": 15020146.9
       },
       {
         "ticker": "MSA",
         "name": "SOCIETE D'EXPLOITATION DES PORTS - MARSA MAROC",
-        "volume_mad": 11584476.5
+        "volume_mad": 3556552.6
+      },
+      {
+        "ticker": "HPS",
+        "name": "HIGHTECH PAYMENT SYSTEMS",
+        "volume_mad": 3114283.6
+      },
+      {
+        "ticker": "AKT",
+        "name": "AKDITAL",
+        "volume_mad": 2323518.0
+      },
+      {
+        "ticker": "LHM",
+        "name": "Holcim Maroc S.A",
+        "volume_mad": 2107511.0
       }
     ],
     "breadth": {
-      "advancers": 26,
-      "decliners": 28,
-      "traded": 66,
+      "advancers": 39,
+      "decliners": 20,
+      "traded": 67,
       "listed": 81
     }
   },
   "liquidity_detail": {
-    "score": -22,
-    "coverage": 1.0,
+    "score": -21,
+    "coverage": 0.7,
     "confidence": "medium",
     "reference_date": "2026-09-25",
     "components": {
@@ -208,29 +208,21 @@
         "source": "AMMC",
         "source_url": "https://www.ammc.ma/fr/donnees-statistiques",
         "note": "Score derived from official AMMC NAV and category performance; adjusted flows are estimates, not official subscriptions/redemptions.",
-        "age_days": 7
+        "age_days": 10
       },
       "bank_liquidity": {
         "weight": 30,
-        "score": -25,
-        "verified": true,
-        "reference_date": "2026-08-31",
+        "score": null,
+        "verified": false,
+        "reference_date": "2026-09-30",
         "raw": {
-          "liquidity_need_current_bn_mad": 132.3,
-          "liquidity_need_previous_bn_mad": 125.7,
-          "injections_current_bn_mad": 150.0,
-          "injections_previous_bn_mad": 144.1,
-          "need_change_pct": 5.251,
-          "injections_change_pct": 4.094,
-          "score": -25,
-          "reference_date": "2026-08-31",
-          "provenance": "DEPF consecutive reports; monthly directional proxy",
-          "confidence": "medium"
+          "bank_liquidity": null,
+          "bam_injections": null
         },
-        "source": "DEPF",
-        "source_url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-        "note": "Proxy variation mensuelle, recoupé entre deux rapports officiels.",
-        "age_days": 39
+        "source": "Bank Al-Maghrib",
+        "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
+        "note": "Source officielle identifiée mais composante non activée: le niveau/variation des injections doit être extrait de façon comparable à la période précédente avant scoring.",
+        "age_days": 12
       },
       "money_market": {
         "weight": 20,
@@ -245,7 +237,7 @@
         "source": "Bank Al-Maghrib",
         "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
         "note": "Taux interbancaire moyen pondéré à 2,25 %, aligné sur le taux directeur. Score neutre: absence de tension/détente mesurable via le spread.",
-        "age_days": 9
+        "age_days": 12
       },
       "policy_rate": {
         "weight": 10,
@@ -260,19 +252,17 @@
         "source": "Bank Al-Maghrib",
         "source_url": "https://www.bkam.ma/Politique-monetaire/Decision-du-conseil/Decision-du-conseil-de-bank-al-maghrib-du-22-septembre-2026",
         "note": "Taux directeur maintenu à 2,25 %. Score 0 = impulsion neutre par absence de variation; le niveau absolu est conservé séparément.",
-        "age_days": 17
+        "age_days": 20
       }
     },
     "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément.",
     "components_used": [
       "opcvm",
-      "bank_liquidity",
       "money_market",
       "policy_rate"
     ],
     "estimated_components": [
-      "opcvm",
-      "bank_liquidity"
+      "opcvm"
     ]
   },
   "money_flow": {
@@ -284,30 +274,30 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-10T16:18:44.394992+00:00",
-    "history_sessions": 1976,
-    "observations": 1971,
-    "usable_5d": 1890,
+    "computed_at": "2026-10-12T18:50:06.446360+00:00",
+    "history_sessions": 1977,
+    "observations": 1972,
+    "usable_5d": 1891,
     "directional_accuracy_5d_pct": 54.5,
     "warning": "Diagnostic sur le MASI, sans coûts de transaction ; ne constitue pas une prévision."
   },
   "data_quality": {
-    "market_history_sessions": 1976,
+    "market_history_sessions": 1977,
     "market_flow_coverage": 0.7,
-    "liquidity_coverage": 1.0,
-    "composite_status": "NEUTRAL",
+    "liquidity_coverage": 0.7,
+    "composite_status": "CALIBRATION",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
       "liquidité : opcvm estimée (pas de donnée officielle directe)",
-      "liquidité : bank_liquidity ancienne de 39 jours"
+      "liquidité : composante bank_liquidity non vérifiée"
     ],
     "history": {
-      "sessions": 1976,
+      "sessions": 1977,
       "blocks": 1,
       "first_date": "2018-10-03",
-      "last_date": "2026-10-09",
+      "last_date": "2026-10-12",
       "largest_gap_days": 7,
-      "latest_contiguous_sessions": 1976
+      "latest_contiguous_sessions": 1977
     }
   },
   "methodology": {
@@ -316,23 +306,23 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 0.9,
+  "composite_coverage": 0.74,
   "effective_weights": {
-    "liquidity": 50.0,
+    "liquidity": 35.0,
     "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-10T16:18:43.983262+00:00",
+  "retrieved_at": "2026-10-12T18:50:06.102319+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
-    "masi": 16797.1032,
-    "drawdown_from_sample_peak_pct": -16.98,
+    "masi": 16954.4971,
+    "drawdown_from_sample_peak_pct": -16.21,
     "sample_peak": 20233.5,
     "sample_low": 8987.89,
-    "sessions": 1976
+    "sessions": 1977
   },
   "global_detail": {
-    "checked_at": "2026-10-10T16:02:17.393487+00:00",
+    "checked_at": "2026-10-12T18:39:35.877913+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -362,10 +352,10 @@
         "series": "DXY",
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
-        "date": "2026-10-09",
-        "value": 102.20999908447266,
-        "change_5obs": 0.275,
-        "score": -2.2,
+        "date": "2026-10-12",
+        "value": 102.5719985961914,
+        "change_5obs": 0.393,
+        "score": -3.1,
         "verified": true,
         "failed_sources": []
       },
@@ -373,16 +363,16 @@
         "series": "SP500",
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-        "date": "2026-10-09",
-        "value": 7811.5400390625,
-        "change_5obs": 1.15,
-        "score": 9.2,
+        "date": "2026-10-12",
+        "value": 7800.509765625,
+        "change_5obs": 0.342,
+        "score": 2.7,
         "verified": true,
         "failed_sources": []
       }
     },
     "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-    "score": 6,
+    "score": 4,
     "fresh_for_scoring": true
   }
 }

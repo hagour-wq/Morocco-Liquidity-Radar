@@ -1,7 +1,11 @@
 {
-  "checked_at": "2026-10-10T16:01:36.029841+00:00",
-  "verified": true,
+  "checked_at": "2026-10-12T18:37:14.035012+00:00",
+  "verified": false,
   "candidates": [
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/Rap_Act_2025_22Sept2026_16h30.pdf",
+      "format": "link"
+    },
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
       "format": "link"
@@ -45,17 +49,17 @@
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2025/nc346.pdf",
       "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/Rap_Act_2024_15Octobre2025.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/nc_345.pdf",
-      "format": "link"
     }
   ],
   "pdf_inspections": [
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/Rap_Act_2025_22Sept2026_16h30.pdf",
+      "pages": 78,
+      "bytes": 7499750,
+      "matches": [],
+      "numeric_candidates": [],
+      "verified": false
+    },
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
       "pages": 48,
@@ -82,33 +86,6 @@
         }
       ],
       "verified": false
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf",
-      "pages": 48,
-      "bytes": 7244767,
-      "matches": [
-        {
-          "page": 40,
-          "keyword": "injections de liquidité",
-          "context": " comparativement au mois précédent, se situant en moyenne hebdomadaire à 125,7 milliards de dirhams après 127,3 milliards en juin et 146,6 milliards en mai. Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 144,1 milliards de dirhams, après 152,4 milliards en juin et 161,3 milliards en mai. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (48,9 milliards de dirhams après 53,7 milliards en juin 2026), les opérations de pensions livrées à 1 et 3 moi"
-        },
-        {
-          "page": 40,
-          "keyword": "interventions de bank al-maghrib",
-          "context": " Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 144,1 milliards de dirhams, après 152,4 milliards en juin et 161,3 milliards en mai. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (48,9 milliards de dirhams après 53,7 milliards en juin 2026), les opérations de pensions livrées à 1 et 3 mois (48,9 milliards de dirhams après 52,1 milliards en juin 2026) et les opérations de prêts garantis accordés dans le cadre des programmes de soutien au financement d"
-        }
-      ],
-      "numeric_candidates": [
-        {
-          "page": 40,
-          "liquidity_need_current_bn_mad": 125.7,
-          "liquidity_need_previous_bn_mad": 127.3,
-          "injections_current_bn_mad": 144.1,
-          "injections_previous_bn_mad": 152.4
-        }
-      ],
-      "verified": false
     }
   ],
   "metrics": [
@@ -124,29 +101,5 @@
       "url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
       "error": "HTTPError"
     }
-  ],
-  "validation": {
-    "cross_report_consistent": true,
-    "reference_period": "2026-08",
-    "report_urls": [
-      "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-      "https://www.finances.gov.ma/Publication/depf/2026/NC354.pdf"
-    ],
-    "pages": [
-      40,
-      40
-    ]
-  },
-  "validated_monthly": {
-    "liquidity_need_current_bn_mad": 132.3,
-    "liquidity_need_previous_bn_mad": 125.7,
-    "injections_current_bn_mad": 150.0,
-    "injections_previous_bn_mad": 144.1,
-    "need_change_pct": 5.251,
-    "injections_change_pct": 4.094,
-    "score": -25,
-    "reference_date": "2026-08-31",
-    "provenance": "DEPF consecutive reports; monthly directional proxy",
-    "confidence": "medium"
-  }
+  ]
 }

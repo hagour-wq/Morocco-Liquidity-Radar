@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-10T16:02:17.393487+00:00",
+  "checked_at": "2026-10-12T18:39:35.877913+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -29,10 +29,10 @@
       "series": "DXY",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
-      "date": "2026-10-09",
-      "value": 102.20999908447266,
-      "change_5obs": 0.275,
-      "score": -2.2,
+      "date": "2026-10-12",
+      "value": 102.5719985961914,
+      "change_5obs": 0.393,
+      "score": -3.1,
       "verified": true,
       "failed_sources": []
     },
@@ -40,14 +40,14 @@
       "series": "SP500",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-      "date": "2026-10-09",
-      "value": 7811.5400390625,
-      "change_5obs": 1.15,
-      "score": 9.2,
+      "date": "2026-10-12",
+      "value": 7800.509765625,
+      "change_5obs": 0.342,
+      "score": 2.7,
       "verified": true,
       "failed_sources": []
     }
   },
   "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-  "score": 6
+  "score": 4
 }

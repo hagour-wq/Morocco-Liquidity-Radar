@@ -33642,5 +33642,23 @@
     "source_url": "https://www.casablanca-bourse.com/live-market/indices/cours?symbol=MASI",
     "quality": "official_session_close",
     "collected_at": "2026-10-10T16:01:14.939761+00:00"
+  },
+  {
+    "date": "2026-10-12",
+    "masi": 16954.4971,
+    "masi_previous_close": 16797.1032,
+    "masi_high": 17013.0777,
+    "masi_low": 16789.9979,
+    "volume_mad": null,
+    "volume_mad_official": 52945022.35,
+    "breadth": 0.661,
+    "advancers": 39,
+    "decliners": 20,
+    "instruments": 81,
+    "source": "Bourse de Casablanca (live-market, séance clôturée)",
+    "masi_source": "Bourse de Casablanca (live-market, séance clôturée)",
+    "source_url": "https://www.casablanca-bourse.com/live-market/indices/cours?symbol=MASI",
+    "quality": "official_session_close",
+    "collected_at": "2026-10-12T18:37:00.314017+00:00"
   }
 ]
