@@ -70,7 +70,7 @@
   "note": "null means unavailable. verified must remain false until the official value and reference date are validated.",
   "discovery": {
     "ammc": {
-      "count": 11,
+      "count": 10,
       "candidates": [
         "https://www.ammc.ma/fr/espace-epargnants/opcvm",
         "https://www.ammc.ma/fr/espace-epargnants/reseaux-de-commercialisation-des-opcvm",
@@ -81,7 +81,6 @@
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2004-09-2026.xls",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_28082026.xlsx",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_24082026.xls",
-        "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_17082026.xls",
         "https://www.ammc.ma/fr/actualites/la-liste-des-autorisations-accordees-aux-opcvm-au-titre-du-mois-de-septembre-2026"
       ],
       "status": "FOUND"
@@ -97,7 +96,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-10-12T18:37:13.806942+00:00",
+  "collector_checked_at": "2026-10-13T18:40:56.348882+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
@@ -4595,7 +4594,7 @@
     "policy": "official URLs previously discovered by GitHub runner; retain across transient discovery failures"
   },
   "ammc_file_pool": {
-    "discovered": 8,
+    "discovered": 7,
     "cached": 8,
     "usable_candidates": 9
   },
