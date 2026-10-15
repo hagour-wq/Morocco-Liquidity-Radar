@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-14T18:53:38.796035+00:00",
+  "checked_at": "2026-10-15T18:53:12.283742+00:00",
   "verified": false,
   "candidates": [
     {
@@ -48,6 +48,10 @@
     },
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2025/nc346.pdf",
+      "format": "link"
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2025/Rap_Act_2024_15Octobre2025.pdf",
       "format": "link"
     }
   ],
