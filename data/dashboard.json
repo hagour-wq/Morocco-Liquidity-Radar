@@ -1,11 +1,11 @@
 {
   "as_of": "2026-10-16",
-  "composite": -9,
-  "regime": "CALIBRATION",
-  "conclusion": "Market Flow neutre (+7). Momentum 1 séance -0.01% et 5 séances +1.20%. Couverture 70%.",
+  "composite": -14,
+  "regime": "NEUTRAL",
+  "conclusion": "Market Flow neutre (-11). Momentum 1 séance -0.01% et 5 séances +1.20%. Couverture 100%.",
   "scores": {
     "liquidity": -21,
-    "market_flow": 7,
+    "market_flow": -11,
     "global": -5
   },
   "sources": [
@@ -51,14 +51,16 @@
     "ret_1d_pct": -0.01,
     "ret_5d_pct": 1.2,
     "ret_20d_pct": -3.38,
-    "volume_vs_available_avg": null,
-    "breadth": 0.5472,
-    "coverage": 0.7,
+    "volume_vs_available_avg": 0.49,
+    "volume_sessions": 20,
+    "breadth": 0.4776,
+    "coverage": 1.0,
     "components_used": [
       "momentum",
+      "volume",
       "breadth"
     ],
-    "confidence": "medium"
+    "confidence": "high"
   },
   "rotation": {
     "reference_date": "2026-10-16",
@@ -274,7 +276,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-16T18:59:49.777594+00:00",
+    "computed_at": "2026-10-16T20:18:20.206707+00:00",
     "history_sessions": 1981,
     "observations": 1976,
     "usable_5d": 1895,
@@ -283,9 +285,9 @@
   },
   "data_quality": {
     "market_history_sessions": 1981,
-    "market_flow_coverage": 0.7,
+    "market_flow_coverage": 1.0,
     "liquidity_coverage": 0.7,
-    "composite_status": "CALIBRATION",
+    "composite_status": "NEUTRAL",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
       "liquidité : opcvm estimée (pas de donnée officielle directe)",
@@ -306,16 +308,16 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 0.74,
+  "composite_coverage": 0.85,
   "effective_weights": {
     "liquidity": 35.0,
-    "market_flow": 24.5,
+    "market_flow": 35.0,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-16T18:59:49.498849+00:00",
+  "retrieved_at": "2026-10-16T20:18:20.084781+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
-    "masi": 16997.9176,
+    "masi": 16997.92,
     "drawdown_from_sample_peak_pct": -15.99,
     "sample_peak": 20233.5,
     "sample_low": 8987.89,
