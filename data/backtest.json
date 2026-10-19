@@ -1,26 +1,26 @@
 {
   "method": "Momentum diagnostic; not a validated investment strategy.",
-  "history_sessions": 1981,
-  "observations": 1976,
+  "history_sessions": 1982,
+  "observations": 1977,
   "gap_policy": "returns only within contiguous market blocks; max calendar gap 10 days",
   "horizons": {
     "1d": {
-      "n": 1899,
+      "n": 1900,
       "directional_accuracy_pct": 55.1,
       "avg_forward_pct": 0.03
     },
     "5d": {
-      "n": 1895,
+      "n": 1896,
       "directional_accuracy_pct": 54.5,
       "avg_forward_pct": 0.12
     },
     "10d": {
-      "n": 1890,
+      "n": 1891,
       "directional_accuracy_pct": 53.2,
       "avg_forward_pct": 0.25
     },
     "20d": {
-      "n": 1880,
+      "n": 1881,
       "directional_accuracy_pct": 53.4,
       "avg_forward_pct": 0.52
     }
@@ -29,7 +29,7 @@
     "risk_on_like": 165,
     "risk_off_like": 155
   },
-  "usable_5d": 1895,
+  "usable_5d": 1896,
   "directional_accuracy_5d_pct": 54.5,
   "sample_warning": "Interpret only after sufficient historical depth; no transaction costs or execution model.",
   "series": [
@@ -15687,7 +15687,7 @@
       "fwd_1d_pct": 0.48,
       "fwd_5d_pct": -1.9,
       "fwd_10d_pct": -4.62,
-      "fwd_20d_pct": null
+      "fwd_20d_pct": -5.64
     },
     {
       "date": "2026-09-22",
@@ -15766,7 +15766,7 @@
       "score": -24,
       "fwd_1d_pct": -1.56,
       "fwd_5d_pct": -1.19,
-      "fwd_10d_pct": null,
+      "fwd_10d_pct": -1.07,
       "fwd_20d_pct": null
     },
     {
@@ -15805,7 +15805,7 @@
       "date": "2026-10-12",
       "score": 5,
       "fwd_1d_pct": 0.52,
-      "fwd_5d_pct": null,
+      "fwd_5d_pct": 0.13,
       "fwd_10d_pct": null,
       "fwd_20d_pct": null
     },
@@ -15836,6 +15836,14 @@
     {
       "date": "2026-10-16",
       "score": 6,
+      "fwd_1d_pct": -0.13,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null,
+      "fwd_20d_pct": null
+    },
+    {
+      "date": "2026-10-19",
+      "score": -1,
       "fwd_1d_pct": null,
       "fwd_5d_pct": null,
       "fwd_10d_pct": null,

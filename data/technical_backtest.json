@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-16T20:18:35.201265+00:00",
+ "generated_at": "2026-10-19T19:04:02.591163+00:00",
  "status": "RESEARCH_ONLY",
  "proxy_validation": {
-  "pairs": 723,
+  "pairs": 724,
   "correlation": 0.987,
   "mean_abs_gap_bp": 10.4,
   "note": "Rendements quotidiens du proxy vs MASI officiel/secondaire sur les séances communes."

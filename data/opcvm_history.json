@@ -682,5 +682,81 @@
     "weekly_pct": 0.20995142996829327
    }
   }
+ },
+ "2026-10-09": {
+  "date": "2026-10-09",
+  "url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_09102026.xlsx",
+  "nav": {
+   "Actions": {
+    "amount": 69024569600.6914,
+    "weekly_pct": -3.59883581462769,
+    "share_pct": 8.41553848294902,
+    "monthly_pct": -6.34261218762452,
+    "annual_pct": -10.6047223843467,
+    "funds": 119
+   },
+   "Diversifiés": {
+    "amount": 106227617043.121,
+    "weekly_pct": -0.569610056440912,
+    "share_pct": 12.951367959988,
+    "monthly_pct": -2.9230110739082,
+    "annual_pct": 3.38914272075566,
+    "funds": 141
+   },
+   "Monétaire": {
+    "amount": 147547995735.187,
+    "weekly_pct": 18.8658155768489,
+    "share_pct": 17.9891862183959,
+    "monthly_pct": 4.15591546111277,
+    "annual_pct": 34.0124319563588,
+    "funds": 71
+   },
+   "Obligations CT": {
+    "amount": 132768982274.504,
+    "weekly_pct": 8.48137482609349,
+    "share_pct": 16.1873154173478,
+    "monthly_pct": 5.20280545218473,
+    "annual_pct": 17.2704576052696,
+    "funds": 73
+   },
+   "Obligations MLT": {
+    "amount": 351234740192.374,
+    "weekly_pct": -0.455837331303159,
+    "share_pct": 42.8228598850679,
+    "monthly_pct": -0.868884264160832,
+    "annual_pct": -5.8303202984131,
+    "funds": 218
+   },
+   "Contractuel": {
+    "amount": 13399932859.15,
+    "weekly_pct": -5.43836464085545,
+    "share_pct": 1.63373203625134,
+    "monthly_pct": -9.99789880734228,
+    "annual_pct": 52.2540299622048,
+    "funds": 6
+   }
+  },
+  "performance": {
+   "Actions": {
+    "index": 911.7559973120756,
+    "weekly_pct": -2.990808723777477
+   },
+   "Diversifiés": {
+    "index": 661.1577071943898,
+    "weekly_pct": -1.5023866020658485
+   },
+   "Monétaire": {
+    "index": 179.91647094892733,
+    "weekly_pct": 0.05101077895756707
+   },
+   "Obligations CT": {
+    "index": 194.45461487792437,
+    "weekly_pct": 0.04412999740149046
+   },
+   "Obligations MLT": {
+    "index": 239.85210580923885,
+    "weekly_pct": -0.41851541929402764
+   }
+  }
  }
 }
