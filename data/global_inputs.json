@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T18:53:31.904445+00:00",
+  "checked_at": "2026-10-21T18:53:52.778570+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -7,8 +7,8 @@
       "series": "DGS10",
       "source": "US_TREASURY",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "date": "2026-10-19",
-      "value": 5.15,
+      "date": "2026-10-20",
+      "value": 5.12,
       "change_5obs": -9.0,
       "score": 10.8,
       "verified": true,
@@ -18,10 +18,10 @@
       "series": "VIXCLS",
       "source": "CBOE",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "date": "2026-10-19",
-      "value": 18.44,
-      "change_5obs": 21.236,
-      "score": -84.9,
+      "date": "2026-10-20",
+      "value": 17.31,
+      "change_5obs": 13.36,
+      "score": -53.4,
       "verified": true,
       "failed_sources": []
     },
@@ -29,10 +29,10 @@
       "series": "DXY",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
-      "date": "2026-10-20",
-      "value": 101.6989974975586,
-      "change_5obs": -0.471,
-      "score": 3.8,
+      "date": "2026-10-21",
+      "value": 101.6729965209961,
+      "change_5obs": -0.855,
+      "score": 6.8,
       "verified": true,
       "failed_sources": []
     },
@@ -40,14 +40,14 @@
       "series": "SP500",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-      "date": "2026-10-20",
-      "value": 7713.490234375,
-      "change_5obs": -1.178,
-      "score": -9.4,
+      "date": "2026-10-21",
+      "value": 7758.7099609375,
+      "change_5obs": 0.515,
+      "score": 4.1,
       "verified": true,
       "failed_sources": []
     }
   },
   "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-  "score": -20
+  "score": -8
 }

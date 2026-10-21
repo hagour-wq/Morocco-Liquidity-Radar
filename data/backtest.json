@@ -1,27 +1,27 @@
 {
   "method": "Momentum diagnostic; not a validated investment strategy.",
-  "history_sessions": 1983,
-  "observations": 1978,
+  "history_sessions": 1984,
+  "observations": 1979,
   "gap_policy": "returns only within contiguous market blocks; max calendar gap 10 days",
   "horizons": {
     "1d": {
-      "n": 1901,
+      "n": 1902,
       "directional_accuracy_pct": 55.1,
       "avg_forward_pct": 0.03
     },
     "5d": {
-      "n": 1897,
-      "directional_accuracy_pct": 54.5,
+      "n": 1898,
+      "directional_accuracy_pct": 54.4,
       "avg_forward_pct": 0.12
     },
     "10d": {
-      "n": 1892,
-      "directional_accuracy_pct": 53.2,
+      "n": 1893,
+      "directional_accuracy_pct": 53.1,
       "avg_forward_pct": 0.25
     },
     "20d": {
-      "n": 1882,
-      "directional_accuracy_pct": 53.3,
+      "n": 1883,
+      "directional_accuracy_pct": 53.4,
       "avg_forward_pct": 0.51
     }
   },
@@ -29,8 +29,8 @@
     "risk_on_like": 165,
     "risk_off_like": 155
   },
-  "usable_5d": 1897,
-  "directional_accuracy_5d_pct": 54.5,
+  "usable_5d": 1898,
+  "directional_accuracy_5d_pct": 54.4,
   "sample_warning": "Interpret only after sufficient historical depth; no transaction costs or execution model.",
   "series": [
     {
@@ -15703,7 +15703,7 @@
       "fwd_1d_pct": -0.95,
       "fwd_5d_pct": -1.71,
       "fwd_10d_pct": -5.82,
-      "fwd_20d_pct": null
+      "fwd_20d_pct": -5.73
     },
     {
       "date": "2026-09-24",
@@ -15782,7 +15782,7 @@
       "score": -14,
       "fwd_1d_pct": -1.42,
       "fwd_5d_pct": -0.14,
-      "fwd_10d_pct": null,
+      "fwd_10d_pct": 0.1,
       "fwd_20d_pct": null
     },
     {
@@ -15821,7 +15821,7 @@
       "date": "2026-10-14",
       "score": -6,
       "fwd_1d_pct": 0.19,
-      "fwd_5d_pct": null,
+      "fwd_5d_pct": 0.24,
       "fwd_10d_pct": null,
       "fwd_20d_pct": null
     },
@@ -15852,6 +15852,14 @@
     {
       "date": "2026-10-20",
       "score": -6,
+      "fwd_1d_pct": 0.43,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null,
+      "fwd_20d_pct": null
+    },
+    {
+      "date": "2026-10-21",
+      "score": 6,
       "fwd_1d_pct": null,
       "fwd_5d_pct": null,
       "fwd_10d_pct": null,
