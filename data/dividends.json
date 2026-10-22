@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T18:55:27.108271+00:00",
+ "generated_at": "2026-10-22T18:56:13.684542+00:00",
  "source": "Bourse de Casablanca — Calendrier financier",
  "source_url": "https://www.casablanca-bourse.com/emetteurs/calendrier-financier",
  "years_dividends": [
@@ -1648,7 +1648,8 @@
      "nature": "Ordinaire",
      "objets": "Approbation des comptes"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 5.0 MAD, bulletin 4.89 MAD (ajusté)"
   },
   "BCI": {
    "dividends": [
@@ -12342,6 +12343,7 @@
   }
  ],
  "bulletin_mismatches": {
+  "BOA": "montant différent : calendrier 5.0 MAD, bulletin 4.89 MAD (ajusté)",
   "CDM": "montant différent : calendrier 48.0 MAD, bulletin 47.81 MAD (ajusté)",
   "MNG": "montant différent : calendrier 55.0 MAD, bulletin 5.5 MAD (ajusté)"
  }
