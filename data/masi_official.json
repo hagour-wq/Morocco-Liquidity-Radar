@@ -40337,7 +40337,24 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261022.pdf",
    "collected_at": "2026-10-22T20:22:20.184719+00:00",
    "parser_version": 2,
-   "implied_daily_pct": 0.7425,
+   "status": "validated",
+   "implied_daily_pct": 0.7425
+  },
+  "2026-10-23": {
+   "date": "2026-10-23",
+   "printed_date": "2026-10-23",
+   "masi": 17054.31,
+   "masi_daily_pct": -0.47,
+   "central_actions_mad": 328516069.8,
+   "volume_global_mad": 328516069.8,
+   "advancers": 29,
+   "decliners": 37,
+   "unchanged": 8,
+   "instruments_listed": 74,
+   "url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261023.pdf",
+   "collected_at": "2026-10-23T20:20:35.006820+00:00",
+   "parser_version": 2,
+   "implied_daily_pct": -0.466,
    "status": "validated"
   }
  },
@@ -42865,9 +42882,10 @@
   "2026-10-19": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261019.pdf",
   "2026-10-20": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261020.pdf",
   "2026-10-21": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261021.pdf",
-  "2026-10-22": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261022.pdf"
+  "2026-10-22": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261022.pdf",
+  "2026-10-23": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261023.pdf"
  },
  "listing_complete": true,
- "updated_at": "2026-10-22T20:22:20.184719+00:00",
+ "updated_at": "2026-10-23T20:20:35.006820+00:00",
  "source": "Bourse de Casablanca — Résumé de séance (PDF)"
 }

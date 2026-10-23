@@ -33854,5 +33854,22 @@
     "volume_global_mad": 196874931.58,
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "control": "validated"
+  },
+  {
+    "date": "2026-10-23",
+    "source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi": 17054.31,
+    "masi_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "masi_daily_pct_published": -0.47,
+    "volume_mad": 328516069.8,
+    "volume_source": "Bourse de Casablanca — Résumé de séance (PDF) — marché central actions",
+    "volume_global_mad": 328516069.8,
+    "breadth": 0.4394,
+    "advancers": 29,
+    "decliners": 37,
+    "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
+    "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261023.pdf",
+    "quality": "official_session_summary",
+    "control": "validated"
   }
 ]

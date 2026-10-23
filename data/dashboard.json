@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-22",
-  "composite": -4,
+  "as_of": "2026-10-23",
+  "composite": -5,
   "regime": "NEUTRAL",
-  "conclusion": "Market Flow neutre (+9). Momentum 1 séance +0.74% et 5 séances +0.80%. Couverture 100%.",
+  "conclusion": "Market Flow neutre (+7). Momentum 1 séance -0.47% et 5 séances +0.33%. Couverture 100%.",
   "scores": {
     "liquidity": -20,
-    "market_flow": 9,
+    "market_flow": 7,
     "global": 1
   },
   "sources": [
@@ -48,12 +48,12 @@
     "score_activation": "after source validation and sufficient history"
   },
   "market_flow_detail": {
-    "ret_1d_pct": 0.74,
-    "ret_5d_pct": 0.8,
-    "ret_20d_pct": -4.11,
-    "volume_vs_available_avg": 0.86,
+    "ret_1d_pct": -0.47,
+    "ret_5d_pct": 0.33,
+    "ret_20d_pct": -4.29,
+    "volume_vs_available_avg": 1.49,
     "volume_sessions": 20,
-    "breadth": 0.6197,
+    "breadth": 0.4394,
     "coverage": 1.0,
     "components_used": [
       "momentum",
@@ -210,7 +210,7 @@
         "source": "AMMC",
         "source_url": "https://www.ammc.ma/fr/donnees-statistiques",
         "note": "Score derived from official AMMC NAV and category performance; adjusted flows are estimates, not official subscriptions/redemptions.",
-        "age_days": 13
+        "age_days": 14
       },
       "bank_liquidity": {
         "weight": 30,
@@ -224,7 +224,7 @@
         "source": "Bank Al-Maghrib",
         "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
         "note": "Source officielle identifiée mais composante non activée: le niveau/variation des injections doit être extrait de façon comparable à la période précédente avant scoring.",
-        "age_days": 22
+        "age_days": 23
       },
       "money_market": {
         "weight": 20,
@@ -239,7 +239,7 @@
         "source": "Bank Al-Maghrib",
         "source_url": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire",
         "note": "Taux interbancaire moyen pondéré à 2,25 %, aligné sur le taux directeur. Score neutre: absence de tension/détente mesurable via le spread.",
-        "age_days": 22
+        "age_days": 23
       },
       "policy_rate": {
         "weight": 10,
@@ -254,7 +254,7 @@
         "source": "Bank Al-Maghrib",
         "source_url": "https://www.bkam.ma/Politique-monetaire/Decision-du-conseil/Decision-du-conseil-de-bank-al-maghrib-du-22-septembre-2026",
         "note": "Taux directeur maintenu à 2,25 %. Score 0 = impulsion neutre par absence de variation; le niveau absolu est conservé séparément.",
-        "age_days": 30
+        "age_days": 31
       }
     },
     "rule": "Chaque composante exige une valeur numérique officielle, une date de référence et verified=true. Le score est repondéré sur les seules composantes vérifiées; la couverture reste affichée séparément.",
@@ -276,15 +276,15 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-10-22T20:22:25.837825+00:00",
-    "history_sessions": 1985,
-    "observations": 1980,
-    "usable_5d": 1899,
-    "directional_accuracy_5d_pct": 54.4,
+    "computed_at": "2026-10-23T20:20:42.570263+00:00",
+    "history_sessions": 1986,
+    "observations": 1981,
+    "usable_5d": 1900,
+    "directional_accuracy_5d_pct": 54.5,
     "warning": "Diagnostic sur le MASI, sans coûts de transaction ; ne constitue pas une prévision."
   },
   "data_quality": {
-    "market_history_sessions": 1985,
+    "market_history_sessions": 1986,
     "market_flow_coverage": 1.0,
     "liquidity_coverage": 0.7,
     "composite_status": "NEUTRAL",
@@ -294,12 +294,12 @@
       "liquidité : composante bank_liquidity non vérifiée"
     ],
     "history": {
-      "sessions": 1985,
+      "sessions": 1986,
       "blocks": 1,
       "first_date": "2018-10-03",
-      "last_date": "2026-10-22",
+      "last_date": "2026-10-23",
       "largest_gap_days": 7,
-      "latest_contiguous_sessions": 1985
+      "latest_contiguous_sessions": 1986
     }
   },
   "methodology": {
@@ -314,14 +314,14 @@
     "market_flow": 35.0,
     "global": 15.0
   },
-  "retrieved_at": "2026-10-22T20:22:25.706270+00:00",
+  "retrieved_at": "2026-10-23T20:20:42.465101+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
-    "masi": 17134.15,
-    "drawdown_from_sample_peak_pct": -15.32,
+    "masi": 17054.31,
+    "drawdown_from_sample_peak_pct": -15.71,
     "sample_peak": 20233.5,
     "sample_low": 8987.89,
-    "sessions": 1985
+    "sessions": 1986
   },
   "global_detail": {
     "checked_at": "2026-10-22T18:54:34.671319+00:00",
