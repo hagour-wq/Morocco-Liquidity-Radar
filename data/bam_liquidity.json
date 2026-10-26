@@ -1,7 +1,11 @@
 {
-  "checked_at": "2026-10-22T18:52:57.638739+00:00",
+  "checked_at": "2026-10-26T18:59:38.628960+00:00",
   "verified": false,
   "candidates": [
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC356.pdf",
+      "format": "link"
+    },
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2026/Rap_Act_2025_22Sept2026_16h30.pdf",
       "format": "link"
@@ -45,50 +49,42 @@
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2026/Note-conjoncture347.pdf",
       "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/nc346.pdf",
-      "format": "link"
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2025/Rap_Act_2024_15Octobre2025.pdf",
-      "format": "link"
     }
   ],
   "pdf_inspections": [
+    {
+      "url": "https://www.finances.gov.ma/Publication/depf/2026/NC356.pdf",
+      "pages": 52,
+      "bytes": 7531507,
+      "matches": [
+        {
+          "page": 45,
+          "keyword": "injections de liquidité",
+          "context": "énué au cours du troisième trimestre 2026, se situant en moyenne hebdomadaire à 131,8 milliards de dirhams après 138,6 milliards au deuxième trimestre 2026. Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 148,5 milliards de dirhams après 158,7 milliards au deuxième trimestre 2026. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (53,2 milliards de dirhams après 59,1 milliards au T2-2026), les opérations de pensions livrées (48,3 milliards de dir"
+        },
+        {
+          "page": 45,
+          "keyword": "interventions de bank al-maghrib",
+          "context": "re 2026. Dans ce contexte, la Banque Centrale a réduit le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 148,5 milliards de dirhams après 158,7 milliards au deuxième trimestre 2026. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (53,2 milliards de dirhams après 59,1 milliards au T2-2026), les opérations de pensions livrées (48,3 milliards de dirhams après 52,2 milliards au T2-2026) et les prêts garantis accordés dans le cadre des programmes de soutien au financement de la TPME (47,1 milliards de dir"
+        }
+      ],
+      "numeric_candidates": [
+        {
+          "page": 45,
+          "liquidity_need_current_bn_mad": 131.8,
+          "liquidity_need_previous_bn_mad": 138.6,
+          "injections_current_bn_mad": 148.5,
+          "injections_previous_bn_mad": 158.7
+        }
+      ],
+      "verified": false
+    },
     {
       "url": "https://www.finances.gov.ma/Publication/depf/2026/Rap_Act_2025_22Sept2026_16h30.pdf",
       "pages": 78,
       "bytes": 7342459,
       "matches": [],
       "numeric_candidates": [],
-      "verified": false
-    },
-    {
-      "url": "https://www.finances.gov.ma/Publication/depf/2026/nc355.pdf",
-      "pages": 48,
-      "bytes": 11668398,
-      "matches": [
-        {
-          "page": 40,
-          "keyword": "injections de liquidité",
-          "context": "s banques s’est accru comparativement au mois précédent, se situant en moyenne hebdomadaire à 132,3 milliards de dirhams après 125,7 milliards en juillet. Dans ce contexte, la Banque Centrale a augmenté le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 150 milliards de dirhams après 144,1 milliards en juillet. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (54,6 milliards de dirhams après 48,9 milliards en juillet 2026), les opérations de pensions livrées à 1 et 3 mois (48,1 milliards de di"
-        },
-        {
-          "page": 40,
-          "keyword": "interventions de bank al-maghrib",
-          "context": ",7 milliards en juillet. Dans ce contexte, la Banque Centrale a augmenté le volume de ses injections de liquidité qui s’est établi en moyenne hebdomadaire à 150 milliards de dirhams après 144,1 milliards en juillet. Les interventions de Bank Al-Maghrib ont porté, essentiellement, sur les avances à 7 jours (54,6 milliards de dirhams après 48,9 milliards en juillet 2026), les opérations de pensions livrées à 1 et 3 mois (48,1 milliards de dirhams après 48,9 milliards en juillet 2026) et les opérations de prêts garantis accordés dans le cadre des programmes de soutien au finance"
-        }
-      ],
-      "numeric_candidates": [
-        {
-          "page": 40,
-          "liquidity_need_current_bn_mad": 132.3,
-          "liquidity_need_previous_bn_mad": 125.7,
-          "injections_current_bn_mad": 150.0,
-          "injections_previous_bn_mad": 144.1
-        }
-      ],
       "verified": false
     }
   ],

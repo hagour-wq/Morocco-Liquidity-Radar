@@ -33871,5 +33871,23 @@
     "source_url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-10/fr/resume_seance_20261023.pdf",
     "quality": "official_session_summary",
     "control": "validated"
+  },
+  {
+    "date": "2026-10-26",
+    "masi": 16999.5552,
+    "masi_previous_close": 17054.309,
+    "masi_high": 17159.3083,
+    "masi_low": 16997.984,
+    "volume_mad": null,
+    "volume_mad_official": 277816400.24,
+    "breadth": 0.2373,
+    "advancers": 14,
+    "decliners": 45,
+    "instruments": 81,
+    "source": "Bourse de Casablanca (live-market, séance clôturée)",
+    "masi_source": "Bourse de Casablanca (live-market, séance clôturée)",
+    "source_url": "https://www.casablanca-bourse.com/live-market/indices/cours?symbol=MASI",
+    "quality": "official_session_close",
+    "collected_at": "2026-10-26T18:59:18.029619+00:00"
   }
 ]
