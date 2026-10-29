@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-28T20:32:09.243537+00:00",
+ "generated_at": "2026-10-29T19:12:13.365991+00:00",
  "status": "RESEARCH_ONLY",
  "proxy_validation": {
-  "pairs": 731,
+  "pairs": 732,
   "correlation": 0.987,
   "mean_abs_gap_bp": 10.4,
   "note": "Rendements quotidiens du proxy vs MASI officiel/secondaire sur les séances communes."
@@ -20,9 +20,9 @@
   "5": {
    "period": {
     "start": "2024-01-19",
-    "end": "2026-10-22",
-    "years": 2.76,
-    "rebalances": 135
+    "end": "2026-10-29",
+    "years": 2.78,
+    "rebalances": 136
    },
    "parameters": {
     "hold_sessions": 5,
@@ -33,12 +33,12 @@
     "eligibility": "catégorie ÉLIGIBLE à la date du signal (montant moyen 20 j ≥ 1 M MAD)"
    },
    "strategy": {
-    "total_return_pct": 35.09,
-    "annualized_return_pct": 11.53,
-    "annualized_volatility_pct": 24.26,
-    "max_drawdown_pct": -42.32,
-    "sharpe": 0.38,
-    "periods": 135,
+    "total_return_pct": 29.06,
+    "annualized_return_pct": 9.62,
+    "annualized_volatility_pct": 24.35,
+    "max_drawdown_pct": -44.03,
+    "sharpe": 0.3,
+    "periods": 136,
     "equity_curve": [
      1.0,
      0.97529,
@@ -175,16 +175,17 @@
      1.3908,
      1.33004,
      1.3389,
-     1.35089
+     1.35089,
+     1.29059
     ]
    },
    "equal_weight_universe": {
-    "total_return_pct": 77.64,
-    "annualized_return_pct": 23.17,
-    "annualized_volatility_pct": 18.83,
+    "total_return_pct": 72.67,
+    "annualized_return_pct": 21.74,
+    "annualized_volatility_pct": 18.86,
     "max_drawdown_pct": -25.97,
-    "sharpe": 1.11,
-    "periods": 135,
+    "sharpe": 1.03,
+    "periods": 136,
     "equity_curve": [
      1.0,
      0.97819,
@@ -321,16 +322,17 @@
      1.8232,
      1.72618,
      1.76139,
-     1.77643
+     1.77643,
+     1.7267
     ]
    },
    "cap_weighted_proxy_masi": {
-    "total_return_pct": 41.61,
-    "annualized_return_pct": 13.45,
-    "annualized_volatility_pct": 16.66,
+    "total_return_pct": 39.07,
+    "annualized_return_pct": 12.61,
+    "annualized_volatility_pct": 16.65,
     "max_drawdown_pct": -14.09,
-    "sharpe": 0.67,
-    "periods": 135,
+    "sharpe": 0.62,
+    "periods": 136,
     "equity_curve": [
      1.0,
      0.99696,
@@ -467,16 +469,17 @@
      1.45502,
      1.38937,
      1.40659,
-     1.41607
+     1.41607,
+     1.39065
     ]
    },
    "masi_official": {
-    "total_return_pct": 35.07,
-    "annualized_return_pct": 11.52,
+    "total_return_pct": 32.45,
+    "annualized_return_pct": 10.65,
     "annualized_volatility_pct": 16.06,
     "max_drawdown_pct": -16.48,
-    "sharpe": 0.58,
-    "periods": 135,
+    "sharpe": 0.52,
+    "periods": 136,
     "equity_curve": [
      1.0,
      0.99572,
@@ -613,31 +616,32 @@
      1.38582,
      1.32039,
      1.34008,
-     1.35074
+     1.35074,
+     1.32451
     ]
    },
    "excess_vs_masi": {
-    "mean_period_pct": 0.033,
-    "t_stat": 0.18,
-    "hit_rate_pct": 41.5
+    "mean_period_pct": 0.014,
+    "t_stat": 0.08,
+    "hit_rate_pct": 41.2
    },
    "excess_vs_proxy": {
-    "mean_period_pct": -0.004,
-    "t_stat": -0.02,
-    "hit_rate_pct": 44.4
+    "mean_period_pct": -0.023,
+    "t_stat": -0.13,
+    "hit_rate_pct": 44.1
    },
    "quintiles": {
-    "Q1": 1.034,
-    "Q2": 0.639,
-    "Q3": 0.421,
-    "Q4": 0.272,
-    "Q5": 0.234
+    "Q1": 0.993,
+    "Q2": 0.615,
+    "Q3": 0.41,
+    "Q4": 0.249,
+    "Q5": 0.21
    },
    "q1_minus_q5": {
-    "mean_period_pct": 0.805,
-    "t_stat": 2.75
+    "mean_period_pct": 0.788,
+    "t_stat": 2.7
    },
-   "avg_turnover_pct": 45.9,
+   "avg_turnover_pct": 46.0,
    "avg_positions": 9.5,
    "cash_periods": 0,
    "dates": [
@@ -775,15 +779,16 @@
     "2026-10-01",
     "2026-10-08",
     "2026-10-15",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-29"
    ]
   },
   "10": {
    "period": {
     "start": "2024-01-19",
-    "end": "2026-10-15",
-    "years": 2.74,
-    "rebalances": 67
+    "end": "2026-10-29",
+    "years": 2.78,
+    "rebalances": 68
    },
    "parameters": {
     "hold_sessions": 10,
@@ -794,12 +799,12 @@
     "eligibility": "catégorie ÉLIGIBLE à la date du signal (montant moyen 20 j ≥ 1 M MAD)"
    },
    "strategy": {
-    "total_return_pct": 92.12,
-    "annualized_return_pct": 26.93,
-    "annualized_volatility_pct": 27.08,
-    "max_drawdown_pct": -22.97,
-    "sharpe": 0.91,
-    "periods": 67,
+    "total_return_pct": 89.39,
+    "annualized_return_pct": 25.87,
+    "annualized_volatility_pct": 26.93,
+    "max_drawdown_pct": -24.06,
+    "sharpe": 0.88,
+    "periods": 68,
     "equity_curve": [
      1.0,
      0.98828,
@@ -868,16 +873,17 @@
      2.11295,
      2.04322,
      1.96564,
-     1.92116
+     1.92116,
+     1.8939
     ]
    },
    "equal_weight_universe": {
-    "total_return_pct": 75.85,
-    "annualized_return_pct": 22.9,
-    "annualized_volatility_pct": 21.32,
-    "max_drawdown_pct": -24.3,
-    "sharpe": 0.97,
-    "periods": 67,
+    "total_return_pct": 73.37,
+    "annualized_return_pct": 21.92,
+    "annualized_volatility_pct": 21.21,
+    "max_drawdown_pct": -25.37,
+    "sharpe": 0.93,
+    "periods": 68,
     "equity_curve": [
      1.0,
      0.97906,
@@ -946,16 +952,17 @@
      1.94583,
      1.88656,
      1.81541,
-     1.75847
+     1.75847,
+     1.73367
     ]
    },
    "cap_weighted_proxy_masi": {
-    "total_return_pct": 40.3,
-    "annualized_return_pct": 13.16,
-    "annualized_volatility_pct": 17.57,
+    "total_return_pct": 38.71,
+    "annualized_return_pct": 12.51,
+    "annualized_volatility_pct": 17.48,
     "max_drawdown_pct": -14.16,
-    "sharpe": 0.62,
-    "periods": 67,
+    "sharpe": 0.59,
+    "periods": 68,
     "equity_curve": [
      1.0,
      0.98149,
@@ -1024,16 +1031,17 @@
      1.52297,
      1.482,
      1.45127,
-     1.40297
+     1.40297,
+     1.38706
     ]
    },
    "masi_official": {
-    "total_return_pct": 34.01,
-    "annualized_return_pct": 11.28,
-    "annualized_volatility_pct": 16.88,
-    "max_drawdown_pct": -15.89,
-    "sharpe": 0.54,
-    "periods": 67,
+    "total_return_pct": 32.45,
+    "annualized_return_pct": 10.65,
+    "annualized_volatility_pct": 16.79,
+    "max_drawdown_pct": -16.16,
+    "sharpe": 0.5,
+    "periods": 68,
     "equity_curve": [
      1.0,
      0.98489,
@@ -1102,31 +1110,32 @@
      1.45981,
      1.41773,
      1.38582,
-     1.34008
+     1.34008,
+     1.32451
     ]
    },
    "excess_vs_masi": {
-    "mean_period_pct": 0.628,
-    "t_stat": 1.66,
-    "hit_rate_pct": 53.7
+    "mean_period_pct": 0.615,
+    "t_stat": 1.65,
+    "hit_rate_pct": 52.9
    },
    "excess_vs_proxy": {
-    "mean_period_pct": 0.555,
-    "t_stat": 1.47,
-    "hit_rate_pct": 59.7
+    "mean_period_pct": 0.543,
+    "t_stat": 1.46,
+    "hit_rate_pct": 58.8
    },
    "quintiles": {
-    "Q1": 1.767,
-    "Q2": 1.379,
-    "Q3": 1.031,
-    "Q4": 0.656,
-    "Q5": 0.391
+    "Q1": 1.743,
+    "Q2": 1.322,
+    "Q3": 0.978,
+    "Q4": 0.653,
+    "Q5": 0.355
    },
    "q1_minus_q5": {
-    "mean_period_pct": 1.248,
-    "t_stat": 2.17
+    "mean_period_pct": 1.247,
+    "t_stat": 2.2
    },
-   "avg_turnover_pct": 49.2,
+   "avg_turnover_pct": 49.4,
    "avg_positions": 9.5,
    "cash_periods": 0,
    "dates": [
@@ -1196,15 +1205,16 @@
     "2026-09-02",
     "2026-09-16",
     "2026-10-01",
-    "2026-10-15"
+    "2026-10-15",
+    "2026-10-29"
    ]
   },
   "20": {
    "period": {
     "start": "2024-01-19",
-    "end": "2026-10-01",
-    "years": 2.7,
-    "rebalances": 33
+    "end": "2026-10-29",
+    "years": 2.78,
+    "rebalances": 34
    },
    "parameters": {
     "hold_sessions": 20,
@@ -1215,12 +1225,12 @@
     "eligibility": "catégorie ÉLIGIBLE à la date du signal (montant moyen 20 j ≥ 1 M MAD)"
    },
    "strategy": {
-    "total_return_pct": 145.1,
-    "annualized_return_pct": 39.39,
-    "annualized_volatility_pct": 25.41,
-    "max_drawdown_pct": -16.31,
-    "sharpe": 1.46,
-    "periods": 33,
+    "total_return_pct": 136.57,
+    "annualized_return_pct": 36.37,
+    "annualized_volatility_pct": 25.34,
+    "max_drawdown_pct": -19.01,
+    "sharpe": 1.35,
+    "periods": 34,
     "equity_curve": [
      1.0,
      1.03746,
@@ -1255,16 +1265,17 @@
      2.71286,
      2.58078,
      2.6515,
-     2.45104
+     2.45104,
+     2.36574
     ]
    },
    "equal_weight_universe": {
-    "total_return_pct": 75.62,
-    "annualized_return_pct": 23.2,
-    "annualized_volatility_pct": 19.19,
-    "max_drawdown_pct": -21.3,
-    "sharpe": 1.09,
-    "periods": 33,
+    "total_return_pct": 67.42,
+    "annualized_return_pct": 20.4,
+    "annualized_volatility_pct": 19.32,
+    "max_drawdown_pct": -24.97,
+    "sharpe": 0.94,
+    "periods": 34,
     "equity_curve": [
      1.0,
      1.02103,
@@ -1299,16 +1310,17 @@
      1.90417,
      1.84208,
      1.88999,
-     1.75618
+     1.75618,
+     1.67424
     ]
    },
    "cap_weighted_proxy_masi": {
-    "total_return_pct": 42.23,
-    "annualized_return_pct": 13.94,
-    "annualized_volatility_pct": 14.79,
+    "total_return_pct": 35.94,
+    "annualized_return_pct": 11.7,
+    "annualized_volatility_pct": 14.96,
     "max_drawdown_pct": -14.54,
-    "sharpe": 0.79,
-    "periods": 33,
+    "sharpe": 0.63,
+    "periods": 34,
     "equity_curve": [
      1.0,
      1.01211,
@@ -1343,16 +1355,17 @@
      1.44998,
      1.41585,
      1.49737,
-     1.42234
+     1.42234,
+     1.35942
     ]
    },
    "masi_official": {
-    "total_return_pct": 38.58,
-    "annualized_return_pct": 12.85,
-    "annualized_volatility_pct": 14.3,
-    "max_drawdown_pct": -14.37,
-    "sharpe": 0.74,
-    "periods": 33,
+    "total_return_pct": 32.45,
+    "annualized_return_pct": 10.65,
+    "annualized_volatility_pct": 14.48,
+    "max_drawdown_pct": -16.16,
+    "sharpe": 0.58,
+    "periods": 34,
     "equity_curve": [
      1.0,
      1.01468,
@@ -1387,31 +1400,32 @@
      1.42314,
      1.40328,
      1.45981,
-     1.38582
+     1.38582,
+     1.32451
     ]
    },
    "excess_vs_masi": {
-    "mean_period_pct": 1.925,
-    "t_stat": 2.45,
-    "hit_rate_pct": 66.7
+    "mean_period_pct": 1.896,
+    "t_stat": 2.48,
+    "hit_rate_pct": 67.6
    },
    "excess_vs_proxy": {
-    "mean_period_pct": 1.84,
-    "t_stat": 2.35,
-    "hit_rate_pct": 63.6
+    "mean_period_pct": 1.814,
+    "t_stat": 2.39,
+    "hit_rate_pct": 64.7
    },
    "quintiles": {
-    "Q1": 3.663,
-    "Q2": 3.503,
-    "Q3": 2.632,
-    "Q4": 0.516,
-    "Q5": 0.271
+    "Q1": 3.448,
+    "Q2": 3.297,
+    "Q3": 2.459,
+    "Q4": 0.365,
+    "Q5": 0.058
    },
    "q1_minus_q5": {
-    "mean_period_pct": 3.214,
-    "t_stat": 2.51
+    "mean_period_pct": 3.254,
+    "t_stat": 2.62
    },
-   "avg_turnover_pct": 61.2,
+   "avg_turnover_pct": 60.9,
    "avg_positions": 9.5,
    "cash_periods": 0,
    "dates": [
@@ -1447,7 +1461,8 @@
     "2026-06-30",
     "2026-07-28",
     "2026-09-02",
-    "2026-10-01"
+    "2026-10-01",
+    "2026-10-29"
    ]
   }
  },
