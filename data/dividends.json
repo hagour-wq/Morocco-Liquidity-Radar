@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T19:03:59.007914+00:00",
+ "generated_at": "2026-10-30T19:01:04.611065+00:00",
  "source": "Bourse de Casablanca — Calendrier financier",
  "source_url": "https://www.casablanca-bourse.com/emetteurs/calendrier-financier",
  "years_dividends": [
@@ -501,7 +501,8 @@
      "nature": "Ordinaire",
      "objets": "Approbation des comptes"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 20.0 MAD, bulletin None MAD (ajusté)"
   },
   "AGM": {
    "dividends": [
@@ -5090,7 +5091,8 @@
      "nature": "Ordinaire",
      "objets": "Approbation des comptes"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 96.0 MAD, bulletin None MAD (ajusté)"
   },
   "HPS": {
    "dividends": [
@@ -7895,7 +7897,8 @@
      "nature": "Ordinaire",
      "objets": "Approbation des comptes"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 30.0 MAD, bulletin None MAD (ajusté)"
   },
   "S2M": {
    "dividends": [
@@ -10697,7 +10700,8 @@
      "nature": "Ordinaire",
      "objets": "- Approbation des comptes - Reconduction des mandats"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 11.0 MAD, bulletin None MAD (ajusté)"
   },
   "SNP": {
    "dividends": [
@@ -11438,7 +11442,8 @@
      "nature": "Ordinaire",
      "objets": "Affectation des résultats Approbation des comptes Renouvellement du mandat de commissaire aux comptes"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 15.0 MAD, bulletin None MAD (ajusté)"
   },
   "AKT": {
    "dividends": [
@@ -11587,7 +11592,8 @@
      "nature": "Ordinaire",
      "objets": "Approbation des comptes Affectation des résultats"
     }
-   ]
+   ],
+   "bulletin_check": "montant différent : calendrier 9.73 MAD, bulletin None MAD (ajusté)"
   },
   "GTM": {
    "dividends": [
@@ -11600,7 +11606,8 @@
      "published": "12,00 MAD"
     }
    ],
-   "meetings": []
+   "meetings": [],
+   "bulletin_check": "montant différent : calendrier 12.0 MAD, bulletin None MAD (ajusté)"
   },
   "VCN": {
    "dividends": [
@@ -12345,6 +12352,13 @@
  "bulletin_mismatches": {
   "BOA": "montant différent : calendrier 5.0 MAD, bulletin 4.89 MAD (ajusté)",
   "CDM": "montant différent : calendrier 48.0 MAD, bulletin 47.81 MAD (ajusté)",
-  "MNG": "montant différent : calendrier 55.0 MAD, bulletin 5.5 MAD (ajusté)"
+  "LHM": "montant différent : calendrier 96.0 MAD, bulletin None MAD (ajusté)",
+  "MNG": "montant différent : calendrier 55.0 MAD, bulletin 5.5 MAD (ajusté)",
+  "MSA": "montant différent : calendrier 11.0 MAD, bulletin None MAD (ajusté)",
+  "GTM": "montant différent : calendrier 12.0 MAD, bulletin None MAD (ajusté)",
+  "AFI": "montant différent : calendrier 20.0 MAD, bulletin None MAD (ajusté)",
+  "PRO": "montant différent : calendrier 30.0 MAD, bulletin None MAD (ajusté)",
+  "CAP": "montant différent : calendrier 9.73 MAD, bulletin None MAD (ajusté)",
+  "TGC": "montant différent : calendrier 15.0 MAD, bulletin None MAD (ajusté)"
  }
 }

@@ -1,35 +1,35 @@
 {
   "method": "Momentum diagnostic; not a validated investment strategy.",
-  "history_sessions": 1990,
-  "observations": 1985,
+  "history_sessions": 1991,
+  "observations": 1986,
   "gap_policy": "returns only within contiguous market blocks; max calendar gap 10 days",
   "horizons": {
     "1d": {
-      "n": 1908,
+      "n": 1909,
       "directional_accuracy_pct": 55.1,
-      "avg_forward_pct": 0.03
+      "avg_forward_pct": 0.02
     },
     "5d": {
-      "n": 1904,
+      "n": 1905,
       "directional_accuracy_pct": 54.4,
       "avg_forward_pct": 0.12
     },
     "10d": {
-      "n": 1899,
+      "n": 1900,
       "directional_accuracy_pct": 53.1,
       "avg_forward_pct": 0.25
     },
     "20d": {
-      "n": 1889,
+      "n": 1890,
       "directional_accuracy_pct": 53.5,
       "avg_forward_pct": 0.49
     }
   },
   "signal_counts": {
     "risk_on_like": 165,
-    "risk_off_like": 155
+    "risk_off_like": 156
   },
-  "usable_5d": 1904,
+  "usable_5d": 1905,
   "directional_accuracy_5d_pct": 54.4,
   "sample_warning": "Interpret only after sufficient historical depth; no transaction costs or execution model.",
   "series": [
@@ -15759,7 +15759,7 @@
       "fwd_1d_pct": -0.83,
       "fwd_5d_pct": -2.93,
       "fwd_10d_pct": -1.77,
-      "fwd_20d_pct": null
+      "fwd_20d_pct": -4.43
     },
     {
       "date": "2026-10-05",
@@ -15838,7 +15838,7 @@
       "score": 6,
       "fwd_1d_pct": -0.13,
       "fwd_5d_pct": 0.33,
-      "fwd_10d_pct": null,
+      "fwd_10d_pct": -2.71,
       "fwd_20d_pct": null
     },
     {
@@ -15877,7 +15877,7 @@
       "date": "2026-10-23",
       "score": -4,
       "fwd_1d_pct": -0.32,
-      "fwd_5d_pct": null,
+      "fwd_5d_pct": -3.03,
       "fwd_10d_pct": null,
       "fwd_20d_pct": null
     },
@@ -15908,6 +15908,14 @@
     {
       "date": "2026-10-29",
       "score": -19,
+      "fwd_1d_pct": -1.57,
+      "fwd_5d_pct": null,
+      "fwd_10d_pct": null,
+      "fwd_20d_pct": null
+    },
+    {
+      "date": "2026-10-30",
+      "score": -34,
       "fwd_1d_pct": null,
       "fwd_5d_pct": null,
       "fwd_10d_pct": null,
