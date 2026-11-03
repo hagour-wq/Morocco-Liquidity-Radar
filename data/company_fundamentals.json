@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T19:08:38.471479+00:00",
+ "generated_at": "2026-11-03T19:09:15.226068+00:00",
  "source_registry": "data/fundamentals_sources.json",
  "listing": "https://www.casablanca-bourse.com/apropos/publications/emetteurs",
  "companies": [
@@ -12,10 +12,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/addoha_2025.pdf",
    "isin": "MA0000011512",
    "shares": 402551254,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -124,9 +124,9 @@
     "revenue_growth_pct": 4.4026,
     "equity_ratio_pct": 45.6638,
     "net_income_growth_pct": 65.4797,
-    "market_cap_mad": 13726997761.4,
-    "implied_per": 30.2544,
-    "implied_pb": 1.4477
+    "market_cap_mad": 13847763137.6,
+    "implied_per": 30.5206,
+    "implied_pb": 1.4605
    }
   },
   {
@@ -138,10 +138,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/adi_2025.pdf",
    "isin": "MA0000011819",
    "shares": 22078588,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -246,9 +246,9 @@
     "revenue_growth_pct": 2.8835,
     "equity_ratio_pct": 41.1224,
     "net_income_growth_pct": 35.0052,
-    "market_cap_mad": 7526590649.2,
-    "implied_per": 18.4656,
-    "implied_pb": 1.8849
+    "market_cap_mad": 7606073566.0,
+    "implied_per": 18.6606,
+    "implied_pb": 1.9048
    }
   },
   {
@@ -260,10 +260,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/afi_2025.pdf",
    "isin": "MA0000012114",
    "shares": 291500,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -352,10 +352,10 @@
    "model_note": "courtier en assurance : comptes commerciaux (commissions), modèle société non financière",
    "isin": "MA0000012296",
    "shares": 1000000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -558,10 +558,10 @@
    "model_note": "courtier en assurance : comptes commerciaux (commissions), modèle société non financière",
    "isin": "MA0000010944",
    "shares": 200000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -670,9 +670,9 @@
     "net_margin_pct": 39.2414,
     "revenue_growth_pct": 9.1844,
     "net_income_growth_pct": 10.7691,
-    "market_cap_mad": 1400000000.0,
-    "implied_per": 18.9699,
-    "implied_pb": 8.1444
+    "market_cap_mad": 1376000000.0,
+    "implied_per": 18.6447,
+    "implied_pb": 8.0047
    }
   },
   {
@@ -684,10 +684,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/akdital_2025.pdf",
    "isin": "MA0000012585",
    "shares": 14159207,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -793,9 +793,9 @@
     "revenue_growth_pct": 49.4017,
     "equity_ratio_pct": 30.8394,
     "net_income_growth_pct": 41.0257,
-    "market_cap_mad": 13861863653.0,
-    "implied_per": 31.2429,
-    "implied_pb": 4.8578
+    "market_cap_mad": 13890182067.0,
+    "implied_per": 31.3067,
+    "implied_pb": 4.8677
    }
   },
   {
@@ -807,10 +807,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/alm_-_resultats_2025.pdf",
    "isin": "MA0000010936",
    "shares": 465954,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -931,10 +931,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/aradei_capital_2025.pdf",
    "isin": "MA0000012460",
    "shares": 12568130,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1051,9 +1051,9 @@
     "ebitda_margin_pct": 73.4639,
     "equity_ratio_pct": 55.3894,
     "net_income_growth_pct": 79.663,
-    "market_cap_mad": 5190637690.0,
-    "implied_per": 9.7128,
-    "implied_pb": 0.9534
+    "market_cap_mad": 5216402356.5,
+    "implied_per": 9.761,
+    "implied_pb": 0.9581
    }
   },
   {
@@ -1065,10 +1065,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/atlantasanad_2025.pdf",
    "isin": "MA0000011710",
    "shares": 60283595,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -1194,7 +1194,7 @@
     "scope": "consolidated",
     "equity_group_mad": null,
     "revenue_growth_pct": 6.311,
-    "market_cap_mad": 6872329830.0
+    "market_cap_mad": 6902471627.5
    }
   },
   {
@@ -1206,10 +1206,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/awb_2025.pdf",
    "isin": "MA0000012445",
    "shares": 215140839,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1342,9 +1342,9 @@
     "cost_of_risk_to_loans_pct": 0.8182,
     "pnb_growth_pct": 1.2005,
     "net_income_growth_pct": 11.9982,
-    "market_cap_mad": 143068657935.0,
-    "implied_per": 13.4402,
-    "implied_pb": 2.0606
+    "market_cap_mad": 143778622703.7,
+    "implied_per": 13.5069,
+    "implied_pb": 2.0708
    }
   },
   {
@@ -1356,10 +1356,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/bcp_2025_0.pdf",
    "isin": "MA0000011884",
    "shares": 203312473,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -1492,9 +1492,9 @@
     "cost_of_risk_to_loans_pct": 1.7947,
     "pnb_growth_pct": 5.4058,
     "net_income_growth_pct": 8.6366,
-    "market_cap_mad": 49811555885.0,
-    "implied_per": 11.061,
-    "implied_pb": 1.3472
+    "market_cap_mad": 49404930939.0,
+    "implied_per": 10.9707,
+    "implied_pb": 1.3362
    }
   },
   {
@@ -1507,10 +1507,10 @@
    "force_ocr": "chiffres coupés dans la couche texte, ex. « 5 514  07 9 »",
    "isin": "MA0000012437",
    "shares": 225404715,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -2619,9 +2619,9 @@
     "cost_of_risk_to_loans_pct": 1.4241,
     "pnb_growth_pct": 8.667,
     "net_income_growth_pct": 11.266,
-    "market_cap_mad": 42601491135.0,
-    "implied_per": 11.1711,
-    "implied_pb": 1.319
+    "market_cap_mad": 42139411469.25,
+    "implied_per": 11.0499,
+    "implied_pb": 1.3047
    }
   },
   {
@@ -2633,10 +2633,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cash_plus_2025.pdf",
    "isin": "MA0000012767",
    "shares": 24553090,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "REJECTED",
    "errors": [
@@ -2714,8 +2714,8 @@
     "eps_current_shares_mad": 9.8682,
     "equity_group_mad": null,
     "net_income_growth_pct": 23.3259,
-    "market_cap_mad": 5016196287.0,
-    "implied_per": 20.7028
+    "market_cap_mad": 5278914350.0,
+    "implied_per": 21.787
    }
   },
   {
@@ -2727,10 +2727,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cdm_2025.pdf",
    "isin": "MA0000010381",
    "shares": 11626499,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -2866,9 +2866,9 @@
     "cost_of_risk_to_loans_pct": 0.6094,
     "pnb_growth_pct": 8.0292,
     "net_income_growth_pct": 16.5466,
-    "market_cap_mad": 10521981595.0,
-    "implied_per": 12.1846,
-    "implied_pb": 1.2827
+    "market_cap_mad": 10463849100.0,
+    "implied_per": 12.1172,
+    "implied_pb": 1.2756
    }
   },
   {
@@ -2880,10 +2880,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cfg_bank_2025.pdf",
    "isin": "MA0000012627",
    "shares": 35007960,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3009,9 +3009,9 @@
     "cost_of_risk_to_loans_pct": 0.2096,
     "pnb_growth_pct": 32.4855,
     "net_income_growth_pct": 41.4884,
-    "market_cap_mad": 6546488520.0,
-    "implied_per": 17.672,
-    "implied_pb": 3.1693
+    "market_cap_mad": 6511480560.0,
+    "implied_per": 17.5775,
+    "implied_pb": 3.1524
    }
   },
   {
@@ -3023,10 +3023,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cih_bank_2025.pdf",
    "isin": "MA0000011454",
    "shares": 38641338,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3154,9 +3154,9 @@
     "cost_of_risk_to_loans_pct": 1.0237,
     "pnb_growth_pct": 14.4112,
     "net_income_growth_pct": 24.3737,
-    "market_cap_mad": 11437836048.0,
-    "implied_per": 10.4996,
-    "implied_pb": 1.1709
+    "market_cap_mad": 11225308689.0,
+    "implied_per": 10.3045,
+    "implied_pb": 1.1491
    }
   },
   {
@@ -3168,10 +3168,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cmgp_2025.pdf",
    "isin": "MA0000012718",
    "shares": 17000900,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3288,9 +3288,9 @@
     "ebitda_margin_pct": 16.0697,
     "equity_ratio_pct": 50.6217,
     "net_income_growth_pct": 33.6808,
-    "market_cap_mad": 4267225900.0,
-    "implied_per": 17.4879,
-    "implied_pb": 1.5304
+    "market_cap_mad": 4318228600.0,
+    "implied_per": 17.6969,
+    "implied_pb": 1.5487
    }
   },
   {
@@ -3302,10 +3302,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cmt_2025.pdf",
    "isin": "MA0000011793",
    "shares": 1681233,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3399,9 +3399,9 @@
     "net_margin_pct": 28.4546,
     "revenue_growth_pct": 17.7513,
     "equity_ratio_pct": 46.89,
-    "market_cap_mad": 6065888664.0,
-    "implied_per": 30.8751,
-    "implied_pb": 6.7313
+    "market_cap_mad": 5837240976.0,
+    "implied_per": 29.7113,
+    "implied_pb": 6.4776
    }
   },
   {
@@ -3413,10 +3413,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/colorado_rfa_2025.pdf",
    "isin": "MA0000011934",
    "shares": 16117611,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3495,9 +3495,9 @@
     "revenue_growth_pct": 3.1396,
     "equity_ratio_pct": 61.5537,
     "net_income_growth_pct": 44.4276,
-    "market_cap_mad": 1160467992.0,
-    "implied_per": 17.7227,
-    "implied_pb": 3.2314
+    "market_cap_mad": 1176424426.89,
+    "implied_per": 17.9663,
+    "implied_pb": 3.2759
    }
   },
   {
@@ -3509,10 +3509,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cartier_saada_2025.pdf",
    "isin": "MA0000011868",
    "shares": 5265000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "period_end_registry": "2025-12-31",
    "text_source": "pdf_text",
    "status": "VERIFIED",
@@ -3585,8 +3585,8 @@
     "net_margin_pct": -9.2933,
     "revenue_growth_pct": -7.0008,
     "net_income_growth_pct": -547.0025,
-    "market_cap_mad": 98455500.0,
-    "implied_pb": 0.5892
+    "market_cap_mad": 99455850.0,
+    "implied_pb": 0.5952
    }
   },
   {
@@ -3598,10 +3598,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/cosumar_2025.pdf",
    "isin": "MA0000012247",
    "shares": 94487143,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3706,9 +3706,9 @@
     "revenue_growth_pct": 2.4271,
     "equity_ratio_pct": 49.9535,
     "net_income_growth_pct": -17.2507,
-    "market_cap_mad": 16256512953.15,
-    "implied_per": 23.1015,
-    "implied_pb": 2.8855
+    "market_cap_mad": 16157301453.0,
+    "implied_per": 22.9605,
+    "implied_pb": 2.8679
    }
   },
   {
@@ -3720,10 +3720,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/dari_couspate_2025.pdf",
    "isin": "MA0000011421",
    "shares": 298375,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3816,10 +3816,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/disty_2025.pdf",
    "isin": "MA0000012536",
    "shares": 998110,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -3888,9 +3888,9 @@
     "revenue_growth_pct": 16.3461,
     "equity_ratio_pct": 38.2316,
     "net_income_growth_pct": 33.6399,
-    "market_cap_mad": 338359290.0,
-    "implied_per": 13.0751,
-    "implied_pb": 1.8286
+    "market_cap_mad": 344347950.0,
+    "implied_per": 13.3065,
+    "implied_pb": 1.861
    }
   },
   {
@@ -3902,10 +3902,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/eqdom_2025.pdf",
    "isin": "MA0000010357",
    "shares": 1670250,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4046,10 +4046,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sgtm_2025.pdf",
    "isin": "MA0000012783",
    "shares": 60000000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4166,9 +4166,9 @@
     "revenue_growth_pct": 36.64,
     "equity_ratio_pct": 21.3104,
     "net_income_growth_pct": 127.5407,
-    "market_cap_mad": 32580000000.0,
-    "implied_per": 24.2782,
-    "implied_pb": 9.1764
+    "market_cap_mad": 31920000000.0,
+    "implied_per": 23.7864,
+    "implied_pb": 8.9905
    }
   },
   {
@@ -4180,10 +4180,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/hps_2025.pdf",
    "isin": "MA0000012619",
    "shares": 7406190,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4314,9 +4314,9 @@
     "revenue_growth_pct": 22.3533,
     "equity_ratio_pct": 39.6803,
     "net_income_growth_pct": 40.4763,
-    "market_cap_mad": 3888249750.0,
-    "implied_per": 36.7587,
-    "implied_pb": 4.7613
+    "market_cap_mad": 3880102941.0,
+    "implied_per": 36.6817,
+    "implied_pb": 4.7513
    }
   },
   {
@@ -4328,10 +4328,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/maroc_telecom_2025_0.pdf",
    "isin": "MA0000011488",
    "shares": 879095340,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -4546,9 +4546,9 @@
     "revenue_growth_pct": -0.049,
     "equity_ratio_pct": 32.6931,
     "net_income_growth_pct": 286.8962,
-    "market_cap_mad": 72964913220.0,
-    "implied_per": 10.4714,
-    "implied_pb": 3.5631
+    "market_cap_mad": 72982495126.8,
+    "implied_per": 10.474,
+    "implied_pb": 3.5639
    }
   },
   {
@@ -4560,10 +4560,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/label_vie_2025.pdf",
    "isin": "MA0000011801",
    "shares": 2893957,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4641,9 +4641,9 @@
     "net_margin_pct": 3.1228,
     "revenue_growth_pct": 12.8909,
     "net_income_growth_pct": 6.8263,
-    "market_cap_mad": 10736580470.0,
-    "implied_per": 18.55,
-    "implied_pb": 2.9254
+    "market_cap_mad": 10707640900.0,
+    "implied_per": 18.5,
+    "implied_pb": 2.9175
    }
   },
   {
@@ -4655,10 +4655,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/m2m_group_2025.pdf",
    "isin": "MA0000011678",
    "shares": 647777,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4774,10 +4774,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/microdata_2025.pdf",
    "isin": "MA0000012163",
    "shares": 1680000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4870,10 +4870,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/mle_2025.pdf",
    "isin": "MA0000010035",
    "shares": 2776768,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -4986,10 +4986,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/managem_2025.pdf",
    "isin": "MA0000012866",
    "shares": 118646760,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5120,10 +5120,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/mox_rfa_2025.pdf",
    "isin": "MA0000010985",
    "shares": 812500,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5245,10 +5245,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/marsa_2025.pdf",
    "isin": "MA0000012312",
    "shares": 73395600,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5356,9 +5356,9 @@
     "revenue_growth_pct": 15.5096,
     "equity_ratio_pct": 49.2809,
     "net_income_growth_pct": 25.3979,
-    "market_cap_mad": 54312744000.0,
-    "implied_per": 34.1855,
-    "implied_pb": 13.4167
+    "market_cap_mad": 53953105560.0,
+    "implied_per": 33.9592,
+    "implied_pb": 13.3278
    }
   },
   {
@@ -5370,10 +5370,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/oulmes_2025_cp_rfa_2025.pdf",
    "isin": "MA0000010415",
    "shares": 1980000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5469,9 +5469,9 @@
     "revenue_growth_pct": 10.5635,
     "equity_ratio_pct": 20.653,
     "net_income_growth_pct": 94.0538,
-    "market_cap_mad": 2368080000.0,
-    "implied_per": 21.0815,
-    "implied_pb": 3.0048
+    "market_cap_mad": 2237400000.0,
+    "implied_per": 19.9181,
+    "implied_pb": 2.839
    }
   },
   {
@@ -5483,10 +5483,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/promopharm_2025.pdf",
    "isin": "MA0000011660",
    "shares": 1000000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5580,10 +5580,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/rds_2025.pdf",
    "isin": "MA0000012239",
    "shares": 26208850,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -5779,10 +5779,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/risma_2025.pdf",
    "isin": "MA0000011462",
    "shares": 16012132,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5887,9 +5887,9 @@
     "revenue_growth_pct": 29.2581,
     "ebitda_margin_pct": 38.6455,
     "net_income_growth_pct": 47.3151,
-    "market_cap_mad": 4579469752.0,
-    "implied_per": 16.9848,
-    "implied_pb": 2.7131
+    "market_cap_mad": 4707566808.0,
+    "implied_per": 17.4599,
+    "implied_pb": 2.789
    }
   },
   {
@@ -5901,10 +5901,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sanlam_rfa_2025.pdf",
    "isin": "MA0000012007",
    "shares": 5341874,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -5993,9 +5993,9 @@
     "revenue_growth_pct": 3.4003,
     "equity_ratio_pct": 24.8628,
     "net_income_growth_pct": -2.0836,
-    "market_cap_mad": 15507460222.0,
-    "implied_per": 22.9223,
-    "implied_pb": 2.5578
+    "market_cap_mad": 16340792566.0,
+    "implied_per": 24.154,
+    "implied_pb": 2.6953
    }
   },
   {
@@ -6007,10 +6007,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sbm_2025.pdf",
    "isin": "MA0000010365",
    "shares": 2829653,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -6271,8 +6271,8 @@
     "net_margin_pct": 11.1471,
     "revenue_growth_pct": 7.6015,
     "net_income_growth_pct": 59.4362,
-    "market_cap_mad": 5376340700.0,
-    "implied_per": 15.6582
+    "market_cap_mad": 5616861205.0,
+    "implied_per": 16.3587
    }
   },
   {
@@ -6284,10 +6284,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sonasid_2025_0.pdf",
    "isin": "MA0000010019",
    "shares": 3900000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6394,9 +6394,9 @@
     "revenue_growth_pct": 20.5481,
     "equity_ratio_pct": 36.7286,
     "net_income_growth_pct": 92.4595,
-    "market_cap_mad": 6158100000.0,
-    "implied_per": 22.6546,
-    "implied_pb": 3.0905
+    "market_cap_mad": 6048900000.0,
+    "implied_per": 22.2528,
+    "implied_pb": 3.0357
    }
   },
   {
@@ -6408,10 +6408,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/salafin_2025.pdf",
    "isin": "MA0000011744",
    "shares": 3124119,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6513,9 +6513,9 @@
     "cost_of_risk_to_loans_pct": 1.0806,
     "pnb_growth_pct": 1.4232,
     "net_income_growth_pct": 3.1885,
-    "market_cap_mad": 1280888790.0,
-    "implied_per": 13.3264,
-    "implied_pb": 1.4709
+    "market_cap_mad": 1284325320.9,
+    "implied_per": 13.3621,
+    "implied_pb": 1.4748
    }
   },
   {
@@ -6527,10 +6527,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/smi_2025.pdf",
    "isin": "MA0000010068",
    "shares": 1645090,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6609,9 +6609,9 @@
     "revenue_growth_pct": 48.7617,
     "equity_ratio_pct": 78.1544,
     "net_income_growth_pct": 112.6764,
-    "market_cap_mad": 8383378640.0,
-    "implied_per": 21.111,
-    "implied_pb": 5.0495
+    "market_cap_mad": 8307704500.0,
+    "implied_per": 20.9205,
+    "implied_pb": 5.004
    }
   },
   {
@@ -6623,10 +6623,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sna_2025.pdf",
    "isin": "MA0000012700",
    "shares": 17695150,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "ocr": {
     "engine": "tesseract",
     "language": "fra",
@@ -6730,8 +6730,8 @@
     "net_margin_pct": 11.9484,
     "revenue_growth_pct": -34.3814,
     "net_income_growth_pct": 24.9905,
-    "market_cap_mad": 815746415.0,
-    "implied_per": 31.114
+    "market_cap_mad": 813799948.5,
+    "implied_per": 31.0397
    }
   },
   {
@@ -6743,10 +6743,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/snep_2025.pdf",
    "isin": "MA0000011728",
    "shares": 2400000,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6851,8 +6851,8 @@
     "net_margin_pct": -24.8341,
     "revenue_growth_pct": 17.7409,
     "equity_ratio_pct": 28.476,
-    "market_cap_mad": 624000000.0,
-    "implied_pb": 1.2812
+    "market_cap_mad": 600000000.0,
+    "implied_pb": 1.2319
    }
   },
   {
@@ -6864,10 +6864,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/sothema_2025.pdf",
    "isin": "MA0000012833",
    "shares": 38309500,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -6976,9 +6976,9 @@
     "revenue_growth_pct": 14.5519,
     "equity_ratio_pct": 57.511,
     "net_income_growth_pct": 22.2774,
-    "market_cap_mad": 11416231000.0,
-    "implied_per": 29.6121,
-    "implied_pb": 4.3579
+    "market_cap_mad": 11856790250.0,
+    "implied_per": 30.7548,
+    "implied_pb": 4.5261
    }
   },
   {
@@ -6991,10 +6991,10 @@
    "no_statements": "communiqué de presse (chiffres arrondis en millions, sans bilan ni compte de résultat) ; états financiers renvoyés au rapport financier annuel de l'émetteur",
    "isin": "MA0000012056",
    "shares": 1248515,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "status": "NO_STATEMENTS",
    "reason": "document publié sans états financiers : communiqué de presse (chiffres arrondis en millions, sans bilan ni compte de résultat) ; états financiers renvoyés au rapport financier annuel de l'émetteur"
   },
@@ -7007,10 +7007,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/tgcc_2025.pdf",
    "isin": "MA0000012528",
    "shares": 34674332,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "text_source": "pdf_text",
    "status": "VERIFIED",
    "errors": [],
@@ -7107,9 +7107,9 @@
     "revenue_growth_pct": 57.055,
     "equity_ratio_pct": 31.1653,
     "net_income_growth_pct": 82.452,
-    "market_cap_mad": 19414158486.8,
-    "implied_per": 20.3919,
-    "implied_pb": 4.2724
+    "market_cap_mad": 19421093353.2,
+    "implied_per": 20.3992,
+    "implied_pb": 4.2739
    }
   },
   {
@@ -7121,10 +7121,10 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/pemetteur/2026-07/taqa_morocco_2025.pdf",
    "isin": "MA0000012205",
    "shares": 23588542,
-   "shares_source": "bulletin de la cote 2026-11-02",
+   "shares_source": "bulletin de la cote 2026-11-03",
    "listing_exchange": "Casablanca Stock Exchange",
    "listing_country": "MA",
-   "collected_at": "2026-11-02T19:08:38.471479+00:00",
+   "collected_at": "2026-11-03T19:09:15.226068+00:00",
    "period_end_registry": "2025-12-31",
    "text_source": "pdf_text",
    "status": "VERIFIED",
@@ -7252,9 +7252,9 @@
     "ebitda_margin_pct": 30.0714,
     "equity_ratio_pct": 36.939,
     "net_income_growth_pct": -6.8484,
-    "market_cap_mad": 37741667200.0,
-    "implied_per": 38.4836,
-    "implied_pb": 5.5726
+    "market_cap_mad": 37364250528.0,
+    "implied_per": 38.0987,
+    "implied_pb": 5.5169
    }
   }
  ]
