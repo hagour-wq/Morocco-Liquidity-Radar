@@ -1,39 +1,15 @@
 {
-  "checked_at": "2026-11-02T19:34:48.030158+00:00",
+  "checked_at": "2026-11-03T19:33:00.592034+00:00",
   "source": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs",
-  "reports": [],
-  "errors": [
+  "reports": [
     {
-      "url": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs?field_annee_value_1=2025&field_emetteur_target_id_verf=All&page=0",
-      "error": "URLError:<urlopen error timed out>"
-    },
-    {
-      "url": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs?field_annee_value_1=2025&field_emetteur_target_id_verf=All&page=1",
-      "error": "URLError:<urlopen error timed out>"
-    },
-    {
-      "url": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs?field_annee_value_1=2025&field_emetteur_target_id_verf=All&page=2",
-      "error": "URLError:<urlopen error timed out>"
-    },
-    {
-      "url": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs?field_annee_value_1=2025&field_emetteur_target_id_verf=All&page=3",
-      "error": "URLError:<urlopen error timed out>"
-    },
-    {
-      "url": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs?field_annee_value_1=2025&field_emetteur_target_id_verf=All&page=4",
-      "error": "URLError:<urlopen error timed out>"
-    },
-    {
-      "url": "https://www.ammc.ma/fr/liste-etats-financiers-emetteurs?field_annee_value_1=2025&field_emetteur_target_id_verf=All&page=5",
-      "error": "URLError:<urlopen error timed out>"
-    },
-    {
-      "url": "https://www.ammc.ma/fr/actualites/lammc-met-sur-son-site-internet-les-publications-realisees-par-les-emetteurs-en-1042",
-      "error": "URLError:<urlopen error timed out>"
+      "label": "Ennakl Automobiles - Résultats financiers du 1er semestre 2026",
+      "url": "https://www.ammc.ma/sites/default/files/Ennakl_Automobiles_S1_26.pdf"
     }
   ],
-  "status": "NO_LINKS_VERIFIED",
+  "errors": [],
+  "status": "FOUND_LINKS",
   "policy": "Issuer PDF links are source candidates, not verified numerical EPS, PER or dividend observations.",
-  "report_count": 0,
+  "report_count": 1,
   "link_policy": "Only direct PDF document links; navigation and press-release pages are excluded"
 }
