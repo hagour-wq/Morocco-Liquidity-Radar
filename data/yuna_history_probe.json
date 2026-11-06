@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T23:53:54.294291+00:00",
+  "checked_at": "2026-11-06T23:31:12.578302+00:00",
   "url": "https://www.yuna.ma/bourse/en-direct",
   "status": "REACHABLE_HTML_DISCOVERY",
   "access": true,
@@ -13,6 +13,7 @@
   "historical_ui": true,
   "dates_sample": [
     "2015-12-29",
+    "2026-11-06",
     "2026-11-05"
   ],
   "relevant_links": [
