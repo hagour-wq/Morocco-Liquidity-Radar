@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-11-10T01:32:23.714305+00:00",
-  "written": "2026-11-09",
+  "run_at": "2026-11-10T23:23:34.082556+00:00",
+  "written": "2026-11-10",
   "reason": null,
   "errors": [],
   "session_status": "closed",
-  "session_date": "2026-11-09",
-  "masi_live": 17431.0454,
-  "total_sessions": 1996
+  "session_date": "2026-11-10",
+  "masi_live": 17606.9679,
+  "total_sessions": 1997
 }

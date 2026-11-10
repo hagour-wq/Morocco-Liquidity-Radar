@@ -70,7 +70,7 @@
   "note": "null means unavailable. verified must remain false until the official value and reference date are validated.",
   "discovery": {
     "ammc": {
-      "count": 10,
+      "count": 9,
       "candidates": [
         "https://www.ammc.ma/fr/espace-epargnants/opcvm",
         "https://www.ammc.ma/fr/espace-epargnants/reseaux-de-commercialisation-des-opcvm",
@@ -80,8 +80,7 @@
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_02102026.xls",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
         "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2018-09-2026.xls",
-        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-11092026.xlsx",
-        "https://www.ammc.ma/fr/actualites/liste-des-visas-dopcvm-accordes-par-lammc-au-titre-du-mois-doctobre-2026"
+        "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-11092026.xlsx"
       ],
       "status": "FOUND"
     },
@@ -96,7 +95,7 @@
     "bam": "discovery_only_until_parser_validates_schema",
     "safety": "preserve_last_verified_value_on_failure"
   },
-  "collector_checked_at": "2026-11-10T01:32:43.640207+00:00",
+  "collector_checked_at": "2026-11-10T23:23:51.600291+00:00",
   "data_endpoints": {
     "ammc_statistics_page": "https://www.ammc.ma/fr/donnees-statistiques",
     "bam_money_market_page": "https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-monetaire/Marche-monetaire"
