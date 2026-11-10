@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T23:10:53.816675+00:00",
+  "checked_at": "2026-11-10T01:33:17.396244+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -7,10 +7,10 @@
       "series": "DGS10",
       "source": "US_TREASURY",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "date": "2026-11-06",
-      "value": 4.86,
-      "change_5obs": -8.0,
-      "score": 9.6,
+      "date": "2026-11-09",
+      "value": 4.88,
+      "change_5obs": -3.0,
+      "score": 3.6,
       "verified": true,
       "failed_sources": []
     },
@@ -18,9 +18,9 @@
       "series": "VIXCLS",
       "source": "CBOE",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "date": "2026-11-05",
-      "value": 28.18,
-      "change_5obs": 63.837,
+      "date": "2026-11-06",
+      "value": 25.64,
+      "change_5obs": 32.029,
       "score": -100,
       "verified": true,
       "failed_sources": []
@@ -29,10 +29,10 @@
       "series": "DXY",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
-      "date": "2026-11-06",
-      "value": 102.27899932861328,
-      "change_5obs": 0.392,
-      "score": -3.1,
+      "date": "2026-11-10",
+      "value": 101.6729965209961,
+      "change_5obs": -0.076,
+      "score": 0.6,
       "verified": true,
       "failed_sources": []
     },
@@ -40,14 +40,14 @@
       "series": "SP500",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-      "date": "2026-11-06",
-      "value": 7376.85986328125,
-      "change_5obs": -2.681,
-      "score": -21.4,
+      "date": "2026-11-09",
+      "value": 7549.93994140625,
+      "change_5obs": 0.113,
+      "score": 0.9,
       "verified": true,
       "failed_sources": []
     }
   },
   "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-  "score": -29
+  "score": -24
 }
