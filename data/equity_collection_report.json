@@ -1,19 +1,19 @@
 {
-  "run_at": "2026-11-12T00:45:52.845258+00:00",
+  "run_at": "2026-11-12T23:42:09.059173+00:00",
   "source": "Bourse de Casablanca",
   "endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
   "session_status": "closed",
-  "session_date": "2026-11-11",
+  "session_date": "2026-11-12",
   "universe_size": 81,
   "price_basis": "cours bruts non ajustés (adj_close = null)",
   "tickers": {
     "ADH": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 39.5,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -31,11 +31,11 @@
     "ADI": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 381.6,
+      "last_date": "2026-11-12",
+      "last_close": 379.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -52,11 +52,11 @@
     "AFI": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 325.6,
+      "last_date": "2026-11-12",
+      "last_close": 326.1,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -73,10 +73,10 @@
     "AFM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 1250.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -85,7 +85,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 196,
+      "no_trade_sessions": 197,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -94,25 +94,25 @@
     "AGM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 6880.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "no_trade_sessions": 527,
+      "no_trade_sessions": 528,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "AKT": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1062.0,
+      "last_date": "2026-11-12",
+      "last_close": 1070.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -129,10 +129,10 @@
     "ALM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 1889.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -141,7 +141,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 131,
+      "no_trade_sessions": 132,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -150,10 +150,10 @@
     "ARD": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 423.05,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -171,11 +171,11 @@
     "ATH": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 60.0,
+      "last_date": "2026-11-12",
+      "last_close": 59.7,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -192,11 +192,11 @@
     "ATL": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 118.0,
+      "last_date": "2026-11-12",
+      "last_close": 119.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -213,11 +213,11 @@
     "ATW": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 680.0,
+      "last_date": "2026-11-12",
+      "last_close": 681.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -234,24 +234,24 @@
     "BAL": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 198.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "no_trade_sessions": 480,
+      "no_trade_sessions": 481,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "BCI": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 563.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -269,11 +269,11 @@
     "BCP": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 250.0,
+      "last_date": "2026-11-12",
+      "last_close": 251.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -290,11 +290,11 @@
     "BOA": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 194.4,
+      "last_date": "2026-11-12",
+      "last_close": 195.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -311,11 +311,11 @@
     "CAP": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 227,
-      "received": 32,
+      "sessions": 228,
+      "received": 33,
       "first_date": "2025-12-08",
-      "last_date": "2026-11-11",
-      "last_close": 220.0,
+      "last_date": "2026-11-12",
+      "last_close": 217.1,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -332,10 +332,10 @@
     "CDM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 970.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -344,7 +344,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 120,
+      "no_trade_sessions": 121,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -353,11 +353,11 @@
     "CFG": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 712,
-      "received": 32,
+      "sessions": 713,
+      "received": 33,
       "first_date": "2023-12-18",
-      "last_date": "2026-11-11",
-      "last_close": 197.1,
+      "last_date": "2026-11-12",
+      "last_close": 202.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -374,11 +374,11 @@
     "CIH": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 319.0,
+      "last_date": "2026-11-12",
+      "last_close": 317.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -395,11 +395,11 @@
     "CMA": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1489.0,
+      "last_date": "2026-11-12",
+      "last_close": 1462.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -416,11 +416,11 @@
     "CMG": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 468,
-      "received": 32,
+      "sessions": 469,
+      "received": 33,
       "first_date": "2024-12-16",
-      "last_date": "2026-11-11",
-      "last_close": 279.9,
+      "last_date": "2026-11-12",
+      "last_close": 283.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -437,11 +437,11 @@
     "CMT": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 3656.0,
+      "last_date": "2026-11-12",
+      "last_close": 3639.0,
       "flagged_sessions": 39,
       "flags_sample": [
         [
@@ -482,11 +482,11 @@
     "COL": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 74.0,
+      "last_date": "2026-11-12",
+      "last_close": 74.88,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -503,11 +503,11 @@
     "CRS": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 19.25,
+      "last_date": "2026-11-12",
+      "last_close": 19.55,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -524,11 +524,11 @@
     "CSR": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 178.15,
+      "last_date": "2026-11-12",
+      "last_close": 179.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -545,11 +545,11 @@
     "CTM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 796.0,
+      "last_date": "2026-11-12",
+      "last_close": 789.9,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -566,11 +566,11 @@
     "DHO": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 49.4,
+      "last_date": "2026-11-12",
+      "last_close": 50.02,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -587,12 +587,12 @@
     "DIS": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": null,
-      "flagged_sessions": 750,
+      "flagged_sessions": 751,
       "flags_sample": [
         [
           "2023-10-23",
@@ -615,19 +615,19 @@
           "close_non_positive"
         ]
       ],
-      "no_trade_sessions": 751,
+      "no_trade_sessions": 752,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "DLM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": null,
-      "flagged_sessions": 750,
+      "flagged_sessions": 751,
       "flags_sample": [
         [
           "2023-10-23",
@@ -650,32 +650,32 @@
           "close_non_positive"
         ]
       ],
-      "no_trade_sessions": 751,
+      "no_trade_sessions": 752,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "DRI": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 3980.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "no_trade_sessions": 645,
+      "no_trade_sessions": 646,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "DWY": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 749.0,
+      "last_date": "2026-11-12",
+      "last_close": 748.9,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -692,11 +692,11 @@
     "DYT": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 351.0,
+      "last_date": "2026-11-12",
+      "last_close": 356.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -713,10 +713,10 @@
     "EQD": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 1400.0,
       "flagged_sessions": 44,
       "flags_sample": [
@@ -741,18 +741,18 @@
           "close_non_positive"
         ]
       ],
-      "no_trade_sessions": 336,
+      "no_trade_sessions": 337,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "FBR": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 333.0,
+      "last_date": "2026-11-12",
+      "last_close": 330.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -769,11 +769,11 @@
     "GAZ": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 3600.0,
+      "last_date": "2026-11-12",
+      "last_close": 3595.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -790,11 +790,11 @@
     "GTM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 221,
-      "received": 32,
+      "sessions": 222,
+      "received": 33,
       "first_date": "2025-12-16",
-      "last_date": "2026-11-11",
-      "last_close": 628.0,
+      "last_date": "2026-11-12",
+      "last_close": 625.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -811,10 +811,10 @@
     "HPS": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 560.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -832,11 +832,11 @@
     "IAM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 90.0,
+      "last_date": "2026-11-12",
+      "last_close": 90.05,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -853,10 +853,10 @@
     "IBC": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 52.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -874,11 +874,11 @@
     "IMO": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 91.8,
+      "last_date": "2026-11-12",
+      "last_close": 91.3,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -895,10 +895,10 @@
     "INV": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 115.25,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -907,7 +907,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 88,
+      "no_trade_sessions": 89,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -916,11 +916,11 @@
     "JET": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1585.0,
+      "last_date": "2026-11-12",
+      "last_close": 1594.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -937,11 +937,11 @@
     "LBV": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 3856.0,
+      "last_date": "2026-11-12",
+      "last_close": 3850.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -958,11 +958,11 @@
     "LES": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 287.35,
+      "last_date": "2026-11-12",
+      "last_close": 287.3,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -979,10 +979,10 @@
     "LHM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 1680.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1000,11 +1000,11 @@
     "M2M": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 392.0,
+      "last_date": "2026-11-12",
+      "last_close": 393.9,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1021,10 +1021,10 @@
     "MAB": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 909.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1033,7 +1033,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 425,
+      "no_trade_sessions": 426,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -1042,11 +1042,11 @@
     "MDP": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 22.5,
+      "last_date": "2026-11-12",
+      "last_close": 22.78,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1063,11 +1063,11 @@
     "MIC": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 783.0,
+      "last_date": "2026-11-12",
+      "last_close": 780.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1084,10 +1084,10 @@
     "MLE": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 350.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1096,7 +1096,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 488,
+      "no_trade_sessions": 489,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -1105,11 +1105,11 @@
     "MNG": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1440.0,
+      "last_date": "2026-11-12",
+      "last_close": 1430.0,
       "flagged_sessions": 3,
       "flags_sample": [
         [
@@ -1142,11 +1142,11 @@
     "MOX": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 380.95,
+      "last_date": "2026-11-12",
+      "last_close": 379.9,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1163,11 +1163,11 @@
     "MSA": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 791.0,
+      "last_date": "2026-11-12",
+      "last_close": 790.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1184,11 +1184,11 @@
     "MUT": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 230.0,
+      "last_date": "2026-11-12",
+      "last_close": 231.5,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1205,25 +1205,25 @@
     "NEJ": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 5621.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "no_trade_sessions": 683,
+      "no_trade_sessions": 684,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "NKL": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 46.95,
+      "last_date": "2026-11-12",
+      "last_close": 46.5,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1240,10 +1240,10 @@
     "OUL": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 1130.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1252,7 +1252,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 513,
+      "no_trade_sessions": 514,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -1261,25 +1261,25 @@
     "PRO": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 1424.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "no_trade_sessions": 461,
+      "no_trade_sessions": 462,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "RDS": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 174.9,
+      "last_date": "2026-11-12",
+      "last_close": 176.6,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1296,11 +1296,11 @@
     "REB": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 91.15,
+      "last_date": "2026-11-12",
+      "last_close": 90.0,
       "flagged_sessions": 0,
       "flags_sample": [],
       "no_trade_sessions": 399,
@@ -1310,11 +1310,11 @@
     "RIS": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 337.0,
+      "last_date": "2026-11-12",
+      "last_close": 325.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1331,11 +1331,11 @@
     "S2M": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 494.9,
+      "last_date": "2026-11-12",
+      "last_close": 497.9,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1352,10 +1352,10 @@
     "SAH": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 3200.0,
       "flagged_sessions": 26,
       "flags_sample": [
@@ -1380,7 +1380,7 @@
           "close_non_positive"
         ]
       ],
-      "no_trade_sessions": 245,
+      "no_trade_sessions": 246,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -1389,12 +1389,12 @@
     "SAM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": null,
-      "flagged_sessions": 750,
+      "flagged_sessions": 751,
       "flags_sample": [
         [
           "2023-10-23",
@@ -1417,18 +1417,18 @@
           "close_non_positive"
         ]
       ],
-      "no_trade_sessions": 751,
+      "no_trade_sessions": 752,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "SBM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1950.0,
+      "last_date": "2026-11-12",
+      "last_close": 1998.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1445,11 +1445,11 @@
     "SID": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1900.0,
+      "last_date": "2026-11-12",
+      "last_close": 1888.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1466,10 +1466,10 @@
     "SLF": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 420.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1487,11 +1487,11 @@
     "SMI": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 5055.0,
+      "last_date": "2026-11-12",
+      "last_close": 5030.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1508,11 +1508,11 @@
     "SNA": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 51.49,
+      "last_date": "2026-11-12",
+      "last_close": 50.8,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1529,11 +1529,11 @@
     "SNP": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 254.8,
+      "last_date": "2026-11-12",
+      "last_close": 249.95,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1550,11 +1550,11 @@
     "SOT": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 329.4,
+      "last_date": "2026-11-12",
+      "last_close": 327.7,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1577,10 +1577,10 @@
     "SRM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 440.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1589,7 +1589,7 @@
           "incomplete_volume,stale_copy_of_previous_session"
         ]
       ],
-      "no_trade_sessions": 195,
+      "no_trade_sessions": 196,
       "incomplete_volume_sessions": [
         "2026-09-17"
       ],
@@ -1598,11 +1598,11 @@
     "STR": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 160.0,
+      "last_date": "2026-11-12",
+      "last_close": 162.45,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1619,11 +1619,11 @@
     "T2S": {
       "status": "OK",
       "mode": "full",
-      "sessions": 71,
-      "received": 71,
+      "sessions": 72,
+      "received": 72,
       "first_date": "2026-07-27",
-      "last_date": "2026-11-11",
-      "last_close": 218.0,
+      "last_date": "2026-11-12",
+      "last_close": 216.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1640,10 +1640,10 @@
     "TGC": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 650.0,
       "flagged_sessions": 1,
       "flags_sample": [
@@ -1661,11 +1661,11 @@
     "TMA": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1375.0,
+      "last_date": "2026-11-12",
+      "last_close": 1352.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1682,11 +1682,11 @@
     "TQM": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 1777.0,
+      "last_date": "2026-11-12",
+      "last_close": 1770.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1703,25 +1703,25 @@
     "UMR": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
+      "last_date": "2026-11-12",
       "last_close": 169.0,
       "flagged_sessions": 0,
       "flags_sample": [],
-      "no_trade_sessions": 557,
+      "no_trade_sessions": 558,
       "incomplete_volume_sessions": [],
       "corporate_actions_suspected": []
     },
     "VCN": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 324,
-      "received": 32,
+      "sessions": 325,
+      "received": 33,
       "first_date": "2025-07-15",
-      "last_date": "2026-11-11",
-      "last_close": 321.3,
+      "last_date": "2026-11-12",
+      "last_close": 327.2,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1738,11 +1738,11 @@
     "WAA": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 5300.0,
+      "last_date": "2026-11-12",
+      "last_close": 5401.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
@@ -1759,11 +1759,11 @@
     "ZDJ": {
       "status": "OK",
       "mode": "incremental",
-      "sessions": 751,
-      "received": 32,
+      "sessions": 752,
+      "received": 33,
       "first_date": "2023-10-23",
-      "last_date": "2026-11-11",
-      "last_close": 267.8,
+      "last_date": "2026-11-12",
+      "last_close": 265.0,
       "flagged_sessions": 1,
       "flags_sample": [
         [
