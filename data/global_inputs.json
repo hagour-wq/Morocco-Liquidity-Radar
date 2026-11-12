@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T23:26:47.022884+00:00",
+  "checked_at": "2026-11-12T00:45:51.547026+00:00",
   "verified": true,
   "coverage": 1.0,
   "components": {
@@ -18,10 +18,10 @@
       "series": "VIXCLS",
       "source": "CBOE",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "date": "2026-11-09",
-      "value": 19.92,
-      "change_5obs": -5.816,
-      "score": 23.3,
+      "date": "2026-11-10",
+      "value": 19.46,
+      "change_5obs": -6.577,
+      "score": 26.3,
       "verified": true,
       "failed_sources": []
     },
@@ -29,10 +29,10 @@
       "series": "DXY",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
-      "date": "2026-11-10",
-      "value": 102.21700286865234,
-      "change_5obs": 0.341,
-      "score": -2.7,
+      "date": "2026-11-12",
+      "value": 102.86199951171875,
+      "change_5obs": 1.332,
+      "score": -10.7,
       "verified": true,
       "failed_sources": []
     },
@@ -40,14 +40,14 @@
       "series": "SP500",
       "source": "YAHOO_FINANCE",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-      "date": "2026-11-10",
-      "value": 7520.93017578125,
-      "change_5obs": -0.634,
-      "score": -5.1,
+      "date": "2026-11-11",
+      "value": 7619.3798828125,
+      "change_5obs": -0.901,
+      "score": -7.2,
       "verified": true,
       "failed_sources": []
     }
   },
   "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-  "score": 3
+  "score": 1
 }
