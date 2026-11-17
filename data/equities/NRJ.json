@@ -1,0 +1,27 @@
+{
+ "ticker": "NRJ",
+ "name": "JET ENERGY",
+ "isin": null,
+ "code_valeur": "NRJ",
+ "sector": "Electricité",
+ "compartment": "Principal F",
+ "shares_outstanding": 13125000,
+ "listing_exchange": "Casablanca Stock Exchange",
+ "listing_country": "MA",
+ "currency": "MAD",
+ "listing_verified_by": "Présence dans la liste officielle live-market/actions de la Bourse de Casablanca",
+ "source": "Bourse de Casablanca",
+ "source_endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
+ "updated_at": "2026-11-17T01:53:36.755387+00:00",
+ "corporate_actions_suspected": [],
+ "fields": {
+  "close": "dernier cours (MAD)",
+  "adj_close": "null : non fourni de façon fiable",
+  "volume": "titres échangés",
+  "turnover_mad": "montant échangé (MAD)",
+  "trades": "nombre de transactions"
+ },
+ "rows": [
+{"date":"2026-11-16","open":171.55,"high":171.55,"low":171.55,"close":171.55,"adj_close":null,"volume":99993.0,"turnover_mad":17153799.15,"trades":1450.0,"market_cap_mad":2251593750.0,"collected_at":"2026-11-17T01:53:36.755387+00:00","traded":true,"incomplete_volume":false,"status":"validated"}
+ ]
+}

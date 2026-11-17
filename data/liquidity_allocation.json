@@ -1,88 +1,88 @@
 {
- "generated_at": "2026-11-13T23:35:57.886864+00:00",
- "as_of": "2026-10-30",
+ "generated_at": "2026-11-17T01:53:08.002158+00:00",
+ "as_of": "2026-11-09",
  "source": "AMMC — statistiques hebdomadaires des OPCVM",
- "source_url": "https://www.ammc.ma/sites/default/files/STAT_OPCVM_HEBDO_AMMC%2030_10_2026.xlsx",
- "total_amount_mad": 817896726807,
+ "source_url": "https://www.ammc.ma/sites/default/files/STAT-OPCVM-HEBDO-AMMC-09112026.xlsx",
+ "total_amount_mad": 832893254047,
  "categories": [
   {
    "category": "Monétaire",
    "group": "Monétaire",
-   "amount_mad": 143581053834,
-   "share_pct": 17.55,
-   "weekly_pct": -4.0549507171519,
-   "monthly_pct": 1.35560317443888,
-   "annual_pct": 30.4094041483554,
+   "amount_mad": 151547041557,
+   "share_pct": 18.2,
+   "weekly_pct": 5.54807720825519,
+   "monthly_pct": 5.54807720825519,
+   "annual_pct": 37.6446185773314,
    "funds": 73,
-   "performance_weekly_pct": 0.05154612314377533,
-   "flow_last_week_mad": null,
-   "flow_4w_mad": -2357109914,
-   "flow_8w_mad": 4112549129
+   "performance_weekly_pct": 0.05991378284237252,
+   "flow_last_week_mad": 7879962882,
+   "flow_4w_mad": 12561356884,
+   "flow_8w_mad": 16729363335
   },
   {
    "category": "Obligations CT",
    "group": "Obligataire",
-   "amount_mad": 142819655482,
-   "share_pct": 17.46,
-   "weekly_pct": 1.2550732633377,
-   "monthly_pct": 13.1667063572643,
-   "annual_pct": 26.1478853454089,
+   "amount_mad": 142972827480,
+   "share_pct": 17.17,
+   "weekly_pct": 0.107248541878404,
+   "monthly_pct": 0.107248541878404,
+   "annual_pct": 26.2831771130521,
    "funds": 74,
-   "performance_weekly_pct": 0.07532260024390615,
-   "flow_last_week_mad": null,
-   "flow_4w_mad": 143215540,
-   "flow_8w_mad": -4623285456
+   "performance_weekly_pct": 0.08193972774401426,
+   "flow_last_week_mad": 36145961,
+   "flow_4w_mad": 14118863609,
+   "flow_8w_mad": -4227177798
   },
   {
    "category": "Obligations MLT",
    "group": "Obligataire",
-   "amount_mad": 346217196840,
-   "share_pct": 42.33,
-   "weekly_pct": -0.816045959300599,
-   "monthly_pct": -2.28501602406092,
-   "annual_pct": -7.17557575382833,
+   "amount_mad": 345310994952,
+   "share_pct": 41.46,
+   "weekly_pct": -0.261743754080294,
+   "monthly_pct": -0.261743754080294,
+   "annual_pct": -7.41853788655381,
    "funds": 219,
-   "performance_weekly_pct": -0.10755213129464081,
-   "flow_last_week_mad": null,
-   "flow_4w_mad": -2313253300,
-   "flow_8w_mad": -4202122304
+   "performance_weekly_pct": 0.06602472151604609,
+   "flow_last_week_mad": -1134790828,
+   "flow_4w_mad": -3497831110,
+   "flow_8w_mad": -4871753380
   },
   {
    "category": "Diversifiés",
    "group": "Diversifié",
-   "amount_mad": 104899838072,
-   "share_pct": 12.83,
-   "weekly_pct": -1.43316162213026,
-   "monthly_pct": -4.13641289970816,
-   "annual_pct": 2.09684290868826,
+   "amount_mad": 106811978930,
+   "share_pct": 12.82,
+   "weekly_pct": 1.82282536648415,
+   "monthly_pct": 1.82282536648415,
+   "annual_pct": 3.95789005960729,
    "funds": 144,
-   "performance_weekly_pct": -1.3024287632240203,
-   "flow_last_week_mad": null,
-   "flow_4w_mad": -505202402,
-   "flow_8w_mad": -496497068
+   "performance_weekly_pct": 1.9530459895452423,
+   "flow_last_week_mad": -136601223,
+   "flow_4w_mad": -359343412,
+   "flow_8w_mad": -619998042
   },
   {
    "category": "Actions",
    "group": "Actions",
-   "amount_mad": 67083407927,
-   "share_pct": 8.2,
-   "weekly_pct": -3.62911726491325,
-   "monthly_pct": -8.97651679136651,
-   "annual_pct": -13.1187646693649,
+   "amount_mad": 70729512242,
+   "share_pct": 8.49,
+   "weekly_pct": 5.435180512115,
+   "monthly_pct": 5.435180512115,
+   "annual_pct": -8.39661269798947,
    "funds": 121,
-   "performance_weekly_pct": -3.209636924021791,
-   "flow_last_week_mad": null,
-   "flow_4w_mad": -1156440368,
-   "flow_8w_mad": -1253764240
+   "performance_weekly_pct": 5.351830256092411,
+   "flow_last_week_mad": 55914192,
+   "flow_4w_mad": -716776901,
+   "flow_8w_mad": -1186230535
   },
   {
    "category": "Contractuel",
    "group": "Contractuel",
-   "amount_mad": 13295574652,
-   "share_pct": 1.63,
-   "weekly_pct": -7.08724797755162,
-   "monthly_pct": -10.6988320151147,
-   "annual_pct": 51.0682809163104,
+   "amount_mad": 15520898886,
+   "share_pct": 1.86,
+   "weekly_pct": 16.7373302226563,
+   "monthly_pct": 16.7373302226563,
+   "annual_pct": 76.3530779549633,
    "funds": 6,
    "performance_weekly_pct": null,
    "flow_last_week_mad": null,
@@ -93,33 +93,33 @@
  "groups": [
   {
    "group": "Obligataire",
-   "amount_mad": 489036852322,
-   "flow_4w_mad": -2170037760,
-   "share_pct": 59.79
+   "amount_mad": 488283822432,
+   "flow_4w_mad": 10621032499,
+   "share_pct": 58.63
   },
   {
    "group": "Monétaire",
-   "amount_mad": 143581053834,
-   "flow_4w_mad": -2357109914,
-   "share_pct": 17.55
+   "amount_mad": 151547041557,
+   "flow_4w_mad": 12561356884,
+   "share_pct": 18.2
   },
   {
    "group": "Diversifié",
-   "amount_mad": 104899838072,
-   "flow_4w_mad": -505202402,
-   "share_pct": 12.83
+   "amount_mad": 106811978930,
+   "flow_4w_mad": -359343412,
+   "share_pct": 12.82
   },
   {
    "group": "Actions",
-   "amount_mad": 67083407927,
-   "flow_4w_mad": -1156440368,
-   "share_pct": 8.2
+   "amount_mad": 70729512242,
+   "flow_4w_mad": -716776901,
+   "share_pct": 8.49
   },
   {
    "group": "Contractuel",
-   "amount_mad": 13295574652,
+   "amount_mad": 15520898886,
    "flow_4w_mad": null,
-   "share_pct": 1.63
+   "share_pct": 1.86
   }
  ],
  "weeks": [
@@ -432,6 +432,37 @@
      "market_effect_mad": -1091843633
     }
    }
+  },
+  {
+   "from": "2026-10-30",
+   "to": "2026-11-09",
+   "flows": {
+    "Actions": {
+     "flow_mad": 55914192,
+     "flow_pct": 0.083,
+     "market_effect_mad": 3590190122
+    },
+    "Diversifiés": {
+     "flow_mad": -136601223,
+     "flow_pct": -0.13,
+     "market_effect_mad": 2048742081
+    },
+    "Monétaire": {
+     "flow_mad": 7879962882,
+     "flow_pct": 5.488,
+     "market_effect_mad": 86024841
+    },
+    "Obligations CT": {
+     "flow_mad": 36145961,
+     "flow_pct": 0.025,
+     "market_effect_mad": 117026037
+    },
+    "Obligations MLT": {
+     "flow_mad": -1134790828,
+     "flow_pct": -0.328,
+     "market_effect_mad": 228588940
+    }
+   }
   }
  ],
  "history": [
@@ -542,8 +573,17 @@
    "Diversifiés": 104899838072,
    "Actions": 67083407927,
    "Contractuel": 13295574652
+  },
+  {
+   "date": "2026-11-09",
+   "Monétaire": 151547041557,
+   "Obligations CT": 142972827480,
+   "Obligations MLT": 345310994952,
+   "Diversifiés": 106811978930,
+   "Actions": 70729512242,
+   "Contractuel": 15520898886
   }
  ],
- "summary": "Sur les 4 dernières semaines, l'épargne OPCVM s'est dirigée vers Obligations CT (+0,1 Md MAD) et a quitté Monétaire (-2,4 Md MAD), Obligations MLT (-2,3 Md MAD) (flux estimés, hors effet de marché).",
+ "summary": "Sur les 4 dernières semaines, l'épargne OPCVM s'est dirigée vers Obligations CT (+14,1 Md MAD), Monétaire (+12,6 Md MAD) et a quitté Obligations MLT (-3,5 Md MAD), Actions (-0,7 Md MAD) (flux estimés, hors effet de marché).",
  "method": "Encours et parts : chiffres officiels AMMC. Flux = actif net fin − actif net début × (1 + performance hebdomadaire de l'indice de la catégorie) : estimation de la collecte nette, l'AMMC ne publiant pas les souscriptions / rachats dans ce fichier."
 }
