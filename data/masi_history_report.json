@@ -1,18 +1,18 @@
 {
- "run_at": "2026-11-18T02:08:12.123648+00:00",
+ "run_at": "2026-11-19T01:43:44.811118+00:00",
  "source": "https://www.casablanca-bourse.com/market-data/editions-statistiques",
  "errors": [],
- "parsed": 1,
+ "parsed": 0,
  "corrections": [],
  "added": [],
- "listing_pages": 4,
+ "listing_pages": 3,
  "listing_complete": true,
  "pdfs_listed": 2541,
  "listed_range": [
   "2016-08-01",
   "2026-11-17"
  ],
- "remaining_before_run": 1,
+ "remaining_before_run": 0,
  "remaining_after_run": 0,
  "unparsed_format": [
   "2016-08-01",

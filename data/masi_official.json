@@ -40626,8 +40626,8 @@
    "url": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-11/fr/resume_seance_20261117.pdf",
    "collected_at": "2026-11-18T02:08:12.123648+00:00",
    "parser_version": 2,
-   "implied_daily_pct": -0.0274,
-   "status": "validated"
+   "status": "validated",
+   "implied_daily_pct": -0.0274
   }
  },
  "listing": {
@@ -43174,6 +43174,6 @@
   "2026-11-17": "https://www.casablanca-bourse.com/sites/default/files/editionstatistique/2026-11/fr/resume_seance_20261117.pdf"
  },
  "listing_complete": true,
- "updated_at": "2026-11-18T02:08:12.123648+00:00",
+ "updated_at": "2026-11-19T01:43:44.811118+00:00",
  "source": "Bourse de Casablanca — Résumé de séance (PDF)"
 }
