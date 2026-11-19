@@ -1,12 +1,12 @@
 {
   "as_of": "2026-11-17",
-  "composite": -9,
-  "regime": "NEUTRAL",
-  "conclusion": "Market Flow neutre (-7). Momentum 1 séance -0.03% et 5 séances -2.11%. Couverture 100%.",
+  "composite": -13,
+  "regime": "CALIBRATION",
+  "conclusion": "Market Flow neutre (-15). Momentum 1 séance -0.03% et 5 séances -2.11%. Couverture 70%.",
   "scores": {
     "liquidity": -2,
-    "market_flow": -7,
-    "global": -29
+    "market_flow": -15,
+    "global": -37
   },
   "sources": [
     {
@@ -51,22 +51,20 @@
     "ret_1d_pct": -0.03,
     "ret_5d_pct": -2.11,
     "ret_20d_pct": 1.53,
-    "volume_vs_available_avg": 1.22,
-    "volume_sessions": 20,
-    "breadth": 0.3529,
-    "coverage": 1.0,
+    "volume_vs_available_avg": null,
+    "breadth": 0.3889,
+    "coverage": 0.7,
     "components_used": [
       "momentum",
-      "volume",
       "breadth"
     ],
-    "confidence": "high"
+    "confidence": "medium"
   },
   "rotation": {
     "reference_date": "2026-11-17",
     "quality": "official_session",
     "source": "Bourse de Casablanca — cours officiels (stock-historical)",
-    "computed_at": "2026-11-18T01:20:08.630462+00:00",
+    "computed_at": "2026-11-19T00:36:47.103153+00:00",
     "min_turnover_mad": 100000,
     "sectors": [
       {
@@ -276,7 +274,7 @@
     "status": "experimental",
     "method": "momentum_direction_5d",
     "source_file": "data/backtest.json",
-    "computed_at": "2026-11-18T02:08:33.922761+00:00",
+    "computed_at": "2026-11-19T00:36:47.259402+00:00",
     "history_sessions": 2002,
     "observations": 1997,
     "usable_5d": 1916,
@@ -285,9 +283,9 @@
   },
   "data_quality": {
     "market_history_sessions": 2002,
-    "market_flow_coverage": 1.0,
+    "market_flow_coverage": 0.7,
     "liquidity_coverage": 0.7,
-    "composite_status": "NEUTRAL",
+    "composite_status": "CALIBRATION",
     "official_opcvm_file": "STAT_OPCVM_HEBDO_AMMC_25092026.xlsx",
     "missing_priority": [
       "liquidité : opcvm estimée (pas de donnée officielle directe)",
@@ -310,23 +308,23 @@
     "liquidity": "OPCVM 40% + bank liquidity 30% + money market 20% + policy rate 10%; only verified numeric components are scored.",
     "caveat_opcvm": "Change in OPCVM assets is not treated as net subscriptions unless valuation effects are separated or the source explicitly reports subscriptions/redemptions."
   },
-  "composite_coverage": 0.85,
+  "composite_coverage": 0.74,
   "effective_weights": {
     "liquidity": 35.0,
-    "market_flow": 35.0,
+    "market_flow": 24.5,
     "global": 15.0
   },
-  "retrieved_at": "2026-11-18T02:08:33.841793+00:00",
+  "retrieved_at": "2026-11-19T00:36:46.773943+00:00",
   "market_data_status": "STALE_OR_CURRENT_BY_AS_OF",
   "market_snapshot": {
-    "masi": 17234.8,
+    "masi": 17234.7994,
     "drawdown_from_sample_peak_pct": -14.82,
     "sample_peak": 20233.5,
     "sample_low": 8987.89,
     "sessions": 2002
   },
   "global_detail": {
-    "checked_at": "2026-11-18T00:58:39.175065+00:00",
+    "checked_at": "2026-11-19T00:24:45.865962+00:00",
     "verified": true,
     "coverage": 1.0,
     "components": {
@@ -334,10 +332,10 @@
         "series": "DGS10",
         "source": "US_TREASURY",
         "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-        "date": "2026-11-17",
-        "value": 5.1,
-        "change_5obs": 22.0,
-        "score": -26.4,
+        "date": "2026-11-18",
+        "value": 5.07,
+        "change_5obs": 9.0,
+        "score": -10.8,
         "verified": true,
         "failed_sources": []
       },
@@ -345,10 +343,10 @@
         "series": "VIXCLS",
         "source": "CBOE",
         "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-        "date": "2026-11-16",
-        "value": 22.91,
-        "change_5obs": 15.01,
-        "score": -60.0,
+        "date": "2026-11-17",
+        "value": 25.46,
+        "change_5obs": 30.832,
+        "score": -100,
         "verified": true,
         "failed_sources": []
       },
@@ -357,9 +355,9 @@
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?range=1mo&interval=1d",
         "date": "2026-11-18",
-        "value": 103.6709976196289,
-        "change_5obs": 1.41,
-        "score": -11.3,
+        "value": 103.81300354003906,
+        "change_5obs": 0.877,
+        "score": -7.0,
         "verified": true,
         "failed_sources": []
       },
@@ -367,16 +365,16 @@
         "series": "SP500",
         "source": "YAHOO_FINANCE",
         "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d",
-        "date": "2026-11-17",
-        "value": 7340.52978515625,
-        "change_5obs": -2.399,
-        "score": -19.2,
+        "date": "2026-11-18",
+        "value": 7323.6298828125,
+        "change_5obs": -3.882,
+        "score": -31.1,
         "verified": true,
         "failed_sources": []
       }
     },
     "method": "Four equally weighted five-observation risk impulses; experimental diagnostic.",
-    "score": -29,
+    "score": -37,
     "fresh_for_scoring": true
   }
 }
