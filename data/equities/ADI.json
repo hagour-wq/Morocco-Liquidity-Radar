@@ -12,7 +12,7 @@
  "listing_verified_by": "Présence dans la liste officielle live-market/actions de la Bourse de Casablanca",
  "source": "Bourse de Casablanca",
  "source_endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
- "updated_at": "2026-11-20T00:38:00.469479+00:00",
+ "updated_at": "2026-11-21T00:00:32.527002+00:00",
  "corporate_actions_suspected": [],
  "fields": {
   "close": "dernier cours (MAD)",
