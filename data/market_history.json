@@ -34285,5 +34285,23 @@
     "volume_global_mad": 303262013.74,
     "breadth_source": "Bourse de Casablanca — Résumé de séance (PDF)",
     "control": "validated"
+  },
+  {
+    "date": "2026-11-23",
+    "masi": 16882.5987,
+    "masi_previous_close": 16974.4362,
+    "masi_high": 17025.284,
+    "masi_low": 16854.5377,
+    "volume_mad": null,
+    "volume_mad_official": 245472017.63,
+    "breadth": 0.3,
+    "advancers": 18,
+    "decliners": 42,
+    "instruments": 82,
+    "source": "Bourse de Casablanca (live-market, séance clôturée)",
+    "masi_source": "Bourse de Casablanca (live-market, séance clôturée)",
+    "source_url": "https://www.casablanca-bourse.com/live-market/indices/cours?symbol=MASI",
+    "quality": "official_session_close",
+    "collected_at": "2026-11-24T03:57:52.324049+00:00"
   }
 ]

@@ -12,7 +12,7 @@
  "listing_verified_by": "Présence dans la liste officielle live-market/actions de la Bourse de Casablanca",
  "source": "Bourse de Casablanca",
  "source_endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
- "updated_at": "2026-11-21T00:00:32.527002+00:00",
+ "updated_at": "2026-11-24T03:58:58.342120+00:00",
  "corporate_actions_suspected": [],
  "fields": {
   "close": "dernier cours (MAD)",
@@ -22,9 +22,10 @@
   "trades": "nombre de transactions"
  },
  "rows": [
-{"date":"2026-11-16","open":171.55,"high":171.55,"low":171.55,"close":171.55,"adj_close":null,"volume":99993.0,"turnover_mad":17153799.15,"trades":1450.0,"market_cap_mad":2251593750.0,"collected_at":"2026-11-21T00:00:32.527002+00:00","traded":true,"incomplete_volume":false,"status":"validated"},
-{"date":"2026-11-17","open":172.5,"high":190.0,"low":171.55,"close":190.0,"adj_close":null,"volume":1207481.0,"turnover_mad":212257753.55,"trades":6852.0,"market_cap_mad":2493750000.0,"collected_at":"2026-11-21T00:00:32.527002+00:00","traded":true,"incomplete_volume":false,"status":"move_gt_10pct"},
-{"date":"2026-11-19","open":191.5,"high":204.0,"low":191.5,"close":200.0,"adj_close":null,"volume":234019.0,"turnover_mad":46161965.7,"trades":2858.0,"market_cap_mad":2625000000.0,"collected_at":"2026-11-21T00:00:32.527002+00:00","traded":true,"incomplete_volume":false,"status":"validated"},
-{"date":"2026-11-20","open":196.4,"high":209.0,"low":196.4,"close":205.0,"adj_close":null,"volume":183566.0,"turnover_mad":36907545.15,"trades":1739.0,"market_cap_mad":2690625000.0,"collected_at":"2026-11-21T00:00:32.527002+00:00","traded":true,"incomplete_volume":false,"status":"validated"}
+{"date":"2026-11-16","open":171.55,"high":171.55,"low":171.55,"close":171.55,"adj_close":null,"volume":99993.0,"turnover_mad":17153799.15,"trades":1450.0,"market_cap_mad":2251593750.0,"collected_at":"2026-11-24T03:58:58.342120+00:00","traded":true,"incomplete_volume":false,"status":"validated"},
+{"date":"2026-11-17","open":172.5,"high":190.0,"low":171.55,"close":190.0,"adj_close":null,"volume":1207481.0,"turnover_mad":212257753.55,"trades":6852.0,"market_cap_mad":2493750000.0,"collected_at":"2026-11-24T03:58:58.342120+00:00","traded":true,"incomplete_volume":false,"status":"move_gt_10pct"},
+{"date":"2026-11-19","open":191.5,"high":204.0,"low":191.5,"close":200.0,"adj_close":null,"volume":234019.0,"turnover_mad":46161965.7,"trades":2858.0,"market_cap_mad":2625000000.0,"collected_at":"2026-11-24T03:58:58.342120+00:00","traded":true,"incomplete_volume":false,"status":"validated"},
+{"date":"2026-11-20","open":196.4,"high":209.0,"low":196.4,"close":205.0,"adj_close":null,"volume":183566.0,"turnover_mad":36907545.15,"trades":1739.0,"market_cap_mad":2690625000.0,"collected_at":"2026-11-24T03:58:58.342120+00:00","traded":true,"incomplete_volume":false,"status":"validated"},
+{"date":"2026-11-23","open":206.3,"high":216.0,"low":206.3,"close":215.8,"adj_close":null,"volume":79314.0,"turnover_mad":16786603.1,"trades":1146.0,"market_cap_mad":2832375000.0,"collected_at":"2026-11-24T03:58:58.342120+00:00","traded":true,"incomplete_volume":false,"status":"validated"}
  ]
 }
