@@ -1,0 +1,27 @@
+{
+ "ticker": "LPH",
+ "name": "LAPROPHAN",
+ "isin": null,
+ "code_valeur": "LPH",
+ "sector": "Industrie Pharmaceutique",
+ "compartment": "Principal A",
+ "shares_outstanding": 17315725,
+ "listing_exchange": "Casablanca Stock Exchange",
+ "listing_country": "MA",
+ "currency": "MAD",
+ "listing_verified_by": "Présence dans la liste officielle live-market/actions de la Bourse de Casablanca",
+ "source": "Bourse de Casablanca",
+ "source_endpoint": "https://www.casablanca-bourse.com/api/boursenova/stock-historical",
+ "updated_at": "2026-11-26T01:48:55.192497+00:00",
+ "corporate_actions_suspected": [],
+ "fields": {
+  "close": "dernier cours (MAD)",
+  "adj_close": "null : non fourni de façon fiable",
+  "volume": "titres échangés",
+  "turnover_mad": "montant échangé (MAD)",
+  "trades": "nombre de transactions"
+ },
+ "rows": [
+{"date":"2026-11-25","open":305.0,"high":333.0,"low":300.0,"close":300.0,"adj_close":null,"volume":358274.0,"turnover_mad":109343283.65,"trades":2984.0,"market_cap_mad":5194717500.0,"collected_at":"2026-11-26T01:48:55.192497+00:00","traded":true,"incomplete_volume":false,"status":"validated"}
+ ]
+}
