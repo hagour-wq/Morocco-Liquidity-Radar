@@ -1,20 +1,20 @@
 {
-  "checked_at": "2026-11-27T02:00:18.634893+00:00",
+  "checked_at": "2026-11-28T01:41:16.403159+00:00",
   "url": "https://www.yuna.ma/bourse/en-direct",
   "status": "REACHABLE_HTML_DISCOVERY",
   "access": true,
   "source_policy": "No undocumented CSV endpoints and no fabricated historical bars",
   "http_status": 200,
   "content_type": "text/html; charset=utf-8",
-  "bytes": 188827,
+  "bytes": 188888,
   "has_casablanca": true,
   "has_isin": true,
   "has_mad": true,
   "historical_ui": true,
   "dates_sample": [
     "2015-12-29",
-    "2026-11-27",
-    "2026-11-26"
+    "2026-11-28",
+    "2026-11-27"
   ],
   "relevant_links": [
     "/bourse",
@@ -40,9 +40,9 @@
     "/bourse/totalenergies-marketing-maroc",
     "/bourse/label-vie",
     "/bourse/cdm",
-    "/bourse/alliances",
     "/bourse/lesieur-cristal",
     "/bourse/bmci",
+    "/bourse/alliances",
     "/bourse/sonasid",
     "/bourse/atlantasanad",
     "/bourse/cfg-bank",
@@ -50,13 +50,13 @@
     "/bourse/auto-nejma",
     "/bourse/societe-des-boissons-du-maroc",
     "/bourse/aradei-capital",
-    "/bourse/laprophan",
     "/bourse/compagnie-miniere-de-touissit-s-a",
+    "/bourse/laprophan",
     "/bourse/cash-plus-s-a",
     "/bourse/risma",
-    "/bourse/jet-contractors",
     "/bourse/t2s-group-holding",
-    "/bourse/cmgp-group"
+    "/bourse/cmgp-group",
+    "/bourse/jet-contractors"
   ],
   "scripts": [
     "/_next/static/chunks/4a7b0c69-c28b3c0d6d42b12c.js",
